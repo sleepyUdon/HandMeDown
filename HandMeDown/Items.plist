@@ -7,8 +7,21 @@
    Created by Viviane Chan on 2016-12-07.
    Copyright (c) 2016 Viviane Chan. All rights reserved.
 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+    <array>
+        <dict>
+            <key>title</key>
+            <string>Pikachu</string>
+            <key>itemDescription</key>
+            <string>Cute Pikachu. Limited edition.</string>
+            <key>image</key>
+            <string>Pikachu</string>
+            <key>like</key>
+            <string>heart</string>
+            <key>category</key>
+            <string>toy</string>
+        </dict>
+    </array>
 </plist>

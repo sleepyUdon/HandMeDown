@@ -1,0 +1,45 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Item"
+provides-nominal:
+- "C10HandMeDown4Item"
+provides-member:
+- ["C10HandMeDown4Item", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "String"
+- "AssignmentPrecedence"
+- "Item"
+depends-member:
+- !private ["Ps9AnyObject", "category"]
+- !private ["Ps9AnyObject", "image"]
+- !private ["Ps9AnyObject", "itemDescription"]
+- !private ["Ps9AnyObject", "like"]
+- !private ["Ps9AnyObject", "title"]
+- ["Ps9AnyObject", ""]
+- ["C10HandMeDown4Item", "String"]
+- ["C10HandMeDown4Item", "category"]
+- ["C10HandMeDown4Item", "deinit"]
+- ["C10HandMeDown4Item", "image"]
+- ["C10HandMeDown4Item", "init"]
+- ["C10HandMeDown4Item", "itemDescription"]
+- ["C10HandMeDown4Item", "like"]
+- ["C10HandMeDown4Item", "title"]
+- ["SS", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "C10HandMeDown4Item"
+- "SS"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "77bec97cf01b0a136752e7af9dcc750e"
