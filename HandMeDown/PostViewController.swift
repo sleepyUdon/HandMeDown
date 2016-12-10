@@ -9,7 +9,7 @@
 import UIKit
 import Material
 
-class PostViewController: UIViewController {
+class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var boyButton: RaisedButton!
     @IBOutlet weak var girlButton: RaisedButton!
@@ -27,6 +27,7 @@ class PostViewController: UIViewController {
     @IBOutlet weak var accessoryButton: RaisedButton!
     @IBOutlet weak var furnitureButton: RaisedButton!
     @IBOutlet weak var otherButton: RaisedButton!
+    @IBOutlet weak var pictureView: UIImageView!
     
     // MARK: Set up properties
 
@@ -40,12 +41,16 @@ class PostViewController: UIViewController {
     var itemTitle: String?
     var itemDescription: String?
     var category: [String]?
+    let picker = UIImagePickerController()
+
     
             
     // ViewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        picker.delegate = self
+
     }
     
 
@@ -71,8 +76,6 @@ class PostViewController: UIViewController {
         accessoryButton.isSelected = false
         furnitureButton.isSelected = false
         otherButton.isSelected = false
-
-
     }
     
     
@@ -85,12 +88,67 @@ class PostViewController: UIViewController {
         
     }
     
+    // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
     
-    // Handle Add Picture Button
-
+    // MARK: Handle Add Picture Button
+    
     @IBAction func HandleAddPictureButton(_ sender: UIButton) {
+        let alert:UIAlertController=UIAlertController(title: "Choose Image", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+        let cameraAction = UIAlertAction(title: "Camera", style: UIAlertActionStyle.default)
+        {
+            UIAlertAction in
+            self.openCamera()
+        }
+        let galleryAction = UIAlertAction(title: "Gallery", style: UIAlertActionStyle.default)
+        {
+            UIAlertAction in
+            self.openGallery()
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default)
+        {
+            UIAlertAction in
+        }
+        
+        // Add the actions
+//        picker.allowsEditing = true
+        alert.addAction(cameraAction)
+        alert.addAction(galleryAction)
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true, completion: nil)
     }
     
+    func openCamera(){
+        if(UIImagePickerController .isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)){
+            picker.sourceType = UIImagePickerControllerSourceType.camera
+            self .present(picker, animated: true, completion: nil)
+        }else{
+            
+            let alert = UIAlertController(title:"Warning",
+                                          message: "Please change setting for camera in Setings",
+                                          preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        }
+    }
+    func openGallery(){
+        picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        self.present(picker, animated: true, completion: nil)
+    }
+    
+    /// Save Picture
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let pickedImage: UIImage = (info as NSDictionary).object(forKey: UIImagePickerControllerOriginalImage) as! UIImage
+        pictureView.image = pickedImage
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    // Dismiss Image Picker
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+
+
+
     // MARK: Handle Tags Button
     
     // Boy Button
@@ -120,9 +178,9 @@ class PostViewController: UIViewController {
             self.girlButton.isSelected = false
             self.girlButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
         }
-    }
+}
 
-    
+
     // Baby Button
 
     @IBAction func babyButton(_ sender: RaisedButton) {

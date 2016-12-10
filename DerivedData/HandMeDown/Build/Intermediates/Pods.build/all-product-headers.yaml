@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphonesimulator/Material/Material.framework/Headers",
+      'name': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Material-Swift.h",
-          'external-contents': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphonesimulator/Material/Material.framework/Headers/Material-Swift.h"
+          'external-contents': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
         },
         {
           'type': 'file',
@@ -20,18 +20,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphonesimulator/Material/Material.framework/Modules",
+      'name': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Intermediates/Pods.build/Debug-iphonesimulator/Material.build/module.modulemap"
+          'external-contents': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Intermediates/Pods.build/Debug-iphoneos/Material.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphonesimulator/Pods_HandMeDown.framework/Headers",
+      'name': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Pods_HandMeDown.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -41,18 +41,18 @@
         {
           'type': 'file',
           'name': "Pods_HandMeDown-Swift.h",
-          'external-contents': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphonesimulator/Pods_HandMeDown.framework/Headers/Pods_HandMeDown-Swift.h"
+          'external-contents': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Pods_HandMeDown.framework/Headers/Pods_HandMeDown-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphonesimulator/Pods_HandMeDown.framework/Modules",
+      'name': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Pods_HandMeDown.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-HandMeDown.build/module.modulemap"
+          'external-contents': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-HandMeDown.build/module.modulemap"
         }
       ]
     }

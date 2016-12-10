@@ -137,6 +137,12 @@ SWIFT_CLASS("_TtC10HandMeDown11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC10HandMeDown5Fonts")
+@interface Fonts : UIFont
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIImageView;
 @class UILabel;
 @class NSCoder;
@@ -211,13 +217,6 @@ SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 - (IBAction)furnitureButton:(RaisedButton * _Nonnull)sender;
 - (IBAction)otherButton:(RaisedButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10HandMeDown9TagButton")
-@interface TagButton : UIButton
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

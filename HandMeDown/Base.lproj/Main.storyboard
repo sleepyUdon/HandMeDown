@@ -183,6 +183,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isShadowPathAutoSizing" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="HandlePostButton:" destination="Jk0-FK-fa1" eventType="touchUpInside" id="Asg-xm-7Kh"/>
@@ -197,30 +198,48 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Ui-oh-DKZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="313" height="125"/>
                                                 <subviews>
-                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCI-e8-25t">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1V-NG-oOe">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tm6-wE-8tK" userLabel="Picture View">
+                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                                            </imageView>
+                                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCI-e8-25t">
+                                                                <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="UCI-e8-25t" secondAttribute="height" multiplier="1:1" id="i7K-bS-HVG"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                <state key="normal" title="Add Picture">
+                                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="HandleAddPictureButton:" destination="Jk0-FK-fa1" eventType="touchUpInside" id="ZG4-jv-XTW"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" secondItem="UCI-e8-25t" secondAttribute="height" multiplier="1:1" id="i7K-bS-HVG"/>
+                                                            <constraint firstItem="UCI-e8-25t" firstAttribute="centerY" secondItem="K1V-NG-oOe" secondAttribute="centerY" id="1zK-7l-DOd"/>
+                                                            <constraint firstItem="UCI-e8-25t" firstAttribute="width" secondItem="K1V-NG-oOe" secondAttribute="width" id="4N9-Le-Arj"/>
+                                                            <constraint firstItem="tm6-wE-8tK" firstAttribute="width" secondItem="K1V-NG-oOe" secondAttribute="width" id="NGU-LF-jFX"/>
+                                                            <constraint firstItem="tm6-wE-8tK" firstAttribute="centerY" secondItem="K1V-NG-oOe" secondAttribute="centerY" id="P4l-yg-3up"/>
+                                                            <constraint firstItem="tm6-wE-8tK" firstAttribute="height" secondItem="K1V-NG-oOe" secondAttribute="height" id="d54-zb-AuF"/>
+                                                            <constraint firstItem="UCI-e8-25t" firstAttribute="height" secondItem="K1V-NG-oOe" secondAttribute="height" id="fTa-lr-jU9"/>
+                                                            <constraint firstItem="tm6-wE-8tK" firstAttribute="centerX" secondItem="K1V-NG-oOe" secondAttribute="centerX" id="hKk-8g-Q45"/>
+                                                            <constraint firstItem="UCI-e8-25t" firstAttribute="centerX" secondItem="K1V-NG-oOe" secondAttribute="centerX" id="rtl-xR-BFW"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                        <state key="normal" title="Add Picture">
-                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                <integer key="value" value="5"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="HandleAddPictureButton:" destination="Jk0-FK-fa1" eventType="touchUpInside" id="ZG4-jv-XTW"/>
-                                                        </connections>
-                                                    </button>
+                                                    </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nan-58-8Tu">
                                                         <rect key="frame" x="135" y="0.0" width="178" height="125"/>
                                                         <subviews>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add Title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="za1-ne-FmG">
-                                                                <rect key="frame" x="0.0" y="0.0" width="178" height="35"/>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add Title" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="za1-ne-FmG">
+                                                                <rect key="frame" x="0.0" y="0.0" width="178" height="85"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="35" id="EPf-Sc-4mw"/>
                                                                 </constraints>
@@ -228,8 +247,8 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
-                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add Description" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PvG-Qb-Apo">
-                                                                <rect key="frame" x="0.0" y="45" width="178" height="80"/>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add Description" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PvG-Qb-Apo">
+                                                                <rect key="frame" x="0.0" y="95" width="178" height="30"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -791,6 +810,7 @@
                         <outlet property="girlButton" destination="F8Q-QU-rRe" id="KJt-uc-ulo"/>
                         <outlet property="kidButton" destination="dnh-ym-7Fo" id="fwd-Jd-e6G"/>
                         <outlet property="otherButton" destination="siG-A1-Hej" id="vu0-8Q-rFP"/>
+                        <outlet property="pictureView" destination="tm6-wE-8tK" id="tcg-yG-EO1"/>
                         <outlet property="sportsButton" destination="NYU-3i-gNB" id="tQX-Ak-ndM"/>
                         <outlet property="teenButton" destination="sAC-Di-wAz" id="CXo-Ae-H3O"/>
                         <outlet property="toddlerButton" destination="k2T-Nf-JIK" id="mHA-sp-aEQ"/>
