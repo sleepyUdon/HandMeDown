@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		msV4kaYRf/dpXQZoSACuIGBg+YE=
+		C87susFQNOa6xf6U1nbpbg9b/EE=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/8rJ-Kc-sve-view-sSE-hl-hXE.nib</key>
 		<data>
-		0hzEdE9fsbKAI8xXO/NPtwqad/8=
+		QZ5yru/Evh/Z+XbKnfc6pHyal8Y=
 		</data>
 		<key>Base.lproj/Main.storyboardc/9pv-A4-QxB-view-tsR-hK-woN.nib</key>
 		<data>
-		a9a4eqjuDEcU6Svnl6+hxOrWDNc=
+		UZAHmR+GCeCkGy7yvC0x26iNXhY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -34,23 +34,115 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/Jk0-FK-fa1-view-2Ib-UK-pi6.nib</key>
 		<data>
-		tX7g50DN+7BwE/iugrhqlBer290=
+		tp/f+0qD6AncTMRx1fWEwkD7tVY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/QnR-jS-3gU-view-wf9-Xm-S4e.nib</key>
 		<data>
-		WtR+td5z4H1OtfjV3AlnoRmOXwA=
+		ZeRRaugZdE+Sj6JuzAZP1+bzKyc=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-49e-Tb-3d3.nib</key>
 		<data>
-		nRdlsIsZXG/9JMVuijcDIZGPto4=
+		agaXH1aMZozvaggqN0b4aByOPHU=
 		</data>
 		<key>Base.lproj/Main.storyboardc/VtQ-d6-FVp-view-ej7-jS-Hic.nib</key>
 		<data>
-		RZFeattPh2/6fFCbUROjRPKnXOw=
+		JV3yDNrhjk4GBG8j0hlTB7mqGy4=
+		</data>
+		<key>Frameworks/Material.framework/Info.plist</key>
+		<data>
+		6RLYLxqK2usAlMsHSTRMyCUIaTA=
+		</data>
+		<key>Frameworks/Material.framework/Material</key>
+		<data>
+		1O9n5vH2lKX6o6OCHMumwo/UM5g=
+		</data>
+		<key>Frameworks/Material.framework/_CodeSignature/CodeResources</key>
+		<data>
+		F3Uq+CWvkBIiZuwXqYTQZyCpF0w=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/Info.plist</key>
+		<data>
+		blZ9VZXuAPZUB02k1fO9V05/y9U=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/Roboto-Bold.ttf</key>
+		<data>
+		QHlyOcmQ7cSwc9XTUt4DJJANWG8=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/Roboto-Light.ttf</key>
+		<data>
+		0uD8SngIbrYguZ/3PpwKxjUN5BI=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/Roboto-Medium.ttf</key>
+		<data>
+		04AryO2EgiFUeL59dchPXsZvr50=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/Roboto-Regular.ttf</key>
+		<data>
+		nGiDcL5BehV4TwFlrvOspjswYUY=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/Roboto-Thin.ttf</key>
+		<data>
+		2R9E50GLZorC558keFPV/Z5OZ44=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/_CodeSignature/CodeDirectory</key>
+		<data>
+		PLGvyWyg0CVDLsRskQTvrRWku8c=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/_CodeSignature/CodeRequirements</key>
+		<data>
+		OnX22wWFKRSOFN1+obRynMCeyXM=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		AXpX+vN/vUBLkdvc5VlX7RPxpPs=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/_CodeSignature/CodeResources</key>
+		<data>
+		KY3qec5O6hZUB28oKBACi2nsplg=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/_CodeSignature/CodeSignature</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/Assets.car</key>
+		<data>
+		MZSZxECanpeIyvfRsZbz8gzsk1c=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/Info.plist</key>
+		<data>
+		IFu9IpMwnqa0moz6uMs/gkyEbEY=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/_CodeSignature/CodeDirectory</key>
+		<data>
+		uAGs+9k6n5gw+P1MXiOrGx89FOE=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/_CodeSignature/CodeRequirements</key>
+		<data>
+		OnX22wWFKRSOFN1+obRynMCeyXM=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		zgsgBjD1CX4uYGzbQzWP3/bW4XM=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/_CodeSignature/CodeResources</key>
+		<data>
+		BHWqtA585iDYBeGagEvIKG/mnNs=
+		</data>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/_CodeSignature/CodeSignature</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		</data>
+		<key>Frameworks/libswiftAVFoundation.dylib</key>
+		<data>
+		lsjQCsiskCenAbpI5rmxBD5cfGo=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		u5b07I8v3WpyCx+6S67HnG1yZKE=
+		</data>
+		<key>Frameworks/libswiftCoreAudio.dylib</key>
+		<data>
+		vxmOH37yr6Z9IEE4ZJPvCrth/YQ=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
@@ -59,6 +151,10 @@
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
 		9iNuwGJY0VIX3pm7ialxkjqZZz8=
+		</data>
+		<key>Frameworks/libswiftCoreMedia.dylib</key>
+		<data>
+		oKDefTGWxom0Denf2/QePDyR+ZU=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
@@ -111,11 +207,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			msV4kaYRf/dpXQZoSACuIGBg+YE=
+			C87susFQNOa6xf6U1nbpbg9b/EE=
 			</data>
 			<key>hash2</key>
 			<data>
-			pgiyb5UPCufUjDRgt5vXZXw0ecoLLfB1LGAzh+0ZFRs=
+			D8jctT+QA/s3AncoxDiXmpJFwd9m1b7jDjPAz1BtTMw=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -155,22 +251,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0hzEdE9fsbKAI8xXO/NPtwqad/8=
+			QZ5yru/Evh/Z+XbKnfc6pHyal8Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			01kFt1ntq0eCc4x9tEkkS+iLMpIpwC6BrmjGAnJFjbI=
+			Ml0W/WijlnJ+BdWKkaUxl8IFW2oi+1ZfAj+QD+MBrEg=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/9pv-A4-QxB-view-tsR-hK-woN.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a9a4eqjuDEcU6Svnl6+hxOrWDNc=
+			UZAHmR+GCeCkGy7yvC0x26iNXhY=
 			</data>
 			<key>hash2</key>
 			<data>
-			YtJAxlnV/h5xNA0hIslT08PKb1Qml6Z1fK/5pUePiEA=
+			IpUhvcJhw4ayc6XYNix0KSmH29jtQ+XuUNRyB8Z7pHE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -188,44 +284,286 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tX7g50DN+7BwE/iugrhqlBer290=
+			tp/f+0qD6AncTMRx1fWEwkD7tVY=
 			</data>
 			<key>hash2</key>
 			<data>
-			3QIIi6Jf9P41muhWvhYi50PomGl3olTEHANxBbSou0Q=
+			IP47GXYQUkiXZg+phTqrwt2lFrP22b66U0cSeVMc22E=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/QnR-jS-3gU-view-wf9-Xm-S4e.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WtR+td5z4H1OtfjV3AlnoRmOXwA=
+			ZeRRaugZdE+Sj6JuzAZP1+bzKyc=
 			</data>
 			<key>hash2</key>
 			<data>
-			WdoZ04V2XeVnAN5MrAQulm7N8Ixu1qTmJDLopI3j9+U=
+			HtGH4lFZPM6vVi85kJIIO+2zDORHluOwc5SEcbZhOYs=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-49e-Tb-3d3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nRdlsIsZXG/9JMVuijcDIZGPto4=
+			agaXH1aMZozvaggqN0b4aByOPHU=
 			</data>
 			<key>hash2</key>
 			<data>
-			hhSkKht25ssVCCe/wRS/KMkVLS3c2TJZCOMIdtLBzXI=
+			7FStU9tGGq6jVyJ4am3SDFT44Hbwa9cCIhBTSBQeV8I=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/VtQ-d6-FVp-view-ej7-jS-Hic.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RZFeattPh2/6fFCbUROjRPKnXOw=
+			JV3yDNrhjk4GBG8j0hlTB7mqGy4=
 			</data>
 			<key>hash2</key>
 			<data>
-			liUqlJ5nvru0cXOO29zuVSRyOjnwpn/PQHnd1vgwL/4=
+			oo/VgajV5Pv9KoUctkioP9NkaFwa6J+0o9gQEkqWB08=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6RLYLxqK2usAlMsHSTRMyCUIaTA=
+			</data>
+			<key>hash2</key>
+			<data>
+			NCTITbkUO7T1hPk7ybgLti6XCB7cPflUfyWlBQEEk+o=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/Material</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1O9n5vH2lKX6o6OCHMumwo/UM5g=
+			</data>
+			<key>hash2</key>
+			<data>
+			c8u0JauhmO3Cc22ANDg+J9enUnSSNK4ZCL5RF+j4T6M=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F3Uq+CWvkBIiZuwXqYTQZyCpF0w=
+			</data>
+			<key>hash2</key>
+			<data>
+			CUnAqNTG/tAxFDO2wvW6zAj0iibCPo+tMI55qd1+xgQ=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			blZ9VZXuAPZUB02k1fO9V05/y9U=
+			</data>
+			<key>hash2</key>
+			<data>
+			Kb+vdLyLZ7mN/H3Gurcefj/fwX5BvbSxJRcAY0CCZAw=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/Roboto-Bold.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QHlyOcmQ7cSwc9XTUt4DJJANWG8=
+			</data>
+			<key>hash2</key>
+			<data>
+			3iZh/2VgmQrnrGuo+4eSuB8WbFMf6FztGhXAWYh5oMY=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/Roboto-Light.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0uD8SngIbrYguZ/3PpwKxjUN5BI=
+			</data>
+			<key>hash2</key>
+			<data>
+			XPvp9H51gm/F1LFmQ9Dli1B544u5Mgj4hYj+tmrV7SE=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/Roboto-Medium.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			04AryO2EgiFUeL59dchPXsZvr50=
+			</data>
+			<key>hash2</key>
+			<data>
+			6vEQoX+Al6Nb4G7JFA/Rz7ZO3lYftpmDIMwKS8kN+ao=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/Roboto-Regular.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nGiDcL5BehV4TwFlrvOspjswYUY=
+			</data>
+			<key>hash2</key>
+			<data>
+			biWwR2VwmujlWpjpXhLQzZ8ehTrfCmCYdN4wWK3ZXvs=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/Roboto-Thin.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2R9E50GLZorC558keFPV/Z5OZ44=
+			</data>
+			<key>hash2</key>
+			<data>
+			6G+MPYkXLS8ACaPBd8UpIN12P3Q4jjyx0d86Rx9/9VQ=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PLGvyWyg0CVDLsRskQTvrRWku8c=
+			</data>
+			<key>hash2</key>
+			<data>
+			p1RNtgZ/goMqSRxYEfkp5k0Fjlqf1EaxJV8KHeTjEn8=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OnX22wWFKRSOFN1+obRynMCeyXM=
+			</data>
+			<key>hash2</key>
+			<data>
+			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AXpX+vN/vUBLkdvc5VlX7RPxpPs=
+			</data>
+			<key>hash2</key>
+			<data>
+			Lq2vDDuS+9Vq/DtTt6V9n3setinh0GBl2LcfYyMZTb4=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KY3qec5O6hZUB28oKBACi2nsplg=
+			</data>
+			<key>hash2</key>
+			<data>
+			DLNP7R1riWX6fntKdkR94TPTOrwh3Frxo05DyiK1mD8=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.fonts.bundle/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MZSZxECanpeIyvfRsZbz8gzsk1c=
+			</data>
+			<key>hash2</key>
+			<data>
+			0LSLPiEGss61dKP6+cmJmqdmA8ztC9c5N93tg5yHfzE=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IFu9IpMwnqa0moz6uMs/gkyEbEY=
+			</data>
+			<key>hash2</key>
+			<data>
+			U6Wgpfr64Luh5CB811XJPX9M/GSZDmI3TKob9Ds8MGo=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uAGs+9k6n5gw+P1MXiOrGx89FOE=
+			</data>
+			<key>hash2</key>
+			<data>
+			iM7YikB6WWTa1eAoyyo6eN2KICb43WzDUF4bapUmPhI=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OnX22wWFKRSOFN1+obRynMCeyXM=
+			</data>
+			<key>hash2</key>
+			<data>
+			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zgsgBjD1CX4uYGzbQzWP3/bW4XM=
+			</data>
+			<key>hash2</key>
+			<data>
+			+cJGiWBxx5p2VwNgSSplw+qCR6NBzKwFWtfjA1gN4kM=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BHWqtA585iDYBeGagEvIKG/mnNs=
+			</data>
+			<key>hash2</key>
+			<data>
+			jhaaYro/NFm0TqkReq3JGxaq50lh0RDaqEe9qagfiQA=
+			</data>
+		</dict>
+		<key>Frameworks/Material.framework/io.cosmicmind.material.icons.bundle/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftAVFoundation.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lsjQCsiskCenAbpI5rmxBD5cfGo=
+			</data>
+			<key>hash2</key>
+			<data>
+			+JCwhShbnOObDBL72aYBiuu6MQz46RZJMLRgFVzdMPI=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -237,6 +575,17 @@
 			<key>hash2</key>
 			<data>
 			u1I2R5znDWwAQrni6pCYNNK9DOp44iS95GvanTjv0zM=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreAudio.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vxmOH37yr6Z9IEE4ZJPvCrth/YQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			c00SF5mRXBi+qQbK0Gq9K4/kCKKgq5FW1H3vXffMpx4=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
@@ -259,6 +608,17 @@
 			<key>hash2</key>
 			<data>
 			ZjOjMYTcw4dI4JPArw54QpsOv3R9b+RsOntHr8LuoiQ=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCoreMedia.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oKDefTGWxom0Denf2/QePDyR+ZU=
+			</data>
+			<key>hash2</key>
+			<data>
+			SO3E9rXHSawxH+q+CUIS2UPMGNycp0sOw5oeGeWtnRo=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>

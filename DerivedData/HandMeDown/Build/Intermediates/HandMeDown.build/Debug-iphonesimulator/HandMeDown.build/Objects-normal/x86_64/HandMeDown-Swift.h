@@ -166,12 +166,58 @@ SWIFT_CLASS("_TtC10HandMeDown21GoodiesViewController")
 @end
 
 @class UIButton;
+@class RaisedButton;
+@class Button;
 
 SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 @interface PostViewController : UIViewController
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified boyButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified girlButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified babyButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified toddlerButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified kidButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified tweenButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified teenButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified clothesButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified toyButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified bookButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified gearButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified electronicsButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified sportsButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified accessoryButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified furnitureButton;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified otherButton;
+@property (nonatomic, copy) NSString * _Nullable itemTitle;
+@property (nonatomic, copy) NSString * _Nullable itemDescription;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable category;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
 - (IBAction)HandlePostButton:(UIButton * _Nonnull)sender;
+- (IBAction)HandleAddPictureButton:(UIButton * _Nonnull)sender;
+- (IBAction)boyButton:(RaisedButton * _Nonnull)sender;
+- (IBAction)girlButton:(RaisedButton * _Nonnull)sender;
+- (IBAction)babyButton:(RaisedButton * _Nonnull)sender;
+- (IBAction)toddlerButton:(RaisedButton * _Nonnull)sender;
+- (IBAction)kidButton:(Button * _Nonnull)sender;
+- (IBAction)tweenButton:(RaisedButton * _Nonnull)sender;
+- (IBAction)teenButton:(RaisedButton * _Nonnull)sender;
+- (IBAction)clothesButton:(RaisedButton * _Nonnull)sender;
+- (IBAction)toyButton:(RaisedButton * _Nonnull)sender;
+- (IBAction)bookButton:(RaisedButton * _Nonnull)sender;
+- (IBAction)gearButton:(Button * _Nonnull)sender;
+- (IBAction)electronicsButton:(RaisedButton * _Nonnull)sender;
+- (IBAction)sportsButton:(RaisedButton * _Nonnull)sender;
+- (IBAction)accessoryButton:(RaisedButton * _Nonnull)sender;
+- (IBAction)furnitureButton:(RaisedButton * _Nonnull)sender;
+- (IBAction)otherButton:(RaisedButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10HandMeDown9TagButton")
+@interface TagButton : UIButton
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

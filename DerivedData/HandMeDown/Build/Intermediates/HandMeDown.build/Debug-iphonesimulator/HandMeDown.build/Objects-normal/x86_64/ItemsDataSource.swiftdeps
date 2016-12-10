@@ -7,27 +7,27 @@ provides-member:
 - ["C10HandMeDown15ItemsDataSource", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Bool"
 - !private "BooleanLiteralType"
 - !private "+="
+- !private "Bundle"
 - !private "!"
-- !private "NSArray"
+- !private "NSDictionary"
+- !private "==="
+- !private "..<"
+- !private "StringLiteralType"
 - "Item"
 - "Int"
-- !private "StringLiteralType"
+- !private "NSArray"
 - "ItemsDataSource"
-- !private "Bundle"
 - !private "CastingPrecedence"
-- !private "==="
 - "AssignmentPrecedence"
-- !private "NSDictionary"
+- !private "Bool"
 - !private "=="
 - !private "IntegerLiteralType"
 - "String"
+- "IndexPath"
 - !private "FloatLiteralType"
 - !private ">"
-- !private "..<"
-- "IndexPath"
 depends-member:
 - !private ["Ps9AnyObject", "Bundle"]
 - !private ["Ps9AnyObject", "Element"]

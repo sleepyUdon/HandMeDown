@@ -11,14 +11,14 @@ provides-dynamic-lookup:
 - "itemDescriptionLabel"
 - "likeView"
 depends-top-level:
-- "Item"
+- "UICollectionViewCell"
 - !private "UIImage"
 - "UILabel"
-- "User"
+- "Item"
 - "AssignmentPrecedence"
-- "UICollectionViewCell"
 - "UIImageView"
 - "GoodiesCollectionViewCell"
+- "User"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "image"]

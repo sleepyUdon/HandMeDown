@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown21GoodiesViewController", ""]
 provides-dynamic-lookup:
-- "numberOfSections"
-- "collectionView"
-- "collectionView"
-- "collectionView"
 - "viewDidLoad"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "numberOfSections"
 depends-top-level:
+- "IndexPath"
+- "UICollectionView"
+- !private "UICollectionViewFlowLayout"
+- "UIViewController"
+- "ItemsDataSource"
 - "UICollectionViewCell"
-- "Int"
+- "StringLiteralType"
+- "GoodiesViewController"
 - !private "/"
 - !private "CGSize"
-- "UIViewController"
-- !private "GoodiesCollectionViewCell"
-- "UICollectionView"
-- "ItemsDataSource"
-- "StringLiteralType"
-- !private "UICollectionViewFlowLayout"
-- "UICollectionViewDelegate"
+- "Int"
+- "CastingPrecedence"
 - "AssignmentPrecedence"
 - "UICollectionViewDataSource"
-- "CastingPrecedence"
-- "IndexPath"
-- "GoodiesViewController"
+- "UICollectionViewDelegate"
+- !private "GoodiesCollectionViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
 - ["Ps9AnyObject", "ItemsDataSource"]
