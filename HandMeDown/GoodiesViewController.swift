@@ -7,24 +7,29 @@
 //
 
 import UIKit
+import Material
 
-class GoodiesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class GoodiesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var filterButton: RaisedButton!
+    
     
     fileprivate var itemsDataSource = ItemsDataSource()
     fileprivate let reuseIdentifier = "GoodiesCollectionViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let width = collectionView!.frame.width / 2
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: width, height: width)
-        
+        self.prepareLayout()
     }
     
-
+    // MARK: Prepare Layout
+    
+    func prepareLayout(){
+        self.filterButton.cornerRadius = self.filterButton.frame.height/2
+        self.filterButton.backgroundColor = Colors.blue.light4
+        self.filterButton.titleLabel?.font = Fonts.button.BT2
+    }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        if segue.identifier == "MasterToDetail" {
@@ -32,6 +37,13 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
 //            detailViewController.paper = sender as? Paper
 //        }
 //    }
+    
+    
+    // MARK: CollectionView Cell Size
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: (self.view.frame.width - 30)/2, height:200)
+    }
     
     
     // MARK: UICollectionViewDataSource

@@ -1,0 +1,106 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Screen"
+provides-nominal:
+- "V8Material6Screen"
+provides-member:
+- ["V8Material6Screen", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "CGRect"
+- "CGFloat"
+- !private "UIScreen"
+- "Screen"
+depends-member:
+- !private ["Ps9AnyObject", "bounds"]
+- !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "scale"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- ["VSC6CGRect", "deinit"]
+- !private ["VSC6CGRect", "height"]
+- !private ["VSC6CGRect", "width"]
+- !private ["Ps7CVarArg", "bounds"]
+- !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "scale"]
+- !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- !private ["Ps28CustomDebugStringConvertible", "height"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "scale"]
+- !private ["Ps28CustomDebugStringConvertible", "width"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "height"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "width"]
+- !private ["Ps17CustomReflectable", "height"]
+- !private ["Ps17CustomReflectable", "width"]
+- !private ["Ps23CustomStringConvertible", "bounds"]
+- !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "scale"]
+- !private ["Ps9Equatable", "bounds"]
+- !private ["Ps9Equatable", "height"]
+- !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "scale"]
+- !private ["Ps9Equatable", "width"]
+- !private ["Ps8Hashable", "bounds"]
+- !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "scale"]
+- !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "scale"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "scale"]
+- ["V8Material6Screen", "CGFloat"]
+- ["V8Material6Screen", "CGRect"]
+- !private ["V8Material6Screen", "UIScreen"]
+- ["V8Material6Screen", "bounds"]
+- ["V8Material6Screen", "height"]
+- ["V8Material6Screen", "init"]
+- ["V8Material6Screen", "scale"]
+- ["V8Material6Screen", "width"]
+- !private ["CSo8UIScreen", "bounds"]
+- ["CSo8UIScreen", "deinit"]
+- !private ["CSo8UIScreen", "main"]
+- !private ["CSo8UIScreen", "scale"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- !private ["PSo18UITraitEnvironment", "main"]
+- !private ["PSo18UITraitEnvironment", "scale"]
+- !private ["Ps9_Hashable", "bounds"]
+- !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "scale"]
+- !private ["Ps21_ObjectiveCBridgeable", "height"]
+- !private ["Ps21_ObjectiveCBridgeable", "width"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- "V12CoreGraphics7CGFloat"
+- "VSC6CGRect"
+- !private "Ps7CVarArg"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps8Hashable"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- "V8Material6Screen"
+- "CSo8UIScreen"
+- !private "PSo18UITraitEnvironment"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Intermediates/Pods.build/Debug-iphoneos/Material.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+interface-hash: "3b9369f8bcd96741f97cb05d44ced91a"

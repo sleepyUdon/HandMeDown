@@ -137,6 +137,23 @@ SWIFT_CLASS("_TtC10HandMeDown11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImage;
+@class CIColor;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC10HandMeDown6Colors")
+@interface Colors : UIColor
+- (nonnull instancetype)initWithWhite:(CGFloat)white alpha:(CGFloat)alpha OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithHue:(CGFloat)hue saturation:(CGFloat)saturation brightness:(CGFloat)brightness alpha:(CGFloat)alpha OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithDisplayP3Red:(CGFloat)displayP3Red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCGColor:(CGColorRef _Nonnull)cgColor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithPatternImage:(UIImage * _Nonnull)image OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCIColor:(CIColor * _Nonnull)ciColor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC10HandMeDown5Fonts")
 @interface Fonts : UIFont
@@ -145,7 +162,6 @@ SWIFT_CLASS("_TtC10HandMeDown5Fonts")
 
 @class UIImageView;
 @class UILabel;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC10HandMeDown25GoodiesCollectionViewCell")
 @interface GoodiesCollectionViewCell : UICollectionViewCell
@@ -158,12 +174,17 @@ SWIFT_CLASS("_TtC10HandMeDown25GoodiesCollectionViewCell")
 @end
 
 @class UICollectionView;
+@class UICollectionViewLayout;
+@class RaisedButton;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC10HandMeDown21GoodiesViewController")
-@interface GoodiesViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
+@interface GoodiesViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
+@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified filterButton;
 - (void)viewDidLoad;
+- (void)prepareLayout;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -173,7 +194,6 @@ SWIFT_CLASS("_TtC10HandMeDown21GoodiesViewController")
 
 @class UIImagePickerController;
 @class UIButton;
-@class RaisedButton;
 @class Button;
 
 SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
@@ -191,16 +211,17 @@ SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified gearButton;
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified electronicsButton;
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified sportsButton;
-@property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified accessoryButton;
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified furnitureButton;
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified otherButton;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pictureView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified pictureButton;
 @property (nonatomic, copy) NSString * _Nullable itemTitle;
 @property (nonatomic, copy) NSString * _Nullable itemDescription;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable category;
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull picker;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)prepareLayout;
 - (IBAction)HandlePostButton:(UIButton * _Nonnull)sender;
 - (IBAction)HandleAddPictureButton:(UIButton * _Nonnull)sender;
 - (void)openCamera;
@@ -223,7 +244,6 @@ SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 - (IBAction)gearButton:(Button * _Nonnull)sender;
 - (IBAction)electronicsButton:(RaisedButton * _Nonnull)sender;
 - (IBAction)sportsButton:(RaisedButton * _Nonnull)sender;
-- (IBAction)accessoryButton:(RaisedButton * _Nonnull)sender;
 - (IBAction)furnitureButton:(RaisedButton * _Nonnull)sender;
 - (IBAction)otherButton:(RaisedButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

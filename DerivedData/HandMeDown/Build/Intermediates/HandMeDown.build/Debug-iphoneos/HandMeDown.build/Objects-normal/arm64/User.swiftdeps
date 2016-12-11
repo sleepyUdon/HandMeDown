@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "User"
-- "Item"
-- "AssignmentPrecedence"
 - "String"
+- "AssignmentPrecedence"
+- "Item"
 depends-member:
 - !private ["Ps9AnyObject", "firstName"]
 - !private ["Ps9AnyObject", "image"]
