@@ -13,9 +13,9 @@ provides-member:
 - ["CC10HandMeDown5Fonts6button", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "StringLiteralType"
 - "Fonts"
 - "UIFont"
-- "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "UIFont"]
 - ["Ps9AnyObject", "init"]

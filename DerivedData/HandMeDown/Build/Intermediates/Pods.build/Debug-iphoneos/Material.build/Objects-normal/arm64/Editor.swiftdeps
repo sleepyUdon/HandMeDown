@@ -42,6 +42,7 @@ provides-dynamic-lookup:
 - "layoutManager"
 - "string"
 depends-top-level:
+- !private "EdgeInsetsPresetToValue"
 - "UITextViewDelegate"
 - "EdgeInsets"
 - "NSTextCheckingResult"
@@ -53,7 +54,6 @@ depends-top-level:
 - "UITextView"
 - "NSLayoutManager"
 - !private "<"
-- !private "EdgeInsetsPresetToValue"
 - "AssignmentPrecedence"
 - !private "&&"
 - "View"

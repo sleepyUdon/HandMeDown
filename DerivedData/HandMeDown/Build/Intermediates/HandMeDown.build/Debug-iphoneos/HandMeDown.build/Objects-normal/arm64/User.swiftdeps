@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown4User", ""]
 provides-dynamic-lookup:
-- "image"
 - "lastName"
 - "firstName"
+- "image"
 depends-top-level:
+- "String"
 - "User"
+- "AssignmentPrecedence"
 - "StringLiteralType"
 - "Object"
-- "String"
-- "AssignmentPrecedence"
 depends-member:
 - ["Ps9AnyObject", "firstName"]
 - ["Ps9AnyObject", "image"]

@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C8Material14CollectionView", ""]
 provides-dynamic-lookup:
+- "interimSpacePreset"
 - "contentEdgeInsetsPreset"
 - "interimSpace"
 - "prepare"
 - "contentEdgeInsets"
 - "scrollDirection"
-- "interimSpacePreset"
 depends-top-level:
-- "EdgeInsetsPreset"
+- "EdgeInsets"
+- "CGRect"
+- !private "InterimSpacePresetToValue"
+- !private "CollectionViewLayout"
+- "InterimSpacePreset"
+- "InterimSpace"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
 - "UICollectionViewLayout"
+- "EdgeInsetsPreset"
+- !private "Screen"
+- "UICollectionViewScrollDirection"
 - "CollectionView"
 - "NSCoder"
-- "UICollectionViewScrollDirection"
 - "UICollectionView"
-- "AssignmentPrecedence"
-- "CGRect"
-- "CastingPrecedence"
-- !private "Screen"
-- "EdgeInsets"
-- !private "CollectionViewLayout"
-- !private "InterimSpacePresetToValue"
-- "InterimSpace"
-- "InterimSpacePreset"
 depends-member:
 - !private ["Ps9AnyObject", "CollectionViewLayout"]
 - ["Ps9AnyObject", "InterimSpacePreset"]

@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 - "contentsRect"
 - "contentsCenter"
+- "visualLayer"
 - "image"
 - "layoutSubviews"
 - "backgroundColor"
 - "prepare"
-- "visualLayer"
 - "contentsScale"
 - "contentsGravityPreset"
 - "contentsGravity"

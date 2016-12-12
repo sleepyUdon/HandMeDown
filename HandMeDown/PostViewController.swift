@@ -45,11 +45,10 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     var itemTitle: String?
     var itemDescription: String?
-    var category: [String]?
     let picker = UIImagePickerController()
     
     var pictureData: NSData?
-    
+    var categories = [String]()
     let items: [Item] = {
         let realm = try! Realm()
         return Array(realm.objects(Item))
@@ -68,7 +67,6 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     // ViewWillAppear
 
     override func viewWillAppear(_ animated: Bool) {
-
         self.prepareLayout()
     }
     
@@ -164,7 +162,18 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     @IBAction func HandlePostButton(_ sender: UIButton) {
         let realm = try! Realm()
-        let item = Item(title: "Socks", itemDescription: "Very cute", image: self.pictureData!, like: "heart", category: "Toy", user: "Viviane")
+        let item = Item()
+        item.title = "Socks"
+        item.itemDescription = "Very Cute"
+        item.image = self.pictureData
+        item.like = "heart"
+
+        for category in self.categories {
+            let cat = Category(name: category)
+            item.categories.append(cat)
+        }
+        item.user = "Viviane"
+        
         try! realm.write {
             realm.add(item)
         }
@@ -244,10 +253,14 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.boyButton.backgroundColor = Colors.blue.light2
             self.boyButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.boyButton.isSelected = true
+            self.categories.append("Boy")
         } else {
             self.boyButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.boyButton.isSelected = false
             self.boyButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = categories.index(of: "Boy") {
+                categories.remove(at: index)
+            }
         }
     }
     

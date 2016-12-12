@@ -116,9 +116,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import RealmSwift;
 @import CoreGraphics;
 @import Foundation;
-@import RealmSwift;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -136,6 +136,20 @@ SWIFT_CLASS("_TtC10HandMeDown11AppDelegate")
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class RLMRealm;
+@class RLMObjectSchema;
+@class RLMSchema;
+
+SWIFT_CLASS("_TtC10HandMeDown8Category")
+@interface Category : RealmSwiftObject
+@property (nonatomic, copy) NSString * _Nonnull name;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithValue:(id _Nonnull)value OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRealm:(RLMRealm * _Nonnull)realm schema:(RLMObjectSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIImage;
@@ -197,9 +211,6 @@ SWIFT_CLASS("_TtC10HandMeDown21GoodiesViewController")
 @end
 
 @class NSData;
-@class RLMRealm;
-@class RLMObjectSchema;
-@class RLMSchema;
 
 SWIFT_CLASS("_TtC10HandMeDown4Item")
 @interface Item : RealmSwiftObject
@@ -207,9 +218,7 @@ SWIFT_CLASS("_TtC10HandMeDown4Item")
 @property (nonatomic, copy) NSString * _Nonnull itemDescription;
 @property (nonatomic, strong) NSData * _Nullable image;
 @property (nonatomic, copy) NSString * _Nonnull like;
-@property (nonatomic, copy) NSString * _Nonnull category;
 @property (nonatomic, copy) NSString * _Nonnull user;
-- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title itemDescription:(NSString * _Nonnull)itemDescription image:(NSData * _Nonnull)image like:(NSString * _Nonnull)like category:(NSString * _Nonnull)category user:(NSString * _Nonnull)user;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithValue:(id _Nonnull)value OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithRealm:(RLMRealm * _Nonnull)realm schema:(RLMObjectSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
@@ -246,9 +255,9 @@ SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descriptionTextView;
 @property (nonatomic, copy) NSString * _Nullable itemTitle;
 @property (nonatomic, copy) NSString * _Nullable itemDescription;
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable category;
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull picker;
 @property (nonatomic, strong) NSData * _Nullable pictureData;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull categories;
 @property (nonatomic, readonly, copy) NSArray<Item *> * _Nonnull items;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;

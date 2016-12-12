@@ -10,20 +10,20 @@ provides-member:
 - ["V8Material6Motion", "path"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "AnimationKeyPath"
-- "String"
+- "AnimationRotationModeToValue"
+- "AnimationRotationMode"
 - !private "kCAAnimationRotateAutoReverse"
+- "UIBezierPath"
 - !private "~="
 - "=="
+- !private "AnimationKeyPath"
 - "AssignmentPrecedence"
 - "Motion"
 - "Int"
-- "UIBezierPath"
-- "AnimationRotationModeToValue"
-- "AnimationRotationMode"
 - "CFTimeInterval"
 - "CAKeyframeAnimation"
 - !private "kCAAnimationRotateAuto"
+- "String"
 depends-member:
 - ["O8Material16AnimationKeyPath", "deinit"]
 - !private ["O8Material16AnimationKeyPath", "position"]

@@ -6,29 +6,29 @@ provides-nominal:
 provides-member:
 - ["C8Material5Layer", ""]
 provides-dynamic-lookup:
-- "cornerRadius"
-- "contentsRect"
 - "visualLayer"
-- "contentsCenter"
-- "image"
-- "layoutSublayers"
 - "contentsGravity"
 - "contentsScale"
 - "prepareVisualLayer"
 - "contentsGravityPreset"
 - "layoutVisualLayer"
+- "cornerRadius"
+- "contentsRect"
+- "layoutSublayers"
+- "contentsCenter"
+- "image"
 depends-top-level:
-- "String"
-- "CGRect"
-- "UIImage"
-- "CGFloat"
-- "AssignmentPrecedence"
 - !private "GravityToValue"
 - "Gravity"
 - "NSCoder"
-- !private "BooleanLiteralType"
 - "CAShapeLayer"
+- "CGFloat"
+- "AssignmentPrecedence"
+- "String"
+- "CGRect"
+- "UIImage"
 - "Layer"
+- !private "BooleanLiteralType"
 depends-member:
 - ["Ps9AnyObject", "CAShapeLayer"]
 - !private ["Ps9AnyObject", "GravityToValue"]

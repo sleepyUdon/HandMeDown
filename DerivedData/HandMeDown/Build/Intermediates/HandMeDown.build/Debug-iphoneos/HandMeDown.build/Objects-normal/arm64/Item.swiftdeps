@@ -7,20 +7,22 @@ provides-member:
 - ["C10HandMeDown4Item", ""]
 provides-dynamic-lookup:
 - "image"
+- "title"
 - "user"
 - "like"
-- "title"
 - "itemDescription"
-- "category"
 depends-top-level:
+- "Category"
 - "Item"
-- "Object"
 - "NSData"
-- "String"
+- "List"
+- "Object"
 - "AssignmentPrecedence"
 - "StringLiteralType"
+- "String"
 depends-member:
-- ["Ps9AnyObject", "category"]
+- ["Ps9AnyObject", "List"]
+- ["Ps9AnyObject", "categories"]
 - ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "itemDescription"]
@@ -28,7 +30,10 @@ depends-member:
 - ["Ps9AnyObject", "title"]
 - ["Ps9AnyObject", "user"]
 - ["Ps9AnyObject", ""]
-- ["Ps7CVarArg", "category"]
+- ["Ps23BidirectionalCollection", "init"]
+- ["Ps22BidirectionalIndexable", "init"]
+- ["Ps7CVarArg", "List"]
+- ["Ps7CVarArg", "categories"]
 - ["Ps7CVarArg", "image"]
 - ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "itemDescription"]
@@ -36,8 +41,10 @@ depends-member:
 - ["Ps7CVarArg", "title"]
 - ["Ps7CVarArg", "user"]
 - ["Ps7CVarArg", ""]
+- ["Ps10Collection", "init"]
 - ["Ps10Comparable", "init"]
-- ["Ps28CustomDebugStringConvertible", "category"]
+- ["Ps28CustomDebugStringConvertible", "List"]
+- ["Ps28CustomDebugStringConvertible", "categories"]
 - ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "itemDescription"]
@@ -47,7 +54,8 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - ["Ps17CustomReflectable", "init"]
-- ["Ps23CustomStringConvertible", "category"]
+- ["Ps23CustomStringConvertible", "List"]
+- ["Ps23CustomStringConvertible", "categories"]
 - ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "itemDescription"]
@@ -55,7 +63,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "title"]
 - ["Ps23CustomStringConvertible", "user"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Ps9Equatable", "category"]
+- ["Ps9Equatable", "List"]
+- ["Ps9Equatable", "categories"]
 - ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "itemDescription"]
@@ -67,7 +76,8 @@ depends-member:
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- ["Ps8Hashable", "category"]
+- ["Ps8Hashable", "List"]
+- ["Ps8Hashable", "categories"]
 - ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "itemDescription"]
@@ -75,9 +85,13 @@ depends-member:
 - ["Ps8Hashable", "title"]
 - ["Ps8Hashable", "user"]
 - ["Ps8Hashable", ""]
+- ["Ps9Indexable", "init"]
+- ["Ps13IndexableBase", "init"]
+- ["C10HandMeDown4Item", "Category"]
+- ["C10HandMeDown4Item", "List"]
 - ["C10HandMeDown4Item", "NSData"]
 - ["C10HandMeDown4Item", "String"]
-- ["C10HandMeDown4Item", "category"]
+- ["C10HandMeDown4Item", "categories"]
 - ["C10HandMeDown4Item", "deinit"]
 - ["C10HandMeDown4Item", "image"]
 - ["C10HandMeDown4Item", "init"]
@@ -85,22 +99,30 @@ depends-member:
 - ["C10HandMeDown4Item", "like"]
 - ["C10HandMeDown4Item", "title"]
 - ["C10HandMeDown4Item", "user"]
+- ["Ps22LazyCollectionProtocol", "init"]
+- ["Ps20LazySequenceProtocol", "init"]
+- ["C10RealmSwift4List", "deinit"]
+- ["C10RealmSwift4List", "init"]
 - ["Ps25LosslessStringConvertible", "init"]
 - ["Ps10MirrorPath", "init"]
 - ["PSo8NSCoding", "init"]
 - ["PSo9NSCopying", "init"]
 - ["CSo6NSData", "deinit"]
+- ["PSo17NSFastEnumeration", "init"]
 - ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Category"]
+- ["CSo8NSObject", "List"]
 - ["CSo8NSObject", "NSData"]
 - ["CSo8NSObject", "String"]
-- ["CSo8NSObject", "category"]
+- ["CSo8NSObject", "categories"]
 - ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "itemDescription"]
 - ["CSo8NSObject", "like"]
 - ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "user"]
-- ["PSo16NSObjectProtocol", "category"]
+- ["PSo16NSObjectProtocol", "List"]
+- ["PSo16NSObjectProtocol", "categories"]
 - ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "itemDescription"]
@@ -110,9 +132,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
+- ["C10RealmSwift6Object", "Category"]
+- ["C10RealmSwift6Object", "List"]
 - ["C10RealmSwift6Object", "NSData"]
 - ["C10RealmSwift6Object", "String"]
-- ["C10RealmSwift6Object", "category"]
+- ["C10RealmSwift6Object", "categories"]
 - ["C10RealmSwift6Object", "deinit"]
 - ["C10RealmSwift6Object", "image"]
 - ["C10RealmSwift6Object", "init"]
@@ -122,9 +146,11 @@ depends-member:
 - ["C10RealmSwift6Object", "user"]
 - ["C10RealmSwift6Object", ""]
 - ["Sq", "deinit"]
+- ["CSo13RLMObjectBase", "Category"]
+- ["CSo13RLMObjectBase", "List"]
 - ["CSo13RLMObjectBase", "NSData"]
 - ["CSo13RLMObjectBase", "String"]
-- ["CSo13RLMObjectBase", "category"]
+- ["CSo13RLMObjectBase", "categories"]
 - ["CSo13RLMObjectBase", "image"]
 - ["CSo13RLMObjectBase", "init"]
 - ["CSo13RLMObjectBase", "itemDescription"]
@@ -134,6 +160,12 @@ depends-member:
 - ["CSo15RLMObjectSchema", "deinit"]
 - ["CSo8RLMRealm", "deinit"]
 - ["CSo9RLMSchema", "deinit"]
+- ["Ps22RandomAccessCollection", "init"]
+- ["Ps21RandomAccessIndexable", "init"]
+- ["Ps26RangeReplaceableCollection", "init"]
+- ["Ps25RangeReplaceableIndexable", "init"]
+- ["P10RealmSwift15RealmCollection", "init"]
+- ["Ps8Sequence", "init"]
 - ["SS", "deinit"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
@@ -143,7 +175,8 @@ depends-member:
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- ["Ps9_Hashable", "category"]
+- ["Ps9_Hashable", "List"]
+- ["Ps9_Hashable", "categories"]
 - ["Ps9_Hashable", "image"]
 - ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "itemDescription"]
@@ -154,7 +187,10 @@ depends-member:
 - ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
+- "Ps23BidirectionalCollection"
+- "Ps22BidirectionalIndexable"
 - "Ps7CVarArg"
+- "Ps10Collection"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
@@ -166,12 +202,18 @@ depends-nominal:
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
+- "Ps9Indexable"
+- "Ps13IndexableBase"
 - "C10HandMeDown4Item"
+- "Ps22LazyCollectionProtocol"
+- "Ps20LazySequenceProtocol"
+- "C10RealmSwift4List"
 - "Ps25LosslessStringConvertible"
 - "Ps10MirrorPath"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
 - "CSo6NSData"
+- "PSo17NSFastEnumeration"
 - "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -183,6 +225,12 @@ depends-nominal:
 - "CSo15RLMObjectSchema"
 - "CSo8RLMRealm"
 - "CSo9RLMSchema"
+- "Ps22RandomAccessCollection"
+- "Ps21RandomAccessIndexable"
+- "Ps26RangeReplaceableCollection"
+- "Ps25RangeReplaceableIndexable"
+- "P10RealmSwift15RealmCollection"
+- "Ps8Sequence"
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
@@ -255,4 +303,4 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
-interface-hash: "ee524aca851562237cf030e6674fbcd1"
+interface-hash: "f13c015fc1673b4b3ec4535390d950d8"
