@@ -18,7 +18,6 @@
 		7C99451F1DF8F032001C621F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C99451E1DF8F032001C621F /* Item.swift */; };
 		7C9945251DF8F143001C621F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9945241DF8F143001C621F /* User.swift */; };
 		7C9945271DF8F346001C621F /* GoodiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9945261DF8F346001C621F /* GoodiesCollectionViewCell.swift */; };
-		7C9945291DF8F6A1001C621F /* ItemsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9945281DF8F6A1001C621F /* ItemsDataSource.swift */; };
 		7C99452C1DF8F989001C621F /* Items.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C99452B1DF8F989001C621F /* Items.plist */; };
 		7C9D94F91DFC33D800F38752 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D94F81DFC33D800F38752 /* Fonts.swift */; };
 		7C9D94FB1DFC9F2A00F38752 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D94FA1DFC9F2A00F38752 /* Colors.swift */; };
@@ -68,7 +67,6 @@
 		7C99451E1DF8F032001C621F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		7C9945241DF8F143001C621F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7C9945261DF8F346001C621F /* GoodiesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodiesCollectionViewCell.swift; sourceTree = "<group>"; };
-		7C9945281DF8F6A1001C621F /* ItemsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsDataSource.swift; sourceTree = "<group>"; };
 		7C99452B1DF8F989001C621F /* Items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Items.plist; sourceTree = "<group>"; };
 		7C9D94F81DFC33D800F38752 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		7C9D94FA1DFC9F2A00F38752 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 			children = (
 				7C90CC361DE4F57600C542E0 /* AppDelegate.swift */,
 				7C9D94F71DFB5D1100F38752 /* Common */,
-				7C99452A1DF8F6A6001C621F /* DataSources */,
 				7C9945211DF8F052001C621F /* View Controllers */,
 				7C9945221DF8F062001C621F /* Storyboards */,
 				7C90CC3F1DE4F57600C542E0 /* Assets.xcassets */,
@@ -195,14 +192,6 @@
 				7C99452B1DF8F989001C621F /* Items.plist */,
 			);
 			name = "Support files";
-			sourceTree = "<group>";
-		};
-		7C99452A1DF8F6A6001C621F /* DataSources */ = {
-			isa = PBXGroup;
-			children = (
-				7C9945281DF8F6A1001C621F /* ItemsDataSource.swift */,
-			);
-			name = DataSources;
 			sourceTree = "<group>";
 		};
 		7C9D94F71DFB5D1100F38752 /* Common */ = {
@@ -528,7 +517,6 @@
 				7C90CC3B1DE4F57600C542E0 /* PostViewController.swift in Sources */,
 				7C90CC371DE4F57600C542E0 /* AppDelegate.swift in Sources */,
 				7C9945251DF8F143001C621F /* User.swift in Sources */,
-				7C9945291DF8F6A1001C621F /* ItemsDataSource.swift in Sources */,
 				7C90CC391DE4F57600C542E0 /* GoodiesViewController.swift in Sources */,
 				7C9945271DF8F346001C621F /* GoodiesCollectionViewCell.swift in Sources */,
 			);

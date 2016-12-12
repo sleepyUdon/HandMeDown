@@ -8,6 +8,7 @@
 
 import UIKit
 import Material
+import RealmSwift
 
 class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -46,6 +47,11 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var itemDescription: String?
     var category: [String]?
     let picker = UIImagePickerController()
+    
+    let items: [Item] = {
+        let realm = try! Realm()
+        return Array(realm.objects(Item))
+   }()
 
     
             
@@ -54,14 +60,13 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
-
     }
     
 
     // ViewWillAppear
 
     override func viewWillAppear(_ animated: Bool) {
-        
+
         self.prepareLayout()
     }
     
@@ -149,13 +154,18 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     }
     
+    
 // MARK: Actions
     
     
     // Handle Post Button
     
     @IBAction func HandlePostButton(_ sender: UIButton) {
-        
+        let realm = try! Realm()
+        let item = Item(title: "Socks", itemDescription: "Very cute", image: "Pikachu", like: "heart", category: "Toy")
+        try! realm.write {
+            realm.add(item)
+        }
     }
     
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -181,7 +191,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
         
         // Add the actions
-//        picker.allowsEditing = true
+        
         alert.addAction(cameraAction)
         alert.addAction(galleryAction)
         alert.addAction(cancelAction)

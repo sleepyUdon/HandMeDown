@@ -850,6 +850,9 @@
                                         <state key="normal" title="P O S T">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="HandlePostButton:" destination="Jk0-FK-fa1" eventType="touchUpInside" id="C8Y-kb-54t"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -1011,7 +1014,7 @@
                 <navigationController title="Goodies" automaticallyAdjustsScrollViewInsets="NO" id="fER-Mk-BRQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" image="home" id="acW-dT-cKf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="hng-Rf-4l2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hng-Rf-4l2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1030,7 +1033,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JII-cB-UNg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Stuff" image="home" id="cPa-gy-q4n"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Y0J-wg-CHo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y0J-wg-CHo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1049,7 +1052,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DvJ-1U-Sa2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Post" image="home" id="vWd-p7-Skx"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kss-8H-h2P">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kss-8H-h2P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1068,7 +1071,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ouj-CM-3iy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Friends" image="home" id="2iA-sR-GXi"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="U2O-oK-BAD">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U2O-oK-BAD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1087,7 +1090,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yUJ-NX-tSc" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Likes" image="home" id="xvg-Oa-SCb"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fYp-VX-bJp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fYp-VX-bJp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
