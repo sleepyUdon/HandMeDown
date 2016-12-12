@@ -23,5 +23,65 @@
             <key>category</key>
             <string>toy</string>
         </dict>
+        <dict>
+            <key>title</key>
+            <string>Pikachu</string>
+            <key>itemDescription</key>
+            <string>Cute Pikachu. Limited edition.</string>
+            <key>image</key>
+            <string>Pikachu</string>
+            <key>like</key>
+            <string>heart</string>
+            <key>category</key>
+            <string>toy</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>Pikachu</string>
+            <key>itemDescription</key>
+            <string>Cute Pikachu. Limited edition.</string>
+            <key>image</key>
+            <string>Pikachu</string>
+            <key>like</key>
+            <string>heart</string>
+            <key>category</key>
+            <string>toy</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>Pikachu</string>
+            <key>itemDescription</key>
+            <string>Cute Pikachu. Limited edition.</string>
+            <key>image</key>
+            <string>Pikachu</string>
+            <key>like</key>
+            <string>heart</string>
+            <key>category</key>
+            <string>toy</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>Pikachu</string>
+            <key>itemDescription</key>
+            <string>Cute Pikachu. Limited edition.</string>
+            <key>image</key>
+            <string>Pikachu</string>
+            <key>like</key>
+            <string>heart</string>
+            <key>category</key>
+            <string>toy</string>
+        </dict>
+        <dict>
+            <key>title</key>
+            <string>Pikachu</string>
+            <key>itemDescription</key>
+            <string>Cute Pikachu. Limited edition.</string>
+            <key>image</key>
+            <string>Pikachu</string>
+            <key>like</key>
+            <string>heart</string>
+            <key>category</key>
+            <string>toy</string>
+        </dict>
     </array>
 </plist>

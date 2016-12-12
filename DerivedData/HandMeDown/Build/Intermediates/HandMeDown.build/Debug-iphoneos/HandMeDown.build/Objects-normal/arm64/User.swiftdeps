@@ -7,10 +7,10 @@ provides-member:
 - ["C10HandMeDown4User", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "User"
-- "Item"
-- "AssignmentPrecedence"
 - "String"
+- "Item"
+- "User"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "firstName"]
 - !private ["Ps9AnyObject", "image"]
