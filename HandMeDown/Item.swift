@@ -13,18 +13,19 @@ import RealmSwift
 class Item: Object {
     dynamic var title = ""
     dynamic var itemDescription = ""
-    dynamic var image = ""
+    dynamic var image : NSData? = nil 
     dynamic var like = ""
     dynamic var category = ""
+    dynamic var user = ""
     
-    
-    convenience public init(title:String, itemDescription: String, image: String, like: String, category: String) {
+    convenience public init(title:String, itemDescription: String, image: NSData, like: String, category: String, user: String) {
         self.init()
         self.title = title
         self.itemDescription = itemDescription
         self.image = image
         self.like = like
         self.category = category
+        self.user = user
     }
     
     

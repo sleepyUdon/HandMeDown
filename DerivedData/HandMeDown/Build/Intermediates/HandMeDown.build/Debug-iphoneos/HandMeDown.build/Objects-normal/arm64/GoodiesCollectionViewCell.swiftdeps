@@ -1,0 +1,454 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GoodiesCollectionViewCell"
+provides-nominal:
+- "C10HandMeDown25GoodiesCollectionViewCell"
+provides-member:
+- ["C10HandMeDown25GoodiesCollectionViewCell", ""]
+provides-dynamic-lookup:
+- "itemDescriptionLabel"
+- "imageView"
+- "configureWithItem"
+- "likeView"
+- "userPictureView"
+depends-top-level:
+- "GoodiesCollectionViewCell"
+- "Item"
+- "UIImageView"
+- "UILabel"
+- !private "UIImage"
+- "CastingPrecedence"
+- "UICollectionViewCell"
+- "AssignmentPrecedence"
+- !private "Data"
+depends-member:
+- !private ["Ps9AnyObject", "UIImage"]
+- ["Ps9AnyObject", "configureWithItem"]
+- !private ["Ps9AnyObject", "image"]
+- ["Ps9AnyObject", "imageView"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "itemDescription"]
+- ["Ps9AnyObject", "itemDescriptionLabel"]
+- !private ["Ps9AnyObject", "like"]
+- ["Ps9AnyObject", "likeView"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "user"]
+- ["Ps9AnyObject", "userPictureView"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "UIImage"]
+- ["PSo15CALayerDelegate", "configureWithItem"]
+- !private ["PSo15CALayerDelegate", "image"]
+- ["PSo15CALayerDelegate", "imageView"]
+- !private ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", "itemDescriptionLabel"]
+- ["PSo15CALayerDelegate", "likeView"]
+- !private ["PSo15CALayerDelegate", "text"]
+- ["PSo15CALayerDelegate", "userPictureView"]
+- ["PSo15CALayerDelegate", ""]
+- ["VSC6CGRect", "deinit"]
+- !private ["Ps7CVarArg", "UIImage"]
+- ["Ps7CVarArg", "configureWithItem"]
+- !private ["Ps7CVarArg", "image"]
+- ["Ps7CVarArg", "imageView"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "itemDescription"]
+- ["Ps7CVarArg", "itemDescriptionLabel"]
+- !private ["Ps7CVarArg", "like"]
+- ["Ps7CVarArg", "likeView"]
+- !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "user"]
+- ["Ps7CVarArg", "userPictureView"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- ["Ps28CustomDebugStringConvertible", "configureWithItem"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- ["Ps28CustomDebugStringConvertible", "imageView"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "itemDescription"]
+- ["Ps28CustomDebugStringConvertible", "itemDescriptionLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "like"]
+- ["Ps28CustomDebugStringConvertible", "likeView"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "user"]
+- ["Ps28CustomDebugStringConvertible", "userPictureView"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- ["Ps23CustomStringConvertible", "configureWithItem"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- ["Ps23CustomStringConvertible", "imageView"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "itemDescription"]
+- ["Ps23CustomStringConvertible", "itemDescriptionLabel"]
+- !private ["Ps23CustomStringConvertible", "like"]
+- ["Ps23CustomStringConvertible", "likeView"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "user"]
+- ["Ps23CustomStringConvertible", "userPictureView"]
+- ["Ps23CustomStringConvertible", ""]
+- ["V10Foundation4Data", "deinit"]
+- !private ["Ps9Equatable", "UIImage"]
+- ["Ps9Equatable", "configureWithItem"]
+- !private ["Ps9Equatable", "image"]
+- ["Ps9Equatable", "imageView"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "itemDescription"]
+- ["Ps9Equatable", "itemDescriptionLabel"]
+- !private ["Ps9Equatable", "like"]
+- ["Ps9Equatable", "likeView"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "user"]
+- ["Ps9Equatable", "userPictureView"]
+- ["Ps9Equatable", ""]
+- !private ["C10HandMeDown25GoodiesCollectionViewCell", "Data"]
+- ["C10HandMeDown25GoodiesCollectionViewCell", "Item"]
+- !private ["C10HandMeDown25GoodiesCollectionViewCell", "UIImage"]
+- ["C10HandMeDown25GoodiesCollectionViewCell", "UIImageView"]
+- ["C10HandMeDown25GoodiesCollectionViewCell", "UILabel"]
+- ["C10HandMeDown25GoodiesCollectionViewCell", "configureWithItem"]
+- ["C10HandMeDown25GoodiesCollectionViewCell", "deinit"]
+- ["C10HandMeDown25GoodiesCollectionViewCell", "imageView"]
+- ["C10HandMeDown25GoodiesCollectionViewCell", "init"]
+- ["C10HandMeDown25GoodiesCollectionViewCell", "itemDescriptionLabel"]
+- ["C10HandMeDown25GoodiesCollectionViewCell", "likeView"]
+- ["C10HandMeDown25GoodiesCollectionViewCell", "userPictureView"]
+- !private ["Ps8Hashable", "UIImage"]
+- ["Ps8Hashable", "configureWithItem"]
+- !private ["Ps8Hashable", "image"]
+- ["Ps8Hashable", "imageView"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "itemDescription"]
+- ["Ps8Hashable", "itemDescriptionLabel"]
+- !private ["Ps8Hashable", "like"]
+- ["Ps8Hashable", "likeView"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "user"]
+- ["Ps8Hashable", "userPictureView"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["C10HandMeDown4Item", "deinit"]
+- !private ["C10HandMeDown4Item", "image"]
+- !private ["C10HandMeDown4Item", "itemDescription"]
+- !private ["C10HandMeDown4Item", "like"]
+- !private ["C10HandMeDown4Item", "user"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "UIImage"]
+- ["PSo8NSCoding", "configureWithItem"]
+- !private ["PSo8NSCoding", "image"]
+- ["PSo8NSCoding", "imageView"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "itemDescriptionLabel"]
+- ["PSo8NSCoding", "likeView"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "userPictureView"]
+- ["PSo8NSCoding", ""]
+- !private ["CSo8NSObject", "Data"]
+- ["CSo8NSObject", "Item"]
+- !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "configureWithItem"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "imageView"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "itemDescription"]
+- ["CSo8NSObject", "itemDescriptionLabel"]
+- !private ["CSo8NSObject", "like"]
+- ["CSo8NSObject", "likeView"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "user"]
+- ["CSo8NSObject", "userPictureView"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- ["PSo16NSObjectProtocol", "configureWithItem"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "imageView"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "itemDescription"]
+- ["PSo16NSObjectProtocol", "itemDescriptionLabel"]
+- !private ["PSo16NSObjectProtocol", "like"]
+- ["PSo16NSObjectProtocol", "likeView"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "user"]
+- ["PSo16NSObjectProtocol", "userPictureView"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["C10RealmSwift6Object", "image"]
+- !private ["C10RealmSwift6Object", "itemDescription"]
+- !private ["C10RealmSwift6Object", "like"]
+- !private ["C10RealmSwift6Object", "user"]
+- ["Sq", "deinit"]
+- !private ["CSo13RLMObjectBase", "image"]
+- !private ["CSo13RLMObjectBase", "itemDescription"]
+- !private ["CSo13RLMObjectBase", "like"]
+- !private ["CSo13RLMObjectBase", "user"]
+- !private ["PSo29UIAccessibilityIdentification", "UIImage"]
+- ["PSo29UIAccessibilityIdentification", "configureWithItem"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- ["PSo29UIAccessibilityIdentification", "imageView"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "itemDescriptionLabel"]
+- ["PSo29UIAccessibilityIdentification", "likeView"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- ["PSo29UIAccessibilityIdentification", "userPictureView"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "UIImage"]
+- ["PSo12UIAppearance", "configureWithItem"]
+- !private ["PSo12UIAppearance", "image"]
+- ["PSo12UIAppearance", "imageView"]
+- !private ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "itemDescriptionLabel"]
+- ["PSo12UIAppearance", "likeView"]
+- !private ["PSo12UIAppearance", "text"]
+- ["PSo12UIAppearance", "userPictureView"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- ["PSo21UIAppearanceContainer", "configureWithItem"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- ["PSo21UIAppearanceContainer", "imageView"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "itemDescriptionLabel"]
+- ["PSo21UIAppearanceContainer", "likeView"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "userPictureView"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo24UICollectionReusableView", "Data"]
+- ["CSo24UICollectionReusableView", "Item"]
+- !private ["CSo24UICollectionReusableView", "UIImage"]
+- ["CSo24UICollectionReusableView", "UIImageView"]
+- ["CSo24UICollectionReusableView", "UILabel"]
+- ["CSo24UICollectionReusableView", "configureWithItem"]
+- ["CSo24UICollectionReusableView", "imageView"]
+- ["CSo24UICollectionReusableView", "init"]
+- ["CSo24UICollectionReusableView", "itemDescriptionLabel"]
+- ["CSo24UICollectionReusableView", "likeView"]
+- ["CSo24UICollectionReusableView", "userPictureView"]
+- !private ["CSo20UICollectionViewCell", "Data"]
+- ["CSo20UICollectionViewCell", "Item"]
+- !private ["CSo20UICollectionViewCell", "UIImage"]
+- ["CSo20UICollectionViewCell", "UIImageView"]
+- ["CSo20UICollectionViewCell", "UILabel"]
+- ["CSo20UICollectionViewCell", "configureWithItem"]
+- ["CSo20UICollectionViewCell", "deinit"]
+- ["CSo20UICollectionViewCell", "imageView"]
+- ["CSo20UICollectionViewCell", "init"]
+- ["CSo20UICollectionViewCell", "itemDescriptionLabel"]
+- ["CSo20UICollectionViewCell", "likeView"]
+- ["CSo20UICollectionViewCell", "userPictureView"]
+- ["CSo20UICollectionViewCell", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo17UICoordinateSpace", "UIImage"]
+- ["PSo17UICoordinateSpace", "configureWithItem"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- ["PSo17UICoordinateSpace", "imageView"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "itemDescriptionLabel"]
+- ["PSo17UICoordinateSpace", "likeView"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- ["PSo17UICoordinateSpace", "userPictureView"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "UIImage"]
+- ["PSo13UIDynamicItem", "configureWithItem"]
+- !private ["PSo13UIDynamicItem", "image"]
+- ["PSo13UIDynamicItem", "imageView"]
+- !private ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "itemDescriptionLabel"]
+- ["PSo13UIDynamicItem", "likeView"]
+- !private ["PSo13UIDynamicItem", "text"]
+- ["PSo13UIDynamicItem", "userPictureView"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
+- ["PSo18UIFocusEnvironment", "configureWithItem"]
+- !private ["PSo18UIFocusEnvironment", "image"]
+- ["PSo18UIFocusEnvironment", "imageView"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "itemDescriptionLabel"]
+- ["PSo18UIFocusEnvironment", "likeView"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "userPictureView"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "UIImage"]
+- ["PSo11UIFocusItem", "configureWithItem"]
+- !private ["PSo11UIFocusItem", "image"]
+- ["PSo11UIFocusItem", "imageView"]
+- !private ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", "itemDescriptionLabel"]
+- ["PSo11UIFocusItem", "likeView"]
+- !private ["PSo11UIFocusItem", "text"]
+- ["PSo11UIFocusItem", "userPictureView"]
+- ["PSo11UIFocusItem", ""]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo11UIResponder", "Data"]
+- ["CSo11UIResponder", "Item"]
+- !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "configureWithItem"]
+- !private ["CSo11UIResponder", "image"]
+- ["CSo11UIResponder", "imageView"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "itemDescriptionLabel"]
+- ["CSo11UIResponder", "likeView"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "userPictureView"]
+- !private ["PSo30UIResponderStandardEditActions", "UIImage"]
+- ["PSo30UIResponderStandardEditActions", "configureWithItem"]
+- !private ["PSo30UIResponderStandardEditActions", "image"]
+- ["PSo30UIResponderStandardEditActions", "imageView"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "itemDescriptionLabel"]
+- ["PSo30UIResponderStandardEditActions", "likeView"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- ["PSo30UIResponderStandardEditActions", "userPictureView"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- ["PSo18UITraitEnvironment", "configureWithItem"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- ["PSo18UITraitEnvironment", "imageView"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "itemDescriptionLabel"]
+- ["PSo18UITraitEnvironment", "likeView"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "userPictureView"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "Data"]
+- ["CSo6UIView", "Item"]
+- !private ["CSo6UIView", "UIImage"]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "configureWithItem"]
+- !private ["CSo6UIView", "image"]
+- ["CSo6UIView", "imageView"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "itemDescriptionLabel"]
+- ["CSo6UIView", "likeView"]
+- !private ["CSo6UIView", "text"]
+- ["CSo6UIView", "userPictureView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIImage"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "configureWithItem"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "imageView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "itemDescriptionLabel"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "likeView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "userPictureView"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps26_ExpressibleByImageLiteral", "init"]
+- !private ["Ps9_Hashable", "UIImage"]
+- ["Ps9_Hashable", "configureWithItem"]
+- !private ["Ps9_Hashable", "image"]
+- ["Ps9_Hashable", "imageView"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "itemDescription"]
+- ["Ps9_Hashable", "itemDescriptionLabel"]
+- !private ["Ps9_Hashable", "like"]
+- ["Ps9_Hashable", "likeView"]
+- !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "user"]
+- ["Ps9_Hashable", "userPictureView"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- "PSo15CALayerDelegate"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "V10Foundation4Data"
+- "Ps9Equatable"
+- "C10HandMeDown25GoodiesCollectionViewCell"
+- "Ps8Hashable"
+- "SQ"
+- "C10HandMeDown4Item"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "C10RealmSwift6Object"
+- "Sq"
+- !private "CSo13RLMObjectBase"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo24UICollectionReusableView"
+- "CSo20UICollectionViewCell"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- !private "CSo7UIImage"
+- !private "CSo11UIImageView"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps26_ExpressibleByImageLiteral"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUser.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSession.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncPermissionChange.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncManager.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUtil.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
+interface-hash: "0eb158dca236372ca687862bf978d70b"

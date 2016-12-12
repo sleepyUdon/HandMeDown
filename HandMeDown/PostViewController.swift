@@ -48,6 +48,8 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var category: [String]?
     let picker = UIImagePickerController()
     
+    var pictureData: NSData?
+    
     let items: [Item] = {
         let realm = try! Realm()
         return Array(realm.objects(Item))
@@ -162,7 +164,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     @IBAction func HandlePostButton(_ sender: UIButton) {
         let realm = try! Realm()
-        let item = Item(title: "Socks", itemDescription: "Very cute", image: "Pikachu", like: "heart", category: "Toy")
+        let item = Item(title: "Socks", itemDescription: "Very cute", image: self.pictureData!, like: "heart", category: "Toy", user: "Viviane")
         try! realm.write {
             realm.add(item)
         }
@@ -220,7 +222,9 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let pickedImage: UIImage = (info as NSDictionary).object(forKey: UIImagePickerControllerOriginalImage) as! UIImage
         cameraView.isHidden = true
-        pictureView.image = pickedImage
+        let pictureData = UIImageJPEGRepresentation(pickedImage, 1.0)
+        self.pictureData = pictureData as NSData?
+        pictureView.image = UIImage(data: pictureData!)
         self.dismiss(animated: true, completion: nil)
     }
     

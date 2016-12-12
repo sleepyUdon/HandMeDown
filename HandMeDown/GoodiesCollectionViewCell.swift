@@ -21,8 +21,8 @@ class GoodiesCollectionViewCell: UICollectionViewCell {
 
 
 func configureWithItem(item: Item) {
-    imageView.image = UIImage(named: item.image)
-    userPictureView.image = UIImage(named: item.image)
+    imageView.image = UIImage(data:item.image as! Data)
+    userPictureView.image = UIImage(named: item.user)
     itemDescriptionLabel.text = item.itemDescription
     likeView.image = UIImage(named: item.like)
 }

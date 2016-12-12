@@ -1,0 +1,12 @@
+version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
+options: "25210a873f224248c89d820bae1308cf"
+build_time: [534879998, 26187000]
+inputs:
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/Fonts.swift": [534730329, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/Colors.swift": [534826124, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/Item.swift": [534879853, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/PostViewController.swift": [534879904, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/AppDelegate.swift": [534825761, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/User.swift": [534873913, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/GoodiesViewController.swift": [534875268, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/GoodiesCollectionViewCell.swift": [534879890, 0]
