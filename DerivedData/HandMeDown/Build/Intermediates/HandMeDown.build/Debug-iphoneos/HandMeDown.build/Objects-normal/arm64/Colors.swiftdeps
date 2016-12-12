@@ -5,17 +5,23 @@ provides-nominal:
 - "C10HandMeDown6Colors"
 - "CC10HandMeDown6Colors4grey"
 - "CC10HandMeDown6Colors4blue"
+- "CC10HandMeDown6Colors6orange"
+- "CC10HandMeDown6Colors5green"
+- "CC10HandMeDown6Colors6purple"
 provides-member:
 - ["C10HandMeDown6Colors", ""]
 - ["CC10HandMeDown6Colors4grey", ""]
 - ["CC10HandMeDown6Colors4blue", ""]
+- ["CC10HandMeDown6Colors6orange", ""]
+- ["CC10HandMeDown6Colors5green", ""]
+- ["CC10HandMeDown6Colors6purple", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Colors"
-- "_ColorLiteralType"
-- "UIColor"
-- "IntegerLiteralType"
 - "FloatLiteralType"
+- "_ColorLiteralType"
+- "IntegerLiteralType"
+- "Colors"
+- "UIColor"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]
@@ -26,8 +32,11 @@ depends-member:
 - ["Ps7CVarArg", ""]
 - ["C10HandMeDown6Colors", "blue"]
 - ["C10HandMeDown6Colors", "deinit"]
+- ["C10HandMeDown6Colors", "green"]
 - ["C10HandMeDown6Colors", "grey"]
 - ["C10HandMeDown6Colors", "init"]
+- ["C10HandMeDown6Colors", "orange"]
+- ["C10HandMeDown6Colors", "purple"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "init"]
@@ -62,6 +71,9 @@ depends-member:
 - ["CC10HandMeDown6Colors4blue", "light2"]
 - ["CC10HandMeDown6Colors4blue", "light3"]
 - ["CC10HandMeDown6Colors4blue", "light4"]
+- ["CC10HandMeDown6Colors5green", "deinit"]
+- ["CC10HandMeDown6Colors5green", "init"]
+- ["CC10HandMeDown6Colors5green", "light1"]
 - ["CC10HandMeDown6Colors4grey", "black"]
 - ["CC10HandMeDown6Colors4grey", "deinit"]
 - ["CC10HandMeDown6Colors4grey", "init"]
@@ -69,6 +81,12 @@ depends-member:
 - ["CC10HandMeDown6Colors4grey", "light2"]
 - ["CC10HandMeDown6Colors4grey", "light3"]
 - ["CC10HandMeDown6Colors4grey", "white"]
+- ["CC10HandMeDown6Colors6orange", "deinit"]
+- ["CC10HandMeDown6Colors6orange", "init"]
+- ["CC10HandMeDown6Colors6orange", "light1"]
+- ["CC10HandMeDown6Colors6purple", "deinit"]
+- ["CC10HandMeDown6Colors6purple", "init"]
+- ["CC10HandMeDown6Colors6purple", "light1"]
 depends-nominal:
 - "Ps9AnyObject"
 - "CSo7CGColor"
@@ -93,7 +111,10 @@ depends-nominal:
 - "Ps26_ExpressibleByColorLiteral"
 - "Ps9_Hashable"
 - "CC10HandMeDown6Colors4blue"
+- "CC10HandMeDown6Colors5green"
 - "CC10HandMeDown6Colors4grey"
+- "CC10HandMeDown6Colors6orange"
+- "CC10HandMeDown6Colors6purple"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -113,4 +134,4 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
-interface-hash: "08e61df482fb5892fd6d0c9b4b5211b2"
+interface-hash: "27a662e9fa58de99048b3e8dd8fcf1a7"

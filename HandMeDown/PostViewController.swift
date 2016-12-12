@@ -28,6 +28,9 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var otherButton: RaisedButton!
     @IBOutlet weak var pictureView: UIImageView!
     @IBOutlet weak var pictureButton: UIButton!
+    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var cameraView: UIImageView!
+    @IBOutlet weak var descriptionTextView: UITextView!
     
     
     // MARK: Set up properties
@@ -65,61 +68,84 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
 // MARK: Prepare Layout
     func prepareLayout() {
+        containerView.alpha = 0
+        containerView.cornerRadius = 5.0
+        UIView.animate(withDuration: 0.5) {
+            self.containerView.alpha = 1
+        }
+        
         boyButton.isSelected = false
         boyButton.titleLabel?.font = Fonts.body.B4
+        boyButton.cornerRadius = boyButton.frame.height / 2
         
         girlButton.isSelected = false
         girlButton.titleLabel?.font = Fonts.body.B4
+        girlButton.cornerRadius = boyButton.frame.height / 2
+
         
         babyButton.isSelected = false
         babyButton.titleLabel?.font = Fonts.body.B4
+        babyButton.cornerRadius = boyButton.frame.height / 2
+
         
         toddlerButton.isSelected = false
         toddlerButton.titleLabel?.font = Fonts.body.B4
+        toddlerButton.cornerRadius = boyButton.frame.height / 2
 
         
         kidButton.isSelected = false
         kidButton.titleLabel?.font = Fonts.body.B4
+        kidButton.cornerRadius = boyButton.frame.height / 2
 
-        
+
         tweenButton.isSelected = false
         tweenButton.titleLabel?.font = Fonts.body.B4
+        tweenButton.cornerRadius = boyButton.frame.height / 2
 
         
         teenButton.isSelected = false
         teenButton.titleLabel?.font = Fonts.body.B4
+        teenButton.cornerRadius = boyButton.frame.height / 2
 
         
         clothesButton.isSelected = false
         clothesButton.titleLabel?.font = Fonts.body.B4
+        clothesButton.cornerRadius = boyButton.frame.height / 2
 
         
         toyButton.isSelected = false
         toyButton.titleLabel?.font = Fonts.body.B4
+        toyButton.cornerRadius = boyButton.frame.height / 2
 
         
         bookButton.isSelected = false
         bookButton.titleLabel?.font = Fonts.body.B4
+        bookButton.cornerRadius = boyButton.frame.height / 2
 
         
         gearButton.isSelected = false
         gearButton.titleLabel?.font = Fonts.body.B4
+        gearButton.cornerRadius = boyButton.frame.height / 2
 
         
         electronicsButton.isSelected = false
         electronicsButton.titleLabel?.font = Fonts.body.B4
+        electronicsButton.cornerRadius = boyButton.frame.height / 2
 
         
         sportsButton.isSelected = false
         sportsButton.titleLabel?.font = Fonts.body.B4
+        sportsButton.cornerRadius = boyButton.frame.height / 2
 
         
         furnitureButton.isSelected = false
         furnitureButton.titleLabel?.font = Fonts.body.B4
+        furnitureButton.cornerRadius = boyButton.frame.height / 2
 
         
         otherButton.isSelected = false
         otherButton.titleLabel?.font = Fonts.body.B4
+        otherButton.cornerRadius = boyButton.frame.height / 2
 
     }
     
@@ -183,6 +209,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     /// Save Picture
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let pickedImage: UIImage = (info as NSDictionary).object(forKey: UIImagePickerControllerOriginalImage) as! UIImage
+        cameraView.isHidden = true
         pictureView.image = pickedImage
         self.dismiss(animated: true, completion: nil)
     }
@@ -236,6 +263,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         } else {
             self.babyButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.babyButton.isSelected = false
+            self.babyButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
         }
     }
     
@@ -250,6 +278,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         } else {
             self.toddlerButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.toddlerButton.isSelected = false
+            self.toddlerButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
         }
     }
     
@@ -263,6 +292,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         } else {
             self.kidButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.kidButton.isSelected = false
+            self.kidButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
         }
     }
     

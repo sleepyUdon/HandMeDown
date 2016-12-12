@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown25GoodiesCollectionViewCell", ""]
 provides-dynamic-lookup:
-- "imageView"
-- "likeView"
-- "userPictureView"
 - "itemDescriptionLabel"
+- "likeView"
+- "imageView"
+- "userPictureView"
 depends-top-level:
-- "Item"
-- "User"
-- "GoodiesCollectionViewCell"
-- !private "UIImage"
-- "AssignmentPrecedence"
-- "UICollectionViewCell"
 - "UILabel"
+- "User"
 - "UIImageView"
+- !private "UIImage"
+- "Item"
+- "UICollectionViewCell"
+- "AssignmentPrecedence"
+- "GoodiesCollectionViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "image"]

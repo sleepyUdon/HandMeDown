@@ -27,5 +27,18 @@ open class Colors: UIColor {
         open static let light4 = #colorLiteral(red: 0.2352941176, green: 0.6666666667, blue: 0.9019607843, alpha: 1)
     }
     
+    // orange scheme
+    open class orange {
+        open static let light1 = #colorLiteral(red: 0.9929779172, green: 0.499807179, blue: 0.3422207236, alpha: 1)
+    }
+    // green scheme
+    open class green {
+        open static let light1 = #colorLiteral(red: 0.2549019608, green: 0.8039215686, blue: 0.5490196078, alpha: 1)
+    }
+    
+    // purple scheme
+    open class purple {
+        open static let light1 = #colorLiteral(red: 0.5098039216, green: 0.4705882353, blue: 0.7843137255, alpha: 1)
+    }
 
 }

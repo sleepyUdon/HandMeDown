@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // UI General Settings
         
-        UIWindow.appearance().tintColor = Colors.blue.light1
+        window?.tintColor = Colors.orange.light1
         UINavigationBar.appearance().barTintColor = Colors.blue.light4
         UINavigationBar.appearance().titleTextAttributes = [ NSFontAttributeName: Fonts.title.T4!, NSForegroundColorAttributeName: UIColor.white]
         

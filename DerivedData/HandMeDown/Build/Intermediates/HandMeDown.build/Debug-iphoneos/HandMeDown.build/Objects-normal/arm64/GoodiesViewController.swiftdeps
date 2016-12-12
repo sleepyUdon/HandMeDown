@@ -7,34 +7,34 @@ provides-member:
 - ["C10HandMeDown21GoodiesViewController", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
-- "filterButton"
-- "prepareLayout"
 - "collectionView"
 - "collectionView"
 - "collectionView"
 - "collectionView"
 - "numberOfSections"
+- "prepareLayout"
+- "filterButton"
 depends-top-level:
+- !private "GoodiesCollectionViewCell"
+- !private "Fonts"
 - "CGSize"
-- "CastingPrecedence"
 - "UICollectionViewDelegate"
-- "Int"
-- "AssignmentPrecedence"
 - "UIViewController"
-- "UICollectionViewDelegateFlowLayout"
-- !private "/"
 - "UICollectionViewDataSource"
+- !private "/"
+- "UICollectionViewDelegateFlowLayout"
+- "Int"
 - !private "Colors"
 - "UICollectionView"
-- "GoodiesViewController"
-- !private "GoodiesCollectionViewCell"
-- !private "-"
-- "IndexPath"
-- !private "Fonts"
-- "RaisedButton"
 - "StringLiteralType"
+- "RaisedButton"
 - "ItemsDataSource"
+- "IndexPath"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "GoodiesViewController"
 - "UICollectionViewCell"
+- !private "-"
 - "UICollectionViewLayout"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -44,7 +44,6 @@ depends-member:
 - !private ["Ps9AnyObject", "Fonts"]
 - ["Ps9AnyObject", "ItemsDataSource"]
 - !private ["Ps9AnyObject", "backgroundColor"]
-- !private ["Ps9AnyObject", "blue"]
 - !private ["Ps9AnyObject", "button"]
 - ["Ps9AnyObject", "collectionView"]
 - !private ["Ps9AnyObject", "cornerRadius"]
@@ -58,11 +57,12 @@ depends-member:
 - !private ["Ps9AnyObject", "item"]
 - !private ["Ps9AnyObject", "itemForItemAtIndexPath"]
 - ["Ps9AnyObject", "itemsDataSource"]
-- !private ["Ps9AnyObject", "light4"]
+- !private ["Ps9AnyObject", "light1"]
 - !private ["Ps9AnyObject", "numberOfItemsInSection"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
 - ["Ps9AnyObject", "prepareLayout"]
+- !private ["Ps9AnyObject", "purple"]
 - ["Ps9AnyObject", "reuseIdentifier"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
@@ -109,7 +109,6 @@ depends-member:
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "_DisallowMixedSignArithmetic"]
 - !private ["Ps7CVarArg", "backgroundColor"]
-- !private ["Ps7CVarArg", "blue"]
 - !private ["Ps7CVarArg", "button"]
 - ["Ps7CVarArg", "collectionView"]
 - !private ["Ps7CVarArg", "cornerRadius"]
@@ -122,10 +121,11 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "item"]
 - ["Ps7CVarArg", "itemsDataSource"]
-- !private ["Ps7CVarArg", "light4"]
+- !private ["Ps7CVarArg", "light1"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInCollectionView"]
 - ["Ps7CVarArg", "prepareLayout"]
+- !private ["Ps7CVarArg", "purple"]
 - ["Ps7CVarArg", "reuseIdentifier"]
 - ["Ps7CVarArg", "scrollViewDidEndDecelerating"]
 - ["Ps7CVarArg", "scrollViewDidEndDragging"]
@@ -145,7 +145,7 @@ depends-member:
 - ["Ps7CVarArg", "viewForZooming"]
 - ["Ps7CVarArg", "viewForZoomingInScrollView"]
 - ["Ps7CVarArg", ""]
-- !private ["C10HandMeDown6Colors", "blue"]
+- !private ["C10HandMeDown6Colors", "purple"]
 - !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "_DisallowMixedSignArithmetic"]
 - ["Ps10Comparable", "init"]
@@ -155,7 +155,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "ItemsDataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "Stride"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
-- !private ["Ps28CustomDebugStringConvertible", "blue"]
 - !private ["Ps28CustomDebugStringConvertible", "button"]
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
@@ -169,10 +168,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "item"]
 - ["Ps28CustomDebugStringConvertible", "itemsDataSource"]
-- !private ["Ps28CustomDebugStringConvertible", "light4"]
+- !private ["Ps28CustomDebugStringConvertible", "light1"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
 - ["Ps28CustomDebugStringConvertible", "prepareLayout"]
+- !private ["Ps28CustomDebugStringConvertible", "purple"]
 - ["Ps28CustomDebugStringConvertible", "reuseIdentifier"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDragging"]
@@ -210,7 +210,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "_DisallowMixedSignArithmetic"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
-- !private ["Ps23CustomStringConvertible", "blue"]
 - !private ["Ps23CustomStringConvertible", "button"]
 - ["Ps23CustomStringConvertible", "collectionView"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
@@ -223,10 +222,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "item"]
 - ["Ps23CustomStringConvertible", "itemsDataSource"]
-- !private ["Ps23CustomStringConvertible", "light4"]
+- !private ["Ps23CustomStringConvertible", "light1"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
 - ["Ps23CustomStringConvertible", "prepareLayout"]
+- !private ["Ps23CustomStringConvertible", "purple"]
 - ["Ps23CustomStringConvertible", "reuseIdentifier"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDragging"]
@@ -257,7 +257,6 @@ depends-member:
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps9Equatable", "backgroundColor"]
-- !private ["Ps9Equatable", "blue"]
 - !private ["Ps9Equatable", "button"]
 - ["Ps9Equatable", "collectionView"]
 - !private ["Ps9Equatable", "cornerRadius"]
@@ -271,10 +270,11 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "item"]
 - ["Ps9Equatable", "itemsDataSource"]
-- !private ["Ps9Equatable", "light4"]
+- !private ["Ps9Equatable", "light1"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInCollectionView"]
 - ["Ps9Equatable", "prepareLayout"]
+- !private ["Ps9Equatable", "purple"]
 - ["Ps9Equatable", "reuseIdentifier"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
 - ["Ps9Equatable", "scrollViewDidEndDragging"]
@@ -353,7 +353,6 @@ depends-member:
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps8Hashable", "backgroundColor"]
-- !private ["Ps8Hashable", "blue"]
 - !private ["Ps8Hashable", "button"]
 - ["Ps8Hashable", "collectionView"]
 - !private ["Ps8Hashable", "cornerRadius"]
@@ -366,10 +365,11 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "item"]
 - ["Ps8Hashable", "itemsDataSource"]
-- !private ["Ps8Hashable", "light4"]
+- !private ["Ps8Hashable", "light1"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInCollectionView"]
 - ["Ps8Hashable", "prepareLayout"]
+- !private ["Ps8Hashable", "purple"]
 - ["Ps8Hashable", "reuseIdentifier"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps8Hashable", "scrollViewDidEndDragging"]
@@ -421,7 +421,6 @@ depends-member:
 - !private ["PSo8NSCoding", "Fonts"]
 - ["PSo8NSCoding", "ItemsDataSource"]
 - !private ["PSo8NSCoding", "backgroundColor"]
-- !private ["PSo8NSCoding", "blue"]
 - ["PSo8NSCoding", "collectionView"]
 - !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
@@ -433,10 +432,11 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "item"]
 - ["PSo8NSCoding", "itemsDataSource"]
-- !private ["PSo8NSCoding", "light4"]
+- !private ["PSo8NSCoding", "light1"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
 - ["PSo8NSCoding", "prepareLayout"]
+- !private ["PSo8NSCoding", "purple"]
 - ["PSo8NSCoding", "reuseIdentifier"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
@@ -456,10 +456,10 @@ depends-member:
 - ["PSo8NSCoding", "viewForZooming"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "blue"]
 - !private ["PSo9NSCopying", "button"]
 - ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "light4"]
+- !private ["PSo9NSCopying", "light1"]
+- !private ["PSo9NSCopying", "purple"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSize"]
 - !private ["PSo26NSExtensionRequestHandling", "Colors"]
 - !private ["PSo26NSExtensionRequestHandling", "Fonts"]
@@ -504,7 +504,6 @@ depends-member:
 - ["CSo8NSObject", "UICollectionViewCell"]
 - ["CSo8NSObject", "UICollectionViewLayout"]
 - !private ["CSo8NSObject", "backgroundColor"]
-- !private ["CSo8NSObject", "blue"]
 - !private ["CSo8NSObject", "button"]
 - ["CSo8NSObject", "collectionView"]
 - !private ["CSo8NSObject", "cornerRadius"]
@@ -517,10 +516,11 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "item"]
 - ["CSo8NSObject", "itemsDataSource"]
-- !private ["CSo8NSObject", "light4"]
+- !private ["CSo8NSObject", "light1"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
 - ["CSo8NSObject", "prepareLayout"]
+- !private ["CSo8NSObject", "purple"]
 - ["CSo8NSObject", "reuseIdentifier"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
@@ -544,7 +544,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "Fonts"]
 - ["PSo16NSObjectProtocol", "ItemsDataSource"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
-- !private ["PSo16NSObjectProtocol", "blue"]
 - !private ["PSo16NSObjectProtocol", "button"]
 - ["PSo16NSObjectProtocol", "collectionView"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
@@ -557,10 +556,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "item"]
 - ["PSo16NSObjectProtocol", "itemsDataSource"]
-- !private ["PSo16NSObjectProtocol", "light4"]
+- !private ["PSo16NSObjectProtocol", "light1"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
 - ["PSo16NSObjectProtocol", "prepareLayout"]
+- !private ["PSo16NSObjectProtocol", "purple"]
 - ["PSo16NSObjectProtocol", "reuseIdentifier"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
@@ -580,9 +580,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewForZooming"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "blue"]
 - ["PSo14NSSecureCoding", "init"]
-- !private ["PSo14NSSecureCoding", "light4"]
+- !private ["PSo14NSSecureCoding", "light1"]
+- !private ["PSo14NSSecureCoding", "purple"]
 - ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
 - !private ["P8Material9Pulseable", "backgroundColor"]
@@ -746,9 +746,9 @@ depends-member:
 - ["PSo34UICollectionViewDelegateFlowLayout", "viewForZooming"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "viewForZoomingInScrollView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", ""]
-- !private ["CSo7UIColor", "blue"]
 - ["CSo7UIColor", "deinit"]
-- !private ["CSo7UIColor", "light4"]
+- !private ["CSo7UIColor", "light1"]
+- !private ["CSo7UIColor", "purple"]
 - !private ["PSo18UIContentContainer", "CGSize"]
 - !private ["PSo18UIContentContainer", "Colors"]
 - !private ["PSo18UIContentContainer", "Fonts"]
@@ -1109,8 +1109,8 @@ depends-member:
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- !private ["Ps26_ExpressibleByColorLiteral", "blue"]
-- !private ["Ps26_ExpressibleByColorLiteral", "light4"]
+- !private ["Ps26_ExpressibleByColorLiteral", "light1"]
+- !private ["Ps26_ExpressibleByColorLiteral", "purple"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CGSize"]
 - !private ["Ps9_Hashable", "Colors"]
@@ -1119,7 +1119,6 @@ depends-member:
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps9_Hashable", "backgroundColor"]
-- !private ["Ps9_Hashable", "blue"]
 - !private ["Ps9_Hashable", "button"]
 - ["Ps9_Hashable", "collectionView"]
 - !private ["Ps9_Hashable", "cornerRadius"]
@@ -1132,10 +1131,11 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "item"]
 - ["Ps9_Hashable", "itemsDataSource"]
-- !private ["Ps9_Hashable", "light4"]
+- !private ["Ps9_Hashable", "light1"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInCollectionView"]
 - ["Ps9_Hashable", "prepareLayout"]
+- !private ["Ps9_Hashable", "purple"]
 - ["Ps9_Hashable", "reuseIdentifier"]
 - ["Ps9_Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps9_Hashable", "scrollViewDidEndDragging"]
@@ -1171,8 +1171,8 @@ depends-member:
 - !private ["Ps11_Strideable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps14_StringElement", "Stride"]
 - !private ["Ps14_StringElement", "_DisallowMixedSignArithmetic"]
-- !private ["CC10HandMeDown6Colors4blue", "light4"]
 - !private ["CC10HandMeDown5Fonts6button", "BT2"]
+- !private ["CC10HandMeDown6Colors6purple", "light1"]
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
@@ -1290,8 +1290,8 @@ depends-nominal:
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 - !private "Ps14_StringElement"
-- !private "CC10HandMeDown6Colors4blue"
 - !private "CC10HandMeDown5Fonts6button"
+- !private "CC10HandMeDown6Colors6purple"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"

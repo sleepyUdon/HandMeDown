@@ -27,7 +27,7 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func prepareLayout(){
         self.filterButton.cornerRadius = self.filterButton.frame.height/2
-        self.filterButton.backgroundColor = Colors.blue.light4
+        self.filterButton.backgroundColor = Colors.purple.light1
         self.filterButton.titleLabel?.font = Fonts.button.BT2
     }
     

@@ -195,6 +195,8 @@ SWIFT_CLASS("_TtC10HandMeDown21GoodiesViewController")
 @class UIImagePickerController;
 @class UIButton;
 @class Button;
+@class UIView;
+@class UITextView;
 
 SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 @interface PostViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
@@ -215,6 +217,9 @@ SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified otherButton;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pictureView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified pictureButton;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified containerView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified cameraView;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descriptionTextView;
 @property (nonatomic, copy) NSString * _Nullable itemTitle;
 @property (nonatomic, copy) NSString * _Nullable itemDescription;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable category;

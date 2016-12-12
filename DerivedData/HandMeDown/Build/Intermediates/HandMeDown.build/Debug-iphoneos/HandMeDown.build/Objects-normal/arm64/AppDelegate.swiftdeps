@@ -6,30 +6,30 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown11AppDelegate", ""]
 provides-dynamic-lookup:
+- "applicationDidBecomeActive"
 - "applicationWillResignActive"
+- "applicationWillTerminate"
+- "application"
+- "applicationDidEnterBackground"
 - "window"
 - "applicationWillEnterForeground"
-- "applicationDidEnterBackground"
-- "applicationDidBecomeActive"
-- "application"
-- "applicationWillTerminate"
 depends-top-level:
-- !private "BooleanLiteralType"
-- !private "UINavigationBar"
-- "UIApplicationDelegate"
-- "UIResponder"
-- !private "Colors"
-- !private "UIColor"
-- !private "NSFontAttributeName"
-- "UIApplicationLaunchOptionsKey"
-- "UIApplication"
-- "UIWindow"
-- "Bool"
 - !private "NSForegroundColorAttributeName"
 - "AppDelegate"
-- !private "Fonts"
-- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- !private "UIColor"
+- !private "NSFontAttributeName"
+- "UIResponder"
 - !private "Dictionary"
+- !private "Colors"
+- "UIApplicationLaunchOptionsKey"
+- "UIApplication"
+- "Bool"
+- !private "UINavigationBar"
+- "UIApplicationDelegate"
+- !private "Fonts"
+- "UIWindow"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Colors"]
 - !private ["Ps9AnyObject", "Fonts"]
@@ -38,7 +38,6 @@ depends-member:
 - !private ["Ps9AnyObject", "T4"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UINavigationBar"]
-- !private ["Ps9AnyObject", "UIWindow"]
 - !private ["Ps9AnyObject", "appearance"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
@@ -57,6 +56,7 @@ depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "light1"]
 - !private ["Ps9AnyObject", "light4"]
+- !private ["Ps9AnyObject", "orange"]
 - !private ["Ps9AnyObject", "tintColor"]
 - !private ["Ps9AnyObject", "title"]
 - !private ["Ps9AnyObject", "titleTextAttributes"]
@@ -100,7 +100,6 @@ depends-member:
 - !private ["Ps7CVarArg", "NSForegroundColorAttributeName"]
 - !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "UINavigationBar"]
-- !private ["Ps7CVarArg", "UIWindow"]
 - !private ["Ps7CVarArg", "Value"]
 - !private ["Ps7CVarArg", "appearance"]
 - ["Ps7CVarArg", "application"]
@@ -120,6 +119,7 @@ depends-member:
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "light1"]
 - !private ["Ps7CVarArg", "light4"]
+- !private ["Ps7CVarArg", "orange"]
 - !private ["Ps7CVarArg", "tintColor"]
 - !private ["Ps7CVarArg", "title"]
 - !private ["Ps7CVarArg", "titleTextAttributes"]
@@ -129,6 +129,7 @@ depends-member:
 - !private ["Ps10Collection", "Key"]
 - !private ["Ps10Collection", "Value"]
 - !private ["C10HandMeDown6Colors", "blue"]
+- !private ["C10HandMeDown6Colors", "orange"]
 - !private ["Ps28CustomDebugStringConvertible", "Colors"]
 - !private ["Ps28CustomDebugStringConvertible", "Fonts"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
@@ -136,7 +137,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "NSForegroundColorAttributeName"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UINavigationBar"]
-- !private ["Ps28CustomDebugStringConvertible", "UIWindow"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "appearance"]
 - ["Ps28CustomDebugStringConvertible", "application"]
@@ -156,6 +156,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "light1"]
 - !private ["Ps28CustomDebugStringConvertible", "light4"]
+- !private ["Ps28CustomDebugStringConvertible", "orange"]
 - !private ["Ps28CustomDebugStringConvertible", "tintColor"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - !private ["Ps28CustomDebugStringConvertible", "titleTextAttributes"]
@@ -171,7 +172,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSForegroundColorAttributeName"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UINavigationBar"]
-- !private ["Ps23CustomStringConvertible", "UIWindow"]
 - !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "appearance"]
 - ["Ps23CustomStringConvertible", "application"]
@@ -191,6 +191,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "light1"]
 - !private ["Ps23CustomStringConvertible", "light4"]
+- !private ["Ps23CustomStringConvertible", "orange"]
 - !private ["Ps23CustomStringConvertible", "tintColor"]
 - !private ["Ps23CustomStringConvertible", "title"]
 - !private ["Ps23CustomStringConvertible", "titleTextAttributes"]
@@ -206,7 +207,6 @@ depends-member:
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UINavigationBar"]
-- !private ["Ps9Equatable", "UIWindow"]
 - !private ["Ps9Equatable", "appearance"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
@@ -225,6 +225,7 @@ depends-member:
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "light1"]
 - !private ["Ps9Equatable", "light4"]
+- !private ["Ps9Equatable", "orange"]
 - !private ["Ps9Equatable", "tintColor"]
 - !private ["Ps9Equatable", "title"]
 - !private ["Ps9Equatable", "titleTextAttributes"]
@@ -240,7 +241,6 @@ depends-member:
 - !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UINavigationBar"]
-- !private ["Ps8Hashable", "UIWindow"]
 - !private ["Ps8Hashable", "appearance"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
@@ -259,6 +259,7 @@ depends-member:
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "light1"]
 - !private ["Ps8Hashable", "light4"]
+- !private ["Ps8Hashable", "orange"]
 - !private ["Ps8Hashable", "tintColor"]
 - !private ["Ps8Hashable", "title"]
 - !private ["Ps8Hashable", "titleTextAttributes"]
@@ -274,12 +275,14 @@ depends-member:
 - !private ["PSo8NSCoding", "blue"]
 - !private ["PSo8NSCoding", "light1"]
 - !private ["PSo8NSCoding", "light4"]
+- !private ["PSo8NSCoding", "orange"]
 - !private ["PSo8NSCoding", "tintColor"]
 - !private ["PSo8NSCoding", "titleTextAttributes"]
 - !private ["PSo8NSCoding", "white"]
 - !private ["PSo9NSCopying", "blue"]
 - !private ["PSo9NSCopying", "light1"]
 - !private ["PSo9NSCopying", "light4"]
+- !private ["PSo9NSCopying", "orange"]
 - !private ["PSo9NSCopying", "title"]
 - !private ["PSo9NSCopying", "white"]
 - ["CSo8NSObject", "Bool"]
@@ -310,6 +313,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "light1"]
 - !private ["CSo8NSObject", "light4"]
+- !private ["CSo8NSObject", "orange"]
 - !private ["CSo8NSObject", "tintColor"]
 - !private ["CSo8NSObject", "title"]
 - !private ["CSo8NSObject", "titleTextAttributes"]
@@ -321,7 +325,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UINavigationBar"]
-- !private ["PSo16NSObjectProtocol", "UIWindow"]
 - !private ["PSo16NSObjectProtocol", "appearance"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
@@ -340,6 +343,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "light1"]
 - !private ["PSo16NSObjectProtocol", "light4"]
+- !private ["PSo16NSObjectProtocol", "orange"]
 - !private ["PSo16NSObjectProtocol", "tintColor"]
 - !private ["PSo16NSObjectProtocol", "title"]
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
@@ -349,6 +353,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "blue"]
 - !private ["PSo14NSSecureCoding", "light1"]
 - !private ["PSo14NSSecureCoding", "light4"]
+- !private ["PSo14NSSecureCoding", "orange"]
 - !private ["PSo14NSSecureCoding", "white"]
 - ["Sq", "deinit"]
 - !private ["Ps8Sequence", "Key"]
@@ -372,7 +377,6 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo21UIApplicationDelegate", "UIColor"]
 - !private ["PSo21UIApplicationDelegate", "UINavigationBar"]
-- !private ["PSo21UIApplicationDelegate", "UIWindow"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -394,6 +398,7 @@ depends-member:
 - ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "light1"]
 - !private ["CSo7UIColor", "light4"]
+- !private ["CSo7UIColor", "orange"]
 - !private ["CSo7UIColor", "white"]
 - !private ["PSo17UICoordinateSpace", "appearance"]
 - !private ["PSo17UICoordinateSpace", "barTintColor"]
@@ -453,7 +458,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "NSForegroundColorAttributeName"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UINavigationBar"]
-- !private ["PSo30UIResponderStandardEditActions", "UIWindow"]
 - !private ["PSo30UIResponderStandardEditActions", "appearance"]
 - ["PSo30UIResponderStandardEditActions", "application"]
 - ["PSo30UIResponderStandardEditActions", "applicationDidBecomeActive"]
@@ -481,8 +485,6 @@ depends-member:
 - !private ["CSo6UIView", "barTintColor"]
 - !private ["CSo6UIView", "tintColor"]
 - !private ["CSo6UIView", "titleTextAttributes"]
-- !private ["CSo8UIWindow", "appearance"]
-- ["CSo8UIWindow", "deinit"]
 - !private ["CSo8UIWindow", "tintColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "appearance"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "barTintColor"]
@@ -491,6 +493,7 @@ depends-member:
 - !private ["Ps26_ExpressibleByColorLiteral", "blue"]
 - !private ["Ps26_ExpressibleByColorLiteral", "light1"]
 - !private ["Ps26_ExpressibleByColorLiteral", "light4"]
+- !private ["Ps26_ExpressibleByColorLiteral", "orange"]
 - !private ["Ps26_ExpressibleByColorLiteral", "white"]
 - !private ["Ps9_Hashable", "Colors"]
 - !private ["Ps9_Hashable", "Fonts"]
@@ -498,7 +501,6 @@ depends-member:
 - !private ["Ps9_Hashable", "NSForegroundColorAttributeName"]
 - !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "UINavigationBar"]
-- !private ["Ps9_Hashable", "UIWindow"]
 - !private ["Ps9_Hashable", "appearance"]
 - ["Ps9_Hashable", "application"]
 - ["Ps9_Hashable", "applicationDidBecomeActive"]
@@ -517,6 +519,7 @@ depends-member:
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "light1"]
 - !private ["Ps9_Hashable", "light4"]
+- !private ["Ps9_Hashable", "orange"]
 - !private ["Ps9_Hashable", "tintColor"]
 - !private ["Ps9_Hashable", "title"]
 - !private ["Ps9_Hashable", "titleTextAttributes"]
@@ -525,8 +528,8 @@ depends-member:
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "Value"]
-- !private ["CC10HandMeDown6Colors4blue", "light1"]
 - !private ["CC10HandMeDown6Colors4blue", "light4"]
+- !private ["CC10HandMeDown6Colors6orange", "light1"]
 - !private ["CC10HandMeDown5Fonts5title", "T4"]
 depends-nominal:
 - "Ps9AnyObject"
@@ -570,12 +573,13 @@ depends-nominal:
 - "PSo30UIResponderStandardEditActions"
 - !private "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
-- "CSo8UIWindow"
+- !private "CSo8UIWindow"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps26_ExpressibleByColorLiteral"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "CC10HandMeDown6Colors4blue"
+- !private "CC10HandMeDown6Colors6orange"
 - !private "CC10HandMeDown5Fonts5title"
 depends-dynamic-lookup:
 depends-external:
