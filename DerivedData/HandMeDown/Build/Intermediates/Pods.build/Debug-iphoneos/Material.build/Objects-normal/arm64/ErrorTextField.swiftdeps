@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C8Material14ErrorTextField", ""]
 provides-dynamic-lookup:
-- "isErrorRevealed"
 - "prepare"
+- "isErrorRevealed"
 depends-top-level:
-- !private "!"
-- "AssignmentPrecedence"
 - "TextField"
+- "AssignmentPrecedence"
 - "ErrorTextField"
-- !private "Color"
 - "BooleanLiteralType"
+- !private "!"
+- !private "Color"
 depends-member:
 - !private ["Ps9AnyObject", "Color"]
 - !private ["Ps9AnyObject", "base"]

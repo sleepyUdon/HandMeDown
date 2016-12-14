@@ -7,20 +7,20 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Int"
-- !private "??"
-- !private "-="
-- !private "-"
 - !private ">"
-- "AssignmentPrecedence"
-- !private ">="
-- "Array"
-- !private "abs"
+- !private "??"
+- !private "-"
 - !private "UnicodeScalarType"
+- "AssignmentPrecedence"
+- !private "abs"
 - !private "<"
 - !private "StringLiteralType"
-- "Equatable"
 - !private "fatalError"
+- !private ">="
+- "Equatable"
+- "Array"
 - !private "+"
+- !private "-="
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Sa", "Element"]

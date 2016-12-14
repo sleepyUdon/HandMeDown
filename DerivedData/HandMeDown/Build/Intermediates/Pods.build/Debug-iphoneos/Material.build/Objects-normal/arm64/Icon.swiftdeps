@@ -10,12 +10,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "View"
-- "Icon"
 - "String"
-- "UIImage"
+- "Bundle"
 - !private "=="
 - "AssignmentPrecedence"
-- "Bundle"
+- "Icon"
+- "UIImage"
 - "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "init"]

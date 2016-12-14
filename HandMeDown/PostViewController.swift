@@ -8,8 +8,9 @@
 
 import UIKit
 import Material
+import RealmSwift
 
-class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var boyButton: RaisedButton!
     @IBOutlet weak var girlButton: RaisedButton!
@@ -32,6 +33,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var cameraView: UIImageView!
     @IBOutlet weak var descriptionTextView: UITextView!
     
+    @IBOutlet weak var titleTextfield: UITextField!
     
     // MARK: Set up properties
 
@@ -44,8 +46,14 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     var itemTitle: String?
     var itemDescription: String?
-    var category: [String]?
     let picker = UIImagePickerController()
+    
+    var pictureData: NSData?
+    var categories = [String]()
+    let items: [Item] = {
+        let realm = try! Realm()
+        return Array(realm.objects(Item))
+   }()
 
     
             
@@ -54,14 +62,13 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
-
+        self.titleTextfield.delegate = self
     }
     
 
     // ViewWillAppear
 
     override func viewWillAppear(_ animated: Bool) {
-        
         self.prepareLayout()
     }
     
@@ -149,13 +156,41 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     }
     
+    
+    // MARK: TextField Delegate
+
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        self.itemTitle = titleTextfield.text
+    }
+
+    
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        titleTextfield.resignFirstResponder()
+        return true
+    }
+    
 // MARK: Actions
     
     
     // Handle Post Button
     
     @IBAction func HandlePostButton(_ sender: UIButton) {
+        let realm = try! Realm()
+        let item = Item()
+        item.title = self.itemTitle!
+        item.itemDescription = "Very Cute"
+        item.image = self.pictureData
+        item.like = "heart"
+
+        for category in self.categories {
+            let cat = Category(name: category)
+            item.categories.append(cat)
+        }
+        item.user = "Viviane"
         
+        try! realm.write {
+            realm.add(item)
+        }
     }
     
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -181,7 +216,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
         
         // Add the actions
-//        picker.allowsEditing = true
+        
         alert.addAction(cameraAction)
         alert.addAction(galleryAction)
         alert.addAction(cancelAction)
@@ -210,7 +245,9 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let pickedImage: UIImage = (info as NSDictionary).object(forKey: UIImagePickerControllerOriginalImage) as! UIImage
         cameraView.isHidden = true
-        pictureView.image = pickedImage
+        let pictureData = UIImageJPEGRepresentation(pickedImage, 1.0)
+        self.pictureData = pictureData as NSData?
+        pictureView.image = UIImage(data: pictureData!)
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -230,10 +267,14 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.boyButton.backgroundColor = Colors.blue.light2
             self.boyButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.boyButton.isSelected = true
+            self.categories.append("Boy")
         } else {
             self.boyButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.boyButton.isSelected = false
             self.boyButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = categories.index(of: "Boy") {
+                categories.remove(at: index)
+            }
         }
     }
     

@@ -6,11 +6,11 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "AssociateObject"
 - "UnsafePointer"
+- "AssociateObject"
 - "AssociatedObject"
-- !private "objc_setAssociatedObject"
 - "CastingPrecedence"
+- !private "objc_setAssociatedObject"
 - "UInt8"
 - !private "objc_getAssociatedObject"
 depends-member:

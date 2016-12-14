@@ -8,12 +8,12 @@ provides-member:
 - ["O8Material18CornerRadiusPreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CornerRadiusPresetToValue"
+- "Int"
+- "CornerRadiusPreset"
 - "CGFloat"
 - "=="
 - !private "~="
-- "CornerRadiusPreset"
-- "Int"
+- "CornerRadiusPresetToValue"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

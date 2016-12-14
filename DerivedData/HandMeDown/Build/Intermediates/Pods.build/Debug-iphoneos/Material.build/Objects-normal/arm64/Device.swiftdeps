@@ -13,9 +13,9 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "Int8"
 - "Device"
+- !private "UIDevice"
 - !private "Mirror"
 - !private "!="
-- !private "UIDevice"
 - "DeviceModel"
 - "=="
 - !private "CastingPrecedence"

@@ -8,20 +8,34 @@
 
 import UIKit
 import Material
+import RealmSwift
 
 class GoodiesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var filterButton: RaisedButton!
     
+    // MARK: Properties
     
-    fileprivate var itemsDataSource = ItemsDataSource()
-    fileprivate let reuseIdentifier = "GoodiesCollectionViewCell"
+    var items: Results<Item>!
+    
+    
+    // MARK: ViewDidLoad
     
     override func viewDidLoad() {
+        let realm = try!Realm()
+        items = realm.objects(Item.self)
         super.viewDidLoad()
         self.prepareLayout()
     }
+    
+    
+    // MARK: ViewWillAppear
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.collectionView.reloadData()
+    }
+    
     
     // MARK: Prepare Layout
     
@@ -46,31 +60,27 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     
+    // MARK: Textfield Delegate
+    
+  
     // MARK: UICollectionViewDataSource
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        
-        return itemsDataSource.numberOfSections
+        return 1
     }
     
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        return itemsDataSource.numberOfItemsInSection(section)
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        // let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
-        
+        let item = items[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GoodiesCollectionViewCell", for: indexPath) as! GoodiesCollectionViewCell
         
-        // Configure the cell
-        
-        if let item = itemsDataSource.itemForItemAtIndexPath(indexPath) {
-            cell.item = item
-        }
+        cell.configureWithItem(item: item)
         
         return cell
     }
