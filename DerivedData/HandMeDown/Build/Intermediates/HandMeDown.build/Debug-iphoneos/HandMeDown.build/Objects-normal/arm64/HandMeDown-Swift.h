@@ -182,8 +182,8 @@ SWIFT_CLASS("_TtC10HandMeDown5Fonts")
 SWIFT_CLASS("_TtC10HandMeDown25GoodiesCollectionViewCell")
 @interface GoodiesCollectionViewCell : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified userPictureView;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified itemDescriptionLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Nullable userPictureView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified likeView;
 - (void)configureWithItemWithItem:(Item * _Nonnull)item;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -226,13 +226,14 @@ SWIFT_CLASS("_TtC10HandMeDown4Item")
 @end
 
 @class UIImagePickerController;
+@class UITextField;
 @class UIButton;
 @class Button;
 @class UIView;
 @class UITextView;
 
 SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
-@interface PostViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface PostViewController : UIViewController <UIScrollViewDelegate, UINavigationControllerDelegate, UITextViewDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate>
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified boyButton;
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified girlButton;
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified babyButton;
@@ -253,6 +254,7 @@ SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified containerView;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified cameraView;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descriptionTextView;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified titleTextfield;
 @property (nonatomic, copy) NSString * _Nullable itemTitle;
 @property (nonatomic, copy) NSString * _Nullable itemDescription;
 @property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull picker;
@@ -262,6 +264,8 @@ SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)prepareLayout;
+- (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (IBAction)HandlePostButton:(UIButton * _Nonnull)sender;
 - (IBAction)HandleAddPictureButton:(UIButton * _Nonnull)sender;
 - (void)openCamera;

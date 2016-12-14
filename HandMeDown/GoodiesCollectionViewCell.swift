@@ -14,16 +14,16 @@ class GoodiesCollectionViewCell: UICollectionViewCell {
     // properties
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var userPictureView: UIImageView!
-    @IBOutlet weak var itemDescriptionLabel: UILabel!
+    @IBOutlet weak var userPictureView: UIImageView?
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var likeView: UIImageView!
     
 
 
 func configureWithItem(item: Item) {
     imageView.image = UIImage(data:item.image as! Data)
-    userPictureView.image = UIImage(named: item.user)
-    itemDescriptionLabel.text = item.itemDescription
+    userPictureView?.image = UIImage(named: item.user)
+    titleLabel.text = item.title
     likeView.image = UIImage(named: item.like)
 }
 }

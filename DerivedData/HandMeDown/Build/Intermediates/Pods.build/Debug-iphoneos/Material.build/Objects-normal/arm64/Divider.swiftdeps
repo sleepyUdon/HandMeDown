@@ -16,30 +16,30 @@ provides-member:
 - ["CSo6UIView", "dividerAlignment"]
 - ["CSo6UIView", "dividerThickness"]
 provides-dynamic-lookup:
-- "dividerAlignment"
-- "dividerThickness"
 - "dividerColor"
 - "dividerContentEdgeInsetsPreset"
 - "dividerContentEdgeInsets"
+- "dividerAlignment"
+- "dividerThickness"
 depends-top-level:
-- !private "EdgeInsetsPresetToValue"
+- !private "AssociateObject"
 - "EdgeInsets"
+- "Divider"
 - "Int"
+- !private "DividerKey"
 - !private "-"
 - "EdgeInsetsPreset"
-- "UInt8"
+- !private "AssociatedObject"
+- !private "EdgeInsetsPresetToValue"
 - "UIColor"
 - "CGFloat"
 - "=="
 - "AssignmentPrecedence"
-- !private "~="
-- !private "AssociateObject"
-- !private "CGRect"
-- "Divider"
-- !private "DividerKey"
-- !private "AssociatedObject"
-- "UIView"
 - "DividerAlignment"
+- !private "~="
+- !private "CGRect"
+- "UInt8"
+- "UIView"
 depends-member:
 - !private ["Ps9AnyObject", "AssociateObject"]
 - !private ["Ps9AnyObject", "AssociatedObject"]

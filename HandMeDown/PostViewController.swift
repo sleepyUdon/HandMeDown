@@ -10,7 +10,7 @@ import UIKit
 import Material
 import RealmSwift
 
-class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var boyButton: RaisedButton!
     @IBOutlet weak var girlButton: RaisedButton!
@@ -33,6 +33,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var cameraView: UIImageView!
     @IBOutlet weak var descriptionTextView: UITextView!
     
+    @IBOutlet weak var titleTextfield: UITextField!
     
     // MARK: Set up properties
 
@@ -61,6 +62,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
+        self.titleTextfield.delegate = self
     }
     
 
@@ -155,6 +157,18 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     
+    // MARK: TextField Delegate
+
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        self.itemTitle = titleTextfield.text
+    }
+
+    
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        titleTextfield.resignFirstResponder()
+        return true
+    }
+    
 // MARK: Actions
     
     
@@ -163,7 +177,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBAction func HandlePostButton(_ sender: UIButton) {
         let realm = try! Realm()
         let item = Item()
-        item.title = "Socks"
+        item.title = self.itemTitle!
         item.itemDescription = "Very Cute"
         item.image = self.pictureData
         item.like = "heart"

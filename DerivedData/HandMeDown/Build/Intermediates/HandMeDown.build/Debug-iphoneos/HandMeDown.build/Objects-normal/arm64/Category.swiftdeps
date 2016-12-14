@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 - "name"
 depends-top-level:
+- "Category"
 - "StringLiteralType"
 - "Object"
-- "Category"
-- "String"
 - "AssignmentPrecedence"
+- "String"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "name"]

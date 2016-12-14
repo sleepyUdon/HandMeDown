@@ -13,8 +13,8 @@ depends-top-level:
 - "CGFloat"
 - "=="
 - "InterimSpacePresetToValue"
-- "InterimSpace"
 - !private "~="
+- "InterimSpace"
 - "Int"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]

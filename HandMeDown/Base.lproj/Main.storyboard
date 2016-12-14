@@ -96,8 +96,8 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="imageView" destination="k9Z-MI-2gL" id="1fP-ri-Jxg"/>
-                                            <outlet property="itemDescriptionLabel" destination="fFJ-ke-le4" id="QUj-I5-LXK"/>
                                             <outlet property="likeView" destination="77h-2m-WP9" id="Drs-pZ-k8P"/>
+                                            <outlet property="titleLabel" destination="fFJ-ke-le4" id="MEi-n4-Lhh"/>
                                             <outlet property="userPictureView" destination="S2R-UG-GkL" id="xd1-5I-cjg"/>
                                         </connections>
                                     </collectionViewCell>
@@ -896,6 +896,7 @@
                         <outlet property="pictureView" destination="tm6-wE-8tK" id="tcg-yG-EO1"/>
                         <outlet property="sportsButton" destination="NYU-3i-gNB" id="tQX-Ak-ndM"/>
                         <outlet property="teenButton" destination="sAC-Di-wAz" id="CXo-Ae-H3O"/>
+                        <outlet property="titleTextfield" destination="ulb-DS-08L" id="C5F-Xn-Iwd"/>
                         <outlet property="toddlerButton" destination="k2T-Nf-JIK" id="mHA-sp-aEQ"/>
                         <outlet property="toyButton" destination="oO1-NJ-nYn" id="D7Q-CA-rcB"/>
                         <outlet property="tweenButton" destination="VSk-AY-1BW" id="IYz-vh-G71"/>
@@ -1014,7 +1015,7 @@
                 <navigationController title="Goodies" automaticallyAdjustsScrollViewInsets="NO" id="fER-Mk-BRQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" image="home" id="acW-dT-cKf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="hng-Rf-4l2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hng-Rf-4l2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1033,7 +1034,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JII-cB-UNg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Stuff" image="home" id="cPa-gy-q4n"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Y0J-wg-CHo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y0J-wg-CHo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1052,7 +1053,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DvJ-1U-Sa2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Post" image="home" id="vWd-p7-Skx"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kss-8H-h2P">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kss-8H-h2P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1071,7 +1072,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ouj-CM-3iy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Friends" image="home" id="2iA-sR-GXi"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="U2O-oK-BAD">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U2O-oK-BAD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1090,7 +1091,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yUJ-NX-tSc" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Likes" image="home" id="xvg-Oa-SCb"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fYp-VX-bJp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fYp-VX-bJp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

@@ -8,29 +8,29 @@ provides-member:
 - ["C8Material14RootController", "prepareRootViewController"]
 - ["C8Material14RootController", "prepare"]
 provides-dynamic-lookup:
-- "prepareRootViewController"
-- "isUserInteractionEnabled"
+- "viewWillLayoutSubviews"
 - "rootViewController"
+- "isUserInteractionEnabled"
 - "layoutSubviews"
 - "prepare"
 - "prepare"
 - "transition"
-- "viewWillLayoutSubviews"
+- "prepareRootViewController"
 depends-top-level:
-- "UIViewController"
-- "String"
-- "UIView"
-- "Bundle"
-- "Void"
-- "NSCoder"
-- "AssignmentPrecedence"
-- !private "Screen"
 - "TimeInterval"
-- "RootController"
-- "Bool"
+- "Void"
 - "Array"
+- "AssignmentPrecedence"
+- "NSCoder"
+- "RootController"
 - "UIViewAnimationOptions"
+- "String"
+- "UIViewController"
 - "BooleanLiteralType"
+- !private "Screen"
+- "Bundle"
+- "Bool"
+- "UIView"
 depends-member:
 - !private ["Ps9AnyObject", "Screen"]
 - !private ["Ps9AnyObject", "addChildViewController"]
