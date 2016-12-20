@@ -74,12 +74,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     
 // MARK: Prepare Layout
+    
     func prepareLayout() {
         containerView.alpha = 0
         containerView.cornerRadius = 5.0
         UIView.animate(withDuration: 0.5) {
             self.containerView.alpha = 1
         }
+        
+
         
         boyButton.isSelected = false
         boyButton.titleLabel?.font = Fonts.body.B4
@@ -180,7 +183,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         item.title = self.itemTitle!
         item.itemDescription = "Very Cute"
         item.image = self.pictureData
-        item.like = "heart"
+        item.like = "empty-heart"
 
         for category in self.categories {
             let cat = Category(name: category)

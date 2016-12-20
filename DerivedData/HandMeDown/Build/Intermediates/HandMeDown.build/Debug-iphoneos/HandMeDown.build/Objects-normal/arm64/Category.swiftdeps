@@ -11,8 +11,8 @@ depends-top-level:
 - "Category"
 - "StringLiteralType"
 - "Object"
-- "AssignmentPrecedence"
 - "String"
+- "AssignmentPrecedence"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "name"]

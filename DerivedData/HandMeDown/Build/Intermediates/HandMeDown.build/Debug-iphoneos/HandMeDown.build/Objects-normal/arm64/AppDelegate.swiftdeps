@@ -6,30 +6,30 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidEnterBackground"
 - "window"
-- "applicationDidBecomeActive"
-- "applicationWillEnterForeground"
+- "applicationDidEnterBackground"
 - "applicationWillTerminate"
 - "application"
+- "applicationDidBecomeActive"
+- "applicationWillEnterForeground"
 - "applicationWillResignActive"
 depends-top-level:
-- "UIWindow"
-- !private "BooleanLiteralType"
-- !private "Fonts"
-- !private "Dictionary"
-- !private "Colors"
-- "AppDelegate"
 - !private "NSForegroundColorAttributeName"
-- "UIApplicationDelegate"
-- !private "NSFontAttributeName"
+- "AssignmentPrecedence"
 - "Bool"
+- !private "Colors"
 - "UIResponder"
 - "UIApplicationLaunchOptionsKey"
+- "AppDelegate"
 - !private "UINavigationBar"
-- !private "UIColor"
-- "AssignmentPrecedence"
+- !private "Fonts"
+- !private "NSFontAttributeName"
+- !private "Dictionary"
 - "UIApplication"
+- !private "UIColor"
+- !private "BooleanLiteralType"
+- "UIApplicationDelegate"
+- "UIWindow"
 depends-member:
 - !private ["Ps9AnyObject", "Colors"]
 - !private ["Ps9AnyObject", "Fonts"]

@@ -1,0 +1,432 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MyStuffViewController"
+provides-nominal:
+- "C10HandMeDown21MyStuffViewController"
+provides-member:
+- ["C10HandMeDown21MyStuffViewController", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "tableView"
+- "tableView"
+- "tableView"
+depends-top-level:
+- !private "StringLiteralType"
+- "MyStuffViewController"
+- "Int"
+- "UITableViewCell"
+- !private "MyStuffTableViewCell"
+- "UIViewController"
+- "UITableViewDataSource"
+- "AssignmentPrecedence"
+- "IndexPath"
+- "CastingPrecedence"
+- "UITableView"
+depends-member:
+- !private ["Ps9AnyObject", "dataSource"]
+- !private ["Ps9AnyObject", "dequeueReusableCell"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "numberOfSections"]
+- ["Ps9AnyObject", "numberOfSectionsInTableView"]
+- ["Ps9AnyObject", "sectionIndexTitles"]
+- ["Ps9AnyObject", "sectionIndexTitlesForTableView"]
+- ["Ps9AnyObject", "tableView"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["PSo15CALayerDelegate", "dataSource"]
+- !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
+- !private ["Ps7CVarArg", "dataSource"]
+- !private ["Ps7CVarArg", "dequeueReusableCell"]
+- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "numberOfSections"]
+- ["Ps7CVarArg", "numberOfSectionsInTableView"]
+- ["Ps7CVarArg", "sectionIndexTitles"]
+- ["Ps7CVarArg", "sectionIndexTitlesForTableView"]
+- ["Ps7CVarArg", "tableView"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "dataSource"]
+- !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "numberOfSections"]
+- ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
+- ["Ps28CustomDebugStringConvertible", "sectionIndexTitles"]
+- ["Ps28CustomDebugStringConvertible", "sectionIndexTitlesForTableView"]
+- ["Ps28CustomDebugStringConvertible", "tableView"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "dataSource"]
+- !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "numberOfSections"]
+- ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
+- ["Ps23CustomStringConvertible", "sectionIndexTitles"]
+- ["Ps23CustomStringConvertible", "sectionIndexTitlesForTableView"]
+- ["Ps23CustomStringConvertible", "tableView"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "dataSource"]
+- !private ["Ps9Equatable", "dequeueReusableCell"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "numberOfSections"]
+- ["Ps9Equatable", "numberOfSectionsInTableView"]
+- ["Ps9Equatable", "sectionIndexTitles"]
+- ["Ps9Equatable", "sectionIndexTitlesForTableView"]
+- ["Ps9Equatable", "tableView"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "dataSource"]
+- !private ["Ps8Hashable", "dequeueReusableCell"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "numberOfSections"]
+- ["Ps8Hashable", "numberOfSectionsInTableView"]
+- ["Ps8Hashable", "sectionIndexTitles"]
+- ["Ps8Hashable", "sectionIndexTitlesForTableView"]
+- ["Ps8Hashable", "tableView"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["Si", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- ["C10HandMeDown20MyStuffTableViewCell", "deinit"]
+- ["C10HandMeDown21MyStuffViewController", "IndexPath"]
+- ["C10HandMeDown21MyStuffViewController", "Int"]
+- !private ["C10HandMeDown21MyStuffViewController", "MyStuffTableViewCell"]
+- ["C10HandMeDown21MyStuffViewController", "UITableView"]
+- ["C10HandMeDown21MyStuffViewController", "UITableViewCell"]
+- ["C10HandMeDown21MyStuffViewController", "deinit"]
+- ["C10HandMeDown21MyStuffViewController", "didReceiveMemoryWarning"]
+- ["C10HandMeDown21MyStuffViewController", "init"]
+- ["C10HandMeDown21MyStuffViewController", "numberOfSections"]
+- ["C10HandMeDown21MyStuffViewController", "numberOfSectionsInTableView"]
+- ["C10HandMeDown21MyStuffViewController", "sectionIndexTitles"]
+- ["C10HandMeDown21MyStuffViewController", "sectionIndexTitlesForTableView"]
+- ["C10HandMeDown21MyStuffViewController", "tableView"]
+- ["C10HandMeDown21MyStuffViewController", "viewDidLoad"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "dataSource"]
+- !private ["PSo8NSCoding", "dequeueReusableCell"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "numberOfSections"]
+- ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- ["PSo8NSCoding", "sectionIndexTitles"]
+- ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
+- ["PSo8NSCoding", "tableView"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "numberOfSections"]
+- ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- ["PSo26NSExtensionRequestHandling", "sectionIndexTitles"]
+- ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
+- ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "IndexPath"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "MyStuffTableViewCell"]
+- ["CSo8NSObject", "UITableView"]
+- ["CSo8NSObject", "UITableViewCell"]
+- !private ["CSo8NSObject", "dataSource"]
+- !private ["CSo8NSObject", "dequeueReusableCell"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "numberOfSections"]
+- ["CSo8NSObject", "numberOfSectionsInTableView"]
+- ["CSo8NSObject", "sectionIndexTitles"]
+- ["CSo8NSObject", "sectionIndexTitlesForTableView"]
+- ["CSo8NSObject", "tableView"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "dataSource"]
+- !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "numberOfSections"]
+- ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- ["PSo16NSObjectProtocol", "sectionIndexTitles"]
+- ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
+- ["PSo16NSObjectProtocol", "tableView"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "dataSource"]
+- !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
+- !private ["PSo12UIAppearance", "dataSource"]
+- !private ["PSo12UIAppearance", "dequeueReusableCell"]
+- !private ["PSo21UIAppearanceContainer", "dataSource"]
+- !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "numberOfSections"]
+- ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- ["PSo21UIAppearanceContainer", "sectionIndexTitles"]
+- ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
+- ["PSo21UIAppearanceContainer", "tableView"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "numberOfSections"]
+- ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- ["PSo18UIContentContainer", "sectionIndexTitles"]
+- ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
+- ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "dataSource"]
+- !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
+- !private ["PSo13UIDynamicItem", "dataSource"]
+- !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
+- !private ["PSo18UIFocusEnvironment", "dataSource"]
+- !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "numberOfSections"]
+- ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- ["PSo18UIFocusEnvironment", "sectionIndexTitles"]
+- ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
+- ["PSo18UIFocusEnvironment", "tableView"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "dataSource"]
+- !private ["PSo11UIFocusItem", "dequeueReusableCell"]
+- ["CSo11UIResponder", "IndexPath"]
+- ["CSo11UIResponder", "Int"]
+- !private ["CSo11UIResponder", "MyStuffTableViewCell"]
+- ["CSo11UIResponder", "UITableView"]
+- ["CSo11UIResponder", "UITableViewCell"]
+- !private ["CSo11UIResponder", "dataSource"]
+- !private ["CSo11UIResponder", "dequeueReusableCell"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "numberOfSections"]
+- ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- ["CSo11UIResponder", "sectionIndexTitles"]
+- ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
+- ["CSo11UIResponder", "tableView"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "dataSource"]
+- !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "numberOfSections"]
+- ["PSo30UIResponderStandardEditActions", "numberOfSectionsInTableView"]
+- ["PSo30UIResponderStandardEditActions", "sectionIndexTitles"]
+- ["PSo30UIResponderStandardEditActions", "sectionIndexTitlesForTableView"]
+- ["PSo30UIResponderStandardEditActions", "tableView"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo12UIScrollView", "dataSource"]
+- !private ["CSo12UIScrollView", "dequeueReusableCell"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "numberOfSections"]
+- ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- ["PSo16UIStateRestoring", "sectionIndexTitles"]
+- ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
+- ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITableView", "dataSource"]
+- ["CSo11UITableView", "deinit"]
+- !private ["CSo11UITableView", "dequeueReusableCell"]
+- ["PSo21UITableViewDataSource", "numberOfSections"]
+- ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
+- ["PSo21UITableViewDataSource", "sectionIndexTitles"]
+- ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
+- ["PSo21UITableViewDataSource", "tableView"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo18UITraitEnvironment", "dataSource"]
+- !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "numberOfSections"]
+- ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- ["PSo18UITraitEnvironment", "sectionIndexTitles"]
+- ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
+- ["PSo18UITraitEnvironment", "tableView"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "dataSource"]
+- !private ["CSo6UIView", "dequeueReusableCell"]
+- ["CSo16UIViewController", "IndexPath"]
+- ["CSo16UIViewController", "Int"]
+- !private ["CSo16UIViewController", "MyStuffTableViewCell"]
+- ["CSo16UIViewController", "UITableView"]
+- ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "numberOfSections"]
+- ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- ["CSo16UIViewController", "sectionIndexTitles"]
+- ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
+- ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dataSource"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "dataSource"]
+- !private ["Ps9_Hashable", "dequeueReusableCell"]
+- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "numberOfSections"]
+- ["Ps9_Hashable", "numberOfSectionsInTableView"]
+- ["Ps9_Hashable", "sectionIndexTitles"]
+- ["Ps9_Hashable", "sectionIndexTitlesForTableView"]
+- ["Ps9_Hashable", "tableView"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "SQ"
+- "Si"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "C10HandMeDown20MyStuffTableViewCell"
+- "C10HandMeDown21MyStuffViewController"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- "Sq"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "CSo12UIScrollView"
+- "PSo16UIStateRestoring"
+- "CSo11UITableView"
+- "PSo21UITableViewDataSource"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUser.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSession.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncPermissionChange.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncManager.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUtil.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
+interface-hash: "8417ffef023928a8867a3e3da10bbc27"

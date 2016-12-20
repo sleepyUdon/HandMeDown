@@ -178,13 +178,14 @@ SWIFT_CLASS("_TtC10HandMeDown5Fonts")
 @class Item;
 @class UIImageView;
 @class UILabel;
+@class UIButton;
 
 SWIFT_CLASS("_TtC10HandMeDown25GoodiesCollectionViewCell")
 @interface GoodiesCollectionViewCell : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 @property (nonatomic, weak) IBOutlet UIImageView * _Nullable userPictureView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified likeView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified likeButton;
 - (void)configureWithItemWithItem:(Item * _Nonnull)item;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -225,9 +226,37 @@ SWIFT_CLASS("_TtC10HandMeDown4Item")
 - (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC10HandMeDown20MyStuffTableViewCell")
+@interface MyStuffTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pictureView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (void)configureWithItemWithItem:(Item * _Nonnull)item;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+
+SWIFT_CLASS("_TtC10HandMeDown21MyStuffViewController")
+@interface MyStuffViewController : UIViewController <UITableViewDataSource>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+- (void)viewDidLoad;
+/**
+  MARK: TableView DataSource
+*/
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIImagePickerController;
 @class UITextField;
-@class UIButton;
 @class Button;
 @class UIView;
 @class UITextView;
