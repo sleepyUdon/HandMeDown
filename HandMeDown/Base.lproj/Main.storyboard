@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6Lg-38-lNS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1129,13 +1129,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="emailField" destination="yaN-TR-4x2" id="VNy-HG-HDj"/>
+                        <outlet property="emailField" destination="yaN-TR-4x2" id="Oel-AK-Mrk"/>
                         <outlet property="passwordField" destination="UQC-7I-dSJ" id="Uh8-WV-vVZ"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="SignIn" id="GIG-jj-Bam"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xoj-jq-VC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1120.8" y="-82.3088455772114"/>
+            <point key="canvasLocation" x="-737" y="0.0"/>
         </scene>
         <!--Title-->
         <scene sceneID="yl2-sM-qoP">

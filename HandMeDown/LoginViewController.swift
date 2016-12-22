@@ -9,18 +9,37 @@
 import UIKit
 import Firebase
 
-@objc(SignInViewController)
-
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+    // MARK: VIEWDIDLOAD
+    
+    override func viewDidLoad() {
+        self.emailField.delegate = self
+        self.passwordField.delegate = self
+    }
+    
+    
+    // MARK: VIEWDIDAPPEAR
     override func viewDidAppear(_ animated: Bool) {
         if let user = FIRAuth.auth()?.currentUser{
             self.signedIn(user)
         }
     }
+    
+    
+    // MARK: TextField Delegate
+
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+        return true
+    }
+    
+    
+    // MARK: Actions
     
     @IBAction func handleSigninButton(_ sender: UIButton) {
         guard let email = emailField.text, let password = passwordField.text else {return}
@@ -86,7 +105,7 @@ class LoginViewController: UIViewController {
         AppState.sharedInstance.signedIn = true
         let notificationName = Notification.Name(rawValue: Constants.NotificationKeys.SignedIn)
         NotificationCenter.default.post(name: notificationName, object: nil, userInfo: nil)
-        performSegue(withIdentifier: Constants.Segues.SignInToFp, sender: nil)
+        performSegue(withIdentifier: Constants.Segues.SignIn, sender: nil)
     }
     
 }

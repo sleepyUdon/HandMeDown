@@ -17,13 +17,18 @@ class MyStuffViewController: UIViewController, UITableViewDataSource {
     
     var items: Results<Item>!
     
-    
+    /// MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         let realm = try!Realm()
         items = realm.objects(Item.self)
         // Do any additional setup after loading the view.
+    }
+    
+    /// MARK: ViewWillAppear
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
     
     /// MARK: TableView DataSource
