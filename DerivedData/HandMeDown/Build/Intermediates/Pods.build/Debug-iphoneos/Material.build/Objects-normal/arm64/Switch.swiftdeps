@@ -17,74 +17,74 @@ provides-member:
 - ["O8Material10SwitchSize", ""]
 - ["P8Material14SwitchDelegate", ""]
 - ["C8Material6Switch", ""]
+- ["C8Material6Switch", "setSwitchState"]
 provides-dynamic-lookup:
-- "switchSize"
-- "layoutSubviews"
-- "willLayout"
-- "trackOffDisabledColor"
-- "on"
-- "trackOnDisabledColor"
-- "handleTouchUpInside"
-- "prepare"
-- "buttonOffColor"
-- "buttonOnDisabledColor"
-- "button"
-- "touchesBegan"
-- "intrinsicContentSize"
-- "reload"
 - "toggle"
-- "switchDidChangeState"
-- "delegate"
-- "isEnabled"
-- "track"
-- "willMove"
-- "trackOnColor"
-- "setSwitchState"
-- "handleTouchUpOutsideOrCanceled"
 - "switchState"
 - "buttonOnColor"
-- "switchStyle"
-- "bounceable"
+- "buttonOnDisabledColor"
+- "switchSize"
+- "track"
 - "handleTouchDragInside"
-- "setOn"
+- "reload"
+- "trackOnColor"
+- "handleTouchUpInside"
+- "touchesBegan"
+- "switchStyle"
+- "isEnabled"
 - "trackOffColor"
 - "buttonOffDisabledColor"
+- "isOn"
+- "layoutSubviews"
+- "buttonOffColor"
+- "isBounceable"
+- "prepare"
+- "willLayout"
+- "trackOnDisabledColor"
+- "intrinsicContentSize"
+- "button"
+- "switchDidChangeState"
+- "trackOffDisabledColor"
+- "willMove"
+- "handleTouchUpOutsideOrCanceled"
+- "delegate"
+- "setSwitchState"
 depends-top-level:
-- "CGSize"
-- !private "Screen"
-- "Bool"
-- "TernaryPrecedence"
-- "Void"
-- !private "+"
-- "SwitchDelegate"
-- "SwitchSize"
-- "UIView"
-- "Int"
-- !private ">"
-- !private "/"
-- "SwitchStyle"
 - "CGFloat"
-- "FabButton"
 - "UITouch"
-- "=="
-- !private "<"
-- !private "~="
-- "UIControl"
-- !private "&&"
-- "SwitchState"
-- "AssignmentPrecedence"
+- "SwitchSize"
+- "TernaryPrecedence"
 - !private "max"
-- "Color"
-- "UIEvent"
-- "Set"
-- !private "min"
-- "CGRect"
+- "Bool"
+- "SwitchDelegate"
 - !private "Array"
+- "UIEvent"
+- "Void"
+- "CGRect"
+- !private "~="
+- "=="
+- "AssignmentPrecedence"
 - !private "!="
+- !private "+"
+- !private "Screen"
+- "Set"
 - "Switch"
-- "BooleanLiteralType"
+- "UIControl"
+- "UIView"
+- !private "min"
+- "Int"
+- "Color"
+- "CGSize"
 - "NSCoder"
+- "BooleanLiteralType"
+- !private ">"
 - !private "-"
+- "SwitchState"
+- "FabButton"
+- !private "&&"
+- !private "<"
+- "SwitchStyle"
+- !private "/"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "CGSize"]
@@ -103,7 +103,6 @@ depends-member:
 - !private ["Ps9AnyObject", "blue"]
 - !private ["Ps9AnyObject", "blueGrey"]
 - ["Ps9AnyObject", "bounceOffset"]
-- ["Ps9AnyObject", "bounceable"]
 - ["Ps9AnyObject", "button"]
 - ["Ps9AnyObject", "buttonDiameter"]
 - ["Ps9AnyObject", "buttonOffColor"]
@@ -126,7 +125,9 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "internalSwitchState"]
 - ["Ps9AnyObject", "intrinsicContentSize"]
+- ["Ps9AnyObject", "isBounceable"]
 - ["Ps9AnyObject", "isEnabled"]
+- ["Ps9AnyObject", "isOn"]
 - !private ["Ps9AnyObject", "isUserInteractionEnabled"]
 - !private ["Ps9AnyObject", "layer"]
 - ["Ps9AnyObject", "layoutSubviews"]
@@ -138,7 +139,6 @@ depends-member:
 - !private ["Ps9AnyObject", "max"]
 - !private ["Ps9AnyObject", "min"]
 - ["Ps9AnyObject", "offPosition"]
-- ["Ps9AnyObject", "on"]
 - ["Ps9AnyObject", "onPosition"]
 - ["Ps9AnyObject", "prepare"]
 - ["Ps9AnyObject", "prepareButton"]
@@ -149,7 +149,6 @@ depends-member:
 - !private ["Ps9AnyObject", "previousLocation"]
 - ["Ps9AnyObject", "reload"]
 - !private ["Ps9AnyObject", "sendActions"]
-- ["Ps9AnyObject", "setOn"]
 - ["Ps9AnyObject", "setSwitchState"]
 - ["Ps9AnyObject", "styleForState"]
 - !private ["Ps9AnyObject", "superview"]
@@ -167,6 +166,7 @@ depends-member:
 - ["Ps9AnyObject", "trackThickness"]
 - ["Ps9AnyObject", "updateColorForDisabledState"]
 - ["Ps9AnyObject", "updateColorForState"]
+- ["Ps9AnyObject", "updateSwitchState"]
 - !private ["Ps9AnyObject", "width"]
 - ["Ps9AnyObject", "willLayout"]
 - ["Ps9AnyObject", "willMove"]
@@ -201,7 +201,6 @@ depends-member:
 - ["PSo15CALayerDelegate", "animateToState"]
 - !private ["PSo15CALayerDelegate", "backgroundColor"]
 - ["PSo15CALayerDelegate", "bounceOffset"]
-- ["PSo15CALayerDelegate", "bounceable"]
 - ["PSo15CALayerDelegate", "button"]
 - ["PSo15CALayerDelegate", "buttonDiameter"]
 - ["PSo15CALayerDelegate", "buttonOffColor"]
@@ -219,14 +218,15 @@ depends-member:
 - ["PSo15CALayerDelegate", "init"]
 - ["PSo15CALayerDelegate", "internalSwitchState"]
 - ["PSo15CALayerDelegate", "intrinsicContentSize"]
+- ["PSo15CALayerDelegate", "isBounceable"]
 - ["PSo15CALayerDelegate", "isEnabled"]
+- ["PSo15CALayerDelegate", "isOn"]
 - !private ["PSo15CALayerDelegate", "isUserInteractionEnabled"]
 - !private ["PSo15CALayerDelegate", "layer"]
 - ["PSo15CALayerDelegate", "layoutSubviews"]
 - !private ["PSo15CALayerDelegate", "max"]
 - !private ["PSo15CALayerDelegate", "min"]
 - ["PSo15CALayerDelegate", "offPosition"]
-- ["PSo15CALayerDelegate", "on"]
 - ["PSo15CALayerDelegate", "onPosition"]
 - ["PSo15CALayerDelegate", "prepare"]
 - ["PSo15CALayerDelegate", "prepareButton"]
@@ -236,7 +236,6 @@ depends-member:
 - ["PSo15CALayerDelegate", "prepareTrack"]
 - ["PSo15CALayerDelegate", "reload"]
 - !private ["PSo15CALayerDelegate", "sendActions"]
-- ["PSo15CALayerDelegate", "setOn"]
 - ["PSo15CALayerDelegate", "setSwitchState"]
 - ["PSo15CALayerDelegate", "styleForState"]
 - !private ["PSo15CALayerDelegate", "superview"]
@@ -253,6 +252,7 @@ depends-member:
 - ["PSo15CALayerDelegate", "trackThickness"]
 - ["PSo15CALayerDelegate", "updateColorForDisabledState"]
 - ["PSo15CALayerDelegate", "updateColorForState"]
+- ["PSo15CALayerDelegate", "updateSwitchState"]
 - !private ["PSo15CALayerDelegate", "width"]
 - ["PSo15CALayerDelegate", "willLayout"]
 - ["PSo15CALayerDelegate", "willMove"]
@@ -289,7 +289,6 @@ depends-member:
 - !private ["Ps7CVarArg", "blue"]
 - !private ["Ps7CVarArg", "blueGrey"]
 - ["Ps7CVarArg", "bounceOffset"]
-- ["Ps7CVarArg", "bounceable"]
 - ["Ps7CVarArg", "button"]
 - ["Ps7CVarArg", "buttonDiameter"]
 - ["Ps7CVarArg", "buttonOffColor"]
@@ -313,7 +312,9 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "internalSwitchState"]
 - ["Ps7CVarArg", "intrinsicContentSize"]
+- ["Ps7CVarArg", "isBounceable"]
 - ["Ps7CVarArg", "isEnabled"]
+- ["Ps7CVarArg", "isOn"]
 - !private ["Ps7CVarArg", "isUserInteractionEnabled"]
 - !private ["Ps7CVarArg", "layer"]
 - ["Ps7CVarArg", "layoutSubviews"]
@@ -324,7 +325,6 @@ depends-member:
 - !private ["Ps7CVarArg", "max"]
 - !private ["Ps7CVarArg", "min"]
 - ["Ps7CVarArg", "offPosition"]
-- ["Ps7CVarArg", "on"]
 - ["Ps7CVarArg", "onPosition"]
 - ["Ps7CVarArg", "prepare"]
 - ["Ps7CVarArg", "prepareButton"]
@@ -335,7 +335,6 @@ depends-member:
 - !private ["Ps7CVarArg", "previousLocation"]
 - ["Ps7CVarArg", "reload"]
 - !private ["Ps7CVarArg", "sendActions"]
-- ["Ps7CVarArg", "setOn"]
 - ["Ps7CVarArg", "setSwitchState"]
 - ["Ps7CVarArg", "styleForState"]
 - !private ["Ps7CVarArg", "superview"]
@@ -353,6 +352,7 @@ depends-member:
 - ["Ps7CVarArg", "trackThickness"]
 - ["Ps7CVarArg", "updateColorForDisabledState"]
 - ["Ps7CVarArg", "updateColorForState"]
+- ["Ps7CVarArg", "updateSwitchState"]
 - !private ["Ps7CVarArg", "width"]
 - ["Ps7CVarArg", "willLayout"]
 - ["Ps7CVarArg", "willMove"]
@@ -394,7 +394,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "blue"]
 - !private ["Ps28CustomDebugStringConvertible", "blueGrey"]
 - ["Ps28CustomDebugStringConvertible", "bounceOffset"]
-- ["Ps28CustomDebugStringConvertible", "bounceable"]
 - ["Ps28CustomDebugStringConvertible", "button"]
 - ["Ps28CustomDebugStringConvertible", "buttonDiameter"]
 - ["Ps28CustomDebugStringConvertible", "buttonOffColor"]
@@ -418,7 +417,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "internalSwitchState"]
 - ["Ps28CustomDebugStringConvertible", "intrinsicContentSize"]
+- ["Ps28CustomDebugStringConvertible", "isBounceable"]
 - ["Ps28CustomDebugStringConvertible", "isEnabled"]
+- ["Ps28CustomDebugStringConvertible", "isOn"]
 - !private ["Ps28CustomDebugStringConvertible", "isUserInteractionEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - ["Ps28CustomDebugStringConvertible", "layoutSubviews"]
@@ -429,7 +430,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "max"]
 - !private ["Ps28CustomDebugStringConvertible", "min"]
 - ["Ps28CustomDebugStringConvertible", "offPosition"]
-- ["Ps28CustomDebugStringConvertible", "on"]
 - ["Ps28CustomDebugStringConvertible", "onPosition"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
 - ["Ps28CustomDebugStringConvertible", "prepareButton"]
@@ -440,7 +440,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "previousLocation"]
 - ["Ps28CustomDebugStringConvertible", "reload"]
 - !private ["Ps28CustomDebugStringConvertible", "sendActions"]
-- ["Ps28CustomDebugStringConvertible", "setOn"]
 - ["Ps28CustomDebugStringConvertible", "setSwitchState"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
 - ["Ps28CustomDebugStringConvertible", "styleForState"]
@@ -459,6 +458,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "trackThickness"]
 - ["Ps28CustomDebugStringConvertible", "updateColorForDisabledState"]
 - ["Ps28CustomDebugStringConvertible", "updateColorForState"]
+- ["Ps28CustomDebugStringConvertible", "updateSwitchState"]
 - !private ["Ps28CustomDebugStringConvertible", "width"]
 - ["Ps28CustomDebugStringConvertible", "willLayout"]
 - ["Ps28CustomDebugStringConvertible", "willMove"]
@@ -507,7 +507,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "blue"]
 - !private ["Ps23CustomStringConvertible", "blueGrey"]
 - ["Ps23CustomStringConvertible", "bounceOffset"]
-- ["Ps23CustomStringConvertible", "bounceable"]
 - ["Ps23CustomStringConvertible", "button"]
 - ["Ps23CustomStringConvertible", "buttonDiameter"]
 - ["Ps23CustomStringConvertible", "buttonOffColor"]
@@ -531,7 +530,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "internalSwitchState"]
 - ["Ps23CustomStringConvertible", "intrinsicContentSize"]
+- ["Ps23CustomStringConvertible", "isBounceable"]
 - ["Ps23CustomStringConvertible", "isEnabled"]
+- ["Ps23CustomStringConvertible", "isOn"]
 - !private ["Ps23CustomStringConvertible", "isUserInteractionEnabled"]
 - !private ["Ps23CustomStringConvertible", "layer"]
 - ["Ps23CustomStringConvertible", "layoutSubviews"]
@@ -542,7 +543,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "max"]
 - !private ["Ps23CustomStringConvertible", "min"]
 - ["Ps23CustomStringConvertible", "offPosition"]
-- ["Ps23CustomStringConvertible", "on"]
 - ["Ps23CustomStringConvertible", "onPosition"]
 - ["Ps23CustomStringConvertible", "prepare"]
 - ["Ps23CustomStringConvertible", "prepareButton"]
@@ -553,7 +553,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "previousLocation"]
 - ["Ps23CustomStringConvertible", "reload"]
 - !private ["Ps23CustomStringConvertible", "sendActions"]
-- ["Ps23CustomStringConvertible", "setOn"]
 - ["Ps23CustomStringConvertible", "setSwitchState"]
 - ["Ps23CustomStringConvertible", "styleForState"]
 - !private ["Ps23CustomStringConvertible", "superview"]
@@ -571,6 +570,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "trackThickness"]
 - ["Ps23CustomStringConvertible", "updateColorForDisabledState"]
 - ["Ps23CustomStringConvertible", "updateColorForState"]
+- ["Ps23CustomStringConvertible", "updateSwitchState"]
 - !private ["Ps23CustomStringConvertible", "width"]
 - ["Ps23CustomStringConvertible", "willLayout"]
 - ["Ps23CustomStringConvertible", "willMove"]
@@ -601,7 +601,6 @@ depends-member:
 - !private ["Ps9Equatable", "blue"]
 - !private ["Ps9Equatable", "blueGrey"]
 - ["Ps9Equatable", "bounceOffset"]
-- ["Ps9Equatable", "bounceable"]
 - ["Ps9Equatable", "button"]
 - ["Ps9Equatable", "buttonDiameter"]
 - ["Ps9Equatable", "buttonOffColor"]
@@ -629,7 +628,9 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "internalSwitchState"]
 - ["Ps9Equatable", "intrinsicContentSize"]
+- ["Ps9Equatable", "isBounceable"]
 - ["Ps9Equatable", "isEnabled"]
+- ["Ps9Equatable", "isOn"]
 - !private ["Ps9Equatable", "isUserInteractionEnabled"]
 - ["Ps9Equatable", "large"]
 - !private ["Ps9Equatable", "layer"]
@@ -644,7 +645,7 @@ depends-member:
 - !private ["Ps9Equatable", "min"]
 - ["Ps9Equatable", "off"]
 - ["Ps9Equatable", "offPosition"]
-- ["Ps9Equatable", "on"]
+- !private ["Ps9Equatable", "on"]
 - ["Ps9Equatable", "onPosition"]
 - ["Ps9Equatable", "prepare"]
 - ["Ps9Equatable", "prepareButton"]
@@ -656,7 +657,6 @@ depends-member:
 - ["Ps9Equatable", "rawValue"]
 - ["Ps9Equatable", "reload"]
 - !private ["Ps9Equatable", "sendActions"]
-- ["Ps9Equatable", "setOn"]
 - ["Ps9Equatable", "setSwitchState"]
 - !private ["Ps9Equatable", "size"]
 - ["Ps9Equatable", "small"]
@@ -680,6 +680,7 @@ depends-member:
 - ["Ps9Equatable", "trackThickness"]
 - ["Ps9Equatable", "updateColorForDisabledState"]
 - ["Ps9Equatable", "updateColorForState"]
+- ["Ps9Equatable", "updateSwitchState"]
 - !private ["Ps9Equatable", "valueChanged"]
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", "willLayout"]
@@ -730,7 +731,6 @@ depends-member:
 - !private ["Ps8Hashable", "blue"]
 - !private ["Ps8Hashable", "blueGrey"]
 - ["Ps8Hashable", "bounceOffset"]
-- ["Ps8Hashable", "bounceable"]
 - ["Ps8Hashable", "button"]
 - ["Ps8Hashable", "buttonDiameter"]
 - ["Ps8Hashable", "buttonOffColor"]
@@ -755,7 +755,9 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "internalSwitchState"]
 - ["Ps8Hashable", "intrinsicContentSize"]
+- ["Ps8Hashable", "isBounceable"]
 - ["Ps8Hashable", "isEnabled"]
+- ["Ps8Hashable", "isOn"]
 - !private ["Ps8Hashable", "isUserInteractionEnabled"]
 - ["Ps8Hashable", "large"]
 - !private ["Ps8Hashable", "layer"]
@@ -770,7 +772,7 @@ depends-member:
 - !private ["Ps8Hashable", "min"]
 - ["Ps8Hashable", "off"]
 - ["Ps8Hashable", "offPosition"]
-- ["Ps8Hashable", "on"]
+- !private ["Ps8Hashable", "on"]
 - ["Ps8Hashable", "onPosition"]
 - ["Ps8Hashable", "prepare"]
 - ["Ps8Hashable", "prepareButton"]
@@ -782,7 +784,6 @@ depends-member:
 - ["Ps8Hashable", "rawValue"]
 - ["Ps8Hashable", "reload"]
 - !private ["Ps8Hashable", "sendActions"]
-- ["Ps8Hashable", "setOn"]
 - ["Ps8Hashable", "setSwitchState"]
 - ["Ps8Hashable", "small"]
 - ["Ps8Hashable", "styleForState"]
@@ -801,6 +802,7 @@ depends-member:
 - ["Ps8Hashable", "trackThickness"]
 - ["Ps8Hashable", "updateColorForDisabledState"]
 - ["Ps8Hashable", "updateColorForState"]
+- ["Ps8Hashable", "updateSwitchState"]
 - !private ["Ps8Hashable", "width"]
 - ["Ps8Hashable", "willLayout"]
 - ["Ps8Hashable", "willMove"]
@@ -840,7 +842,6 @@ depends-member:
 - !private ["PSo8NSCoding", "blue"]
 - !private ["PSo8NSCoding", "blueGrey"]
 - ["PSo8NSCoding", "bounceOffset"]
-- ["PSo8NSCoding", "bounceable"]
 - ["PSo8NSCoding", "button"]
 - ["PSo8NSCoding", "buttonDiameter"]
 - ["PSo8NSCoding", "buttonOffColor"]
@@ -862,7 +863,9 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "internalSwitchState"]
 - ["PSo8NSCoding", "intrinsicContentSize"]
+- ["PSo8NSCoding", "isBounceable"]
 - ["PSo8NSCoding", "isEnabled"]
+- ["PSo8NSCoding", "isOn"]
 - !private ["PSo8NSCoding", "isUserInteractionEnabled"]
 - !private ["PSo8NSCoding", "layer"]
 - ["PSo8NSCoding", "layoutSubviews"]
@@ -872,7 +875,6 @@ depends-member:
 - !private ["PSo8NSCoding", "max"]
 - !private ["PSo8NSCoding", "min"]
 - ["PSo8NSCoding", "offPosition"]
-- ["PSo8NSCoding", "on"]
 - ["PSo8NSCoding", "onPosition"]
 - ["PSo8NSCoding", "prepare"]
 - ["PSo8NSCoding", "prepareButton"]
@@ -882,7 +884,6 @@ depends-member:
 - ["PSo8NSCoding", "prepareTrack"]
 - ["PSo8NSCoding", "reload"]
 - !private ["PSo8NSCoding", "sendActions"]
-- ["PSo8NSCoding", "setOn"]
 - ["PSo8NSCoding", "setSwitchState"]
 - ["PSo8NSCoding", "styleForState"]
 - !private ["PSo8NSCoding", "superview"]
@@ -899,6 +900,7 @@ depends-member:
 - ["PSo8NSCoding", "trackThickness"]
 - ["PSo8NSCoding", "updateColorForDisabledState"]
 - ["PSo8NSCoding", "updateColorForState"]
+- ["PSo8NSCoding", "updateSwitchState"]
 - !private ["PSo8NSCoding", "width"]
 - ["PSo8NSCoding", "willLayout"]
 - ["PSo8NSCoding", "willMove"]
@@ -940,7 +942,6 @@ depends-member:
 - !private ["CSo8NSObject", "blue"]
 - !private ["CSo8NSObject", "blueGrey"]
 - ["CSo8NSObject", "bounceOffset"]
-- ["CSo8NSObject", "bounceable"]
 - ["CSo8NSObject", "button"]
 - ["CSo8NSObject", "buttonDiameter"]
 - ["CSo8NSObject", "buttonOffColor"]
@@ -962,7 +963,9 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "internalSwitchState"]
 - ["CSo8NSObject", "intrinsicContentSize"]
+- ["CSo8NSObject", "isBounceable"]
 - ["CSo8NSObject", "isEnabled"]
+- ["CSo8NSObject", "isOn"]
 - !private ["CSo8NSObject", "isUserInteractionEnabled"]
 - !private ["CSo8NSObject", "layer"]
 - ["CSo8NSObject", "layoutSubviews"]
@@ -973,7 +976,6 @@ depends-member:
 - !private ["CSo8NSObject", "max"]
 - !private ["CSo8NSObject", "min"]
 - ["CSo8NSObject", "offPosition"]
-- ["CSo8NSObject", "on"]
 - ["CSo8NSObject", "onPosition"]
 - ["CSo8NSObject", "prepare"]
 - ["CSo8NSObject", "prepareButton"]
@@ -984,7 +986,6 @@ depends-member:
 - !private ["CSo8NSObject", "previousLocation"]
 - ["CSo8NSObject", "reload"]
 - !private ["CSo8NSObject", "sendActions"]
-- ["CSo8NSObject", "setOn"]
 - ["CSo8NSObject", "setSwitchState"]
 - ["CSo8NSObject", "styleForState"]
 - !private ["CSo8NSObject", "superview"]
@@ -1002,6 +1003,7 @@ depends-member:
 - ["CSo8NSObject", "trackThickness"]
 - ["CSo8NSObject", "updateColorForDisabledState"]
 - ["CSo8NSObject", "updateColorForState"]
+- ["CSo8NSObject", "updateSwitchState"]
 - !private ["CSo8NSObject", "width"]
 - ["CSo8NSObject", "willLayout"]
 - ["CSo8NSObject", "willMove"]
@@ -1024,7 +1026,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "blue"]
 - !private ["PSo16NSObjectProtocol", "blueGrey"]
 - ["PSo16NSObjectProtocol", "bounceOffset"]
-- ["PSo16NSObjectProtocol", "bounceable"]
 - ["PSo16NSObjectProtocol", "button"]
 - ["PSo16NSObjectProtocol", "buttonDiameter"]
 - ["PSo16NSObjectProtocol", "buttonOffColor"]
@@ -1046,7 +1047,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "internalSwitchState"]
 - ["PSo16NSObjectProtocol", "intrinsicContentSize"]
+- ["PSo16NSObjectProtocol", "isBounceable"]
 - ["PSo16NSObjectProtocol", "isEnabled"]
+- ["PSo16NSObjectProtocol", "isOn"]
 - !private ["PSo16NSObjectProtocol", "isUserInteractionEnabled"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - ["PSo16NSObjectProtocol", "layoutSubviews"]
@@ -1057,7 +1060,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "max"]
 - !private ["PSo16NSObjectProtocol", "min"]
 - ["PSo16NSObjectProtocol", "offPosition"]
-- ["PSo16NSObjectProtocol", "on"]
 - ["PSo16NSObjectProtocol", "onPosition"]
 - ["PSo16NSObjectProtocol", "prepare"]
 - ["PSo16NSObjectProtocol", "prepareButton"]
@@ -1068,7 +1070,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "previousLocation"]
 - ["PSo16NSObjectProtocol", "reload"]
 - !private ["PSo16NSObjectProtocol", "sendActions"]
-- ["PSo16NSObjectProtocol", "setOn"]
 - ["PSo16NSObjectProtocol", "setSwitchState"]
 - ["PSo16NSObjectProtocol", "styleForState"]
 - !private ["PSo16NSObjectProtocol", "superview"]
@@ -1086,6 +1087,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "trackThickness"]
 - ["PSo16NSObjectProtocol", "updateColorForDisabledState"]
 - ["PSo16NSObjectProtocol", "updateColorForState"]
+- ["PSo16NSObjectProtocol", "updateSwitchState"]
 - !private ["PSo16NSObjectProtocol", "width"]
 - ["PSo16NSObjectProtocol", "willLayout"]
 - ["PSo16NSObjectProtocol", "willMove"]
@@ -1183,7 +1185,6 @@ depends-member:
 - !private ["C8Material6Switch", "addSubview"]
 - !private ["C8Material6Switch", "animateToState"]
 - !private ["C8Material6Switch", "bounceOffset"]
-- ["C8Material6Switch", "bounceable"]
 - ["C8Material6Switch", "button"]
 - !private ["C8Material6Switch", "buttonDiameter"]
 - ["C8Material6Switch", "buttonOffColor"]
@@ -1194,21 +1195,22 @@ depends-member:
 - ["C8Material6Switch", "deinit"]
 - ["C8Material6Switch", "delegate"]
 - !private ["C8Material6Switch", "frame"]
-- ["C8Material6Switch", "handleTouchDragInside"]
-- ["C8Material6Switch", "handleTouchUpInside"]
-- ["C8Material6Switch", "handleTouchUpOutsideOrCanceled"]
+- !private ["C8Material6Switch", "handleTouchDragInside"]
+- !private ["C8Material6Switch", "handleTouchUpInside"]
+- !private ["C8Material6Switch", "handleTouchUpOutsideOrCanceled"]
 - !private ["C8Material6Switch", "height"]
 - ["C8Material6Switch", "init"]
 - !private ["C8Material6Switch", "internalSwitchState"]
 - ["C8Material6Switch", "intrinsicContentSize"]
+- ["C8Material6Switch", "isBounceable"]
 - ["C8Material6Switch", "isEnabled"]
+- ["C8Material6Switch", "isOn"]
 - !private ["C8Material6Switch", "isUserInteractionEnabled"]
 - !private ["C8Material6Switch", "layer"]
 - ["C8Material6Switch", "layoutSubviews"]
 - !private ["C8Material6Switch", "max"]
 - !private ["C8Material6Switch", "min"]
 - !private ["C8Material6Switch", "offPosition"]
-- ["C8Material6Switch", "on"]
 - !private ["C8Material6Switch", "onPosition"]
 - ["C8Material6Switch", "prepare"]
 - !private ["C8Material6Switch", "prepareButton"]
@@ -1218,7 +1220,6 @@ depends-member:
 - !private ["C8Material6Switch", "prepareTrack"]
 - ["C8Material6Switch", "reload"]
 - !private ["C8Material6Switch", "sendActions"]
-- ["C8Material6Switch", "setOn"]
 - ["C8Material6Switch", "setSwitchState"]
 - !private ["C8Material6Switch", "styleForState"]
 - !private ["C8Material6Switch", "superview"]
@@ -1235,6 +1236,7 @@ depends-member:
 - !private ["C8Material6Switch", "trackThickness"]
 - !private ["C8Material6Switch", "updateColorForDisabledState"]
 - !private ["C8Material6Switch", "updateColorForState"]
+- !private ["C8Material6Switch", "updateSwitchState"]
 - !private ["C8Material6Switch", "width"]
 - ["C8Material6Switch", "willLayout"]
 - ["C8Material6Switch", "willMove"]
@@ -1281,7 +1283,6 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "animateToState"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - ["PSo29UIAccessibilityIdentification", "bounceOffset"]
-- ["PSo29UIAccessibilityIdentification", "bounceable"]
 - ["PSo29UIAccessibilityIdentification", "button"]
 - ["PSo29UIAccessibilityIdentification", "buttonDiameter"]
 - ["PSo29UIAccessibilityIdentification", "buttonOffColor"]
@@ -1299,14 +1300,15 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "internalSwitchState"]
 - ["PSo29UIAccessibilityIdentification", "intrinsicContentSize"]
+- ["PSo29UIAccessibilityIdentification", "isBounceable"]
 - ["PSo29UIAccessibilityIdentification", "isEnabled"]
+- ["PSo29UIAccessibilityIdentification", "isOn"]
 - !private ["PSo29UIAccessibilityIdentification", "isUserInteractionEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - ["PSo29UIAccessibilityIdentification", "layoutSubviews"]
 - !private ["PSo29UIAccessibilityIdentification", "max"]
 - !private ["PSo29UIAccessibilityIdentification", "min"]
 - ["PSo29UIAccessibilityIdentification", "offPosition"]
-- ["PSo29UIAccessibilityIdentification", "on"]
 - ["PSo29UIAccessibilityIdentification", "onPosition"]
 - ["PSo29UIAccessibilityIdentification", "prepare"]
 - ["PSo29UIAccessibilityIdentification", "prepareButton"]
@@ -1316,7 +1318,6 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "prepareTrack"]
 - ["PSo29UIAccessibilityIdentification", "reload"]
 - !private ["PSo29UIAccessibilityIdentification", "sendActions"]
-- ["PSo29UIAccessibilityIdentification", "setOn"]
 - ["PSo29UIAccessibilityIdentification", "setSwitchState"]
 - ["PSo29UIAccessibilityIdentification", "styleForState"]
 - !private ["PSo29UIAccessibilityIdentification", "superview"]
@@ -1333,6 +1334,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "trackThickness"]
 - ["PSo29UIAccessibilityIdentification", "updateColorForDisabledState"]
 - ["PSo29UIAccessibilityIdentification", "updateColorForState"]
+- ["PSo29UIAccessibilityIdentification", "updateSwitchState"]
 - !private ["PSo29UIAccessibilityIdentification", "width"]
 - ["PSo29UIAccessibilityIdentification", "willLayout"]
 - ["PSo29UIAccessibilityIdentification", "willMove"]
@@ -1353,7 +1355,6 @@ depends-member:
 - ["PSo12UIAppearance", "animateToState"]
 - !private ["PSo12UIAppearance", "backgroundColor"]
 - ["PSo12UIAppearance", "bounceOffset"]
-- ["PSo12UIAppearance", "bounceable"]
 - ["PSo12UIAppearance", "button"]
 - ["PSo12UIAppearance", "buttonDiameter"]
 - ["PSo12UIAppearance", "buttonOffColor"]
@@ -1371,14 +1372,15 @@ depends-member:
 - ["PSo12UIAppearance", "init"]
 - ["PSo12UIAppearance", "internalSwitchState"]
 - ["PSo12UIAppearance", "intrinsicContentSize"]
+- ["PSo12UIAppearance", "isBounceable"]
 - ["PSo12UIAppearance", "isEnabled"]
+- ["PSo12UIAppearance", "isOn"]
 - !private ["PSo12UIAppearance", "isUserInteractionEnabled"]
 - !private ["PSo12UIAppearance", "layer"]
 - ["PSo12UIAppearance", "layoutSubviews"]
 - !private ["PSo12UIAppearance", "max"]
 - !private ["PSo12UIAppearance", "min"]
 - ["PSo12UIAppearance", "offPosition"]
-- ["PSo12UIAppearance", "on"]
 - ["PSo12UIAppearance", "onPosition"]
 - ["PSo12UIAppearance", "prepare"]
 - ["PSo12UIAppearance", "prepareButton"]
@@ -1388,7 +1390,6 @@ depends-member:
 - ["PSo12UIAppearance", "prepareTrack"]
 - ["PSo12UIAppearance", "reload"]
 - !private ["PSo12UIAppearance", "sendActions"]
-- ["PSo12UIAppearance", "setOn"]
 - ["PSo12UIAppearance", "setSwitchState"]
 - ["PSo12UIAppearance", "styleForState"]
 - !private ["PSo12UIAppearance", "superview"]
@@ -1405,6 +1406,7 @@ depends-member:
 - ["PSo12UIAppearance", "trackThickness"]
 - ["PSo12UIAppearance", "updateColorForDisabledState"]
 - ["PSo12UIAppearance", "updateColorForState"]
+- ["PSo12UIAppearance", "updateSwitchState"]
 - !private ["PSo12UIAppearance", "width"]
 - ["PSo12UIAppearance", "willLayout"]
 - ["PSo12UIAppearance", "willMove"]
@@ -1425,7 +1427,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "animateToState"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "bounceOffset"]
-- ["PSo21UIAppearanceContainer", "bounceable"]
 - ["PSo21UIAppearanceContainer", "button"]
 - ["PSo21UIAppearanceContainer", "buttonDiameter"]
 - ["PSo21UIAppearanceContainer", "buttonOffColor"]
@@ -1443,14 +1444,15 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "internalSwitchState"]
 - ["PSo21UIAppearanceContainer", "intrinsicContentSize"]
+- ["PSo21UIAppearanceContainer", "isBounceable"]
 - ["PSo21UIAppearanceContainer", "isEnabled"]
+- ["PSo21UIAppearanceContainer", "isOn"]
 - !private ["PSo21UIAppearanceContainer", "isUserInteractionEnabled"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - ["PSo21UIAppearanceContainer", "layoutSubviews"]
 - !private ["PSo21UIAppearanceContainer", "max"]
 - !private ["PSo21UIAppearanceContainer", "min"]
 - ["PSo21UIAppearanceContainer", "offPosition"]
-- ["PSo21UIAppearanceContainer", "on"]
 - ["PSo21UIAppearanceContainer", "onPosition"]
 - ["PSo21UIAppearanceContainer", "prepare"]
 - ["PSo21UIAppearanceContainer", "prepareButton"]
@@ -1460,7 +1462,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "prepareTrack"]
 - ["PSo21UIAppearanceContainer", "reload"]
 - !private ["PSo21UIAppearanceContainer", "sendActions"]
-- ["PSo21UIAppearanceContainer", "setOn"]
 - ["PSo21UIAppearanceContainer", "setSwitchState"]
 - ["PSo21UIAppearanceContainer", "styleForState"]
 - !private ["PSo21UIAppearanceContainer", "superview"]
@@ -1477,6 +1478,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "trackThickness"]
 - ["PSo21UIAppearanceContainer", "updateColorForDisabledState"]
 - ["PSo21UIAppearanceContainer", "updateColorForState"]
+- ["PSo21UIAppearanceContainer", "updateSwitchState"]
 - !private ["PSo21UIAppearanceContainer", "width"]
 - ["PSo21UIAppearanceContainer", "willLayout"]
 - ["PSo21UIAppearanceContainer", "willMove"]
@@ -1521,7 +1523,6 @@ depends-member:
 - ["CSo9UIControl", "animateToState"]
 - !private ["CSo9UIControl", "backgroundColor"]
 - ["CSo9UIControl", "bounceOffset"]
-- ["CSo9UIControl", "bounceable"]
 - ["CSo9UIControl", "button"]
 - ["CSo9UIControl", "buttonDiameter"]
 - ["CSo9UIControl", "buttonOffColor"]
@@ -1539,14 +1540,15 @@ depends-member:
 - ["CSo9UIControl", "init"]
 - ["CSo9UIControl", "internalSwitchState"]
 - ["CSo9UIControl", "intrinsicContentSize"]
+- ["CSo9UIControl", "isBounceable"]
 - ["CSo9UIControl", "isEnabled"]
+- ["CSo9UIControl", "isOn"]
 - !private ["CSo9UIControl", "isUserInteractionEnabled"]
 - !private ["CSo9UIControl", "layer"]
 - ["CSo9UIControl", "layoutSubviews"]
 - !private ["CSo9UIControl", "max"]
 - !private ["CSo9UIControl", "min"]
 - ["CSo9UIControl", "offPosition"]
-- ["CSo9UIControl", "on"]
 - ["CSo9UIControl", "onPosition"]
 - ["CSo9UIControl", "prepare"]
 - ["CSo9UIControl", "prepareButton"]
@@ -1556,7 +1558,6 @@ depends-member:
 - ["CSo9UIControl", "prepareTrack"]
 - ["CSo9UIControl", "reload"]
 - !private ["CSo9UIControl", "sendActions"]
-- ["CSo9UIControl", "setOn"]
 - ["CSo9UIControl", "setSwitchState"]
 - ["CSo9UIControl", "styleForState"]
 - !private ["CSo9UIControl", "superview"]
@@ -1573,12 +1574,13 @@ depends-member:
 - ["CSo9UIControl", "trackThickness"]
 - ["CSo9UIControl", "updateColorForDisabledState"]
 - ["CSo9UIControl", "updateColorForState"]
+- ["CSo9UIControl", "updateSwitchState"]
 - !private ["CSo9UIControl", "width"]
 - ["CSo9UIControl", "willLayout"]
 - ["CSo9UIControl", "willMove"]
 - !private ["CSo9UIControl", "x"]
 - ["CSo9UIControl", ""]
-- ["VSC15UIControlEvents", "deinit"]
+- !private ["VSC15UIControlEvents", "deinit"]
 - !private ["VSC15UIControlEvents", "touchCancel"]
 - !private ["VSC15UIControlEvents", "touchDragInside"]
 - !private ["VSC15UIControlEvents", "touchUpInside"]
@@ -1599,7 +1601,6 @@ depends-member:
 - ["PSo17UICoordinateSpace", "animateToState"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - ["PSo17UICoordinateSpace", "bounceOffset"]
-- ["PSo17UICoordinateSpace", "bounceable"]
 - ["PSo17UICoordinateSpace", "button"]
 - ["PSo17UICoordinateSpace", "buttonDiameter"]
 - ["PSo17UICoordinateSpace", "buttonOffColor"]
@@ -1617,14 +1618,15 @@ depends-member:
 - ["PSo17UICoordinateSpace", "init"]
 - ["PSo17UICoordinateSpace", "internalSwitchState"]
 - ["PSo17UICoordinateSpace", "intrinsicContentSize"]
+- ["PSo17UICoordinateSpace", "isBounceable"]
 - ["PSo17UICoordinateSpace", "isEnabled"]
+- ["PSo17UICoordinateSpace", "isOn"]
 - !private ["PSo17UICoordinateSpace", "isUserInteractionEnabled"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - ["PSo17UICoordinateSpace", "layoutSubviews"]
 - !private ["PSo17UICoordinateSpace", "max"]
 - !private ["PSo17UICoordinateSpace", "min"]
 - ["PSo17UICoordinateSpace", "offPosition"]
-- ["PSo17UICoordinateSpace", "on"]
 - ["PSo17UICoordinateSpace", "onPosition"]
 - ["PSo17UICoordinateSpace", "prepare"]
 - ["PSo17UICoordinateSpace", "prepareButton"]
@@ -1634,7 +1636,6 @@ depends-member:
 - ["PSo17UICoordinateSpace", "prepareTrack"]
 - ["PSo17UICoordinateSpace", "reload"]
 - !private ["PSo17UICoordinateSpace", "sendActions"]
-- ["PSo17UICoordinateSpace", "setOn"]
 - ["PSo17UICoordinateSpace", "setSwitchState"]
 - ["PSo17UICoordinateSpace", "styleForState"]
 - !private ["PSo17UICoordinateSpace", "superview"]
@@ -1651,6 +1652,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "trackThickness"]
 - ["PSo17UICoordinateSpace", "updateColorForDisabledState"]
 - ["PSo17UICoordinateSpace", "updateColorForState"]
+- ["PSo17UICoordinateSpace", "updateSwitchState"]
 - !private ["PSo17UICoordinateSpace", "width"]
 - ["PSo17UICoordinateSpace", "willLayout"]
 - ["PSo17UICoordinateSpace", "willMove"]
@@ -1671,7 +1673,6 @@ depends-member:
 - ["PSo13UIDynamicItem", "animateToState"]
 - !private ["PSo13UIDynamicItem", "backgroundColor"]
 - ["PSo13UIDynamicItem", "bounceOffset"]
-- ["PSo13UIDynamicItem", "bounceable"]
 - ["PSo13UIDynamicItem", "button"]
 - ["PSo13UIDynamicItem", "buttonDiameter"]
 - ["PSo13UIDynamicItem", "buttonOffColor"]
@@ -1689,14 +1690,15 @@ depends-member:
 - ["PSo13UIDynamicItem", "init"]
 - ["PSo13UIDynamicItem", "internalSwitchState"]
 - ["PSo13UIDynamicItem", "intrinsicContentSize"]
+- ["PSo13UIDynamicItem", "isBounceable"]
 - ["PSo13UIDynamicItem", "isEnabled"]
+- ["PSo13UIDynamicItem", "isOn"]
 - !private ["PSo13UIDynamicItem", "isUserInteractionEnabled"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - ["PSo13UIDynamicItem", "layoutSubviews"]
 - !private ["PSo13UIDynamicItem", "max"]
 - !private ["PSo13UIDynamicItem", "min"]
 - ["PSo13UIDynamicItem", "offPosition"]
-- ["PSo13UIDynamicItem", "on"]
 - ["PSo13UIDynamicItem", "onPosition"]
 - ["PSo13UIDynamicItem", "prepare"]
 - ["PSo13UIDynamicItem", "prepareButton"]
@@ -1706,7 +1708,6 @@ depends-member:
 - ["PSo13UIDynamicItem", "prepareTrack"]
 - ["PSo13UIDynamicItem", "reload"]
 - !private ["PSo13UIDynamicItem", "sendActions"]
-- ["PSo13UIDynamicItem", "setOn"]
 - ["PSo13UIDynamicItem", "setSwitchState"]
 - ["PSo13UIDynamicItem", "styleForState"]
 - !private ["PSo13UIDynamicItem", "superview"]
@@ -1723,12 +1724,13 @@ depends-member:
 - ["PSo13UIDynamicItem", "trackThickness"]
 - ["PSo13UIDynamicItem", "updateColorForDisabledState"]
 - ["PSo13UIDynamicItem", "updateColorForState"]
+- ["PSo13UIDynamicItem", "updateSwitchState"]
 - !private ["PSo13UIDynamicItem", "width"]
 - ["PSo13UIDynamicItem", "willLayout"]
 - ["PSo13UIDynamicItem", "willMove"]
 - !private ["PSo13UIDynamicItem", "x"]
 - ["PSo13UIDynamicItem", ""]
-- ["CSo7UIEvent", "deinit"]
+- !private ["CSo7UIEvent", "deinit"]
 - !private ["CSo7UIEvent", "touches"]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "CGSize"]
@@ -1745,7 +1747,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "animateToState"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "bounceOffset"]
-- ["PSo18UIFocusEnvironment", "bounceable"]
 - ["PSo18UIFocusEnvironment", "button"]
 - ["PSo18UIFocusEnvironment", "buttonDiameter"]
 - ["PSo18UIFocusEnvironment", "buttonOffColor"]
@@ -1763,14 +1764,15 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "internalSwitchState"]
 - ["PSo18UIFocusEnvironment", "intrinsicContentSize"]
+- ["PSo18UIFocusEnvironment", "isBounceable"]
 - ["PSo18UIFocusEnvironment", "isEnabled"]
+- ["PSo18UIFocusEnvironment", "isOn"]
 - !private ["PSo18UIFocusEnvironment", "isUserInteractionEnabled"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
 - ["PSo18UIFocusEnvironment", "layoutSubviews"]
 - !private ["PSo18UIFocusEnvironment", "max"]
 - !private ["PSo18UIFocusEnvironment", "min"]
 - ["PSo18UIFocusEnvironment", "offPosition"]
-- ["PSo18UIFocusEnvironment", "on"]
 - ["PSo18UIFocusEnvironment", "onPosition"]
 - ["PSo18UIFocusEnvironment", "prepare"]
 - ["PSo18UIFocusEnvironment", "prepareButton"]
@@ -1780,7 +1782,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "prepareTrack"]
 - ["PSo18UIFocusEnvironment", "reload"]
 - !private ["PSo18UIFocusEnvironment", "sendActions"]
-- ["PSo18UIFocusEnvironment", "setOn"]
 - ["PSo18UIFocusEnvironment", "setSwitchState"]
 - ["PSo18UIFocusEnvironment", "styleForState"]
 - !private ["PSo18UIFocusEnvironment", "superview"]
@@ -1797,6 +1798,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "trackThickness"]
 - ["PSo18UIFocusEnvironment", "updateColorForDisabledState"]
 - ["PSo18UIFocusEnvironment", "updateColorForState"]
+- ["PSo18UIFocusEnvironment", "updateSwitchState"]
 - !private ["PSo18UIFocusEnvironment", "width"]
 - ["PSo18UIFocusEnvironment", "willLayout"]
 - ["PSo18UIFocusEnvironment", "willMove"]
@@ -1817,7 +1819,6 @@ depends-member:
 - ["PSo11UIFocusItem", "animateToState"]
 - !private ["PSo11UIFocusItem", "backgroundColor"]
 - ["PSo11UIFocusItem", "bounceOffset"]
-- ["PSo11UIFocusItem", "bounceable"]
 - ["PSo11UIFocusItem", "button"]
 - ["PSo11UIFocusItem", "buttonDiameter"]
 - ["PSo11UIFocusItem", "buttonOffColor"]
@@ -1835,14 +1836,15 @@ depends-member:
 - ["PSo11UIFocusItem", "init"]
 - ["PSo11UIFocusItem", "internalSwitchState"]
 - ["PSo11UIFocusItem", "intrinsicContentSize"]
+- ["PSo11UIFocusItem", "isBounceable"]
 - ["PSo11UIFocusItem", "isEnabled"]
+- ["PSo11UIFocusItem", "isOn"]
 - !private ["PSo11UIFocusItem", "isUserInteractionEnabled"]
 - !private ["PSo11UIFocusItem", "layer"]
 - ["PSo11UIFocusItem", "layoutSubviews"]
 - !private ["PSo11UIFocusItem", "max"]
 - !private ["PSo11UIFocusItem", "min"]
 - ["PSo11UIFocusItem", "offPosition"]
-- ["PSo11UIFocusItem", "on"]
 - ["PSo11UIFocusItem", "onPosition"]
 - ["PSo11UIFocusItem", "prepare"]
 - ["PSo11UIFocusItem", "prepareButton"]
@@ -1852,7 +1854,6 @@ depends-member:
 - ["PSo11UIFocusItem", "prepareTrack"]
 - ["PSo11UIFocusItem", "reload"]
 - !private ["PSo11UIFocusItem", "sendActions"]
-- ["PSo11UIFocusItem", "setOn"]
 - ["PSo11UIFocusItem", "setSwitchState"]
 - ["PSo11UIFocusItem", "styleForState"]
 - !private ["PSo11UIFocusItem", "superview"]
@@ -1869,6 +1870,7 @@ depends-member:
 - ["PSo11UIFocusItem", "trackThickness"]
 - ["PSo11UIFocusItem", "updateColorForDisabledState"]
 - ["PSo11UIFocusItem", "updateColorForState"]
+- ["PSo11UIFocusItem", "updateSwitchState"]
 - !private ["PSo11UIFocusItem", "width"]
 - ["PSo11UIFocusItem", "willLayout"]
 - ["PSo11UIFocusItem", "willMove"]
@@ -1898,7 +1900,6 @@ depends-member:
 - ["CSo11UIResponder", "animateToState"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "bounceOffset"]
-- ["CSo11UIResponder", "bounceable"]
 - ["CSo11UIResponder", "button"]
 - ["CSo11UIResponder", "buttonDiameter"]
 - ["CSo11UIResponder", "buttonOffColor"]
@@ -1916,14 +1917,15 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "internalSwitchState"]
 - ["CSo11UIResponder", "intrinsicContentSize"]
+- ["CSo11UIResponder", "isBounceable"]
 - ["CSo11UIResponder", "isEnabled"]
+- ["CSo11UIResponder", "isOn"]
 - !private ["CSo11UIResponder", "isUserInteractionEnabled"]
 - !private ["CSo11UIResponder", "layer"]
 - ["CSo11UIResponder", "layoutSubviews"]
 - !private ["CSo11UIResponder", "max"]
 - !private ["CSo11UIResponder", "min"]
 - ["CSo11UIResponder", "offPosition"]
-- ["CSo11UIResponder", "on"]
 - ["CSo11UIResponder", "onPosition"]
 - ["CSo11UIResponder", "prepare"]
 - ["CSo11UIResponder", "prepareButton"]
@@ -1933,7 +1935,6 @@ depends-member:
 - ["CSo11UIResponder", "prepareTrack"]
 - ["CSo11UIResponder", "reload"]
 - !private ["CSo11UIResponder", "sendActions"]
-- ["CSo11UIResponder", "setOn"]
 - ["CSo11UIResponder", "setSwitchState"]
 - ["CSo11UIResponder", "styleForState"]
 - !private ["CSo11UIResponder", "superview"]
@@ -1950,6 +1951,7 @@ depends-member:
 - ["CSo11UIResponder", "trackThickness"]
 - ["CSo11UIResponder", "updateColorForDisabledState"]
 - ["CSo11UIResponder", "updateColorForState"]
+- ["CSo11UIResponder", "updateSwitchState"]
 - !private ["CSo11UIResponder", "width"]
 - ["CSo11UIResponder", "willLayout"]
 - ["CSo11UIResponder", "willMove"]
@@ -1969,7 +1971,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "animateToState"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - ["PSo30UIResponderStandardEditActions", "bounceOffset"]
-- ["PSo30UIResponderStandardEditActions", "bounceable"]
 - ["PSo30UIResponderStandardEditActions", "button"]
 - ["PSo30UIResponderStandardEditActions", "buttonDiameter"]
 - ["PSo30UIResponderStandardEditActions", "buttonOffColor"]
@@ -1987,14 +1988,15 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "internalSwitchState"]
 - ["PSo30UIResponderStandardEditActions", "intrinsicContentSize"]
+- ["PSo30UIResponderStandardEditActions", "isBounceable"]
 - ["PSo30UIResponderStandardEditActions", "isEnabled"]
+- ["PSo30UIResponderStandardEditActions", "isOn"]
 - !private ["PSo30UIResponderStandardEditActions", "isUserInteractionEnabled"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
 - ["PSo30UIResponderStandardEditActions", "layoutSubviews"]
 - !private ["PSo30UIResponderStandardEditActions", "max"]
 - !private ["PSo30UIResponderStandardEditActions", "min"]
 - ["PSo30UIResponderStandardEditActions", "offPosition"]
-- ["PSo30UIResponderStandardEditActions", "on"]
 - ["PSo30UIResponderStandardEditActions", "onPosition"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
 - ["PSo30UIResponderStandardEditActions", "prepareButton"]
@@ -2004,7 +2006,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "prepareTrack"]
 - ["PSo30UIResponderStandardEditActions", "reload"]
 - !private ["PSo30UIResponderStandardEditActions", "sendActions"]
-- ["PSo30UIResponderStandardEditActions", "setOn"]
 - ["PSo30UIResponderStandardEditActions", "setSwitchState"]
 - ["PSo30UIResponderStandardEditActions", "styleForState"]
 - !private ["PSo30UIResponderStandardEditActions", "superview"]
@@ -2021,6 +2022,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "trackThickness"]
 - ["PSo30UIResponderStandardEditActions", "updateColorForDisabledState"]
 - ["PSo30UIResponderStandardEditActions", "updateColorForState"]
+- ["PSo30UIResponderStandardEditActions", "updateSwitchState"]
 - !private ["PSo30UIResponderStandardEditActions", "width"]
 - ["PSo30UIResponderStandardEditActions", "willLayout"]
 - ["PSo30UIResponderStandardEditActions", "willMove"]
@@ -2044,7 +2046,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "animateToState"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "bounceOffset"]
-- ["PSo18UITraitEnvironment", "bounceable"]
 - ["PSo18UITraitEnvironment", "button"]
 - ["PSo18UITraitEnvironment", "buttonDiameter"]
 - ["PSo18UITraitEnvironment", "buttonOffColor"]
@@ -2062,14 +2063,15 @@ depends-member:
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "internalSwitchState"]
 - ["PSo18UITraitEnvironment", "intrinsicContentSize"]
+- ["PSo18UITraitEnvironment", "isBounceable"]
 - ["PSo18UITraitEnvironment", "isEnabled"]
+- ["PSo18UITraitEnvironment", "isOn"]
 - !private ["PSo18UITraitEnvironment", "isUserInteractionEnabled"]
 - !private ["PSo18UITraitEnvironment", "layer"]
 - ["PSo18UITraitEnvironment", "layoutSubviews"]
 - !private ["PSo18UITraitEnvironment", "max"]
 - !private ["PSo18UITraitEnvironment", "min"]
 - ["PSo18UITraitEnvironment", "offPosition"]
-- ["PSo18UITraitEnvironment", "on"]
 - ["PSo18UITraitEnvironment", "onPosition"]
 - ["PSo18UITraitEnvironment", "prepare"]
 - ["PSo18UITraitEnvironment", "prepareButton"]
@@ -2079,7 +2081,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "prepareTrack"]
 - ["PSo18UITraitEnvironment", "reload"]
 - !private ["PSo18UITraitEnvironment", "sendActions"]
-- ["PSo18UITraitEnvironment", "setOn"]
 - ["PSo18UITraitEnvironment", "setSwitchState"]
 - ["PSo18UITraitEnvironment", "styleForState"]
 - !private ["PSo18UITraitEnvironment", "superview"]
@@ -2096,6 +2097,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "trackThickness"]
 - ["PSo18UITraitEnvironment", "updateColorForDisabledState"]
 - ["PSo18UITraitEnvironment", "updateColorForState"]
+- ["PSo18UITraitEnvironment", "updateSwitchState"]
 - !private ["PSo18UITraitEnvironment", "width"]
 - ["PSo18UITraitEnvironment", "willLayout"]
 - ["PSo18UITraitEnvironment", "willMove"]
@@ -2125,7 +2127,6 @@ depends-member:
 - ["CSo6UIView", "animateToState"]
 - !private ["CSo6UIView", "backgroundColor"]
 - ["CSo6UIView", "bounceOffset"]
-- ["CSo6UIView", "bounceable"]
 - ["CSo6UIView", "button"]
 - ["CSo6UIView", "buttonDiameter"]
 - ["CSo6UIView", "buttonOffColor"]
@@ -2144,14 +2145,15 @@ depends-member:
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "internalSwitchState"]
 - ["CSo6UIView", "intrinsicContentSize"]
+- ["CSo6UIView", "isBounceable"]
 - ["CSo6UIView", "isEnabled"]
+- ["CSo6UIView", "isOn"]
 - !private ["CSo6UIView", "isUserInteractionEnabled"]
 - !private ["CSo6UIView", "layer"]
 - ["CSo6UIView", "layoutSubviews"]
 - !private ["CSo6UIView", "max"]
 - !private ["CSo6UIView", "min"]
 - ["CSo6UIView", "offPosition"]
-- ["CSo6UIView", "on"]
 - ["CSo6UIView", "onPosition"]
 - ["CSo6UIView", "prepare"]
 - ["CSo6UIView", "prepareButton"]
@@ -2161,7 +2163,6 @@ depends-member:
 - ["CSo6UIView", "prepareTrack"]
 - ["CSo6UIView", "reload"]
 - !private ["CSo6UIView", "sendActions"]
-- ["CSo6UIView", "setOn"]
 - ["CSo6UIView", "setSwitchState"]
 - ["CSo6UIView", "styleForState"]
 - !private ["CSo6UIView", "superview"]
@@ -2178,6 +2179,7 @@ depends-member:
 - ["CSo6UIView", "trackThickness"]
 - ["CSo6UIView", "updateColorForDisabledState"]
 - ["CSo6UIView", "updateColorForState"]
+- ["CSo6UIView", "updateSwitchState"]
 - !private ["CSo6UIView", "width"]
 - ["CSo6UIView", "willLayout"]
 - ["CSo6UIView", "willMove"]
@@ -2201,7 +2203,6 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "animateToState"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "bounceOffset"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "bounceable"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "button"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "buttonDiameter"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "buttonOffColor"]
@@ -2219,14 +2220,15 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "internalSwitchState"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "intrinsicContentSize"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "isBounceable"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "isEnabled"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "isOn"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isUserInteractionEnabled"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "layoutSubviews"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "max"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "min"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "offPosition"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "on"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "onPosition"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "prepare"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "prepareButton"]
@@ -2236,7 +2238,6 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "prepareTrack"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "reload"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "sendActions"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "setOn"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "setSwitchState"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "styleForState"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "superview"]
@@ -2253,6 +2254,7 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "trackThickness"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "updateColorForDisabledState"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "updateColorForState"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "updateSwitchState"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "width"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "willLayout"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "willMove"]
@@ -2292,7 +2294,6 @@ depends-member:
 - !private ["Ps9_Hashable", "blue"]
 - !private ["Ps9_Hashable", "blueGrey"]
 - ["Ps9_Hashable", "bounceOffset"]
-- ["Ps9_Hashable", "bounceable"]
 - ["Ps9_Hashable", "button"]
 - ["Ps9_Hashable", "buttonDiameter"]
 - ["Ps9_Hashable", "buttonOffColor"]
@@ -2317,7 +2318,9 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "internalSwitchState"]
 - ["Ps9_Hashable", "intrinsicContentSize"]
+- ["Ps9_Hashable", "isBounceable"]
 - ["Ps9_Hashable", "isEnabled"]
+- ["Ps9_Hashable", "isOn"]
 - !private ["Ps9_Hashable", "isUserInteractionEnabled"]
 - ["Ps9_Hashable", "large"]
 - !private ["Ps9_Hashable", "layer"]
@@ -2332,7 +2335,7 @@ depends-member:
 - !private ["Ps9_Hashable", "min"]
 - ["Ps9_Hashable", "off"]
 - ["Ps9_Hashable", "offPosition"]
-- ["Ps9_Hashable", "on"]
+- !private ["Ps9_Hashable", "on"]
 - ["Ps9_Hashable", "onPosition"]
 - ["Ps9_Hashable", "prepare"]
 - ["Ps9_Hashable", "prepareButton"]
@@ -2344,7 +2347,6 @@ depends-member:
 - ["Ps9_Hashable", "rawValue"]
 - ["Ps9_Hashable", "reload"]
 - !private ["Ps9_Hashable", "sendActions"]
-- ["Ps9_Hashable", "setOn"]
 - ["Ps9_Hashable", "setSwitchState"]
 - ["Ps9_Hashable", "small"]
 - ["Ps9_Hashable", "styleForState"]
@@ -2363,6 +2365,7 @@ depends-member:
 - ["Ps9_Hashable", "trackThickness"]
 - ["Ps9_Hashable", "updateColorForDisabledState"]
 - ["Ps9_Hashable", "updateColorForState"]
+- ["Ps9_Hashable", "updateSwitchState"]
 - !private ["Ps9_Hashable", "width"]
 - ["Ps9_Hashable", "willLayout"]
 - ["Ps9_Hashable", "willMove"]
@@ -2471,10 +2474,10 @@ depends-nominal:
 - !private "CSo8UIButton"
 - "CSo7UIColor"
 - "CSo9UIControl"
-- "VSC15UIControlEvents"
+- !private "VSC15UIControlEvents"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
-- "CSo7UIEvent"
+- !private "CSo7UIEvent"
 - "PSo18UIFocusEnvironment"
 - "PSo11UIFocusItem"
 - "CSo11UIResponder"
@@ -2515,4 +2518,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "a0b448a41cb7534dee04104157129967"
+interface-hash: "280b459889c42e9fa3b69508461185c0"

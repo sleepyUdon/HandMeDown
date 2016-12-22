@@ -11,54 +11,55 @@ provides-member:
 - ["O8Material13MenuDirection", ""]
 - ["P8Material12MenuDelegate", ""]
 - ["C8Material4Menu", ""]
+- ["C8Material4Menu", "open"]
+- ["C8Material4Menu", "close"]
 provides-dynamic-lookup:
-- "interimSpace"
-- "direction"
 - "hitTest"
-- "layoutSubviews"
-- "reload"
-- "prepare"
-- "open"
-- "baseSize"
-- "views"
-- "delegate"
+- "interimSpace"
 - "close"
-- "isEnabled"
-- "isOpened"
-- "itemSize"
 - "menu"
+- "layoutSubviews"
+- "direction"
+- "prepare"
+- "reload"
+- "views"
+- "open"
+- "isOpened"
+- "baseSize"
+- "delegate"
+- "isEnabled"
+- "itemSize"
 - "interimSpacePreset"
 depends-top-level:
-- "InterimSpace"
-- "CGPoint"
-- !private "InterimSpacePresetToValue"
-- "View"
-- !private "<"
-- "UIViewAnimationOptions"
+- "CGFloat"
+- !private "..<"
 - !private "Double"
-- "Void"
+- "UIView"
 - !private "/"
 - "Array"
-- !private "+"
-- "MenuDelegate"
-- "Int"
+- "View"
+- !private "<"
 - "Menu"
-- "Bool"
-- "CGFloat"
-- "UIView"
 - "MenuDirection"
-- "=="
+- "UIViewAnimationOptions"
 - "CGSize"
-- !private "~="
+- "Int"
+- "Bool"
+- "MenuDelegate"
+- "=="
+- "Void"
 - "AssignmentPrecedence"
-- "UIEvent"
-- !private "*"
 - !private "-"
+- !private "~="
+- !private "+"
 - "TimeInterval"
-- !private "!"
-- !private "..<"
-- "BooleanLiteralType"
+- !private "*"
 - "InterimSpacePreset"
+- "BooleanLiteralType"
+- "CGPoint"
+- !private "InterimSpacePresetToValue"
+- "UIEvent"
+- "InterimSpace"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -94,7 +95,6 @@ depends-member:
 - ["Ps9AnyObject", "isOpened"]
 - ["Ps9AnyObject", "itemSize"]
 - ["Ps9AnyObject", "layoutSubviews"]
-- ["Ps9AnyObject", "layoutViews"]
 - ["Ps9AnyObject", "open"]
 - ["Ps9AnyObject", "openDownAnimation"]
 - ["Ps9AnyObject", "openLeftAnimation"]
@@ -188,7 +188,6 @@ depends-member:
 - ["PSo15CALayerDelegate", "isOpened"]
 - ["PSo15CALayerDelegate", "itemSize"]
 - ["PSo15CALayerDelegate", "layoutSubviews"]
-- ["PSo15CALayerDelegate", "layoutViews"]
 - ["PSo15CALayerDelegate", "open"]
 - ["PSo15CALayerDelegate", "openDownAnimation"]
 - ["PSo15CALayerDelegate", "openLeftAnimation"]
@@ -258,7 +257,6 @@ depends-member:
 - ["Ps7CVarArg", "itemSize"]
 - !private ["Ps7CVarArg", "last"]
 - ["Ps7CVarArg", "layoutSubviews"]
-- ["Ps7CVarArg", "layoutViews"]
 - ["Ps7CVarArg", "open"]
 - ["Ps7CVarArg", "openDownAnimation"]
 - ["Ps7CVarArg", "openLeftAnimation"]
@@ -294,7 +292,7 @@ depends-member:
 - !private ["Vs20CountableClosedRange", "deinit"]
 - !private ["Vs14CountableRange", "Iterator"]
 - !private ["Vs14CountableRange", "_Element"]
-- !private ["Vs14CountableRange", "deinit"]
+- ["Vs14CountableRange", "deinit"]
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - ["Ps28CustomDebugStringConvertible", "CGSize"]
 - !private ["Ps28CustomDebugStringConvertible", "Double"]
@@ -338,7 +336,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "itemSize"]
 - !private ["Ps28CustomDebugStringConvertible", "last"]
 - ["Ps28CustomDebugStringConvertible", "layoutSubviews"]
-- ["Ps28CustomDebugStringConvertible", "layoutViews"]
 - ["Ps28CustomDebugStringConvertible", "open"]
 - ["Ps28CustomDebugStringConvertible", "openDownAnimation"]
 - ["Ps28CustomDebugStringConvertible", "openLeftAnimation"]
@@ -431,7 +428,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "itemSize"]
 - !private ["Ps23CustomStringConvertible", "last"]
 - ["Ps23CustomStringConvertible", "layoutSubviews"]
-- ["Ps23CustomStringConvertible", "layoutViews"]
 - ["Ps23CustomStringConvertible", "open"]
 - ["Ps23CustomStringConvertible", "openDownAnimation"]
 - ["Ps23CustomStringConvertible", "openLeftAnimation"]
@@ -506,7 +502,6 @@ depends-member:
 - ["Ps9Equatable", "isOpened"]
 - ["Ps9Equatable", "itemSize"]
 - ["Ps9Equatable", "layoutSubviews"]
-- ["Ps9Equatable", "layoutViews"]
 - ["Ps9Equatable", "left"]
 - ["Ps9Equatable", "none"]
 - ["Ps9Equatable", "open"]
@@ -589,7 +584,6 @@ depends-member:
 - ["Ps8Hashable", "isOpened"]
 - ["Ps8Hashable", "itemSize"]
 - ["Ps8Hashable", "layoutSubviews"]
-- ["Ps8Hashable", "layoutViews"]
 - ["Ps8Hashable", "left"]
 - ["Ps8Hashable", "none"]
 - ["Ps8Hashable", "open"]
@@ -683,11 +677,9 @@ depends-member:
 - ["C8Material4Menu", "interimSpace"]
 - ["C8Material4Menu", "interimSpacePreset"]
 - ["C8Material4Menu", "isEnabled"]
-- !private ["C8Material4Menu", "isHidden"]
 - ["C8Material4Menu", "isOpened"]
 - ["C8Material4Menu", "itemSize"]
 - ["C8Material4Menu", "layoutSubviews"]
-- !private ["C8Material4Menu", "layoutViews"]
 - ["C8Material4Menu", "open"]
 - !private ["C8Material4Menu", "openDownAnimation"]
 - !private ["C8Material4Menu", "openLeftAnimation"]
@@ -769,7 +761,6 @@ depends-member:
 - ["PSo8NSCoding", "isOpened"]
 - ["PSo8NSCoding", "itemSize"]
 - ["PSo8NSCoding", "layoutSubviews"]
-- ["PSo8NSCoding", "layoutViews"]
 - ["PSo8NSCoding", "open"]
 - ["PSo8NSCoding", "openDownAnimation"]
 - ["PSo8NSCoding", "openLeftAnimation"]
@@ -824,7 +815,6 @@ depends-member:
 - ["CSo8NSObject", "isOpened"]
 - ["CSo8NSObject", "itemSize"]
 - ["CSo8NSObject", "layoutSubviews"]
-- ["CSo8NSObject", "layoutViews"]
 - ["CSo8NSObject", "open"]
 - ["CSo8NSObject", "openDownAnimation"]
 - ["CSo8NSObject", "openLeftAnimation"]
@@ -871,7 +861,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "isOpened"]
 - ["PSo16NSObjectProtocol", "itemSize"]
 - ["PSo16NSObjectProtocol", "layoutSubviews"]
-- ["PSo16NSObjectProtocol", "layoutViews"]
 - ["PSo16NSObjectProtocol", "open"]
 - ["PSo16NSObjectProtocol", "openDownAnimation"]
 - ["PSo16NSObjectProtocol", "openLeftAnimation"]
@@ -1015,7 +1004,6 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "isOpened"]
 - ["PSo29UIAccessibilityIdentification", "itemSize"]
 - ["PSo29UIAccessibilityIdentification", "layoutSubviews"]
-- ["PSo29UIAccessibilityIdentification", "layoutViews"]
 - ["PSo29UIAccessibilityIdentification", "open"]
 - ["PSo29UIAccessibilityIdentification", "openDownAnimation"]
 - ["PSo29UIAccessibilityIdentification", "openLeftAnimation"]
@@ -1063,7 +1051,6 @@ depends-member:
 - ["PSo12UIAppearance", "isOpened"]
 - ["PSo12UIAppearance", "itemSize"]
 - ["PSo12UIAppearance", "layoutSubviews"]
-- ["PSo12UIAppearance", "layoutViews"]
 - ["PSo12UIAppearance", "open"]
 - ["PSo12UIAppearance", "openDownAnimation"]
 - ["PSo12UIAppearance", "openLeftAnimation"]
@@ -1111,7 +1098,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "isOpened"]
 - ["PSo21UIAppearanceContainer", "itemSize"]
 - ["PSo21UIAppearanceContainer", "layoutSubviews"]
-- ["PSo21UIAppearanceContainer", "layoutViews"]
 - ["PSo21UIAppearanceContainer", "open"]
 - ["PSo21UIAppearanceContainer", "openDownAnimation"]
 - ["PSo21UIAppearanceContainer", "openLeftAnimation"]
@@ -1159,7 +1145,6 @@ depends-member:
 - ["PSo17UICoordinateSpace", "isOpened"]
 - ["PSo17UICoordinateSpace", "itemSize"]
 - ["PSo17UICoordinateSpace", "layoutSubviews"]
-- ["PSo17UICoordinateSpace", "layoutViews"]
 - ["PSo17UICoordinateSpace", "open"]
 - ["PSo17UICoordinateSpace", "openDownAnimation"]
 - ["PSo17UICoordinateSpace", "openLeftAnimation"]
@@ -1207,7 +1192,6 @@ depends-member:
 - ["PSo13UIDynamicItem", "isOpened"]
 - ["PSo13UIDynamicItem", "itemSize"]
 - ["PSo13UIDynamicItem", "layoutSubviews"]
-- ["PSo13UIDynamicItem", "layoutViews"]
 - ["PSo13UIDynamicItem", "open"]
 - ["PSo13UIDynamicItem", "openDownAnimation"]
 - ["PSo13UIDynamicItem", "openLeftAnimation"]
@@ -1255,7 +1239,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "isOpened"]
 - ["PSo18UIFocusEnvironment", "itemSize"]
 - ["PSo18UIFocusEnvironment", "layoutSubviews"]
-- ["PSo18UIFocusEnvironment", "layoutViews"]
 - ["PSo18UIFocusEnvironment", "open"]
 - ["PSo18UIFocusEnvironment", "openDownAnimation"]
 - ["PSo18UIFocusEnvironment", "openLeftAnimation"]
@@ -1303,7 +1286,6 @@ depends-member:
 - ["PSo11UIFocusItem", "isOpened"]
 - ["PSo11UIFocusItem", "itemSize"]
 - ["PSo11UIFocusItem", "layoutSubviews"]
-- ["PSo11UIFocusItem", "layoutViews"]
 - ["PSo11UIFocusItem", "open"]
 - ["PSo11UIFocusItem", "openDownAnimation"]
 - ["PSo11UIFocusItem", "openLeftAnimation"]
@@ -1358,7 +1340,6 @@ depends-member:
 - ["CSo11UIResponder", "isOpened"]
 - ["CSo11UIResponder", "itemSize"]
 - ["CSo11UIResponder", "layoutSubviews"]
-- ["CSo11UIResponder", "layoutViews"]
 - ["CSo11UIResponder", "open"]
 - ["CSo11UIResponder", "openDownAnimation"]
 - ["CSo11UIResponder", "openLeftAnimation"]
@@ -1405,7 +1386,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "isOpened"]
 - ["PSo30UIResponderStandardEditActions", "itemSize"]
 - ["PSo30UIResponderStandardEditActions", "layoutSubviews"]
-- ["PSo30UIResponderStandardEditActions", "layoutViews"]
 - ["PSo30UIResponderStandardEditActions", "open"]
 - ["PSo30UIResponderStandardEditActions", "openDownAnimation"]
 - ["PSo30UIResponderStandardEditActions", "openLeftAnimation"]
@@ -1453,7 +1433,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "isOpened"]
 - ["PSo18UITraitEnvironment", "itemSize"]
 - ["PSo18UITraitEnvironment", "layoutSubviews"]
-- ["PSo18UITraitEnvironment", "layoutViews"]
 - ["PSo18UITraitEnvironment", "open"]
 - ["PSo18UITraitEnvironment", "openDownAnimation"]
 - ["PSo18UITraitEnvironment", "openLeftAnimation"]
@@ -1509,7 +1488,6 @@ depends-member:
 - ["CSo6UIView", "isOpened"]
 - ["CSo6UIView", "itemSize"]
 - ["CSo6UIView", "layoutSubviews"]
-- ["CSo6UIView", "layoutViews"]
 - ["CSo6UIView", "open"]
 - ["CSo6UIView", "openDownAnimation"]
 - ["CSo6UIView", "openLeftAnimation"]
@@ -1557,11 +1535,9 @@ depends-member:
 - ["C8Material4View", "interimSpace"]
 - ["C8Material4View", "interimSpacePreset"]
 - ["C8Material4View", "isEnabled"]
-- !private ["C8Material4View", "isHidden"]
 - ["C8Material4View", "isOpened"]
 - ["C8Material4View", "itemSize"]
 - ["C8Material4View", "layoutSubviews"]
-- ["C8Material4View", "layoutViews"]
 - ["C8Material4View", "open"]
 - ["C8Material4View", "openDownAnimation"]
 - ["C8Material4View", "openLeftAnimation"]
@@ -1617,7 +1593,6 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "isOpened"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "itemSize"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "layoutSubviews"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "layoutViews"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "open"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "openDownAnimation"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "openLeftAnimation"]
@@ -1691,7 +1666,6 @@ depends-member:
 - ["Ps9_Hashable", "isOpened"]
 - ["Ps9_Hashable", "itemSize"]
 - ["Ps9_Hashable", "layoutSubviews"]
-- ["Ps9_Hashable", "layoutViews"]
 - ["Ps9_Hashable", "left"]
 - ["Ps9_Hashable", "none"]
 - ["Ps9_Hashable", "open"]
@@ -1772,7 +1746,7 @@ depends-nominal:
 - "Ps10Collection"
 - !private "Ps10Comparable"
 - !private "Vs20CountableClosedRange"
-- !private "Vs14CountableRange"
+- "Vs14CountableRange"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
@@ -1867,4 +1841,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "088f686fb846ffec0458815b0af76c83"
+interface-hash: "f01c31016ae44bf8f98fff949fdbcef2"

@@ -13,44 +13,44 @@ provides-member:
 - ["C8Material26BottomNavigationController", ""]
 provides-dynamic-lookup:
 - "transitionAnimation"
+- "animateTransition"
+- "tabBarController"
 - "layoutSubviews"
 - "prepare"
 - "viewWillLayoutSubviews"
 - "viewDidLoad"
 - "transitionDuration"
-- "tabBarController"
-- "animateTransition"
 depends-top-level:
-- "NSObject"
-- "UITabBarControllerDelegate"
+- "UIViewControllerAnimatedTransitioning"
 - "=="
 - "AssignmentPrecedence"
 - !private "~="
-- "String"
+- !private "UIImage"
+- "NSCoder"
+- !private "Screen"
 - !private "CGSize"
 - "BottomNavigationFadeAnimatedTransitioning"
-- !private "Screen"
 - !private "CGFloat"
-- "Bundle"
-- "TernaryPrecedence"
-- "Int"
-- "UITabBarController"
-- !private "UIView"
-- !private "-"
-- "UIViewControllerContextTransitioning"
-- !private "UIEdgeInsetsMake"
+- "String"
 - !private "UITransitionContextViewKey"
+- !private "UIView"
 - !private "Device"
-- "NSCoder"
-- "TimeInterval"
+- "TernaryPrecedence"
+- "UITabBarController"
+- "UIViewControllerContextTransitioning"
+- "UITabBarControllerDelegate"
 - "UIViewController"
-- !private "UIImage"
-- "BottomNavigationController"
+- "Int"
+- "Bundle"
+- !private "-"
+- !private "UIEdgeInsetsMake"
+- "NSObject"
 - !private "BooleanLiteralType"
+- "TimeInterval"
 - "BottomNavigationTransitionAnimation"
 - !private "||"
+- "BottomNavigationController"
 - !private "Color"
-- "UIViewControllerAnimatedTransitioning"
 depends-member:
 - !private ["Ps9AnyObject", "BottomNavigationFadeAnimatedTransitioning"]
 - ["Ps9AnyObject", "BottomNavigationTransitionAnimation"]
@@ -234,7 +234,6 @@ depends-member:
 - !private ["Ps10Collection", "Iterator"]
 - !private ["Ps10Collection", "_Element"]
 - !private ["C8Material5Color", "clear"]
-- !private ["C8Material5Color", "white"]
 - !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "from"]
 - !private ["Ps10Comparable", "hashValue"]
@@ -302,6 +301,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "hashValue"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "white"]
 - !private ["Ps23CustomStringConvertible", "BottomNavigationFadeAnimatedTransitioning"]
 - ["Ps23CustomStringConvertible", "BottomNavigationTransitionAnimation"]
 - !private ["Ps23CustomStringConvertible", "CGSize"]
@@ -432,6 +432,7 @@ depends-member:
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- !private ["Ps23ExpressibleByNilLiteral", "white"]
 - !private ["Ps8Hashable", "BottomNavigationFadeAnimatedTransitioning"]
 - ["Ps8Hashable", "BottomNavigationTransitionAnimation"]
 - !private ["Ps8Hashable", "CGSize"]
@@ -698,6 +699,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "image"]
 - !private ["PSo14NSSecureCoding", "white"]
 - ["Sq", "deinit"]
+- !private ["Sq", "white"]
 - !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps21RandomAccessIndexable", "Iterator"]
@@ -803,7 +805,7 @@ depends-member:
 - !private ["CSo9UIBarItem", "title"]
 - !private ["CSo9UIBarItem", "titlePositionAdjustment"]
 - !private ["CSo7UIColor", "clear"]
-- ["CSo7UIColor", "deinit"]
+- !private ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "white"]
 - !private ["PSo18UIContentContainer", "BottomNavigationFadeAnimatedTransitioning"]
 - ["PSo18UIContentContainer", "BottomNavigationTransitionAnimation"]
@@ -1293,6 +1295,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "to"]
 - !private ["Ps21_ObjectiveCBridgeable", "vertical"]
+- !private ["Ps21_ObjectiveCBridgeable", "white"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "Stride"]
 - !private ["Ps14_SignedInteger", "hashValue"]
@@ -1333,6 +1336,7 @@ depends-nominal:
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
 - "Ps8Hashable"
 - !private "O8Material12HeightPreset"
 - !private "Ps9Indexable"
@@ -1369,7 +1373,7 @@ depends-nominal:
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "CSo9UIBarItem"
-- "CSo7UIColor"
+- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"

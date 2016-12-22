@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.tintColor = Colors.orange.light1
         UINavigationBar.appearance().barTintColor = Colors.blue.light4
         UINavigationBar.appearance().titleTextAttributes = [ NSFontAttributeName: Fonts.title.T4!, NSForegroundColorAttributeName: UIColor.white]
+        
+        // Firebase
+        
+        FIRApp.configure()
+
         
         return true
     }

@@ -7,37 +7,32 @@ provides-member:
 - ["C8Material9PulseView", ""]
 provides-dynamic-lookup:
 - "touchesBegan"
-- "prepare"
 - "pulseOpacity"
-- "touchesEnded"
+- "prepare"
 - "touchesCancelled"
+- "touchesEnded"
 - "pulseAnimation"
 - "pulseColor"
 depends-top-level:
-- "TernaryPrecedence"
-- !private "Motion"
-- !private "/"
-- "View"
-- "Pulse"
-- "AssignmentPrecedence"
 - "CGFloat"
+- !private "??"
 - "UITouch"
-- "Pulseable"
-- !private "=="
+- "View"
 - "UIEvent"
+- "AssignmentPrecedence"
+- "Pulse"
+- !private "Motion"
+- "Pulseable"
 - "CGPoint"
+- "Set"
 - "PulseView"
 - "PulseAnimation"
-- "Set"
 - "UIColor"
 depends-member:
-- !private ["Ps16AbsoluteValuable", "init"]
-- !private ["Ps9AnyObject", "CGFloat"]
-- !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "Motion"]
 - !private ["Ps9AnyObject", "Pulse"]
+- !private ["Ps9AnyObject", "center"]
 - !private ["Ps9AnyObject", "convert"]
-- !private ["Ps9AnyObject", "height"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "layer"]
 - !private ["Ps9AnyObject", "location"]
@@ -51,19 +46,13 @@ depends-member:
 - ["Ps9AnyObject", "touchesCancelled"]
 - ["Ps9AnyObject", "touchesEnded"]
 - !private ["Ps9AnyObject", "visualLayer"]
-- !private ["Ps9AnyObject", "width"]
 - ["Ps9AnyObject", ""]
-- !private ["Ps19BinaryFloatingPoint", "init"]
-- !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
 - !private ["PSo19CAAnimationDelegate", "convert"]
 - !private ["CSo7CALayer", "convert"]
 - ["CSo7CALayer", "deinit"]
-- !private ["PSo15CALayerDelegate", "CGFloat"]
-- !private ["PSo15CALayerDelegate", "CGPoint"]
 - !private ["PSo15CALayerDelegate", "Motion"]
 - !private ["PSo15CALayerDelegate", "Pulse"]
-- !private ["PSo15CALayerDelegate", "height"]
+- !private ["PSo15CALayerDelegate", "center"]
 - !private ["PSo15CALayerDelegate", "init"]
 - !private ["PSo15CALayerDelegate", "layer"]
 - ["PSo15CALayerDelegate", "prepare"]
@@ -76,22 +65,17 @@ depends-member:
 - ["PSo15CALayerDelegate", "touchesCancelled"]
 - ["PSo15CALayerDelegate", "touchesEnded"]
 - !private ["PSo15CALayerDelegate", "visualLayer"]
-- !private ["PSo15CALayerDelegate", "width"]
 - ["PSo15CALayerDelegate", ""]
 - !private ["PSo13CAMediaTiming", "convert"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
-- !private ["V12CoreGraphics7CGFloat", "init"]
 - ["VSC7CGPoint", "deinit"]
-- !private ["VSC7CGPoint", "init"]
 - ["VSC6CGRect", "deinit"]
-- !private ["Ps7CVarArg", "CGFloat"]
-- !private ["Ps7CVarArg", "CGPoint"]
 - !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "Motion"]
 - !private ["Ps7CVarArg", "Pulse"]
+- !private ["Ps7CVarArg", "center"]
 - !private ["Ps7CVarArg", "convert"]
 - !private ["Ps7CVarArg", "first"]
-- !private ["Ps7CVarArg", "height"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "layer"]
 - !private ["Ps7CVarArg", "location"]
@@ -105,19 +89,15 @@ depends-member:
 - ["Ps7CVarArg", "touchesCancelled"]
 - ["Ps7CVarArg", "touchesEnded"]
 - !private ["Ps7CVarArg", "visualLayer"]
-- !private ["Ps7CVarArg", "width"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "Iterator"]
 - !private ["Ps10Collection", "first"]
-- !private ["Ps10Comparable", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
-- !private ["Ps28CustomDebugStringConvertible", "CGPoint"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "Motion"]
 - !private ["Ps28CustomDebugStringConvertible", "Pulse"]
+- !private ["Ps28CustomDebugStringConvertible", "center"]
 - !private ["Ps28CustomDebugStringConvertible", "convert"]
 - !private ["Ps28CustomDebugStringConvertible", "first"]
-- !private ["Ps28CustomDebugStringConvertible", "height"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
 - !private ["Ps28CustomDebugStringConvertible", "location"]
@@ -131,24 +111,16 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "touchesCancelled"]
 - ["Ps28CustomDebugStringConvertible", "touchesEnded"]
 - !private ["Ps28CustomDebugStringConvertible", "visualLayer"]
-- !private ["Ps28CustomDebugStringConvertible", "width"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "Iterator"]
-- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "first"]
-- !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps23CustomStringConvertible", "CGFloat"]
-- !private ["Ps23CustomStringConvertible", "CGPoint"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "Motion"]
 - !private ["Ps23CustomStringConvertible", "Pulse"]
-- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "center"]
 - !private ["Ps23CustomStringConvertible", "convert"]
 - !private ["Ps23CustomStringConvertible", "first"]
-- !private ["Ps23CustomStringConvertible", "height"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "layer"]
 - !private ["Ps23CustomStringConvertible", "location"]
@@ -162,18 +134,14 @@ depends-member:
 - ["Ps23CustomStringConvertible", "touchesCancelled"]
 - ["Ps23CustomStringConvertible", "touchesEnded"]
 - !private ["Ps23CustomStringConvertible", "visualLayer"]
-- !private ["Ps23CustomStringConvertible", "width"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Sd", "deinit"]
-- !private ["Ps9Equatable", "CGFloat"]
-- !private ["Ps9Equatable", "CGPoint"]
 - !private ["Ps9Equatable", "Iterator"]
 - !private ["Ps9Equatable", "Motion"]
 - !private ["Ps9Equatable", "Pulse"]
-- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "center"]
 - !private ["Ps9Equatable", "convert"]
 - !private ["Ps9Equatable", "first"]
-- !private ["Ps9Equatable", "height"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "layer"]
 - !private ["Ps9Equatable", "location"]
@@ -187,23 +155,15 @@ depends-member:
 - ["Ps9Equatable", "touchesCancelled"]
 - ["Ps9Equatable", "touchesEnded"]
 - !private ["Ps9Equatable", "visualLayer"]
-- !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
 - !private ["Ps25ExpressibleByArrayLiteral", "first"]
-- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps25ExpressibleByFloatLiteral", "init"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- !private ["Ps13FloatingPoint", "init"]
-- !private ["Ps8Hashable", "CGFloat"]
-- !private ["Ps8Hashable", "CGPoint"]
 - !private ["Ps8Hashable", "Iterator"]
 - !private ["Ps8Hashable", "Motion"]
 - !private ["Ps8Hashable", "Pulse"]
-- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "center"]
 - !private ["Ps8Hashable", "convert"]
 - !private ["Ps8Hashable", "first"]
-- !private ["Ps8Hashable", "height"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "layer"]
 - !private ["Ps8Hashable", "location"]
@@ -217,7 +177,6 @@ depends-member:
 - ["Ps8Hashable", "touchesCancelled"]
 - ["Ps8Hashable", "touchesEnded"]
 - !private ["Ps8Hashable", "visualLayer"]
-- !private ["Ps8Hashable", "width"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Iterator"]
@@ -225,15 +184,12 @@ depends-member:
 - !private ["Ps13IndexableBase", "Iterator"]
 - !private ["Ps13IndexableBase", "first"]
 - !private ["Ps16IteratorProtocol", "Element"]
-- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["V8Material6Motion", "delay"]
 - ["CSo7NSCoder", "deinit"]
-- !private ["PSo8NSCoding", "CGFloat"]
-- !private ["PSo8NSCoding", "CGPoint"]
 - !private ["PSo8NSCoding", "Motion"]
 - !private ["PSo8NSCoding", "Pulse"]
+- !private ["PSo8NSCoding", "center"]
 - !private ["PSo8NSCoding", "convert"]
-- !private ["PSo8NSCoding", "height"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "layer"]
 - ["PSo8NSCoding", "prepare"]
@@ -246,7 +202,6 @@ depends-member:
 - ["PSo8NSCoding", "touchesCancelled"]
 - ["PSo8NSCoding", "touchesEnded"]
 - !private ["PSo8NSCoding", "visualLayer"]
-- !private ["PSo8NSCoding", "width"]
 - ["PSo8NSCoding", ""]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGPoint"]
@@ -257,8 +212,8 @@ depends-member:
 - ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UIEvent"]
 - ["CSo8NSObject", "UITouch"]
+- !private ["CSo8NSObject", "center"]
 - !private ["CSo8NSObject", "convert"]
-- !private ["CSo8NSObject", "height"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "location"]
@@ -272,13 +227,10 @@ depends-member:
 - ["CSo8NSObject", "touchesCancelled"]
 - ["CSo8NSObject", "touchesEnded"]
 - !private ["CSo8NSObject", "visualLayer"]
-- !private ["CSo8NSObject", "width"]
-- !private ["PSo16NSObjectProtocol", "CGFloat"]
-- !private ["PSo16NSObjectProtocol", "CGPoint"]
 - !private ["PSo16NSObjectProtocol", "Motion"]
 - !private ["PSo16NSObjectProtocol", "Pulse"]
+- !private ["PSo16NSObjectProtocol", "center"]
 - !private ["PSo16NSObjectProtocol", "convert"]
-- !private ["PSo16NSObjectProtocol", "height"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "location"]
@@ -292,7 +244,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "touchesCancelled"]
 - ["PSo16NSObjectProtocol", "touchesEnded"]
 - !private ["PSo16NSObjectProtocol", "visualLayer"]
-- !private ["PSo16NSObjectProtocol", "width"]
 - ["PSo16NSObjectProtocol", ""]
 - ["Sq", "deinit"]
 - !private ["V8Material5Pulse", "animation"]
@@ -312,8 +263,8 @@ depends-member:
 - ["C8Material9PulseView", "UIColor"]
 - ["C8Material9PulseView", "UIEvent"]
 - ["C8Material9PulseView", "UITouch"]
+- !private ["C8Material9PulseView", "center"]
 - ["C8Material9PulseView", "deinit"]
-- !private ["C8Material9PulseView", "height"]
 - ["C8Material9PulseView", "init"]
 - !private ["C8Material9PulseView", "layer"]
 - ["C8Material9PulseView", "prepare"]
@@ -326,12 +277,9 @@ depends-member:
 - ["C8Material9PulseView", "touchesCancelled"]
 - ["C8Material9PulseView", "touchesEnded"]
 - !private ["C8Material9PulseView", "visualLayer"]
-- !private ["C8Material9PulseView", "width"]
-- !private ["P8Material9Pulseable", "CGFloat"]
-- !private ["P8Material9Pulseable", "CGPoint"]
 - !private ["P8Material9Pulseable", "Motion"]
 - !private ["P8Material9Pulseable", "Pulse"]
-- !private ["P8Material9Pulseable", "height"]
+- !private ["P8Material9Pulseable", "center"]
 - !private ["P8Material9Pulseable", "layer"]
 - !private ["P8Material9Pulseable", "preparePulse"]
 - !private ["P8Material9Pulseable", "pulse"]
@@ -339,7 +287,6 @@ depends-member:
 - ["P8Material9Pulseable", "pulseColor"]
 - ["P8Material9Pulseable", "pulseOpacity"]
 - !private ["P8Material9Pulseable", "visualLayer"]
-- !private ["P8Material9Pulseable", "width"]
 - ["P8Material9Pulseable", ""]
 - !private ["Ps8Sequence", "Iterator"]
 - !private ["Ps8Sequence", "first"]
@@ -349,13 +296,9 @@ depends-member:
 - !private ["Ps10SetAlgebra", "Iterator"]
 - !private ["Ps10SetAlgebra", "first"]
 - !private ["Vs11SetIterator", "Element"]
-- !private ["Ps12SignedNumber", "init"]
-- !private ["Ps10Strideable", "init"]
-- !private ["PSo29UIAccessibilityIdentification", "CGFloat"]
-- !private ["PSo29UIAccessibilityIdentification", "CGPoint"]
 - !private ["PSo29UIAccessibilityIdentification", "Motion"]
 - !private ["PSo29UIAccessibilityIdentification", "Pulse"]
-- !private ["PSo29UIAccessibilityIdentification", "height"]
+- !private ["PSo29UIAccessibilityIdentification", "center"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - ["PSo29UIAccessibilityIdentification", "prepare"]
@@ -368,13 +311,10 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "touchesCancelled"]
 - ["PSo29UIAccessibilityIdentification", "touchesEnded"]
 - !private ["PSo29UIAccessibilityIdentification", "visualLayer"]
-- !private ["PSo29UIAccessibilityIdentification", "width"]
 - ["PSo29UIAccessibilityIdentification", ""]
-- !private ["PSo12UIAppearance", "CGFloat"]
-- !private ["PSo12UIAppearance", "CGPoint"]
 - !private ["PSo12UIAppearance", "Motion"]
 - !private ["PSo12UIAppearance", "Pulse"]
-- !private ["PSo12UIAppearance", "height"]
+- !private ["PSo12UIAppearance", "center"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "layer"]
 - ["PSo12UIAppearance", "prepare"]
@@ -387,13 +327,10 @@ depends-member:
 - ["PSo12UIAppearance", "touchesCancelled"]
 - ["PSo12UIAppearance", "touchesEnded"]
 - !private ["PSo12UIAppearance", "visualLayer"]
-- !private ["PSo12UIAppearance", "width"]
 - ["PSo12UIAppearance", ""]
-- !private ["PSo21UIAppearanceContainer", "CGFloat"]
-- !private ["PSo21UIAppearanceContainer", "CGPoint"]
 - !private ["PSo21UIAppearanceContainer", "Motion"]
 - !private ["PSo21UIAppearanceContainer", "Pulse"]
-- !private ["PSo21UIAppearanceContainer", "height"]
+- !private ["PSo21UIAppearanceContainer", "center"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
 - ["PSo21UIAppearanceContainer", "prepare"]
@@ -406,14 +343,11 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "touchesCancelled"]
 - ["PSo21UIAppearanceContainer", "touchesEnded"]
 - !private ["PSo21UIAppearanceContainer", "visualLayer"]
-- !private ["PSo21UIAppearanceContainer", "width"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["CSo7UIColor", "deinit"]
-- !private ["PSo17UICoordinateSpace", "CGFloat"]
-- !private ["PSo17UICoordinateSpace", "CGPoint"]
 - !private ["PSo17UICoordinateSpace", "Motion"]
 - !private ["PSo17UICoordinateSpace", "Pulse"]
-- !private ["PSo17UICoordinateSpace", "height"]
+- !private ["PSo17UICoordinateSpace", "center"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "layer"]
 - ["PSo17UICoordinateSpace", "prepare"]
@@ -426,13 +360,10 @@ depends-member:
 - ["PSo17UICoordinateSpace", "touchesCancelled"]
 - ["PSo17UICoordinateSpace", "touchesEnded"]
 - !private ["PSo17UICoordinateSpace", "visualLayer"]
-- !private ["PSo17UICoordinateSpace", "width"]
 - ["PSo17UICoordinateSpace", ""]
-- !private ["PSo13UIDynamicItem", "CGFloat"]
-- !private ["PSo13UIDynamicItem", "CGPoint"]
 - !private ["PSo13UIDynamicItem", "Motion"]
 - !private ["PSo13UIDynamicItem", "Pulse"]
-- !private ["PSo13UIDynamicItem", "height"]
+- !private ["PSo13UIDynamicItem", "center"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - ["PSo13UIDynamicItem", "prepare"]
@@ -445,13 +376,10 @@ depends-member:
 - ["PSo13UIDynamicItem", "touchesCancelled"]
 - ["PSo13UIDynamicItem", "touchesEnded"]
 - !private ["PSo13UIDynamicItem", "visualLayer"]
-- !private ["PSo13UIDynamicItem", "width"]
 - ["PSo13UIDynamicItem", ""]
-- !private ["PSo18UIFocusEnvironment", "CGFloat"]
-- !private ["PSo18UIFocusEnvironment", "CGPoint"]
 - !private ["PSo18UIFocusEnvironment", "Motion"]
 - !private ["PSo18UIFocusEnvironment", "Pulse"]
-- !private ["PSo18UIFocusEnvironment", "height"]
+- !private ["PSo18UIFocusEnvironment", "center"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
 - ["PSo18UIFocusEnvironment", "prepare"]
@@ -464,13 +392,10 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "touchesCancelled"]
 - ["PSo18UIFocusEnvironment", "touchesEnded"]
 - !private ["PSo18UIFocusEnvironment", "visualLayer"]
-- !private ["PSo18UIFocusEnvironment", "width"]
 - ["PSo18UIFocusEnvironment", ""]
-- !private ["PSo11UIFocusItem", "CGFloat"]
-- !private ["PSo11UIFocusItem", "CGPoint"]
 - !private ["PSo11UIFocusItem", "Motion"]
 - !private ["PSo11UIFocusItem", "Pulse"]
-- !private ["PSo11UIFocusItem", "height"]
+- !private ["PSo11UIFocusItem", "center"]
 - !private ["PSo11UIFocusItem", "init"]
 - !private ["PSo11UIFocusItem", "layer"]
 - ["PSo11UIFocusItem", "prepare"]
@@ -483,7 +408,6 @@ depends-member:
 - ["PSo11UIFocusItem", "touchesCancelled"]
 - ["PSo11UIFocusItem", "touchesEnded"]
 - !private ["PSo11UIFocusItem", "visualLayer"]
-- !private ["PSo11UIFocusItem", "width"]
 - ["PSo11UIFocusItem", ""]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGPoint"]
@@ -494,7 +418,7 @@ depends-member:
 - ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UIEvent"]
 - ["CSo11UIResponder", "UITouch"]
-- !private ["CSo11UIResponder", "height"]
+- !private ["CSo11UIResponder", "center"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "layer"]
 - ["CSo11UIResponder", "prepare"]
@@ -507,12 +431,9 @@ depends-member:
 - ["CSo11UIResponder", "touchesCancelled"]
 - ["CSo11UIResponder", "touchesEnded"]
 - !private ["CSo11UIResponder", "visualLayer"]
-- !private ["CSo11UIResponder", "width"]
-- !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
-- !private ["PSo30UIResponderStandardEditActions", "CGPoint"]
 - !private ["PSo30UIResponderStandardEditActions", "Motion"]
 - !private ["PSo30UIResponderStandardEditActions", "Pulse"]
-- !private ["PSo30UIResponderStandardEditActions", "height"]
+- !private ["PSo30UIResponderStandardEditActions", "center"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
@@ -525,15 +446,12 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "touchesCancelled"]
 - ["PSo30UIResponderStandardEditActions", "touchesEnded"]
 - !private ["PSo30UIResponderStandardEditActions", "visualLayer"]
-- !private ["PSo30UIResponderStandardEditActions", "width"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - ["CSo7UITouch", "deinit"]
 - !private ["CSo7UITouch", "location"]
-- !private ["PSo18UITraitEnvironment", "CGFloat"]
-- !private ["PSo18UITraitEnvironment", "CGPoint"]
 - !private ["PSo18UITraitEnvironment", "Motion"]
 - !private ["PSo18UITraitEnvironment", "Pulse"]
-- !private ["PSo18UITraitEnvironment", "height"]
+- !private ["PSo18UITraitEnvironment", "center"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "layer"]
 - ["PSo18UITraitEnvironment", "prepare"]
@@ -546,7 +464,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "touchesCancelled"]
 - ["PSo18UITraitEnvironment", "touchesEnded"]
 - !private ["PSo18UITraitEnvironment", "visualLayer"]
-- !private ["PSo18UITraitEnvironment", "width"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "CGFloat"]
 - ["CSo6UIView", "CGPoint"]
@@ -557,7 +474,7 @@ depends-member:
 - ["CSo6UIView", "UIColor"]
 - ["CSo6UIView", "UIEvent"]
 - ["CSo6UIView", "UITouch"]
-- !private ["CSo6UIView", "height"]
+- !private ["CSo6UIView", "center"]
 - ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "layer"]
 - ["CSo6UIView", "prepare"]
@@ -570,7 +487,6 @@ depends-member:
 - ["CSo6UIView", "touchesCancelled"]
 - ["CSo6UIView", "touchesEnded"]
 - !private ["CSo6UIView", "visualLayer"]
-- !private ["CSo6UIView", "width"]
 - ["C8Material4View", "CGFloat"]
 - ["C8Material4View", "CGPoint"]
 - !private ["C8Material4View", "Motion"]
@@ -580,8 +496,8 @@ depends-member:
 - ["C8Material4View", "UIColor"]
 - ["C8Material4View", "UIEvent"]
 - ["C8Material4View", "UITouch"]
+- !private ["C8Material4View", "center"]
 - ["C8Material4View", "deinit"]
-- !private ["C8Material4View", "height"]
 - ["C8Material4View", "init"]
 - !private ["C8Material4View", "layer"]
 - ["C8Material4View", "prepare"]
@@ -594,15 +510,10 @@ depends-member:
 - ["C8Material4View", "touchesCancelled"]
 - ["C8Material4View", "touchesEnded"]
 - !private ["C8Material4View", "visualLayer"]
-- !private ["C8Material4View", "width"]
 - ["C8Material4View", ""]
-- !private ["Ps15_CVarArgAligned", "init"]
-- !private ["Ps22_CVarArgPassedAsDouble", "init"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGFloat"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGPoint"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "Motion"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "Pulse"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "height"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "center"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "prepare"]
@@ -615,18 +526,13 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "touchesCancelled"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "touchesEnded"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "visualLayer"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "width"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
-- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps9_Hashable", "CGFloat"]
-- !private ["Ps9_Hashable", "CGPoint"]
 - !private ["Ps9_Hashable", "Iterator"]
 - !private ["Ps9_Hashable", "Motion"]
 - !private ["Ps9_Hashable", "Pulse"]
-- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "center"]
 - !private ["Ps9_Hashable", "convert"]
 - !private ["Ps9_Hashable", "first"]
-- !private ["Ps9_Hashable", "height"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "layer"]
 - !private ["Ps9_Hashable", "location"]
@@ -640,19 +546,11 @@ depends-member:
 - ["Ps9_Hashable", "touchesCancelled"]
 - ["Ps9_Hashable", "touchesEnded"]
 - !private ["Ps9_Hashable", "visualLayer"]
-- !private ["Ps9_Hashable", "width"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
-- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "first"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
-- !private ["Ps11_Strideable", "init"]
 depends-nominal:
-- !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
-- !private "Ps19BinaryFloatingPoint"
-- "Sb"
 - !private "PSo19CAAnimationDelegate"
 - "CSo7CALayer"
 - "PSo15CALayerDelegate"
@@ -662,24 +560,17 @@ depends-nominal:
 - "VSC6CGRect"
 - "Ps7CVarArg"
 - !private "Ps10Collection"
-- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
-- !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Sd"
 - "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
-- !private "Ps27ExpressibleByBooleanLiteral"
-- !private "Ps25ExpressibleByFloatLiteral"
-- !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps13FloatingPoint"
 - "Ps8Hashable"
 - "SQ"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Ps16IteratorProtocol"
-- !private "Ps25LosslessStringConvertible"
 - !private "V8Material6Motion"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
@@ -694,8 +585,6 @@ depends-nominal:
 - "Vs3Set"
 - !private "Ps10SetAlgebra"
 - !private "Vs11SetIterator"
-- !private "Ps12SignedNumber"
-- !private "Ps10Strideable"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -710,14 +599,9 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - "C8Material4View"
-- !private "Ps15_CVarArgAligned"
-- !private "Ps22_CVarArgPassedAsDouble"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
-- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
-- !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -735,4 +619,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "f156df871890de845dde8625fdb44828"
+interface-hash: "bfd0b0510872f9c33d113be252df57dd"

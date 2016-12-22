@@ -6,62 +6,57 @@ provides-nominal:
 provides-member:
 - ["C8Material22CollectionReusableView", ""]
 provides-dynamic-lookup:
-- "layoutSubviews"
-- "touchesBegan"
-- "interimSpacePreset"
-- "prepare"
-- "contentsGravity"
-- "contentsScale"
-- "contentsGravityPreset"
-- "pulseOpacity"
-- "touchesEnded"
-- "touchesCancelled"
-- "contentEdgeInsetsPreset"
-- "visualLayer"
-- "contentsRect"
-- "pulseAnimation"
 - "contentEdgeInsets"
-- "pulseColor"
-- "contentsCenter"
+- "touchesCancelled"
 - "interimSpace"
-- "backgroundColor"
+- "pulseOpacity"
+- "contentEdgeInsetsPreset"
+- "layoutSubviews"
+- "contentsRect"
+- "visualLayer"
+- "contentsCenter"
+- "touchesBegan"
+- "contentsGravity"
 - "image"
+- "pulseColor"
+- "interimSpacePreset"
+- "contentsGravityPreset"
+- "contentsScale"
+- "pulseAnimation"
+- "touchesEnded"
+- "backgroundColor"
+- "prepare"
 depends-top-level:
-- "Gravity"
-- "InterimSpacePreset"
-- "UIEdgeInsets"
-- "CollectionReusableView"
-- "TernaryPrecedence"
-- !private "Screen"
-- !private "GravityToValue"
-- "UIImage"
-- !private "InterimSpacePresetToValue"
-- "InterimSpace"
-- !private "Motion"
-- !private "/"
 - "CGFloat"
-- "Pulse"
-- "AssignmentPrecedence"
-- "UITouch"
-- "Pulseable"
-- "String"
-- !private "=="
-- "CGRect"
 - "EdgeInsetsPreset"
+- !private "Motion"
 - "UIEvent"
+- "Gravity"
+- !private "Screen"
+- "UIEdgeInsets"
 - "CGPoint"
-- "PulseAnimation"
-- "NSCoder"
-- !private "BooleanLiteralType"
-- "Set"
-- "CAShapeLayer"
-- "UIColor"
+- "InterimSpace"
+- !private "GravityToValue"
+- !private "InterimSpacePresetToValue"
+- "Pulse"
+- "String"
+- !private "??"
 - "UICollectionReusableView"
+- "Set"
+- "UIColor"
+- "NSCoder"
+- "AssignmentPrecedence"
+- "PulseAnimation"
+- "Pulseable"
+- "UIImage"
+- "CollectionReusableView"
+- "CAShapeLayer"
+- "CGRect"
+- !private "BooleanLiteralType"
+- "InterimSpacePreset"
+- "UITouch"
 depends-member:
-- !private ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CAShapeLayer"]
-- !private ["Ps9AnyObject", "CGFloat"]
-- !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "GravityToValue"]
 - ["Ps9AnyObject", "InterimSpacePreset"]
 - !private ["Ps9AnyObject", "InterimSpacePresetToValue"]
@@ -71,6 +66,7 @@ depends-member:
 - !private ["Ps9AnyObject", "addSublayer"]
 - ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "bounds"]
+- !private ["Ps9AnyObject", "center"]
 - !private ["Ps9AnyObject", "cgColor"]
 - !private ["Ps9AnyObject", "cgImage"]
 - ["Ps9AnyObject", "contentEdgeInsets"]
@@ -86,7 +82,6 @@ depends-member:
 - !private ["Ps9AnyObject", "cornerRadius"]
 - !private ["Ps9AnyObject", "frame"]
 - !private ["Ps9AnyObject", "grid"]
-- !private ["Ps9AnyObject", "height"]
 - ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "interimSpace"]
@@ -109,12 +104,9 @@ depends-member:
 - ["Ps9AnyObject", "touchesCancelled"]
 - ["Ps9AnyObject", "touchesEnded"]
 - ["Ps9AnyObject", "visualLayer"]
-- !private ["Ps9AnyObject", "width"]
 - !private ["Ps9AnyObject", "zPosition"]
 - ["Ps9AnyObject", ""]
-- !private ["Ps19BinaryFloatingPoint", "init"]
-- !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
+- !private ["Sb", "deinit"]
 - !private ["PSo19CAAnimationDelegate", "addSublayer"]
 - !private ["PSo19CAAnimationDelegate", "backgroundColor"]
 - !private ["PSo19CAAnimationDelegate", "contents"]
@@ -143,8 +135,6 @@ depends-member:
 - !private ["CSo7CALayer", "masksToBounds"]
 - !private ["CSo7CALayer", "zPosition"]
 - ["PSo15CALayerDelegate", "CAShapeLayer"]
-- !private ["PSo15CALayerDelegate", "CGFloat"]
-- !private ["PSo15CALayerDelegate", "CGPoint"]
 - !private ["PSo15CALayerDelegate", "GravityToValue"]
 - ["PSo15CALayerDelegate", "InterimSpacePreset"]
 - !private ["PSo15CALayerDelegate", "InterimSpacePresetToValue"]
@@ -153,6 +143,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "Screen"]
 - ["PSo15CALayerDelegate", "backgroundColor"]
 - !private ["PSo15CALayerDelegate", "bounds"]
+- !private ["PSo15CALayerDelegate", "center"]
 - ["PSo15CALayerDelegate", "contentEdgeInsets"]
 - ["PSo15CALayerDelegate", "contentEdgeInsetsPreset"]
 - !private ["PSo15CALayerDelegate", "contentScaleFactor"]
@@ -163,7 +154,6 @@ depends-member:
 - ["PSo15CALayerDelegate", "contentsScale"]
 - !private ["PSo15CALayerDelegate", "cornerRadius"]
 - !private ["PSo15CALayerDelegate", "grid"]
-- !private ["PSo15CALayerDelegate", "height"]
 - ["PSo15CALayerDelegate", "image"]
 - ["PSo15CALayerDelegate", "init"]
 - ["PSo15CALayerDelegate", "interimSpace"]
@@ -184,7 +174,6 @@ depends-member:
 - ["PSo15CALayerDelegate", "touchesCancelled"]
 - ["PSo15CALayerDelegate", "touchesEnded"]
 - ["PSo15CALayerDelegate", "visualLayer"]
-- !private ["PSo15CALayerDelegate", "width"]
 - ["PSo15CALayerDelegate", ""]
 - !private ["PSo13CAMediaTiming", "addSublayer"]
 - !private ["PSo13CAMediaTiming", "backgroundColor"]
@@ -212,14 +201,10 @@ depends-member:
 - !private ["CSo12CAShapeLayer", "zPosition"]
 - ["CSo7CGColor", "deinit"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
-- !private ["V12CoreGraphics7CGFloat", "init"]
 - ["VSC7CGPoint", "deinit"]
-- !private ["VSC7CGPoint", "init"]
 - ["VSC6CGRect", "deinit"]
 - !private ["VSC6CGRect", "zero"]
 - ["Ps7CVarArg", "CAShapeLayer"]
-- !private ["Ps7CVarArg", "CGFloat"]
-- !private ["Ps7CVarArg", "CGPoint"]
 - !private ["Ps7CVarArg", "GravityToValue"]
 - ["Ps7CVarArg", "InterimSpacePreset"]
 - !private ["Ps7CVarArg", "InterimSpacePresetToValue"]
@@ -230,6 +215,7 @@ depends-member:
 - !private ["Ps7CVarArg", "addSublayer"]
 - ["Ps7CVarArg", "backgroundColor"]
 - !private ["Ps7CVarArg", "bounds"]
+- !private ["Ps7CVarArg", "center"]
 - !private ["Ps7CVarArg", "cgColor"]
 - !private ["Ps7CVarArg", "cgImage"]
 - ["Ps7CVarArg", "contentEdgeInsets"]
@@ -246,7 +232,6 @@ depends-member:
 - !private ["Ps7CVarArg", "first"]
 - !private ["Ps7CVarArg", "frame"]
 - !private ["Ps7CVarArg", "grid"]
-- !private ["Ps7CVarArg", "height"]
 - ["Ps7CVarArg", "image"]
 - ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "interimSpace"]
@@ -269,7 +254,6 @@ depends-member:
 - ["Ps7CVarArg", "touchesCancelled"]
 - ["Ps7CVarArg", "touchesEnded"]
 - ["Ps7CVarArg", "visualLayer"]
-- !private ["Ps7CVarArg", "width"]
 - !private ["Ps7CVarArg", "zPosition"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "Iterator"]
@@ -298,6 +282,7 @@ depends-member:
 - ["C8Material22CollectionReusableView", "UITouch"]
 - ["C8Material22CollectionReusableView", "backgroundColor"]
 - !private ["C8Material22CollectionReusableView", "bounds"]
+- !private ["C8Material22CollectionReusableView", "center"]
 - ["C8Material22CollectionReusableView", "contentEdgeInsets"]
 - ["C8Material22CollectionReusableView", "contentEdgeInsetsPreset"]
 - !private ["C8Material22CollectionReusableView", "contentScaleFactor"]
@@ -309,7 +294,6 @@ depends-member:
 - !private ["C8Material22CollectionReusableView", "cornerRadius"]
 - ["C8Material22CollectionReusableView", "deinit"]
 - !private ["C8Material22CollectionReusableView", "grid"]
-- !private ["C8Material22CollectionReusableView", "height"]
 - ["C8Material22CollectionReusableView", "image"]
 - ["C8Material22CollectionReusableView", "init"]
 - ["C8Material22CollectionReusableView", "interimSpace"]
@@ -330,11 +314,7 @@ depends-member:
 - ["C8Material22CollectionReusableView", "touchesCancelled"]
 - ["C8Material22CollectionReusableView", "touchesEnded"]
 - ["C8Material22CollectionReusableView", "visualLayer"]
-- !private ["C8Material22CollectionReusableView", "width"]
-- !private ["Ps10Comparable", "init"]
 - ["Ps28CustomDebugStringConvertible", "CAShapeLayer"]
-- !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
-- !private ["Ps28CustomDebugStringConvertible", "CGPoint"]
 - !private ["Ps28CustomDebugStringConvertible", "GravityToValue"]
 - ["Ps28CustomDebugStringConvertible", "InterimSpacePreset"]
 - !private ["Ps28CustomDebugStringConvertible", "InterimSpacePresetToValue"]
@@ -345,6 +325,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addSublayer"]
 - ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
+- !private ["Ps28CustomDebugStringConvertible", "center"]
 - !private ["Ps28CustomDebugStringConvertible", "cgColor"]
 - !private ["Ps28CustomDebugStringConvertible", "cgImage"]
 - ["Ps28CustomDebugStringConvertible", "contentEdgeInsets"]
@@ -361,7 +342,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "first"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - !private ["Ps28CustomDebugStringConvertible", "grid"]
-- !private ["Ps28CustomDebugStringConvertible", "height"]
 - ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "interimSpace"]
@@ -384,22 +364,15 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "touchesCancelled"]
 - ["Ps28CustomDebugStringConvertible", "touchesEnded"]
 - ["Ps28CustomDebugStringConvertible", "visualLayer"]
-- !private ["Ps28CustomDebugStringConvertible", "width"]
 - !private ["Ps28CustomDebugStringConvertible", "zPosition"]
 - !private ["Ps28CustomDebugStringConvertible", "zero"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "zero"]
 - !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "Iterator"]
-- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "first"]
-- !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "zero"]
 - ["Ps23CustomStringConvertible", "CAShapeLayer"]
-- !private ["Ps23CustomStringConvertible", "CGFloat"]
-- !private ["Ps23CustomStringConvertible", "CGPoint"]
 - !private ["Ps23CustomStringConvertible", "GravityToValue"]
 - ["Ps23CustomStringConvertible", "InterimSpacePreset"]
 - !private ["Ps23CustomStringConvertible", "InterimSpacePresetToValue"]
@@ -407,10 +380,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Motion"]
 - !private ["Ps23CustomStringConvertible", "Pulse"]
 - !private ["Ps23CustomStringConvertible", "Screen"]
-- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addSublayer"]
 - ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "bounds"]
+- !private ["Ps23CustomStringConvertible", "center"]
 - !private ["Ps23CustomStringConvertible", "cgColor"]
 - !private ["Ps23CustomStringConvertible", "cgImage"]
 - ["Ps23CustomStringConvertible", "contentEdgeInsets"]
@@ -427,7 +400,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "first"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - !private ["Ps23CustomStringConvertible", "grid"]
-- !private ["Ps23CustomStringConvertible", "height"]
 - ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "interimSpace"]
@@ -450,14 +422,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "touchesCancelled"]
 - ["Ps23CustomStringConvertible", "touchesEnded"]
 - ["Ps23CustomStringConvertible", "visualLayer"]
-- !private ["Ps23CustomStringConvertible", "width"]
 - !private ["Ps23CustomStringConvertible", "zPosition"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Sd", "deinit"]
 - ["O8Material16EdgeInsetsPreset", "deinit"]
 - ["Ps9Equatable", "CAShapeLayer"]
-- !private ["Ps9Equatable", "CGFloat"]
-- !private ["Ps9Equatable", "CGPoint"]
 - !private ["Ps9Equatable", "GravityToValue"]
 - ["Ps9Equatable", "InterimSpacePreset"]
 - !private ["Ps9Equatable", "InterimSpacePresetToValue"]
@@ -465,10 +434,10 @@ depends-member:
 - !private ["Ps9Equatable", "Motion"]
 - !private ["Ps9Equatable", "Pulse"]
 - !private ["Ps9Equatable", "Screen"]
-- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSublayer"]
 - ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "bounds"]
+- !private ["Ps9Equatable", "center"]
 - !private ["Ps9Equatable", "cgColor"]
 - !private ["Ps9Equatable", "cgImage"]
 - ["Ps9Equatable", "contentEdgeInsets"]
@@ -485,7 +454,6 @@ depends-member:
 - !private ["Ps9Equatable", "first"]
 - !private ["Ps9Equatable", "frame"]
 - !private ["Ps9Equatable", "grid"]
-- !private ["Ps9Equatable", "height"]
 - ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "interimSpace"]
@@ -510,24 +478,17 @@ depends-member:
 - ["Ps9Equatable", "touchesCancelled"]
 - ["Ps9Equatable", "touchesEnded"]
 - ["Ps9Equatable", "visualLayer"]
-- !private ["Ps9Equatable", "width"]
 - !private ["Ps9Equatable", "zPosition"]
 - !private ["Ps9Equatable", "zero"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
 - !private ["Ps25ExpressibleByArrayLiteral", "first"]
-- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps25ExpressibleByFloatLiteral", "init"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- !private ["Ps13FloatingPoint", "init"]
 - ["O8Material7Gravity", "deinit"]
 - !private ["O8Material7Gravity", "resizeAspectFill"]
 - !private ["V8Material4Grid", "contentEdgeInsets"]
 - !private ["V8Material4Grid", "contentEdgeInsetsPreset"]
 - !private ["V8Material4Grid", "interimSpace"]
 - ["Ps8Hashable", "CAShapeLayer"]
-- !private ["Ps8Hashable", "CGFloat"]
-- !private ["Ps8Hashable", "CGPoint"]
 - !private ["Ps8Hashable", "GravityToValue"]
 - ["Ps8Hashable", "InterimSpacePreset"]
 - !private ["Ps8Hashable", "InterimSpacePresetToValue"]
@@ -535,10 +496,10 @@ depends-member:
 - !private ["Ps8Hashable", "Motion"]
 - !private ["Ps8Hashable", "Pulse"]
 - !private ["Ps8Hashable", "Screen"]
-- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addSublayer"]
 - ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "bounds"]
+- !private ["Ps8Hashable", "center"]
 - !private ["Ps8Hashable", "cgColor"]
 - !private ["Ps8Hashable", "cgImage"]
 - ["Ps8Hashable", "contentEdgeInsets"]
@@ -555,7 +516,6 @@ depends-member:
 - !private ["Ps8Hashable", "first"]
 - !private ["Ps8Hashable", "frame"]
 - !private ["Ps8Hashable", "grid"]
-- !private ["Ps8Hashable", "height"]
 - ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "interimSpace"]
@@ -580,7 +540,6 @@ depends-member:
 - ["Ps8Hashable", "touchesCancelled"]
 - ["Ps8Hashable", "touchesEnded"]
 - ["Ps8Hashable", "visualLayer"]
-- !private ["Ps8Hashable", "width"]
 - !private ["Ps8Hashable", "zPosition"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
@@ -591,12 +550,9 @@ depends-member:
 - ["O8Material18InterimSpacePreset", "deinit"]
 - ["O8Material18InterimSpacePreset", "none"]
 - !private ["Ps16IteratorProtocol", "Element"]
-- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["V8Material6Motion", "delay"]
 - ["CSo7NSCoder", "deinit"]
 - ["PSo8NSCoding", "CAShapeLayer"]
-- !private ["PSo8NSCoding", "CGFloat"]
-- !private ["PSo8NSCoding", "CGPoint"]
 - !private ["PSo8NSCoding", "GravityToValue"]
 - ["PSo8NSCoding", "InterimSpacePreset"]
 - !private ["PSo8NSCoding", "InterimSpacePresetToValue"]
@@ -606,6 +562,7 @@ depends-member:
 - !private ["PSo8NSCoding", "addSublayer"]
 - ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "bounds"]
+- !private ["PSo8NSCoding", "center"]
 - !private ["PSo8NSCoding", "cgColor"]
 - !private ["PSo8NSCoding", "cgImage"]
 - ["PSo8NSCoding", "contentEdgeInsets"]
@@ -621,7 +578,6 @@ depends-member:
 - !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "grid"]
-- !private ["PSo8NSCoding", "height"]
 - ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "interimSpace"]
@@ -643,7 +599,6 @@ depends-member:
 - ["PSo8NSCoding", "touchesCancelled"]
 - ["PSo8NSCoding", "touchesEnded"]
 - ["PSo8NSCoding", "visualLayer"]
-- !private ["PSo8NSCoding", "width"]
 - !private ["PSo8NSCoding", "zPosition"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "cgColor"]
@@ -672,6 +627,7 @@ depends-member:
 - !private ["CSo8NSObject", "addSublayer"]
 - ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "center"]
 - !private ["CSo8NSObject", "cgColor"]
 - !private ["CSo8NSObject", "cgImage"]
 - ["CSo8NSObject", "contentEdgeInsets"]
@@ -687,7 +643,6 @@ depends-member:
 - !private ["CSo8NSObject", "cornerRadius"]
 - !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "grid"]
-- !private ["CSo8NSObject", "height"]
 - ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "interimSpace"]
@@ -710,11 +665,8 @@ depends-member:
 - ["CSo8NSObject", "touchesCancelled"]
 - ["CSo8NSObject", "touchesEnded"]
 - ["CSo8NSObject", "visualLayer"]
-- !private ["CSo8NSObject", "width"]
 - !private ["CSo8NSObject", "zPosition"]
 - ["PSo16NSObjectProtocol", "CAShapeLayer"]
-- !private ["PSo16NSObjectProtocol", "CGFloat"]
-- !private ["PSo16NSObjectProtocol", "CGPoint"]
 - !private ["PSo16NSObjectProtocol", "GravityToValue"]
 - ["PSo16NSObjectProtocol", "InterimSpacePreset"]
 - !private ["PSo16NSObjectProtocol", "InterimSpacePresetToValue"]
@@ -724,6 +676,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addSublayer"]
 - ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "center"]
 - !private ["PSo16NSObjectProtocol", "cgColor"]
 - !private ["PSo16NSObjectProtocol", "cgImage"]
 - ["PSo16NSObjectProtocol", "contentEdgeInsets"]
@@ -739,7 +692,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "grid"]
-- !private ["PSo16NSObjectProtocol", "height"]
 - ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "interimSpace"]
@@ -762,7 +714,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "touchesCancelled"]
 - ["PSo16NSObjectProtocol", "touchesEnded"]
 - ["PSo16NSObjectProtocol", "visualLayer"]
-- !private ["PSo16NSObjectProtocol", "width"]
 - !private ["PSo16NSObjectProtocol", "zPosition"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "cgColor"]
@@ -778,8 +729,6 @@ depends-member:
 - ["O8Material14PulseAnimation", "deinit"]
 - !private ["O8Material14PulseAnimation", "none"]
 - ["P8Material9Pulseable", "CAShapeLayer"]
-- !private ["P8Material9Pulseable", "CGFloat"]
-- !private ["P8Material9Pulseable", "CGPoint"]
 - !private ["P8Material9Pulseable", "GravityToValue"]
 - ["P8Material9Pulseable", "InterimSpacePreset"]
 - !private ["P8Material9Pulseable", "InterimSpacePresetToValue"]
@@ -788,12 +737,12 @@ depends-member:
 - !private ["P8Material9Pulseable", "Screen"]
 - !private ["P8Material9Pulseable", "backgroundColor"]
 - !private ["P8Material9Pulseable", "bounds"]
+- !private ["P8Material9Pulseable", "center"]
 - !private ["P8Material9Pulseable", "contentScaleFactor"]
 - !private ["P8Material9Pulseable", "contentsGravity"]
 - !private ["P8Material9Pulseable", "contentsGravityPreset"]
 - !private ["P8Material9Pulseable", "cornerRadius"]
 - !private ["P8Material9Pulseable", "grid"]
-- !private ["P8Material9Pulseable", "height"]
 - !private ["P8Material9Pulseable", "image"]
 - !private ["P8Material9Pulseable", "init"]
 - !private ["P8Material9Pulseable", "interimSpace"]
@@ -810,7 +759,6 @@ depends-member:
 - ["P8Material9Pulseable", "pulseColor"]
 - ["P8Material9Pulseable", "pulseOpacity"]
 - !private ["P8Material9Pulseable", "visualLayer"]
-- !private ["P8Material9Pulseable", "width"]
 - ["P8Material9Pulseable", ""]
 - ["Ps16RawRepresentable", "none"]
 - !private ["Ps16RawRepresentable", "resizeAspectFill"]
@@ -823,12 +771,8 @@ depends-member:
 - !private ["Ps10SetAlgebra", "Iterator"]
 - !private ["Ps10SetAlgebra", "first"]
 - !private ["Vs11SetIterator", "Element"]
-- !private ["Ps12SignedNumber", "init"]
-- !private ["Ps10Strideable", "init"]
 - ["SS", "deinit"]
 - ["PSo29UIAccessibilityIdentification", "CAShapeLayer"]
-- !private ["PSo29UIAccessibilityIdentification", "CGFloat"]
-- !private ["PSo29UIAccessibilityIdentification", "CGPoint"]
 - !private ["PSo29UIAccessibilityIdentification", "GravityToValue"]
 - ["PSo29UIAccessibilityIdentification", "InterimSpacePreset"]
 - !private ["PSo29UIAccessibilityIdentification", "InterimSpacePresetToValue"]
@@ -837,6 +781,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "Screen"]
 - ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- !private ["PSo29UIAccessibilityIdentification", "center"]
 - !private ["PSo29UIAccessibilityIdentification", "cgImage"]
 - ["PSo29UIAccessibilityIdentification", "contentEdgeInsets"]
 - ["PSo29UIAccessibilityIdentification", "contentEdgeInsetsPreset"]
@@ -848,7 +793,6 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "contentsScale"]
 - !private ["PSo29UIAccessibilityIdentification", "cornerRadius"]
 - !private ["PSo29UIAccessibilityIdentification", "grid"]
-- !private ["PSo29UIAccessibilityIdentification", "height"]
 - ["PSo29UIAccessibilityIdentification", "image"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "interimSpace"]
@@ -869,11 +813,8 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "touchesCancelled"]
 - ["PSo29UIAccessibilityIdentification", "touchesEnded"]
 - ["PSo29UIAccessibilityIdentification", "visualLayer"]
-- !private ["PSo29UIAccessibilityIdentification", "width"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - ["PSo12UIAppearance", "CAShapeLayer"]
-- !private ["PSo12UIAppearance", "CGFloat"]
-- !private ["PSo12UIAppearance", "CGPoint"]
 - !private ["PSo12UIAppearance", "GravityToValue"]
 - ["PSo12UIAppearance", "InterimSpacePreset"]
 - !private ["PSo12UIAppearance", "InterimSpacePresetToValue"]
@@ -882,6 +823,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "Screen"]
 - ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "bounds"]
+- !private ["PSo12UIAppearance", "center"]
 - ["PSo12UIAppearance", "contentEdgeInsets"]
 - ["PSo12UIAppearance", "contentEdgeInsetsPreset"]
 - !private ["PSo12UIAppearance", "contentScaleFactor"]
@@ -892,7 +834,6 @@ depends-member:
 - ["PSo12UIAppearance", "contentsScale"]
 - !private ["PSo12UIAppearance", "cornerRadius"]
 - !private ["PSo12UIAppearance", "grid"]
-- !private ["PSo12UIAppearance", "height"]
 - ["PSo12UIAppearance", "image"]
 - ["PSo12UIAppearance", "init"]
 - ["PSo12UIAppearance", "interimSpace"]
@@ -913,11 +854,8 @@ depends-member:
 - ["PSo12UIAppearance", "touchesCancelled"]
 - ["PSo12UIAppearance", "touchesEnded"]
 - ["PSo12UIAppearance", "visualLayer"]
-- !private ["PSo12UIAppearance", "width"]
 - ["PSo12UIAppearance", ""]
 - ["PSo21UIAppearanceContainer", "CAShapeLayer"]
-- !private ["PSo21UIAppearanceContainer", "CGFloat"]
-- !private ["PSo21UIAppearanceContainer", "CGPoint"]
 - !private ["PSo21UIAppearanceContainer", "GravityToValue"]
 - ["PSo21UIAppearanceContainer", "InterimSpacePreset"]
 - !private ["PSo21UIAppearanceContainer", "InterimSpacePresetToValue"]
@@ -926,6 +864,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "Screen"]
 - ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "bounds"]
+- !private ["PSo21UIAppearanceContainer", "center"]
 - ["PSo21UIAppearanceContainer", "contentEdgeInsets"]
 - ["PSo21UIAppearanceContainer", "contentEdgeInsetsPreset"]
 - !private ["PSo21UIAppearanceContainer", "contentScaleFactor"]
@@ -936,7 +875,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "contentsScale"]
 - !private ["PSo21UIAppearanceContainer", "cornerRadius"]
 - !private ["PSo21UIAppearanceContainer", "grid"]
-- !private ["PSo21UIAppearanceContainer", "height"]
 - ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "interimSpace"]
@@ -957,7 +895,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "touchesCancelled"]
 - ["PSo21UIAppearanceContainer", "touchesEnded"]
 - ["PSo21UIAppearanceContainer", "visualLayer"]
-- !private ["PSo21UIAppearanceContainer", "width"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["CSo24UICollectionReusableView", "CAShapeLayer"]
 - ["CSo24UICollectionReusableView", "CGFloat"]
@@ -983,6 +920,7 @@ depends-member:
 - ["CSo24UICollectionReusableView", "UITouch"]
 - ["CSo24UICollectionReusableView", "backgroundColor"]
 - !private ["CSo24UICollectionReusableView", "bounds"]
+- !private ["CSo24UICollectionReusableView", "center"]
 - ["CSo24UICollectionReusableView", "contentEdgeInsets"]
 - ["CSo24UICollectionReusableView", "contentEdgeInsetsPreset"]
 - !private ["CSo24UICollectionReusableView", "contentScaleFactor"]
@@ -994,7 +932,6 @@ depends-member:
 - !private ["CSo24UICollectionReusableView", "cornerRadius"]
 - ["CSo24UICollectionReusableView", "deinit"]
 - !private ["CSo24UICollectionReusableView", "grid"]
-- !private ["CSo24UICollectionReusableView", "height"]
 - ["CSo24UICollectionReusableView", "image"]
 - ["CSo24UICollectionReusableView", "init"]
 - ["CSo24UICollectionReusableView", "interimSpace"]
@@ -1015,13 +952,10 @@ depends-member:
 - ["CSo24UICollectionReusableView", "touchesCancelled"]
 - ["CSo24UICollectionReusableView", "touchesEnded"]
 - ["CSo24UICollectionReusableView", "visualLayer"]
-- !private ["CSo24UICollectionReusableView", "width"]
 - ["CSo24UICollectionReusableView", ""]
 - !private ["CSo7UIColor", "cgColor"]
 - ["CSo7UIColor", "deinit"]
 - ["PSo17UICoordinateSpace", "CAShapeLayer"]
-- !private ["PSo17UICoordinateSpace", "CGFloat"]
-- !private ["PSo17UICoordinateSpace", "CGPoint"]
 - !private ["PSo17UICoordinateSpace", "GravityToValue"]
 - ["PSo17UICoordinateSpace", "InterimSpacePreset"]
 - !private ["PSo17UICoordinateSpace", "InterimSpacePresetToValue"]
@@ -1030,6 +964,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "Screen"]
 - ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
+- !private ["PSo17UICoordinateSpace", "center"]
 - ["PSo17UICoordinateSpace", "contentEdgeInsets"]
 - ["PSo17UICoordinateSpace", "contentEdgeInsetsPreset"]
 - !private ["PSo17UICoordinateSpace", "contentScaleFactor"]
@@ -1040,7 +975,6 @@ depends-member:
 - ["PSo17UICoordinateSpace", "contentsScale"]
 - !private ["PSo17UICoordinateSpace", "cornerRadius"]
 - !private ["PSo17UICoordinateSpace", "grid"]
-- !private ["PSo17UICoordinateSpace", "height"]
 - ["PSo17UICoordinateSpace", "image"]
 - ["PSo17UICoordinateSpace", "init"]
 - ["PSo17UICoordinateSpace", "interimSpace"]
@@ -1061,11 +995,8 @@ depends-member:
 - ["PSo17UICoordinateSpace", "touchesCancelled"]
 - ["PSo17UICoordinateSpace", "touchesEnded"]
 - ["PSo17UICoordinateSpace", "visualLayer"]
-- !private ["PSo17UICoordinateSpace", "width"]
 - ["PSo17UICoordinateSpace", ""]
 - ["PSo13UIDynamicItem", "CAShapeLayer"]
-- !private ["PSo13UIDynamicItem", "CGFloat"]
-- !private ["PSo13UIDynamicItem", "CGPoint"]
 - !private ["PSo13UIDynamicItem", "GravityToValue"]
 - ["PSo13UIDynamicItem", "InterimSpacePreset"]
 - !private ["PSo13UIDynamicItem", "InterimSpacePresetToValue"]
@@ -1074,6 +1005,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "Screen"]
 - ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "bounds"]
+- !private ["PSo13UIDynamicItem", "center"]
 - ["PSo13UIDynamicItem", "contentEdgeInsets"]
 - ["PSo13UIDynamicItem", "contentEdgeInsetsPreset"]
 - !private ["PSo13UIDynamicItem", "contentScaleFactor"]
@@ -1084,7 +1016,6 @@ depends-member:
 - ["PSo13UIDynamicItem", "contentsScale"]
 - !private ["PSo13UIDynamicItem", "cornerRadius"]
 - !private ["PSo13UIDynamicItem", "grid"]
-- !private ["PSo13UIDynamicItem", "height"]
 - ["PSo13UIDynamicItem", "image"]
 - ["PSo13UIDynamicItem", "init"]
 - ["PSo13UIDynamicItem", "interimSpace"]
@@ -1105,12 +1036,9 @@ depends-member:
 - ["PSo13UIDynamicItem", "touchesCancelled"]
 - ["PSo13UIDynamicItem", "touchesEnded"]
 - ["PSo13UIDynamicItem", "visualLayer"]
-- !private ["PSo13UIDynamicItem", "width"]
 - ["PSo13UIDynamicItem", ""]
 - ["VSC12UIEdgeInsets", "deinit"]
 - ["PSo18UIFocusEnvironment", "CAShapeLayer"]
-- !private ["PSo18UIFocusEnvironment", "CGFloat"]
-- !private ["PSo18UIFocusEnvironment", "CGPoint"]
 - !private ["PSo18UIFocusEnvironment", "GravityToValue"]
 - ["PSo18UIFocusEnvironment", "InterimSpacePreset"]
 - !private ["PSo18UIFocusEnvironment", "InterimSpacePresetToValue"]
@@ -1119,6 +1047,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "Screen"]
 - ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "bounds"]
+- !private ["PSo18UIFocusEnvironment", "center"]
 - ["PSo18UIFocusEnvironment", "contentEdgeInsets"]
 - ["PSo18UIFocusEnvironment", "contentEdgeInsetsPreset"]
 - !private ["PSo18UIFocusEnvironment", "contentScaleFactor"]
@@ -1129,7 +1058,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "contentsScale"]
 - !private ["PSo18UIFocusEnvironment", "cornerRadius"]
 - !private ["PSo18UIFocusEnvironment", "grid"]
-- !private ["PSo18UIFocusEnvironment", "height"]
 - ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "interimSpace"]
@@ -1150,11 +1078,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "touchesCancelled"]
 - ["PSo18UIFocusEnvironment", "touchesEnded"]
 - ["PSo18UIFocusEnvironment", "visualLayer"]
-- !private ["PSo18UIFocusEnvironment", "width"]
 - ["PSo18UIFocusEnvironment", ""]
 - ["PSo11UIFocusItem", "CAShapeLayer"]
-- !private ["PSo11UIFocusItem", "CGFloat"]
-- !private ["PSo11UIFocusItem", "CGPoint"]
 - !private ["PSo11UIFocusItem", "GravityToValue"]
 - ["PSo11UIFocusItem", "InterimSpacePreset"]
 - !private ["PSo11UIFocusItem", "InterimSpacePresetToValue"]
@@ -1163,6 +1088,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "Screen"]
 - ["PSo11UIFocusItem", "backgroundColor"]
 - !private ["PSo11UIFocusItem", "bounds"]
+- !private ["PSo11UIFocusItem", "center"]
 - ["PSo11UIFocusItem", "contentEdgeInsets"]
 - ["PSo11UIFocusItem", "contentEdgeInsetsPreset"]
 - !private ["PSo11UIFocusItem", "contentScaleFactor"]
@@ -1173,7 +1099,6 @@ depends-member:
 - ["PSo11UIFocusItem", "contentsScale"]
 - !private ["PSo11UIFocusItem", "cornerRadius"]
 - !private ["PSo11UIFocusItem", "grid"]
-- !private ["PSo11UIFocusItem", "height"]
 - ["PSo11UIFocusItem", "image"]
 - ["PSo11UIFocusItem", "init"]
 - ["PSo11UIFocusItem", "interimSpace"]
@@ -1194,7 +1119,6 @@ depends-member:
 - ["PSo11UIFocusItem", "touchesCancelled"]
 - ["PSo11UIFocusItem", "touchesEnded"]
 - ["PSo11UIFocusItem", "visualLayer"]
-- !private ["PSo11UIFocusItem", "width"]
 - ["PSo11UIFocusItem", ""]
 - !private ["CSo7UIImage", "cgImage"]
 - ["CSo11UIResponder", "CAShapeLayer"]
@@ -1221,6 +1145,7 @@ depends-member:
 - ["CSo11UIResponder", "UITouch"]
 - ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "bounds"]
+- !private ["CSo11UIResponder", "center"]
 - ["CSo11UIResponder", "contentEdgeInsets"]
 - ["CSo11UIResponder", "contentEdgeInsetsPreset"]
 - !private ["CSo11UIResponder", "contentScaleFactor"]
@@ -1231,7 +1156,6 @@ depends-member:
 - ["CSo11UIResponder", "contentsScale"]
 - !private ["CSo11UIResponder", "cornerRadius"]
 - !private ["CSo11UIResponder", "grid"]
-- !private ["CSo11UIResponder", "height"]
 - ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "interimSpace"]
@@ -1252,10 +1176,7 @@ depends-member:
 - ["CSo11UIResponder", "touchesCancelled"]
 - ["CSo11UIResponder", "touchesEnded"]
 - ["CSo11UIResponder", "visualLayer"]
-- !private ["CSo11UIResponder", "width"]
 - ["PSo30UIResponderStandardEditActions", "CAShapeLayer"]
-- !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
-- !private ["PSo30UIResponderStandardEditActions", "CGPoint"]
 - !private ["PSo30UIResponderStandardEditActions", "GravityToValue"]
 - ["PSo30UIResponderStandardEditActions", "InterimSpacePreset"]
 - !private ["PSo30UIResponderStandardEditActions", "InterimSpacePresetToValue"]
@@ -1264,6 +1185,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "Screen"]
 - ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - !private ["PSo30UIResponderStandardEditActions", "bounds"]
+- !private ["PSo30UIResponderStandardEditActions", "center"]
 - ["PSo30UIResponderStandardEditActions", "contentEdgeInsets"]
 - ["PSo30UIResponderStandardEditActions", "contentEdgeInsetsPreset"]
 - !private ["PSo30UIResponderStandardEditActions", "contentScaleFactor"]
@@ -1274,7 +1196,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "contentsScale"]
 - !private ["PSo30UIResponderStandardEditActions", "cornerRadius"]
 - !private ["PSo30UIResponderStandardEditActions", "grid"]
-- !private ["PSo30UIResponderStandardEditActions", "height"]
 - ["PSo30UIResponderStandardEditActions", "image"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "interimSpace"]
@@ -1295,13 +1216,10 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "touchesCancelled"]
 - ["PSo30UIResponderStandardEditActions", "touchesEnded"]
 - ["PSo30UIResponderStandardEditActions", "visualLayer"]
-- !private ["PSo30UIResponderStandardEditActions", "width"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - ["CSo7UITouch", "deinit"]
 - !private ["CSo7UITouch", "location"]
 - ["PSo18UITraitEnvironment", "CAShapeLayer"]
-- !private ["PSo18UITraitEnvironment", "CGFloat"]
-- !private ["PSo18UITraitEnvironment", "CGPoint"]
 - !private ["PSo18UITraitEnvironment", "GravityToValue"]
 - ["PSo18UITraitEnvironment", "InterimSpacePreset"]
 - !private ["PSo18UITraitEnvironment", "InterimSpacePresetToValue"]
@@ -1310,6 +1228,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "Screen"]
 - ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
+- !private ["PSo18UITraitEnvironment", "center"]
 - ["PSo18UITraitEnvironment", "contentEdgeInsets"]
 - ["PSo18UITraitEnvironment", "contentEdgeInsetsPreset"]
 - !private ["PSo18UITraitEnvironment", "contentScaleFactor"]
@@ -1320,7 +1239,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "contentsScale"]
 - !private ["PSo18UITraitEnvironment", "cornerRadius"]
 - !private ["PSo18UITraitEnvironment", "grid"]
-- !private ["PSo18UITraitEnvironment", "height"]
 - ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "interimSpace"]
@@ -1341,7 +1259,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "touchesCancelled"]
 - ["PSo18UITraitEnvironment", "touchesEnded"]
 - ["PSo18UITraitEnvironment", "visualLayer"]
-- !private ["PSo18UITraitEnvironment", "width"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "CAShapeLayer"]
 - ["CSo6UIView", "CGFloat"]
@@ -1367,6 +1284,7 @@ depends-member:
 - ["CSo6UIView", "UITouch"]
 - ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "bounds"]
+- !private ["CSo6UIView", "center"]
 - ["CSo6UIView", "contentEdgeInsets"]
 - ["CSo6UIView", "contentEdgeInsetsPreset"]
 - !private ["CSo6UIView", "contentScaleFactor"]
@@ -1377,7 +1295,6 @@ depends-member:
 - ["CSo6UIView", "contentsScale"]
 - !private ["CSo6UIView", "cornerRadius"]
 - !private ["CSo6UIView", "grid"]
-- !private ["CSo6UIView", "height"]
 - ["CSo6UIView", "image"]
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "interimSpace"]
@@ -1398,12 +1315,7 @@ depends-member:
 - ["CSo6UIView", "touchesCancelled"]
 - ["CSo6UIView", "touchesEnded"]
 - ["CSo6UIView", "visualLayer"]
-- !private ["CSo6UIView", "width"]
-- !private ["Ps15_CVarArgAligned", "init"]
-- !private ["Ps22_CVarArgPassedAsDouble", "init"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "CAShapeLayer"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGFloat"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGPoint"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "GravityToValue"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "InterimSpacePreset"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "InterimSpacePresetToValue"]
@@ -1412,6 +1324,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "Screen"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "backgroundColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bounds"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "center"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentEdgeInsets"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentEdgeInsetsPreset"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentScaleFactor"]
@@ -1422,7 +1335,6 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentsScale"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "cornerRadius"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "grid"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "height"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "interimSpace"]
@@ -1443,14 +1355,10 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "touchesCancelled"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "touchesEnded"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "visualLayer"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "width"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
-- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps26_ExpressibleByColorLiteral", "cgColor"]
 - !private ["Ps26_ExpressibleByImageLiteral", "cgImage"]
 - ["Ps9_Hashable", "CAShapeLayer"]
-- !private ["Ps9_Hashable", "CGFloat"]
-- !private ["Ps9_Hashable", "CGPoint"]
 - !private ["Ps9_Hashable", "GravityToValue"]
 - ["Ps9_Hashable", "InterimSpacePreset"]
 - !private ["Ps9_Hashable", "InterimSpacePresetToValue"]
@@ -1458,10 +1366,10 @@ depends-member:
 - !private ["Ps9_Hashable", "Motion"]
 - !private ["Ps9_Hashable", "Pulse"]
 - !private ["Ps9_Hashable", "Screen"]
-- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "addSublayer"]
 - ["Ps9_Hashable", "backgroundColor"]
 - !private ["Ps9_Hashable", "bounds"]
+- !private ["Ps9_Hashable", "center"]
 - !private ["Ps9_Hashable", "cgColor"]
 - !private ["Ps9_Hashable", "cgImage"]
 - ["Ps9_Hashable", "contentEdgeInsets"]
@@ -1478,7 +1386,6 @@ depends-member:
 - !private ["Ps9_Hashable", "first"]
 - !private ["Ps9_Hashable", "frame"]
 - !private ["Ps9_Hashable", "grid"]
-- !private ["Ps9_Hashable", "height"]
 - ["Ps9_Hashable", "image"]
 - ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "interimSpace"]
@@ -1503,21 +1410,14 @@ depends-member:
 - ["Ps9_Hashable", "touchesCancelled"]
 - ["Ps9_Hashable", "touchesEnded"]
 - ["Ps9_Hashable", "visualLayer"]
-- !private ["Ps9_Hashable", "width"]
 - !private ["Ps9_Hashable", "zPosition"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
-- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "first"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "zero"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
-- !private ["Ps11_Strideable", "init"]
 depends-nominal:
-- !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
-- !private "Ps19BinaryFloatingPoint"
-- "Sb"
+- !private "Sb"
 - "PSo19CAAnimationDelegate"
 - "CSo7CALayer"
 - "PSo15CALayerDelegate"
@@ -1530,7 +1430,6 @@ depends-nominal:
 - "Ps7CVarArg"
 - !private "Ps10Collection"
 - "C8Material22CollectionReusableView"
-- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
@@ -1539,10 +1438,6 @@ depends-nominal:
 - "O8Material16EdgeInsetsPreset"
 - "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
-- !private "Ps27ExpressibleByBooleanLiteral"
-- !private "Ps25ExpressibleByFloatLiteral"
-- !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps13FloatingPoint"
 - "O8Material7Gravity"
 - !private "V8Material4Grid"
 - "Ps8Hashable"
@@ -1551,7 +1446,6 @@ depends-nominal:
 - !private "Ps13IndexableBase"
 - "O8Material18InterimSpacePreset"
 - !private "Ps16IteratorProtocol"
-- !private "Ps25LosslessStringConvertible"
 - !private "V8Material6Motion"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
@@ -1569,8 +1463,6 @@ depends-nominal:
 - "Vs3Set"
 - !private "Ps10SetAlgebra"
 - !private "Vs11SetIterator"
-- !private "Ps12SignedNumber"
-- !private "Ps10Strideable"
 - "SS"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
@@ -1588,16 +1480,11 @@ depends-nominal:
 - "CSo7UITouch"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- !private "Ps15_CVarArgAligned"
-- !private "Ps22_CVarArgPassedAsDouble"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
-- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps26_ExpressibleByColorLiteral"
 - !private "Ps26_ExpressibleByImageLiteral"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
-- !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -1615,4 +1502,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "8edf6d727c24d68b393b7c622fc51a54"
+interface-hash: "204560f6f644eff3f9491765ec57c3d2"

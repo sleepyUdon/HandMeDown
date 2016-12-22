@@ -16,55 +16,57 @@ provides-member:
 - ["CSo7CALayer", "cornerRadiusPreset"]
 - ["CSo7CALayer", "borderWidthPreset"]
 - ["CSo7CALayer", "animate"]
+- ["CSo7CALayer", "animationDidStop"]
 - ["CSo7CALayer", "layoutShape"]
 - ["CSo7CALayer", "layoutShadowPath"]
 provides-dynamic-lookup:
 - "isShadowPathAutoSizing"
-- "cornerRadiusPreset"
-- "heightPreset"
-- "y"
-- "depthPreset"
-- "layoutShape"
-- "layoutShadowPath"
-- "x"
-- "width"
+- "animationDidStop"
 - "animate"
 - "shapePreset"
+- "depthPreset"
+- "heightPreset"
+- "layoutShadowPath"
+- "layoutShape"
+- "y"
+- "cornerRadiusPreset"
 - "borderWidthPreset"
+- "width"
+- "x"
 - "height"
 depends-top-level:
-- !private "Motion"
-- "UInt8"
-- !private "!="
-- !private "kCATransition"
-- !private "??"
-- !private "UIBezierPath"
-- "BorderWidthPreset"
-- "CornerRadiusPreset"
-- !private "CornerRadiusPresetToValue"
-- !private "MaterialLayerKey"
 - "CGFloat"
-- "AssignmentPrecedence"
-- !private "=="
-- "CastingPrecedence"
-- "Bool"
-- !private "/"
-- "ShapePreset"
 - "CALayer"
-- !private "AssociatedObject"
-- "DepthPreset"
-- "MaterialLayer"
-- "CAAnimationDelegate"
-- "HeightPreset"
-- !private "AssociateObject"
-- !private "CABasicAnimation"
-- "CAAnimation"
-- !private "CAAnimationGroup"
+- !private "!="
 - !private "CATransition"
-- "BooleanLiteralType"
-- "Depth"
-- !private "CAPropertyAnimation"
+- !private "AssociatedObject"
+- !private "??"
+- !private "CAAnimationGroup"
+- "BorderWidthPreset"
+- "CAAnimation"
+- !private "CABasicAnimation"
+- !private "kCATransition"
+- "UInt8"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "ShapePreset"
+- "HeightPreset"
 - !private "BorderWidthPresetToValue"
+- !private "UIBezierPath"
+- "MaterialLayer"
+- !private "/"
+- "Depth"
+- !private "AssociateObject"
+- !private "Motion"
+- !private "MaterialLayerKey"
+- "CAAnimationDelegate"
+- !private "CAPropertyAnimation"
+- !private "CornerRadiusPresetToValue"
+- !private "=="
+- "BooleanLiteralType"
+- "DepthPreset"
+- "CornerRadiusPreset"
+- "Bool"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "AssociateObject"]
@@ -77,12 +79,14 @@ depends-member:
 - ["Ps9AnyObject", "animate"]
 - ["Ps9AnyObject", "animationDidStart"]
 - ["Ps9AnyObject", "animationDidStop"]
+- !private ["Ps9AnyObject", "animations"]
 - !private ["Ps9AnyObject", "borderWidth"]
 - ["Ps9AnyObject", "borderWidthPreset"]
 - !private ["Ps9AnyObject", "bounds"]
 - !private ["Ps9AnyObject", "cgPath"]
 - !private ["Ps9AnyObject", "cornerRadius"]
 - ["Ps9AnyObject", "cornerRadiusPreset"]
+- !private ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "depth"]
 - ["Ps9AnyObject", "depthPreset"]
 - !private ["Ps9AnyObject", "frame"]
@@ -97,25 +101,41 @@ depends-member:
 - ["Ps9AnyObject", "layoutShape"]
 - ["Ps9AnyObject", "materialLayer"]
 - !private ["Ps9AnyObject", "presentation"]
+- !private ["Ps9AnyObject", "removeAnimation"]
+- !private ["Ps9AnyObject", "setValue"]
 - !private ["Ps9AnyObject", "shadowOffset"]
 - !private ["Ps9AnyObject", "shadowOpacity"]
 - !private ["Ps9AnyObject", "shadowPath"]
 - !private ["Ps9AnyObject", "shadowRadius"]
 - ["Ps9AnyObject", "shapePreset"]
+- !private ["Ps9AnyObject", "toValue"]
 - !private ["Ps9AnyObject", "value"]
 - ["Ps9AnyObject", "width"]
 - ["Ps9AnyObject", "x"]
 - ["Ps9AnyObject", "y"]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- ["Sa", "deinit"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
 - !private ["Ps19BinaryFloatingPoint", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - ["O8Material17BorderWidthPreset", "deinit"]
 - !private ["O8Material17BorderWidthPreset", "none"]
+- !private ["PSo8CAAction", "animations"]
+- !private ["PSo8CAAction", "delegate"]
 - !private ["PSo8CAAction", "fromValue"]
 - !private ["PSo8CAAction", "keyPath"]
+- !private ["PSo8CAAction", "toValue"]
+- !private ["CSo11CAAnimation", "animations"]
 - ["CSo11CAAnimation", "deinit"]
+- !private ["CSo11CAAnimation", "delegate"]
 - !private ["CSo11CAAnimation", "fromValue"]
 - !private ["CSo11CAAnimation", "keyPath"]
+- !private ["CSo11CAAnimation", "toValue"]
 - !private ["PSo19CAAnimationDelegate", "AssociateObject"]
 - !private ["PSo19CAAnimationDelegate", "AssociatedObject"]
 - !private ["PSo19CAAnimationDelegate", "MaterialLayer"]
@@ -139,6 +159,8 @@ depends-member:
 - !private ["PSo19CAAnimationDelegate", "layoutShape"]
 - !private ["PSo19CAAnimationDelegate", "materialLayer"]
 - !private ["PSo19CAAnimationDelegate", "presentation"]
+- !private ["PSo19CAAnimationDelegate", "removeAnimation"]
+- !private ["PSo19CAAnimationDelegate", "setValue"]
 - !private ["PSo19CAAnimationDelegate", "shadowOffset"]
 - !private ["PSo19CAAnimationDelegate", "shadowOpacity"]
 - !private ["PSo19CAAnimationDelegate", "shadowPath"]
@@ -146,10 +168,12 @@ depends-member:
 - !private ["PSo19CAAnimationDelegate", "shapePreset"]
 - !private ["PSo19CAAnimationDelegate", "value"]
 - ["PSo19CAAnimationDelegate", ""]
+- !private ["CSo16CAAnimationGroup", "animations"]
 - ["CSo16CAAnimationGroup", "deinit"]
 - ["CSo16CABasicAnimation", "deinit"]
 - !private ["CSo16CABasicAnimation", "fromValue"]
 - !private ["CSo16CABasicAnimation", "keyPath"]
+- !private ["CSo16CABasicAnimation", "toValue"]
 - !private ["CSo7CALayer", "AssociateObject"]
 - !private ["CSo7CALayer", "AssociatedObject"]
 - ["CSo7CALayer", "Bool"]
@@ -190,6 +214,8 @@ depends-member:
 - ["CSo7CALayer", "layoutShape"]
 - !private ["CSo7CALayer", "materialLayer"]
 - !private ["CSo7CALayer", "presentation"]
+- !private ["CSo7CALayer", "removeAnimation"]
+- !private ["CSo7CALayer", "setValue"]
 - !private ["CSo7CALayer", "shadowOffset"]
 - !private ["CSo7CALayer", "shadowOpacity"]
 - !private ["CSo7CALayer", "shadowPath"]
@@ -209,9 +235,11 @@ depends-member:
 - !private ["PSo13CAMediaTiming", "animate"]
 - ["PSo13CAMediaTiming", "animationDidStart"]
 - ["PSo13CAMediaTiming", "animationDidStop"]
+- !private ["PSo13CAMediaTiming", "animations"]
 - !private ["PSo13CAMediaTiming", "borderWidth"]
 - !private ["PSo13CAMediaTiming", "bounds"]
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
+- !private ["PSo13CAMediaTiming", "delegate"]
 - !private ["PSo13CAMediaTiming", "depth"]
 - !private ["PSo13CAMediaTiming", "depthPreset"]
 - !private ["PSo13CAMediaTiming", "frame"]
@@ -224,15 +252,19 @@ depends-member:
 - !private ["PSo13CAMediaTiming", "layoutShape"]
 - !private ["PSo13CAMediaTiming", "materialLayer"]
 - !private ["PSo13CAMediaTiming", "presentation"]
+- !private ["PSo13CAMediaTiming", "removeAnimation"]
+- !private ["PSo13CAMediaTiming", "setValue"]
 - !private ["PSo13CAMediaTiming", "shadowOffset"]
 - !private ["PSo13CAMediaTiming", "shadowOpacity"]
 - !private ["PSo13CAMediaTiming", "shadowPath"]
 - !private ["PSo13CAMediaTiming", "shadowRadius"]
 - !private ["PSo13CAMediaTiming", "shapePreset"]
+- !private ["PSo13CAMediaTiming", "toValue"]
 - !private ["PSo13CAMediaTiming", "value"]
 - ["CSo19CAPropertyAnimation", "deinit"]
 - !private ["CSo19CAPropertyAnimation", "fromValue"]
 - !private ["CSo19CAPropertyAnimation", "keyPath"]
+- !private ["CSo19CAPropertyAnimation", "toValue"]
 - ["CSo12CATransition", "deinit"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
@@ -247,20 +279,24 @@ depends-member:
 - !private ["VSC6CGSize", "width"]
 - !private ["Ps7CVarArg", "AssociateObject"]
 - !private ["Ps7CVarArg", "AssociatedObject"]
+- !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "MaterialLayer"]
 - !private ["Ps7CVarArg", "MaterialLayerKey"]
 - !private ["Ps7CVarArg", "Motion"]
 - !private ["Ps7CVarArg", "UIBezierPath"]
+- !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "add"]
 - ["Ps7CVarArg", "animate"]
 - ["Ps7CVarArg", "animationDidStart"]
 - ["Ps7CVarArg", "animationDidStop"]
+- !private ["Ps7CVarArg", "animations"]
 - !private ["Ps7CVarArg", "borderWidth"]
 - ["Ps7CVarArg", "borderWidthPreset"]
 - !private ["Ps7CVarArg", "bounds"]
 - !private ["Ps7CVarArg", "cgPath"]
 - !private ["Ps7CVarArg", "cornerRadius"]
 - ["Ps7CVarArg", "cornerRadiusPreset"]
+- !private ["Ps7CVarArg", "delegate"]
 - ["Ps7CVarArg", "depth"]
 - ["Ps7CVarArg", "depthPreset"]
 - !private ["Ps7CVarArg", "frame"]
@@ -275,34 +311,43 @@ depends-member:
 - ["Ps7CVarArg", "layoutShape"]
 - ["Ps7CVarArg", "materialLayer"]
 - !private ["Ps7CVarArg", "presentation"]
+- !private ["Ps7CVarArg", "removeAnimation"]
+- !private ["Ps7CVarArg", "setValue"]
 - !private ["Ps7CVarArg", "shadowOffset"]
 - !private ["Ps7CVarArg", "shadowOpacity"]
 - !private ["Ps7CVarArg", "shadowPath"]
 - !private ["Ps7CVarArg", "shadowRadius"]
 - ["Ps7CVarArg", "shapePreset"]
+- !private ["Ps7CVarArg", "toValue"]
 - !private ["Ps7CVarArg", "value"]
 - ["Ps7CVarArg", "width"]
 - ["Ps7CVarArg", "x"]
 - ["Ps7CVarArg", "y"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Comparable", "init"]
 - ["O8Material18CornerRadiusPreset", "deinit"]
 - !private ["O8Material18CornerRadiusPreset", "none"]
 - !private ["Ps28CustomDebugStringConvertible", "AssociateObject"]
 - !private ["Ps28CustomDebugStringConvertible", "AssociatedObject"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "MaterialLayer"]
 - !private ["Ps28CustomDebugStringConvertible", "MaterialLayerKey"]
 - !private ["Ps28CustomDebugStringConvertible", "Motion"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBezierPath"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "add"]
 - ["Ps28CustomDebugStringConvertible", "animate"]
 - ["Ps28CustomDebugStringConvertible", "animationDidStart"]
 - ["Ps28CustomDebugStringConvertible", "animationDidStop"]
+- !private ["Ps28CustomDebugStringConvertible", "animations"]
 - !private ["Ps28CustomDebugStringConvertible", "borderWidth"]
 - ["Ps28CustomDebugStringConvertible", "borderWidthPreset"]
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - !private ["Ps28CustomDebugStringConvertible", "cgPath"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - ["Ps28CustomDebugStringConvertible", "cornerRadiusPreset"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - ["Ps28CustomDebugStringConvertible", "depth"]
 - ["Ps28CustomDebugStringConvertible", "depthPreset"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
@@ -318,12 +363,15 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "materialLayer"]
 - !private ["Ps28CustomDebugStringConvertible", "origin"]
 - !private ["Ps28CustomDebugStringConvertible", "presentation"]
+- !private ["Ps28CustomDebugStringConvertible", "removeAnimation"]
+- !private ["Ps28CustomDebugStringConvertible", "setValue"]
 - !private ["Ps28CustomDebugStringConvertible", "shadowOffset"]
 - !private ["Ps28CustomDebugStringConvertible", "shadowOpacity"]
 - !private ["Ps28CustomDebugStringConvertible", "shadowPath"]
 - !private ["Ps28CustomDebugStringConvertible", "shadowRadius"]
 - ["Ps28CustomDebugStringConvertible", "shapePreset"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
+- !private ["Ps28CustomDebugStringConvertible", "toValue"]
 - !private ["Ps28CustomDebugStringConvertible", "value"]
 - ["Ps28CustomDebugStringConvertible", "width"]
 - ["Ps28CustomDebugStringConvertible", "x"]
@@ -335,6 +383,8 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "width"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "x"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "y"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "height"]
 - !private ["Ps17CustomReflectable", "init"]
@@ -345,21 +395,25 @@ depends-member:
 - !private ["Ps17CustomReflectable", "y"]
 - !private ["Ps23CustomStringConvertible", "AssociateObject"]
 - !private ["Ps23CustomStringConvertible", "AssociatedObject"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "MaterialLayer"]
 - !private ["Ps23CustomStringConvertible", "MaterialLayerKey"]
 - !private ["Ps23CustomStringConvertible", "Motion"]
 - !private ["Ps23CustomStringConvertible", "UIBezierPath"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "add"]
 - ["Ps23CustomStringConvertible", "animate"]
 - ["Ps23CustomStringConvertible", "animationDidStart"]
 - ["Ps23CustomStringConvertible", "animationDidStop"]
+- !private ["Ps23CustomStringConvertible", "animations"]
 - !private ["Ps23CustomStringConvertible", "borderWidth"]
 - ["Ps23CustomStringConvertible", "borderWidthPreset"]
 - !private ["Ps23CustomStringConvertible", "bounds"]
 - !private ["Ps23CustomStringConvertible", "cgPath"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - ["Ps23CustomStringConvertible", "cornerRadiusPreset"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
 - ["Ps23CustomStringConvertible", "depth"]
 - ["Ps23CustomStringConvertible", "depthPreset"]
 - !private ["Ps23CustomStringConvertible", "frame"]
@@ -374,11 +428,14 @@ depends-member:
 - ["Ps23CustomStringConvertible", "layoutShape"]
 - ["Ps23CustomStringConvertible", "materialLayer"]
 - !private ["Ps23CustomStringConvertible", "presentation"]
+- !private ["Ps23CustomStringConvertible", "removeAnimation"]
+- !private ["Ps23CustomStringConvertible", "setValue"]
 - !private ["Ps23CustomStringConvertible", "shadowOffset"]
 - !private ["Ps23CustomStringConvertible", "shadowOpacity"]
 - !private ["Ps23CustomStringConvertible", "shadowPath"]
 - !private ["Ps23CustomStringConvertible", "shadowRadius"]
 - ["Ps23CustomStringConvertible", "shapePreset"]
+- !private ["Ps23CustomStringConvertible", "toValue"]
 - !private ["Ps23CustomStringConvertible", "value"]
 - ["Ps23CustomStringConvertible", "width"]
 - ["Ps23CustomStringConvertible", "x"]
@@ -404,6 +461,7 @@ depends-member:
 - ["Ps9Equatable", "animate"]
 - ["Ps9Equatable", "animationDidStart"]
 - ["Ps9Equatable", "animationDidStop"]
+- !private ["Ps9Equatable", "animations"]
 - !private ["Ps9Equatable", "asSize"]
 - !private ["Ps9Equatable", "borderWidth"]
 - ["Ps9Equatable", "borderWidthPreset"]
@@ -413,6 +471,7 @@ depends-member:
 - !private ["Ps9Equatable", "cornerRadius"]
 - ["Ps9Equatable", "cornerRadiusPreset"]
 - !private ["Ps9Equatable", "default"]
+- !private ["Ps9Equatable", "delegate"]
 - ["Ps9Equatable", "depth"]
 - ["Ps9Equatable", "depthPreset"]
 - !private ["Ps9Equatable", "frame"]
@@ -430,16 +489,21 @@ depends-member:
 - !private ["Ps9Equatable", "origin"]
 - !private ["Ps9Equatable", "presentation"]
 - !private ["Ps9Equatable", "rawValue"]
+- !private ["Ps9Equatable", "removeAnimation"]
+- !private ["Ps9Equatable", "setValue"]
 - !private ["Ps9Equatable", "shadowOffset"]
 - !private ["Ps9Equatable", "shadowOpacity"]
 - !private ["Ps9Equatable", "shadowPath"]
 - !private ["Ps9Equatable", "shadowRadius"]
 - ["Ps9Equatable", "shapePreset"]
 - !private ["Ps9Equatable", "size"]
+- !private ["Ps9Equatable", "toValue"]
 - !private ["Ps9Equatable", "value"]
 - ["Ps9Equatable", "width"]
 - ["Ps9Equatable", "x"]
 - ["Ps9Equatable", "y"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps25ExpressibleByFloatLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
@@ -456,6 +520,7 @@ depends-member:
 - ["Ps8Hashable", "animate"]
 - ["Ps8Hashable", "animationDidStart"]
 - ["Ps8Hashable", "animationDidStop"]
+- !private ["Ps8Hashable", "animations"]
 - !private ["Ps8Hashable", "borderWidth"]
 - ["Ps8Hashable", "borderWidthPreset"]
 - !private ["Ps8Hashable", "bounds"]
@@ -464,6 +529,7 @@ depends-member:
 - !private ["Ps8Hashable", "cornerRadius"]
 - ["Ps8Hashable", "cornerRadiusPreset"]
 - !private ["Ps8Hashable", "default"]
+- !private ["Ps8Hashable", "delegate"]
 - ["Ps8Hashable", "depth"]
 - ["Ps8Hashable", "depthPreset"]
 - !private ["Ps8Hashable", "frame"]
@@ -480,11 +546,14 @@ depends-member:
 - !private ["Ps8Hashable", "none"]
 - !private ["Ps8Hashable", "presentation"]
 - !private ["Ps8Hashable", "rawValue"]
+- !private ["Ps8Hashable", "removeAnimation"]
+- !private ["Ps8Hashable", "setValue"]
 - !private ["Ps8Hashable", "shadowOffset"]
 - !private ["Ps8Hashable", "shadowOpacity"]
 - !private ["Ps8Hashable", "shadowPath"]
 - !private ["Ps8Hashable", "shadowRadius"]
 - ["Ps8Hashable", "shapePreset"]
+- !private ["Ps8Hashable", "toValue"]
 - !private ["Ps8Hashable", "value"]
 - ["Ps8Hashable", "width"]
 - ["Ps8Hashable", "x"]
@@ -492,9 +561,19 @@ depends-member:
 - !private ["O8Material12HeightPreset", "default"]
 - ["O8Material12HeightPreset", "deinit"]
 - !private ["O8Material12HeightPreset", "rawValue"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Vs16IndexingIterator", "Element"]
 - !private ["Si", "deinit"]
+- !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["V8Material6Motion", "shadowPath"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
 - !private ["PSo8NSCoding", "AssociateObject"]
 - !private ["PSo8NSCoding", "AssociatedObject"]
 - !private ["PSo8NSCoding", "MaterialLayer"]
@@ -505,10 +584,12 @@ depends-member:
 - !private ["PSo8NSCoding", "animate"]
 - ["PSo8NSCoding", "animationDidStart"]
 - ["PSo8NSCoding", "animationDidStop"]
+- !private ["PSo8NSCoding", "animations"]
 - !private ["PSo8NSCoding", "borderWidth"]
 - !private ["PSo8NSCoding", "bounds"]
 - !private ["PSo8NSCoding", "cgPath"]
 - !private ["PSo8NSCoding", "cornerRadius"]
+- !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "depth"]
 - !private ["PSo8NSCoding", "depthPreset"]
 - !private ["PSo8NSCoding", "frame"]
@@ -522,16 +603,22 @@ depends-member:
 - !private ["PSo8NSCoding", "layoutShape"]
 - !private ["PSo8NSCoding", "materialLayer"]
 - !private ["PSo8NSCoding", "presentation"]
+- !private ["PSo8NSCoding", "removeAnimation"]
+- !private ["PSo8NSCoding", "setValue"]
 - !private ["PSo8NSCoding", "shadowOffset"]
 - !private ["PSo8NSCoding", "shadowOpacity"]
 - !private ["PSo8NSCoding", "shadowPath"]
 - !private ["PSo8NSCoding", "shadowRadius"]
 - !private ["PSo8NSCoding", "shapePreset"]
+- !private ["PSo8NSCoding", "toValue"]
 - !private ["PSo8NSCoding", "value"]
+- !private ["PSo9NSCopying", "animations"]
 - !private ["PSo9NSCopying", "cgPath"]
+- !private ["PSo9NSCopying", "delegate"]
 - !private ["PSo9NSCopying", "fromValue"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "keyPath"]
+- !private ["PSo9NSCopying", "toValue"]
 - !private ["CSo8NSObject", "AssociateObject"]
 - !private ["CSo8NSObject", "AssociatedObject"]
 - ["CSo8NSObject", "Bool"]
@@ -555,12 +642,14 @@ depends-member:
 - ["CSo8NSObject", "animate"]
 - ["CSo8NSObject", "animationDidStart"]
 - ["CSo8NSObject", "animationDidStop"]
+- !private ["CSo8NSObject", "animations"]
 - !private ["CSo8NSObject", "borderWidth"]
 - ["CSo8NSObject", "borderWidthPreset"]
 - !private ["CSo8NSObject", "bounds"]
 - !private ["CSo8NSObject", "cgPath"]
 - !private ["CSo8NSObject", "cornerRadius"]
 - ["CSo8NSObject", "cornerRadiusPreset"]
+- !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "depth"]
 - ["CSo8NSObject", "depthPreset"]
 - !private ["CSo8NSObject", "frame"]
@@ -575,11 +664,14 @@ depends-member:
 - ["CSo8NSObject", "layoutShape"]
 - ["CSo8NSObject", "materialLayer"]
 - !private ["CSo8NSObject", "presentation"]
+- !private ["CSo8NSObject", "removeAnimation"]
+- !private ["CSo8NSObject", "setValue"]
 - !private ["CSo8NSObject", "shadowOffset"]
 - !private ["CSo8NSObject", "shadowOpacity"]
 - !private ["CSo8NSObject", "shadowPath"]
 - !private ["CSo8NSObject", "shadowRadius"]
 - ["CSo8NSObject", "shapePreset"]
+- !private ["CSo8NSObject", "toValue"]
 - !private ["CSo8NSObject", "value"]
 - ["CSo8NSObject", "width"]
 - ["CSo8NSObject", "x"]
@@ -594,12 +686,14 @@ depends-member:
 - ["PSo16NSObjectProtocol", "animate"]
 - ["PSo16NSObjectProtocol", "animationDidStart"]
 - ["PSo16NSObjectProtocol", "animationDidStop"]
+- !private ["PSo16NSObjectProtocol", "animations"]
 - !private ["PSo16NSObjectProtocol", "borderWidth"]
 - ["PSo16NSObjectProtocol", "borderWidthPreset"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
 - !private ["PSo16NSObjectProtocol", "cgPath"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - ["PSo16NSObjectProtocol", "cornerRadiusPreset"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "depth"]
 - ["PSo16NSObjectProtocol", "depthPreset"]
 - !private ["PSo16NSObjectProtocol", "frame"]
@@ -614,21 +708,35 @@ depends-member:
 - ["PSo16NSObjectProtocol", "layoutShape"]
 - ["PSo16NSObjectProtocol", "materialLayer"]
 - !private ["PSo16NSObjectProtocol", "presentation"]
+- !private ["PSo16NSObjectProtocol", "removeAnimation"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
 - !private ["PSo16NSObjectProtocol", "shadowOffset"]
 - !private ["PSo16NSObjectProtocol", "shadowOpacity"]
 - !private ["PSo16NSObjectProtocol", "shadowPath"]
 - !private ["PSo16NSObjectProtocol", "shadowRadius"]
 - ["PSo16NSObjectProtocol", "shapePreset"]
+- !private ["PSo16NSObjectProtocol", "toValue"]
 - !private ["PSo16NSObjectProtocol", "value"]
 - ["PSo16NSObjectProtocol", "width"]
 - ["PSo16NSObjectProtocol", "x"]
 - ["PSo16NSObjectProtocol", "y"]
 - ["Sq", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
 - !private ["Ps16RawRepresentable", "RawValue"]
 - !private ["Ps16RawRepresentable", "circle"]
 - !private ["Ps16RawRepresentable", "default"]
 - !private ["Ps16RawRepresentable", "none"]
 - !private ["Ps16RawRepresentable", "rawValue"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
 - !private ["O8Material11ShapePreset", "RawValue"]
 - !private ["O8Material11ShapePreset", "circle"]
 - ["O8Material11ShapePreset", "deinit"]
@@ -641,8 +749,12 @@ depends-member:
 - !private ["CSo12UIBezierPath", "init"]
 - !private ["VSC8UIOffset", "asSize"]
 - ["Vs5UInt8", "deinit"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "AssociateObject"]
 - !private ["Ps9_Hashable", "AssociatedObject"]
@@ -656,6 +768,7 @@ depends-member:
 - ["Ps9_Hashable", "animate"]
 - ["Ps9_Hashable", "animationDidStart"]
 - ["Ps9_Hashable", "animationDidStop"]
+- !private ["Ps9_Hashable", "animations"]
 - !private ["Ps9_Hashable", "borderWidth"]
 - ["Ps9_Hashable", "borderWidthPreset"]
 - !private ["Ps9_Hashable", "bounds"]
@@ -664,6 +777,7 @@ depends-member:
 - !private ["Ps9_Hashable", "cornerRadius"]
 - ["Ps9_Hashable", "cornerRadiusPreset"]
 - !private ["Ps9_Hashable", "default"]
+- !private ["Ps9_Hashable", "delegate"]
 - ["Ps9_Hashable", "depth"]
 - ["Ps9_Hashable", "depthPreset"]
 - !private ["Ps9_Hashable", "frame"]
@@ -680,15 +794,20 @@ depends-member:
 - !private ["Ps9_Hashable", "none"]
 - !private ["Ps9_Hashable", "presentation"]
 - !private ["Ps9_Hashable", "rawValue"]
+- !private ["Ps9_Hashable", "removeAnimation"]
+- !private ["Ps9_Hashable", "setValue"]
 - !private ["Ps9_Hashable", "shadowOffset"]
 - !private ["Ps9_Hashable", "shadowOpacity"]
 - !private ["Ps9_Hashable", "shadowPath"]
 - !private ["Ps9_Hashable", "shadowRadius"]
 - ["Ps9_Hashable", "shapePreset"]
+- !private ["Ps9_Hashable", "toValue"]
 - !private ["Ps9_Hashable", "value"]
 - ["Ps9_Hashable", "width"]
 - ["Ps9_Hashable", "x"]
 - ["Ps9_Hashable", "y"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "asSize"]
 - !private ["Ps21_ObjectiveCBridgeable", "height"]
@@ -703,6 +822,9 @@ depends-member:
 depends-nominal:
 - !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
+- "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
 - !private "Ps19BinaryFloatingPoint"
 - "Sb"
 - "O8Material17BorderWidthPreset"
@@ -720,6 +842,7 @@ depends-nominal:
 - !private "VSC6CGRect"
 - !private "VSC6CGSize"
 - "Ps7CVarArg"
+- !private "Ps10Collection"
 - !private "Ps10Comparable"
 - "O8Material18CornerRadiusPreset"
 - "Ps28CustomDebugStringConvertible"
@@ -729,21 +852,33 @@ depends-nominal:
 - "V8Material5Depth"
 - "O8Material11DepthPreset"
 - "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps13FloatingPoint"
 - "Ps8Hashable"
 - "O8Material12HeightPreset"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
 - !private "Si"
+- !private "Ps16IteratorProtocol"
 - !private "Ps25LosslessStringConvertible"
 - !private "V8Material6Motion"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
 - !private "Ps16RawRepresentable"
+- !private "Ps8Sequence"
 - "O8Material11ShapePreset"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
@@ -751,8 +886,10 @@ depends-nominal:
 - "CSo12UIBezierPath"
 - !private "VSC8UIOffset"
 - "Vs5UInt8"
+- !private "Ps14_ArrayProtocol"
 - !private "Ps15_CVarArgAligned"
 - !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
@@ -775,4 +912,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "c0c6f17212e368a2cb4780c80bdfaf0f"
+interface-hash: "92cd379c165aea685ac67fd7a6dffb1e"

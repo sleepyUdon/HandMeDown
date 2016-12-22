@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "CGFloat"
-- "Screen"
 - "CGRect"
 - !private "UIScreen"
+- "Screen"
 depends-member:
 - !private ["Ps9AnyObject", "bounds"]
 - !private ["Ps9AnyObject", "main"]

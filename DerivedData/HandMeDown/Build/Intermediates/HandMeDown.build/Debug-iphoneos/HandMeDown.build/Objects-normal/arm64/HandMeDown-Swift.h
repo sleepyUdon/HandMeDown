@@ -116,9 +116,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
+@import Foundation;
 @import RealmSwift;
 @import CoreGraphics;
-@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -135,6 +136,17 @@ SWIFT_CLASS("_TtC10HandMeDown11AppDelegate")
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10HandMeDown8AppState")
+@interface AppState : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AppState * _Nonnull sharedInstance;)
++ (AppState * _Nonnull)sharedInstance;
+@property (nonatomic) BOOL signedIn;
+@property (nonatomic, copy) NSString * _Nullable displayName;
+@property (nonatomic, copy) NSURL * _Nullable photoURL;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -226,6 +238,32 @@ SWIFT_CLASS("_TtC10HandMeDown4Item")
 - (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class FIRUser;
+@class UITextField;
+
+SWIFT_CLASS_NAMED("LoginViewController")
+@interface SignInViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
+- (void)viewDidAppear:(BOOL)animated;
+- (IBAction)handleSigninButton:(UIButton * _Nonnull)sender;
+- (IBAction)handleCreateAccountButton:(UIButton * _Nonnull)sender;
+- (void)setDisplayName:(FIRUser * _Nonnull)user;
+- (IBAction)didRequestPasswordReset:(id _Nonnull)sender;
+- (void)signedIn:(FIRUser * _Nullable)user;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10HandMeDown17MeasurementHelper")
+@interface MeasurementHelper : NSObject
++ (void)sendLoginEvent;
++ (void)sendLogoutEvent;
++ (void)sendMessageEvent;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC10HandMeDown20MyStuffTableViewCell")
 @interface MyStuffTableViewCell : UITableViewCell
@@ -256,7 +294,6 @@ SWIFT_CLASS("_TtC10HandMeDown21MyStuffViewController")
 @end
 
 @class UIImagePickerController;
-@class UITextField;
 @class Button;
 @class UIView;
 @class UITextView;

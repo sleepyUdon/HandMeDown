@@ -6,51 +6,51 @@ provides-nominal:
 provides-member:
 - ["C8Material20CollectionViewLayout", ""]
 provides-dynamic-lookup:
-- "interimSpacePreset"
-- "itemSize"
-- "scrollDirection"
-- "indexPathsOfItemsInRect"
-- "prepare"
 - "layoutAttributesForElements"
-- "contentEdgeInsetsPreset"
-- "collectionViewContentSize"
-- "layoutAttributesForItem"
-- "offset"
-- "shouldInvalidateLayout"
-- "targetContentOffset"
-- "interimSpace"
+- "interimSpacePreset"
+- "indexPathsOfItemsInRect"
 - "contentEdgeInsets"
+- "layoutAttributesForItem"
+- "collectionViewContentSize"
+- "interimSpace"
+- "shouldInvalidateLayout"
+- "scrollDirection"
 - "contentSize"
+- "contentEdgeInsetsPreset"
+- "offset"
+- "itemSize"
+- "prepare"
+- "targetContentOffset"
 depends-top-level:
-- "UICollectionViewScrollDirection"
-- "Bool"
-- "CGSize"
-- "EdgeInsets"
-- "TernaryPrecedence"
-- "NSIndexPath"
-- !private "..<"
-- "InterimSpacePreset"
-- "InterimSpace"
-- !private "EdgeInsetsPresetToValue"
-- !private "InterimSpacePresetToValue"
-- "EdgeInsetsPreset"
-- !private "-"
-- !private "CollectionViewDataSource"
-- !private "<"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "&&"
-- "CastingPrecedence"
-- "CollectionViewLayout"
-- "CGRect"
-- "CollectionDataSourceItem"
-- "UICollectionViewLayoutAttributes"
-- "CGPoint"
 - !private "!="
-- "IndexPath"
+- !private "-"
 - "UICollectionViewLayout"
+- "TernaryPrecedence"
+- !private "..<"
 - !private "??"
 - !private "+="
+- !private "&&"
+- "UICollectionViewScrollDirection"
+- "Bool"
+- "InterimSpacePreset"
+- "EdgeInsets"
+- "CastingPrecedence"
+- "CollectionViewLayout"
+- "AssignmentPrecedence"
+- !private "InterimSpacePresetToValue"
+- "UICollectionViewLayoutAttributes"
+- "InterimSpace"
+- !private "=="
+- !private "<"
+- "IndexPath"
+- "DataSourceItem"
+- !private "EdgeInsetsPresetToValue"
+- !private "CollectionViewDataSource"
+- "CGRect"
+- "NSIndexPath"
+- "CGSize"
+- "CGPoint"
+- "EdgeInsetsPreset"
 depends-member:
 - ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "CGRect"]
@@ -213,17 +213,14 @@ depends-member:
 - !private ["Ps10Collection", "item"]
 - !private ["Ps10Collection", "removeAll"]
 - !private ["Ps10Collection", "subscript"]
-- ["V8Material24CollectionDataSourceItem", "deinit"]
-- !private ["V8Material24CollectionDataSourceItem", "height"]
-- !private ["V8Material24CollectionDataSourceItem", "width"]
 - !private ["P8Material24CollectionViewDataSource", "dataSourceItems"]
 - ["P8Material24CollectionViewDataSource", "deinit"]
 - ["C8Material20CollectionViewLayout", "Bool"]
 - ["C8Material20CollectionViewLayout", "CGPoint"]
 - ["C8Material20CollectionViewLayout", "CGRect"]
 - ["C8Material20CollectionViewLayout", "CGSize"]
-- ["C8Material20CollectionViewLayout", "CollectionDataSourceItem"]
 - !private ["C8Material20CollectionViewLayout", "CollectionViewDataSource"]
+- ["C8Material20CollectionViewLayout", "DataSourceItem"]
 - ["C8Material20CollectionViewLayout", "EdgeInsets"]
 - ["C8Material20CollectionViewLayout", "EdgeInsetsPreset"]
 - !private ["C8Material20CollectionViewLayout", "EdgeInsetsPresetToValue"]
@@ -400,6 +397,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "targetContentOffset"]
 - ["Ps23CustomStringConvertible", ""]
+- ["V8Material14DataSourceItem", "deinit"]
+- !private ["V8Material14DataSourceItem", "height"]
+- !private ["V8Material14DataSourceItem", "width"]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
 - !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
 - !private ["Vs27DefaultBidirectionalIndices", "SubSequence"]
@@ -640,8 +640,8 @@ depends-member:
 - ["CSo8NSObject", "CGPoint"]
 - ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "CGSize"]
-- ["CSo8NSObject", "CollectionDataSourceItem"]
 - !private ["CSo8NSObject", "CollectionViewDataSource"]
+- ["CSo8NSObject", "DataSourceItem"]
 - ["CSo8NSObject", "EdgeInsets"]
 - ["CSo8NSObject", "EdgeInsetsPreset"]
 - !private ["CSo8NSObject", "EdgeInsetsPresetToValue"]
@@ -811,8 +811,8 @@ depends-member:
 - ["CSo22UICollectionViewLayout", "CGPoint"]
 - ["CSo22UICollectionViewLayout", "CGRect"]
 - ["CSo22UICollectionViewLayout", "CGSize"]
-- ["CSo22UICollectionViewLayout", "CollectionDataSourceItem"]
 - !private ["CSo22UICollectionViewLayout", "CollectionViewDataSource"]
+- ["CSo22UICollectionViewLayout", "DataSourceItem"]
 - ["CSo22UICollectionViewLayout", "EdgeInsets"]
 - ["CSo22UICollectionViewLayout", "EdgeInsetsPreset"]
 - !private ["CSo22UICollectionViewLayout", "EdgeInsetsPresetToValue"]
@@ -983,7 +983,6 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "x"]
 - !private ["Ps21_ObjectiveCBridgeable", "y"]
 - ["Ps21_ObjectiveCBridgeable", "zero"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "IntegerLiteralType"]
 - !private ["Ps14_SignedInteger", "Stride"]
 - !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
@@ -1005,7 +1004,6 @@ depends-nominal:
 - "VSC6CGSize"
 - "Ps7CVarArg"
 - "Ps10Collection"
-- "V8Material24CollectionDataSourceItem"
 - "P8Material24CollectionViewDataSource"
 - "C8Material20CollectionViewLayout"
 - !private "Ps10Comparable"
@@ -1014,6 +1012,7 @@ depends-nominal:
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- "V8Material14DataSourceItem"
 - !private "Vs27DefaultBidirectionalIndices"
 - !private "Vs26DefaultRandomAccessIndices"
 - "O8Material16EdgeInsetsPreset"
@@ -1083,7 +1082,6 @@ depends-nominal:
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
 - "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
@@ -1103,4 +1101,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "7644f83b3e273ab8be234d1e597b310a"
+interface-hash: "29c87d29981affee882193c9f274fabf"

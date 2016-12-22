@@ -9,26 +9,26 @@ provides-member:
 - ["O8Material16ToolbarAlignment", ""]
 - ["C8Material9ImageCard", ""]
 provides-dynamic-lookup:
-- "toolbarAlignment"
-- "reload"
 - "imageViewEdgeInsets"
-- "imageViewEdgeInsetsPreset"
 - "imageView"
+- "reload"
+- "imageViewEdgeInsetsPreset"
+- "toolbarAlignment"
 depends-top-level:
-- "TernaryPrecedence"
+- !private "CGFloat"
 - "ToolbarAlignment"
+- "TernaryPrecedence"
+- "UIImageView"
+- "ImageCard"
+- "Int"
+- "Card"
+- "EdgeInsetsPreset"
+- "=="
+- !private "~="
+- "AssignmentPrecedence"
+- !private "-"
 - !private "EdgeInsetsPresetToValue"
 - "EdgeInsets"
-- "Int"
-- "ImageCard"
-- "Card"
-- !private "-"
-- !private "~="
-- "=="
-- "AssignmentPrecedence"
-- !private "CGFloat"
-- "UIImageView"
-- "EdgeInsetsPreset"
 depends-member:
 - ["Ps9AnyObject", "EdgeInsets"]
 - ["Ps9AnyObject", "EdgeInsetsPreset"]
