@@ -6,53 +6,48 @@ provides-nominal:
 provides-member:
 - ["C8Material4Card", ""]
 provides-dynamic-lookup:
-- "contentViewEdgeInsetsPreset"
-- "backgroundColor"
-- "willLayout"
-- "toolbarEdgeInsets"
-- "toolbarEdgeInsetsPreset"
-- "cornerRadiusPreset"
-- "toolbar"
 - "contentViewEdgeInsets"
-- "contentView"
-- "container"
-- "shapePreset"
 - "cornerRadius"
-- "bottomBarEdgeInsets"
-- "bottomBarEdgeInsetsPreset"
 - "reload"
-- "prepare"
-- "prepare"
-- "prepareProperties"
+- "toolbarEdgeInsets"
+- "backgroundColor"
+- "contentView"
+- "contentViewEdgeInsetsPreset"
 - "bottomBar"
+- "prepare"
+- "prepare"
+- "bottomBarEdgeInsetsPreset"
 - "layoutSubviews"
+- "bottomBarEdgeInsets"
+- "container"
+- "prepareProperties"
+- "shapePreset"
+- "toolbarEdgeInsetsPreset"
+- "toolbar"
+- "cornerRadiusPreset"
 depends-top-level:
-- !private "&&"
-- "PulseView"
-- !private "!="
-- !private "BooleanLiteralType"
-- "Card"
-- !private "-"
-- "EdgeInsets"
-- "CornerRadiusPreset"
-- !private "UILabel"
-- "Toolbar"
-- "Bar"
-- "AssignmentPrecedence"
-- "UIView"
-- !private "=="
 - "EdgeInsetsPreset"
-- "CastingPrecedence"
+- "Toolbar"
 - "NSCoder"
-- !private "<"
-- !private "EdgeInsetsPresetToValue"
-- "UIColor"
-- "Bool"
-- !private "CGSize"
-- !private "+"
-- "CGRect"
+- "UIView"
+- !private "-"
 - "CGFloat"
+- "PulseView"
+- "CastingPrecedence"
+- !private "CGSize"
+- "UIColor"
+- "AssignmentPrecedence"
+- !private "=="
+- "Card"
+- "CGRect"
+- "CornerRadiusPreset"
 - "ShapePreset"
+- !private "+"
+- "EdgeInsets"
+- !private "EdgeInsetsPresetToValue"
+- !private "BooleanLiteralType"
+- !private "UILabel"
+- "Bar"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "greatestFiniteMagnitude"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -87,12 +82,10 @@ depends-member:
 - ["Ps9AnyObject", "shapePreset"]
 - !private ["Ps9AnyObject", "sizeThatFits"]
 - !private ["Ps9AnyObject", "sizeToFit"]
-- !private ["Ps9AnyObject", "superview"]
 - ["Ps9AnyObject", "toolbar"]
 - ["Ps9AnyObject", "toolbarEdgeInsets"]
 - ["Ps9AnyObject", "toolbarEdgeInsetsPreset"]
 - !private ["Ps9AnyObject", "width"]
-- ["Ps9AnyObject", "willLayout"]
 - !private ["Ps9AnyObject", "x"]
 - !private ["Ps9AnyObject", "y"]
 - ["Ps9AnyObject", ""]
@@ -133,12 +126,10 @@ depends-member:
 - ["PSo15CALayerDelegate", "shapePreset"]
 - !private ["PSo15CALayerDelegate", "sizeThatFits"]
 - !private ["PSo15CALayerDelegate", "sizeToFit"]
-- !private ["PSo15CALayerDelegate", "superview"]
 - ["PSo15CALayerDelegate", "toolbar"]
 - ["PSo15CALayerDelegate", "toolbarEdgeInsets"]
 - ["PSo15CALayerDelegate", "toolbarEdgeInsetsPreset"]
 - !private ["PSo15CALayerDelegate", "width"]
-- ["PSo15CALayerDelegate", "willLayout"]
 - !private ["PSo15CALayerDelegate", "x"]
 - !private ["PSo15CALayerDelegate", "y"]
 - ["PSo15CALayerDelegate", ""]
@@ -183,17 +174,14 @@ depends-member:
 - ["Ps7CVarArg", "shapePreset"]
 - !private ["Ps7CVarArg", "sizeThatFits"]
 - !private ["Ps7CVarArg", "sizeToFit"]
-- !private ["Ps7CVarArg", "superview"]
 - ["Ps7CVarArg", "toolbar"]
 - ["Ps7CVarArg", "toolbarEdgeInsets"]
 - ["Ps7CVarArg", "toolbarEdgeInsetsPreset"]
 - !private ["Ps7CVarArg", "width"]
-- ["Ps7CVarArg", "willLayout"]
 - !private ["Ps7CVarArg", "x"]
 - !private ["Ps7CVarArg", "y"]
 - ["Ps7CVarArg", ""]
 - ["C8Material4Card", "Bar"]
-- ["C8Material4Card", "Bool"]
 - ["C8Material4Card", "CGFloat"]
 - ["C8Material4Card", "CGRect"]
 - !private ["C8Material4Card", "CGSize"]
@@ -229,12 +217,10 @@ depends-member:
 - !private ["C8Material4Card", "pulseAnimation"]
 - ["C8Material4Card", "reload"]
 - ["C8Material4Card", "shapePreset"]
-- !private ["C8Material4Card", "superview"]
 - ["C8Material4Card", "toolbar"]
 - ["C8Material4Card", "toolbarEdgeInsets"]
 - ["C8Material4Card", "toolbarEdgeInsetsPreset"]
 - !private ["C8Material4Card", "width"]
-- ["C8Material4Card", "willLayout"]
 - !private ["Ps10Comparable", "greatestFiniteMagnitude"]
 - !private ["O8Material18CornerRadiusPreset", "cornerRadius1"]
 - ["O8Material18CornerRadiusPreset", "deinit"]
@@ -271,12 +257,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "size"]
 - !private ["Ps28CustomDebugStringConvertible", "sizeThatFits"]
 - !private ["Ps28CustomDebugStringConvertible", "sizeToFit"]
-- !private ["Ps28CustomDebugStringConvertible", "superview"]
 - ["Ps28CustomDebugStringConvertible", "toolbar"]
 - ["Ps28CustomDebugStringConvertible", "toolbarEdgeInsets"]
 - ["Ps28CustomDebugStringConvertible", "toolbarEdgeInsetsPreset"]
 - !private ["Ps28CustomDebugStringConvertible", "width"]
-- ["Ps28CustomDebugStringConvertible", "willLayout"]
 - !private ["Ps28CustomDebugStringConvertible", "x"]
 - !private ["Ps28CustomDebugStringConvertible", "y"]
 - !private ["Ps28CustomDebugStringConvertible", "zero"]
@@ -326,12 +310,10 @@ depends-member:
 - ["Ps23CustomStringConvertible", "shapePreset"]
 - !private ["Ps23CustomStringConvertible", "sizeThatFits"]
 - !private ["Ps23CustomStringConvertible", "sizeToFit"]
-- !private ["Ps23CustomStringConvertible", "superview"]
 - ["Ps23CustomStringConvertible", "toolbar"]
 - ["Ps23CustomStringConvertible", "toolbarEdgeInsets"]
 - ["Ps23CustomStringConvertible", "toolbarEdgeInsetsPreset"]
 - !private ["Ps23CustomStringConvertible", "width"]
-- ["Ps23CustomStringConvertible", "willLayout"]
 - !private ["Ps23CustomStringConvertible", "x"]
 - !private ["Ps23CustomStringConvertible", "y"]
 - ["Ps23CustomStringConvertible", ""]
@@ -380,13 +362,11 @@ depends-member:
 - !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "sizeThatFits"]
 - !private ["Ps9Equatable", "sizeToFit"]
-- !private ["Ps9Equatable", "superview"]
 - ["Ps9Equatable", "toolbar"]
 - ["Ps9Equatable", "toolbarEdgeInsets"]
 - ["Ps9Equatable", "toolbarEdgeInsetsPreset"]
 - !private ["Ps9Equatable", "top"]
 - !private ["Ps9Equatable", "width"]
-- ["Ps9Equatable", "willLayout"]
 - !private ["Ps9Equatable", "x"]
 - !private ["Ps9Equatable", "y"]
 - ["Ps9Equatable", "zero"]
@@ -432,12 +412,10 @@ depends-member:
 - ["Ps8Hashable", "shapePreset"]
 - !private ["Ps8Hashable", "sizeThatFits"]
 - !private ["Ps8Hashable", "sizeToFit"]
-- !private ["Ps8Hashable", "superview"]
 - ["Ps8Hashable", "toolbar"]
 - ["Ps8Hashable", "toolbarEdgeInsets"]
 - ["Ps8Hashable", "toolbarEdgeInsetsPreset"]
 - !private ["Ps8Hashable", "width"]
-- ["Ps8Hashable", "willLayout"]
 - !private ["Ps8Hashable", "x"]
 - !private ["Ps8Hashable", "y"]
 - ["Ps8Hashable", ""]
@@ -475,17 +453,14 @@ depends-member:
 - ["PSo8NSCoding", "shapePreset"]
 - !private ["PSo8NSCoding", "sizeThatFits"]
 - !private ["PSo8NSCoding", "sizeToFit"]
-- !private ["PSo8NSCoding", "superview"]
 - ["PSo8NSCoding", "toolbar"]
 - ["PSo8NSCoding", "toolbarEdgeInsets"]
 - ["PSo8NSCoding", "toolbarEdgeInsetsPreset"]
 - !private ["PSo8NSCoding", "width"]
-- ["PSo8NSCoding", "willLayout"]
 - !private ["PSo8NSCoding", "x"]
 - !private ["PSo8NSCoding", "y"]
 - ["PSo8NSCoding", ""]
 - ["CSo8NSObject", "Bar"]
-- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "CGSize"]
@@ -525,12 +500,10 @@ depends-member:
 - ["CSo8NSObject", "shapePreset"]
 - !private ["CSo8NSObject", "sizeThatFits"]
 - !private ["CSo8NSObject", "sizeToFit"]
-- !private ["CSo8NSObject", "superview"]
 - ["CSo8NSObject", "toolbar"]
 - ["CSo8NSObject", "toolbarEdgeInsets"]
 - ["CSo8NSObject", "toolbarEdgeInsetsPreset"]
 - !private ["CSo8NSObject", "width"]
-- ["CSo8NSObject", "willLayout"]
 - !private ["CSo8NSObject", "x"]
 - !private ["CSo8NSObject", "y"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
@@ -565,12 +538,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "shapePreset"]
 - !private ["PSo16NSObjectProtocol", "sizeThatFits"]
 - !private ["PSo16NSObjectProtocol", "sizeToFit"]
-- !private ["PSo16NSObjectProtocol", "superview"]
 - ["PSo16NSObjectProtocol", "toolbar"]
 - ["PSo16NSObjectProtocol", "toolbarEdgeInsets"]
 - ["PSo16NSObjectProtocol", "toolbarEdgeInsetsPreset"]
 - !private ["PSo16NSObjectProtocol", "width"]
-- ["PSo16NSObjectProtocol", "willLayout"]
 - !private ["PSo16NSObjectProtocol", "x"]
 - !private ["PSo16NSObjectProtocol", "y"]
 - ["PSo16NSObjectProtocol", ""]
@@ -578,7 +549,6 @@ depends-member:
 - ["O8Material14PulseAnimation", "deinit"]
 - !private ["O8Material14PulseAnimation", "none"]
 - ["C8Material9PulseView", "Bar"]
-- ["C8Material9PulseView", "Bool"]
 - ["C8Material9PulseView", "CGFloat"]
 - ["C8Material9PulseView", "CGRect"]
 - !private ["C8Material9PulseView", "CGSize"]
@@ -614,12 +584,10 @@ depends-member:
 - !private ["C8Material9PulseView", "pulseAnimation"]
 - ["C8Material9PulseView", "reload"]
 - ["C8Material9PulseView", "shapePreset"]
-- !private ["C8Material9PulseView", "superview"]
 - ["C8Material9PulseView", "toolbar"]
 - ["C8Material9PulseView", "toolbarEdgeInsets"]
 - ["C8Material9PulseView", "toolbarEdgeInsetsPreset"]
 - !private ["C8Material9PulseView", "width"]
-- ["C8Material9PulseView", "willLayout"]
 - ["C8Material9PulseView", ""]
 - !private ["P8Material9Pulseable", "CGFloat"]
 - !private ["P8Material9Pulseable", "CGSize"]
@@ -648,12 +616,10 @@ depends-member:
 - !private ["P8Material9Pulseable", "pulseAnimation"]
 - ["P8Material9Pulseable", "reload"]
 - ["P8Material9Pulseable", "shapePreset"]
-- !private ["P8Material9Pulseable", "superview"]
 - ["P8Material9Pulseable", "toolbar"]
 - ["P8Material9Pulseable", "toolbarEdgeInsets"]
 - ["P8Material9Pulseable", "toolbarEdgeInsetsPreset"]
 - !private ["P8Material9Pulseable", "width"]
-- ["P8Material9Pulseable", "willLayout"]
 - ["P8Material9Pulseable", ""]
 - !private ["Ps16RawRepresentable", "cornerRadius1"]
 - !private ["Ps16RawRepresentable", "depth1"]
@@ -695,12 +661,10 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "shapePreset"]
 - !private ["PSo29UIAccessibilityIdentification", "sizeThatFits"]
 - !private ["PSo29UIAccessibilityIdentification", "sizeToFit"]
-- !private ["PSo29UIAccessibilityIdentification", "superview"]
 - ["PSo29UIAccessibilityIdentification", "toolbar"]
 - ["PSo29UIAccessibilityIdentification", "toolbarEdgeInsets"]
 - ["PSo29UIAccessibilityIdentification", "toolbarEdgeInsetsPreset"]
 - !private ["PSo29UIAccessibilityIdentification", "width"]
-- ["PSo29UIAccessibilityIdentification", "willLayout"]
 - !private ["PSo29UIAccessibilityIdentification", "x"]
 - !private ["PSo29UIAccessibilityIdentification", "y"]
 - ["PSo29UIAccessibilityIdentification", ""]
@@ -736,12 +700,10 @@ depends-member:
 - ["PSo12UIAppearance", "shapePreset"]
 - !private ["PSo12UIAppearance", "sizeThatFits"]
 - !private ["PSo12UIAppearance", "sizeToFit"]
-- !private ["PSo12UIAppearance", "superview"]
 - ["PSo12UIAppearance", "toolbar"]
 - ["PSo12UIAppearance", "toolbarEdgeInsets"]
 - ["PSo12UIAppearance", "toolbarEdgeInsetsPreset"]
 - !private ["PSo12UIAppearance", "width"]
-- ["PSo12UIAppearance", "willLayout"]
 - !private ["PSo12UIAppearance", "x"]
 - !private ["PSo12UIAppearance", "y"]
 - ["PSo12UIAppearance", ""]
@@ -777,12 +739,10 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "shapePreset"]
 - !private ["PSo21UIAppearanceContainer", "sizeThatFits"]
 - !private ["PSo21UIAppearanceContainer", "sizeToFit"]
-- !private ["PSo21UIAppearanceContainer", "superview"]
 - ["PSo21UIAppearanceContainer", "toolbar"]
 - ["PSo21UIAppearanceContainer", "toolbarEdgeInsets"]
 - ["PSo21UIAppearanceContainer", "toolbarEdgeInsetsPreset"]
 - !private ["PSo21UIAppearanceContainer", "width"]
-- ["PSo21UIAppearanceContainer", "willLayout"]
 - !private ["PSo21UIAppearanceContainer", "x"]
 - !private ["PSo21UIAppearanceContainer", "y"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -819,12 +779,10 @@ depends-member:
 - ["PSo17UICoordinateSpace", "shapePreset"]
 - !private ["PSo17UICoordinateSpace", "sizeThatFits"]
 - !private ["PSo17UICoordinateSpace", "sizeToFit"]
-- !private ["PSo17UICoordinateSpace", "superview"]
 - ["PSo17UICoordinateSpace", "toolbar"]
 - ["PSo17UICoordinateSpace", "toolbarEdgeInsets"]
 - ["PSo17UICoordinateSpace", "toolbarEdgeInsetsPreset"]
 - !private ["PSo17UICoordinateSpace", "width"]
-- ["PSo17UICoordinateSpace", "willLayout"]
 - !private ["PSo17UICoordinateSpace", "x"]
 - !private ["PSo17UICoordinateSpace", "y"]
 - ["PSo17UICoordinateSpace", ""]
@@ -860,12 +818,10 @@ depends-member:
 - ["PSo13UIDynamicItem", "shapePreset"]
 - !private ["PSo13UIDynamicItem", "sizeThatFits"]
 - !private ["PSo13UIDynamicItem", "sizeToFit"]
-- !private ["PSo13UIDynamicItem", "superview"]
 - ["PSo13UIDynamicItem", "toolbar"]
 - ["PSo13UIDynamicItem", "toolbarEdgeInsets"]
 - ["PSo13UIDynamicItem", "toolbarEdgeInsetsPreset"]
 - !private ["PSo13UIDynamicItem", "width"]
-- ["PSo13UIDynamicItem", "willLayout"]
 - !private ["PSo13UIDynamicItem", "x"]
 - !private ["PSo13UIDynamicItem", "y"]
 - ["PSo13UIDynamicItem", ""]
@@ -907,12 +863,10 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "shapePreset"]
 - !private ["PSo18UIFocusEnvironment", "sizeThatFits"]
 - !private ["PSo18UIFocusEnvironment", "sizeToFit"]
-- !private ["PSo18UIFocusEnvironment", "superview"]
 - ["PSo18UIFocusEnvironment", "toolbar"]
 - ["PSo18UIFocusEnvironment", "toolbarEdgeInsets"]
 - ["PSo18UIFocusEnvironment", "toolbarEdgeInsetsPreset"]
 - !private ["PSo18UIFocusEnvironment", "width"]
-- ["PSo18UIFocusEnvironment", "willLayout"]
 - !private ["PSo18UIFocusEnvironment", "x"]
 - !private ["PSo18UIFocusEnvironment", "y"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -948,19 +902,16 @@ depends-member:
 - ["PSo11UIFocusItem", "shapePreset"]
 - !private ["PSo11UIFocusItem", "sizeThatFits"]
 - !private ["PSo11UIFocusItem", "sizeToFit"]
-- !private ["PSo11UIFocusItem", "superview"]
 - ["PSo11UIFocusItem", "toolbar"]
 - ["PSo11UIFocusItem", "toolbarEdgeInsets"]
 - ["PSo11UIFocusItem", "toolbarEdgeInsetsPreset"]
 - !private ["PSo11UIFocusItem", "width"]
-- ["PSo11UIFocusItem", "willLayout"]
 - !private ["PSo11UIFocusItem", "x"]
 - !private ["PSo11UIFocusItem", "y"]
 - ["PSo11UIFocusItem", ""]
 - ["CSo7UILabel", "deinit"]
 - !private ["CSo7UILabel", "sizeToFit"]
 - ["CSo11UIResponder", "Bar"]
-- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "CGSize"]
@@ -1000,12 +951,10 @@ depends-member:
 - ["CSo11UIResponder", "shapePreset"]
 - !private ["CSo11UIResponder", "sizeThatFits"]
 - !private ["CSo11UIResponder", "sizeToFit"]
-- !private ["CSo11UIResponder", "superview"]
 - ["CSo11UIResponder", "toolbar"]
 - ["CSo11UIResponder", "toolbarEdgeInsets"]
 - ["CSo11UIResponder", "toolbarEdgeInsetsPreset"]
 - !private ["CSo11UIResponder", "width"]
-- ["CSo11UIResponder", "willLayout"]
 - !private ["CSo11UIResponder", "x"]
 - !private ["CSo11UIResponder", "y"]
 - !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
@@ -1040,12 +989,10 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "shapePreset"]
 - !private ["PSo30UIResponderStandardEditActions", "sizeThatFits"]
 - !private ["PSo30UIResponderStandardEditActions", "sizeToFit"]
-- !private ["PSo30UIResponderStandardEditActions", "superview"]
 - ["PSo30UIResponderStandardEditActions", "toolbar"]
 - ["PSo30UIResponderStandardEditActions", "toolbarEdgeInsets"]
 - ["PSo30UIResponderStandardEditActions", "toolbarEdgeInsetsPreset"]
 - !private ["PSo30UIResponderStandardEditActions", "width"]
-- ["PSo30UIResponderStandardEditActions", "willLayout"]
 - !private ["PSo30UIResponderStandardEditActions", "x"]
 - !private ["PSo30UIResponderStandardEditActions", "y"]
 - ["PSo30UIResponderStandardEditActions", ""]
@@ -1081,17 +1028,14 @@ depends-member:
 - ["PSo18UITraitEnvironment", "shapePreset"]
 - !private ["PSo18UITraitEnvironment", "sizeThatFits"]
 - !private ["PSo18UITraitEnvironment", "sizeToFit"]
-- !private ["PSo18UITraitEnvironment", "superview"]
 - ["PSo18UITraitEnvironment", "toolbar"]
 - ["PSo18UITraitEnvironment", "toolbarEdgeInsets"]
 - ["PSo18UITraitEnvironment", "toolbarEdgeInsetsPreset"]
 - !private ["PSo18UITraitEnvironment", "width"]
-- ["PSo18UITraitEnvironment", "willLayout"]
 - !private ["PSo18UITraitEnvironment", "x"]
 - !private ["PSo18UITraitEnvironment", "y"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "Bar"]
-- ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "CGFloat"]
 - ["CSo6UIView", "CGRect"]
 - !private ["CSo6UIView", "CGSize"]
@@ -1132,16 +1076,13 @@ depends-member:
 - ["CSo6UIView", "shapePreset"]
 - !private ["CSo6UIView", "sizeThatFits"]
 - !private ["CSo6UIView", "sizeToFit"]
-- !private ["CSo6UIView", "superview"]
 - ["CSo6UIView", "toolbar"]
 - ["CSo6UIView", "toolbarEdgeInsets"]
 - ["CSo6UIView", "toolbarEdgeInsetsPreset"]
 - !private ["CSo6UIView", "width"]
-- ["CSo6UIView", "willLayout"]
 - !private ["CSo6UIView", "x"]
 - !private ["CSo6UIView", "y"]
 - ["C8Material4View", "Bar"]
-- ["C8Material4View", "Bool"]
 - ["C8Material4View", "CGFloat"]
 - ["C8Material4View", "CGRect"]
 - !private ["C8Material4View", "CGSize"]
@@ -1177,12 +1118,10 @@ depends-member:
 - ["C8Material4View", "reload"]
 - !private ["C8Material4View", "removeFromSuperview"]
 - ["C8Material4View", "shapePreset"]
-- !private ["C8Material4View", "superview"]
 - ["C8Material4View", "toolbar"]
 - ["C8Material4View", "toolbarEdgeInsets"]
 - ["C8Material4View", "toolbarEdgeInsetsPreset"]
 - !private ["C8Material4View", "width"]
-- ["C8Material4View", "willLayout"]
 - !private ["Ps15_CVarArgAligned", "greatestFiniteMagnitude"]
 - !private ["Ps22_CVarArgPassedAsDouble", "greatestFiniteMagnitude"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGFloat"]
@@ -1217,12 +1156,10 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "shapePreset"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "sizeThatFits"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "sizeToFit"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "superview"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "toolbar"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "toolbarEdgeInsets"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "toolbarEdgeInsetsPreset"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "width"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "willLayout"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "x"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "y"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
@@ -1264,12 +1201,10 @@ depends-member:
 - ["Ps9_Hashable", "shapePreset"]
 - !private ["Ps9_Hashable", "sizeThatFits"]
 - !private ["Ps9_Hashable", "sizeToFit"]
-- !private ["Ps9_Hashable", "superview"]
 - ["Ps9_Hashable", "toolbar"]
 - ["Ps9_Hashable", "toolbarEdgeInsets"]
 - ["Ps9_Hashable", "toolbarEdgeInsetsPreset"]
 - !private ["Ps9_Hashable", "width"]
-- ["Ps9_Hashable", "willLayout"]
 - !private ["Ps9_Hashable", "x"]
 - !private ["Ps9_Hashable", "y"]
 - ["Ps9_Hashable", ""]
@@ -1365,4 +1300,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "111f283014e99edd5fb0e21ac63d9845"
+interface-hash: "0dc8b83b54121877ddf3af8d1862f9e5"

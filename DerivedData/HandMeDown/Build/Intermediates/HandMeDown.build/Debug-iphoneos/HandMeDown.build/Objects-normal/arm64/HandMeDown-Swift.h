@@ -116,9 +116,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
+@import Foundation;
 @import RealmSwift;
 @import CoreGraphics;
-@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -135,6 +136,17 @@ SWIFT_CLASS("_TtC10HandMeDown11AppDelegate")
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10HandMeDown8AppState")
+@interface AppState : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AppState * _Nonnull sharedInstance;)
++ (AppState * _Nonnull)sharedInstance;
+@property (nonatomic) BOOL signedIn;
+@property (nonatomic, copy) NSString * _Nullable displayName;
+@property (nonatomic, copy) NSURL * _Nullable photoURL;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -178,13 +190,14 @@ SWIFT_CLASS("_TtC10HandMeDown5Fonts")
 @class Item;
 @class UIImageView;
 @class UILabel;
+@class UIButton;
 
 SWIFT_CLASS("_TtC10HandMeDown25GoodiesCollectionViewCell")
 @interface GoodiesCollectionViewCell : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 @property (nonatomic, weak) IBOutlet UIImageView * _Nullable userPictureView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified likeView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified likeButton;
 - (void)configureWithItemWithItem:(Item * _Nonnull)item;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -225,9 +238,62 @@ SWIFT_CLASS("_TtC10HandMeDown4Item")
 - (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImagePickerController;
+@class FIRUser;
 @class UITextField;
-@class UIButton;
+
+SWIFT_CLASS_NAMED("LoginViewController")
+@interface SignInViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
+- (void)viewDidAppear:(BOOL)animated;
+- (IBAction)handleSigninButton:(UIButton * _Nonnull)sender;
+- (IBAction)handleCreateAccountButton:(UIButton * _Nonnull)sender;
+- (void)setDisplayName:(FIRUser * _Nonnull)user;
+- (IBAction)didRequestPasswordReset:(id _Nonnull)sender;
+- (void)signedIn:(FIRUser * _Nullable)user;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10HandMeDown17MeasurementHelper")
+@interface MeasurementHelper : NSObject
++ (void)sendLoginEvent;
++ (void)sendLogoutEvent;
++ (void)sendMessageEvent;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10HandMeDown20MyStuffTableViewCell")
+@interface MyStuffTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pictureView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (void)configureWithItemWithItem:(Item * _Nonnull)item;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+
+SWIFT_CLASS("_TtC10HandMeDown21MyStuffViewController")
+@interface MyStuffViewController : UIViewController <UITableViewDataSource>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+- (void)viewDidLoad;
+/**
+  MARK: TableView DataSource
+*/
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImagePickerController;
 @class Button;
 @class UIView;
 @class UITextView;

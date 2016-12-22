@@ -641,6 +641,17 @@ enum CornerRadiusPreset : NSInteger;
 */
 - (void)animateWithAnimation:(CAAnimation * _Nonnull)animation;
 /**
+  A delegation method that is executed when the backing layer stops
+  running an animation.
+  \param animation The CAAnimation instance that stopped running.
+
+  \param flag A boolean that indicates if the animation stopped
+  because it was completed or interrupted. True if completed, false
+  if interrupted.
+
+*/
+- (void)animationDidStop:(CAAnimation * _Nonnull)animation finished:(BOOL)flag;
+/**
   Manages the layout for the shape of the view instance.
 */
 - (void)layoutShape;
@@ -708,10 +719,6 @@ SWIFT_CLASS("_TtC8Material9PulseView")
 
 SWIFT_CLASS("_TtC8Material4Card")
 @interface Card : PulseView
-/**
-  Will layout the view.
-*/
-@property (nonatomic, readonly) BOOL willLayout;
 /**
   A container view for subviews.
 */
@@ -1058,22 +1065,6 @@ SWIFT_CLASS_NAMED("CollectionViewCell")
 */
 @property (nonatomic, copy) NSString * _Nonnull contentsGravity;
 /**
-  A preset wrapper around contentEdgeInsets.
-*/
-@property (nonatomic) enum EdgeInsetsPreset contentEdgeInsetsPreset;
-/**
-  A reference to EdgeInsets.
-*/
-@property (nonatomic) UIEdgeInsets contentEdgeInsets;
-/**
-  A preset wrapper around interimSpace.
-*/
-@property (nonatomic) enum InterimSpacePreset interimSpacePreset;
-/**
-  A wrapper around grid.interimSpace.
-*/
-@property (nonatomic) CGFloat interimSpace;
-/**
   A property that accesses the backing layer’s background
 */
 @property (nonatomic, strong) UIColor * _Nullable backgroundColor;
@@ -1141,11 +1132,50 @@ SWIFT_CLASS_NAMED("CollectionViewCell")
 @interface CollectionViewCell (SWIFT_EXTENSION(Material))
 @end
 
+
+SWIFT_CLASS("_TtC8Material24CollectionViewController")
+@interface CollectionViewController : UIViewController
+/**
+  A reference to a Reminder.
+*/
+@property (nonatomic, readonly, strong) CollectionView * _Nonnull collectionView;
+- (void)viewDidLoad;
+/**
+  Prepares the view instance when intialized. When subclassing,
+  it is recommended to override the prepareView method
+  to initialize property values and other setup operations.
+  The super.prepareView method should always be called immediately
+  when subclassing.
+*/
+- (void)prepare;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface CollectionViewController (SWIFT_EXTENSION(Material)) <UICollectionViewDelegate, UIScrollViewDelegate>
+@end
+
+
+@interface CollectionViewController (SWIFT_EXTENSION(Material))
+@end
+
+
+@interface CollectionViewController (SWIFT_EXTENSION(Material)) <UICollectionViewDataSource>
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
 @class NSIndexPath;
 @class UICollectionViewLayoutAttributes;
 
 SWIFT_CLASS("_TtC8Material20CollectionViewLayout")
 @interface CollectionViewLayout : UICollectionViewLayout
+/**
+  Used to calculate the dimensions of the cells.
+*/
+@property (nonatomic) CGPoint offset;
 /**
   The size of items.
 */
@@ -2186,6 +2216,12 @@ SWIFT_CLASS("_TtC8Material4Menu")
   Reload the view layout.
 */
 - (void)reload;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface Menu (SWIFT_EXTENSION(Material))
 /**
   Open the Menu component with animation options.
   \param duration The time for each view’s animation.
@@ -2222,8 +2258,10 @@ SWIFT_CLASS("_TtC8Material4Menu")
 
 */
 - (void)closeWithDuration:(NSTimeInterval)duration delay:(NSTimeInterval)delay usingSpringWithDamping:(CGFloat)usingSpringWithDamping initialSpringVelocity:(CGFloat)initialSpringVelocity options:(UIViewAnimationOptions)options animations:(void (^ _Nullable)(UIView * _Nonnull))animations completion:(void (^ _Nullable)(UIView * _Nonnull))completion;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface Menu (SWIFT_EXTENSION(Material))
 @end
 
 
@@ -2233,6 +2271,26 @@ SWIFT_CLASS("_TtC8Material14MenuController")
   Reference to the MenuView.
 */
 @property (nonatomic, readonly, strong) Menu * _Nonnull menu;
+- (void)layoutSubviews;
+/**
+  Prepares the view instance when intialized. When subclassing,
+  it is recommended to override the prepare method
+  to initialize property values and other setup operations.
+  The super.prepare method should always be called immediately
+  when subclassing.
+*/
+- (void)prepare;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface MenuController (SWIFT_EXTENSION(Material))
+@end
+
+
+@interface MenuController (SWIFT_EXTENSION(Material))
 /**
   Opens the menu with a callback.
   \param completion An Optional callback that is executed when
@@ -2247,18 +2305,6 @@ SWIFT_CLASS("_TtC8Material14MenuController")
 
 */
 - (void)closeMenuWithCompletion:(void (^ _Nullable)(UIView * _Nonnull))completion;
-- (void)layoutSubviews;
-/**
-  Prepares the view instance when intialized. When subclassing,
-  it is recommended to override the prepare method
-  to initialize property values and other setup operations.
-  The super.prepare method should always be called immediately
-  when subclassing.
-*/
-- (void)prepare;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithRootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -2900,28 +2946,6 @@ SWIFT_CLASS("_TtC8Material6TabBar")
 @property (nonatomic) CGFloat lineHeight;
 - (void)layoutSubviews;
 /**
-  Selects a given index from the buttons array.
-  <ul>
-    <li>
-      Paramater completion: An optional completion block.
-    </li>
-  </ul>
-  \param at index An Int.
-
-*/
-- (void)selectAt:(NSInteger)index completion:(void (^ _Nullable)(UIButton * _Nonnull))completion;
-/**
-  Animates to a given button.
-  <ul>
-    <li>
-      Paramater completion: An optional completion block.
-    </li>
-  </ul>
-  \param to button A UIButton.
-
-*/
-- (void)animateTo:(UIButton * _Nonnull)button completion:(void (^ _Nullable)(UIButton * _Nonnull))completion;
-/**
   Prepares the view instance when intialized. When subclassing,
   it is recommended to override the prepare method
   to initialize property values and other setup operations.
@@ -3024,13 +3048,13 @@ SWIFT_CLASS_NAMED("PageTabBarController")
 @end
 
 
-@interface PageTabBarController (SWIFT_EXTENSION(Material)) <UIPageViewControllerDelegate>
-- (void)pageViewController:(UIPageViewController * _Nonnull)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> * _Nonnull)previousViewControllers transitionCompleted:(BOOL)completed;
+@interface PageTabBarController (SWIFT_EXTENSION(Material)) <UIScrollViewDelegate>
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
 @end
 
 
-@interface PageTabBarController (SWIFT_EXTENSION(Material)) <UIScrollViewDelegate>
-- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
+@interface PageTabBarController (SWIFT_EXTENSION(Material)) <UIPageViewControllerDelegate>
+- (void)pageViewController:(UIPageViewController * _Nonnull)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> * _Nonnull)previousViewControllers transitionCompleted:(BOOL)completed;
 @end
 
 
@@ -3153,7 +3177,6 @@ SWIFT_CLASS("_TtC8Material9SearchBar")
   Placeholder text
 */
 @property (nonatomic, strong) UIColor * _Nonnull placeholderColor;
-- (void)layoutSubviews;
 /**
   An initializer that initializes the object with a NSCoder object.
   \param aDecoder A NSCoder instance.
@@ -3168,6 +3191,7 @@ SWIFT_CLASS("_TtC8Material9SearchBar")
 
 */
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
 /**
   Prepares the view instance when intialized. When subclassing,
   it is recommended to override the prepare method
@@ -3176,10 +3200,26 @@ SWIFT_CLASS("_TtC8Material9SearchBar")
   when subclassing.
 */
 - (void)prepare;
+@end
+
+
+@interface SearchBar (SWIFT_EXTENSION(Material))
+@end
+
+
+@interface SearchBar (SWIFT_EXTENSION(Material))
 /**
   Layout the clearButton.
 */
 - (void)layoutClearButton;
+/**
+  Layout the leftView.
+*/
+- (void)layoutLeftView;
+@end
+
+
+@interface SearchBar (SWIFT_EXTENSION(Material))
 @end
 
 
@@ -3391,6 +3431,10 @@ typedef SWIFT_ENUM_NAMED(NSInteger, SnackbarStatus, "SnackbarStatus") {
 };
 
 
+
+@interface StatusBarController (SWIFT_EXTENSION(Material))
+@end
+
 enum SwitchState : NSInteger;
 enum SwitchStyle : NSInteger;
 enum SwitchSize : NSInteger;
@@ -3409,7 +3453,7 @@ SWIFT_CLASS("_TtC8Material6Switch")
 /**
   Indicates if the animation should bounce.
 */
-@property (nonatomic) BOOL bounceable;
+@property (nonatomic) BOOL isBounceable;
 /**
   Button on color.
 */
@@ -3454,7 +3498,7 @@ SWIFT_CLASS("_TtC8Material6Switch")
 /**
   A boolean indicating if the switch is on or not.
 */
-@property (nonatomic) BOOL on;
+@property (nonatomic) BOOL isOn;
 /**
   Switch state.
 */
@@ -3494,6 +3538,10 @@ SWIFT_CLASS("_TtC8Material6Switch")
 */
 - (nonnull instancetype)initWithState:(enum SwitchState)state style:(enum SwitchStyle)style size:(enum SwitchSize)size OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
+/**
+  Reloads the view.
+*/
+- (void)reload;
 - (void)willMoveToSuperview:(UIView * _Nullable)newSuperview;
 /**
   Toggle the Switch state, if On will be Off, and if Off will be On.
@@ -3501,14 +3549,23 @@ SWIFT_CLASS("_TtC8Material6Switch")
 
 */
 - (void)toggleWithCompletion:(void (^ _Nullable)(Switch * _Nonnull))completion;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 /**
-  Sets the switch on or off.
-  \param on A bool of whether the switch should be in the on state or not.
-
-  \param animated A Boolean indicating to set the animation or not.
-
+  Prepares the view instance when intialized. When subclassing,
+  it is recommended to override the prepare method
+  to initialize property values and other setup operations.
+  The super.prepare method should always be called immediately
+  when subclassing.
 */
-- (void)setOnOn:(BOOL)on animated:(BOOL)animated completion:(void (^ _Nullable)(Switch * _Nonnull))completion;
+- (void)prepare;
+@end
+
+
+@interface Switch (SWIFT_EXTENSION(Material))
+@end
+
+
+@interface Switch (SWIFT_EXTENSION(Material))
 /**
   Set the switchState property with an option to animate.
   \param state The SwitchState to set.
@@ -3519,19 +3576,18 @@ SWIFT_CLASS("_TtC8Material6Switch")
 
 */
 - (void)setSwitchStateWithState:(enum SwitchState)state animated:(BOOL)animated completion:(void (^ _Nullable)(Switch * _Nonnull))completion;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-/**
-  Prepares the view instance when intialized. When subclassing,
-  it is recommended to override the prepare method
-  to initialize property values and other setup operations.
-  The super.prepare method should always be called immediately
-  when subclassing.
-*/
-- (void)prepare;
-/**
-  Reloads the view.
-*/
-- (void)reload;
+@end
+
+
+@interface Switch (SWIFT_EXTENSION(Material))
+@end
+
+
+@interface Switch (SWIFT_EXTENSION(Material))
+@end
+
+
+@interface Switch (SWIFT_EXTENSION(Material))
 @end
 
 
@@ -3565,6 +3621,37 @@ typedef SWIFT_ENUM_NAMED(NSInteger, SwitchStyle, "SwitchStyle") {
 
 
 
+@interface TabBar (SWIFT_EXTENSION(Material))
+@end
+
+
+@interface TabBar (SWIFT_EXTENSION(Material))
+/**
+  Selects a given index from the buttons array.
+  <ul>
+    <li>
+      Paramater completion: An optional completion block.
+    </li>
+  </ul>
+  \param at index An Int.
+
+*/
+- (void)selectAt:(NSInteger)index completion:(void (^ _Nullable)(UIButton * _Nonnull))completion;
+/**
+  Animates to a given button.
+  \param to button A UIButton.
+
+  \param completion An optional completion block.
+
+*/
+- (void)animateTo:(UIButton * _Nonnull)button completion:(void (^ _Nullable)(UIButton * _Nonnull))completion;
+@end
+
+
+@interface TabBar (SWIFT_EXTENSION(Material))
+@end
+
+
 SWIFT_PROTOCOL_NAMED("TabBarDelegate")
 @protocol TabBarDelegate
 @optional
@@ -3592,6 +3679,13 @@ typedef SWIFT_ENUM_NAMED(NSInteger, TabBarLineAlignment, "TabBarLineAlignment") 
   TabBarLineAlignmentTop = 0,
   TabBarLineAlignmentBottom = 1,
 };
+
+
+SWIFT_CLASS("_TtC8Material9TableView")
+@interface TableView : UITableView
+- (nonnull instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC8Material13TableViewCell")
@@ -3677,6 +3771,41 @@ SWIFT_CLASS("_TtC8Material13TableViewCell")
 
 
 @interface TableViewCell (SWIFT_EXTENSION(Material))
+@end
+
+
+SWIFT_CLASS("_TtC8Material19TableViewController")
+@interface TableViewController : UIViewController
+/**
+  A reference to a Reminder.
+*/
+@property (nonatomic, readonly, strong) TableView * _Nonnull tableView;
+- (void)viewDidLoad;
+/**
+  Prepares the view instance when intialized. When subclassing,
+  it is recommended to override the prepareView method
+  to initialize property values and other setup operations.
+  The super.prepareView method should always be called immediately
+  when subclassing.
+*/
+- (void)prepare;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface TableViewController (SWIFT_EXTENSION(Material)) <UITableViewDelegate, UIScrollViewDelegate>
+@end
+
+
+@interface TableViewController (SWIFT_EXTENSION(Material))
+@end
+
+
+@interface TableViewController (SWIFT_EXTENSION(Material)) <UITableViewDataSource>
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 @end
 
 
@@ -3926,7 +4055,7 @@ SWIFT_PROTOCOL_NAMED("TextViewDelegate")
 SWIFT_CLASS("_TtC8Material7Toolbar")
 @interface Toolbar : Bar
 /**
-  A convenience property to set the titleLabel text.
+  A convenience property to set the titleLabel.text.
 */
 @property (nonatomic, copy) NSString * _Nullable title;
 /**
@@ -3934,7 +4063,7 @@ SWIFT_CLASS("_TtC8Material7Toolbar")
 */
 @property (nonatomic, readonly, strong) UILabel * _Nonnull titleLabel;
 /**
-  A convenience property to set the detailLabel text.
+  A convenience property to set the detailLabel.text.
 */
 @property (nonatomic, copy) NSString * _Nullable detail;
 /**
@@ -3968,6 +4097,10 @@ SWIFT_CLASS("_TtC8Material7Toolbar")
   when subclassing.
 */
 - (void)prepare;
+@end
+
+
+@interface Toolbar (SWIFT_EXTENSION(Material))
 @end
 
 typedef SWIFT_ENUM_NAMED(NSInteger, ToolbarAlignment, "ToolbarAlignment") {
@@ -4013,16 +4146,29 @@ SWIFT_PROTOCOL_NAMED("ToolbarControllerDelegate")
 
 @interface UIImage (SWIFT_EXTENSION(Material))
 /**
-  Creates an Image that is a color.
+  Creates a new image with the passed in color.
   \param color The UIColor to create the image from.
-
-  \param size The size of the image to create.
 
 
   returns:
   A UIImage that is the color passed in.
 */
-+ (UIImage * _Nullable)imageWith:(UIColor * _Nonnull)color size:(CGSize)size;
+- (UIImage * _Nullable)tintWith:(UIColor * _Nonnull)color;
+@end
+
+
+@interface UIImage (SWIFT_EXTENSION(Material))
+/**
+  Crops an image to a specified width and height.
+  \param toWidth tw A specified width.
+
+  \param toHeight th A specified height.
+
+
+  returns:
+  An optional UIImage.
+*/
+- (UIImage * _Nullable)cropToWidth:(CGFloat)tw toHeight:(CGFloat)th;
 @end
 
 
@@ -4034,6 +4180,32 @@ SWIFT_PROTOCOL_NAMED("ToolbarControllerDelegate")
   A UIImage that is clear.
 */
 + (UIImage * _Nullable)clearWithSize:(CGSize)size;
+@end
+
+
+@interface UIImage (SWIFT_EXTENSION(Material))
+/**
+  Asynchronously load images with a completion block.
+  \param URL A URL destination to fetch the image from.
+
+  \param completion A completion block that is executed once the image
+  has been retrieved.
+
+*/
++ (void)contentsOfURLWithUrl:(NSURL * _Nonnull)url completion:(void (^ _Nonnull)(UIImage * _Nullable, NSError * _Nullable))completion;
+@end
+
+
+@interface UIImage (SWIFT_EXTENSION(Material))
+/**
+  Adjusts the orientation of the image from the capture orientation.
+  This is an issue when taking images, the capture orientation is not set correctly
+  when using Portrait.
+
+  returns:
+  An optional UIImage if successful.
+*/
+- (UIImage * _Nullable)adjustOrientation;
 @end
 
 
@@ -4056,55 +4228,16 @@ SWIFT_PROTOCOL_NAMED("ToolbarControllerDelegate")
 
 @interface UIImage (SWIFT_EXTENSION(Material))
 /**
-  Crops an image to a specified width and height.
-  \param toWidth tw A specified width.
-
-  \param toHeight th A specified height.
-
-
-  returns:
-  An optional UIImage.
-*/
-- (UIImage * _Nullable)cropToWidth:(CGFloat)tw toHeight:(CGFloat)th;
-@end
-
-
-@interface UIImage (SWIFT_EXTENSION(Material))
-/**
-  Adjusts the orientation of the image from the capture orientation.
-  This is an issue when taking images, the capture orientation is not set correctly
-  when using Portrait.
-
-  returns:
-  An optional UIImage if successful.
-*/
-- (UIImage * _Nullable)adjustOrientation;
-@end
-
-
-@interface UIImage (SWIFT_EXTENSION(Material))
-/**
-  Creates a new image with the passed in color.
+  Creates an Image that is a color.
   \param color The UIColor to create the image from.
+
+  \param size The size of the image to create.
 
 
   returns:
   A UIImage that is the color passed in.
 */
-- (UIImage * _Nullable)tintWith:(UIColor * _Nonnull)color;
-@end
-
-
-@interface UIImage (SWIFT_EXTENSION(Material))
-/**
-  Asynchronously load images with a completion block.
-  \param URL A URL destination to fetch the image from.
-
-  \param completion A completion block that is executed once the image
-  has been retrieved.
-
-*/
-+ (void)contentsOfURLWithUrl:(NSURL * _Nonnull)url completion:(void (^ _Nonnull)(UIImage * _Nullable, NSError * _Nullable))completion;
++ (UIImage * _Nullable)imageWith:(UIColor * _Nonnull)color size:(CGSize)size;
 @end
 
 
@@ -4232,6 +4365,10 @@ SWIFT_PROTOCOL_NAMED("ToolbarControllerDelegate")
 */
 @property (nonatomic, strong) UIColor * _Nullable dividerColor;
 /**
+  Divider visibility.
+*/
+@property (nonatomic) BOOL isDividerHidden;
+/**
   Divider animation.
 */
 @property (nonatomic) enum DividerAlignment dividerAlignment;
@@ -4345,21 +4482,31 @@ SWIFT_PROTOCOL_NAMED("ToolbarControllerDelegate")
 
 @interface UIViewController (SWIFT_EXTENSION(Material))
 /**
-  A convenience property that provides access to the SnackbarController.
-  This is the recommended method of accessing the SnackbarController
+  A convenience property that provides access to the CollectionViewController.
+  This is the recommended method of accessing the CollectionViewController
   through child UIViewControllers.
 */
-@property (nonatomic, readonly, strong) SnackbarController * _Nullable snackbarController;
+@property (nonatomic, readonly, strong) CollectionViewController * _Nullable collectionViewController;
 @end
 
 
 @interface UIViewController (SWIFT_EXTENSION(Material))
 /**
-  A convenience property that provides access to the EditorController.
-  This is the recommended method of accessing the EditorController
+  A convenience property that provides access to the StatusBarController.
+  This is the recommended method of accessing the StatusBarController
   through child UIViewControllers.
 */
-@property (nonatomic, readonly, strong) EditorController * _Nullable editorController;
+@property (nonatomic, readonly, strong) StatusBarController * _Nullable statusBarController;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(Material))
+/**
+  A convenience property that provides access to the SnackbarController.
+  This is the recommended method of accessing the SnackbarController
+  through child UIViewControllers.
+*/
+@property (nonatomic, readonly, strong) SnackbarController * _Nullable snackbarController;
 @end
 
 
@@ -4385,6 +4532,16 @@ SWIFT_PROTOCOL_NAMED("ToolbarControllerDelegate")
 
 @interface UIViewController (SWIFT_EXTENSION(Material))
 /**
+  A convenience property that provides access to the NavigationDrawerController.
+  This is the recommended method of accessing the NavigationDrawerController
+  through child UIViewControllers.
+*/
+@property (nonatomic, readonly, strong) NavigationDrawerController * _Nullable navigationDrawerController;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(Material))
+/**
   A convenience property that provides access to the MenuController.
   This is the recommended method of accessing the MenuController
   through child UIViewControllers.
@@ -4395,11 +4552,11 @@ SWIFT_PROTOCOL_NAMED("ToolbarControllerDelegate")
 
 @interface UIViewController (SWIFT_EXTENSION(Material))
 /**
-  A convenience property that provides access to the NavigationDrawerController.
-  This is the recommended method of accessing the NavigationDrawerController
+  A convenience property that provides access to the EditorController.
+  This is the recommended method of accessing the EditorController
   through child UIViewControllers.
 */
-@property (nonatomic, readonly, strong) NavigationDrawerController * _Nullable navigationDrawerController;
+@property (nonatomic, readonly, strong) EditorController * _Nullable editorController;
 @end
 
 
@@ -4415,11 +4572,11 @@ SWIFT_PROTOCOL_NAMED("ToolbarControllerDelegate")
 
 @interface UIViewController (SWIFT_EXTENSION(Material))
 /**
-  A convenience property that provides access to the StatusBarController.
-  This is the recommended method of accessing the StatusBarController
+  A convenience property that provides access to the TableViewController.
+  This is the recommended method of accessing the TableViewController
   through child UIViewControllers.
 */
-@property (nonatomic, readonly, strong) StatusBarController * _Nullable statusBarController;
+@property (nonatomic, readonly, strong) TableViewController * _Nullable tableViewController;
 @end
 
 

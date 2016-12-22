@@ -11,44 +11,48 @@ provides-member:
 - ["O8Material19TabBarLineAlignment", ""]
 - ["P8Material14TabBarDelegate", ""]
 - ["C8Material6TabBar", ""]
+- ["C8Material6TabBar", "handleButton"]
+- ["C8Material6TabBar", "select"]
+- ["C8Material6TabBar", "animate"]
 provides-dynamic-lookup:
-- "lineColor"
-- "line"
-- "buttons"
-- "delegate"
-- "isLineAnimated"
-- "tabBar"
-- "tabBar"
-- "lineAlignment"
-- "selected"
-- "handleButton"
-- "select"
-- "animate"
-- "prepare"
-- "isAnimating"
-- "lineHeight"
 - "layoutSubviews"
+- "line"
+- "lineAlignment"
+- "prepare"
+- "selected"
+- "tabBar"
+- "tabBar"
+- "lineHeight"
+- "isLineAnimated"
+- "buttons"
+- "select"
+- "delegate"
+- "lineColor"
+- "isAnimating"
+- "handleButton"
+- "animate"
 depends-top-level:
-- "Int"
-- "TernaryPrecedence"
-- "TabBarLineAlignment"
-- !private "-"
-- "TabBarDelegate"
-- !private "Color"
 - "CGFloat"
-- "=="
-- "AssignmentPrecedence"
-- !private "~="
-- "TabBar"
 - "UIButton"
-- "CastingPrecedence"
-- "Bar"
+- "TernaryPrecedence"
+- "TabBar"
+- !private "Color"
+- "Void"
+- "Int"
+- !private "Bool"
+- !private "-"
 - "UIView"
 - !private "<"
-- "UIColor"
-- "BooleanLiteralType"
-- "Void"
+- "CastingPrecedence"
+- !private "~="
+- "=="
+- "AssignmentPrecedence"
+- "TabBarDelegate"
 - !private "CGRect"
+- "Bar"
+- "BooleanLiteralType"
+- "UIColor"
+- "TabBarLineAlignment"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "Color"]
@@ -107,6 +111,7 @@ depends-member:
 - !private ["Sa", "first"]
 - ["Sa", "init"]
 - !private ["Sa", "subscript"]
+- !private ["C8Material3Bar", "Bool"]
 - ["C8Material3Bar", "CGFloat"]
 - !private ["C8Material3Bar", "CGRect"]
 - !private ["C8Material3Bar", "Color"]
@@ -451,7 +456,7 @@ depends-member:
 - !private ["Vs26DefaultRandomAccessIndices", "_Element"]
 - !private ["O8Material16DividerAlignment", "deinit"]
 - !private ["O8Material16DividerAlignment", "top"]
-- ["Sd", "deinit"]
+- !private ["Sd", "deinit"]
 - ["O8Material16EdgeInsetsPreset", "deinit"]
 - !private ["O8Material16EdgeInsetsPreset", "none"]
 - !private ["Ps9Equatable", "CGRect"]
@@ -698,6 +703,7 @@ depends-member:
 - !private ["PSo8NSCoding", "zPosition"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "blueGrey"]
+- !private ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "Color"]
@@ -881,6 +887,7 @@ depends-member:
 - !private ["Ps10Strideable", "Stride"]
 - !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - !private ["Ps10Strideable", "hashValue"]
+- !private ["C8Material6TabBar", "Bool"]
 - ["C8Material6TabBar", "CGFloat"]
 - !private ["C8Material6TabBar", "CGRect"]
 - !private ["C8Material6TabBar", "Color"]
@@ -1270,6 +1277,7 @@ depends-member:
 - !private ["PSo11UIFocusItem", "x"]
 - !private ["PSo11UIFocusItem", "zPosition"]
 - ["PSo11UIFocusItem", ""]
+- !private ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - !private ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "Color"]
@@ -1409,6 +1417,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "x"]
 - !private ["PSo18UITraitEnvironment", "zPosition"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "CGFloat"]
 - !private ["CSo6UIView", "CGRect"]
 - !private ["CSo6UIView", "Color"]
@@ -1459,6 +1468,7 @@ depends-member:
 - !private ["CSo6UIView", "willLayout"]
 - !private ["CSo6UIView", "x"]
 - !private ["CSo6UIView", "zPosition"]
+- !private ["C8Material4View", "Bool"]
 - ["C8Material4View", "CGFloat"]
 - !private ["C8Material4View", "CGRect"]
 - !private ["C8Material4View", "Color"]
@@ -1688,7 +1698,7 @@ depends-nominal:
 - !private "Vs27DefaultBidirectionalIndices"
 - !private "Vs26DefaultRandomAccessIndices"
 - !private "O8Material16DividerAlignment"
-- "Sd"
+- !private "Sd"
 - "O8Material16EdgeInsetsPreset"
 - "Ps9Equatable"
 - "Ps25ExpressibleByArrayLiteral"
@@ -1784,4 +1794,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "6dafadd9bdcc825301169b8c9e699ea0"
+interface-hash: "1036b4927033675e301cb1be0e1a62b5"

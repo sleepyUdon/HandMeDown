@@ -13,33 +13,37 @@ provides-member:
 - ["CSo6UIView", "dividerContentEdgeInsetsPreset"]
 - ["CSo6UIView", "dividerContentEdgeInsets"]
 - ["CSo6UIView", "dividerColor"]
+- ["CSo6UIView", "isDividerHidden"]
 - ["CSo6UIView", "dividerAlignment"]
 - ["CSo6UIView", "dividerThickness"]
 provides-dynamic-lookup:
-- "dividerColor"
+- "dividerAlignment"
+- "isDividerHidden"
+- "dividerThickness"
 - "dividerContentEdgeInsetsPreset"
 - "dividerContentEdgeInsets"
-- "dividerAlignment"
-- "dividerThickness"
+- "dividerColor"
 depends-top-level:
-- !private "AssociateObject"
-- "EdgeInsets"
-- "Divider"
-- "Int"
-- !private "DividerKey"
-- !private "-"
-- "EdgeInsetsPreset"
-- !private "AssociatedObject"
-- !private "EdgeInsetsPresetToValue"
-- "UIColor"
 - "CGFloat"
+- !private "-"
+- !private "AssociatedObject"
+- "DividerAlignment"
+- !private "EdgeInsetsPresetToValue"
+- "EdgeInsets"
+- "UInt8"
+- !private "DividerKey"
+- !private "~="
 - "=="
 - "AssignmentPrecedence"
-- "DividerAlignment"
-- !private "~="
-- !private "CGRect"
-- "UInt8"
 - "UIView"
+- !private "AssociateObject"
+- "UIColor"
+- "BooleanLiteralType"
+- "Divider"
+- !private "CGRect"
+- "Int"
+- "EdgeInsetsPreset"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "AssociateObject"]
 - !private ["Ps9AnyObject", "AssociatedObject"]
@@ -56,6 +60,8 @@ depends-member:
 - !private ["Ps9AnyObject", "frame"]
 - !private ["Ps9AnyObject", "height"]
 - !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "isDividerHidden"]
+- !private ["Ps9AnyObject", "isHidden"]
 - !private ["Ps9AnyObject", "removeFromSuperview"]
 - !private ["Ps9AnyObject", "width"]
 - !private ["Ps9AnyObject", "zPosition"]
@@ -73,6 +79,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "frame"]
 - !private ["PSo15CALayerDelegate", "height"]
 - !private ["PSo15CALayerDelegate", "init"]
+- !private ["PSo15CALayerDelegate", "isHidden"]
 - !private ["PSo15CALayerDelegate", "removeFromSuperview"]
 - !private ["PSo15CALayerDelegate", "width"]
 - !private ["PSo15CALayerDelegate", "zPosition"]
@@ -96,6 +103,8 @@ depends-member:
 - !private ["Ps7CVarArg", "hashValue"]
 - !private ["Ps7CVarArg", "height"]
 - !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "isDividerHidden"]
+- !private ["Ps7CVarArg", "isHidden"]
 - !private ["Ps7CVarArg", "removeFromSuperview"]
 - !private ["Ps7CVarArg", "width"]
 - !private ["Ps7CVarArg", "zPosition"]
@@ -119,6 +128,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - !private ["Ps28CustomDebugStringConvertible", "height"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "isDividerHidden"]
+- !private ["Ps28CustomDebugStringConvertible", "isHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
 - !private ["Ps28CustomDebugStringConvertible", "width"]
 - !private ["Ps28CustomDebugStringConvertible", "zPosition"]
@@ -148,6 +159,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - !private ["Ps23CustomStringConvertible", "height"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "isDividerHidden"]
+- !private ["Ps23CustomStringConvertible", "isHidden"]
 - !private ["Ps23CustomStringConvertible", "removeFromSuperview"]
 - !private ["Ps23CustomStringConvertible", "width"]
 - !private ["Ps23CustomStringConvertible", "zPosition"]
@@ -165,6 +178,7 @@ depends-member:
 - ["V8Material7Divider", "contentEdgeInsetsPreset"]
 - ["V8Material7Divider", "deinit"]
 - ["V8Material7Divider", "init"]
+- ["V8Material7Divider", "isHidden"]
 - ["V8Material7Divider", "line"]
 - ["V8Material7Divider", "reload"]
 - ["V8Material7Divider", "thickness"]
@@ -202,6 +216,8 @@ depends-member:
 - ["Ps9Equatable", "hashValue"]
 - !private ["Ps9Equatable", "height"]
 - ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "isDividerHidden"]
+- !private ["Ps9Equatable", "isHidden"]
 - ["Ps9Equatable", "left"]
 - ["Ps9Equatable", "none"]
 - ["Ps9Equatable", "rawValue"]
@@ -236,6 +252,8 @@ depends-member:
 - ["Ps8Hashable", "hashValue"]
 - !private ["Ps8Hashable", "height"]
 - ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "isDividerHidden"]
+- !private ["Ps8Hashable", "isHidden"]
 - ["Ps8Hashable", "left"]
 - ["Ps8Hashable", "none"]
 - ["Ps8Hashable", "rawValue"]
@@ -265,11 +283,13 @@ depends-member:
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "height"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isHidden"]
 - !private ["PSo8NSCoding", "removeFromSuperview"]
 - !private ["PSo8NSCoding", "width"]
 - !private ["PSo8NSCoding", "zPosition"]
 - !private ["CSo8NSObject", "AssociateObject"]
 - !private ["CSo8NSObject", "AssociatedObject"]
+- ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "Divider"]
 - ["CSo8NSObject", "DividerAlignment"]
@@ -288,6 +308,8 @@ depends-member:
 - !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "height"]
 - !private ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isDividerHidden"]
+- !private ["CSo8NSObject", "isHidden"]
 - !private ["CSo8NSObject", "removeFromSuperview"]
 - !private ["CSo8NSObject", "width"]
 - !private ["CSo8NSObject", "zPosition"]
@@ -306,6 +328,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "height"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isDividerHidden"]
+- !private ["PSo16NSObjectProtocol", "isHidden"]
 - !private ["PSo16NSObjectProtocol", "removeFromSuperview"]
 - !private ["PSo16NSObjectProtocol", "width"]
 - !private ["PSo16NSObjectProtocol", "zPosition"]
@@ -338,6 +362,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "height"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "isHidden"]
 - !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
 - !private ["PSo29UIAccessibilityIdentification", "width"]
 - !private ["PSo29UIAccessibilityIdentification", "zPosition"]
@@ -351,6 +376,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "height"]
 - !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "isHidden"]
 - !private ["PSo12UIAppearance", "removeFromSuperview"]
 - !private ["PSo12UIAppearance", "width"]
 - !private ["PSo12UIAppearance", "zPosition"]
@@ -364,6 +390,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - !private ["PSo21UIAppearanceContainer", "height"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "isHidden"]
 - !private ["PSo21UIAppearanceContainer", "removeFromSuperview"]
 - !private ["PSo21UIAppearanceContainer", "width"]
 - !private ["PSo21UIAppearanceContainer", "zPosition"]
@@ -378,6 +405,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "height"]
 - !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "isHidden"]
 - !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
 - !private ["PSo17UICoordinateSpace", "width"]
 - !private ["PSo17UICoordinateSpace", "zPosition"]
@@ -391,6 +419,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "height"]
 - !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "isHidden"]
 - !private ["PSo13UIDynamicItem", "removeFromSuperview"]
 - !private ["PSo13UIDynamicItem", "width"]
 - !private ["PSo13UIDynamicItem", "zPosition"]
@@ -410,6 +439,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - !private ["PSo18UIFocusEnvironment", "height"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "isHidden"]
 - !private ["PSo18UIFocusEnvironment", "removeFromSuperview"]
 - !private ["PSo18UIFocusEnvironment", "width"]
 - !private ["PSo18UIFocusEnvironment", "zPosition"]
@@ -423,11 +453,13 @@ depends-member:
 - !private ["PSo11UIFocusItem", "frame"]
 - !private ["PSo11UIFocusItem", "height"]
 - !private ["PSo11UIFocusItem", "init"]
+- !private ["PSo11UIFocusItem", "isHidden"]
 - !private ["PSo11UIFocusItem", "removeFromSuperview"]
 - !private ["PSo11UIFocusItem", "width"]
 - !private ["PSo11UIFocusItem", "zPosition"]
 - !private ["CSo11UIResponder", "AssociateObject"]
 - !private ["CSo11UIResponder", "AssociatedObject"]
+- ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "Divider"]
 - ["CSo11UIResponder", "DividerAlignment"]
@@ -446,6 +478,8 @@ depends-member:
 - !private ["CSo11UIResponder", "frame"]
 - !private ["CSo11UIResponder", "height"]
 - !private ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "isDividerHidden"]
+- !private ["CSo11UIResponder", "isHidden"]
 - !private ["CSo11UIResponder", "removeFromSuperview"]
 - !private ["CSo11UIResponder", "width"]
 - !private ["CSo11UIResponder", "zPosition"]
@@ -464,6 +498,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "frame"]
 - !private ["PSo30UIResponderStandardEditActions", "height"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "isDividerHidden"]
+- !private ["PSo30UIResponderStandardEditActions", "isHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "removeFromSuperview"]
 - !private ["PSo30UIResponderStandardEditActions", "width"]
 - !private ["PSo30UIResponderStandardEditActions", "zPosition"]
@@ -477,11 +513,13 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "frame"]
 - !private ["PSo18UITraitEnvironment", "height"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "isHidden"]
 - !private ["PSo18UITraitEnvironment", "removeFromSuperview"]
 - !private ["PSo18UITraitEnvironment", "width"]
 - !private ["PSo18UITraitEnvironment", "zPosition"]
 - !private ["CSo6UIView", "AssociateObject"]
 - !private ["CSo6UIView", "AssociatedObject"]
+- ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "CGFloat"]
 - ["CSo6UIView", "Divider"]
 - ["CSo6UIView", "DividerAlignment"]
@@ -501,6 +539,8 @@ depends-member:
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "height"]
 - !private ["CSo6UIView", "init"]
+- ["CSo6UIView", "isDividerHidden"]
+- !private ["CSo6UIView", "isHidden"]
 - !private ["CSo6UIView", "removeFromSuperview"]
 - !private ["CSo6UIView", "width"]
 - !private ["CSo6UIView", "zPosition"]
@@ -515,6 +555,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "height"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "removeFromSuperview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "width"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "zPosition"]
@@ -542,6 +583,8 @@ depends-member:
 - ["Ps9_Hashable", "hashValue"]
 - !private ["Ps9_Hashable", "height"]
 - ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "isDividerHidden"]
+- !private ["Ps9_Hashable", "isHidden"]
 - ["Ps9_Hashable", "left"]
 - ["Ps9_Hashable", "none"]
 - ["Ps9_Hashable", "rawValue"]
@@ -650,4 +693,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "a9e589d4f3a32adba1b45d7fa1bdbc16"
+interface-hash: "5cf7dd8726e458f1bd3d79111801856f"

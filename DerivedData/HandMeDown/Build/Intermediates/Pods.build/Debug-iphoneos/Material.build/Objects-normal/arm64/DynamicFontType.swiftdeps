@@ -14,9 +14,9 @@ provides-dynamic-lookup:
 - "dynamicFontType"
 depends-top-level:
 - "DynamicFontTypeDelegate"
+- !private "NSNotification"
 - "DynamicFontType"
 - "NSObject"
-- !private "NSNotification"
 - !private "NotificationCenter"
 depends-member:
 - !private ["Ps9AnyObject", "NSNotification"]

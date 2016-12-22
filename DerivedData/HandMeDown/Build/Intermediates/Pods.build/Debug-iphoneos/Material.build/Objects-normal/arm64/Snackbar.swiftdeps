@@ -9,33 +9,32 @@ provides-member:
 - ["O8Material14SnackbarStatus", ""]
 - ["C8Material8Snackbar", ""]
 provides-dynamic-lookup:
-- "prepare"
-- "hitTest"
-- "status"
-- "reload"
 - "intrinsicContentSize"
+- "hitTest"
+- "reload"
 - "text"
+- "prepare"
 - "textLabel"
+- "status"
 depends-top-level:
-- !private "!"
+- "Bar"
+- "SnackbarStatus"
+- "String"
+- "UIView"
+- "Snackbar"
 - "CGSize"
-- !private "Screen"
-- "UILabel"
-- "Int"
 - "CGPoint"
-- "UIEvent"
-- !private "RobotoFont"
 - !private "~="
 - "=="
 - "AssignmentPrecedence"
-- "String"
-- "Snackbar"
-- !private "Color"
+- !private "Screen"
+- "Int"
 - !private "Array"
-- "Bar"
-- "SnackbarStatus"
-- "UIView"
+- "UILabel"
+- !private "Color"
 - !private "BooleanLiteralType"
+- "UIEvent"
+- !private "RobotoFont"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
 - !private ["Ps9AnyObject", "Color"]
@@ -59,7 +58,6 @@ depends-member:
 - !private ["Ps9AnyObject", "interimSpace"]
 - !private ["Ps9AnyObject", "interimSpacePreset"]
 - ["Ps9AnyObject", "intrinsicContentSize"]
-- !private ["Ps9AnyObject", "isHidden"]
 - !private ["Ps9AnyObject", "layoutSubviews"]
 - !private ["Ps9AnyObject", "numberOfLines"]
 - ["Ps9AnyObject", "prepare"]
@@ -100,7 +98,6 @@ depends-member:
 - !private ["C8Material3Bar", "interimSpace"]
 - !private ["C8Material3Bar", "interimSpacePreset"]
 - ["C8Material3Bar", "intrinsicContentSize"]
-- !private ["C8Material3Bar", "isHidden"]
 - !private ["C8Material3Bar", "layoutSubviews"]
 - ["C8Material3Bar", "prepare"]
 - ["C8Material3Bar", "prepareTextLabel"]
@@ -142,7 +139,6 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "interimSpace"]
 - !private ["PSo15CALayerDelegate", "interimSpacePreset"]
 - ["PSo15CALayerDelegate", "intrinsicContentSize"]
-- !private ["PSo15CALayerDelegate", "isHidden"]
 - !private ["PSo15CALayerDelegate", "layoutSubviews"]
 - !private ["PSo15CALayerDelegate", "numberOfLines"]
 - ["PSo15CALayerDelegate", "prepare"]
@@ -189,7 +185,6 @@ depends-member:
 - !private ["Ps7CVarArg", "interimSpace"]
 - !private ["Ps7CVarArg", "interimSpacePreset"]
 - ["Ps7CVarArg", "intrinsicContentSize"]
-- !private ["Ps7CVarArg", "isHidden"]
 - !private ["Ps7CVarArg", "layoutSubviews"]
 - !private ["Ps7CVarArg", "numberOfLines"]
 - ["Ps7CVarArg", "prepare"]
@@ -210,7 +205,6 @@ depends-member:
 - !private ["Ps10Collection", "Iterator"]
 - !private ["Ps10Collection", "_Element"]
 - !private ["C8Material5Color", "grey"]
-- !private ["C8Material5Color", "white"]
 - !private ["P8Material12ColorPalette", "darken3"]
 - !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "hashValue"]
@@ -241,7 +235,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "interimSpace"]
 - !private ["Ps28CustomDebugStringConvertible", "interimSpacePreset"]
 - ["Ps28CustomDebugStringConvertible", "intrinsicContentSize"]
-- !private ["Ps28CustomDebugStringConvertible", "isHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "layoutSubviews"]
 - !private ["Ps28CustomDebugStringConvertible", "numberOfLines"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
@@ -297,7 +290,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "interimSpace"]
 - !private ["Ps23CustomStringConvertible", "interimSpacePreset"]
 - ["Ps23CustomStringConvertible", "intrinsicContentSize"]
-- !private ["Ps23CustomStringConvertible", "isHidden"]
 - !private ["Ps23CustomStringConvertible", "layoutSubviews"]
 - !private ["Ps23CustomStringConvertible", "numberOfLines"]
 - ["Ps23CustomStringConvertible", "prepare"]
@@ -344,7 +336,6 @@ depends-member:
 - !private ["Ps9Equatable", "interimSpace8"]
 - !private ["Ps9Equatable", "interimSpacePreset"]
 - ["Ps9Equatable", "intrinsicContentSize"]
-- !private ["Ps9Equatable", "isHidden"]
 - !private ["Ps9Equatable", "layoutSubviews"]
 - !private ["Ps9Equatable", "left"]
 - !private ["Ps9Equatable", "none"]
@@ -370,6 +361,7 @@ depends-member:
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- !private ["Ps23ExpressibleByNilLiteral", "white"]
 - !private ["P8Material8FontType", "medium"]
 - !private ["Ps8Hashable", "CGSize"]
 - !private ["Ps8Hashable", "Color"]
@@ -399,7 +391,6 @@ depends-member:
 - !private ["Ps8Hashable", "interimSpace8"]
 - !private ["Ps8Hashable", "interimSpacePreset"]
 - ["Ps8Hashable", "intrinsicContentSize"]
-- !private ["Ps8Hashable", "isHidden"]
 - !private ["Ps8Hashable", "layoutSubviews"]
 - !private ["Ps8Hashable", "left"]
 - !private ["Ps8Hashable", "none"]
@@ -418,6 +409,8 @@ depends-member:
 - !private ["Ps8Hashable", "white"]
 - !private ["Ps8Hashable", "width"]
 - ["Ps8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["SQ", "white"]
 - !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Iterator"]
 - !private ["Ps9Indexable", "_Element"]
@@ -466,7 +459,6 @@ depends-member:
 - !private ["PSo8NSCoding", "interimSpace"]
 - !private ["PSo8NSCoding", "interimSpacePreset"]
 - ["PSo8NSCoding", "intrinsicContentSize"]
-- !private ["PSo8NSCoding", "isHidden"]
 - !private ["PSo8NSCoding", "layoutSubviews"]
 - !private ["PSo8NSCoding", "numberOfLines"]
 - ["PSo8NSCoding", "prepare"]
@@ -509,7 +501,6 @@ depends-member:
 - !private ["CSo8NSObject", "interimSpace"]
 - !private ["CSo8NSObject", "interimSpacePreset"]
 - ["CSo8NSObject", "intrinsicContentSize"]
-- !private ["CSo8NSObject", "isHidden"]
 - !private ["CSo8NSObject", "layoutSubviews"]
 - !private ["CSo8NSObject", "numberOfLines"]
 - ["CSo8NSObject", "prepare"]
@@ -545,7 +536,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "interimSpace"]
 - !private ["PSo16NSObjectProtocol", "interimSpacePreset"]
 - ["PSo16NSObjectProtocol", "intrinsicContentSize"]
-- !private ["PSo16NSObjectProtocol", "isHidden"]
 - !private ["PSo16NSObjectProtocol", "layoutSubviews"]
 - !private ["PSo16NSObjectProtocol", "numberOfLines"]
 - ["PSo16NSObjectProtocol", "prepare"]
@@ -619,7 +609,6 @@ depends-member:
 - !private ["C8Material8Snackbar", "interimSpace"]
 - !private ["C8Material8Snackbar", "interimSpacePreset"]
 - ["C8Material8Snackbar", "intrinsicContentSize"]
-- !private ["C8Material8Snackbar", "isHidden"]
 - !private ["C8Material8Snackbar", "layoutSubviews"]
 - ["C8Material8Snackbar", "prepare"]
 - !private ["C8Material8Snackbar", "prepareTextLabel"]
@@ -660,7 +649,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "interimSpace"]
 - !private ["PSo29UIAccessibilityIdentification", "interimSpacePreset"]
 - ["PSo29UIAccessibilityIdentification", "intrinsicContentSize"]
-- !private ["PSo29UIAccessibilityIdentification", "isHidden"]
 - !private ["PSo29UIAccessibilityIdentification", "layoutSubviews"]
 - !private ["PSo29UIAccessibilityIdentification", "numberOfLines"]
 - ["PSo29UIAccessibilityIdentification", "prepare"]
@@ -695,7 +683,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "interimSpace"]
 - !private ["PSo12UIAppearance", "interimSpacePreset"]
 - ["PSo12UIAppearance", "intrinsicContentSize"]
-- !private ["PSo12UIAppearance", "isHidden"]
 - !private ["PSo12UIAppearance", "layoutSubviews"]
 - !private ["PSo12UIAppearance", "numberOfLines"]
 - ["PSo12UIAppearance", "prepare"]
@@ -730,7 +717,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "interimSpace"]
 - !private ["PSo21UIAppearanceContainer", "interimSpacePreset"]
 - ["PSo21UIAppearanceContainer", "intrinsicContentSize"]
-- !private ["PSo21UIAppearanceContainer", "isHidden"]
 - !private ["PSo21UIAppearanceContainer", "layoutSubviews"]
 - !private ["PSo21UIAppearanceContainer", "numberOfLines"]
 - ["PSo21UIAppearanceContainer", "prepare"]
@@ -775,7 +761,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "interimSpace"]
 - !private ["PSo17UICoordinateSpace", "interimSpacePreset"]
 - ["PSo17UICoordinateSpace", "intrinsicContentSize"]
-- !private ["PSo17UICoordinateSpace", "isHidden"]
 - !private ["PSo17UICoordinateSpace", "layoutSubviews"]
 - !private ["PSo17UICoordinateSpace", "numberOfLines"]
 - ["PSo17UICoordinateSpace", "prepare"]
@@ -810,7 +795,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "interimSpace"]
 - !private ["PSo13UIDynamicItem", "interimSpacePreset"]
 - ["PSo13UIDynamicItem", "intrinsicContentSize"]
-- !private ["PSo13UIDynamicItem", "isHidden"]
 - !private ["PSo13UIDynamicItem", "layoutSubviews"]
 - !private ["PSo13UIDynamicItem", "numberOfLines"]
 - ["PSo13UIDynamicItem", "prepare"]
@@ -847,7 +831,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "interimSpace"]
 - !private ["PSo18UIFocusEnvironment", "interimSpacePreset"]
 - ["PSo18UIFocusEnvironment", "intrinsicContentSize"]
-- !private ["PSo18UIFocusEnvironment", "isHidden"]
 - !private ["PSo18UIFocusEnvironment", "layoutSubviews"]
 - !private ["PSo18UIFocusEnvironment", "numberOfLines"]
 - ["PSo18UIFocusEnvironment", "prepare"]
@@ -882,7 +865,6 @@ depends-member:
 - !private ["PSo11UIFocusItem", "interimSpace"]
 - !private ["PSo11UIFocusItem", "interimSpacePreset"]
 - ["PSo11UIFocusItem", "intrinsicContentSize"]
-- !private ["PSo11UIFocusItem", "isHidden"]
 - !private ["PSo11UIFocusItem", "layoutSubviews"]
 - !private ["PSo11UIFocusItem", "numberOfLines"]
 - ["PSo11UIFocusItem", "prepare"]
@@ -930,7 +912,6 @@ depends-member:
 - !private ["CSo11UIResponder", "interimSpace"]
 - !private ["CSo11UIResponder", "interimSpacePreset"]
 - ["CSo11UIResponder", "intrinsicContentSize"]
-- !private ["CSo11UIResponder", "isHidden"]
 - !private ["CSo11UIResponder", "layoutSubviews"]
 - !private ["CSo11UIResponder", "numberOfLines"]
 - ["CSo11UIResponder", "prepare"]
@@ -964,7 +945,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "interimSpace"]
 - !private ["PSo30UIResponderStandardEditActions", "interimSpacePreset"]
 - ["PSo30UIResponderStandardEditActions", "intrinsicContentSize"]
-- !private ["PSo30UIResponderStandardEditActions", "isHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "layoutSubviews"]
 - !private ["PSo30UIResponderStandardEditActions", "numberOfLines"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
@@ -999,7 +979,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "interimSpace"]
 - !private ["PSo18UITraitEnvironment", "interimSpacePreset"]
 - ["PSo18UITraitEnvironment", "intrinsicContentSize"]
-- !private ["PSo18UITraitEnvironment", "isHidden"]
 - !private ["PSo18UITraitEnvironment", "layoutSubviews"]
 - !private ["PSo18UITraitEnvironment", "numberOfLines"]
 - ["PSo18UITraitEnvironment", "prepare"]
@@ -1039,7 +1018,6 @@ depends-member:
 - !private ["CSo6UIView", "interimSpace"]
 - !private ["CSo6UIView", "interimSpacePreset"]
 - ["CSo6UIView", "intrinsicContentSize"]
-- !private ["CSo6UIView", "isHidden"]
 - !private ["CSo6UIView", "layoutSubviews"]
 - !private ["CSo6UIView", "numberOfLines"]
 - ["CSo6UIView", "prepare"]
@@ -1073,7 +1051,6 @@ depends-member:
 - !private ["C8Material4View", "interimSpace"]
 - !private ["C8Material4View", "interimSpacePreset"]
 - ["C8Material4View", "intrinsicContentSize"]
-- !private ["C8Material4View", "isHidden"]
 - !private ["C8Material4View", "layoutSubviews"]
 - ["C8Material4View", "prepare"]
 - ["C8Material4View", "prepareTextLabel"]
@@ -1107,7 +1084,6 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "interimSpace"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "interimSpacePreset"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "intrinsicContentSize"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layoutSubviews"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "numberOfLines"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "prepare"]
@@ -1158,7 +1134,6 @@ depends-member:
 - !private ["Ps9_Hashable", "interimSpace8"]
 - !private ["Ps9_Hashable", "interimSpacePreset"]
 - ["Ps9_Hashable", "intrinsicContentSize"]
-- !private ["Ps9_Hashable", "isHidden"]
 - !private ["Ps9_Hashable", "layoutSubviews"]
 - !private ["Ps9_Hashable", "left"]
 - !private ["Ps9_Hashable", "none"]
@@ -1193,6 +1168,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "left"]
 - !private ["Ps21_ObjectiveCBridgeable", "right"]
+- !private ["Ps21_ObjectiveCBridgeable", "white"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "Stride"]
 - !private ["Ps14_SignedInteger", "hashValue"]
@@ -1229,8 +1205,10 @@ depends-nominal:
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
 - !private "P8Material8FontType"
 - "Ps8Hashable"
+- !private "SQ"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"

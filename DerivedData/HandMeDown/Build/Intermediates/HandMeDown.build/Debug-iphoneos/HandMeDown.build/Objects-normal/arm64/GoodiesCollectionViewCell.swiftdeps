@@ -6,21 +6,22 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown25GoodiesCollectionViewCell", ""]
 provides-dynamic-lookup:
-- "titleLabel"
 - "imageView"
-- "configureWithItem"
+- "likeButton"
+- "titleLabel"
 - "userPictureView"
-- "likeView"
+- "configureWithItem"
 depends-top-level:
-- "GoodiesCollectionViewCell"
-- !private "Data"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- "Item"
-- !private "UIImage"
-- "UIImageView"
 - "UICollectionViewCell"
 - "UILabel"
+- "AssignmentPrecedence"
+- "UIImageView"
+- "CastingPrecedence"
+- "Item"
+- "UIButton"
+- !private "Data"
+- "GoodiesCollectionViewCell"
+- !private "UIImage"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "configureWithItem"]
@@ -28,7 +29,7 @@ depends-member:
 - ["Ps9AnyObject", "imageView"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "like"]
-- ["Ps9AnyObject", "likeView"]
+- ["Ps9AnyObject", "likeButton"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "title"]
 - ["Ps9AnyObject", "titleLabel"]
@@ -40,7 +41,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "image"]
 - ["PSo15CALayerDelegate", "imageView"]
 - !private ["PSo15CALayerDelegate", "init"]
-- ["PSo15CALayerDelegate", "likeView"]
+- ["PSo15CALayerDelegate", "likeButton"]
 - !private ["PSo15CALayerDelegate", "text"]
 - ["PSo15CALayerDelegate", "titleLabel"]
 - ["PSo15CALayerDelegate", "userPictureView"]
@@ -52,7 +53,7 @@ depends-member:
 - ["Ps7CVarArg", "imageView"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "like"]
-- ["Ps7CVarArg", "likeView"]
+- ["Ps7CVarArg", "likeButton"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "title"]
 - ["Ps7CVarArg", "titleLabel"]
@@ -65,7 +66,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "imageView"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "like"]
-- ["Ps28CustomDebugStringConvertible", "likeView"]
+- ["Ps28CustomDebugStringConvertible", "likeButton"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - ["Ps28CustomDebugStringConvertible", "titleLabel"]
@@ -78,7 +79,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "imageView"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "like"]
-- ["Ps23CustomStringConvertible", "likeView"]
+- ["Ps23CustomStringConvertible", "likeButton"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "title"]
 - ["Ps23CustomStringConvertible", "titleLabel"]
@@ -92,7 +93,7 @@ depends-member:
 - ["Ps9Equatable", "imageView"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "like"]
-- ["Ps9Equatable", "likeView"]
+- ["Ps9Equatable", "likeButton"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "title"]
 - ["Ps9Equatable", "titleLabel"]
@@ -101,6 +102,7 @@ depends-member:
 - ["Ps9Equatable", ""]
 - !private ["C10HandMeDown25GoodiesCollectionViewCell", "Data"]
 - ["C10HandMeDown25GoodiesCollectionViewCell", "Item"]
+- ["C10HandMeDown25GoodiesCollectionViewCell", "UIButton"]
 - !private ["C10HandMeDown25GoodiesCollectionViewCell", "UIImage"]
 - ["C10HandMeDown25GoodiesCollectionViewCell", "UIImageView"]
 - ["C10HandMeDown25GoodiesCollectionViewCell", "UILabel"]
@@ -108,7 +110,7 @@ depends-member:
 - ["C10HandMeDown25GoodiesCollectionViewCell", "deinit"]
 - ["C10HandMeDown25GoodiesCollectionViewCell", "imageView"]
 - ["C10HandMeDown25GoodiesCollectionViewCell", "init"]
-- ["C10HandMeDown25GoodiesCollectionViewCell", "likeView"]
+- ["C10HandMeDown25GoodiesCollectionViewCell", "likeButton"]
 - ["C10HandMeDown25GoodiesCollectionViewCell", "titleLabel"]
 - ["C10HandMeDown25GoodiesCollectionViewCell", "userPictureView"]
 - !private ["Ps8Hashable", "UIImage"]
@@ -117,7 +119,7 @@ depends-member:
 - ["Ps8Hashable", "imageView"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "like"]
-- ["Ps8Hashable", "likeView"]
+- ["Ps8Hashable", "likeButton"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "title"]
 - ["Ps8Hashable", "titleLabel"]
@@ -136,13 +138,14 @@ depends-member:
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "imageView"]
 - !private ["PSo8NSCoding", "init"]
-- ["PSo8NSCoding", "likeView"]
+- ["PSo8NSCoding", "likeButton"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "titleLabel"]
 - ["PSo8NSCoding", "userPictureView"]
 - ["PSo8NSCoding", ""]
 - !private ["CSo8NSObject", "Data"]
 - ["CSo8NSObject", "Item"]
+- ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
@@ -151,7 +154,7 @@ depends-member:
 - ["CSo8NSObject", "imageView"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "like"]
-- ["CSo8NSObject", "likeView"]
+- ["CSo8NSObject", "likeButton"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "titleLabel"]
@@ -163,7 +166,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "imageView"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "like"]
-- ["PSo16NSObjectProtocol", "likeView"]
+- ["PSo16NSObjectProtocol", "likeButton"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "title"]
 - ["PSo16NSObjectProtocol", "titleLabel"]
@@ -185,7 +188,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - ["PSo29UIAccessibilityIdentification", "imageView"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
-- ["PSo29UIAccessibilityIdentification", "likeView"]
+- ["PSo29UIAccessibilityIdentification", "likeButton"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - ["PSo29UIAccessibilityIdentification", "titleLabel"]
 - ["PSo29UIAccessibilityIdentification", "userPictureView"]
@@ -195,7 +198,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "image"]
 - ["PSo12UIAppearance", "imageView"]
 - !private ["PSo12UIAppearance", "init"]
-- ["PSo12UIAppearance", "likeView"]
+- ["PSo12UIAppearance", "likeButton"]
 - !private ["PSo12UIAppearance", "text"]
 - ["PSo12UIAppearance", "titleLabel"]
 - ["PSo12UIAppearance", "userPictureView"]
@@ -205,24 +208,27 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "imageView"]
 - !private ["PSo21UIAppearanceContainer", "init"]
-- ["PSo21UIAppearanceContainer", "likeView"]
+- ["PSo21UIAppearanceContainer", "likeButton"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "titleLabel"]
 - ["PSo21UIAppearanceContainer", "userPictureView"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "imageView"]
 - !private ["CSo24UICollectionReusableView", "Data"]
 - ["CSo24UICollectionReusableView", "Item"]
+- ["CSo24UICollectionReusableView", "UIButton"]
 - !private ["CSo24UICollectionReusableView", "UIImage"]
 - ["CSo24UICollectionReusableView", "UIImageView"]
 - ["CSo24UICollectionReusableView", "UILabel"]
 - ["CSo24UICollectionReusableView", "configureWithItem"]
 - ["CSo24UICollectionReusableView", "imageView"]
 - ["CSo24UICollectionReusableView", "init"]
-- ["CSo24UICollectionReusableView", "likeView"]
+- ["CSo24UICollectionReusableView", "likeButton"]
 - ["CSo24UICollectionReusableView", "titleLabel"]
 - ["CSo24UICollectionReusableView", "userPictureView"]
 - !private ["CSo20UICollectionViewCell", "Data"]
 - ["CSo20UICollectionViewCell", "Item"]
+- ["CSo20UICollectionViewCell", "UIButton"]
 - !private ["CSo20UICollectionViewCell", "UIImage"]
 - ["CSo20UICollectionViewCell", "UIImageView"]
 - ["CSo20UICollectionViewCell", "UILabel"]
@@ -230,17 +236,18 @@ depends-member:
 - ["CSo20UICollectionViewCell", "deinit"]
 - ["CSo20UICollectionViewCell", "imageView"]
 - ["CSo20UICollectionViewCell", "init"]
-- ["CSo20UICollectionViewCell", "likeView"]
+- ["CSo20UICollectionViewCell", "likeButton"]
 - ["CSo20UICollectionViewCell", "titleLabel"]
 - ["CSo20UICollectionViewCell", "userPictureView"]
 - ["CSo20UICollectionViewCell", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "imageView"]
 - !private ["PSo17UICoordinateSpace", "UIImage"]
 - ["PSo17UICoordinateSpace", "configureWithItem"]
 - !private ["PSo17UICoordinateSpace", "image"]
 - ["PSo17UICoordinateSpace", "imageView"]
 - !private ["PSo17UICoordinateSpace", "init"]
-- ["PSo17UICoordinateSpace", "likeView"]
+- ["PSo17UICoordinateSpace", "likeButton"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - ["PSo17UICoordinateSpace", "titleLabel"]
 - ["PSo17UICoordinateSpace", "userPictureView"]
@@ -250,7 +257,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "image"]
 - ["PSo13UIDynamicItem", "imageView"]
 - !private ["PSo13UIDynamicItem", "init"]
-- ["PSo13UIDynamicItem", "likeView"]
+- ["PSo13UIDynamicItem", "likeButton"]
 - !private ["PSo13UIDynamicItem", "text"]
 - ["PSo13UIDynamicItem", "titleLabel"]
 - ["PSo13UIDynamicItem", "userPictureView"]
@@ -260,7 +267,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "imageView"]
 - !private ["PSo18UIFocusEnvironment", "init"]
-- ["PSo18UIFocusEnvironment", "likeView"]
+- ["PSo18UIFocusEnvironment", "likeButton"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "titleLabel"]
 - ["PSo18UIFocusEnvironment", "userPictureView"]
@@ -270,16 +277,18 @@ depends-member:
 - !private ["PSo11UIFocusItem", "image"]
 - ["PSo11UIFocusItem", "imageView"]
 - !private ["PSo11UIFocusItem", "init"]
-- ["PSo11UIFocusItem", "likeView"]
+- ["PSo11UIFocusItem", "likeButton"]
 - !private ["PSo11UIFocusItem", "text"]
 - ["PSo11UIFocusItem", "titleLabel"]
 - ["PSo11UIFocusItem", "userPictureView"]
 - ["PSo11UIFocusItem", ""]
 - !private ["CSo7UIImage", "init"]
+- ["CSo11UIImageView", "deinit"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo11UIResponder", "Data"]
 - ["CSo11UIResponder", "Item"]
+- ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
@@ -287,7 +296,7 @@ depends-member:
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "init"]
-- ["CSo11UIResponder", "likeView"]
+- ["CSo11UIResponder", "likeButton"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "titleLabel"]
 - ["CSo11UIResponder", "userPictureView"]
@@ -296,7 +305,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "image"]
 - ["PSo30UIResponderStandardEditActions", "imageView"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
-- ["PSo30UIResponderStandardEditActions", "likeView"]
+- ["PSo30UIResponderStandardEditActions", "likeButton"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - ["PSo30UIResponderStandardEditActions", "titleLabel"]
 - ["PSo30UIResponderStandardEditActions", "userPictureView"]
@@ -306,13 +315,14 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "imageView"]
 - !private ["PSo18UITraitEnvironment", "init"]
-- ["PSo18UITraitEnvironment", "likeView"]
+- ["PSo18UITraitEnvironment", "likeButton"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "titleLabel"]
 - ["PSo18UITraitEnvironment", "userPictureView"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "Data"]
 - ["CSo6UIView", "Item"]
+- ["CSo6UIView", "UIButton"]
 - !private ["CSo6UIView", "UIImage"]
 - ["CSo6UIView", "UIImageView"]
 - ["CSo6UIView", "UILabel"]
@@ -320,7 +330,7 @@ depends-member:
 - !private ["CSo6UIView", "image"]
 - ["CSo6UIView", "imageView"]
 - ["CSo6UIView", "init"]
-- ["CSo6UIView", "likeView"]
+- ["CSo6UIView", "likeButton"]
 - !private ["CSo6UIView", "text"]
 - ["CSo6UIView", "titleLabel"]
 - ["CSo6UIView", "userPictureView"]
@@ -329,7 +339,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "imageView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "likeView"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "likeButton"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleLabel"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "userPictureView"]
@@ -341,7 +351,7 @@ depends-member:
 - ["Ps9_Hashable", "imageView"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "like"]
-- ["Ps9_Hashable", "likeView"]
+- ["Ps9_Hashable", "likeButton"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "title"]
 - ["Ps9_Hashable", "titleLabel"]
@@ -372,15 +382,17 @@ depends-nominal:
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
 - "CSo24UICollectionReusableView"
 - "CSo20UICollectionViewCell"
 - !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - "PSo11UIFocusItem"
 - !private "CSo7UIImage"
-- !private "CSo11UIImageView"
+- "CSo11UIImageView"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
@@ -401,6 +413,139 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCrash/Frameworks/frameworks/FirebaseCrash.framework/Headers/FIRCrashLog.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCrash/Frameworks/frameworks/FirebaseCrash.framework/Headers/FirebaseCrash.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCrash/Frameworks/frameworks/FirebaseCrash.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseRemoteConfig/Frameworks/frameworks/FirebaseRemoteConfig.framework/Headers/FIRRemoteConfig.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseRemoteConfig/Frameworks/frameworks/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseRemoteConfig/Frameworks/frameworks/FirebaseRemoteConfig.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkConnectorProtocol.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMRewardBasedVideoAdNetworkAdapterProtocol.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMEnums.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMediationAdRequest.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkConnectorProtocol.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/Mediation/GADMAdNetworkAdapterProtocol.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDynamicHeightSearchRequest.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventParameters.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdViewAdOptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdChoicesView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoOptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoControllerDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADVideoController.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdViewDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADNativeExpressAdView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADMediaView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADDebugOptionsViewController.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GADAdDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Google-Mobile-Ads-SDK/Frameworks/frameworks/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Firebase/Core/Sources/Firebase.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
@@ -451,4 +596,4 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
-interface-hash: "9ab1dfe26937050f298715157cb21753"
+interface-hash: "6deb640c5b482b8ca3f8b79123a12c69"

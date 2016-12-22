@@ -11,16 +11,16 @@ provides-member:
 - ["V8Material5Depth", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "DepthPresetToValue"
-- "Int"
-- "Depth"
-- "CGFloat"
 - "=="
+- !private "~="
 - "AssignmentPrecedence"
 - "Float"
-- !private "~="
-- "Offset"
+- "CGFloat"
+- "DepthPresetToValue"
 - "DepthPreset"
+- "Offset"
+- "Depth"
+- "Int"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

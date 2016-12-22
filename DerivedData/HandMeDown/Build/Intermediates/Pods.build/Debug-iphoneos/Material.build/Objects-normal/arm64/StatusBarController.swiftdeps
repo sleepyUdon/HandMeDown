@@ -8,25 +8,25 @@ provides-member:
 - ["C8Material19StatusBarController", ""]
 - ["CSo16UIViewController", "statusBarController"]
 provides-dynamic-lookup:
-- "prepare"
-- "shouldHideStatusBarOnRotation"
 - "statusBarStyle"
 - "statusBarController"
-- "statusBar"
 - "layoutSubviews"
 - "isStatusBarHidden"
+- "prepare"
+- "shouldHideStatusBarOnRotation"
+- "statusBar"
 depends-top-level:
 - "Bool"
 - !private "!="
-- "UIViewController"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- "UIView"
-- "UIStatusBarStyle"
-- "StatusBarController"
-- !private "Application"
-- "BooleanLiteralType"
 - "RootController"
+- "UIView"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "UIViewController"
+- "StatusBarController"
+- "UIStatusBarStyle"
+- "BooleanLiteralType"
+- !private "Application"
 depends-member:
 - !private ["Ps9AnyObject", "Application"]
 - ["Ps9AnyObject", "UIView"]
@@ -622,4 +622,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "f74eb915ae082e4df9978779d1f6b626"
+interface-hash: "a9f940d870ac1628dca7689169bf98bc"

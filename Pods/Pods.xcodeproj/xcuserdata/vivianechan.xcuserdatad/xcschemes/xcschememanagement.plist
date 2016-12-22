@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>GTMSessionFetcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Material-io.cosmicmind.material.fonts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,37 +57,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>00EC062FC18301D570CFC34FF7E15533</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0A18F549689FFEB3709F37045D2B5DD9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>274A0A8B028B136E7CE01024F70A9504</key>
+		<key>24085F438788A072884B3FA2E6E02D7C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>95D28ACF24FB4211E425DE9A389B088E</key>
+		<key>367E317BC931D2CEAF6293407D2544D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C332159B45DB18CC0A03481A213355C2</key>
+		<key>4CFAF6397784CB4294FB77E23DDCBAC4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C85C1F522B2D2FC94513AAE16AB2E7DA</key>
+		<key>6D5CEDECD3D8DC52EA507E0431BDA8A0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E795CADD3C9E9BC269980E32F76A1908</key>
+		<key>BA287C1DC287EAA4A399B22703554187</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F7D4481D40354341764708FA5583D0EB</key>
+		<key>C01BE5A0B694CC299A21FB025BB278AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
 		<dict>
 			<key>primary</key>
 			<true/>

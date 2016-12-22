@@ -9,14 +9,14 @@ provides-member:
 - ["VV8Material4Icon2cm", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "View"
-- "String"
 - "Bundle"
+- "String"
+- "UIImage"
 - !private "=="
 - "AssignmentPrecedence"
-- "Icon"
-- "UIImage"
 - "StringLiteralType"
+- !private "View"
+- "Icon"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "resourceURL"]
@@ -110,6 +110,7 @@ depends-member:
 - ["V8Material4Icon", "starHalf"]
 - ["V8Material4Icon", "videocam"]
 - ["V8Material4Icon", "visibility"]
+- ["V8Material4Icon", "work"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps25LosslessStringConvertible", "init"]
 - ["Ps10MirrorPath", "init"]
@@ -263,4 +264,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "51347c7a241d448b4212fc70c20b9dbf"
+interface-hash: "3e4d2fbb840c1c22ce23506688db1163"

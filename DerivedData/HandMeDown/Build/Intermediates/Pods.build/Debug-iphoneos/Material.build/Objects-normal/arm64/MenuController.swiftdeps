@@ -7,25 +7,27 @@ provides-member:
 - ["CSo16UIViewController", ""]
 - ["C8Material14MenuController", ""]
 - ["CSo16UIViewController", "menuController"]
+- ["C8Material14MenuController", "openMenu"]
+- ["C8Material14MenuController", "closeMenu"]
 provides-dynamic-lookup:
-- "layoutSubviews"
 - "openMenu"
-- "prepare"
-- "menuController"
-- "closeMenu"
 - "menu"
+- "prepare"
+- "closeMenu"
+- "layoutSubviews"
+- "menuController"
 depends-top-level:
-- "Void"
-- "UIViewController"
-- "RootController"
-- "Menu"
-- "UIView"
-- "AssignmentPrecedence"
-- !private "=="
-- "CastingPrecedence"
-- "MenuController"
 - !private "!="
 - !private "BooleanLiteralType"
+- "RootController"
+- "Menu"
+- "CastingPrecedence"
+- "Void"
+- "AssignmentPrecedence"
+- !private "=="
+- "UIViewController"
+- "MenuController"
+- "UIView"
 depends-member:
 - ["Ps9AnyObject", "Menu"]
 - !private ["Ps9AnyObject", "UIView"]
@@ -45,7 +47,7 @@ depends-member:
 - ["Ps9AnyObject", "openMenu"]
 - !private ["Ps9AnyObject", "parent"]
 - ["Ps9AnyObject", "prepare"]
-- ["Ps9AnyObject", "prepareMenuView"]
+- ["Ps9AnyObject", "prepareMenu"]
 - !private ["Ps9AnyObject", "rootViewController"]
 - !private ["Ps9AnyObject", "view"]
 - !private ["Ps9AnyObject", "views"]
@@ -94,7 +96,7 @@ depends-member:
 - ["Ps7CVarArg", "openMenu"]
 - !private ["Ps7CVarArg", "parent"]
 - ["Ps7CVarArg", "prepare"]
-- ["Ps7CVarArg", "prepareMenuView"]
+- ["Ps7CVarArg", "prepareMenu"]
 - !private ["Ps7CVarArg", "rootViewController"]
 - !private ["Ps7CVarArg", "view"]
 - !private ["Ps7CVarArg", "views"]
@@ -124,7 +126,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "openMenu"]
 - !private ["Ps28CustomDebugStringConvertible", "parent"]
 - ["Ps28CustomDebugStringConvertible", "prepare"]
-- ["Ps28CustomDebugStringConvertible", "prepareMenuView"]
+- ["Ps28CustomDebugStringConvertible", "prepareMenu"]
 - !private ["Ps28CustomDebugStringConvertible", "rootViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
 - !private ["Ps28CustomDebugStringConvertible", "views"]
@@ -157,7 +159,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "openMenu"]
 - !private ["Ps23CustomStringConvertible", "parent"]
 - ["Ps23CustomStringConvertible", "prepare"]
-- ["Ps23CustomStringConvertible", "prepareMenuView"]
+- ["Ps23CustomStringConvertible", "prepareMenu"]
 - !private ["Ps23CustomStringConvertible", "rootViewController"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - !private ["Ps23CustomStringConvertible", "views"]
@@ -183,7 +185,7 @@ depends-member:
 - ["Ps9Equatable", "openMenu"]
 - !private ["Ps9Equatable", "parent"]
 - ["Ps9Equatable", "prepare"]
-- ["Ps9Equatable", "prepareMenuView"]
+- ["Ps9Equatable", "prepareMenu"]
 - !private ["Ps9Equatable", "rootViewController"]
 - !private ["Ps9Equatable", "view"]
 - !private ["Ps9Equatable", "views"]
@@ -212,7 +214,7 @@ depends-member:
 - ["Ps8Hashable", "openMenu"]
 - !private ["Ps8Hashable", "parent"]
 - ["Ps8Hashable", "prepare"]
-- ["Ps8Hashable", "prepareMenuView"]
+- ["Ps8Hashable", "prepareMenu"]
 - !private ["Ps8Hashable", "rootViewController"]
 - !private ["Ps8Hashable", "view"]
 - !private ["Ps8Hashable", "views"]
@@ -245,7 +247,7 @@ depends-member:
 - ["C8Material14MenuController", "menu"]
 - ["C8Material14MenuController", "openMenu"]
 - ["C8Material14MenuController", "prepare"]
-- !private ["C8Material14MenuController", "prepareMenuView"]
+- !private ["C8Material14MenuController", "prepareMenu"]
 - !private ["C8Material14MenuController", "rootViewController"]
 - !private ["C8Material14MenuController", "view"]
 - !private ["Ps17MutableCollection", "Iterator"]
@@ -272,7 +274,7 @@ depends-member:
 - ["PSo8NSCoding", "openMenu"]
 - !private ["PSo8NSCoding", "parent"]
 - ["PSo8NSCoding", "prepare"]
-- ["PSo8NSCoding", "prepareMenuView"]
+- ["PSo8NSCoding", "prepareMenu"]
 - !private ["PSo8NSCoding", "rootViewController"]
 - !private ["PSo8NSCoding", "view"]
 - !private ["PSo8NSCoding", "views"]
@@ -288,7 +290,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "openMenu"]
 - !private ["PSo26NSExtensionRequestHandling", "parent"]
 - ["PSo26NSExtensionRequestHandling", "prepare"]
-- ["PSo26NSExtensionRequestHandling", "prepareMenuView"]
+- ["PSo26NSExtensionRequestHandling", "prepareMenu"]
 - !private ["PSo26NSExtensionRequestHandling", "rootViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", ""]
@@ -313,7 +315,7 @@ depends-member:
 - ["CSo8NSObject", "openMenu"]
 - !private ["CSo8NSObject", "parent"]
 - ["CSo8NSObject", "prepare"]
-- ["CSo8NSObject", "prepareMenuView"]
+- ["CSo8NSObject", "prepareMenu"]
 - !private ["CSo8NSObject", "rootViewController"]
 - !private ["CSo8NSObject", "view"]
 - !private ["CSo8NSObject", "views"]
@@ -336,7 +338,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "openMenu"]
 - !private ["PSo16NSObjectProtocol", "parent"]
 - ["PSo16NSObjectProtocol", "prepare"]
-- ["PSo16NSObjectProtocol", "prepareMenuView"]
+- ["PSo16NSObjectProtocol", "prepareMenu"]
 - !private ["PSo16NSObjectProtocol", "rootViewController"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - !private ["PSo16NSObjectProtocol", "views"]
@@ -366,7 +368,7 @@ depends-member:
 - ["C8Material14RootController", "menu"]
 - ["C8Material14RootController", "openMenu"]
 - ["C8Material14RootController", "prepare"]
-- ["C8Material14RootController", "prepareMenuView"]
+- ["C8Material14RootController", "prepareMenu"]
 - !private ["C8Material14RootController", "rootViewController"]
 - !private ["C8Material14RootController", "view"]
 - ["C8Material14RootController", ""]
@@ -411,7 +413,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "openMenu"]
 - !private ["PSo21UIAppearanceContainer", "parent"]
 - ["PSo21UIAppearanceContainer", "prepare"]
-- ["PSo21UIAppearanceContainer", "prepareMenuView"]
+- ["PSo21UIAppearanceContainer", "prepareMenu"]
 - !private ["PSo21UIAppearanceContainer", "rootViewController"]
 - !private ["PSo21UIAppearanceContainer", "view"]
 - !private ["PSo21UIAppearanceContainer", "views"]
@@ -427,7 +429,7 @@ depends-member:
 - ["PSo18UIContentContainer", "openMenu"]
 - !private ["PSo18UIContentContainer", "parent"]
 - ["PSo18UIContentContainer", "prepare"]
-- ["PSo18UIContentContainer", "prepareMenuView"]
+- ["PSo18UIContentContainer", "prepareMenu"]
 - !private ["PSo18UIContentContainer", "rootViewController"]
 - !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", ""]
@@ -468,7 +470,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "openMenu"]
 - !private ["PSo18UIFocusEnvironment", "parent"]
 - ["PSo18UIFocusEnvironment", "prepare"]
-- ["PSo18UIFocusEnvironment", "prepareMenuView"]
+- ["PSo18UIFocusEnvironment", "prepareMenu"]
 - !private ["PSo18UIFocusEnvironment", "rootViewController"]
 - !private ["PSo18UIFocusEnvironment", "view"]
 - !private ["PSo18UIFocusEnvironment", "views"]
@@ -505,7 +507,7 @@ depends-member:
 - ["CSo11UIResponder", "openMenu"]
 - !private ["CSo11UIResponder", "parent"]
 - ["CSo11UIResponder", "prepare"]
-- ["CSo11UIResponder", "prepareMenuView"]
+- ["CSo11UIResponder", "prepareMenu"]
 - !private ["CSo11UIResponder", "rootViewController"]
 - !private ["CSo11UIResponder", "view"]
 - !private ["CSo11UIResponder", "views"]
@@ -528,7 +530,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "openMenu"]
 - !private ["PSo30UIResponderStandardEditActions", "parent"]
 - ["PSo30UIResponderStandardEditActions", "prepare"]
-- ["PSo30UIResponderStandardEditActions", "prepareMenuView"]
+- ["PSo30UIResponderStandardEditActions", "prepareMenu"]
 - !private ["PSo30UIResponderStandardEditActions", "rootViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - !private ["PSo30UIResponderStandardEditActions", "views"]
@@ -544,7 +546,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "openMenu"]
 - !private ["PSo16UIStateRestoring", "parent"]
 - ["PSo16UIStateRestoring", "prepare"]
-- ["PSo16UIStateRestoring", "prepareMenuView"]
+- ["PSo16UIStateRestoring", "prepareMenu"]
 - !private ["PSo16UIStateRestoring", "rootViewController"]
 - !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", ""]
@@ -565,7 +567,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "openMenu"]
 - !private ["PSo18UITraitEnvironment", "parent"]
 - ["PSo18UITraitEnvironment", "prepare"]
-- ["PSo18UITraitEnvironment", "prepareMenuView"]
+- ["PSo18UITraitEnvironment", "prepareMenu"]
 - !private ["PSo18UITraitEnvironment", "rootViewController"]
 - !private ["PSo18UITraitEnvironment", "view"]
 - !private ["PSo18UITraitEnvironment", "views"]
@@ -597,7 +599,7 @@ depends-member:
 - ["CSo16UIViewController", "openMenu"]
 - !private ["CSo16UIViewController", "parent"]
 - ["CSo16UIViewController", "prepare"]
-- ["CSo16UIViewController", "prepareMenuView"]
+- ["CSo16UIViewController", "prepareMenu"]
 - !private ["CSo16UIViewController", "rootViewController"]
 - !private ["CSo16UIViewController", "view"]
 - !private ["C8Material4View", "close"]
@@ -641,7 +643,7 @@ depends-member:
 - ["Ps9_Hashable", "openMenu"]
 - !private ["Ps9_Hashable", "parent"]
 - ["Ps9_Hashable", "prepare"]
-- ["Ps9_Hashable", "prepareMenuView"]
+- ["Ps9_Hashable", "prepareMenu"]
 - !private ["Ps9_Hashable", "rootViewController"]
 - !private ["Ps9_Hashable", "view"]
 - !private ["Ps9_Hashable", "views"]
@@ -732,4 +734,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "c0ad55d43a606ec49193c29d4df3442c"
+interface-hash: "310a192808158da23e52c52283c096b4"

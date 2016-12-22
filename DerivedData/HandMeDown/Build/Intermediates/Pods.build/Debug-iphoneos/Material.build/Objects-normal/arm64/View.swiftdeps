@@ -6,36 +6,35 @@ provides-nominal:
 provides-member:
 - ["C8Material4View", ""]
 provides-dynamic-lookup:
-- "prepare"
-- "contentsScale"
 - "visualLayer"
+- "image"
 - "layoutSubviews"
+- "contentsRect"
+- "contentsCenter"
+- "prepare"
+- "backgroundColor"
 - "contentsGravity"
 - "contentsGravityPreset"
-- "contentsRect"
-- "image"
-- "contentsCenter"
-- "backgroundColor"
+- "contentsScale"
 depends-top-level:
-- "UIColor"
-- !private "GravityToValue"
-- "View"
-- "UIImage"
-- "Gravity"
-- !private "Screen"
 - "String"
-- "CGFloat"
-- "AssignmentPrecedence"
-- "UIView"
-- "CastingPrecedence"
-- "CAShapeLayer"
-- "CGRect"
-- !private "CGImage"
 - !private "BooleanLiteralType"
+- "Gravity"
+- !private "GravityToValue"
+- "UIImage"
+- "CGRect"
+- !private "Screen"
+- "CastingPrecedence"
+- "UIView"
+- "AssignmentPrecedence"
 - "NSCoder"
+- "CAShapeLayer"
+- "CGFloat"
+- "UIColor"
+- "View"
+- !private "CGImage"
 depends-member:
 - ["Ps9AnyObject", "CAShapeLayer"]
-- ["Ps9AnyObject", "Gravity"]
 - !private ["Ps9AnyObject", "GravityToValue"]
 - !private ["Ps9AnyObject", "Screen"]
 - !private ["Ps9AnyObject", "UIImage"]
@@ -94,7 +93,6 @@ depends-member:
 - !private ["CSo7CALayer", "masksToBounds"]
 - !private ["CSo7CALayer", "zPosition"]
 - ["PSo15CALayerDelegate", "CAShapeLayer"]
-- ["PSo15CALayerDelegate", "Gravity"]
 - !private ["PSo15CALayerDelegate", "GravityToValue"]
 - !private ["PSo15CALayerDelegate", "Screen"]
 - !private ["PSo15CALayerDelegate", "UIImage"]
@@ -147,7 +145,6 @@ depends-member:
 - ["VSC6CGRect", "deinit"]
 - !private ["VSC6CGRect", "zero"]
 - ["Ps7CVarArg", "CAShapeLayer"]
-- ["Ps7CVarArg", "Gravity"]
 - !private ["Ps7CVarArg", "GravityToValue"]
 - !private ["Ps7CVarArg", "Screen"]
 - !private ["Ps7CVarArg", "UIImage"]
@@ -180,7 +177,6 @@ depends-member:
 - !private ["Ps7CVarArg", "zPosition"]
 - ["Ps7CVarArg", ""]
 - ["Ps28CustomDebugStringConvertible", "CAShapeLayer"]
-- ["Ps28CustomDebugStringConvertible", "Gravity"]
 - !private ["Ps28CustomDebugStringConvertible", "GravityToValue"]
 - !private ["Ps28CustomDebugStringConvertible", "Screen"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
@@ -217,7 +213,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "white"]
 - !private ["Ps17CustomReflectable", "zero"]
 - ["Ps23CustomStringConvertible", "CAShapeLayer"]
-- ["Ps23CustomStringConvertible", "Gravity"]
 - !private ["Ps23CustomStringConvertible", "GravityToValue"]
 - !private ["Ps23CustomStringConvertible", "Screen"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
@@ -250,7 +245,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "zPosition"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Ps9Equatable", "CAShapeLayer"]
-- ["Ps9Equatable", "Gravity"]
 - !private ["Ps9Equatable", "GravityToValue"]
 - !private ["Ps9Equatable", "Screen"]
 - !private ["Ps9Equatable", "UIImage"]
@@ -278,7 +272,7 @@ depends-member:
 - !private ["Ps9Equatable", "masksToBounds"]
 - ["Ps9Equatable", "prepare"]
 - ["Ps9Equatable", "prepareVisualLayer"]
-- ["Ps9Equatable", "resize"]
+- !private ["Ps9Equatable", "resizeAspectFill"]
 - ["Ps9Equatable", "visualLayer"]
 - !private ["Ps9Equatable", "white"]
 - !private ["Ps9Equatable", "zPosition"]
@@ -286,9 +280,8 @@ depends-member:
 - ["Ps9Equatable", ""]
 - !private ["Ps23ExpressibleByNilLiteral", "white"]
 - ["O8Material7Gravity", "deinit"]
-- ["O8Material7Gravity", "resize"]
+- !private ["O8Material7Gravity", "resizeAspectFill"]
 - ["Ps8Hashable", "CAShapeLayer"]
-- ["Ps8Hashable", "Gravity"]
 - !private ["Ps8Hashable", "GravityToValue"]
 - !private ["Ps8Hashable", "Screen"]
 - !private ["Ps8Hashable", "UIImage"]
@@ -316,14 +309,13 @@ depends-member:
 - !private ["Ps8Hashable", "masksToBounds"]
 - ["Ps8Hashable", "prepare"]
 - ["Ps8Hashable", "prepareVisualLayer"]
-- ["Ps8Hashable", "resize"]
+- !private ["Ps8Hashable", "resizeAspectFill"]
 - ["Ps8Hashable", "visualLayer"]
 - !private ["Ps8Hashable", "white"]
 - !private ["Ps8Hashable", "zPosition"]
 - ["Ps8Hashable", ""]
 - ["CSo7NSCoder", "deinit"]
 - ["PSo8NSCoding", "CAShapeLayer"]
-- ["PSo8NSCoding", "Gravity"]
 - !private ["PSo8NSCoding", "GravityToValue"]
 - !private ["PSo8NSCoding", "Screen"]
 - !private ["PSo8NSCoding", "UIImage"]
@@ -396,7 +388,6 @@ depends-member:
 - !private ["CSo8NSObject", "white"]
 - !private ["CSo8NSObject", "zPosition"]
 - ["PSo16NSObjectProtocol", "CAShapeLayer"]
-- ["PSo16NSObjectProtocol", "Gravity"]
 - !private ["PSo16NSObjectProtocol", "GravityToValue"]
 - !private ["PSo16NSObjectProtocol", "Screen"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
@@ -434,11 +425,10 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "white"]
 - ["Sq", "deinit"]
 - !private ["Sq", "white"]
-- ["Ps16RawRepresentable", "resize"]
+- !private ["Ps16RawRepresentable", "resizeAspectFill"]
 - !private ["V8Material6Screen", "scale"]
 - ["SS", "deinit"]
 - ["PSo29UIAccessibilityIdentification", "CAShapeLayer"]
-- ["PSo29UIAccessibilityIdentification", "Gravity"]
 - !private ["PSo29UIAccessibilityIdentification", "GravityToValue"]
 - !private ["PSo29UIAccessibilityIdentification", "Screen"]
 - !private ["PSo29UIAccessibilityIdentification", "UIImage"]
@@ -464,7 +454,6 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "visualLayer"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - ["PSo12UIAppearance", "CAShapeLayer"]
-- ["PSo12UIAppearance", "Gravity"]
 - !private ["PSo12UIAppearance", "GravityToValue"]
 - !private ["PSo12UIAppearance", "Screen"]
 - !private ["PSo12UIAppearance", "UIImage"]
@@ -489,7 +478,6 @@ depends-member:
 - ["PSo12UIAppearance", "visualLayer"]
 - ["PSo12UIAppearance", ""]
 - ["PSo21UIAppearanceContainer", "CAShapeLayer"]
-- ["PSo21UIAppearanceContainer", "Gravity"]
 - !private ["PSo21UIAppearanceContainer", "GravityToValue"]
 - !private ["PSo21UIAppearanceContainer", "Screen"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
@@ -516,7 +504,6 @@ depends-member:
 - !private ["CSo7UIColor", "cgColor"]
 - !private ["CSo7UIColor", "white"]
 - ["PSo17UICoordinateSpace", "CAShapeLayer"]
-- ["PSo17UICoordinateSpace", "Gravity"]
 - !private ["PSo17UICoordinateSpace", "GravityToValue"]
 - !private ["PSo17UICoordinateSpace", "Screen"]
 - !private ["PSo17UICoordinateSpace", "UIImage"]
@@ -541,7 +528,6 @@ depends-member:
 - ["PSo17UICoordinateSpace", "visualLayer"]
 - ["PSo17UICoordinateSpace", ""]
 - ["PSo13UIDynamicItem", "CAShapeLayer"]
-- ["PSo13UIDynamicItem", "Gravity"]
 - !private ["PSo13UIDynamicItem", "GravityToValue"]
 - !private ["PSo13UIDynamicItem", "Screen"]
 - !private ["PSo13UIDynamicItem", "UIImage"]
@@ -566,7 +552,6 @@ depends-member:
 - ["PSo13UIDynamicItem", "visualLayer"]
 - ["PSo13UIDynamicItem", ""]
 - ["PSo18UIFocusEnvironment", "CAShapeLayer"]
-- ["PSo18UIFocusEnvironment", "Gravity"]
 - !private ["PSo18UIFocusEnvironment", "GravityToValue"]
 - !private ["PSo18UIFocusEnvironment", "Screen"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
@@ -591,7 +576,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "visualLayer"]
 - ["PSo18UIFocusEnvironment", ""]
 - ["PSo11UIFocusItem", "CAShapeLayer"]
-- ["PSo11UIFocusItem", "Gravity"]
 - !private ["PSo11UIFocusItem", "GravityToValue"]
 - !private ["PSo11UIFocusItem", "Screen"]
 - !private ["PSo11UIFocusItem", "UIImage"]
@@ -649,7 +633,6 @@ depends-member:
 - ["CSo11UIResponder", "prepareVisualLayer"]
 - ["CSo11UIResponder", "visualLayer"]
 - ["PSo30UIResponderStandardEditActions", "CAShapeLayer"]
-- ["PSo30UIResponderStandardEditActions", "Gravity"]
 - !private ["PSo30UIResponderStandardEditActions", "GravityToValue"]
 - !private ["PSo30UIResponderStandardEditActions", "Screen"]
 - !private ["PSo30UIResponderStandardEditActions", "UIImage"]
@@ -674,7 +657,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "visualLayer"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - ["PSo18UITraitEnvironment", "CAShapeLayer"]
-- ["PSo18UITraitEnvironment", "Gravity"]
 - !private ["PSo18UITraitEnvironment", "GravityToValue"]
 - !private ["PSo18UITraitEnvironment", "Screen"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
@@ -762,7 +744,6 @@ depends-member:
 - !private ["C8Material4View", "prepareVisualLayer"]
 - ["C8Material4View", "visualLayer"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "CAShapeLayer"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "Gravity"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "GravityToValue"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "Screen"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "UIImage"]
@@ -791,7 +772,6 @@ depends-member:
 - !private ["Ps26_ExpressibleByImageLiteral", "cgImage"]
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - ["Ps9_Hashable", "CAShapeLayer"]
-- ["Ps9_Hashable", "Gravity"]
 - !private ["Ps9_Hashable", "GravityToValue"]
 - !private ["Ps9_Hashable", "Screen"]
 - !private ["Ps9_Hashable", "UIImage"]
@@ -819,7 +799,7 @@ depends-member:
 - !private ["Ps9_Hashable", "masksToBounds"]
 - ["Ps9_Hashable", "prepare"]
 - ["Ps9_Hashable", "prepareVisualLayer"]
-- ["Ps9_Hashable", "resize"]
+- !private ["Ps9_Hashable", "resizeAspectFill"]
 - ["Ps9_Hashable", "visualLayer"]
 - !private ["Ps9_Hashable", "white"]
 - !private ["Ps9_Hashable", "zPosition"]
@@ -854,7 +834,7 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - "Sq"
-- "Ps16RawRepresentable"
+- !private "Ps16RawRepresentable"
 - !private "V8Material6Screen"
 - "SS"
 - "PSo29UIAccessibilityIdentification"
@@ -893,4 +873,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "c08ae77a1a55ed60591ec677ae8e2e00"
+interface-hash: "e13748f751e0b5aab44c8431808576b7"
