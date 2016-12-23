@@ -8,12 +8,10 @@ target 'HandMeDown' do
   # Pods for HandMeDown
 pod 'Material', '~> 2.0'
 pod 'RealmSwift'
-pod 'Firebase/Storage'
-pod 'Firebase/AdMob'
+pod 'Firebase'
 pod 'Firebase/Auth'
-pod 'Firebase/Crash'
-pod 'Firebase/Database'
-pod 'Firebase/RemoteConfig'
+
+
 
 
   target 'HandMeDownTests' do

@@ -8,108 +8,71 @@
 
 import UIKit
 import Firebase
+import FBSDKLoginKit
 
-class LoginViewController: UIViewController, UINavigationControllerDelegate, UITextFieldDelegate {
-
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
-    // MARK: VIEWDIDLOAD
+    var loginButton = FBSDKLoginButton()
     
     override func viewDidLoad() {
-        self.emailField.delegate = self
-        self.passwordField.delegate = self
-    }
-    
-    
-    // MARK: VIEWDIDAPPEAR
-    override func viewDidAppear(_ animated: Bool) {
-        if let user = FIRAuth.auth()?.currentUser{
-            self.signedIn(user)
-        }
-    }
-    
-    
-    // MARK: TextField Delegate
-
-    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        emailField.resignFirstResponder()
-        passwordField.resignFirstResponder()
-        return true
-    }
-    
-    
-    // MARK: Actions
-    
-    @IBAction func handleSigninButton(_ sender: UIButton) {
-        guard let email = emailField.text, let password = passwordField.text else {return}
-        FIRAuth.auth()?.signIn(withEmail: email, password: password) {(user,error) in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-            self.signedIn(user!)
-        }
-    }
-    
-    
-    @IBAction func handleCreateAccountButton(_ sender: UIButton) {
-        guard let email = emailField.text, let password = passwordField.text else {return}
-        FIRAuth.auth()?.createUser(withEmail: email, password: password){
-            (user, error) in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-            self.setDisplayName(user!)
-        }
-    }
-
-    func setDisplayName(_ user: FIRUser) {
-        let changeRequest = user.profileChangeRequest()
-        changeRequest.displayName = user.email!.components(separatedBy: "@")[0]
-        changeRequest.commitChanges(){ (error) in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-            self.signedIn(FIRAuth.auth()?.currentUser)
-        }
-    }
-    
-    @IBAction func didRequestPasswordReset(_ sender: AnyObject) {
-        let prompt = UIAlertController.init(title: nil, message: "Email:", preferredStyle: .alert)
-        let okAction = UIAlertAction.init(title: "OK", style: .default) { (action) in
-            let userInput = prompt.textFields![0].text
-            if (userInput!.isEmpty) {
-                return
-            }
-            FIRAuth.auth()?.sendPasswordReset(withEmail: userInput!) { (error) in
-                if let error = error {
-                    print(error.localizedDescription)
-                    return
-                }
-            }
-        }
-        prompt.addTextField(configurationHandler: nil)
-        prompt.addAction(okAction)
-        present(prompt, animated: true, completion: nil);
-    }
-    
-    
-    func signedIn(_ user: FIRUser?) {
-        MeasurementHelper.sendLoginEvent()
+        super.viewDidLoad()
         
-        AppState.sharedInstance.displayName = user?.displayName ?? user?.email
-        AppState.sharedInstance.photoURL = user?.photoURL
-        AppState.sharedInstance.signedIn = true
-        let notificationName = Notification.Name(rawValue: Constants.NotificationKeys.SignedIn)
-        NotificationCenter.default.post(name: notificationName, object: nil, userInfo: nil)
-        performSegue(withIdentifier: Constants.Segues.SignIn, sender: nil)
+        self.loginButton.isHidden = true
+        
+        FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
+            if let user = user {
+                // User is signed in.
+                // move to user to home screen
+                let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let mainTabBarController: MainTabBarController = mainStoryboard.instantiateViewController(withIdentifier: "HomeTabBar") as! MainTabBarController
+                mainTabBarController.selectedIndex = 0
+                self.present(mainTabBarController, animated: true, completion: nil)
+                
+                
+                
+            } else {
+                // No user is signed in.
+                // show the user the login button
+                self.loginButton.center = self.view.center
+                self.loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+                self.loginButton.delegate = self
+                self.view.addSubview(self.loginButton)
+                self.loginButton.isHidden = false
+            }
+        }
     }
     
-}
+       
+    
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        print("User Logged In")
+        let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+        FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+            print("User Logged In to Firebase")
+            if let error = error {
+                print("User failed Logging in to Firebase")
+                return
+            }
+        }
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        print("User Logged Out")
+    }
+
 
     
-
-
+    
+   /*func loginButtonClicked() {
+        let loginManager = LoginManager()
+        loginManager.logIn([ .PublicProfile ], viewController: self) { loginResult in
+            switch loginResult {
+            case .Failed(let error):
+                print(error)
+            case .Cancelled:
+                print("User cancelled login.")
+            case .Success(let grantedPermissions, let declinedPermissions, let accessToken):
+                print("Logged in!")
+            }
+*/
+}
