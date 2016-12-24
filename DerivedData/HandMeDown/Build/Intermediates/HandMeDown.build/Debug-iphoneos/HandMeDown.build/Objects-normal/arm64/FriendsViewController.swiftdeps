@@ -1,0 +1,866 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FriendsViewController"
+provides-nominal:
+- "C10HandMeDown21FriendsViewController"
+provides-member:
+- ["C10HandMeDown21FriendsViewController", ""]
+provides-dynamic-lookup:
+- "nameLabel"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "pictureView"
+depends-top-level:
+- !private "!="
+- !private "Void"
+- "FriendsViewController"
+- !private "Data"
+- !private "NSDictionary"
+- !private "AnyObject"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "CastingPrecedence"
+- !private "+"
+- !private "NSURL"
+- !private "Dictionary"
+- !private "URL"
+- !private "FIRAuth"
+- !private "StringLiteralType"
+- !private "print"
+- !private "String"
+- !private "UIImage"
+- "UIImageView"
+- "UIViewController"
+- "UILabel"
+- !private "*"
+- !private "NSData"
+- !private "FBSDKGraphRequest"
+- !private "FIRStorage"
+- !private "BooleanLiteralType"
+depends-member:
+- !private ["Vs11AnyHashable", "deinit"]
+- !private ["Ps9AnyObject", "FBSDKGraphRequest"]
+- !private ["Ps9AnyObject", "FIRAuth"]
+- !private ["Ps9AnyObject", "FIRStorage"]
+- !private ["Ps9AnyObject", "NSData"]
+- !private ["Ps9AnyObject", "NSURL"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "auth"]
+- !private ["Ps9AnyObject", "child"]
+- !private ["Ps9AnyObject", "currentUser"]
+- !private ["Ps9AnyObject", "data"]
+- !private ["Ps9AnyObject", "deinit"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "displayName"]
+- !private ["Ps9AnyObject", "downloadURL"]
+- !private ["Ps9AnyObject", "email"]
+- !private ["Ps9AnyObject", "image"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "nameLabel"]
+- !private ["Ps9AnyObject", "object"]
+- !private ["Ps9AnyObject", "photoURL"]
+- ["Ps9AnyObject", "pictureView"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "put"]
+- !private ["Ps9AnyObject", "reference"]
+- !private ["Ps9AnyObject", "start"]
+- !private ["Ps9AnyObject", "storage"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "uid"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "image"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["Ps7CVarArg", "FBSDKGraphRequest"]
+- !private ["Ps7CVarArg", "FIRAuth"]
+- !private ["Ps7CVarArg", "FIRStorage"]
+- !private ["Ps7CVarArg", "Key"]
+- !private ["Ps7CVarArg", "NSData"]
+- !private ["Ps7CVarArg", "NSURL"]
+- !private ["Ps7CVarArg", "UIImage"]
+- !private ["Ps7CVarArg", "Value"]
+- !private ["Ps7CVarArg", "auth"]
+- !private ["Ps7CVarArg", "child"]
+- !private ["Ps7CVarArg", "currentUser"]
+- !private ["Ps7CVarArg", "data"]
+- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "displayName"]
+- !private ["Ps7CVarArg", "downloadURL"]
+- !private ["Ps7CVarArg", "email"]
+- !private ["Ps7CVarArg", "image"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "nameLabel"]
+- !private ["Ps7CVarArg", "object"]
+- !private ["Ps7CVarArg", "photoURL"]
+- ["Ps7CVarArg", "pictureView"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "put"]
+- !private ["Ps7CVarArg", "reference"]
+- !private ["Ps7CVarArg", "start"]
+- !private ["Ps7CVarArg", "storage"]
+- !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "uid"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "Key"]
+- !private ["Ps10Collection", "Value"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "FBSDKGraphRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRAuth"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRStorage"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "NSData"]
+- !private ["Ps28CustomDebugStringConvertible", "NSURL"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "auth"]
+- !private ["Ps28CustomDebugStringConvertible", "child"]
+- !private ["Ps28CustomDebugStringConvertible", "currentUser"]
+- !private ["Ps28CustomDebugStringConvertible", "data"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "displayName"]
+- !private ["Ps28CustomDebugStringConvertible", "downloadURL"]
+- !private ["Ps28CustomDebugStringConvertible", "email"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "nameLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "object"]
+- !private ["Ps28CustomDebugStringConvertible", "photoURL"]
+- ["Ps28CustomDebugStringConvertible", "pictureView"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "put"]
+- !private ["Ps28CustomDebugStringConvertible", "reference"]
+- !private ["Ps28CustomDebugStringConvertible", "start"]
+- !private ["Ps28CustomDebugStringConvertible", "storage"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "uid"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Key"]
+- !private ["Ps17CustomReflectable", "Value"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "object"]
+- !private ["Ps23CustomStringConvertible", "FBSDKGraphRequest"]
+- !private ["Ps23CustomStringConvertible", "FIRAuth"]
+- !private ["Ps23CustomStringConvertible", "FIRStorage"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "NSData"]
+- !private ["Ps23CustomStringConvertible", "NSURL"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "auth"]
+- !private ["Ps23CustomStringConvertible", "child"]
+- !private ["Ps23CustomStringConvertible", "currentUser"]
+- !private ["Ps23CustomStringConvertible", "data"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "displayName"]
+- !private ["Ps23CustomStringConvertible", "downloadURL"]
+- !private ["Ps23CustomStringConvertible", "email"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "nameLabel"]
+- !private ["Ps23CustomStringConvertible", "object"]
+- !private ["Ps23CustomStringConvertible", "photoURL"]
+- ["Ps23CustomStringConvertible", "pictureView"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "put"]
+- !private ["Ps23CustomStringConvertible", "reference"]
+- !private ["Ps23CustomStringConvertible", "start"]
+- !private ["Ps23CustomStringConvertible", "storage"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "uid"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["V10Foundation4Data", "deinit"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["Ps9Equatable", "FBSDKGraphRequest"]
+- !private ["Ps9Equatable", "FIRAuth"]
+- !private ["Ps9Equatable", "FIRStorage"]
+- !private ["Ps9Equatable", "NSData"]
+- !private ["Ps9Equatable", "NSURL"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "auth"]
+- !private ["Ps9Equatable", "child"]
+- !private ["Ps9Equatable", "currentUser"]
+- !private ["Ps9Equatable", "data"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "displayName"]
+- !private ["Ps9Equatable", "downloadURL"]
+- !private ["Ps9Equatable", "email"]
+- !private ["Ps9Equatable", "image"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "nameLabel"]
+- !private ["Ps9Equatable", "object"]
+- !private ["Ps9Equatable", "photoURL"]
+- ["Ps9Equatable", "pictureView"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "put"]
+- !private ["Ps9Equatable", "reference"]
+- !private ["Ps9Equatable", "start"]
+- !private ["Ps9Equatable", "storage"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "uid"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps5Error", "deinit"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "object"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["CSo17FBSDKGraphRequest", "init"]
+- !private ["CSo17FBSDKGraphRequest", "start"]
+- !private ["CSo7FIRAuth", "auth"]
+- !private ["CSo7FIRAuth", "currentUser"]
+- ["CSo7FIRAuth", "deinit"]
+- ["CSo10FIRStorage", "deinit"]
+- !private ["CSo10FIRStorage", "reference"]
+- !private ["CSo10FIRStorage", "storage"]
+- ["CSo22FIRStorageDownloadTask", "deinit"]
+- !private ["CSo18FIRStorageMetadata", "deinit"]
+- !private ["CSo18FIRStorageMetadata", "downloadURL"]
+- !private ["CSo19FIRStorageReference", "child"]
+- !private ["CSo19FIRStorageReference", "data"]
+- ["CSo19FIRStorageReference", "deinit"]
+- !private ["CSo19FIRStorageReference", "put"]
+- !private ["CSo20FIRStorageUploadTask", "deinit"]
+- ["CSo7FIRUser", "deinit"]
+- !private ["CSo7FIRUser", "displayName"]
+- !private ["CSo7FIRUser", "email"]
+- !private ["CSo7FIRUser", "photoURL"]
+- !private ["CSo7FIRUser", "uid"]
+- !private ["PSo11FIRUserInfo", "displayName"]
+- !private ["PSo11FIRUserInfo", "email"]
+- !private ["PSo11FIRUserInfo", "photoURL"]
+- !private ["PSo11FIRUserInfo", "uid"]
+- !private ["C10HandMeDown21FriendsViewController", "AnyObject"]
+- !private ["C10HandMeDown21FriendsViewController", "Data"]
+- !private ["C10HandMeDown21FriendsViewController", "FBSDKGraphRequest"]
+- !private ["C10HandMeDown21FriendsViewController", "FIRAuth"]
+- !private ["C10HandMeDown21FriendsViewController", "FIRStorage"]
+- !private ["C10HandMeDown21FriendsViewController", "NSData"]
+- !private ["C10HandMeDown21FriendsViewController", "NSDictionary"]
+- !private ["C10HandMeDown21FriendsViewController", "NSURL"]
+- !private ["C10HandMeDown21FriendsViewController", "String"]
+- !private ["C10HandMeDown21FriendsViewController", "UIImage"]
+- ["C10HandMeDown21FriendsViewController", "UIImageView"]
+- ["C10HandMeDown21FriendsViewController", "UILabel"]
+- !private ["C10HandMeDown21FriendsViewController", "URL"]
+- !private ["C10HandMeDown21FriendsViewController", "Void"]
+- ["C10HandMeDown21FriendsViewController", "deinit"]
+- ["C10HandMeDown21FriendsViewController", "didReceiveMemoryWarning"]
+- ["C10HandMeDown21FriendsViewController", "init"]
+- ["C10HandMeDown21FriendsViewController", "nameLabel"]
+- ["C10HandMeDown21FriendsViewController", "pictureView"]
+- !private ["C10HandMeDown21FriendsViewController", "print"]
+- ["C10HandMeDown21FriendsViewController", "viewDidLoad"]
+- !private ["Ps8Hashable", "FBSDKGraphRequest"]
+- !private ["Ps8Hashable", "FIRAuth"]
+- !private ["Ps8Hashable", "FIRStorage"]
+- !private ["Ps8Hashable", "NSData"]
+- !private ["Ps8Hashable", "NSURL"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "auth"]
+- !private ["Ps8Hashable", "child"]
+- !private ["Ps8Hashable", "currentUser"]
+- !private ["Ps8Hashable", "data"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "displayName"]
+- !private ["Ps8Hashable", "downloadURL"]
+- !private ["Ps8Hashable", "email"]
+- !private ["Ps8Hashable", "image"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "nameLabel"]
+- !private ["Ps8Hashable", "object"]
+- !private ["Ps8Hashable", "photoURL"]
+- ["Ps8Hashable", "pictureView"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "put"]
+- !private ["Ps8Hashable", "reference"]
+- !private ["Ps8Hashable", "start"]
+- !private ["Ps8Hashable", "storage"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "uid"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps13IndexableBase", "Key"]
+- !private ["Ps13IndexableBase", "Value"]
+- ["Si", "deinit"]
+- ["Vs5Int64", "deinit"]
+- !private ["VCSo8NSLocale3Key", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "FBSDKGraphRequest"]
+- !private ["PSo8NSCoding", "FIRAuth"]
+- !private ["PSo8NSCoding", "FIRStorage"]
+- !private ["PSo8NSCoding", "NSData"]
+- !private ["PSo8NSCoding", "NSURL"]
+- !private ["PSo8NSCoding", "UIImage"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "image"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "nameLabel"]
+- !private ["PSo8NSCoding", "object"]
+- ["PSo8NSCoding", "pictureView"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "downloadURL"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "object"]
+- !private ["CSo6NSData", "deinit"]
+- !private ["CSo6NSData", "init"]
+- !private ["CSo12NSDictionary", "deinit"]
+- !private ["CSo12NSDictionary", "object"]
+- !private ["PSo26NSExtensionRequestHandling", "FBSDKGraphRequest"]
+- !private ["PSo26NSExtensionRequestHandling", "FIRAuth"]
+- !private ["PSo26NSExtensionRequestHandling", "FIRStorage"]
+- !private ["PSo26NSExtensionRequestHandling", "NSData"]
+- !private ["PSo26NSExtensionRequestHandling", "NSURL"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "nameLabel"]
+- ["PSo26NSExtensionRequestHandling", "pictureView"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo17NSFastEnumeration", "object"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "object"]
+- !private ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "Data"]
+- !private ["CSo8NSObject", "FBSDKGraphRequest"]
+- !private ["CSo8NSObject", "FIRAuth"]
+- !private ["CSo8NSObject", "FIRStorage"]
+- !private ["CSo8NSObject", "NSData"]
+- !private ["CSo8NSObject", "NSDictionary"]
+- !private ["CSo8NSObject", "NSURL"]
+- !private ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "URL"]
+- !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "auth"]
+- !private ["CSo8NSObject", "child"]
+- !private ["CSo8NSObject", "currentUser"]
+- !private ["CSo8NSObject", "data"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "displayName"]
+- !private ["CSo8NSObject", "downloadURL"]
+- !private ["CSo8NSObject", "email"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "nameLabel"]
+- !private ["CSo8NSObject", "object"]
+- !private ["CSo8NSObject", "photoURL"]
+- ["CSo8NSObject", "pictureView"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "put"]
+- !private ["CSo8NSObject", "reference"]
+- !private ["CSo8NSObject", "start"]
+- !private ["CSo8NSObject", "storage"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "uid"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "FBSDKGraphRequest"]
+- !private ["PSo16NSObjectProtocol", "FIRAuth"]
+- !private ["PSo16NSObjectProtocol", "FIRStorage"]
+- !private ["PSo16NSObjectProtocol", "NSData"]
+- !private ["PSo16NSObjectProtocol", "NSURL"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "auth"]
+- !private ["PSo16NSObjectProtocol", "child"]
+- !private ["PSo16NSObjectProtocol", "currentUser"]
+- !private ["PSo16NSObjectProtocol", "data"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "displayName"]
+- !private ["PSo16NSObjectProtocol", "downloadURL"]
+- !private ["PSo16NSObjectProtocol", "email"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "nameLabel"]
+- !private ["PSo16NSObjectProtocol", "object"]
+- !private ["PSo16NSObjectProtocol", "photoURL"]
+- ["PSo16NSObjectProtocol", "pictureView"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "put"]
+- !private ["PSo16NSObjectProtocol", "reference"]
+- !private ["PSo16NSObjectProtocol", "start"]
+- !private ["PSo16NSObjectProtocol", "storage"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "uid"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "object"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo5NSURL", "deinit"]
+- !private ["CSo5NSURL", "init"]
+- ["Sq", "deinit"]
+- !private ["P10RealmSwift17RealmOptionalType", "_getBuiltinLogicValue"]
+- !private ["Ps8Sequence", "Key"]
+- !private ["Ps8Sequence", "Value"]
+- !private ["Ps8Sequence", "object"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "image"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "FBSDKGraphRequest"]
+- !private ["PSo21UIAppearanceContainer", "FIRAuth"]
+- !private ["PSo21UIAppearanceContainer", "FIRStorage"]
+- !private ["PSo21UIAppearanceContainer", "NSData"]
+- !private ["PSo21UIAppearanceContainer", "NSURL"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "nameLabel"]
+- ["PSo21UIAppearanceContainer", "pictureView"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "FBSDKGraphRequest"]
+- !private ["PSo18UIContentContainer", "FIRAuth"]
+- !private ["PSo18UIContentContainer", "FIRStorage"]
+- !private ["PSo18UIContentContainer", "NSData"]
+- !private ["PSo18UIContentContainer", "NSURL"]
+- !private ["PSo18UIContentContainer", "UIImage"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "nameLabel"]
+- ["PSo18UIContentContainer", "pictureView"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "image"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "FBSDKGraphRequest"]
+- !private ["PSo18UIFocusEnvironment", "FIRAuth"]
+- !private ["PSo18UIFocusEnvironment", "FIRStorage"]
+- !private ["PSo18UIFocusEnvironment", "NSData"]
+- !private ["PSo18UIFocusEnvironment", "NSURL"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "image"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "nameLabel"]
+- ["PSo18UIFocusEnvironment", "pictureView"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "image"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo7UILabel", "text"]
+- !private ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "Data"]
+- !private ["CSo11UIResponder", "FBSDKGraphRequest"]
+- !private ["CSo11UIResponder", "FIRAuth"]
+- !private ["CSo11UIResponder", "FIRStorage"]
+- !private ["CSo11UIResponder", "NSData"]
+- !private ["CSo11UIResponder", "NSDictionary"]
+- !private ["CSo11UIResponder", "NSURL"]
+- !private ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "URL"]
+- !private ["CSo11UIResponder", "Void"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "image"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "nameLabel"]
+- ["CSo11UIResponder", "pictureView"]
+- !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "FBSDKGraphRequest"]
+- !private ["PSo30UIResponderStandardEditActions", "FIRAuth"]
+- !private ["PSo30UIResponderStandardEditActions", "FIRStorage"]
+- !private ["PSo30UIResponderStandardEditActions", "NSData"]
+- !private ["PSo30UIResponderStandardEditActions", "NSURL"]
+- !private ["PSo30UIResponderStandardEditActions", "UIImage"]
+- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "image"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "nameLabel"]
+- ["PSo30UIResponderStandardEditActions", "pictureView"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "FBSDKGraphRequest"]
+- !private ["PSo16UIStateRestoring", "FIRAuth"]
+- !private ["PSo16UIStateRestoring", "FIRStorage"]
+- !private ["PSo16UIStateRestoring", "NSData"]
+- !private ["PSo16UIStateRestoring", "NSURL"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "nameLabel"]
+- ["PSo16UIStateRestoring", "pictureView"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "FBSDKGraphRequest"]
+- !private ["PSo18UITraitEnvironment", "FIRAuth"]
+- !private ["PSo18UITraitEnvironment", "FIRStorage"]
+- !private ["PSo18UITraitEnvironment", "NSData"]
+- !private ["PSo18UITraitEnvironment", "NSURL"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "nameLabel"]
+- ["PSo18UITraitEnvironment", "pictureView"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "image"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo16UIViewController", "AnyObject"]
+- !private ["CSo16UIViewController", "Data"]
+- !private ["CSo16UIViewController", "FBSDKGraphRequest"]
+- !private ["CSo16UIViewController", "FIRAuth"]
+- !private ["CSo16UIViewController", "FIRStorage"]
+- !private ["CSo16UIViewController", "NSData"]
+- !private ["CSo16UIViewController", "NSDictionary"]
+- !private ["CSo16UIViewController", "NSURL"]
+- !private ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIImage"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "UILabel"]
+- !private ["CSo16UIViewController", "URL"]
+- !private ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "nameLabel"]
+- ["CSo16UIViewController", "pictureView"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["V10Foundation3URL", "deinit"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByImageLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "FBSDKGraphRequest"]
+- !private ["Ps9_Hashable", "FIRAuth"]
+- !private ["Ps9_Hashable", "FIRStorage"]
+- !private ["Ps9_Hashable", "NSData"]
+- !private ["Ps9_Hashable", "NSURL"]
+- !private ["Ps9_Hashable", "UIImage"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "auth"]
+- !private ["Ps9_Hashable", "child"]
+- !private ["Ps9_Hashable", "currentUser"]
+- !private ["Ps9_Hashable", "data"]
+- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "displayName"]
+- !private ["Ps9_Hashable", "downloadURL"]
+- !private ["Ps9_Hashable", "email"]
+- !private ["Ps9_Hashable", "image"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "nameLabel"]
+- !private ["Ps9_Hashable", "object"]
+- !private ["Ps9_Hashable", "photoURL"]
+- ["Ps9_Hashable", "pictureView"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "put"]
+- !private ["Ps9_Hashable", "reference"]
+- !private ["Ps9_Hashable", "start"]
+- !private ["Ps9_Hashable", "storage"]
+- !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "uid"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+depends-nominal:
+- !private "Vs11AnyHashable"
+- "Ps9AnyObject"
+- "Sb"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "V10Foundation4Data"
+- "Vs10Dictionary"
+- "Ps9Equatable"
+- !private "Ps5Error"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "CSo17FBSDKGraphRequest"
+- "CSo7FIRAuth"
+- "CSo10FIRStorage"
+- "CSo22FIRStorageDownloadTask"
+- !private "CSo18FIRStorageMetadata"
+- "CSo19FIRStorageReference"
+- !private "CSo20FIRStorageUploadTask"
+- "CSo7FIRUser"
+- !private "PSo11FIRUserInfo"
+- "C10HandMeDown21FriendsViewController"
+- "Ps8Hashable"
+- "SQ"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- "Si"
+- "Vs5Int64"
+- !private "VCSo8NSLocale3Key"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSData"
+- !private "CSo12NSDictionary"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo17NSFastEnumeration"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- "Sq"
+- !private "P10RealmSwift17RealmOptionalType"
+- !private "Ps8Sequence"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "CSo7UIImage"
+- !private "CSo11UIImageView"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "V10Foundation3URL"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByImageLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+depends-dynamic-lookup:
+- !private "object"
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFURL.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/Bolts.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUser.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSession.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncPermissionChange.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncManager.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUtil.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
+interface-hash: "64d295f1de241639e2a4675623489b98"

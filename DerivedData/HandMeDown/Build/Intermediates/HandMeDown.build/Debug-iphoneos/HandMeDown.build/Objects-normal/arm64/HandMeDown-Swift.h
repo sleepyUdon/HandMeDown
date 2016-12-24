@@ -117,7 +117,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import Foundation;
-@import ObjectiveC;
 @import RealmSwift;
 @import CoreGraphics;
 @import FBSDKLoginKit;
@@ -133,24 +132,19 @@ SWIFT_CLASS("_TtC10HandMeDown11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions;
+/**
+  MARK: Facebook
+*/
 - (BOOL)application:(UIApplication * _Nonnull)application openURL:(NSURL * _Nonnull)url sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id _Nonnull)annotation;
+- (BOOL)applicationWithApplication:(UIApplication * _Nonnull)application openURL:(NSURL * _Nonnull)url sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id _Nonnull)annotation;
+- (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
+/**
+  MARK: Lifecycle
+*/
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
-- (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
-- (BOOL)applicationWithApplication:(UIApplication * _Nonnull)application openURL:(NSURL * _Nonnull)url sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id _Nonnull)annotation;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10HandMeDown8AppState")
-@interface AppState : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AppState * _Nonnull sharedInstance;)
-+ (AppState * _Nonnull)sharedInstance;
-@property (nonatomic) BOOL signedIn;
-@property (nonatomic, copy) NSString * _Nullable displayName;
-@property (nonatomic, copy) NSURL * _Nullable photoURL;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -191,13 +185,31 @@ SWIFT_CLASS("_TtC10HandMeDown5Fonts")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class Item;
 @class UIImageView;
 @class UILabel;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC10HandMeDown21FriendsViewController")
+@interface FriendsViewController : UIViewController
+/**
+  MARK: Properties
+*/
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pictureView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class Item;
 @class UIButton;
 
 SWIFT_CLASS("_TtC10HandMeDown25GoodiesCollectionViewCell")
 @interface GoodiesCollectionViewCell : UICollectionViewCell
+/**
+  MARK: properties
+*/
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageView;
 @property (nonatomic, weak) IBOutlet UIImageView * _Nullable userPictureView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
@@ -210,7 +222,6 @@ SWIFT_CLASS("_TtC10HandMeDown25GoodiesCollectionViewCell")
 @class UICollectionView;
 @class UICollectionViewLayout;
 @class RaisedButton;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC10HandMeDown21GoodiesViewController")
 @interface GoodiesViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
@@ -223,6 +234,7 @@ SWIFT_CLASS("_TtC10HandMeDown21GoodiesViewController")
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (IBAction)handleLogoutButton:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -244,11 +256,22 @@ SWIFT_CLASS("_TtC10HandMeDown4Item")
 
 @class FBSDKLoginButton;
 @class FBSDKLoginManagerLoginResult;
+@class UIActivityIndicatorView;
 
 SWIFT_CLASS("_TtC10HandMeDown19LoginViewController")
 @interface LoginViewController : UIViewController <FBSDKLoginButtonDelegate>
+/**
+  MARK: Properties
+*/
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * _Null_unspecified activityIndicator;
 @property (nonatomic, strong) FBSDKLoginButton * _Nonnull loginButton;
+/**
+  MARK: ViewDidLoad
+*/
 - (void)viewDidLoad;
+/**
+  MARK: LoginButtonDelegate
+*/
 - (void)loginButton:(FBSDKLoginButton * _Null_unspecified)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult * _Null_unspecified)result error:(NSError * _Null_unspecified)error;
 - (void)loginButtonDidLogOut:(FBSDKLoginButton * _Null_unspecified)loginButton;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -258,19 +281,8 @@ SWIFT_CLASS("_TtC10HandMeDown19LoginViewController")
 
 SWIFT_CLASS("_TtC10HandMeDown20MainTabBarController")
 @interface MainTabBarController : UITabBarController
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10HandMeDown17MeasurementHelper")
-@interface MeasurementHelper : NSObject
-+ (void)sendLoginEvent;
-+ (void)sendLogoutEvent;
-+ (void)sendMessageEvent;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -317,6 +329,9 @@ SWIFT_CLASS("_TtC10HandMeDown21MyStuffViewController")
 
 SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 @interface PostViewController : UIViewController <UIScrollViewDelegate, UINavigationControllerDelegate, UITextViewDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate>
+/**
+  MARK: Properties
+*/
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified boyButton;
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified girlButton;
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified babyButton;
@@ -344,12 +359,27 @@ SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 @property (nonatomic, strong) NSData * _Nullable pictureData;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull categories;
 @property (nonatomic, readonly, copy) NSArray<Item *> * _Nonnull items;
+/**
+  MARK: ViewDidLoad
+*/
 - (void)viewDidLoad;
+/**
+  MARK: ViewWillAppear
+*/
 - (void)viewWillAppear:(BOOL)animated;
+/**
+  MARK: Prepare Layout
+*/
 - (void)prepareLayout;
+/**
+  MARK: TextField Delegate
+*/
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (IBAction)HandlePostButton:(UIButton * _Nonnull)sender;
+/**
+  MARK: Handle Add Picture Button
+*/
 - (IBAction)HandleAddPictureButton:(UIButton * _Nonnull)sender;
 - (void)openCamera;
 - (void)openGallery;
@@ -373,6 +403,14 @@ SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 - (IBAction)sportsButton:(RaisedButton * _Nonnull)sender;
 - (IBAction)furnitureButton:(RaisedButton * _Nonnull)sender;
 - (IBAction)otherButton:(RaisedButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10HandMeDown22SettingsViewController")
+@interface SettingsViewController : UIViewController
+- (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -7,6 +7,9 @@ PODS:
   - Firebase/Core (3.11.0):
     - FirebaseAnalytics (= 3.6.0)
     - FirebaseCore (= 3.4.6)
+  - Firebase/Storage (3.11.0):
+    - Firebase/Core
+    - FirebaseStorage (= 1.0.5)
   - FirebaseAnalytics (3.6.0):
     - FirebaseCore (~> 3.4)
     - FirebaseInstanceID (~> 1.0)
@@ -21,6 +24,9 @@ PODS:
     - GoogleInterchangeUtilities (~> 1.2)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
   - FirebaseInstanceID (1.0.8)
+  - FirebaseStorage (1.0.5):
+    - FirebaseAnalytics (~> 3.5)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleInterchangeUtilities (1.2.2):
     - GoogleSymbolUtilities (~> 1.1)
   - GoogleSymbolUtilities (1.1.2)
@@ -47,6 +53,7 @@ PODS:
 DEPENDENCIES:
   - Firebase
   - Firebase/Auth
+  - Firebase/Storage
   - Material (~> 2.0)
   - RealmSwift
 
@@ -56,6 +63,7 @@ SPEC CHECKSUMS:
   FirebaseAuth: b436e4ecebe068bf8e8c6e4e29de5756ffe7ee24
   FirebaseCore: 03da1cb32615569bbc2830a22f9ad753d9a02ef5
   FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
+  FirebaseStorage: 5738284835edb57f0e81d4ae5832bb17c1e4b5fa
   GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
@@ -64,6 +72,6 @@ SPEC CHECKSUMS:
   Realm: efe855f4d977c8ce5a82d3116d9f1ff155a6550c
   RealmSwift: 17d6ee30b6f9df86364408c2197492e33bfea567
 
-PODFILE CHECKSUM: 449f3e1287559d2470fab413ab7339a64d2fca81
+PODFILE CHECKSUM: 99e92e460ccc6815717792799e7f2cc877490217
 
 COCOAPODS: 1.1.1

@@ -11,12 +11,12 @@ provides-member:
 - ["V8Material5Depth", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Int"
+- "DepthPresetToValue"
+- "Depth"
 - "Float"
 - "DepthPreset"
 - "Offset"
-- "DepthPresetToValue"
-- "Int"
-- "Depth"
 - "=="
 - "CGFloat"
 - !private "~="

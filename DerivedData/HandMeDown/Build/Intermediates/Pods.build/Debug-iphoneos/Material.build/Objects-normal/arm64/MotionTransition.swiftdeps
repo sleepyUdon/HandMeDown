@@ -14,26 +14,26 @@ provides-member:
 - ["V8Material6Motion", "transition"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "kCATransitionFromLeft"
-- !private "kCATransitionFromTop"
-- !private "kCATransitionMoveIn"
+- "AssignmentPrecedence"
 - "AnimationTransitionToValue"
-- "AnimationTransitionDirectionToValue"
-- !private "kCATransitionFromRight"
+- "String"
+- !private "kCATransitionMoveIn"
+- !private "kCATransitionFromTop"
 - !private "kCATransitionFromBottom"
+- "AnimationTransitionDirectionToValue"
 - "Motion"
+- !private "kCATransitionFromRight"
 - "AnimationTransition"
 - "CATransition"
 - "AnimationTransitionDirection"
-- !private "kCATransitionPush"
 - "Int"
+- !private "kCATransitionPush"
 - !private "kCATransitionFade"
-- !private "kCATransitionReveal"
 - "=="
-- "CFTimeInterval"
 - !private "~="
-- "AssignmentPrecedence"
-- "String"
+- "CFTimeInterval"
+- !private "kCATransitionFromLeft"
+- !private "kCATransitionReveal"
 depends-member:
 - ["O8Material19AnimationTransition", "RawValue"]
 - ["O8Material19AnimationTransition", "_toAnyHashable"]

@@ -10,25 +10,25 @@ provides-member:
 - ["C8Material9ImageCard", ""]
 provides-dynamic-lookup:
 - "imageViewEdgeInsetsPreset"
+- "imageView"
 - "reload"
 - "toolbarAlignment"
 - "imageViewEdgeInsets"
-- "imageView"
 depends-top-level:
-- !private "EdgeInsetsPresetToValue"
+- "UIImageView"
 - "Int"
 - !private "-"
-- "EdgeInsets"
-- "ToolbarAlignment"
-- "Card"
-- "TernaryPrecedence"
-- "ImageCard"
 - "EdgeInsetsPreset"
-- "UIImageView"
+- "Card"
+- !private "EdgeInsetsPresetToValue"
+- "ImageCard"
+- "TernaryPrecedence"
+- "ToolbarAlignment"
 - "=="
 - !private "~="
-- !private "CGFloat"
+- "EdgeInsets"
 - "AssignmentPrecedence"
+- !private "CGFloat"
 depends-member:
 - ["Ps9AnyObject", "EdgeInsets"]
 - ["Ps9AnyObject", "EdgeInsetsPreset"]

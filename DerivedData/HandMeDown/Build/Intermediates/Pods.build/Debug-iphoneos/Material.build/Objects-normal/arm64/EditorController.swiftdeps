@@ -8,12 +8,12 @@ provides-member:
 - ["C8Material16EditorController", ""]
 - ["CSo16UIViewController", "editorController"]
 provides-dynamic-lookup:
-- "prepare"
 - "editorController"
 - "editor"
+- "prepare"
 depends-top-level:
-- "EditorDelegate"
 - !private "!="
+- "EditorDelegate"
 - "UIViewController"
 - "Editor"
 - "EditorController"

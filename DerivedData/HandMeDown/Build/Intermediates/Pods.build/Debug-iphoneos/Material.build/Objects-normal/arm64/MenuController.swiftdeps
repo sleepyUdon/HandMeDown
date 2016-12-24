@@ -10,22 +10,22 @@ provides-member:
 - ["C8Material14MenuController", "openMenu"]
 - ["C8Material14MenuController", "closeMenu"]
 provides-dynamic-lookup:
-- "menuController"
-- "layoutSubviews"
 - "prepare"
+- "menuController"
 - "menu"
+- "layoutSubviews"
 - "closeMenu"
 - "openMenu"
 depends-top-level:
 - "MenuController"
 - "Menu"
 - !private "!="
-- !private "BooleanLiteralType"
 - "RootController"
+- !private "BooleanLiteralType"
 - "Void"
-- "UIViewController"
 - "UIView"
 - "AssignmentPrecedence"
+- "UIViewController"
 - "CastingPrecedence"
 - !private "=="
 depends-member:

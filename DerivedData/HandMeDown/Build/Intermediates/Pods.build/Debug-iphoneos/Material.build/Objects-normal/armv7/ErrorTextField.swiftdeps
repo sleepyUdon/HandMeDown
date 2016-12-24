@@ -1,0 +1,386 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ErrorTextField"
+provides-nominal:
+- "C8Material14ErrorTextField"
+provides-member:
+- ["C8Material14ErrorTextField", ""]
+provides-dynamic-lookup:
+- "prepare"
+- "isErrorRevealed"
+depends-top-level:
+- !private "!"
+- "ErrorTextField"
+- !private "Color"
+- "BooleanLiteralType"
+- "TextField"
+- "AssignmentPrecedence"
+depends-member:
+- !private ["Ps9AnyObject", "Color"]
+- !private ["Ps9AnyObject", "base"]
+- !private ["Ps9AnyObject", "detailColor"]
+- !private ["Ps9AnyObject", "detailLabel"]
+- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "isErrorRevealed"]
+- !private ["Ps9AnyObject", "isHidden"]
+- !private ["Ps9AnyObject", "layoutSubviews"]
+- ["Ps9AnyObject", "prepare"]
+- !private ["Ps9AnyObject", "red"]
+- ["Ps9AnyObject", ""]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "Color"]
+- !private ["PSo15CALayerDelegate", "detailColor"]
+- !private ["PSo15CALayerDelegate", "detailLabel"]
+- !private ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", "isErrorRevealed"]
+- !private ["PSo15CALayerDelegate", "isHidden"]
+- !private ["PSo15CALayerDelegate", "layoutSubviews"]
+- ["PSo15CALayerDelegate", "prepare"]
+- ["PSo15CALayerDelegate", ""]
+- ["VSC6CGRect", "deinit"]
+- !private ["Ps7CVarArg", "Color"]
+- !private ["Ps7CVarArg", "base"]
+- !private ["Ps7CVarArg", "detailColor"]
+- !private ["Ps7CVarArg", "detailLabel"]
+- !private ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "isErrorRevealed"]
+- !private ["Ps7CVarArg", "isHidden"]
+- !private ["Ps7CVarArg", "layoutSubviews"]
+- ["Ps7CVarArg", "prepare"]
+- !private ["Ps7CVarArg", "red"]
+- ["Ps7CVarArg", ""]
+- !private ["C8Material5Color", "red"]
+- !private ["P8Material12ColorPalette", "base"]
+- !private ["Ps28CustomDebugStringConvertible", "Color"]
+- !private ["Ps28CustomDebugStringConvertible", "base"]
+- !private ["Ps28CustomDebugStringConvertible", "detailColor"]
+- !private ["Ps28CustomDebugStringConvertible", "detailLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "isErrorRevealed"]
+- !private ["Ps28CustomDebugStringConvertible", "isHidden"]
+- !private ["Ps28CustomDebugStringConvertible", "layoutSubviews"]
+- ["Ps28CustomDebugStringConvertible", "prepare"]
+- !private ["Ps28CustomDebugStringConvertible", "red"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Color"]
+- !private ["Ps23CustomStringConvertible", "base"]
+- !private ["Ps23CustomStringConvertible", "detailColor"]
+- !private ["Ps23CustomStringConvertible", "detailLabel"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "isErrorRevealed"]
+- !private ["Ps23CustomStringConvertible", "isHidden"]
+- !private ["Ps23CustomStringConvertible", "layoutSubviews"]
+- ["Ps23CustomStringConvertible", "prepare"]
+- !private ["Ps23CustomStringConvertible", "red"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "Color"]
+- !private ["Ps9Equatable", "base"]
+- !private ["Ps9Equatable", "detailColor"]
+- !private ["Ps9Equatable", "detailLabel"]
+- !private ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "isErrorRevealed"]
+- !private ["Ps9Equatable", "isHidden"]
+- !private ["Ps9Equatable", "layoutSubviews"]
+- ["Ps9Equatable", "prepare"]
+- !private ["Ps9Equatable", "red"]
+- ["Ps9Equatable", ""]
+- !private ["C8Material14ErrorTextField", "Color"]
+- ["C8Material14ErrorTextField", "deinit"]
+- !private ["C8Material14ErrorTextField", "detailColor"]
+- !private ["C8Material14ErrorTextField", "detailLabel"]
+- ["C8Material14ErrorTextField", "init"]
+- ["C8Material14ErrorTextField", "isErrorRevealed"]
+- !private ["C8Material14ErrorTextField", "layoutSubviews"]
+- ["C8Material14ErrorTextField", "prepare"]
+- !private ["Ps8Hashable", "Color"]
+- !private ["Ps8Hashable", "base"]
+- !private ["Ps8Hashable", "detailColor"]
+- !private ["Ps8Hashable", "detailLabel"]
+- !private ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "isErrorRevealed"]
+- !private ["Ps8Hashable", "isHidden"]
+- !private ["Ps8Hashable", "layoutSubviews"]
+- ["Ps8Hashable", "prepare"]
+- !private ["Ps8Hashable", "red"]
+- ["Ps8Hashable", ""]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "Color"]
+- !private ["PSo8NSCoding", "base"]
+- !private ["PSo8NSCoding", "detailColor"]
+- !private ["PSo8NSCoding", "detailLabel"]
+- !private ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "isErrorRevealed"]
+- !private ["PSo8NSCoding", "isHidden"]
+- !private ["PSo8NSCoding", "layoutSubviews"]
+- ["PSo8NSCoding", "prepare"]
+- !private ["PSo8NSCoding", "red"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "base"]
+- !private ["PSo9NSCopying", "red"]
+- !private ["CSo8NSObject", "Color"]
+- !private ["CSo8NSObject", "base"]
+- !private ["CSo8NSObject", "detailColor"]
+- !private ["CSo8NSObject", "detailLabel"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "isErrorRevealed"]
+- !private ["CSo8NSObject", "isHidden"]
+- !private ["CSo8NSObject", "layoutSubviews"]
+- ["CSo8NSObject", "prepare"]
+- !private ["CSo8NSObject", "red"]
+- !private ["PSo16NSObjectProtocol", "Color"]
+- !private ["PSo16NSObjectProtocol", "base"]
+- !private ["PSo16NSObjectProtocol", "detailColor"]
+- !private ["PSo16NSObjectProtocol", "detailLabel"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "isErrorRevealed"]
+- !private ["PSo16NSObjectProtocol", "isHidden"]
+- !private ["PSo16NSObjectProtocol", "layoutSubviews"]
+- ["PSo16NSObjectProtocol", "prepare"]
+- !private ["PSo16NSObjectProtocol", "red"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "base"]
+- !private ["PSo14NSSecureCoding", "red"]
+- ["Sq", "deinit"]
+- !private ["C8Material9TextField", "Color"]
+- ["C8Material9TextField", "deinit"]
+- !private ["C8Material9TextField", "detailColor"]
+- !private ["C8Material9TextField", "detailLabel"]
+- ["C8Material9TextField", "init"]
+- ["C8Material9TextField", "isErrorRevealed"]
+- !private ["C8Material9TextField", "layoutSubviews"]
+- ["C8Material9TextField", "prepare"]
+- ["C8Material9TextField", ""]
+- !private ["PSo29UIAccessibilityIdentification", "Color"]
+- !private ["PSo29UIAccessibilityIdentification", "detailColor"]
+- !private ["PSo29UIAccessibilityIdentification", "detailLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "isErrorRevealed"]
+- !private ["PSo29UIAccessibilityIdentification", "isHidden"]
+- !private ["PSo29UIAccessibilityIdentification", "layoutSubviews"]
+- ["PSo29UIAccessibilityIdentification", "prepare"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "Color"]
+- !private ["PSo12UIAppearance", "detailColor"]
+- !private ["PSo12UIAppearance", "detailLabel"]
+- !private ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "isErrorRevealed"]
+- !private ["PSo12UIAppearance", "isHidden"]
+- !private ["PSo12UIAppearance", "layoutSubviews"]
+- ["PSo12UIAppearance", "prepare"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "Color"]
+- !private ["PSo21UIAppearanceContainer", "detailColor"]
+- !private ["PSo21UIAppearanceContainer", "detailLabel"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "isErrorRevealed"]
+- !private ["PSo21UIAppearanceContainer", "isHidden"]
+- !private ["PSo21UIAppearanceContainer", "layoutSubviews"]
+- ["PSo21UIAppearanceContainer", "prepare"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo7UIColor", "base"]
+- ["CSo7UIColor", "deinit"]
+- !private ["CSo7UIColor", "red"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "Color"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "detailColor"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "detailLabel"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "init"]
+- ["PSo30UIContentSizeCategoryAdjusting", "isErrorRevealed"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "isHidden"]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "layoutSubviews"]
+- ["PSo30UIContentSizeCategoryAdjusting", "prepare"]
+- ["PSo30UIContentSizeCategoryAdjusting", ""]
+- !private ["CSo9UIControl", "Color"]
+- !private ["CSo9UIControl", "detailColor"]
+- !private ["CSo9UIControl", "detailLabel"]
+- ["CSo9UIControl", "init"]
+- ["CSo9UIControl", "isErrorRevealed"]
+- !private ["CSo9UIControl", "layoutSubviews"]
+- ["CSo9UIControl", "prepare"]
+- !private ["PSo17UICoordinateSpace", "Color"]
+- !private ["PSo17UICoordinateSpace", "detailColor"]
+- !private ["PSo17UICoordinateSpace", "detailLabel"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "isErrorRevealed"]
+- !private ["PSo17UICoordinateSpace", "isHidden"]
+- !private ["PSo17UICoordinateSpace", "layoutSubviews"]
+- ["PSo17UICoordinateSpace", "prepare"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "Color"]
+- !private ["PSo13UIDynamicItem", "detailColor"]
+- !private ["PSo13UIDynamicItem", "detailLabel"]
+- !private ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "isErrorRevealed"]
+- !private ["PSo13UIDynamicItem", "isHidden"]
+- !private ["PSo13UIDynamicItem", "layoutSubviews"]
+- ["PSo13UIDynamicItem", "prepare"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "Color"]
+- !private ["PSo18UIFocusEnvironment", "detailColor"]
+- !private ["PSo18UIFocusEnvironment", "detailLabel"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "isErrorRevealed"]
+- !private ["PSo18UIFocusEnvironment", "isHidden"]
+- !private ["PSo18UIFocusEnvironment", "layoutSubviews"]
+- ["PSo18UIFocusEnvironment", "prepare"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "Color"]
+- !private ["PSo11UIFocusItem", "detailColor"]
+- !private ["PSo11UIFocusItem", "detailLabel"]
+- !private ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", "isErrorRevealed"]
+- !private ["PSo11UIFocusItem", "isHidden"]
+- !private ["PSo11UIFocusItem", "layoutSubviews"]
+- ["PSo11UIFocusItem", "prepare"]
+- ["PSo11UIFocusItem", ""]
+- !private ["PSo10UIKeyInput", "Color"]
+- !private ["PSo10UIKeyInput", "detailColor"]
+- !private ["PSo10UIKeyInput", "detailLabel"]
+- !private ["PSo10UIKeyInput", "init"]
+- ["PSo10UIKeyInput", "isErrorRevealed"]
+- !private ["PSo10UIKeyInput", "layoutSubviews"]
+- ["PSo10UIKeyInput", "prepare"]
+- ["PSo10UIKeyInput", ""]
+- ["CSo7UILabel", "deinit"]
+- !private ["CSo7UILabel", "isHidden"]
+- !private ["CSo11UIResponder", "Color"]
+- !private ["CSo11UIResponder", "detailColor"]
+- !private ["CSo11UIResponder", "detailLabel"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "isErrorRevealed"]
+- !private ["CSo11UIResponder", "isHidden"]
+- !private ["CSo11UIResponder", "layoutSubviews"]
+- ["CSo11UIResponder", "prepare"]
+- !private ["PSo30UIResponderStandardEditActions", "Color"]
+- !private ["PSo30UIResponderStandardEditActions", "detailColor"]
+- !private ["PSo30UIResponderStandardEditActions", "detailLabel"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "isErrorRevealed"]
+- !private ["PSo30UIResponderStandardEditActions", "isHidden"]
+- !private ["PSo30UIResponderStandardEditActions", "layoutSubviews"]
+- ["PSo30UIResponderStandardEditActions", "prepare"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo11UITextField", "Color"]
+- !private ["CSo11UITextField", "detailColor"]
+- !private ["CSo11UITextField", "detailLabel"]
+- ["CSo11UITextField", "init"]
+- ["CSo11UITextField", "isErrorRevealed"]
+- !private ["CSo11UITextField", "layoutSubviews"]
+- ["CSo11UITextField", "prepare"]
+- !private ["PSo11UITextInput", "Color"]
+- !private ["PSo11UITextInput", "detailColor"]
+- !private ["PSo11UITextInput", "detailLabel"]
+- !private ["PSo11UITextInput", "init"]
+- ["PSo11UITextInput", "isErrorRevealed"]
+- !private ["PSo11UITextInput", "layoutSubviews"]
+- ["PSo11UITextInput", "prepare"]
+- ["PSo11UITextInput", ""]
+- !private ["PSo17UITextInputTraits", "Color"]
+- !private ["PSo17UITextInputTraits", "detailColor"]
+- !private ["PSo17UITextInputTraits", "detailLabel"]
+- !private ["PSo17UITextInputTraits", "init"]
+- ["PSo17UITextInputTraits", "isErrorRevealed"]
+- !private ["PSo17UITextInputTraits", "layoutSubviews"]
+- ["PSo17UITextInputTraits", "prepare"]
+- ["PSo17UITextInputTraits", ""]
+- !private ["PSo18UITraitEnvironment", "Color"]
+- !private ["PSo18UITraitEnvironment", "detailColor"]
+- !private ["PSo18UITraitEnvironment", "detailLabel"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "isErrorRevealed"]
+- !private ["PSo18UITraitEnvironment", "isHidden"]
+- !private ["PSo18UITraitEnvironment", "layoutSubviews"]
+- ["PSo18UITraitEnvironment", "prepare"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "Color"]
+- !private ["CSo6UIView", "detailColor"]
+- !private ["CSo6UIView", "detailLabel"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "isErrorRevealed"]
+- !private ["CSo6UIView", "isHidden"]
+- !private ["CSo6UIView", "layoutSubviews"]
+- ["CSo6UIView", "prepare"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "Color"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "detailColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "detailLabel"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "isErrorRevealed"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layoutSubviews"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "prepare"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- !private ["Ps26_ExpressibleByColorLiteral", "base"]
+- !private ["Ps26_ExpressibleByColorLiteral", "red"]
+- !private ["Ps9_Hashable", "Color"]
+- !private ["Ps9_Hashable", "base"]
+- !private ["Ps9_Hashable", "detailColor"]
+- !private ["Ps9_Hashable", "detailLabel"]
+- !private ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "isErrorRevealed"]
+- !private ["Ps9_Hashable", "isHidden"]
+- !private ["Ps9_Hashable", "layoutSubviews"]
+- ["Ps9_Hashable", "prepare"]
+- !private ["Ps9_Hashable", "red"]
+- ["Ps9_Hashable", ""]
+- !private ["CC8Material5Color3red", "base"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "PSo15CALayerDelegate"
+- "VSC6CGRect"
+- "Ps7CVarArg"
+- !private "C8Material5Color"
+- !private "P8Material12ColorPalette"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "C8Material14ErrorTextField"
+- "Ps8Hashable"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "Sq"
+- "C8Material9TextField"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo7UIColor"
+- "PSo30UIContentSizeCategoryAdjusting"
+- "CSo9UIControl"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo11UIFocusItem"
+- "PSo10UIKeyInput"
+- "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "CSo11UITextField"
+- "PSo11UITextInput"
+- "PSo17UITextInputTraits"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps26_ExpressibleByColorLiteral"
+- "Ps9_Hashable"
+- !private "CC8Material5Color3red"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Target Support Files/Material/Material-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Intermediates/Pods.build/Debug-iphoneos/Material.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+interface-hash: "85b567463cf50ceb4f9bf7c4fa1c6e47"

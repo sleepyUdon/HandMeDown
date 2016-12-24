@@ -6,99 +6,53 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown20MainTabBarController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
 depends-top-level:
-- "UITabBarController"
 - "MainTabBarController"
+- "UITabBarController"
 depends-member:
-- ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
-- ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
-- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
-- ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - ["C10HandMeDown20MainTabBarController", "deinit"]
-- ["C10HandMeDown20MainTabBarController", "didReceiveMemoryWarning"]
 - ["C10HandMeDown20MainTabBarController", "init"]
-- ["C10HandMeDown20MainTabBarController", "viewDidLoad"]
 - ["CSo7NSCoder", "deinit"]
-- ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "init"]
-- ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
-- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
-- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
-- ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
-- ["CSo8NSObject", "viewDidLoad"]
-- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - ["Sq", "deinit"]
-- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "init"]
-- ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
-- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "init"]
-- ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
-- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "init"]
-- ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
-- ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
-- ["CSo11UIResponder", "viewDidLoad"]
-- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
-- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
-- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "init"]
-- ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - ["CSo18UITabBarController", "deinit"]
-- ["CSo18UITabBarController", "didReceiveMemoryWarning"]
 - ["CSo18UITabBarController", "init"]
-- ["CSo18UITabBarController", "viewDidLoad"]
 - ["CSo18UITabBarController", ""]
-- ["PSo16UITabBarDelegate", "didReceiveMemoryWarning"]
 - !private ["PSo16UITabBarDelegate", "init"]
-- ["PSo16UITabBarDelegate", "viewDidLoad"]
 - ["PSo16UITabBarDelegate", ""]
-- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "init"]
-- ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
-- ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
-- ["CSo16UIViewController", "viewDidLoad"]
-- ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
 depends-nominal:
 - "Ps9AnyObject"
@@ -170,7 +124,36 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFURL.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/Bolts.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Modules/module.modulemap"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
@@ -250,4 +233,4 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
-interface-hash: "73703e0d563557ef37a50950aaca8ef2"
+interface-hash: "442b50127b23fc96bcac374d73191924"
