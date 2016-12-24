@@ -9,8 +9,8 @@ provides-dynamic-lookup:
 - "prepare"
 depends-top-level:
 - "RaisedButton"
-- "AssignmentPrecedence"
 - "Button"
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "cornerRadiusPreset"]

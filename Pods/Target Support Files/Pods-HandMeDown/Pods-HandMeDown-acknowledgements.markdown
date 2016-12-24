@@ -17,23 +17,7 @@ Copyright 2016 Google
 
 Copyright 2016 Google
 
-## FirebaseCrash
-
-Copyright 2016 Google
-
-## FirebaseDatabase
-
-Copyright 2016 Google
-
 ## FirebaseInstanceID
-
-Copyright 2016 Google
-
-## FirebaseRemoteConfig
-
-Copyright 2016 Google
-
-## FirebaseStorage
 
 Copyright 2016 Google
 
@@ -242,10 +226,6 @@ Copyright 2016 Google
    See the License for the specific language governing permissions and
    limitations under the License.
 
-
-## Google-Mobile-Ads-SDK
-
-Copyright 2016 Google
 
 ## GoogleInterchangeUtilities
 

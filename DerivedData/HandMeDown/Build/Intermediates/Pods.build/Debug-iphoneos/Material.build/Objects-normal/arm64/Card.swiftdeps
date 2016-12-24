@@ -6,48 +6,48 @@ provides-nominal:
 provides-member:
 - ["C8Material4Card", ""]
 provides-dynamic-lookup:
-- "contentViewEdgeInsets"
+- "container"
 - "cornerRadius"
-- "reload"
-- "toolbarEdgeInsets"
 - "backgroundColor"
-- "contentView"
-- "contentViewEdgeInsetsPreset"
+- "toolbarEdgeInsets"
+- "shapePreset"
 - "bottomBar"
+- "layoutSubviews"
+- "cornerRadiusPreset"
 - "prepare"
 - "prepare"
 - "bottomBarEdgeInsetsPreset"
-- "layoutSubviews"
-- "bottomBarEdgeInsets"
-- "container"
-- "prepareProperties"
-- "shapePreset"
 - "toolbarEdgeInsetsPreset"
+- "reload"
+- "bottomBarEdgeInsets"
+- "contentViewEdgeInsetsPreset"
+- "prepareProperties"
+- "contentView"
+- "contentViewEdgeInsets"
 - "toolbar"
-- "cornerRadiusPreset"
 depends-top-level:
-- "EdgeInsetsPreset"
-- "Toolbar"
-- "NSCoder"
-- "UIView"
-- !private "-"
-- "CGFloat"
-- "PulseView"
-- "CastingPrecedence"
-- !private "CGSize"
-- "UIColor"
-- "AssignmentPrecedence"
 - !private "=="
-- "Card"
-- "CGRect"
-- "CornerRadiusPreset"
-- "ShapePreset"
 - !private "+"
-- "EdgeInsets"
+- "UIColor"
 - !private "EdgeInsetsPresetToValue"
+- !private "CGSize"
+- "Toolbar"
+- "EdgeInsetsPreset"
+- "PulseView"
+- "UIView"
 - !private "BooleanLiteralType"
-- !private "UILabel"
+- "ShapePreset"
+- "CGRect"
+- "EdgeInsets"
 - "Bar"
+- "CornerRadiusPreset"
+- !private "UILabel"
+- "NSCoder"
+- "AssignmentPrecedence"
+- "CGFloat"
+- "CastingPrecedence"
+- "Card"
+- !private "-"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "greatestFiniteMagnitude"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -61,7 +61,6 @@ depends-member:
 - ["Ps9AnyObject", "bottomBar"]
 - ["Ps9AnyObject", "bottomBarEdgeInsets"]
 - ["Ps9AnyObject", "bottomBarEdgeInsetsPreset"]
-- !private ["Ps9AnyObject", "bounds"]
 - !private ["Ps9AnyObject", "clipsToBounds"]
 - ["Ps9AnyObject", "container"]
 - ["Ps9AnyObject", "contentView"]
@@ -105,7 +104,6 @@ depends-member:
 - ["PSo15CALayerDelegate", "bottomBar"]
 - ["PSo15CALayerDelegate", "bottomBarEdgeInsets"]
 - ["PSo15CALayerDelegate", "bottomBarEdgeInsetsPreset"]
-- !private ["PSo15CALayerDelegate", "bounds"]
 - !private ["PSo15CALayerDelegate", "clipsToBounds"]
 - ["PSo15CALayerDelegate", "container"]
 - ["PSo15CALayerDelegate", "contentView"]
@@ -136,7 +134,6 @@ depends-member:
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "greatestFiniteMagnitude"]
 - ["VSC6CGRect", "deinit"]
-- !private ["VSC6CGRect", "size"]
 - !private ["VSC6CGRect", "zero"]
 - ["VSC6CGSize", "deinit"]
 - !private ["VSC6CGSize", "height"]
@@ -152,7 +149,6 @@ depends-member:
 - ["Ps7CVarArg", "bottomBar"]
 - ["Ps7CVarArg", "bottomBarEdgeInsets"]
 - ["Ps7CVarArg", "bottomBarEdgeInsetsPreset"]
-- !private ["Ps7CVarArg", "bounds"]
 - !private ["Ps7CVarArg", "clipsToBounds"]
 - ["Ps7CVarArg", "container"]
 - ["Ps7CVarArg", "contentView"]
@@ -200,7 +196,6 @@ depends-member:
 - ["C8Material4Card", "bottomBar"]
 - ["C8Material4Card", "bottomBarEdgeInsets"]
 - ["C8Material4Card", "bottomBarEdgeInsetsPreset"]
-- !private ["C8Material4Card", "bounds"]
 - ["C8Material4Card", "container"]
 - ["C8Material4Card", "contentView"]
 - ["C8Material4Card", "contentViewEdgeInsets"]
@@ -209,6 +204,7 @@ depends-member:
 - ["C8Material4Card", "cornerRadiusPreset"]
 - ["C8Material4Card", "deinit"]
 - !private ["C8Material4Card", "depthPreset"]
+- !private ["C8Material4Card", "height"]
 - ["C8Material4Card", "init"]
 - ["C8Material4Card", "layoutSubviews"]
 - ["C8Material4Card", "prepare"]
@@ -235,7 +231,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "bottomBar"]
 - ["Ps28CustomDebugStringConvertible", "bottomBarEdgeInsets"]
 - ["Ps28CustomDebugStringConvertible", "bottomBarEdgeInsetsPreset"]
-- !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - !private ["Ps28CustomDebugStringConvertible", "clipsToBounds"]
 - ["Ps28CustomDebugStringConvertible", "container"]
 - ["Ps28CustomDebugStringConvertible", "contentView"]
@@ -254,7 +249,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "reload"]
 - !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
 - ["Ps28CustomDebugStringConvertible", "shapePreset"]
-- !private ["Ps28CustomDebugStringConvertible", "size"]
 - !private ["Ps28CustomDebugStringConvertible", "sizeThatFits"]
 - !private ["Ps28CustomDebugStringConvertible", "sizeToFit"]
 - ["Ps28CustomDebugStringConvertible", "toolbar"]
@@ -268,13 +262,11 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "height"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "size"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "zero"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "greatestFiniteMagnitude"]
 - !private ["Ps17CustomReflectable", "height"]
 - !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps17CustomReflectable", "size"]
 - !private ["Ps17CustomReflectable", "zero"]
 - !private ["Ps23CustomStringConvertible", "CGFloat"]
 - !private ["Ps23CustomStringConvertible", "CGSize"]
@@ -288,7 +280,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "bottomBar"]
 - ["Ps23CustomStringConvertible", "bottomBarEdgeInsets"]
 - ["Ps23CustomStringConvertible", "bottomBarEdgeInsetsPreset"]
-- !private ["Ps23CustomStringConvertible", "bounds"]
 - !private ["Ps23CustomStringConvertible", "clipsToBounds"]
 - ["Ps23CustomStringConvertible", "container"]
 - ["Ps23CustomStringConvertible", "contentView"]
@@ -334,7 +325,6 @@ depends-member:
 - ["Ps9Equatable", "bottomBar"]
 - ["Ps9Equatable", "bottomBarEdgeInsets"]
 - ["Ps9Equatable", "bottomBarEdgeInsetsPreset"]
-- !private ["Ps9Equatable", "bounds"]
 - !private ["Ps9Equatable", "clipsToBounds"]
 - ["Ps9Equatable", "container"]
 - ["Ps9Equatable", "contentView"]
@@ -359,7 +349,6 @@ depends-member:
 - !private ["Ps9Equatable", "removeFromSuperview"]
 - !private ["Ps9Equatable", "right"]
 - ["Ps9Equatable", "shapePreset"]
-- !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "sizeThatFits"]
 - !private ["Ps9Equatable", "sizeToFit"]
 - ["Ps9Equatable", "toolbar"]
@@ -387,7 +376,6 @@ depends-member:
 - ["Ps8Hashable", "bottomBar"]
 - ["Ps8Hashable", "bottomBarEdgeInsets"]
 - ["Ps8Hashable", "bottomBarEdgeInsetsPreset"]
-- !private ["Ps8Hashable", "bounds"]
 - !private ["Ps8Hashable", "clipsToBounds"]
 - ["Ps8Hashable", "container"]
 - ["Ps8Hashable", "contentView"]
@@ -432,7 +420,6 @@ depends-member:
 - ["PSo8NSCoding", "bottomBar"]
 - ["PSo8NSCoding", "bottomBarEdgeInsets"]
 - ["PSo8NSCoding", "bottomBarEdgeInsetsPreset"]
-- !private ["PSo8NSCoding", "bounds"]
 - !private ["PSo8NSCoding", "clipsToBounds"]
 - ["PSo8NSCoding", "container"]
 - ["PSo8NSCoding", "contentView"]
@@ -479,7 +466,6 @@ depends-member:
 - ["CSo8NSObject", "bottomBar"]
 - ["CSo8NSObject", "bottomBarEdgeInsets"]
 - ["CSo8NSObject", "bottomBarEdgeInsetsPreset"]
-- !private ["CSo8NSObject", "bounds"]
 - !private ["CSo8NSObject", "clipsToBounds"]
 - ["CSo8NSObject", "container"]
 - ["CSo8NSObject", "contentView"]
@@ -517,7 +503,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "bottomBar"]
 - ["PSo16NSObjectProtocol", "bottomBarEdgeInsets"]
 - ["PSo16NSObjectProtocol", "bottomBarEdgeInsetsPreset"]
-- !private ["PSo16NSObjectProtocol", "bounds"]
 - !private ["PSo16NSObjectProtocol", "clipsToBounds"]
 - ["PSo16NSObjectProtocol", "container"]
 - ["PSo16NSObjectProtocol", "contentView"]
@@ -567,7 +552,6 @@ depends-member:
 - ["C8Material9PulseView", "bottomBar"]
 - ["C8Material9PulseView", "bottomBarEdgeInsets"]
 - ["C8Material9PulseView", "bottomBarEdgeInsetsPreset"]
-- !private ["C8Material9PulseView", "bounds"]
 - ["C8Material9PulseView", "container"]
 - ["C8Material9PulseView", "contentView"]
 - ["C8Material9PulseView", "contentViewEdgeInsets"]
@@ -576,6 +560,7 @@ depends-member:
 - ["C8Material9PulseView", "cornerRadiusPreset"]
 - ["C8Material9PulseView", "deinit"]
 - !private ["C8Material9PulseView", "depthPreset"]
+- !private ["C8Material9PulseView", "height"]
 - ["C8Material9PulseView", "init"]
 - ["C8Material9PulseView", "layoutSubviews"]
 - ["C8Material9PulseView", "prepare"]
@@ -600,7 +585,6 @@ depends-member:
 - ["P8Material9Pulseable", "bottomBar"]
 - ["P8Material9Pulseable", "bottomBarEdgeInsets"]
 - ["P8Material9Pulseable", "bottomBarEdgeInsetsPreset"]
-- !private ["P8Material9Pulseable", "bounds"]
 - ["P8Material9Pulseable", "container"]
 - ["P8Material9Pulseable", "contentView"]
 - ["P8Material9Pulseable", "contentViewEdgeInsets"]
@@ -608,6 +592,7 @@ depends-member:
 - ["P8Material9Pulseable", "cornerRadius"]
 - ["P8Material9Pulseable", "cornerRadiusPreset"]
 - !private ["P8Material9Pulseable", "depthPreset"]
+- !private ["P8Material9Pulseable", "height"]
 - ["P8Material9Pulseable", "init"]
 - ["P8Material9Pulseable", "layoutSubviews"]
 - ["P8Material9Pulseable", "prepare"]
@@ -640,7 +625,6 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "bottomBar"]
 - ["PSo29UIAccessibilityIdentification", "bottomBarEdgeInsets"]
 - ["PSo29UIAccessibilityIdentification", "bottomBarEdgeInsetsPreset"]
-- !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
 - ["PSo29UIAccessibilityIdentification", "container"]
 - ["PSo29UIAccessibilityIdentification", "contentView"]
@@ -679,7 +663,6 @@ depends-member:
 - ["PSo12UIAppearance", "bottomBar"]
 - ["PSo12UIAppearance", "bottomBarEdgeInsets"]
 - ["PSo12UIAppearance", "bottomBarEdgeInsetsPreset"]
-- !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "clipsToBounds"]
 - ["PSo12UIAppearance", "container"]
 - ["PSo12UIAppearance", "contentView"]
@@ -718,7 +701,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "bottomBar"]
 - ["PSo21UIAppearanceContainer", "bottomBarEdgeInsets"]
 - ["PSo21UIAppearanceContainer", "bottomBarEdgeInsetsPreset"]
-- !private ["PSo21UIAppearanceContainer", "bounds"]
 - !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
 - ["PSo21UIAppearanceContainer", "container"]
 - ["PSo21UIAppearanceContainer", "contentView"]
@@ -758,7 +740,6 @@ depends-member:
 - ["PSo17UICoordinateSpace", "bottomBar"]
 - ["PSo17UICoordinateSpace", "bottomBarEdgeInsets"]
 - ["PSo17UICoordinateSpace", "bottomBarEdgeInsetsPreset"]
-- !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "clipsToBounds"]
 - ["PSo17UICoordinateSpace", "container"]
 - ["PSo17UICoordinateSpace", "contentView"]
@@ -797,7 +778,6 @@ depends-member:
 - ["PSo13UIDynamicItem", "bottomBar"]
 - ["PSo13UIDynamicItem", "bottomBarEdgeInsets"]
 - ["PSo13UIDynamicItem", "bottomBarEdgeInsetsPreset"]
-- !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "clipsToBounds"]
 - ["PSo13UIDynamicItem", "container"]
 - ["PSo13UIDynamicItem", "contentView"]
@@ -842,7 +822,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "bottomBar"]
 - ["PSo18UIFocusEnvironment", "bottomBarEdgeInsets"]
 - ["PSo18UIFocusEnvironment", "bottomBarEdgeInsetsPreset"]
-- !private ["PSo18UIFocusEnvironment", "bounds"]
 - !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
 - ["PSo18UIFocusEnvironment", "container"]
 - ["PSo18UIFocusEnvironment", "contentView"]
@@ -881,7 +860,6 @@ depends-member:
 - ["PSo11UIFocusItem", "bottomBar"]
 - ["PSo11UIFocusItem", "bottomBarEdgeInsets"]
 - ["PSo11UIFocusItem", "bottomBarEdgeInsetsPreset"]
-- !private ["PSo11UIFocusItem", "bounds"]
 - !private ["PSo11UIFocusItem", "clipsToBounds"]
 - ["PSo11UIFocusItem", "container"]
 - ["PSo11UIFocusItem", "contentView"]
@@ -930,7 +908,6 @@ depends-member:
 - ["CSo11UIResponder", "bottomBar"]
 - ["CSo11UIResponder", "bottomBarEdgeInsets"]
 - ["CSo11UIResponder", "bottomBarEdgeInsetsPreset"]
-- !private ["CSo11UIResponder", "bounds"]
 - !private ["CSo11UIResponder", "clipsToBounds"]
 - ["CSo11UIResponder", "container"]
 - ["CSo11UIResponder", "contentView"]
@@ -968,7 +945,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "bottomBar"]
 - ["PSo30UIResponderStandardEditActions", "bottomBarEdgeInsets"]
 - ["PSo30UIResponderStandardEditActions", "bottomBarEdgeInsetsPreset"]
-- !private ["PSo30UIResponderStandardEditActions", "bounds"]
 - !private ["PSo30UIResponderStandardEditActions", "clipsToBounds"]
 - ["PSo30UIResponderStandardEditActions", "container"]
 - ["PSo30UIResponderStandardEditActions", "contentView"]
@@ -1007,7 +983,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "bottomBar"]
 - ["PSo18UITraitEnvironment", "bottomBarEdgeInsets"]
 - ["PSo18UITraitEnvironment", "bottomBarEdgeInsetsPreset"]
-- !private ["PSo18UITraitEnvironment", "bounds"]
 - !private ["PSo18UITraitEnvironment", "clipsToBounds"]
 - ["PSo18UITraitEnvironment", "container"]
 - ["PSo18UITraitEnvironment", "contentView"]
@@ -1054,7 +1029,6 @@ depends-member:
 - ["CSo6UIView", "bottomBar"]
 - ["CSo6UIView", "bottomBarEdgeInsets"]
 - ["CSo6UIView", "bottomBarEdgeInsetsPreset"]
-- !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "clipsToBounds"]
 - ["CSo6UIView", "container"]
 - ["CSo6UIView", "contentView"]
@@ -1101,7 +1075,6 @@ depends-member:
 - ["C8Material4View", "bottomBar"]
 - ["C8Material4View", "bottomBarEdgeInsets"]
 - ["C8Material4View", "bottomBarEdgeInsetsPreset"]
-- !private ["C8Material4View", "bounds"]
 - ["C8Material4View", "container"]
 - ["C8Material4View", "contentView"]
 - ["C8Material4View", "contentViewEdgeInsets"]
@@ -1109,6 +1082,7 @@ depends-member:
 - ["C8Material4View", "cornerRadius"]
 - ["C8Material4View", "cornerRadiusPreset"]
 - !private ["C8Material4View", "depthPreset"]
+- !private ["C8Material4View", "height"]
 - ["C8Material4View", "init"]
 - ["C8Material4View", "layoutSubviews"]
 - ["C8Material4View", "prepare"]
@@ -1135,7 +1109,6 @@ depends-member:
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "bottomBar"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "bottomBarEdgeInsets"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "bottomBarEdgeInsetsPreset"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bounds"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "clipsToBounds"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "container"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentView"]
@@ -1176,7 +1149,6 @@ depends-member:
 - ["Ps9_Hashable", "bottomBar"]
 - ["Ps9_Hashable", "bottomBarEdgeInsets"]
 - ["Ps9_Hashable", "bottomBarEdgeInsetsPreset"]
-- !private ["Ps9_Hashable", "bounds"]
 - !private ["Ps9_Hashable", "clipsToBounds"]
 - ["Ps9_Hashable", "container"]
 - ["Ps9_Hashable", "contentView"]
@@ -1215,7 +1187,6 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "left"]
 - !private ["Ps21_ObjectiveCBridgeable", "right"]
-- !private ["Ps21_ObjectiveCBridgeable", "size"]
 - !private ["Ps21_ObjectiveCBridgeable", "top"]
 - ["Ps21_ObjectiveCBridgeable", "zero"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]

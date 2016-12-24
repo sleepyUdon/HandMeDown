@@ -10,8 +10,8 @@ provides-member:
 - ["VSC8UIOffset", "asSize"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Offset"
 - "UIOffset"
+- "Offset"
 - "CGSize"
 depends-member:
 - ["V12CoreGraphics7CGFloat", "deinit"]

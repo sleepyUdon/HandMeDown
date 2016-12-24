@@ -70,11 +70,6 @@
         },
         {
           'type': 'file',
-          'name': "GTMLogger.h",
-          'external-contents': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/GoogleToolboxForMac/Foundation/GTMLogger.h"
-        },
-        {
-          'type': 'file',
           'name': "GTMMethodCheck.h",
           'external-contents': "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/GoogleToolboxForMac/DebugUtils/GTMMethodCheck.h"
         },

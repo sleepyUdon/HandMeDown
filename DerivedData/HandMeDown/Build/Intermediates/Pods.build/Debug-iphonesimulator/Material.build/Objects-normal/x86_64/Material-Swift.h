@@ -168,6 +168,7 @@ enum Gravity : NSInteger;
 
 SWIFT_CLASS("_TtC8Material4View")
 @interface View : UIView
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
 /**
   A CAShapeLayer used to manage elements that would be affected by
   the clipToBounds property of the backing layer. For example, this

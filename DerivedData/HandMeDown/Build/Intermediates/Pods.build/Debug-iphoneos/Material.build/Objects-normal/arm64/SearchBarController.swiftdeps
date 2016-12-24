@@ -14,19 +14,19 @@ provides-dynamic-lookup:
 - "layoutSubviews"
 - "prepare"
 depends-top-level:
-- !private "Application"
-- !private "-"
-- "StatusBarController"
-- "TernaryPrecedence"
-- "SearchBarController"
 - "SearchBar"
+- "StatusBarController"
+- !private "-"
+- "SearchBarController"
 - !private "!="
+- !private "Application"
 - !private "||"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
+- "TernaryPrecedence"
 - "Display"
 - "UIViewController"
 - !private "+"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Application"]
 - ["Ps9AnyObject", "Display"]

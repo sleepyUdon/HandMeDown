@@ -11,15 +11,15 @@ provides-dynamic-lookup:
 - "presenterViewEdgeInsets"
 - "reload"
 depends-top-level:
-- !private "CGFloat"
-- "UIView"
-- "Card"
-- "AssignmentPrecedence"
-- !private "EdgeInsetsPresetToValue"
-- "PresenterCard"
 - !private "BooleanLiteralType"
-- "EdgeInsets"
+- "PresenterCard"
+- !private "EdgeInsetsPresetToValue"
+- "Card"
 - "EdgeInsetsPreset"
+- "EdgeInsets"
+- "UIView"
+- "AssignmentPrecedence"
+- !private "CGFloat"
 depends-member:
 - ["Ps9AnyObject", "EdgeInsets"]
 - ["Ps9AnyObject", "EdgeInsetsPreset"]
@@ -27,7 +27,6 @@ depends-member:
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "bottomBar"]
 - !private ["Ps9AnyObject", "bottomBarEdgeInsets"]
-- !private ["Ps9AnyObject", "bounds"]
 - !private ["Ps9AnyObject", "clipsToBounds"]
 - !private ["Ps9AnyObject", "container"]
 - !private ["Ps9AnyObject", "contentView"]
@@ -52,7 +51,6 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "addSubview"]
 - !private ["PSo15CALayerDelegate", "bottomBar"]
 - !private ["PSo15CALayerDelegate", "bottomBarEdgeInsets"]
-- !private ["PSo15CALayerDelegate", "bounds"]
 - !private ["PSo15CALayerDelegate", "clipsToBounds"]
 - !private ["PSo15CALayerDelegate", "container"]
 - !private ["PSo15CALayerDelegate", "contentView"]
@@ -71,15 +69,12 @@ depends-member:
 - ["PSo15CALayerDelegate", ""]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - ["VSC6CGRect", "deinit"]
-- !private ["VSC6CGRect", "size"]
-- !private ["VSC6CGSize", "height"]
 - ["Ps7CVarArg", "EdgeInsets"]
 - ["Ps7CVarArg", "EdgeInsetsPreset"]
 - !private ["Ps7CVarArg", "EdgeInsetsPresetToValue"]
 - !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "bottomBar"]
 - !private ["Ps7CVarArg", "bottomBarEdgeInsets"]
-- !private ["Ps7CVarArg", "bounds"]
 - !private ["Ps7CVarArg", "clipsToBounds"]
 - !private ["Ps7CVarArg", "container"]
 - !private ["Ps7CVarArg", "contentView"]
@@ -103,11 +98,11 @@ depends-member:
 - ["C8Material4Card", "UIView"]
 - !private ["C8Material4Card", "bottomBar"]
 - !private ["C8Material4Card", "bottomBarEdgeInsets"]
-- !private ["C8Material4Card", "bounds"]
 - !private ["C8Material4Card", "container"]
 - !private ["C8Material4Card", "contentView"]
 - !private ["C8Material4Card", "contentViewEdgeInsets"]
 - ["C8Material4Card", "deinit"]
+- !private ["C8Material4Card", "height"]
 - ["C8Material4Card", "init"]
 - !private ["C8Material4Card", "layoutSubviews"]
 - !private ["C8Material4Card", "prepare"]
@@ -124,7 +119,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "bottomBar"]
 - !private ["Ps28CustomDebugStringConvertible", "bottomBarEdgeInsets"]
-- !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - !private ["Ps28CustomDebugStringConvertible", "clipsToBounds"]
 - !private ["Ps28CustomDebugStringConvertible", "container"]
 - !private ["Ps28CustomDebugStringConvertible", "contentView"]
@@ -138,21 +132,15 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "presenterViewEdgeInsetsPreset"]
 - ["Ps28CustomDebugStringConvertible", "reload"]
 - !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
-- !private ["Ps28CustomDebugStringConvertible", "size"]
 - !private ["Ps28CustomDebugStringConvertible", "toolbar"]
 - !private ["Ps28CustomDebugStringConvertible", "toolbarEdgeInsets"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "height"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "size"]
-- !private ["Ps17CustomReflectable", "height"]
-- !private ["Ps17CustomReflectable", "size"]
 - ["Ps23CustomStringConvertible", "EdgeInsets"]
 - ["Ps23CustomStringConvertible", "EdgeInsetsPreset"]
 - !private ["Ps23CustomStringConvertible", "EdgeInsetsPresetToValue"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "bottomBar"]
 - !private ["Ps23CustomStringConvertible", "bottomBarEdgeInsets"]
-- !private ["Ps23CustomStringConvertible", "bounds"]
 - !private ["Ps23CustomStringConvertible", "clipsToBounds"]
 - !private ["Ps23CustomStringConvertible", "container"]
 - !private ["Ps23CustomStringConvertible", "contentView"]
@@ -177,7 +165,6 @@ depends-member:
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "bottomBar"]
 - !private ["Ps9Equatable", "bottomBarEdgeInsets"]
-- !private ["Ps9Equatable", "bounds"]
 - !private ["Ps9Equatable", "clipsToBounds"]
 - !private ["Ps9Equatable", "container"]
 - !private ["Ps9Equatable", "contentView"]
@@ -192,7 +179,6 @@ depends-member:
 - ["Ps9Equatable", "presenterViewEdgeInsetsPreset"]
 - ["Ps9Equatable", "reload"]
 - !private ["Ps9Equatable", "removeFromSuperview"]
-- !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "toolbar"]
 - !private ["Ps9Equatable", "toolbarEdgeInsets"]
 - ["Ps9Equatable", "zero"]
@@ -203,7 +189,6 @@ depends-member:
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "bottomBar"]
 - !private ["Ps8Hashable", "bottomBarEdgeInsets"]
-- !private ["Ps8Hashable", "bounds"]
 - !private ["Ps8Hashable", "clipsToBounds"]
 - !private ["Ps8Hashable", "container"]
 - !private ["Ps8Hashable", "contentView"]
@@ -228,7 +213,6 @@ depends-member:
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "bottomBar"]
 - !private ["PSo8NSCoding", "bottomBarEdgeInsets"]
-- !private ["PSo8NSCoding", "bounds"]
 - !private ["PSo8NSCoding", "clipsToBounds"]
 - !private ["PSo8NSCoding", "container"]
 - !private ["PSo8NSCoding", "contentView"]
@@ -253,7 +237,6 @@ depends-member:
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "bottomBar"]
 - !private ["CSo8NSObject", "bottomBarEdgeInsets"]
-- !private ["CSo8NSObject", "bounds"]
 - !private ["CSo8NSObject", "clipsToBounds"]
 - !private ["CSo8NSObject", "container"]
 - !private ["CSo8NSObject", "contentView"]
@@ -275,7 +258,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "bottomBar"]
 - !private ["PSo16NSObjectProtocol", "bottomBarEdgeInsets"]
-- !private ["PSo16NSObjectProtocol", "bounds"]
 - !private ["PSo16NSObjectProtocol", "clipsToBounds"]
 - !private ["PSo16NSObjectProtocol", "container"]
 - !private ["PSo16NSObjectProtocol", "contentView"]
@@ -300,11 +282,11 @@ depends-member:
 - ["C8Material13PresenterCard", "UIView"]
 - !private ["C8Material13PresenterCard", "bottomBar"]
 - !private ["C8Material13PresenterCard", "bottomBarEdgeInsets"]
-- !private ["C8Material13PresenterCard", "bounds"]
 - !private ["C8Material13PresenterCard", "container"]
 - !private ["C8Material13PresenterCard", "contentView"]
 - !private ["C8Material13PresenterCard", "contentViewEdgeInsets"]
 - ["C8Material13PresenterCard", "deinit"]
+- !private ["C8Material13PresenterCard", "height"]
 - ["C8Material13PresenterCard", "init"]
 - !private ["C8Material13PresenterCard", "layoutSubviews"]
 - !private ["C8Material13PresenterCard", "prepare"]
@@ -321,10 +303,10 @@ depends-member:
 - ["C8Material9PulseView", "UIView"]
 - !private ["C8Material9PulseView", "bottomBar"]
 - !private ["C8Material9PulseView", "bottomBarEdgeInsets"]
-- !private ["C8Material9PulseView", "bounds"]
 - !private ["C8Material9PulseView", "container"]
 - !private ["C8Material9PulseView", "contentView"]
 - !private ["C8Material9PulseView", "contentViewEdgeInsets"]
+- !private ["C8Material9PulseView", "height"]
 - ["C8Material9PulseView", "init"]
 - !private ["C8Material9PulseView", "layoutSubviews"]
 - !private ["C8Material9PulseView", "prepare"]
@@ -339,10 +321,10 @@ depends-member:
 - !private ["P8Material9Pulseable", "EdgeInsetsPresetToValue"]
 - !private ["P8Material9Pulseable", "bottomBar"]
 - !private ["P8Material9Pulseable", "bottomBarEdgeInsets"]
-- !private ["P8Material9Pulseable", "bounds"]
 - !private ["P8Material9Pulseable", "container"]
 - !private ["P8Material9Pulseable", "contentView"]
 - !private ["P8Material9Pulseable", "contentViewEdgeInsets"]
+- !private ["P8Material9Pulseable", "height"]
 - !private ["P8Material9Pulseable", "init"]
 - !private ["P8Material9Pulseable", "layoutSubviews"]
 - !private ["P8Material9Pulseable", "prepare"]
@@ -361,7 +343,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "bottomBar"]
 - !private ["PSo29UIAccessibilityIdentification", "bottomBarEdgeInsets"]
-- !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
 - !private ["PSo29UIAccessibilityIdentification", "container"]
 - !private ["PSo29UIAccessibilityIdentification", "contentView"]
@@ -384,7 +365,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "bottomBar"]
 - !private ["PSo12UIAppearance", "bottomBarEdgeInsets"]
-- !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "clipsToBounds"]
 - !private ["PSo12UIAppearance", "container"]
 - !private ["PSo12UIAppearance", "contentView"]
@@ -407,7 +387,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "bottomBar"]
 - !private ["PSo21UIAppearanceContainer", "bottomBarEdgeInsets"]
-- !private ["PSo21UIAppearanceContainer", "bounds"]
 - !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
 - !private ["PSo21UIAppearanceContainer", "container"]
 - !private ["PSo21UIAppearanceContainer", "contentView"]
@@ -430,7 +409,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "bottomBar"]
 - !private ["PSo17UICoordinateSpace", "bottomBarEdgeInsets"]
-- !private ["PSo17UICoordinateSpace", "bounds"]
 - !private ["PSo17UICoordinateSpace", "clipsToBounds"]
 - !private ["PSo17UICoordinateSpace", "container"]
 - !private ["PSo17UICoordinateSpace", "contentView"]
@@ -453,7 +431,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "bottomBar"]
 - !private ["PSo13UIDynamicItem", "bottomBarEdgeInsets"]
-- !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "clipsToBounds"]
 - !private ["PSo13UIDynamicItem", "container"]
 - !private ["PSo13UIDynamicItem", "contentView"]
@@ -478,7 +455,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "bottomBar"]
 - !private ["PSo18UIFocusEnvironment", "bottomBarEdgeInsets"]
-- !private ["PSo18UIFocusEnvironment", "bounds"]
 - !private ["PSo18UIFocusEnvironment", "clipsToBounds"]
 - !private ["PSo18UIFocusEnvironment", "container"]
 - !private ["PSo18UIFocusEnvironment", "contentView"]
@@ -501,7 +477,6 @@ depends-member:
 - !private ["PSo11UIFocusItem", "addSubview"]
 - !private ["PSo11UIFocusItem", "bottomBar"]
 - !private ["PSo11UIFocusItem", "bottomBarEdgeInsets"]
-- !private ["PSo11UIFocusItem", "bounds"]
 - !private ["PSo11UIFocusItem", "clipsToBounds"]
 - !private ["PSo11UIFocusItem", "container"]
 - !private ["PSo11UIFocusItem", "contentView"]
@@ -526,7 +501,6 @@ depends-member:
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "bottomBar"]
 - !private ["CSo11UIResponder", "bottomBarEdgeInsets"]
-- !private ["CSo11UIResponder", "bounds"]
 - !private ["CSo11UIResponder", "clipsToBounds"]
 - !private ["CSo11UIResponder", "container"]
 - !private ["CSo11UIResponder", "contentView"]
@@ -548,7 +522,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
 - !private ["PSo30UIResponderStandardEditActions", "bottomBar"]
 - !private ["PSo30UIResponderStandardEditActions", "bottomBarEdgeInsets"]
-- !private ["PSo30UIResponderStandardEditActions", "bounds"]
 - !private ["PSo30UIResponderStandardEditActions", "clipsToBounds"]
 - !private ["PSo30UIResponderStandardEditActions", "container"]
 - !private ["PSo30UIResponderStandardEditActions", "contentView"]
@@ -571,7 +544,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "bottomBar"]
 - !private ["PSo18UITraitEnvironment", "bottomBarEdgeInsets"]
-- !private ["PSo18UITraitEnvironment", "bounds"]
 - !private ["PSo18UITraitEnvironment", "clipsToBounds"]
 - !private ["PSo18UITraitEnvironment", "container"]
 - !private ["PSo18UITraitEnvironment", "contentView"]
@@ -596,7 +568,6 @@ depends-member:
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "bottomBar"]
 - !private ["CSo6UIView", "bottomBarEdgeInsets"]
-- !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "clipsToBounds"]
 - !private ["CSo6UIView", "container"]
 - !private ["CSo6UIView", "contentView"]
@@ -620,10 +591,10 @@ depends-member:
 - ["C8Material4View", "UIView"]
 - !private ["C8Material4View", "bottomBar"]
 - !private ["C8Material4View", "bottomBarEdgeInsets"]
-- !private ["C8Material4View", "bounds"]
 - !private ["C8Material4View", "container"]
 - !private ["C8Material4View", "contentView"]
 - !private ["C8Material4View", "contentViewEdgeInsets"]
+- !private ["C8Material4View", "height"]
 - ["C8Material4View", "init"]
 - !private ["C8Material4View", "layoutSubviews"]
 - !private ["C8Material4View", "prepare"]
@@ -639,7 +610,6 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bottomBar"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bottomBarEdgeInsets"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "bounds"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "clipsToBounds"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "container"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentView"]
@@ -662,7 +632,6 @@ depends-member:
 - !private ["Ps9_Hashable", "addSubview"]
 - !private ["Ps9_Hashable", "bottomBar"]
 - !private ["Ps9_Hashable", "bottomBarEdgeInsets"]
-- !private ["Ps9_Hashable", "bounds"]
 - !private ["Ps9_Hashable", "clipsToBounds"]
 - !private ["Ps9_Hashable", "container"]
 - !private ["Ps9_Hashable", "contentView"]
@@ -680,8 +649,6 @@ depends-member:
 - !private ["Ps9_Hashable", "toolbar"]
 - !private ["Ps9_Hashable", "toolbarEdgeInsets"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps21_ObjectiveCBridgeable", "height"]
-- !private ["Ps21_ObjectiveCBridgeable", "size"]
 - ["Ps21_ObjectiveCBridgeable", "zero"]
 depends-nominal:
 - "Ps9AnyObject"
@@ -690,12 +657,9 @@ depends-nominal:
 - "PSo15CALayerDelegate"
 - "V12CoreGraphics7CGFloat"
 - "VSC6CGRect"
-- !private "VSC6CGSize"
 - "Ps7CVarArg"
 - "C8Material4Card"
 - "Ps28CustomDebugStringConvertible"
-- !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "O8Material16EdgeInsetsPreset"
 - "Ps9Equatable"

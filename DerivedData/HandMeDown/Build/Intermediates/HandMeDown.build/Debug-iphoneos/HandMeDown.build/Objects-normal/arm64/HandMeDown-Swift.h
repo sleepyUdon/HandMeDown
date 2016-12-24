@@ -116,26 +116,30 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
-@import ObjectiveC;
 @import Foundation;
+@import ObjectiveC;
 @import RealmSwift;
 @import CoreGraphics;
+@import FBSDKLoginKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
 @class UIApplication;
+@class NSURL;
 
 SWIFT_CLASS("_TtC10HandMeDown11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions;
+- (BOOL)application:(UIApplication * _Nonnull)application openURL:(NSURL * _Nonnull)url sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id _Nonnull)annotation;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
+- (BOOL)applicationWithApplication:(UIApplication * _Nonnull)application openURL:(NSURL * _Nonnull)url sourceApplication:(NSString * _Nullable)sourceApplication annotation:(id _Nonnull)annotation;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -238,19 +242,24 @@ SWIFT_CLASS("_TtC10HandMeDown4Item")
 - (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class FIRUser;
-@class UITextField;
+@class FBSDKLoginButton;
+@class FBSDKLoginManagerLoginResult;
 
-SWIFT_CLASS_NAMED("LoginViewController")
-@interface SignInViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailField;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
-- (void)viewDidAppear:(BOOL)animated;
-- (IBAction)handleSigninButton:(UIButton * _Nonnull)sender;
-- (IBAction)handleCreateAccountButton:(UIButton * _Nonnull)sender;
-- (void)setDisplayName:(FIRUser * _Nonnull)user;
-- (IBAction)didRequestPasswordReset:(id _Nonnull)sender;
-- (void)signedIn:(FIRUser * _Nullable)user;
+SWIFT_CLASS("_TtC10HandMeDown19LoginViewController")
+@interface LoginViewController : UIViewController <FBSDKLoginButtonDelegate>
+@property (nonatomic, strong) FBSDKLoginButton * _Nonnull loginButton;
+- (void)viewDidLoad;
+- (void)loginButton:(FBSDKLoginButton * _Null_unspecified)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult * _Null_unspecified)result error:(NSError * _Null_unspecified)error;
+- (void)loginButtonDidLogOut:(FBSDKLoginButton * _Null_unspecified)loginButton;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10HandMeDown20MainTabBarController")
+@interface MainTabBarController : UITabBarController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -282,7 +291,14 @@ SWIFT_CLASS("_TtC10HandMeDown20MyStuffTableViewCell")
 SWIFT_CLASS("_TtC10HandMeDown21MyStuffViewController")
 @interface MyStuffViewController : UIViewController <UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+/**
+  MARK: ViewDidLoad
+*/
 - (void)viewDidLoad;
+/**
+  MARK: ViewWillAppear
+*/
+- (void)viewWillAppear:(BOOL)animated;
 /**
   MARK: TableView DataSource
 */
@@ -294,6 +310,7 @@ SWIFT_CLASS("_TtC10HandMeDown21MyStuffViewController")
 @end
 
 @class UIImagePickerController;
+@class UITextField;
 @class Button;
 @class UIView;
 @class UITextView;

@@ -6,28 +6,28 @@ provides-nominal:
 provides-member:
 - ["C8Material9PulseView", ""]
 provides-dynamic-lookup:
-- "touchesBegan"
-- "pulseOpacity"
 - "prepare"
-- "touchesCancelled"
-- "touchesEnded"
 - "pulseAnimation"
 - "pulseColor"
+- "touchesBegan"
+- "touchesEnded"
+- "touchesCancelled"
+- "pulseOpacity"
 depends-top-level:
-- "CGFloat"
-- !private "??"
-- "UITouch"
+- "Pulse"
 - "View"
 - "UIEvent"
-- "AssignmentPrecedence"
-- "Pulse"
-- !private "Motion"
-- "Pulseable"
-- "CGPoint"
-- "Set"
-- "PulseView"
 - "PulseAnimation"
 - "UIColor"
+- "Set"
+- "CGPoint"
+- "PulseView"
+- !private "??"
+- !private "Motion"
+- "Pulseable"
+- "UITouch"
+- "AssignmentPrecedence"
+- "CGFloat"
 depends-member:
 - !private ["Ps9AnyObject", "Motion"]
 - !private ["Ps9AnyObject", "Pulse"]
@@ -67,6 +67,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "visualLayer"]
 - ["PSo15CALayerDelegate", ""]
 - !private ["PSo13CAMediaTiming", "convert"]
+- !private ["CSo12CAShapeLayer", "deinit"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - ["VSC7CGPoint", "deinit"]
 - ["VSC6CGRect", "deinit"]
@@ -555,6 +556,7 @@ depends-nominal:
 - "CSo7CALayer"
 - "PSo15CALayerDelegate"
 - !private "PSo13CAMediaTiming"
+- !private "CSo12CAShapeLayer"
 - "V12CoreGraphics7CGFloat"
 - "VSC7CGPoint"
 - "VSC6CGRect"

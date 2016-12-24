@@ -9,14 +9,14 @@ provides-member:
 - ["VV8Material4Icon2cm", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Icon"
 - "String"
 - "Bundle"
-- !private "=="
-- "AssignmentPrecedence"
-- "UIImage"
+- "Icon"
 - "StringLiteralType"
 - !private "View"
+- "UIImage"
+- !private "=="
+- "AssignmentPrecedence"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "resourceURL"]

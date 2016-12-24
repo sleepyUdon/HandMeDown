@@ -6,29 +6,29 @@ provides-nominal:
 provides-member:
 - ["C8Material5Layer", ""]
 provides-dynamic-lookup:
+- "image"
 - "prepareVisualLayer"
 - "layoutVisualLayer"
-- "contentsCenter"
 - "cornerRadius"
 - "layoutSublayers"
-- "contentsRect"
-- "visualLayer"
 - "contentsScale"
-- "contentsGravity"
+- "contentsCenter"
 - "contentsGravityPreset"
-- "image"
+- "visualLayer"
+- "contentsRect"
+- "contentsGravity"
 depends-top-level:
 - "CGRect"
-- "CGFloat"
-- "Gravity"
-- "Layer"
-- !private "GravityToValue"
-- "CAShapeLayer"
-- "AssignmentPrecedence"
-- "NSCoder"
-- "String"
 - !private "BooleanLiteralType"
+- "NSCoder"
+- "CAShapeLayer"
 - "UIImage"
+- !private "GravityToValue"
+- "Gravity"
+- "AssignmentPrecedence"
+- "CGFloat"
+- "Layer"
+- "String"
 depends-member:
 - ["Ps9AnyObject", "CAShapeLayer"]
 - !private ["Ps9AnyObject", "GravityToValue"]
@@ -488,4 +488,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
-interface-hash: "8fec6aca86475dc204080686b941ecda"
+interface-hash: "cbc3351f9980207158c05ba44dbe97f4"

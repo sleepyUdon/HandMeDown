@@ -9,13 +9,13 @@ provides-member:
 - ["O8Material18InterimSpacePreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "InterimSpacePresetToValue"
-- "CGFloat"
-- "InterimSpace"
-- "InterimSpacePreset"
-- !private "~="
 - "=="
+- !private "~="
+- "CGFloat"
 - "Int"
+- "InterimSpacePreset"
+- "InterimSpacePresetToValue"
+- "InterimSpace"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

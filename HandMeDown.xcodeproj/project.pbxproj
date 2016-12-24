@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		7C34D8B51E02D005000A9280 /* MyStuffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D8B41E02D005000A9280 /* MyStuffTableViewCell.swift */; };
 		7C34D8B91E02D1D8000A9280 /* MyStuffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C34D8B81E02D1D8000A9280 /* MyStuffViewController.swift */; };
+		7C38D7A61E0D5DDA00B4EA71 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C38D7A51E0D5DDA00B4EA71 /* FBSDKLoginKit.framework */; };
+		7C38D7A81E0D64C300B4EA71 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C38D7A71E0D64C300B4EA71 /* FBSDKCoreKit.framework */; };
+		7C38D7AA1E0D663900B4EA71 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C38D7A91E0D663900B4EA71 /* Bolts.framework */; };
+		7C38D7AC1E0D6F0900B4EA71 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C38D7AB1E0D6F0900B4EA71 /* MainTabBarController.swift */; };
 		7C8B1ABE1DFF35000081EAA6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B1ABD1DFF35000081EAA6 /* Category.swift */; };
 		7C90CC371DE4F57600C542E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C90CC361DE4F57600C542E0 /* AppDelegate.swift */; };
 		7C90CC391DE4F57600C542E0 /* GoodiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C90CC381DE4F57600C542E0 /* GoodiesViewController.swift */; };
@@ -60,6 +64,10 @@
 		784DE311F0C4ECA71D91D90D /* Pods_HandMeDownUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandMeDownUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C34D8B41E02D005000A9280 /* MyStuffTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStuffTableViewCell.swift; sourceTree = "<group>"; };
 		7C34D8B81E02D1D8000A9280 /* MyStuffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStuffViewController.swift; sourceTree = "<group>"; };
+		7C38D7A51E0D5DDA00B4EA71 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7C38D7A71E0D64C300B4EA71 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7C38D7A91E0D663900B4EA71 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		7C38D7AB1E0D6F0900B4EA71 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		7C8B1ABD1DFF35000081EAA6 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7C90CC331DE4F57600C542E0 /* HandMeDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandMeDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C90CC361DE4F57600C542E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C38D7A61E0D5DDA00B4EA71 /* FBSDKLoginKit.framework in Frameworks */,
+				7C38D7A81E0D64C300B4EA71 /* FBSDKCoreKit.framework in Frameworks */,
 				B1341B87FAA8F469A16A191D /* Pods_HandMeDown.framework in Frameworks */,
+				7C38D7AA1E0D663900B4EA71 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +198,7 @@
 		7C9945211DF8F052001C621F /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7C38D7AB1E0D6F0900B4EA71 /* MainTabBarController.swift */,
 				7CCD25931E0B5E250035D518 /* LoginViewController.swift */,
 				7C90CC381DE4F57600C542E0 /* GoodiesViewController.swift */,
 				7C9945261DF8F346001C621F /* GoodiesCollectionViewCell.swift */,
@@ -238,6 +250,9 @@
 		874E2DE628D93BF9EA01010B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C38D7A91E0D663900B4EA71 /* Bolts.framework */,
+				7C38D7A71E0D64C300B4EA71 /* FBSDKCoreKit.framework */,
+				7C38D7A51E0D5DDA00B4EA71 /* FBSDKLoginKit.framework */,
 				2AF44F072B5BA8ED745B84A2 /* Pods_HandMeDown.framework */,
 				70490B54C49D5B5890A72A9B /* Pods_HandMeDownTests.framework */,
 				784DE311F0C4ECA71D91D90D /* Pods_HandMeDownUITests.framework */,
@@ -554,6 +569,7 @@
 				7CCD25961E0B641C0035D518 /* MeasurementHelper.swift in Sources */,
 				7C90CC371DE4F57600C542E0 /* AppDelegate.swift in Sources */,
 				7C8B1ABE1DFF35000081EAA6 /* Category.swift in Sources */,
+				7C38D7AC1E0D6F0900B4EA71 /* MainTabBarController.swift in Sources */,
 				7CCD25991E0B645D0035D518 /* AppState.swift in Sources */,
 				7C9945251DF8F143001C621F /* User.swift in Sources */,
 				7C90CC391DE4F57600C542E0 /* GoodiesViewController.swift in Sources */,
@@ -712,6 +728,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 24H26R49VE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HandMeDown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.-Komrad.HandMeDown";
@@ -726,6 +746,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 24H26R49VE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HandMeDown/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.-Komrad.HandMeDown";

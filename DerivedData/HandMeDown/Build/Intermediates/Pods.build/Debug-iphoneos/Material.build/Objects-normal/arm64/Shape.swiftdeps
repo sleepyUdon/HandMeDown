@@ -7,10 +7,10 @@ provides-member:
 - ["O8Material11ShapePreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "~="
-- "=="
-- "ShapePreset"
 - "Int"
+- "ShapePreset"
+- "=="
+- !private "~="
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

@@ -9,32 +9,32 @@ provides-member:
 - ["O8Material14SnackbarStatus", ""]
 - ["C8Material8Snackbar", ""]
 provides-dynamic-lookup:
-- "text"
-- "prepare"
 - "hitTest"
 - "textLabel"
+- "prepare"
 - "intrinsicContentSize"
 - "reload"
 - "status"
+- "text"
 depends-top-level:
-- "String"
-- !private "RobotoFont"
-- "Int"
-- !private "Array"
-- "UIView"
-- "CGPoint"
-- !private "Screen"
-- "UIEvent"
-- !private "~="
-- "=="
-- "AssignmentPrecedence"
-- "Bar"
-- "SnackbarStatus"
 - "Snackbar"
+- "CGSize"
+- "UIView"
+- !private "RobotoFont"
+- "SnackbarStatus"
+- "Int"
 - !private "BooleanLiteralType"
 - !private "Color"
-- "CGSize"
 - "UILabel"
+- "CGPoint"
+- "Bar"
+- !private "Screen"
+- "UIEvent"
+- !private "Array"
+- "=="
+- !private "~="
+- "AssignmentPrecedence"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
 - !private ["Ps9AnyObject", "Color"]
@@ -69,7 +69,6 @@ depends-member:
 - !private ["Ps9AnyObject", "textAlignment"]
 - !private ["Ps9AnyObject", "textColor"]
 - ["Ps9AnyObject", "textLabel"]
-- ["Ps9AnyObject", "textLabel.storage"]
 - !private ["Ps9AnyObject", "white"]
 - !private ["Ps9AnyObject", "width"]
 - ["Ps9AnyObject", ""]
@@ -106,7 +105,6 @@ depends-member:
 - !private ["C8Material3Bar", "subviews"]
 - ["C8Material3Bar", "text"]
 - ["C8Material3Bar", "textLabel"]
-- ["C8Material3Bar", "textLabel.storage"]
 - !private ["C8Material3Bar", "width"]
 - ["C8Material3Bar", ""]
 - !private ["Ps23BidirectionalCollection", "Element"]
@@ -150,7 +148,6 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "textAlignment"]
 - !private ["PSo15CALayerDelegate", "textColor"]
 - ["PSo15CALayerDelegate", "textLabel"]
-- ["PSo15CALayerDelegate", "textLabel.storage"]
 - !private ["PSo15CALayerDelegate", "width"]
 - ["PSo15CALayerDelegate", ""]
 - ["V12CoreGraphics7CGFloat", "deinit"]
@@ -196,7 +193,6 @@ depends-member:
 - !private ["Ps7CVarArg", "textAlignment"]
 - !private ["Ps7CVarArg", "textColor"]
 - ["Ps7CVarArg", "textLabel"]
-- ["Ps7CVarArg", "textLabel.storage"]
 - !private ["Ps7CVarArg", "white"]
 - !private ["Ps7CVarArg", "width"]
 - ["Ps7CVarArg", ""]
@@ -246,7 +242,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "textAlignment"]
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - ["Ps28CustomDebugStringConvertible", "textLabel"]
-- ["Ps28CustomDebugStringConvertible", "textLabel.storage"]
 - !private ["Ps28CustomDebugStringConvertible", "white"]
 - !private ["Ps28CustomDebugStringConvertible", "width"]
 - ["Ps28CustomDebugStringConvertible", ""]
@@ -301,7 +296,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "textAlignment"]
 - !private ["Ps23CustomStringConvertible", "textColor"]
 - ["Ps23CustomStringConvertible", "textLabel"]
-- ["Ps23CustomStringConvertible", "textLabel.storage"]
 - !private ["Ps23CustomStringConvertible", "white"]
 - !private ["Ps23CustomStringConvertible", "width"]
 - ["Ps23CustomStringConvertible", ""]
@@ -351,7 +345,6 @@ depends-member:
 - !private ["Ps9Equatable", "textAlignment"]
 - !private ["Ps9Equatable", "textColor"]
 - ["Ps9Equatable", "textLabel"]
-- ["Ps9Equatable", "textLabel.storage"]
 - !private ["Ps9Equatable", "white"]
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
@@ -405,7 +398,6 @@ depends-member:
 - !private ["Ps8Hashable", "textAlignment"]
 - !private ["Ps8Hashable", "textColor"]
 - ["Ps8Hashable", "textLabel"]
-- ["Ps8Hashable", "textLabel.storage"]
 - !private ["Ps8Hashable", "white"]
 - !private ["Ps8Hashable", "width"]
 - ["Ps8Hashable", ""]
@@ -470,7 +462,6 @@ depends-member:
 - !private ["PSo8NSCoding", "textAlignment"]
 - !private ["PSo8NSCoding", "textColor"]
 - ["PSo8NSCoding", "textLabel"]
-- ["PSo8NSCoding", "textLabel.storage"]
 - !private ["PSo8NSCoding", "white"]
 - !private ["PSo8NSCoding", "width"]
 - ["PSo8NSCoding", ""]
@@ -512,7 +503,6 @@ depends-member:
 - !private ["CSo8NSObject", "textAlignment"]
 - !private ["CSo8NSObject", "textColor"]
 - ["CSo8NSObject", "textLabel"]
-- ["CSo8NSObject", "textLabel.storage"]
 - !private ["CSo8NSObject", "white"]
 - !private ["CSo8NSObject", "width"]
 - !private ["PSo16NSObjectProtocol", "CGSize"]
@@ -547,7 +537,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "textAlignment"]
 - !private ["PSo16NSObjectProtocol", "textColor"]
 - ["PSo16NSObjectProtocol", "textLabel"]
-- ["PSo16NSObjectProtocol", "textLabel.storage"]
 - !private ["PSo16NSObjectProtocol", "white"]
 - !private ["PSo16NSObjectProtocol", "width"]
 - ["PSo16NSObjectProtocol", ""]
@@ -617,7 +606,6 @@ depends-member:
 - !private ["C8Material8Snackbar", "subviews"]
 - ["C8Material8Snackbar", "text"]
 - ["C8Material8Snackbar", "textLabel"]
-- !private ["C8Material8Snackbar", "textLabel.storage"]
 - !private ["C8Material8Snackbar", "width"]
 - ["O8Material14SnackbarStatus", "RawValue"]
 - ["O8Material14SnackbarStatus", "_toAnyHashable"]
@@ -660,7 +648,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "textAlignment"]
 - !private ["PSo29UIAccessibilityIdentification", "textColor"]
 - ["PSo29UIAccessibilityIdentification", "textLabel"]
-- ["PSo29UIAccessibilityIdentification", "textLabel.storage"]
 - !private ["PSo29UIAccessibilityIdentification", "width"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["PSo12UIAppearance", "CGSize"]
@@ -694,7 +681,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "textAlignment"]
 - !private ["PSo12UIAppearance", "textColor"]
 - ["PSo12UIAppearance", "textLabel"]
-- ["PSo12UIAppearance", "textLabel.storage"]
 - !private ["PSo12UIAppearance", "width"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "CGSize"]
@@ -728,7 +714,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "textAlignment"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - ["PSo21UIAppearanceContainer", "textLabel"]
-- ["PSo21UIAppearanceContainer", "textLabel.storage"]
 - !private ["PSo21UIAppearanceContainer", "width"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["CSo7UIColor", "deinit"]
@@ -772,7 +757,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "textAlignment"]
 - !private ["PSo17UICoordinateSpace", "textColor"]
 - ["PSo17UICoordinateSpace", "textLabel"]
-- ["PSo17UICoordinateSpace", "textLabel.storage"]
 - !private ["PSo17UICoordinateSpace", "width"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "CGSize"]
@@ -806,7 +790,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "textAlignment"]
 - !private ["PSo13UIDynamicItem", "textColor"]
 - ["PSo13UIDynamicItem", "textLabel"]
-- ["PSo13UIDynamicItem", "textLabel.storage"]
 - !private ["PSo13UIDynamicItem", "width"]
 - ["PSo13UIDynamicItem", ""]
 - !private ["VSC12UIEdgeInsets", "left"]
@@ -842,7 +825,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "textAlignment"]
 - !private ["PSo18UIFocusEnvironment", "textColor"]
 - ["PSo18UIFocusEnvironment", "textLabel"]
-- ["PSo18UIFocusEnvironment", "textLabel.storage"]
 - !private ["PSo18UIFocusEnvironment", "width"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "CGSize"]
@@ -876,7 +858,6 @@ depends-member:
 - !private ["PSo11UIFocusItem", "textAlignment"]
 - !private ["PSo11UIFocusItem", "textColor"]
 - ["PSo11UIFocusItem", "textLabel"]
-- ["PSo11UIFocusItem", "textLabel.storage"]
 - !private ["PSo11UIFocusItem", "width"]
 - ["PSo11UIFocusItem", ""]
 - !private ["CSo6UIFont", "deinit"]
@@ -923,7 +904,6 @@ depends-member:
 - !private ["CSo11UIResponder", "textAlignment"]
 - !private ["CSo11UIResponder", "textColor"]
 - ["CSo11UIResponder", "textLabel"]
-- ["CSo11UIResponder", "textLabel.storage"]
 - !private ["CSo11UIResponder", "width"]
 - !private ["PSo30UIResponderStandardEditActions", "CGSize"]
 - !private ["PSo30UIResponderStandardEditActions", "Color"]
@@ -956,7 +936,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "textAlignment"]
 - !private ["PSo30UIResponderStandardEditActions", "textColor"]
 - ["PSo30UIResponderStandardEditActions", "textLabel"]
-- ["PSo30UIResponderStandardEditActions", "textLabel.storage"]
 - !private ["PSo30UIResponderStandardEditActions", "width"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo18UITraitEnvironment", "CGSize"]
@@ -990,7 +969,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "textAlignment"]
 - !private ["PSo18UITraitEnvironment", "textColor"]
 - ["PSo18UITraitEnvironment", "textLabel"]
-- ["PSo18UITraitEnvironment", "textLabel.storage"]
 - !private ["PSo18UITraitEnvironment", "width"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "CGPoint"]
@@ -1029,7 +1007,6 @@ depends-member:
 - !private ["CSo6UIView", "textAlignment"]
 - !private ["CSo6UIView", "textColor"]
 - ["CSo6UIView", "textLabel"]
-- ["CSo6UIView", "textLabel.storage"]
 - !private ["CSo6UIView", "width"]
 - ["C8Material4View", "CGPoint"]
 - ["C8Material4View", "CGSize"]
@@ -1059,7 +1036,6 @@ depends-member:
 - !private ["C8Material4View", "subviews"]
 - ["C8Material4View", "text"]
 - ["C8Material4View", "textLabel"]
-- ["C8Material4View", "textLabel.storage"]
 - !private ["C8Material4View", "width"]
 - !private ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps14_ArrayProtocol", "Iterator"]
@@ -1095,7 +1071,6 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textAlignment"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "textColor"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "textLabel"]
-- ["Ps37_DefaultCustomPlaygroundQuickLookable", "textLabel.storage"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "width"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
 - !private ["Ps24_DestructorSafeContainer", "Element"]
@@ -1148,7 +1123,6 @@ depends-member:
 - !private ["Ps9_Hashable", "textAlignment"]
 - !private ["Ps9_Hashable", "textColor"]
 - ["Ps9_Hashable", "textLabel"]
-- ["Ps9_Hashable", "textLabel.storage"]
 - !private ["Ps9_Hashable", "white"]
 - !private ["Ps9_Hashable", "width"]
 - ["Ps9_Hashable", ""]
@@ -1292,4 +1266,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "416cab2c20839b4962de75a957797a9f"
+interface-hash: "f63db945f8b0b98ce953dbd1c19f0edc"

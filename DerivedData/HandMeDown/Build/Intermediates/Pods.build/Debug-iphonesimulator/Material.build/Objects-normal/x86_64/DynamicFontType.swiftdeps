@@ -13,11 +13,11 @@ provides-dynamic-lookup:
 - "delegate"
 - "handleContentSizeChange"
 depends-top-level:
+- "DynamicFontType"
 - !private "NotificationCenter"
 - !private "NSNotification"
 - "DynamicFontTypeDelegate"
 - "NSObject"
-- "DynamicFontType"
 depends-member:
 - !private ["Ps9AnyObject", "NSNotification"]
 - !private ["Ps9AnyObject", "Name"]

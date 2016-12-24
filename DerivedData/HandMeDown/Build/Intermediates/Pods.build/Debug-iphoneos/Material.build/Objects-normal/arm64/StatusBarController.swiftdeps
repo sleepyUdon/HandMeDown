@@ -8,25 +8,25 @@ provides-member:
 - ["C8Material19StatusBarController", ""]
 - ["CSo16UIViewController", "statusBarController"]
 provides-dynamic-lookup:
+- "layoutSubviews"
 - "statusBarStyle"
 - "statusBarController"
-- "layoutSubviews"
-- "isStatusBarHidden"
 - "prepare"
 - "shouldHideStatusBarOnRotation"
 - "statusBar"
+- "isStatusBarHidden"
 depends-top-level:
-- "Bool"
-- !private "!="
 - "RootController"
-- "UIView"
-- "CastingPrecedence"
-- "AssignmentPrecedence"
 - "UIViewController"
-- "StatusBarController"
-- "UIStatusBarStyle"
 - "BooleanLiteralType"
+- "UIView"
+- "Bool"
+- "UIStatusBarStyle"
+- !private "!="
+- "StatusBarController"
 - !private "Application"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "Application"]
 - ["Ps9AnyObject", "UIView"]
