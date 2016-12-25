@@ -120,6 +120,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import RealmSwift;
 @import CoreGraphics;
 @import FBSDKLoginKit;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -185,19 +186,48 @@ SWIFT_CLASS("_TtC10HandMeDown5Fonts")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class User;
 @class UIImageView;
 @class UILabel;
+
+SWIFT_CLASS("_TtC10HandMeDown20FriendsTableViewCell")
+@interface FriendsTableViewCell : UITableViewCell
+/**
+  MARK: properties
+*/
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pictureView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified friendNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified itemsNumberLabel;
+- (void)configureWithUserWithUser:(User * _Nonnull)user;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC10HandMeDown21FriendsViewController")
-@interface FriendsViewController : UIViewController
+@interface FriendsViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 /**
   MARK: Properties
 */
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified pictureView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, copy) NSArray<User *> * _Nonnull friends;
+/**
+  MARK: viewDidLoad
+*/
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+/**
+  MARK: viewWillAppear
+*/
+- (void)viewWillAppear:(BOOL)animated;
+/**
+  MARK: Tableview Datasource
+*/
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -298,7 +328,6 @@ SWIFT_CLASS("_TtC10HandMeDown20MyStuffTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
 
 SWIFT_CLASS("_TtC10HandMeDown21MyStuffViewController")
 @interface MyStuffViewController : UIViewController <UITableViewDataSource>
@@ -417,15 +446,11 @@ SWIFT_CLASS("_TtC10HandMeDown22SettingsViewController")
 
 
 SWIFT_CLASS("_TtC10HandMeDown4User")
-@interface User : RealmSwiftObject
-@property (nonatomic, copy) NSString * _Nonnull firstName;
-@property (nonatomic, copy) NSString * _Nonnull lastName;
-@property (nonatomic, copy) NSString * _Nonnull image;
-- (nonnull instancetype)initWithFirstName:(NSString * _Nonnull)firstName lastName:(NSString * _Nonnull)lastName image:(NSString * _Nonnull)image;
+@interface User : NSObject
+@property (nonatomic, copy) NSString * _Nonnull name;
+@property (nonatomic, copy) NSData * _Nullable picture;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name picture:(NSData * _Nonnull)picture;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithValue:(id _Nonnull)value OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithRealm:(RLMRealm * _Nonnull)realm schema:(RLMObjectSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #pragma clang diagnostic pop

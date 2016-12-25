@@ -7,12 +7,12 @@ provides-member:
 - ["V8Material10RobotoFont", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UIFont"
-- !private "StringLiteralType"
 - "RobotoFont"
+- !private "StringLiteralType"
+- "UIFont"
 - "FontType"
-- !private "Font"
 - "CGFloat"
+- !private "Font"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["V12CoreGraphics7CGFloat", "deinit"]

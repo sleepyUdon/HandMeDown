@@ -8,12 +8,12 @@ provides-member:
 - ["O8Material17BorderWidthPreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CGFloat"
-- !private "~="
-- "=="
-- "BorderWidthPresetToValue"
 - "Int"
+- "CGFloat"
 - "BorderWidthPreset"
+- "=="
+- !private "~="
+- "BorderWidthPresetToValue"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

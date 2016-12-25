@@ -15,6 +15,7 @@
 		7C38D7AC1E0D6F0900B4EA71 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C38D7AB1E0D6F0900B4EA71 /* MainTabBarController.swift */; };
 		7C38D7AE1E0D75C800B4EA71 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C38D7AD1E0D75C800B4EA71 /* SettingsViewController.swift */; };
 		7C4D26A61E0E00CB005CDCF7 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4D26A51E0E00CB005CDCF7 /* FriendsViewController.swift */; };
+		7C4D26AF1E0F1CB4005CDCF7 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4D26AE1E0F1CB4005CDCF7 /* FriendsTableViewCell.swift */; };
 		7C8B1ABE1DFF35000081EAA6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B1ABD1DFF35000081EAA6 /* Category.swift */; };
 		7C90CC371DE4F57600C542E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C90CC361DE4F57600C542E0 /* AppDelegate.swift */; };
 		7C90CC391DE4F57600C542E0 /* GoodiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C90CC381DE4F57600C542E0 /* GoodiesViewController.swift */; };
@@ -69,6 +70,7 @@
 		7C38D7AB1E0D6F0900B4EA71 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		7C38D7AD1E0D75C800B4EA71 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		7C4D26A51E0E00CB005CDCF7 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		7C4D26AE1E0F1CB4005CDCF7 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
 		7C8B1ABD1DFF35000081EAA6 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7C90CC331DE4F57600C542E0 /* HandMeDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandMeDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C90CC361DE4F57600C542E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				7C4D26A51E0E00CB005CDCF7 /* FriendsViewController.swift */,
+				7C4D26AE1E0F1CB4005CDCF7 /* FriendsTableViewCell.swift */,
 			);
 			name = Friends;
 			sourceTree = "<group>";
@@ -607,6 +610,7 @@
 				7CCD25941E0B5E250035D518 /* LoginViewController.swift in Sources */,
 				7C9D94F91DFC33D800F38752 /* Fonts.swift in Sources */,
 				7C9D94FB1DFC9F2A00F38752 /* Colors.swift in Sources */,
+				7C4D26AF1E0F1CB4005CDCF7 /* FriendsTableViewCell.swift in Sources */,
 				7C99451F1DF8F032001C621F /* Item.swift in Sources */,
 				7C34D8B51E02D005000A9280 /* MyStuffTableViewCell.swift in Sources */,
 				7C90CC3B1DE4F57600C542E0 /* PostViewController.swift in Sources */,

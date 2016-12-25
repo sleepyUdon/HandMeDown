@@ -12,9 +12,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "StringLiteralType"
+- "UnicodeScalarType"
 - !private "CharacterSet"
 - "String"
-- "UnicodeScalarType"
 depends-member:
 - !private ["Ps9AnyObject", "components"]
 - !private ["Ps9AnyObject", "init"]

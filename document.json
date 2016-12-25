@@ -1,0 +1,20 @@
+{
+  "users": {
+    "jg4WDz2rY5eCs4tvKl4iR8trLeM2":{
+        "name":"Viviane Chan", 
+        "items":["item1","item2"],
+        "friends":["jg4WDz2rY5eCs4tvKl4iR8trLeM3","jg4WDz2rY5eCs4tvKl4iR8trLeM4","jg4WDz2rY5eCs4tvKl4iR8trLeM5"]
+          },
+    "jg4WDz2rY5eCs4tvKl4iR8trLeM3": {
+         "name":"Alexa Chung", 
+        "items":["item3","item4"],
+        "friends":["jg4WDz2rY5eCs4tvKl4iR8trLeM2","jg4WDz2rY5eCs4tvKl4iR8trLeM4","jg4WDz2rY5eCs4tvKl4iR8trLeM5"]
+          },
+    "jg4WDz2rY5eCs4tvKl4iR8trLeM4": {
+         "name":"Tony Milo", 
+        "items":[],
+        "friends":["jg4WDz2rY5eCs4tvKl4iR8trLeM3"]
+          }
+    }
+}
+

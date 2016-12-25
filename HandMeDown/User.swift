@@ -7,26 +7,15 @@
 //
 
 import Foundation
-import RealmSwift
 
-class User: Object {
-    dynamic var firstName = ""
-    dynamic var lastName = ""
-    dynamic var image = ""
-//    var items = List<Item>()
-    
-    
-//    convenience public init(firstName:String, lastName: String, image: String, items:[Item]) {
-    //
-    convenience public init(firstName:String, lastName: String, image: String) {
+class User: NSObject {
+    var name = ""
+    var picture : Data? = nil
+    convenience public init(name:String, picture: Data) {
         self.init()
-        self.firstName = firstName
-        self.lastName = lastName
-        self.image = image
-        //        self.items = items
+        self.name = name
+        self.picture = picture
     }
-    
-    
 }
 
 

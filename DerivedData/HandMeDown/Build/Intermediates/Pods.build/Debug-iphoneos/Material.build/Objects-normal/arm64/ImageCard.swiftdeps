@@ -11,24 +11,24 @@ provides-member:
 provides-dynamic-lookup:
 - "imageViewEdgeInsetsPreset"
 - "imageView"
-- "reload"
 - "toolbarAlignment"
+- "reload"
 - "imageViewEdgeInsets"
 depends-top-level:
 - "UIImageView"
+- "ToolbarAlignment"
+- "Card"
+- "ImageCard"
+- "EdgeInsets"
+- "TernaryPrecedence"
+- !private "EdgeInsetsPresetToValue"
 - "Int"
 - !private "-"
 - "EdgeInsetsPreset"
-- "Card"
-- !private "EdgeInsetsPresetToValue"
-- "ImageCard"
-- "TernaryPrecedence"
-- "ToolbarAlignment"
 - "=="
 - !private "~="
-- "EdgeInsets"
-- "AssignmentPrecedence"
 - !private "CGFloat"
+- "AssignmentPrecedence"
 depends-member:
 - ["Ps9AnyObject", "EdgeInsets"]
 - ["Ps9AnyObject", "EdgeInsetsPreset"]

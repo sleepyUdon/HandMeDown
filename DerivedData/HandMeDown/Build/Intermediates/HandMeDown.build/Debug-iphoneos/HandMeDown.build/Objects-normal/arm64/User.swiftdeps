@@ -6,104 +6,85 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown4User", ""]
 provides-dynamic-lookup:
-- "lastName"
-- "firstName"
-- "image"
+- "picture"
+- "name"
 depends-top-level:
-- "StringLiteralType"
-- "String"
-- "User"
-- "Object"
 - "AssignmentPrecedence"
+- "String"
+- "Data"
+- "User"
+- "StringLiteralType"
+- "NSObject"
 depends-member:
-- ["Ps9AnyObject", "firstName"]
-- ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "lastName"]
+- ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", "picture"]
 - ["Ps9AnyObject", ""]
-- ["Ps7CVarArg", "firstName"]
-- ["Ps7CVarArg", "image"]
 - ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "lastName"]
+- ["Ps7CVarArg", "name"]
+- ["Ps7CVarArg", "picture"]
 - ["Ps7CVarArg", ""]
 - ["Ps10Comparable", "init"]
-- ["Ps28CustomDebugStringConvertible", "firstName"]
-- ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "lastName"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- ["Ps28CustomDebugStringConvertible", "picture"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - ["Ps17CustomReflectable", "init"]
-- ["Ps23CustomStringConvertible", "firstName"]
-- ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "lastName"]
+- ["Ps23CustomStringConvertible", "name"]
+- ["Ps23CustomStringConvertible", "picture"]
 - ["Ps23CustomStringConvertible", ""]
-- ["Ps9Equatable", "firstName"]
-- ["Ps9Equatable", "image"]
+- ["V10Foundation4Data", "deinit"]
 - ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "lastName"]
+- ["Ps9Equatable", "name"]
+- ["Ps9Equatable", "picture"]
 - ["Ps9Equatable", ""]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- ["Ps8Hashable", "firstName"]
-- ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "lastName"]
+- ["Ps8Hashable", "name"]
+- ["Ps8Hashable", "picture"]
 - ["Ps8Hashable", ""]
 - ["Ps25LosslessStringConvertible", "init"]
 - ["Ps10MirrorPath", "init"]
 - ["PSo8NSCoding", "init"]
 - ["PSo9NSCopying", "init"]
 - ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Data"]
 - ["CSo8NSObject", "String"]
-- ["CSo8NSObject", "firstName"]
-- ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "init"]
-- ["CSo8NSObject", "lastName"]
-- ["PSo16NSObjectProtocol", "firstName"]
-- ["PSo16NSObjectProtocol", "image"]
+- ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "picture"]
+- ["CSo8NSObject", ""]
 - ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "lastName"]
+- ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", "picture"]
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
-- ["C10RealmSwift6Object", "String"]
-- ["C10RealmSwift6Object", "deinit"]
-- ["C10RealmSwift6Object", "firstName"]
-- ["C10RealmSwift6Object", "image"]
-- ["C10RealmSwift6Object", "init"]
-- ["C10RealmSwift6Object", "lastName"]
-- ["C10RealmSwift6Object", ""]
-- ["CSo13RLMObjectBase", "String"]
-- ["CSo13RLMObjectBase", "firstName"]
-- ["CSo13RLMObjectBase", "image"]
-- ["CSo13RLMObjectBase", "init"]
-- ["CSo13RLMObjectBase", "lastName"]
-- ["CSo15RLMObjectSchema", "deinit"]
-- ["CSo8RLMRealm", "deinit"]
-- ["CSo9RLMSchema", "deinit"]
+- ["Sq", "deinit"]
 - ["SS", "deinit"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
+- ["C10HandMeDown4User", "Data"]
 - ["C10HandMeDown4User", "String"]
 - ["C10HandMeDown4User", "deinit"]
-- ["C10HandMeDown4User", "firstName"]
-- ["C10HandMeDown4User", "image"]
 - ["C10HandMeDown4User", "init"]
-- ["C10HandMeDown4User", "lastName"]
+- ["C10HandMeDown4User", "name"]
+- ["C10HandMeDown4User", "picture"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- ["Ps9_Hashable", "firstName"]
-- ["Ps9_Hashable", "image"]
 - ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "lastName"]
+- ["Ps9_Hashable", "name"]
+- ["Ps9_Hashable", "picture"]
 - ["Ps9_Hashable", ""]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
@@ -114,6 +95,7 @@ depends-nominal:
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- "V10Foundation4Data"
 - "Ps9Equatable"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps32ExpressibleByStringInterpolation"
@@ -129,11 +111,7 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
-- "C10RealmSwift6Object"
-- "CSo13RLMObjectBase"
-- "CSo15RLMObjectSchema"
-- "CSo8RLMRealm"
-- "CSo9RLMSchema"
+- "Sq"
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
@@ -187,6 +165,16 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
@@ -299,4 +287,4 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
-interface-hash: "2a0f62ce3c97f03a188871f9ff62fc16"
+interface-hash: "825f7b49599ee12768e6c392729c6203"

@@ -9,46 +9,37 @@
 import UIKit
 import FirebaseAuth
 import FirebaseStorage
+import FirebaseDatabase
 import FBSDKCoreKit
 
-class FriendsViewController: UIViewController {
+class FriendsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    
     /// MARK: Properties
     @IBOutlet weak var pictureView: UIImageView!
-    
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    var friends = [User]()
     
+    /// MARK: viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if let user = FIRAuth.auth()?.currentUser{
-            let name = user.displayName
-            let email = user.email
-            let photoUrl = user.photoURL
-            let uid = user.uid
             
-            // Firebase Storage
+            // Firebase Storage 
             let storage = FIRStorage.storage()
-            
-            // reference to Firebase service
             let storageRef = storage.reference(forURL: "gs://handmedown-557a0.appspot.com")
-            
             let profilePictureRef = storageRef.child(user.uid+"/profile_pic.jpg")
             
-            profilePictureRef.data(withMaxSize: 1 * 1024 * 1024) { data, error in
-                if (error != nil) {
-                    print("Unable to download image")
-                } else {
-                    if(data != nil) {
-                        print("User already has an image, no need to download from Facebook")
-                        self.pictureView.image = UIImage(data: data!)
-                    }
-                }
-            }
+            // download profile information
+            let name = user.displayName
+            let uid = user.uid
+            self.nameLabel.text = name
+            print("uid: \(uid)")
             
+            // download profile picture
             if (self.pictureView.image == nil) {
-                
-                var profilePicture = FBSDKGraphRequest(graphPath: "me/picture", parameters: ["height":300, "width":300, "redirect": false], httpMethod: "GET")
+                let profilePicture = FBSDKGraphRequest(graphPath: "\(uid)/picture", parameters: ["height":300, "width":300, "redirect": false], httpMethod: "GET")
                 profilePicture?.start(completionHandler: {( connection, result, error) -> Void in
                     if (error == nil) {
                         let dictionary = result as? NSDictionary
@@ -72,29 +63,97 @@ class FriendsViewController: UIViewController {
                         }
                     }
                 })
-                
+            } else {
+                profilePictureRef.data(withMaxSize: 1 * 1024 * 1024) { data, error in
+                    if (error != nil) {
+                        print("Unable to download image")
+                    } else {
+                        if(data != nil) {
+                            print("User already has an image, no need to download from Facebook")
+                        }
+                    }
+                }
             }
-            self.nameLabel.text = name
             
-        } else {
-            
+            // download friends
+     
+            let params = ["fields": "id, first_name, last_name, middle_name, name, email, picture"]
+            let friendsList = FBSDKGraphRequest(graphPath: "me/friends", parameters: params, httpMethod: "GET")
+            friendsList?.start(completionHandler: {(connection, result, error) -> Void in
+                if error != nil {
+                    let errorMessage = error?.localizedDescription
+                    print(errorMessage!)
+                } else {
+                    let dictionary = result as? NSDictionary
+                    print("Result Dict: \(dictionary)")
+                    let data : NSArray = dictionary!.object(forKey: "data") as! NSArray
+                    
+                    for i in 0 ..< data.count
+                    {
+                        let valueDict : NSDictionary = data[i] as! NSDictionary
+                        let id = valueDict.object(forKey: "id") as! String
+                        print("the id value is \(id)")
+                    }
+                    
+                    let friends = dictionary?.object(forKey: "data") as! NSArray
+                    print("Found \(friends.count) friends")
+                    for friend in friends {
+                        let name = (friend as AnyObject).object(forKey: "name") as! String
+                        let id = (friend as AnyObject).object(forKey: "id") as! String
+                        
+                        var profilePicture = FBSDKGraphRequest(graphPath: "\(id)/picture", parameters: ["height":300, "width":300, "redirect": false], httpMethod: "GET")
+                        profilePicture?.start(completionHandler: {( connection, result, error) -> Void in
+                            if (error == nil) {
+                                let dictionary = result as? NSDictionary
+                                let data = dictionary?.object(forKey: "data")
+                                let urlPic = ((data as AnyObject).object(forKey: "url"))! as! String
+                                let imageData = NSData(contentsOf: NSURL(string: urlPic)! as URL)
+//                                {
+//                                    let uploadTask = profilePictureRef.put(imageData as Data, metadata: nil) {
+//                                        metadata, error in
+//                                        if (error == nil)
+//                                        {
+//                                            // size, content types or the download url
+//                                            let downloadUrl = metadata!.downloadURL()
+//                                        }
+//                                        else
+//                                        {
+//                                            print("Error in downloading image")
+//                                        }
+//                                    }
+                                    let picture = imageData as! Data
+                                    let user = User(name: name, picture: picture)
+                                    self.friends.append(user)
+                            }
+                        })
+                    }
+                }
+            })
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+           
+    
+    
+    /// MARK: viewWillAppear
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    /// MARK: Tableview Datasource
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(friends.count)
+        return friends.count
     }
-    */
-
+    
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let user = friends[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell") as! FriendsTableViewCell
+        cell.configureWithUser(user: user)
+        print(friends)
+        return cell
+    }
+    
+    
 }

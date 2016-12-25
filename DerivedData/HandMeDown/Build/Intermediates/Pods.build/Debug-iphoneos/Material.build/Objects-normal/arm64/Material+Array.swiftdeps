@@ -6,21 +6,21 @@ provides-member:
 - ["Sa", "slice"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "+"
-- !private "-="
-- "Int"
+- !private "UnicodeScalarType"
 - !private "StringLiteralType"
 - "Array"
+- !private "-="
+- !private ">"
+- !private "??"
+- !private "+"
+- "Int"
+- !private ">="
+- "Equatable"
 - !private "<"
 - !private "-"
-- !private ">"
-- "Equatable"
-- !private "UnicodeScalarType"
-- !private ">="
 - !private "abs"
 - !private "fatalError"
 - "AssignmentPrecedence"
-- !private "??"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Sa", "Element"]
