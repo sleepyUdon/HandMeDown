@@ -9,19 +9,19 @@
 import UIKit
 import Material
 import RealmSwift
+import FBSDKCoreKit
+import FirebaseAuth
+
 
 class GoodiesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    // MARK: Properties
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var filterButton: RaisedButton!
-    
-    // MARK: Properties
-    
     var items: Results<Item>!
     
     
     // MARK: ViewDidLoad
-    
     override func viewDidLoad() {
         let realm = try!Realm()
         items = realm.objects(Item.self)
@@ -31,40 +31,27 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     
     // MARK: ViewWillAppear
-    
     override func viewWillAppear(_ animated: Bool) {
         self.collectionView.reloadData()
     }
     
     
     // MARK: Prepare Layout
-    
     func prepareLayout(){
         self.filterButton.cornerRadius = self.filterButton.frame.height/2
         self.filterButton.backgroundColor = Colors.purple.light1
         self.filterButton.titleLabel?.font = Fonts.button.BT2
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "MasterToDetail" {
-//            let detailViewController = segue.destination as! DetailViewController
-//            detailViewController.paper = sender as? Paper
-//        }
-//    }
-    
+
     
     // MARK: CollectionView Cell Size
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: (self.view.frame.width - 30)/2, height:200)
     }
     
     
-    // MARK: Textfield Delegate
     
-  
     // MARK: UICollectionViewDataSource
-    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -85,14 +72,33 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
         return cell
     }
     
-    // MARK: UICollectionViewDelegate
-    
-//     func collectionView(_ collectionView: UICollectionView,
-//                                 didSelectItemAt indexPath: IndexPath) {
-//        if let item = itemsDataSource
-//            .itemForItemAtIndexPath(indexPath) {
-//            performSegue(withIdentifier: "MasterToDetail", sender: paper)
-//        }
+
+    // MARK: Actions
+
+    // handle Logout Button
+    @IBAction func handleLogoutButton(_ sender: UIButton) {
+        
+        // sign out user from Firebase
+        print("User logged out of Firebase")
+        try! FIRAuth.auth()?.signOut()
+        FBSDKAccessToken.setCurrent(nil)
+        
+        // sign out user from Facebook
+        print("User logged out of Facebook")
+        FBSDKAccessToken.setCurrent(nil)
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController: LoginViewController = mainStoryboard.instantiateViewController(withIdentifier: "loginView") as! LoginViewController
+        self.present(loginViewController, animated: true, completion: nil)
+        
+        // delete profile from Realm 
+        let realm = try!Realm()
+        try! realm.write {
+            let user = realm.objects(MyProfile.self).first
+            realm.delete(user!)
+        }
+
     }
+    
+} // @end
     
 

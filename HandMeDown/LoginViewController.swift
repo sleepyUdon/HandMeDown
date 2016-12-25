@@ -7,28 +7,34 @@
 //
 
 import UIKit
+import RealmSwift
 import Firebase
 import FBSDKLoginKit
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
-    var loginButton = FBSDKLoginButton()
     
+    /// MARK: Properties
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    var loginButton = FBSDKLoginButton()
+
+    
+    /// MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Settings
         self.loginButton.isHidden = true
         
+        // Listen to state of user
         FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
-            if let user = user {
+            if (user != nil) {
                 // User is signed in.
                 // move to user to home screen
                 let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let mainTabBarController: MainTabBarController = mainStoryboard.instantiateViewController(withIdentifier: "HomeTabBar") as! MainTabBarController
                 mainTabBarController.selectedIndex = 0
                 self.present(mainTabBarController, animated: true, completion: nil)
-                
-                
                 
             } else {
                 // No user is signed in.
@@ -43,36 +49,66 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
        
-    
+    /// MARK: LoginButtonDelegate
+
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         print("User Logged In")
-        let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-        FIRAuth.auth()?.signIn(with: credential) { (user, error) in
-            print("User Logged In to Firebase")
-            if let error = error {
-                print("User failed Logging in to Firebase")
-                return
+        
+        self.loginButton.isHidden = true
+        activityIndicator.startAnimating()
+        if(error != nil) {
+            // handle error here
+            self.loginButton.isHidden = false
+            activityIndicator.stopAnimating()
+        }
+        else if(result.isCancelled){
+            // handle the cancel event
+            self.loginButton.isHidden = false
+            activityIndicator.stopAnimating()
+        } else {
+            let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+            FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+                print("User Logged In to Firebase")
+                self.loadProfile()
+                if (error != nil) {
+                    print("User failed Logging in to Firebase")
+                    return
+                }
             }
         }
     }
     
+    
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("User Logged Out")
     }
-
-
     
-    
-   /*func loginButtonClicked() {
-        let loginManager = LoginManager()
-        loginManager.logIn([ .PublicProfile ], viewController: self) { loginResult in
-            switch loginResult {
-            case .Failed(let error):
-                print(error)
-            case .Cancelled:
-                print("User cancelled login.")
-            case .Success(let grantedPermissions, let declinedPermissions, let accessToken):
-                print("Logged in!")
+    func loadProfile(){
+        if let user = FIRAuth.auth()?.currentUser{
+            
+            // download profile information
+            let name = user.displayName
+            
+            // download profile picture
+            let realm = try!Realm()
+            let me = realm.objects(MyProfile.self)
+            if (me.count <= 0) {
+                let profilePicture = FBSDKGraphRequest(graphPath: "me/picture", parameters: ["height":300, "width":300, "redirect": false], httpMethod: "GET")
+                profilePicture?.start(completionHandler: {( connection, result, error) -> Void in
+                    if (error == nil) {
+                        let dictionary = result as? NSDictionary
+                        let data = dictionary?.object(forKey: "data")
+                        let urlPic = ((data as AnyObject).object(forKey: "url"))! as! String
+                        let imageData = NSData(contentsOf: NSURL(string: urlPic)! as URL)
+                        let myProfile = MyProfile(name: name!, image: imageData! as Data)
+                        try! realm.write {
+                            realm.add(myProfile)
+                        }
+                    }
+                })
             }
-*/
-}
+        }
+    }
+    
+    
+} //@end

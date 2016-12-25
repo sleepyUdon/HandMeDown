@@ -14,31 +14,31 @@ provides-member:
 - ["C8Material19TableViewController", ""]
 - ["CSo16UIViewController", "tableViewController"]
 provides-dynamic-lookup:
+- "viewDidLoad"
 - "tableView"
 - "tableView"
 - "tableView"
 - "numberOfSections"
-- "prepare"
-- "viewDidLoad"
 - "tableViewController"
+- "prepare"
 depends-top-level:
 - "TableViewController"
 - "TableViewDelegate"
 - "UITableViewDelegate"
-- "UIViewController"
-- !private "Screen"
-- "AssignmentPrecedence"
-- "Int"
-- "CastingPrecedence"
+- "UITableViewCell"
 - !private "!="
+- "UITableView"
+- !private "BooleanLiteralType"
 - "TableView"
+- !private "Screen"
 - "DataSourceItem"
 - "UITableViewDataSource"
 - "TableViewDataSource"
-- "UITableViewCell"
-- "UITableView"
+- "UIViewController"
+- "Int"
+- "AssignmentPrecedence"
 - "IndexPath"
-- !private "BooleanLiteralType"
+- "CastingPrecedence"
 depends-member:
 - ["Ps9AnyObject", "DataSourceItem"]
 - !private ["Ps9AnyObject", "Screen"]

@@ -10,6 +10,8 @@ pod 'Material', '~> 2.0'
 pod 'RealmSwift'
 pod 'Firebase'
 pod 'Firebase/Auth'
+pod 'Firebase/Storage'
+pod 'Firebase/Database'
 
 
 
