@@ -89,6 +89,14 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController: LoginViewController = mainStoryboard.instantiateViewController(withIdentifier: "loginView") as! LoginViewController
         self.present(loginViewController, animated: true, completion: nil)
+        
+        // delete profile from Realm 
+        let realm = try!Realm()
+        try! realm.write {
+            let user = realm.objects(MyProfile.self).first
+            realm.delete(user!)
+        }
+
     }
     
 } // @end

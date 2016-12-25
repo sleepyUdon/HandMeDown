@@ -1,8 +1,8 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "0cfa27bc3480c3297dcf6bd086c44e58"
-build_time: [535947466, 881666000]
+build_time: [535998793, 112340000]
 inputs:
-  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/LoginViewController.swift": [535906626, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/LoginViewController.swift": [535997480, 0]
   "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/Fonts.swift": [534730329, 0]
   "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/Colors.swift": [534826124, 0]
   "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/FriendsTableViewCell.swift": [535944562, 0]
@@ -11,10 +11,11 @@ inputs:
   "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/PostViewController.swift": [535858209, 0]
   "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/AppDelegate.swift": [535946560, 0]
   "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/Category.swift": [534887061, 0]
-  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/FriendsViewController.swift": [535947401, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/FriendsViewController.swift": [535997971, 0]
   "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/MainTabBarController.swift": [535857642, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/MyProfile.swift": [535952190, 0]
   "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/SettingsViewController.swift": [535858210, 0]
   "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/User.swift": [535944198, 0]
-  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/GoodiesViewController.swift": [535858048, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/GoodiesViewController.swift": [535998790, 0]
   "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/GoodiesCollectionViewCell.swift": [535858084, 0]
   "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/MyStuffViewController.swift": [535690444, 0]

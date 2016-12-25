@@ -7,66 +7,102 @@ provides-member:
 - ["C10HandMeDown19LoginViewController", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
+- "loadProfile"
+- "loginButton"
+- "loginButton"
 - "activityIndicator"
 - "loginButtonDidLogOut"
-- "loginButton"
-- "loginButton"
 depends-top-level:
-- "FBSDKLoginButton"
-- "LoginViewController"
-- "AssignmentPrecedence"
-- !private "CastingPrecedence"
-- !private "!="
-- !private "MainTabBarController"
-- "UIViewController"
-- "Array"
 - "FBSDKLoginButtonDelegate"
-- !private "FBSDKAccessToken"
-- !private "BooleanLiteralType"
-- "Error"
-- !private "FIRAuth"
-- !private "FIRFacebookAuthProvider"
-- !private "UIStoryboard"
-- "UIActivityIndicatorView"
-- "FBSDKLoginManagerLoginResult"
 - "StringLiteralType"
+- "UIViewController"
+- !private "Realm"
+- !private "<="
+- !private "FIRAuth"
 - !private "print"
+- !private "FBSDKAccessToken"
+- "FBSDKLoginManagerLoginResult"
+- !private "UIStoryboard"
+- "Array"
+- !private "NSDictionary"
+- !private "NSData"
+- "LoginViewController"
+- !private "BooleanLiteralType"
+- !private "NSURL"
+- !private "FIRFacebookAuthProvider"
+- !private "!="
+- !private "MyProfile"
+- "UIActivityIndicatorView"
+- !private "Data"
+- !private "FBSDKGraphRequest"
+- "Error"
+- !private "URL"
+- !private "AnyObject"
+- "AssignmentPrecedence"
+- "FBSDKLoginButton"
+- !private "=="
+- !private "CastingPrecedence"
+- !private "Void"
+- !private "Dictionary"
+- !private "MainTabBarController"
+- !private "String"
 depends-member:
+- !private ["Vs11AnyHashable", "deinit"]
 - !private ["Ps9AnyObject", "FBSDKAccessToken"]
+- !private ["Ps9AnyObject", "FBSDKGraphRequest"]
 - ["Ps9AnyObject", "FBSDKLoginButton"]
 - !private ["Ps9AnyObject", "FIRAuth"]
 - !private ["Ps9AnyObject", "FIRFacebookAuthProvider"]
+- !private ["Ps9AnyObject", "IndexDistance"]
+- !private ["Ps9AnyObject", "MyProfile"]
+- !private ["Ps9AnyObject", "NSData"]
+- !private ["Ps9AnyObject", "NSURL"]
+- !private ["Ps9AnyObject", "Realm"]
 - !private ["Ps9AnyObject", "UIStoryboard"]
 - ["Ps9AnyObject", "activityIndicator"]
+- !private ["Ps9AnyObject", "add"]
 - !private ["Ps9AnyObject", "addStateDidChangeListener"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "auth"]
 - !private ["Ps9AnyObject", "center"]
+- !private ["Ps9AnyObject", "count"]
 - !private ["Ps9AnyObject", "credential"]
 - !private ["Ps9AnyObject", "current"]
+- !private ["Ps9AnyObject", "currentUser"]
+- !private ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "displayName"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewController"]
 - !private ["Ps9AnyObject", "isCancelled"]
 - !private ["Ps9AnyObject", "isHidden"]
+- ["Ps9AnyObject", "loadProfile"]
 - ["Ps9AnyObject", "loginButton"]
 - ["Ps9AnyObject", "loginButtonDidLogOut"]
 - ["Ps9AnyObject", "loginButtonWillLogin"]
+- !private ["Ps9AnyObject", "object"]
+- !private ["Ps9AnyObject", "objects"]
 - !private ["Ps9AnyObject", "present"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "readPermissions"]
 - !private ["Ps9AnyObject", "selectedIndex"]
 - !private ["Ps9AnyObject", "signIn"]
+- !private ["Ps9AnyObject", "start"]
 - !private ["Ps9AnyObject", "startAnimating"]
 - !private ["Ps9AnyObject", "stopAnimating"]
 - !private ["Ps9AnyObject", "tokenString"]
 - !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "write"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Element"]
 - !private ["Sa", "deinit"]
 - !private ["Ps23BidirectionalCollection", "Element"]
+- !private ["Ps23BidirectionalCollection", "IndexDistance"]
+- !private ["Ps23BidirectionalCollection", "count"]
 - !private ["Ps22BidirectionalIndexable", "Element"]
+- !private ["Ps22BidirectionalIndexable", "IndexDistance"]
+- !private ["Ps22BidirectionalIndexable", "count"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "addSubview"]
@@ -79,30 +115,44 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "stopAnimating"]
 - !private ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "FBSDKAccessToken"]
+- !private ["Ps7CVarArg", "FBSDKGraphRequest"]
 - ["Ps7CVarArg", "FBSDKLoginButton"]
 - !private ["Ps7CVarArg", "FIRAuth"]
 - !private ["Ps7CVarArg", "FIRFacebookAuthProvider"]
+- !private ["Ps7CVarArg", "IndexDistance"]
+- !private ["Ps7CVarArg", "Key"]
+- !private ["Ps7CVarArg", "MyProfile"]
+- !private ["Ps7CVarArg", "NSData"]
+- !private ["Ps7CVarArg", "NSURL"]
+- !private ["Ps7CVarArg", "Realm"]
 - !private ["Ps7CVarArg", "UIStoryboard"]
+- !private ["Ps7CVarArg", "Value"]
 - ["Ps7CVarArg", "activityIndicator"]
 - !private ["Ps7CVarArg", "addStateDidChangeListener"]
 - !private ["Ps7CVarArg", "addSubview"]
 - !private ["Ps7CVarArg", "auth"]
 - !private ["Ps7CVarArg", "center"]
+- !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "credential"]
 - !private ["Ps7CVarArg", "current"]
+- !private ["Ps7CVarArg", "currentUser"]
 - !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "displayName"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instantiateViewController"]
 - !private ["Ps7CVarArg", "isCancelled"]
 - !private ["Ps7CVarArg", "isHidden"]
+- ["Ps7CVarArg", "loadProfile"]
 - ["Ps7CVarArg", "loginButton"]
 - ["Ps7CVarArg", "loginButtonDidLogOut"]
 - ["Ps7CVarArg", "loginButtonWillLogin"]
+- !private ["Ps7CVarArg", "object"]
 - !private ["Ps7CVarArg", "present"]
 - !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "readPermissions"]
 - !private ["Ps7CVarArg", "selectedIndex"]
 - !private ["Ps7CVarArg", "signIn"]
+- !private ["Ps7CVarArg", "start"]
 - !private ["Ps7CVarArg", "startAnimating"]
 - !private ["Ps7CVarArg", "stopAnimating"]
 - !private ["Ps7CVarArg", "tokenString"]
@@ -110,33 +160,51 @@ depends-member:
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "Element"]
+- !private ["Ps10Collection", "IndexDistance"]
+- !private ["Ps10Collection", "Key"]
+- !private ["Ps10Collection", "Value"]
+- !private ["Ps10Collection", "count"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "FBSDKAccessToken"]
+- !private ["Ps28CustomDebugStringConvertible", "FBSDKGraphRequest"]
 - ["Ps28CustomDebugStringConvertible", "FBSDKLoginButton"]
 - !private ["Ps28CustomDebugStringConvertible", "FIRAuth"]
 - !private ["Ps28CustomDebugStringConvertible", "FIRFacebookAuthProvider"]
+- !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "MyProfile"]
+- !private ["Ps28CustomDebugStringConvertible", "NSData"]
+- !private ["Ps28CustomDebugStringConvertible", "NSURL"]
+- !private ["Ps28CustomDebugStringConvertible", "Realm"]
 - !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
 - ["Ps28CustomDebugStringConvertible", "activityIndicator"]
 - !private ["Ps28CustomDebugStringConvertible", "addStateDidChangeListener"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "auth"]
 - !private ["Ps28CustomDebugStringConvertible", "center"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "credential"]
 - !private ["Ps28CustomDebugStringConvertible", "current"]
+- !private ["Ps28CustomDebugStringConvertible", "currentUser"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "displayName"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "isCancelled"]
 - !private ["Ps28CustomDebugStringConvertible", "isHidden"]
+- ["Ps28CustomDebugStringConvertible", "loadProfile"]
 - ["Ps28CustomDebugStringConvertible", "loginButton"]
 - ["Ps28CustomDebugStringConvertible", "loginButtonDidLogOut"]
 - ["Ps28CustomDebugStringConvertible", "loginButtonWillLogin"]
+- !private ["Ps28CustomDebugStringConvertible", "object"]
 - !private ["Ps28CustomDebugStringConvertible", "present"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "readPermissions"]
 - !private ["Ps28CustomDebugStringConvertible", "selectedIndex"]
 - !private ["Ps28CustomDebugStringConvertible", "signIn"]
+- !private ["Ps28CustomDebugStringConvertible", "start"]
 - !private ["Ps28CustomDebugStringConvertible", "startAnimating"]
 - !private ["Ps28CustomDebugStringConvertible", "stopAnimating"]
 - !private ["Ps28CustomDebugStringConvertible", "tokenString"]
@@ -146,76 +214,115 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "Element"]
+- !private ["Ps17CustomReflectable", "Key"]
+- !private ["Ps17CustomReflectable", "Value"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "object"]
 - !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "FBSDKAccessToken"]
+- !private ["Ps23CustomStringConvertible", "FBSDKGraphRequest"]
 - ["Ps23CustomStringConvertible", "FBSDKLoginButton"]
 - !private ["Ps23CustomStringConvertible", "FIRAuth"]
 - !private ["Ps23CustomStringConvertible", "FIRFacebookAuthProvider"]
+- !private ["Ps23CustomStringConvertible", "IndexDistance"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "MyProfile"]
+- !private ["Ps23CustomStringConvertible", "NSData"]
+- !private ["Ps23CustomStringConvertible", "NSURL"]
+- !private ["Ps23CustomStringConvertible", "Realm"]
 - !private ["Ps23CustomStringConvertible", "UIStoryboard"]
+- !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "activityIndicator"]
 - !private ["Ps23CustomStringConvertible", "addStateDidChangeListener"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "auth"]
 - !private ["Ps23CustomStringConvertible", "center"]
+- !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "credential"]
 - !private ["Ps23CustomStringConvertible", "current"]
+- !private ["Ps23CustomStringConvertible", "currentUser"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "displayName"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
 - !private ["Ps23CustomStringConvertible", "isCancelled"]
 - !private ["Ps23CustomStringConvertible", "isHidden"]
+- ["Ps23CustomStringConvertible", "loadProfile"]
 - ["Ps23CustomStringConvertible", "loginButton"]
 - ["Ps23CustomStringConvertible", "loginButtonDidLogOut"]
 - ["Ps23CustomStringConvertible", "loginButtonWillLogin"]
+- !private ["Ps23CustomStringConvertible", "object"]
 - !private ["Ps23CustomStringConvertible", "present"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "readPermissions"]
 - !private ["Ps23CustomStringConvertible", "selectedIndex"]
 - !private ["Ps23CustomStringConvertible", "signIn"]
+- !private ["Ps23CustomStringConvertible", "start"]
 - !private ["Ps23CustomStringConvertible", "startAnimating"]
 - !private ["Ps23CustomStringConvertible", "stopAnimating"]
 - !private ["Ps23CustomStringConvertible", "tokenString"]
 - !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["V10Foundation4Data", "deinit"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- ["Vs10Dictionary", "deinit"]
 - !private ["Ps9Equatable", "FBSDKAccessToken"]
+- !private ["Ps9Equatable", "FBSDKGraphRequest"]
 - ["Ps9Equatable", "FBSDKLoginButton"]
 - !private ["Ps9Equatable", "FIRAuth"]
 - !private ["Ps9Equatable", "FIRFacebookAuthProvider"]
+- !private ["Ps9Equatable", "IndexDistance"]
+- !private ["Ps9Equatable", "MyProfile"]
+- !private ["Ps9Equatable", "NSData"]
+- !private ["Ps9Equatable", "NSURL"]
+- !private ["Ps9Equatable", "Realm"]
 - !private ["Ps9Equatable", "UIStoryboard"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "activityIndicator"]
+- !private ["Ps9Equatable", "add"]
 - !private ["Ps9Equatable", "addStateDidChangeListener"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "auth"]
 - !private ["Ps9Equatable", "center"]
+- !private ["Ps9Equatable", "count"]
 - !private ["Ps9Equatable", "credential"]
 - !private ["Ps9Equatable", "current"]
+- !private ["Ps9Equatable", "currentUser"]
 - !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "displayName"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewController"]
 - !private ["Ps9Equatable", "isCancelled"]
 - !private ["Ps9Equatable", "isHidden"]
+- ["Ps9Equatable", "loadProfile"]
 - ["Ps9Equatable", "loginButton"]
 - ["Ps9Equatable", "loginButtonDidLogOut"]
 - ["Ps9Equatable", "loginButtonWillLogin"]
+- !private ["Ps9Equatable", "object"]
+- !private ["Ps9Equatable", "objects"]
 - !private ["Ps9Equatable", "present"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "readPermissions"]
 - !private ["Ps9Equatable", "selectedIndex"]
 - !private ["Ps9Equatable", "signIn"]
+- !private ["Ps9Equatable", "start"]
 - !private ["Ps9Equatable", "startAnimating"]
 - !private ["Ps9Equatable", "stopAnimating"]
 - !private ["Ps9Equatable", "tokenString"]
 - !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "write"]
 - ["Ps9Equatable", ""]
 - !private ["Ps5Error", "deinit"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "object"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
@@ -229,6 +336,9 @@ depends-member:
 - !private ["CSo11FBSDKButton", "readPermissions"]
 - !private ["PSo12FBSDKCopying", "current"]
 - !private ["PSo12FBSDKCopying", "tokenString"]
+- ["CSo17FBSDKGraphRequest", "deinit"]
+- !private ["CSo17FBSDKGraphRequest", "init"]
+- !private ["CSo17FBSDKGraphRequest", "start"]
 - !private ["CSo16FBSDKLoginButton", "center"]
 - ["CSo16FBSDKLoginButton", "deinit"]
 - !private ["CSo16FBSDKLoginButton", "delegate"]
@@ -236,11 +346,17 @@ depends-member:
 - !private ["CSo16FBSDKLoginButton", "isHidden"]
 - !private ["CSo16FBSDKLoginButton", "readPermissions"]
 - !private ["PSo24FBSDKLoginButtonDelegate", "FBSDKAccessToken"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "FBSDKGraphRequest"]
 - ["PSo24FBSDKLoginButtonDelegate", "FBSDKLoginButton"]
 - !private ["PSo24FBSDKLoginButtonDelegate", "FIRAuth"]
 - !private ["PSo24FBSDKLoginButtonDelegate", "FIRFacebookAuthProvider"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "MyProfile"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "NSData"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "NSURL"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "Realm"]
 - !private ["PSo24FBSDKLoginButtonDelegate", "UIStoryboard"]
 - !private ["PSo24FBSDKLoginButtonDelegate", "activityIndicator"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "loadProfile"]
 - ["PSo24FBSDKLoginButtonDelegate", "loginButton"]
 - ["PSo24FBSDKLoginButtonDelegate", "loginButtonDidLogOut"]
 - ["PSo24FBSDKLoginButtonDelegate", "loginButtonWillLogin"]
@@ -251,14 +367,24 @@ depends-member:
 - !private ["CSo28FBSDKLoginManagerLoginResult", "isCancelled"]
 - !private ["CSo7FIRAuth", "addStateDidChangeListener"]
 - !private ["CSo7FIRAuth", "auth"]
+- !private ["CSo7FIRAuth", "currentUser"]
 - ["CSo7FIRAuth", "deinit"]
 - !private ["CSo7FIRAuth", "signIn"]
 - ["CSo17FIRAuthCredential", "deinit"]
 - !private ["CSo23FIRFacebookAuthProvider", "credential"]
+- ["CSo7FIRUser", "deinit"]
+- !private ["CSo7FIRUser", "displayName"]
+- !private ["PSo11FIRUserInfo", "displayName"]
 - !private ["Ps8Hashable", "FBSDKAccessToken"]
+- !private ["Ps8Hashable", "FBSDKGraphRequest"]
 - ["Ps8Hashable", "FBSDKLoginButton"]
 - !private ["Ps8Hashable", "FIRAuth"]
 - !private ["Ps8Hashable", "FIRFacebookAuthProvider"]
+- !private ["Ps8Hashable", "IndexDistance"]
+- !private ["Ps8Hashable", "MyProfile"]
+- !private ["Ps8Hashable", "NSData"]
+- !private ["Ps8Hashable", "NSURL"]
+- !private ["Ps8Hashable", "Realm"]
 - !private ["Ps8Hashable", "UIStoryboard"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "activityIndicator"]
@@ -266,21 +392,27 @@ depends-member:
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "auth"]
 - !private ["Ps8Hashable", "center"]
+- !private ["Ps8Hashable", "count"]
 - !private ["Ps8Hashable", "credential"]
 - !private ["Ps8Hashable", "current"]
+- !private ["Ps8Hashable", "currentUser"]
 - !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "displayName"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewController"]
 - !private ["Ps8Hashable", "isCancelled"]
 - !private ["Ps8Hashable", "isHidden"]
+- ["Ps8Hashable", "loadProfile"]
 - ["Ps8Hashable", "loginButton"]
 - ["Ps8Hashable", "loginButtonDidLogOut"]
 - ["Ps8Hashable", "loginButtonWillLogin"]
+- !private ["Ps8Hashable", "object"]
 - !private ["Ps8Hashable", "present"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "readPermissions"]
 - !private ["Ps8Hashable", "selectedIndex"]
 - !private ["Ps8Hashable", "signIn"]
+- !private ["Ps8Hashable", "start"]
 - !private ["Ps8Hashable", "startAnimating"]
 - !private ["Ps8Hashable", "stopAnimating"]
 - !private ["Ps8Hashable", "tokenString"]
@@ -289,20 +421,45 @@ depends-member:
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "IndexDistance"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps9Indexable", "count"]
 - !private ["Ps13IndexableBase", "Element"]
-- !private ["Si", "deinit"]
+- !private ["Ps13IndexableBase", "IndexDistance"]
+- !private ["Ps13IndexableBase", "Key"]
+- !private ["Ps13IndexableBase", "Value"]
+- !private ["Ps13IndexableBase", "count"]
+- ["Si", "deinit"]
+- !private ["VCSo8NSLocale3Key", "deinit"]
+- !private ["Ps22LazyCollectionProtocol", "IndexDistance"]
+- !private ["Ps22LazyCollectionProtocol", "count"]
+- !private ["Ps20LazySequenceProtocol", "IndexDistance"]
+- !private ["Ps20LazySequenceProtocol", "count"]
+- !private ["C10HandMeDown19LoginViewController", "AnyObject"]
+- !private ["C10HandMeDown19LoginViewController", "Data"]
 - ["C10HandMeDown19LoginViewController", "Error"]
 - !private ["C10HandMeDown19LoginViewController", "FBSDKAccessToken"]
+- !private ["C10HandMeDown19LoginViewController", "FBSDKGraphRequest"]
 - ["C10HandMeDown19LoginViewController", "FBSDKLoginButton"]
 - ["C10HandMeDown19LoginViewController", "FBSDKLoginManagerLoginResult"]
 - !private ["C10HandMeDown19LoginViewController", "FIRAuth"]
 - !private ["C10HandMeDown19LoginViewController", "FIRFacebookAuthProvider"]
 - !private ["C10HandMeDown19LoginViewController", "MainTabBarController"]
+- !private ["C10HandMeDown19LoginViewController", "MyProfile"]
+- !private ["C10HandMeDown19LoginViewController", "NSData"]
+- !private ["C10HandMeDown19LoginViewController", "NSDictionary"]
+- !private ["C10HandMeDown19LoginViewController", "NSURL"]
+- !private ["C10HandMeDown19LoginViewController", "Realm"]
+- !private ["C10HandMeDown19LoginViewController", "String"]
 - ["C10HandMeDown19LoginViewController", "UIActivityIndicatorView"]
 - !private ["C10HandMeDown19LoginViewController", "UIStoryboard"]
+- !private ["C10HandMeDown19LoginViewController", "URL"]
+- !private ["C10HandMeDown19LoginViewController", "Void"]
 - ["C10HandMeDown19LoginViewController", "activityIndicator"]
 - ["C10HandMeDown19LoginViewController", "deinit"]
 - ["C10HandMeDown19LoginViewController", "init"]
+- ["C10HandMeDown19LoginViewController", "loadProfile"]
 - ["C10HandMeDown19LoginViewController", "loginButton"]
 - ["C10HandMeDown19LoginViewController", "loginButtonDidLogOut"]
 - ["C10HandMeDown19LoginViewController", "loginButtonWillLogin"]
@@ -317,11 +474,18 @@ depends-member:
 - !private ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "Element"]
 - !private ["Ps16MutableIndexable", "Element"]
+- !private ["C10HandMeDown9MyProfile", "deinit"]
+- !private ["C10HandMeDown9MyProfile", "init"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "FBSDKAccessToken"]
+- !private ["PSo8NSCoding", "FBSDKGraphRequest"]
 - ["PSo8NSCoding", "FBSDKLoginButton"]
 - !private ["PSo8NSCoding", "FIRAuth"]
 - !private ["PSo8NSCoding", "FIRFacebookAuthProvider"]
+- !private ["PSo8NSCoding", "MyProfile"]
+- !private ["PSo8NSCoding", "NSData"]
+- !private ["PSo8NSCoding", "NSURL"]
+- !private ["PSo8NSCoding", "Realm"]
 - !private ["PSo8NSCoding", "UIStoryboard"]
 - ["PSo8NSCoding", "activityIndicator"]
 - !private ["PSo8NSCoding", "addSubview"]
@@ -330,9 +494,11 @@ depends-member:
 - !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "isHidden"]
+- ["PSo8NSCoding", "loadProfile"]
 - ["PSo8NSCoding", "loginButton"]
 - ["PSo8NSCoding", "loginButtonDidLogOut"]
 - ["PSo8NSCoding", "loginButtonWillLogin"]
+- !private ["PSo8NSCoding", "object"]
 - !private ["PSo8NSCoding", "present"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "readPermissions"]
@@ -345,14 +511,25 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "current"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "object"]
 - !private ["PSo9NSCopying", "tokenString"]
+- !private ["CSo6NSData", "deinit"]
+- !private ["CSo6NSData", "init"]
+- !private ["CSo12NSDictionary", "deinit"]
+- !private ["CSo12NSDictionary", "object"]
 - !private ["PSo26NSExtensionRequestHandling", "FBSDKAccessToken"]
+- !private ["PSo26NSExtensionRequestHandling", "FBSDKGraphRequest"]
 - ["PSo26NSExtensionRequestHandling", "FBSDKLoginButton"]
 - !private ["PSo26NSExtensionRequestHandling", "FIRAuth"]
 - !private ["PSo26NSExtensionRequestHandling", "FIRFacebookAuthProvider"]
+- !private ["PSo26NSExtensionRequestHandling", "MyProfile"]
+- !private ["PSo26NSExtensionRequestHandling", "NSData"]
+- !private ["PSo26NSExtensionRequestHandling", "NSURL"]
+- !private ["PSo26NSExtensionRequestHandling", "Realm"]
 - !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
 - ["PSo26NSExtensionRequestHandling", "activityIndicator"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "loadProfile"]
 - ["PSo26NSExtensionRequestHandling", "loginButton"]
 - ["PSo26NSExtensionRequestHandling", "loginButtonDidLogOut"]
 - ["PSo26NSExtensionRequestHandling", "loginButtonWillLogin"]
@@ -362,67 +539,102 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo17NSFastEnumeration", "IndexDistance"]
+- !private ["PSo17NSFastEnumeration", "count"]
+- !private ["PSo17NSFastEnumeration", "object"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "object"]
+- !private ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "Data"]
 - ["CSo8NSObject", "Error"]
 - !private ["CSo8NSObject", "FBSDKAccessToken"]
+- !private ["CSo8NSObject", "FBSDKGraphRequest"]
 - ["CSo8NSObject", "FBSDKLoginButton"]
 - ["CSo8NSObject", "FBSDKLoginManagerLoginResult"]
 - !private ["CSo8NSObject", "FIRAuth"]
 - !private ["CSo8NSObject", "FIRFacebookAuthProvider"]
+- !private ["CSo8NSObject", "IndexDistance"]
 - !private ["CSo8NSObject", "MainTabBarController"]
+- !private ["CSo8NSObject", "MyProfile"]
+- !private ["CSo8NSObject", "NSData"]
+- !private ["CSo8NSObject", "NSDictionary"]
+- !private ["CSo8NSObject", "NSURL"]
+- !private ["CSo8NSObject", "Realm"]
+- !private ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIActivityIndicatorView"]
 - !private ["CSo8NSObject", "UIStoryboard"]
+- !private ["CSo8NSObject", "URL"]
+- !private ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "activityIndicator"]
 - !private ["CSo8NSObject", "addStateDidChangeListener"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "auth"]
 - !private ["CSo8NSObject", "center"]
+- !private ["CSo8NSObject", "count"]
 - !private ["CSo8NSObject", "credential"]
 - !private ["CSo8NSObject", "current"]
+- !private ["CSo8NSObject", "currentUser"]
+- !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "displayName"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewController"]
 - !private ["CSo8NSObject", "isCancelled"]
 - !private ["CSo8NSObject", "isHidden"]
+- ["CSo8NSObject", "loadProfile"]
 - ["CSo8NSObject", "loginButton"]
 - ["CSo8NSObject", "loginButtonDidLogOut"]
 - ["CSo8NSObject", "loginButtonWillLogin"]
+- !private ["CSo8NSObject", "object"]
 - !private ["CSo8NSObject", "present"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "readPermissions"]
 - !private ["CSo8NSObject", "selectedIndex"]
 - !private ["CSo8NSObject", "signIn"]
+- !private ["CSo8NSObject", "start"]
 - !private ["CSo8NSObject", "startAnimating"]
 - !private ["CSo8NSObject", "stopAnimating"]
 - !private ["CSo8NSObject", "tokenString"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "FBSDKAccessToken"]
+- !private ["PSo16NSObjectProtocol", "FBSDKGraphRequest"]
 - ["PSo16NSObjectProtocol", "FBSDKLoginButton"]
 - !private ["PSo16NSObjectProtocol", "FIRAuth"]
 - !private ["PSo16NSObjectProtocol", "FIRFacebookAuthProvider"]
+- !private ["PSo16NSObjectProtocol", "IndexDistance"]
+- !private ["PSo16NSObjectProtocol", "MyProfile"]
+- !private ["PSo16NSObjectProtocol", "NSData"]
+- !private ["PSo16NSObjectProtocol", "NSURL"]
+- !private ["PSo16NSObjectProtocol", "Realm"]
 - !private ["PSo16NSObjectProtocol", "UIStoryboard"]
 - ["PSo16NSObjectProtocol", "activityIndicator"]
 - !private ["PSo16NSObjectProtocol", "addStateDidChangeListener"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "auth"]
 - !private ["PSo16NSObjectProtocol", "center"]
+- !private ["PSo16NSObjectProtocol", "count"]
 - !private ["PSo16NSObjectProtocol", "credential"]
 - !private ["PSo16NSObjectProtocol", "current"]
+- !private ["PSo16NSObjectProtocol", "currentUser"]
 - ["PSo16NSObjectProtocol", "deinit"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "displayName"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
 - !private ["PSo16NSObjectProtocol", "isCancelled"]
 - !private ["PSo16NSObjectProtocol", "isHidden"]
+- ["PSo16NSObjectProtocol", "loadProfile"]
 - ["PSo16NSObjectProtocol", "loginButton"]
 - ["PSo16NSObjectProtocol", "loginButtonDidLogOut"]
 - ["PSo16NSObjectProtocol", "loginButtonWillLogin"]
+- !private ["PSo16NSObjectProtocol", "object"]
 - !private ["PSo16NSObjectProtocol", "present"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "readPermissions"]
 - !private ["PSo16NSObjectProtocol", "selectedIndex"]
 - !private ["PSo16NSObjectProtocol", "signIn"]
+- !private ["PSo16NSObjectProtocol", "start"]
 - !private ["PSo16NSObjectProtocol", "startAnimating"]
 - !private ["PSo16NSObjectProtocol", "stopAnimating"]
 - !private ["PSo16NSObjectProtocol", "tokenString"]
@@ -431,15 +643,41 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "current"]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "object"]
 - !private ["PSo14NSSecureCoding", "tokenString"]
 - !private ["CSo8NSString", "init"]
+- !private ["CSo5NSURL", "deinit"]
+- !private ["CSo5NSURL", "init"]
+- !private ["C10RealmSwift6Object", "deinit"]
+- !private ["C10RealmSwift6Object", "init"]
 - ["Sq", "deinit"]
+- !private ["CSo13RLMObjectBase", "deinit"]
+- !private ["CSo13RLMObjectBase", "init"]
 - !private ["Ps22RandomAccessCollection", "Element"]
+- !private ["Ps22RandomAccessCollection", "IndexDistance"]
+- !private ["Ps22RandomAccessCollection", "count"]
 - !private ["Ps21RandomAccessIndexable", "Element"]
+- !private ["Ps21RandomAccessIndexable", "IndexDistance"]
+- !private ["Ps21RandomAccessIndexable", "count"]
 - !private ["Ps26RangeReplaceableCollection", "Element"]
 - !private ["Ps25RangeReplaceableIndexable", "Element"]
+- !private ["C10RealmSwift5Realm", "add"]
+- ["C10RealmSwift5Realm", "deinit"]
+- !private ["C10RealmSwift5Realm", "init"]
+- !private ["C10RealmSwift5Realm", "objects"]
+- !private ["C10RealmSwift5Realm", "write"]
+- !private ["P10RealmSwift15RealmCollection", "IndexDistance"]
+- !private ["P10RealmSwift15RealmCollection", "count"]
 - !private ["P10RealmSwift17RealmOptionalType", "_getBuiltinLogicValue"]
+- !private ["C10RealmSwift7Results", "IndexDistance"]
+- !private ["C10RealmSwift7Results", "count"]
+- ["C10RealmSwift7Results", "deinit"]
 - !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "IndexDistance"]
+- !private ["Ps8Sequence", "Key"]
+- !private ["Ps8Sequence", "Value"]
+- !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "object"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
@@ -463,9 +701,14 @@ depends-member:
 - !private ["PSo12UIAppearance", "startAnimating"]
 - !private ["PSo12UIAppearance", "stopAnimating"]
 - !private ["PSo21UIAppearanceContainer", "FBSDKAccessToken"]
+- !private ["PSo21UIAppearanceContainer", "FBSDKGraphRequest"]
 - ["PSo21UIAppearanceContainer", "FBSDKLoginButton"]
 - !private ["PSo21UIAppearanceContainer", "FIRAuth"]
 - !private ["PSo21UIAppearanceContainer", "FIRFacebookAuthProvider"]
+- !private ["PSo21UIAppearanceContainer", "MyProfile"]
+- !private ["PSo21UIAppearanceContainer", "NSData"]
+- !private ["PSo21UIAppearanceContainer", "NSURL"]
+- !private ["PSo21UIAppearanceContainer", "Realm"]
 - !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
 - ["PSo21UIAppearanceContainer", "activityIndicator"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
@@ -473,6 +716,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "isHidden"]
+- ["PSo21UIAppearanceContainer", "loadProfile"]
 - ["PSo21UIAppearanceContainer", "loginButton"]
 - ["PSo21UIAppearanceContainer", "loginButtonDidLogOut"]
 - ["PSo21UIAppearanceContainer", "loginButtonWillLogin"]
@@ -491,12 +735,18 @@ depends-member:
 - !private ["CSo8UIButton", "isHidden"]
 - !private ["CSo8UIButton", "readPermissions"]
 - !private ["PSo18UIContentContainer", "FBSDKAccessToken"]
+- !private ["PSo18UIContentContainer", "FBSDKGraphRequest"]
 - ["PSo18UIContentContainer", "FBSDKLoginButton"]
 - !private ["PSo18UIContentContainer", "FIRAuth"]
 - !private ["PSo18UIContentContainer", "FIRFacebookAuthProvider"]
+- !private ["PSo18UIContentContainer", "MyProfile"]
+- !private ["PSo18UIContentContainer", "NSData"]
+- !private ["PSo18UIContentContainer", "NSURL"]
+- !private ["PSo18UIContentContainer", "Realm"]
 - !private ["PSo18UIContentContainer", "UIStoryboard"]
 - ["PSo18UIContentContainer", "activityIndicator"]
 - !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "loadProfile"]
 - ["PSo18UIContentContainer", "loginButton"]
 - ["PSo18UIContentContainer", "loginButtonDidLogOut"]
 - ["PSo18UIContentContainer", "loginButtonWillLogin"]
@@ -528,9 +778,14 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "startAnimating"]
 - !private ["PSo13UIDynamicItem", "stopAnimating"]
 - !private ["PSo18UIFocusEnvironment", "FBSDKAccessToken"]
+- !private ["PSo18UIFocusEnvironment", "FBSDKGraphRequest"]
 - ["PSo18UIFocusEnvironment", "FBSDKLoginButton"]
 - !private ["PSo18UIFocusEnvironment", "FIRAuth"]
 - !private ["PSo18UIFocusEnvironment", "FIRFacebookAuthProvider"]
+- !private ["PSo18UIFocusEnvironment", "MyProfile"]
+- !private ["PSo18UIFocusEnvironment", "NSData"]
+- !private ["PSo18UIFocusEnvironment", "NSURL"]
+- !private ["PSo18UIFocusEnvironment", "Realm"]
 - !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
 - ["PSo18UIFocusEnvironment", "activityIndicator"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
@@ -538,6 +793,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "isHidden"]
+- ["PSo18UIFocusEnvironment", "loadProfile"]
 - ["PSo18UIFocusEnvironment", "loginButton"]
 - ["PSo18UIFocusEnvironment", "loginButtonDidLogOut"]
 - ["PSo18UIFocusEnvironment", "loginButtonWillLogin"]
@@ -558,21 +814,33 @@ depends-member:
 - !private ["PSo11UIFocusItem", "readPermissions"]
 - !private ["PSo11UIFocusItem", "startAnimating"]
 - !private ["PSo11UIFocusItem", "stopAnimating"]
+- !private ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "Data"]
 - ["CSo11UIResponder", "Error"]
 - !private ["CSo11UIResponder", "FBSDKAccessToken"]
+- !private ["CSo11UIResponder", "FBSDKGraphRequest"]
 - ["CSo11UIResponder", "FBSDKLoginButton"]
 - ["CSo11UIResponder", "FBSDKLoginManagerLoginResult"]
 - !private ["CSo11UIResponder", "FIRAuth"]
 - !private ["CSo11UIResponder", "FIRFacebookAuthProvider"]
 - !private ["CSo11UIResponder", "MainTabBarController"]
+- !private ["CSo11UIResponder", "MyProfile"]
+- !private ["CSo11UIResponder", "NSData"]
+- !private ["CSo11UIResponder", "NSDictionary"]
+- !private ["CSo11UIResponder", "NSURL"]
+- !private ["CSo11UIResponder", "Realm"]
+- !private ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIActivityIndicatorView"]
 - !private ["CSo11UIResponder", "UIStoryboard"]
+- !private ["CSo11UIResponder", "URL"]
+- !private ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "activityIndicator"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "center"]
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "isHidden"]
+- ["CSo11UIResponder", "loadProfile"]
 - ["CSo11UIResponder", "loginButton"]
 - ["CSo11UIResponder", "loginButtonDidLogOut"]
 - ["CSo11UIResponder", "loginButtonWillLogin"]
@@ -585,9 +853,14 @@ depends-member:
 - !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo30UIResponderStandardEditActions", "FBSDKAccessToken"]
+- !private ["PSo30UIResponderStandardEditActions", "FBSDKGraphRequest"]
 - ["PSo30UIResponderStandardEditActions", "FBSDKLoginButton"]
 - !private ["PSo30UIResponderStandardEditActions", "FIRAuth"]
 - !private ["PSo30UIResponderStandardEditActions", "FIRFacebookAuthProvider"]
+- !private ["PSo30UIResponderStandardEditActions", "MyProfile"]
+- !private ["PSo30UIResponderStandardEditActions", "NSData"]
+- !private ["PSo30UIResponderStandardEditActions", "NSURL"]
+- !private ["PSo30UIResponderStandardEditActions", "Realm"]
 - !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
 - ["PSo30UIResponderStandardEditActions", "activityIndicator"]
 - !private ["PSo30UIResponderStandardEditActions", "addSubview"]
@@ -595,6 +868,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "isHidden"]
+- ["PSo30UIResponderStandardEditActions", "loadProfile"]
 - ["PSo30UIResponderStandardEditActions", "loginButton"]
 - ["PSo30UIResponderStandardEditActions", "loginButtonDidLogOut"]
 - ["PSo30UIResponderStandardEditActions", "loginButtonWillLogin"]
@@ -608,12 +882,18 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "FBSDKAccessToken"]
+- !private ["PSo16UIStateRestoring", "FBSDKGraphRequest"]
 - ["PSo16UIStateRestoring", "FBSDKLoginButton"]
 - !private ["PSo16UIStateRestoring", "FIRAuth"]
 - !private ["PSo16UIStateRestoring", "FIRFacebookAuthProvider"]
+- !private ["PSo16UIStateRestoring", "MyProfile"]
+- !private ["PSo16UIStateRestoring", "NSData"]
+- !private ["PSo16UIStateRestoring", "NSURL"]
+- !private ["PSo16UIStateRestoring", "Realm"]
 - !private ["PSo16UIStateRestoring", "UIStoryboard"]
 - ["PSo16UIStateRestoring", "activityIndicator"]
 - !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "loadProfile"]
 - ["PSo16UIStateRestoring", "loginButton"]
 - ["PSo16UIStateRestoring", "loginButtonDidLogOut"]
 - ["PSo16UIStateRestoring", "loginButtonWillLogin"]
@@ -629,9 +909,14 @@ depends-member:
 - !private ["CSo18UITabBarController", "selectedIndex"]
 - !private ["PSo16UITabBarDelegate", "selectedIndex"]
 - !private ["PSo18UITraitEnvironment", "FBSDKAccessToken"]
+- !private ["PSo18UITraitEnvironment", "FBSDKGraphRequest"]
 - ["PSo18UITraitEnvironment", "FBSDKLoginButton"]
 - !private ["PSo18UITraitEnvironment", "FIRAuth"]
 - !private ["PSo18UITraitEnvironment", "FIRFacebookAuthProvider"]
+- !private ["PSo18UITraitEnvironment", "MyProfile"]
+- !private ["PSo18UITraitEnvironment", "NSData"]
+- !private ["PSo18UITraitEnvironment", "NSURL"]
+- !private ["PSo18UITraitEnvironment", "Realm"]
 - !private ["PSo18UITraitEnvironment", "UIStoryboard"]
 - ["PSo18UITraitEnvironment", "activityIndicator"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
@@ -639,6 +924,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "isHidden"]
+- ["PSo18UITraitEnvironment", "loadProfile"]
 - ["PSo18UITraitEnvironment", "loginButton"]
 - ["PSo18UITraitEnvironment", "loginButtonDidLogOut"]
 - ["PSo18UITraitEnvironment", "loginButtonWillLogin"]
@@ -659,18 +945,30 @@ depends-member:
 - !private ["CSo6UIView", "readPermissions"]
 - !private ["CSo6UIView", "startAnimating"]
 - !private ["CSo6UIView", "stopAnimating"]
+- !private ["CSo16UIViewController", "AnyObject"]
+- !private ["CSo16UIViewController", "Data"]
 - ["CSo16UIViewController", "Error"]
 - !private ["CSo16UIViewController", "FBSDKAccessToken"]
+- !private ["CSo16UIViewController", "FBSDKGraphRequest"]
 - ["CSo16UIViewController", "FBSDKLoginButton"]
 - ["CSo16UIViewController", "FBSDKLoginManagerLoginResult"]
 - !private ["CSo16UIViewController", "FIRAuth"]
 - !private ["CSo16UIViewController", "FIRFacebookAuthProvider"]
 - !private ["CSo16UIViewController", "MainTabBarController"]
+- !private ["CSo16UIViewController", "MyProfile"]
+- !private ["CSo16UIViewController", "NSData"]
+- !private ["CSo16UIViewController", "NSDictionary"]
+- !private ["CSo16UIViewController", "NSURL"]
+- !private ["CSo16UIViewController", "Realm"]
+- !private ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIActivityIndicatorView"]
 - !private ["CSo16UIViewController", "UIStoryboard"]
+- !private ["CSo16UIViewController", "URL"]
+- !private ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "activityIndicator"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "loadProfile"]
 - ["CSo16UIViewController", "loginButton"]
 - ["CSo16UIViewController", "loginButtonDidLogOut"]
 - ["CSo16UIViewController", "loginButtonWillLogin"]
@@ -680,6 +978,7 @@ depends-member:
 - !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["V10Foundation3URL", "deinit"]
 - !private ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "center"]
@@ -697,9 +996,15 @@ depends-member:
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "FBSDKAccessToken"]
+- !private ["Ps9_Hashable", "FBSDKGraphRequest"]
 - ["Ps9_Hashable", "FBSDKLoginButton"]
 - !private ["Ps9_Hashable", "FIRAuth"]
 - !private ["Ps9_Hashable", "FIRFacebookAuthProvider"]
+- !private ["Ps9_Hashable", "IndexDistance"]
+- !private ["Ps9_Hashable", "MyProfile"]
+- !private ["Ps9_Hashable", "NSData"]
+- !private ["Ps9_Hashable", "NSURL"]
+- !private ["Ps9_Hashable", "Realm"]
 - !private ["Ps9_Hashable", "UIStoryboard"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "activityIndicator"]
@@ -707,21 +1012,27 @@ depends-member:
 - !private ["Ps9_Hashable", "addSubview"]
 - !private ["Ps9_Hashable", "auth"]
 - !private ["Ps9_Hashable", "center"]
+- !private ["Ps9_Hashable", "count"]
 - !private ["Ps9_Hashable", "credential"]
 - !private ["Ps9_Hashable", "current"]
+- !private ["Ps9_Hashable", "currentUser"]
 - !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "displayName"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instantiateViewController"]
 - !private ["Ps9_Hashable", "isCancelled"]
 - !private ["Ps9_Hashable", "isHidden"]
+- ["Ps9_Hashable", "loadProfile"]
 - ["Ps9_Hashable", "loginButton"]
 - ["Ps9_Hashable", "loginButtonDidLogOut"]
 - ["Ps9_Hashable", "loginButtonWillLogin"]
+- !private ["Ps9_Hashable", "object"]
 - !private ["Ps9_Hashable", "present"]
 - !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "readPermissions"]
 - !private ["Ps9_Hashable", "selectedIndex"]
 - !private ["Ps9_Hashable", "signIn"]
+- !private ["Ps9_Hashable", "start"]
 - !private ["Ps9_Hashable", "startAnimating"]
 - !private ["Ps9_Hashable", "stopAnimating"]
 - !private ["Ps9_Hashable", "tokenString"]
@@ -729,10 +1040,13 @@ depends-member:
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:
+- !private "Vs11AnyHashable"
 - "Ps9AnyObject"
 - !private "Sa"
 - !private "Ps23BidirectionalCollection"
@@ -746,10 +1060,13 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- !private "V10Foundation4Data"
+- "Vs10Dictionary"
 - "Ps9Equatable"
 - !private "Ps5Error"
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
@@ -757,38 +1074,54 @@ depends-nominal:
 - !private "CSo16FBSDKAccessToken"
 - "CSo11FBSDKButton"
 - !private "PSo12FBSDKCopying"
+- "CSo17FBSDKGraphRequest"
 - "CSo16FBSDKLoginButton"
 - "PSo24FBSDKLoginButtonDelegate"
 - !private "CSo28FBSDKLoginManagerLoginResult"
 - "CSo7FIRAuth"
 - "CSo17FIRAuthCredential"
 - !private "CSo23FIRFacebookAuthProvider"
+- "CSo7FIRUser"
+- !private "PSo11FIRUserInfo"
 - "Ps8Hashable"
 - "SQ"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
-- !private "Si"
+- "Si"
+- !private "VCSo8NSLocale3Key"
+- !private "Ps22LazyCollectionProtocol"
+- !private "Ps20LazySequenceProtocol"
 - "C10HandMeDown19LoginViewController"
 - !private "Ps25LosslessStringConvertible"
 - !private "C10HandMeDown20MainTabBarController"
 - !private "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
+- !private "C10HandMeDown9MyProfile"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
+- !private "CSo6NSData"
+- !private "CSo12NSDictionary"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo17NSFastEnumeration"
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "C10RealmSwift6Object"
 - "Sq"
+- !private "CSo13RLMObjectBase"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps25RangeReplaceableIndexable"
+- "C10RealmSwift5Realm"
+- !private "P10RealmSwift15RealmCollection"
 - !private "P10RealmSwift17RealmOptionalType"
+- "C10RealmSwift7Results"
 - !private "Ps8Sequence"
 - "SS"
 - !private "Ps16TextOutputStream"
@@ -813,6 +1146,7 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - "CSo16UIViewController"
+- !private "V10Foundation3URL"
 - !private "Ps14_ArrayProtocol"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps24_DestructorSafeContainer"
@@ -826,6 +1160,7 @@ depends-nominal:
 - !private "Ps21_ObjectiveCBridgeable"
 - "Vs26_OptionalNilComparisonType"
 depends-dynamic-lookup:
+- !private "object"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
@@ -838,6 +1173,49 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUser.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSession.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncPermissionChange.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncManager.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUtil.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRApp.h"
@@ -939,49 +1317,6 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Modules/module.modulemap"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUser.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSession.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncPermissionChange.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncManager.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUtil.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules/module.modulemap"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
@@ -989,4 +1324,4 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
-interface-hash: "411241c96e1177ce49c973fdbf74cf33"
+interface-hash: "cb5af696e3f94af95d566879bcb6b0bd"

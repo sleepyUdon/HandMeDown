@@ -6,47 +6,48 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown21GoodiesViewController", ""]
 provides-dynamic-lookup:
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
+- "numberOfSections"
+- "handleLogoutButton"
 - "viewDidLoad"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "filterButton"
 - "viewWillAppear"
 - "prepareLayout"
-- "numberOfSections"
-- "filterButton"
-- "handleLogoutButton"
 depends-top-level:
-- "CGSize"
-- !private "/"
-- "UIButton"
-- !private "LoginViewController"
-- "Item"
-- !private "BooleanLiteralType"
-- !private "FBSDKAccessToken"
-- "RaisedButton"
-- "IndexPath"
-- "Results"
-- "UIViewController"
-- "UICollectionViewDelegateFlowLayout"
-- "CastingPrecedence"
-- "UICollectionViewDataSource"
-- "Bool"
-- "AssignmentPrecedence"
 - "UICollectionViewDelegate"
-- !private "print"
-- "UICollectionView"
-- !private "FIRAuth"
-- !private "Fonts"
-- !private "Colors"
-- !private "UIStoryboard"
-- !private "-"
-- "UICollectionViewLayout"
-- "Int"
-- !private "Realm"
-- "UICollectionViewCell"
-- "GoodiesViewController"
 - !private "GoodiesCollectionViewCell"
+- "UICollectionViewDataSource"
+- !private "MyProfile"
+- "UICollectionViewDelegateFlowLayout"
+- "UIButton"
+- !private "Colors"
+- !private "Fonts"
+- "Results"
+- "GoodiesViewController"
+- !private "BooleanLiteralType"
+- "Bool"
+- "IndexPath"
+- !private "Realm"
+- "UICollectionView"
+- !private "UIStoryboard"
+- "UIViewController"
+- !private "/"
+- !private "FIRAuth"
+- "Item"
+- !private "print"
+- "UICollectionViewCell"
+- "AssignmentPrecedence"
+- !private "-"
+- "RaisedButton"
+- "CGSize"
+- "CastingPrecedence"
+- !private "LoginViewController"
+- !private "FBSDKAccessToken"
+- "Int"
+- "UICollectionViewLayout"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["P10RealmSwift11AddableType", "IntegerLiteralType"]
@@ -55,12 +56,15 @@ depends-member:
 - !private ["Ps9AnyObject", "BT2"]
 - !private ["Ps9AnyObject", "CGSize"]
 - !private ["Ps9AnyObject", "Colors"]
+- !private ["Ps9AnyObject", "Element"]
 - !private ["Ps9AnyObject", "FBSDKAccessToken"]
 - !private ["Ps9AnyObject", "FIRAuth"]
 - !private ["Ps9AnyObject", "Fonts"]
 - !private ["Ps9AnyObject", "Index"]
 - !private ["Ps9AnyObject", "IndexDistance"]
 - !private ["Ps9AnyObject", "Item"]
+- !private ["Ps9AnyObject", "Iterator"]
+- !private ["Ps9AnyObject", "MyProfile"]
 - !private ["Ps9AnyObject", "Realm"]
 - !private ["Ps9AnyObject", "SubSequence"]
 - !private ["Ps9AnyObject", "UIStoryboard"]
@@ -72,8 +76,10 @@ depends-member:
 - !private ["Ps9AnyObject", "configureWithItem"]
 - !private ["Ps9AnyObject", "cornerRadius"]
 - !private ["Ps9AnyObject", "count"]
+- !private ["Ps9AnyObject", "delete"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - ["Ps9AnyObject", "filterButton"]
+- !private ["Ps9AnyObject", "first"]
 - !private ["Ps9AnyObject", "font"]
 - !private ["Ps9AnyObject", "frame"]
 - ["Ps9AnyObject", "handleLogoutButton"]
@@ -112,6 +118,7 @@ depends-member:
 - ["Ps9AnyObject", "viewForZooming"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - ["Ps9AnyObject", "viewWillAppear"]
+- !private ["Ps9AnyObject", "write"]
 - ["Ps9AnyObject", ""]
 - !private ["Ps23BidirectionalCollection", "Index"]
 - !private ["Ps23BidirectionalCollection", "IndexDistance"]
@@ -120,6 +127,7 @@ depends-member:
 - !private ["Ps23BidirectionalCollection", "SubSequence"]
 - !private ["Ps23BidirectionalCollection", "_Element"]
 - !private ["Ps23BidirectionalCollection", "count"]
+- !private ["Ps23BidirectionalCollection", "first"]
 - !private ["Ps23BidirectionalCollection", "row"]
 - !private ["Ps23BidirectionalCollection", "subscript"]
 - !private ["Ps22BidirectionalIndexable", "Index"]
@@ -129,6 +137,7 @@ depends-member:
 - !private ["Ps22BidirectionalIndexable", "SubSequence"]
 - !private ["Ps22BidirectionalIndexable", "_Element"]
 - !private ["Ps22BidirectionalIndexable", "count"]
+- !private ["Ps22BidirectionalIndexable", "first"]
 - !private ["Ps22BidirectionalIndexable", "row"]
 - !private ["Ps22BidirectionalIndexable", "subscript"]
 - !private ["Vs18BidirectionalSlice", "Index"]
@@ -170,6 +179,8 @@ depends-member:
 - !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
 - !private ["Ps7CVarArg", "Item"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "MyProfile"]
 - !private ["Ps7CVarArg", "Realm"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
@@ -186,6 +197,7 @@ depends-member:
 - !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
 - ["Ps7CVarArg", "filterButton"]
+- !private ["Ps7CVarArg", "first"]
 - !private ["Ps7CVarArg", "font"]
 - !private ["Ps7CVarArg", "frame"]
 - ["Ps7CVarArg", "handleLogoutButton"]
@@ -231,6 +243,7 @@ depends-member:
 - !private ["Ps10Collection", "SubSequence"]
 - !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "count"]
+- !private ["Ps10Collection", "first"]
 - !private ["Ps10Collection", "row"]
 - !private ["Ps10Collection", "subscript"]
 - !private ["C10HandMeDown6Colors", "purple"]
@@ -248,6 +261,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - !private ["Ps28CustomDebugStringConvertible", "Item"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "MyProfile"]
 - !private ["Ps28CustomDebugStringConvertible", "Realm"]
 - !private ["Ps28CustomDebugStringConvertible", "Stride"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
@@ -262,6 +277,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - ["Ps28CustomDebugStringConvertible", "filterButton"]
+- !private ["Ps28CustomDebugStringConvertible", "first"]
 - !private ["Ps28CustomDebugStringConvertible", "font"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - ["Ps28CustomDebugStringConvertible", "handleLogoutButton"]
@@ -328,6 +344,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "Item"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "MyProfile"]
 - !private ["Ps23CustomStringConvertible", "Realm"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
@@ -344,6 +362,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - ["Ps23CustomStringConvertible", "filterButton"]
+- !private ["Ps23CustomStringConvertible", "first"]
 - !private ["Ps23CustomStringConvertible", "font"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - ["Ps23CustomStringConvertible", "handleLogoutButton"]
@@ -406,6 +425,8 @@ depends-member:
 - !private ["Ps9Equatable", "IndexDistance"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "Item"]
+- !private ["Ps9Equatable", "Iterator"]
+- !private ["Ps9Equatable", "MyProfile"]
 - !private ["Ps9Equatable", "Realm"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "SubSequence"]
@@ -420,8 +441,10 @@ depends-member:
 - !private ["Ps9Equatable", "configureWithItem"]
 - !private ["Ps9Equatable", "cornerRadius"]
 - !private ["Ps9Equatable", "count"]
+- !private ["Ps9Equatable", "delete"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - ["Ps9Equatable", "filterButton"]
+- !private ["Ps9Equatable", "first"]
 - !private ["Ps9Equatable", "font"]
 - !private ["Ps9Equatable", "frame"]
 - ["Ps9Equatable", "handleLogoutButton"]
@@ -463,6 +486,7 @@ depends-member:
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
 - ["Ps9Equatable", "viewWillAppear"]
 - !private ["Ps9Equatable", "width"]
+- !private ["Ps9Equatable", "write"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "row"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
@@ -496,6 +520,7 @@ depends-member:
 - ["C10HandMeDown21GoodiesViewController", "Int"]
 - ["C10HandMeDown21GoodiesViewController", "Item"]
 - !private ["C10HandMeDown21GoodiesViewController", "LoginViewController"]
+- !private ["C10HandMeDown21GoodiesViewController", "MyProfile"]
 - ["C10HandMeDown21GoodiesViewController", "RaisedButton"]
 - !private ["C10HandMeDown21GoodiesViewController", "Realm"]
 - ["C10HandMeDown21GoodiesViewController", "Results"]
@@ -543,6 +568,8 @@ depends-member:
 - !private ["Ps8Hashable", "IndexDistance"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "Item"]
+- !private ["Ps8Hashable", "Iterator"]
+- !private ["Ps8Hashable", "MyProfile"]
 - !private ["Ps8Hashable", "Realm"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "SubSequence"]
@@ -559,6 +586,7 @@ depends-member:
 - !private ["Ps8Hashable", "count"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - ["Ps8Hashable", "filterButton"]
+- !private ["Ps8Hashable", "first"]
 - !private ["Ps8Hashable", "font"]
 - !private ["Ps8Hashable", "frame"]
 - ["Ps8Hashable", "handleLogoutButton"]
@@ -608,6 +636,7 @@ depends-member:
 - !private ["Ps9Indexable", "SubSequence"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "count"]
+- !private ["Ps9Indexable", "first"]
 - !private ["Ps9Indexable", "row"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Ps13IndexableBase", "Index"]
@@ -617,6 +646,7 @@ depends-member:
 - !private ["Ps13IndexableBase", "SubSequence"]
 - !private ["Ps13IndexableBase", "_Element"]
 - !private ["Ps13IndexableBase", "count"]
+- !private ["Ps13IndexableBase", "first"]
 - !private ["Ps13IndexableBase", "row"]
 - !private ["Ps13IndexableBase", "subscript"]
 - !private ["Vs16IndexingIterator", "Element"]
@@ -644,15 +674,19 @@ depends-member:
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps22LazyCollectionProtocol", "Index"]
 - !private ["Ps22LazyCollectionProtocol", "IndexDistance"]
+- !private ["Ps22LazyCollectionProtocol", "Iterator"]
 - !private ["Ps22LazyCollectionProtocol", "SubSequence"]
 - !private ["Ps22LazyCollectionProtocol", "_Element"]
 - !private ["Ps22LazyCollectionProtocol", "count"]
+- !private ["Ps22LazyCollectionProtocol", "first"]
 - !private ["Ps22LazyCollectionProtocol", "subscript"]
 - !private ["Ps20LazySequenceProtocol", "Index"]
 - !private ["Ps20LazySequenceProtocol", "IndexDistance"]
+- !private ["Ps20LazySequenceProtocol", "Iterator"]
 - !private ["Ps20LazySequenceProtocol", "SubSequence"]
 - !private ["Ps20LazySequenceProtocol", "_Element"]
 - !private ["Ps20LazySequenceProtocol", "count"]
+- !private ["Ps20LazySequenceProtocol", "first"]
 - !private ["Ps20LazySequenceProtocol", "subscript"]
 - ["C10HandMeDown19LoginViewController", "deinit"]
 - !private ["Ps25LosslessStringConvertible", "Stride"]
@@ -666,6 +700,7 @@ depends-member:
 - !private ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "row"]
 - !private ["Ps16MutableIndexable", "row"]
+- !private ["C10HandMeDown9MyProfile", "deinit"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "CGSize"]
 - !private ["PSo8NSCoding", "Colors"]
@@ -673,6 +708,7 @@ depends-member:
 - !private ["PSo8NSCoding", "FIRAuth"]
 - !private ["PSo8NSCoding", "Fonts"]
 - !private ["PSo8NSCoding", "Item"]
+- !private ["PSo8NSCoding", "MyProfile"]
 - !private ["PSo8NSCoding", "Realm"]
 - !private ["PSo8NSCoding", "UIStoryboard"]
 - !private ["PSo8NSCoding", "backgroundColor"]
@@ -727,6 +763,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "FIRAuth"]
 - !private ["PSo26NSExtensionRequestHandling", "Fonts"]
 - !private ["PSo26NSExtensionRequestHandling", "Item"]
+- !private ["PSo26NSExtensionRequestHandling", "MyProfile"]
 - !private ["PSo26NSExtensionRequestHandling", "Realm"]
 - !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
 - ["PSo26NSExtensionRequestHandling", "collectionView"]
@@ -761,9 +798,11 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo17NSFastEnumeration", "Index"]
 - !private ["PSo17NSFastEnumeration", "IndexDistance"]
+- !private ["PSo17NSFastEnumeration", "Iterator"]
 - !private ["PSo17NSFastEnumeration", "SubSequence"]
 - !private ["PSo17NSFastEnumeration", "_Element"]
 - !private ["PSo17NSFastEnumeration", "count"]
+- !private ["PSo17NSFastEnumeration", "first"]
 - !private ["PSo17NSFastEnumeration", "subscript"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
@@ -778,7 +817,9 @@ depends-member:
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "Item"]
+- !private ["CSo8NSObject", "Iterator"]
 - !private ["CSo8NSObject", "LoginViewController"]
+- !private ["CSo8NSObject", "MyProfile"]
 - ["CSo8NSObject", "RaisedButton"]
 - !private ["CSo8NSObject", "Realm"]
 - ["CSo8NSObject", "Results"]
@@ -796,8 +837,10 @@ depends-member:
 - !private ["CSo8NSObject", "configureWithItem"]
 - !private ["CSo8NSObject", "cornerRadius"]
 - !private ["CSo8NSObject", "count"]
+- !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - ["CSo8NSObject", "filterButton"]
+- !private ["CSo8NSObject", "first"]
 - !private ["CSo8NSObject", "font"]
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "handleLogoutButton"]
@@ -843,6 +886,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "Index"]
 - !private ["PSo16NSObjectProtocol", "IndexDistance"]
 - !private ["PSo16NSObjectProtocol", "Item"]
+- !private ["PSo16NSObjectProtocol", "Iterator"]
+- !private ["PSo16NSObjectProtocol", "MyProfile"]
 - !private ["PSo16NSObjectProtocol", "Realm"]
 - !private ["PSo16NSObjectProtocol", "SubSequence"]
 - !private ["PSo16NSObjectProtocol", "UIStoryboard"]
@@ -856,6 +901,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "count"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - ["PSo16NSObjectProtocol", "filterButton"]
+- !private ["PSo16NSObjectProtocol", "first"]
 - !private ["PSo16NSObjectProtocol", "font"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - ["PSo16NSObjectProtocol", "handleLogoutButton"]
@@ -899,11 +945,14 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "purple"]
 - !private ["PSo14NSSecureCoding", "setCurrent"]
 - !private ["CSo8NSString", "init"]
+- !private ["C10RealmSwift6Object", "deinit"]
 - ["Sq", "deinit"]
 - !private ["P8Material9Pulseable", "backgroundColor"]
 - !private ["P8Material9Pulseable", "cornerRadius"]
 - !private ["P8Material9Pulseable", "frame"]
 - !private ["P8Material9Pulseable", "titleLabel"]
+- !private ["C10RealmSwift11RLMIterator", "Element"]
+- !private ["CSo13RLMObjectBase", "deinit"]
 - !private ["C8Material12RaisedButton", "backgroundColor"]
 - !private ["C8Material12RaisedButton", "cornerRadius"]
 - !private ["C8Material12RaisedButton", "frame"]
@@ -915,6 +964,7 @@ depends-member:
 - !private ["Ps22RandomAccessCollection", "SubSequence"]
 - !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "count"]
+- !private ["Ps22RandomAccessCollection", "first"]
 - !private ["Ps22RandomAccessCollection", "row"]
 - !private ["Ps22RandomAccessCollection", "subscript"]
 - !private ["Ps21RandomAccessIndexable", "Index"]
@@ -924,6 +974,7 @@ depends-member:
 - !private ["Ps21RandomAccessIndexable", "SubSequence"]
 - !private ["Ps21RandomAccessIndexable", "_Element"]
 - !private ["Ps21RandomAccessIndexable", "count"]
+- !private ["Ps21RandomAccessIndexable", "first"]
 - !private ["Ps21RandomAccessIndexable", "row"]
 - !private ["Ps21RandomAccessIndexable", "subscript"]
 - !private ["Vs17RandomAccessSlice", "Index"]
@@ -933,13 +984,17 @@ depends-member:
 - !private ["Vs17RandomAccessSlice", "SubSequence"]
 - !private ["Vs17RandomAccessSlice", "_Element"]
 - ["C10RealmSwift5Realm", "deinit"]
+- !private ["C10RealmSwift5Realm", "delete"]
 - !private ["C10RealmSwift5Realm", "init"]
 - !private ["C10RealmSwift5Realm", "objects"]
+- !private ["C10RealmSwift5Realm", "write"]
 - !private ["P10RealmSwift15RealmCollection", "Index"]
 - !private ["P10RealmSwift15RealmCollection", "IndexDistance"]
+- !private ["P10RealmSwift15RealmCollection", "Iterator"]
 - !private ["P10RealmSwift15RealmCollection", "SubSequence"]
 - !private ["P10RealmSwift15RealmCollection", "_Element"]
 - !private ["P10RealmSwift15RealmCollection", "count"]
+- !private ["P10RealmSwift15RealmCollection", "first"]
 - !private ["P10RealmSwift15RealmCollection", "subscript"]
 - !private ["P10RealmSwift17RealmOptionalType", "IntegerLiteralType"]
 - !private ["P10RealmSwift17RealmOptionalType", "Stride"]
@@ -947,10 +1002,12 @@ depends-member:
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["C10RealmSwift7Results", "Index"]
 - !private ["C10RealmSwift7Results", "IndexDistance"]
+- !private ["C10RealmSwift7Results", "Iterator"]
 - !private ["C10RealmSwift7Results", "SubSequence"]
 - !private ["C10RealmSwift7Results", "_Element"]
 - !private ["C10RealmSwift7Results", "count"]
 - ["C10RealmSwift7Results", "deinit"]
+- !private ["C10RealmSwift7Results", "first"]
 - !private ["C10RealmSwift7Results", "subscript"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
@@ -960,6 +1017,7 @@ depends-member:
 - !private ["Ps8Sequence", "SubSequence"]
 - !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "first"]
 - !private ["Ps8Sequence", "row"]
 - !private ["Ps8Sequence", "subscript"]
 - !private ["Ps13SignedInteger", "IntegerLiteralType"]
@@ -1002,6 +1060,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "FIRAuth"]
 - !private ["PSo21UIAppearanceContainer", "Fonts"]
 - !private ["PSo21UIAppearanceContainer", "Item"]
+- !private ["PSo21UIAppearanceContainer", "MyProfile"]
 - !private ["PSo21UIAppearanceContainer", "Realm"]
 - !private ["PSo21UIAppearanceContainer", "UIStoryboard"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
@@ -1058,6 +1117,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "FIRAuth"]
 - !private ["PSo26UICollectionViewDataSource", "Fonts"]
 - !private ["PSo26UICollectionViewDataSource", "Item"]
+- !private ["PSo26UICollectionViewDataSource", "MyProfile"]
 - !private ["PSo26UICollectionViewDataSource", "Realm"]
 - !private ["PSo26UICollectionViewDataSource", "UIStoryboard"]
 - ["PSo26UICollectionViewDataSource", "collectionView"]
@@ -1092,6 +1152,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "FIRAuth"]
 - !private ["PSo24UICollectionViewDelegate", "Fonts"]
 - !private ["PSo24UICollectionViewDelegate", "Item"]
+- !private ["PSo24UICollectionViewDelegate", "MyProfile"]
 - !private ["PSo24UICollectionViewDelegate", "Realm"]
 - !private ["PSo24UICollectionViewDelegate", "UIStoryboard"]
 - ["PSo24UICollectionViewDelegate", "collectionView"]
@@ -1126,6 +1187,7 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "FIRAuth"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "Fonts"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "Item"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "MyProfile"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "Realm"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIStoryboard"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "collectionView"]
@@ -1163,6 +1225,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "FIRAuth"]
 - !private ["PSo18UIContentContainer", "Fonts"]
 - !private ["PSo18UIContentContainer", "Item"]
+- !private ["PSo18UIContentContainer", "MyProfile"]
 - !private ["PSo18UIContentContainer", "Realm"]
 - !private ["PSo18UIContentContainer", "UIStoryboard"]
 - ["PSo18UIContentContainer", "collectionView"]
@@ -1222,6 +1285,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "FIRAuth"]
 - !private ["PSo18UIFocusEnvironment", "Fonts"]
 - !private ["PSo18UIFocusEnvironment", "Item"]
+- !private ["PSo18UIFocusEnvironment", "MyProfile"]
 - !private ["PSo18UIFocusEnvironment", "Realm"]
 - !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
@@ -1284,6 +1348,7 @@ depends-member:
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "Item"]
 - !private ["CSo11UIResponder", "LoginViewController"]
+- !private ["CSo11UIResponder", "MyProfile"]
 - ["CSo11UIResponder", "RaisedButton"]
 - !private ["CSo11UIResponder", "Realm"]
 - ["CSo11UIResponder", "Results"]
@@ -1335,6 +1400,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "FIRAuth"]
 - !private ["PSo30UIResponderStandardEditActions", "Fonts"]
 - !private ["PSo30UIResponderStandardEditActions", "Item"]
+- !private ["PSo30UIResponderStandardEditActions", "MyProfile"]
 - !private ["PSo30UIResponderStandardEditActions", "Realm"]
 - !private ["PSo30UIResponderStandardEditActions", "UIStoryboard"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
@@ -1383,6 +1449,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "FIRAuth"]
 - !private ["PSo20UIScrollViewDelegate", "Fonts"]
 - !private ["PSo20UIScrollViewDelegate", "Item"]
+- !private ["PSo20UIScrollViewDelegate", "MyProfile"]
 - !private ["PSo20UIScrollViewDelegate", "Realm"]
 - !private ["PSo20UIScrollViewDelegate", "UIStoryboard"]
 - ["PSo20UIScrollViewDelegate", "collectionView"]
@@ -1417,6 +1484,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "FIRAuth"]
 - !private ["PSo16UIStateRestoring", "Fonts"]
 - !private ["PSo16UIStateRestoring", "Item"]
+- !private ["PSo16UIStateRestoring", "MyProfile"]
 - !private ["PSo16UIStateRestoring", "Realm"]
 - !private ["PSo16UIStateRestoring", "UIStoryboard"]
 - ["PSo16UIStateRestoring", "collectionView"]
@@ -1458,6 +1526,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "FIRAuth"]
 - !private ["PSo18UITraitEnvironment", "Fonts"]
 - !private ["PSo18UITraitEnvironment", "Item"]
+- !private ["PSo18UITraitEnvironment", "MyProfile"]
 - !private ["PSo18UITraitEnvironment", "Realm"]
 - !private ["PSo18UITraitEnvironment", "UIStoryboard"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
@@ -1517,6 +1586,7 @@ depends-member:
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "Item"]
 - !private ["CSo16UIViewController", "LoginViewController"]
+- !private ["CSo16UIViewController", "MyProfile"]
 - ["CSo16UIViewController", "RaisedButton"]
 - !private ["CSo16UIViewController", "Realm"]
 - ["CSo16UIViewController", "Results"]
@@ -1607,6 +1677,8 @@ depends-member:
 - !private ["Ps9_Hashable", "IndexDistance"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "Item"]
+- !private ["Ps9_Hashable", "Iterator"]
+- !private ["Ps9_Hashable", "MyProfile"]
 - !private ["Ps9_Hashable", "Realm"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "SubSequence"]
@@ -1623,6 +1695,7 @@ depends-member:
 - !private ["Ps9_Hashable", "count"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - ["Ps9_Hashable", "filterButton"]
+- !private ["Ps9_Hashable", "first"]
 - !private ["Ps9_Hashable", "font"]
 - !private ["Ps9_Hashable", "frame"]
 - ["Ps9_Hashable", "handleLogoutButton"]
@@ -1760,6 +1833,7 @@ depends-nominal:
 - !private "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
+- !private "C10HandMeDown9MyProfile"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
@@ -1770,8 +1844,11 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
+- !private "C10RealmSwift6Object"
 - "Sq"
 - !private "P8Material9Pulseable"
+- !private "C10RealmSwift11RLMIterator"
+- !private "CSo13RLMObjectBase"
 - !private "C8Material12RaisedButton"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"
@@ -1859,6 +1936,49 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUser.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSession.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncPermissionChange.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncManager.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUtil.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRApp.h"
@@ -1960,49 +2080,6 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Modules/module.modulemap"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUser.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSession.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncPermissionChange.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncManager.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUtil.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules/module.modulemap"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
-- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"

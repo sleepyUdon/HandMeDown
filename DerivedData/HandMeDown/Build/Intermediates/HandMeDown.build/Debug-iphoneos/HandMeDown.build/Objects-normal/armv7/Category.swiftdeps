@@ -1,0 +1,286 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Category"
+provides-nominal:
+- "C10HandMeDown8Category"
+provides-member:
+- ["C10HandMeDown8Category", ""]
+provides-dynamic-lookup:
+- "name"
+depends-top-level:
+- "AssignmentPrecedence"
+- "String"
+- "StringLiteralType"
+- "Category"
+- "Object"
+depends-member:
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", ""]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "name"]
+- ["Ps7CVarArg", ""]
+- ["C10HandMeDown8Category", "String"]
+- ["C10HandMeDown8Category", "deinit"]
+- ["C10HandMeDown8Category", "init"]
+- ["C10HandMeDown8Category", "name"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "init"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "name"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "name"]
+- ["Ps9Equatable", ""]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "name"]
+- ["Ps8Hashable", ""]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "name"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["C10RealmSwift6Object", "String"]
+- ["C10RealmSwift6Object", "deinit"]
+- ["C10RealmSwift6Object", "init"]
+- ["C10RealmSwift6Object", "name"]
+- ["C10RealmSwift6Object", ""]
+- ["CSo13RLMObjectBase", "String"]
+- ["CSo13RLMObjectBase", "init"]
+- ["CSo13RLMObjectBase", "name"]
+- ["CSo15RLMObjectSchema", "deinit"]
+- ["CSo8RLMRealm", "deinit"]
+- ["CSo9RLMSchema", "deinit"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "name"]
+- ["Ps9_Hashable", ""]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps7CVarArg"
+- "C10HandMeDown8Category"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "C10RealmSwift6Object"
+- "CSo13RLMObjectBase"
+- "CSo15RLMObjectSchema"
+- "CSo8RLMRealm"
+- "CSo9RLMSchema"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFURL.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/Bolts.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUser.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSession.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncPermissionChange.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncManager.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUtil.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/Material.swiftmodule/arm.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreAudio.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
+interface-hash: "edfd40829d8556da773fc56563b1dca8"

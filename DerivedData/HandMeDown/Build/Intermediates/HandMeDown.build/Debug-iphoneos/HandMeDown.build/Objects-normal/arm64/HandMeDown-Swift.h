@@ -304,6 +304,7 @@ SWIFT_CLASS("_TtC10HandMeDown19LoginViewController")
 */
 - (void)loginButton:(FBSDKLoginButton * _Null_unspecified)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult * _Null_unspecified)result error:(NSError * _Null_unspecified)error;
 - (void)loginButtonDidLogOut:(FBSDKLoginButton * _Null_unspecified)loginButton;
+- (void)loadProfile;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -313,6 +314,18 @@ SWIFT_CLASS("_TtC10HandMeDown20MainTabBarController")
 @interface MainTabBarController : UITabBarController
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10HandMeDown9MyProfile")
+@interface MyProfile : RealmSwiftObject
+@property (nonatomic, copy) NSString * _Nonnull name;
+@property (nonatomic, copy) NSData * _Nullable image;
+- (nonnull instancetype)initWithName:(NSString * _Nonnull)name image:(NSData * _Nonnull)image;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithValue:(id _Nonnull)value OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRealm:(RLMRealm * _Nonnull)realm schema:(RLMObjectSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

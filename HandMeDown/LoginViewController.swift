@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 import Firebase
 import FBSDKLoginKit
 
@@ -68,6 +69,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
             let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
             FIRAuth.auth()?.signIn(with: credential) { (user, error) in
                 print("User Logged In to Firebase")
+                self.loadProfile()
                 if (error != nil) {
                     print("User failed Logging in to Firebase")
                     return
@@ -80,6 +82,33 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("User Logged Out")
     }
-
+    
+    func loadProfile(){
+        if let user = FIRAuth.auth()?.currentUser{
+            
+            // download profile information
+            let name = user.displayName
+            
+            // download profile picture
+            let realm = try!Realm()
+            let me = realm.objects(MyProfile.self)
+            if (me.count <= 0) {
+                let profilePicture = FBSDKGraphRequest(graphPath: "me/picture", parameters: ["height":300, "width":300, "redirect": false], httpMethod: "GET")
+                profilePicture?.start(completionHandler: {( connection, result, error) -> Void in
+                    if (error == nil) {
+                        let dictionary = result as? NSDictionary
+                        let data = dictionary?.object(forKey: "data")
+                        let urlPic = ((data as AnyObject).object(forKey: "url"))! as! String
+                        let imageData = NSData(contentsOf: NSURL(string: urlPic)! as URL)
+                        let myProfile = MyProfile(name: name!, image: imageData! as Data)
+                        try! realm.write {
+                            realm.add(myProfile)
+                        }
+                    }
+                })
+            }
+        }
+    }
+    
     
 } //@end
