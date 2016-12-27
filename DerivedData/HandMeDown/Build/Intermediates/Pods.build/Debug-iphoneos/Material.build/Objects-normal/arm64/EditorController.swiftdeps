@@ -12,13 +12,13 @@ provides-dynamic-lookup:
 - "editorController"
 - "prepare"
 depends-top-level:
-- "EditorController"
 - !private "!="
-- "ToolbarController"
-- "EditorDelegate"
 - "UIViewController"
+- "EditorController"
+- "ToolbarController"
 - "Editor"
 - "AssignmentPrecedence"
+- "EditorDelegate"
 - "CastingPrecedence"
 depends-member:
 - ["Ps9AnyObject", "Editor"]

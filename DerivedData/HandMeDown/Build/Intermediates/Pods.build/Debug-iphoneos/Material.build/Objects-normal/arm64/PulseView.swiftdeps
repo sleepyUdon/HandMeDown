@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C8Material9PulseView", ""]
 provides-dynamic-lookup:
-- "pulseOpacity"
 - "touchesBegan"
+- "pulseColor"
 - "touchesCancelled"
 - "touchesEnded"
-- "pulseColor"
+- "pulseOpacity"
 - "prepare"
 - "pulseAnimation"
 depends-top-level:
+- "AssignmentPrecedence"
 - !private "??"
 - "PulseView"
-- "UIColor"
 - "Pulse"
+- "UIColor"
 - "PulseAnimation"
-- "Pulseable"
-- "View"
 - "UITouch"
+- "View"
 - !private "Motion"
 - "Set"
+- "Pulseable"
 - "CGPoint"
-- "AssignmentPrecedence"
 - "CGFloat"
 - "UIEvent"
 depends-member:

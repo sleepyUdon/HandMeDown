@@ -14,8 +14,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "StringLiteralType"
-- "Fonts"
 - "UIFont"
+- "Fonts"
 depends-member:
 - ["Ps9AnyObject", "UIFont"]
 - ["Ps9AnyObject", "init"]

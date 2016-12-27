@@ -6,10 +6,9 @@ provides-member:
 - ["Sa", "slice"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UnicodeScalarType"
+- !private "-="
 - !private "StringLiteralType"
 - "Array"
-- !private "-="
 - !private ">"
 - !private "??"
 - !private "+"
@@ -18,9 +17,10 @@ depends-top-level:
 - "Equatable"
 - !private "<"
 - !private "-"
-- !private "abs"
+- !private "UnicodeScalarType"
 - !private "fatalError"
 - "AssignmentPrecedence"
+- !private "abs"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Sa", "Element"]

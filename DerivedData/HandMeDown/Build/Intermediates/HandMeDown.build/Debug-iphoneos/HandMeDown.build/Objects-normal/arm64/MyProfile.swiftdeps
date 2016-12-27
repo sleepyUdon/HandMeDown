@@ -9,9 +9,9 @@ provides-dynamic-lookup:
 - "name"
 - "image"
 depends-top-level:
-- "Object"
 - "Data"
 - "AssignmentPrecedence"
+- "Object"
 - "String"
 - "MyProfile"
 - "StringLiteralType"

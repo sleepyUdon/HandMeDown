@@ -6,45 +6,47 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidEnterBackground"
 - "applicationWillEnterForeground"
-- "window"
+- "application"
+- "application"
+- "application"
 - "applicationWillTerminate"
-- "application"
-- "application"
-- "application"
+- "window"
 - "applicationDidBecomeActive"
 - "applicationWillResignActive"
+- "applicationDidEnterBackground"
 depends-top-level:
-- "UIApplicationLaunchOptionsKey"
-- "AppDelegate"
-- !private "BooleanLiteralType"
-- !private "UIColor"
-- !private "Dictionary"
-- "URL"
-- "UIResponder"
-- "UIApplication"
 - !private "NSForegroundColorAttributeName"
-- "String"
-- !private "FBSDKAppEvents"
-- !private "Colors"
-- "CastingPrecedence"
-- "UIApplicationDelegate"
-- "UIWindow"
-- "AssignmentPrecedence"
-- !private "FIRApp"
-- !private "Fonts"
-- !private "FBSDKApplicationDelegate"
-- !private "NSFontAttributeName"
-- !private "UINavigationBar"
-- "NSURL"
 - "AnyObject"
+- !private "UIColor"
+- "UIApplicationLaunchOptionsKey"
+- "NSURL"
+- !private "Colors"
+- !private "Dictionary"
+- !private "FBSDKAppEvents"
+- "UIResponder"
+- "AppDelegate"
+- "UIWindow"
+- !private "Fonts"
+- "AssignmentPrecedence"
+- !private "FBSDKApplicationDelegate"
+- "CastingPrecedence"
+- !private "FIRApp"
+- "String"
+- !private "NSFontAttributeName"
+- "UIApplication"
+- !private "UINavigationBar"
+- !private "FIRDatabase"
+- "URL"
+- "UIApplicationDelegate"
 - "Bool"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "Colors"]
 - !private ["Ps9AnyObject", "FBSDKAppEvents"]
 - !private ["Ps9AnyObject", "FBSDKApplicationDelegate"]
 - !private ["Ps9AnyObject", "FIRApp"]
+- !private ["Ps9AnyObject", "FIRDatabase"]
 - !private ["Ps9AnyObject", "Fonts"]
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
@@ -68,11 +70,13 @@ depends-member:
 - !private ["Ps9AnyObject", "barTintColor"]
 - !private ["Ps9AnyObject", "blue"]
 - !private ["Ps9AnyObject", "configure"]
+- !private ["Ps9AnyObject", "database"]
 - ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "light1"]
 - !private ["Ps9AnyObject", "light4"]
 - !private ["Ps9AnyObject", "orange"]
+- !private ["Ps9AnyObject", "persistenceEnabled"]
 - !private ["Ps9AnyObject", "sharedInstance"]
 - !private ["Ps9AnyObject", "tintColor"]
 - !private ["Ps9AnyObject", "title"]
@@ -86,6 +90,7 @@ depends-member:
 - !private ["C10HandMeDown11AppDelegate", "FBSDKAppEvents"]
 - !private ["C10HandMeDown11AppDelegate", "FBSDKApplicationDelegate"]
 - !private ["C10HandMeDown11AppDelegate", "FIRApp"]
+- !private ["C10HandMeDown11AppDelegate", "FIRDatabase"]
 - !private ["C10HandMeDown11AppDelegate", "Fonts"]
 - !private ["C10HandMeDown11AppDelegate", "NSFontAttributeName"]
 - !private ["C10HandMeDown11AppDelegate", "NSForegroundColorAttributeName"]
@@ -121,6 +126,7 @@ depends-member:
 - !private ["Ps7CVarArg", "FBSDKAppEvents"]
 - !private ["Ps7CVarArg", "FBSDKApplicationDelegate"]
 - !private ["Ps7CVarArg", "FIRApp"]
+- !private ["Ps7CVarArg", "FIRDatabase"]
 - !private ["Ps7CVarArg", "Fonts"]
 - !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "NSFontAttributeName"]
@@ -145,10 +151,12 @@ depends-member:
 - !private ["Ps7CVarArg", "barTintColor"]
 - !private ["Ps7CVarArg", "blue"]
 - !private ["Ps7CVarArg", "configure"]
+- !private ["Ps7CVarArg", "database"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "light1"]
 - !private ["Ps7CVarArg", "light4"]
 - !private ["Ps7CVarArg", "orange"]
+- !private ["Ps7CVarArg", "persistenceEnabled"]
 - !private ["Ps7CVarArg", "sharedInstance"]
 - !private ["Ps7CVarArg", "tintColor"]
 - !private ["Ps7CVarArg", "title"]
@@ -164,6 +172,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "FBSDKAppEvents"]
 - !private ["Ps28CustomDebugStringConvertible", "FBSDKApplicationDelegate"]
 - !private ["Ps28CustomDebugStringConvertible", "FIRApp"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRDatabase"]
 - !private ["Ps28CustomDebugStringConvertible", "Fonts"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFontAttributeName"]
@@ -188,10 +197,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
 - !private ["Ps28CustomDebugStringConvertible", "blue"]
 - !private ["Ps28CustomDebugStringConvertible", "configure"]
+- !private ["Ps28CustomDebugStringConvertible", "database"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "light1"]
 - !private ["Ps28CustomDebugStringConvertible", "light4"]
 - !private ["Ps28CustomDebugStringConvertible", "orange"]
+- !private ["Ps28CustomDebugStringConvertible", "persistenceEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "sharedInstance"]
 - !private ["Ps28CustomDebugStringConvertible", "tintColor"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
@@ -205,6 +216,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "FBSDKAppEvents"]
 - !private ["Ps23CustomStringConvertible", "FBSDKApplicationDelegate"]
 - !private ["Ps23CustomStringConvertible", "FIRApp"]
+- !private ["Ps23CustomStringConvertible", "FIRDatabase"]
 - !private ["Ps23CustomStringConvertible", "Fonts"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
@@ -229,10 +241,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "barTintColor"]
 - !private ["Ps23CustomStringConvertible", "blue"]
 - !private ["Ps23CustomStringConvertible", "configure"]
+- !private ["Ps23CustomStringConvertible", "database"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "light1"]
 - !private ["Ps23CustomStringConvertible", "light4"]
 - !private ["Ps23CustomStringConvertible", "orange"]
+- !private ["Ps23CustomStringConvertible", "persistenceEnabled"]
 - !private ["Ps23CustomStringConvertible", "sharedInstance"]
 - !private ["Ps23CustomStringConvertible", "tintColor"]
 - !private ["Ps23CustomStringConvertible", "title"]
@@ -247,6 +261,7 @@ depends-member:
 - !private ["Ps9Equatable", "FBSDKAppEvents"]
 - !private ["Ps9Equatable", "FBSDKApplicationDelegate"]
 - !private ["Ps9Equatable", "FIRApp"]
+- !private ["Ps9Equatable", "FIRDatabase"]
 - !private ["Ps9Equatable", "Fonts"]
 - !private ["Ps9Equatable", "NSFontAttributeName"]
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
@@ -269,10 +284,12 @@ depends-member:
 - !private ["Ps9Equatable", "barTintColor"]
 - !private ["Ps9Equatable", "blue"]
 - !private ["Ps9Equatable", "configure"]
+- !private ["Ps9Equatable", "database"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "light1"]
 - !private ["Ps9Equatable", "light4"]
 - !private ["Ps9Equatable", "orange"]
+- !private ["Ps9Equatable", "persistenceEnabled"]
 - !private ["Ps9Equatable", "sharedInstance"]
 - !private ["Ps9Equatable", "tintColor"]
 - !private ["Ps9Equatable", "title"]
@@ -286,11 +303,15 @@ depends-member:
 - !private ["CSo24FBSDKApplicationDelegate", "application"]
 - !private ["CSo24FBSDKApplicationDelegate", "sharedInstance"]
 - !private ["CSo6FIRApp", "configure"]
+- !private ["CSo11FIRDatabase", "database"]
+- ["CSo11FIRDatabase", "deinit"]
+- !private ["CSo11FIRDatabase", "persistenceEnabled"]
 - !private ["C10HandMeDown5Fonts", "title"]
 - !private ["Ps8Hashable", "Colors"]
 - !private ["Ps8Hashable", "FBSDKAppEvents"]
 - !private ["Ps8Hashable", "FBSDKApplicationDelegate"]
 - !private ["Ps8Hashable", "FIRApp"]
+- !private ["Ps8Hashable", "FIRDatabase"]
 - !private ["Ps8Hashable", "Fonts"]
 - !private ["Ps8Hashable", "NSFontAttributeName"]
 - !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
@@ -313,10 +334,12 @@ depends-member:
 - !private ["Ps8Hashable", "barTintColor"]
 - !private ["Ps8Hashable", "blue"]
 - !private ["Ps8Hashable", "configure"]
+- !private ["Ps8Hashable", "database"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "light1"]
 - !private ["Ps8Hashable", "light4"]
 - !private ["Ps8Hashable", "orange"]
+- !private ["Ps8Hashable", "persistenceEnabled"]
 - !private ["Ps8Hashable", "sharedInstance"]
 - !private ["Ps8Hashable", "tintColor"]
 - !private ["Ps8Hashable", "title"]
@@ -350,6 +373,7 @@ depends-member:
 - !private ["CSo8NSObject", "FBSDKAppEvents"]
 - !private ["CSo8NSObject", "FBSDKApplicationDelegate"]
 - !private ["CSo8NSObject", "FIRApp"]
+- !private ["CSo8NSObject", "FIRDatabase"]
 - !private ["CSo8NSObject", "Fonts"]
 - !private ["CSo8NSObject", "NSFontAttributeName"]
 - !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
@@ -378,10 +402,12 @@ depends-member:
 - !private ["CSo8NSObject", "barTintColor"]
 - !private ["CSo8NSObject", "blue"]
 - !private ["CSo8NSObject", "configure"]
+- !private ["CSo8NSObject", "database"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "light1"]
 - !private ["CSo8NSObject", "light4"]
 - !private ["CSo8NSObject", "orange"]
+- !private ["CSo8NSObject", "persistenceEnabled"]
 - !private ["CSo8NSObject", "sharedInstance"]
 - !private ["CSo8NSObject", "tintColor"]
 - !private ["CSo8NSObject", "title"]
@@ -392,6 +418,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "FBSDKAppEvents"]
 - !private ["PSo16NSObjectProtocol", "FBSDKApplicationDelegate"]
 - !private ["PSo16NSObjectProtocol", "FIRApp"]
+- !private ["PSo16NSObjectProtocol", "FIRDatabase"]
 - !private ["PSo16NSObjectProtocol", "Fonts"]
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
@@ -414,10 +441,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "barTintColor"]
 - !private ["PSo16NSObjectProtocol", "blue"]
 - !private ["PSo16NSObjectProtocol", "configure"]
+- !private ["PSo16NSObjectProtocol", "database"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "light1"]
 - !private ["PSo16NSObjectProtocol", "light4"]
 - !private ["PSo16NSObjectProtocol", "orange"]
+- !private ["PSo16NSObjectProtocol", "persistenceEnabled"]
 - !private ["PSo16NSObjectProtocol", "sharedInstance"]
 - !private ["PSo16NSObjectProtocol", "tintColor"]
 - !private ["PSo16NSObjectProtocol", "title"]
@@ -452,6 +481,7 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "FBSDKAppEvents"]
 - !private ["PSo21UIApplicationDelegate", "FBSDKApplicationDelegate"]
 - !private ["PSo21UIApplicationDelegate", "FIRApp"]
+- !private ["PSo21UIApplicationDelegate", "FIRDatabase"]
 - !private ["PSo21UIApplicationDelegate", "Fonts"]
 - !private ["PSo21UIApplicationDelegate", "NSFontAttributeName"]
 - !private ["PSo21UIApplicationDelegate", "NSForegroundColorAttributeName"]
@@ -508,6 +538,7 @@ depends-member:
 - !private ["CSo11UIResponder", "FBSDKAppEvents"]
 - !private ["CSo11UIResponder", "FBSDKApplicationDelegate"]
 - !private ["CSo11UIResponder", "FIRApp"]
+- !private ["CSo11UIResponder", "FIRDatabase"]
 - !private ["CSo11UIResponder", "Fonts"]
 - !private ["CSo11UIResponder", "NSFontAttributeName"]
 - !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
@@ -543,6 +574,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "FBSDKAppEvents"]
 - !private ["PSo30UIResponderStandardEditActions", "FBSDKApplicationDelegate"]
 - !private ["PSo30UIResponderStandardEditActions", "FIRApp"]
+- !private ["PSo30UIResponderStandardEditActions", "FIRDatabase"]
 - !private ["PSo30UIResponderStandardEditActions", "Fonts"]
 - !private ["PSo30UIResponderStandardEditActions", "NSFontAttributeName"]
 - !private ["PSo30UIResponderStandardEditActions", "NSForegroundColorAttributeName"]
@@ -590,6 +622,7 @@ depends-member:
 - !private ["Ps9_Hashable", "FBSDKAppEvents"]
 - !private ["Ps9_Hashable", "FBSDKApplicationDelegate"]
 - !private ["Ps9_Hashable", "FIRApp"]
+- !private ["Ps9_Hashable", "FIRDatabase"]
 - !private ["Ps9_Hashable", "Fonts"]
 - !private ["Ps9_Hashable", "NSFontAttributeName"]
 - !private ["Ps9_Hashable", "NSForegroundColorAttributeName"]
@@ -612,10 +645,12 @@ depends-member:
 - !private ["Ps9_Hashable", "barTintColor"]
 - !private ["Ps9_Hashable", "blue"]
 - !private ["Ps9_Hashable", "configure"]
+- !private ["Ps9_Hashable", "database"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "light1"]
 - !private ["Ps9_Hashable", "light4"]
 - !private ["Ps9_Hashable", "orange"]
+- !private ["Ps9_Hashable", "persistenceEnabled"]
 - !private ["Ps9_Hashable", "sharedInstance"]
 - !private ["Ps9_Hashable", "tintColor"]
 - !private ["Ps9_Hashable", "title"]
@@ -645,6 +680,7 @@ depends-nominal:
 - !private "CSo14FBSDKAppEvents"
 - !private "CSo24FBSDKApplicationDelegate"
 - !private "CSo6FIRApp"
+- "CSo11FIRDatabase"
 - !private "C10HandMeDown5Fonts"
 - "Ps8Hashable"
 - "SQ"
@@ -849,4 +885,4 @@ depends-external:
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-Swift.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Headers/Material-umbrella.h"
 - "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Material/Material.framework/Modules/module.modulemap"
-interface-hash: "010442eea041a7eb5c4814eea4fd3fe2"
+interface-hash: "97a573bfb7618886d79cbd75254f7dc1"

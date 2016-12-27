@@ -10,8 +10,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - "CornerRadiusPresetToValue"
 - "CornerRadiusPreset"
-- "=="
 - "Int"
+- "=="
 - "CGFloat"
 - !private "~="
 depends-member:

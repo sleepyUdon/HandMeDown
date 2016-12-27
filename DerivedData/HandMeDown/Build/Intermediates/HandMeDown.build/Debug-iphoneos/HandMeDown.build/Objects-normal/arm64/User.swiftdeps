@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown4User", ""]
 provides-dynamic-lookup:
-- "name"
 - "picture"
+- "name"
 depends-top-level:
-- "String"
 - "AssignmentPrecedence"
-- "NSObject"
 - "User"
-- "Data"
 - "StringLiteralType"
+- "Data"
+- "NSObject"
+- "String"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "name"]

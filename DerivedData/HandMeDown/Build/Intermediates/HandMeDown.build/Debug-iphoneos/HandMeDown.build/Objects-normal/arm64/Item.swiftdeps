@@ -6,20 +6,20 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown4Item", ""]
 provides-dynamic-lookup:
-- "user"
 - "image"
+- "user"
+- "itemDescription"
 - "like"
 - "title"
-- "itemDescription"
 depends-top-level:
-- "Category"
-- "List"
 - "Item"
 - "NSData"
 - "AssignmentPrecedence"
-- "Object"
+- "Category"
+- "List"
 - "StringLiteralType"
 - "String"
+- "Object"
 depends-member:
 - ["Ps9AnyObject", "List"]
 - ["Ps9AnyObject", "categories"]

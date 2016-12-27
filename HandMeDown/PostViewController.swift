@@ -8,7 +8,10 @@
 
 import UIKit
 import Material
-import RealmSwift
+import FirebaseDatabase
+import FBSDKCoreKit
+
+
 
 class PostViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate, UITextFieldDelegate {
 
@@ -34,23 +37,23 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var cameraView: UIImageView!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var titleTextfield: UITextField!
+    let picker = UIImagePickerController()
     var itemTitle: String?
     var itemDescription: String?
-    let picker = UIImagePickerController()
     var pictureData: NSData?
     var categories = [String]()
-    let items: [Item] = {
-        let realm = try! Realm()
-        return Array(realm.objects(Item))
-    }()
-    
+    var ref: FIRDatabaseReference!
+    var uid = ""
+    var username = ""
     
     
     /// MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.ref = FIRDatabase.database().reference()
         picker.delegate = self
         self.titleTextfield.delegate = self
+        self.getFacebookProfile()
     }
     
     
@@ -143,6 +146,21 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     
+    
+    // MARK: get user Facebook id
+    func getFacebookProfile() {
+        if((FBSDKAccessToken.current()) != nil){
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name"]).start(completionHandler: { (connection, result, error) -> Void in
+                if (error == nil){
+                    let dictionary = result as? NSDictionary
+                    self.uid = dictionary?.object(forKey: "id") as! String
+                    self.username = dictionary?.object(forKey: "name") as! String
+                }
+            })
+        }
+    }
+
+    
     /// MARK: TextField Delegate
     public func textFieldDidEndEditing(_ textField: UITextField) {
         self.itemTitle = titleTextfield.text
@@ -160,21 +178,18 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     // Handle Post Button
     
     @IBAction func HandlePostButton(_ sender: UIButton) {
-        let realm = try! Realm()
-        let item = Item()
-        item.title = self.itemTitle!
-        item.itemDescription = "Very Cute"
-        item.image = self.pictureData
-        item.like = "empty-heart"
+        let date = NSDate()
+        self.ref.child("items").child("item - \(date)").setValue(["description": "Very Cute"])
+        self.ref.child("items").child("item - \(date)").setValue(["title": "\(self.itemTitle)"])
+//        self.ref.child("items").child("item - \(date)").setValue(["picture": self.pictureData])
+        self.ref.child("items").child("item - \(date)").child("users").setValue(["uid": "\(self.uid)"])
+        self.ref.child("items").child("item - \(date)").child("users").setValue(["username":self.username])
+        self.ref.child("items").child("item - \(date)").child("like").setValue(["like":false])
         
         for category in self.categories {
             let cat = Category(name: category)
-            item.categories.append(cat)
-        }
-        item.user = "Viviane"
-        
-        try! realm.write {
-            realm.add(item)
+            self.ref.child("items").child("item - \(date)").child("categories").setValue([cat:true])
+
         }
     }
     

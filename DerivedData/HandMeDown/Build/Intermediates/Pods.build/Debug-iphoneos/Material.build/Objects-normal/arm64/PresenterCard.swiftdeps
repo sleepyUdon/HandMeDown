@@ -6,20 +6,20 @@ provides-nominal:
 provides-member:
 - ["C8Material13PresenterCard", ""]
 provides-dynamic-lookup:
-- "presenterViewEdgeInsetsPreset"
 - "presenterViewEdgeInsets"
-- "presenterView"
+- "presenterViewEdgeInsetsPreset"
 - "reload"
+- "presenterView"
 depends-top-level:
+- !private "EdgeInsetsPresetToValue"
+- "UIView"
 - "PresenterCard"
 - "EdgeInsets"
 - !private "BooleanLiteralType"
-- "UIView"
-- !private "EdgeInsetsPresetToValue"
+- "EdgeInsetsPreset"
 - "Card"
 - "AssignmentPrecedence"
 - !private "CGFloat"
-- "EdgeInsetsPreset"
 depends-member:
 - ["Ps9AnyObject", "EdgeInsets"]
 - ["Ps9AnyObject", "EdgeInsetsPreset"]

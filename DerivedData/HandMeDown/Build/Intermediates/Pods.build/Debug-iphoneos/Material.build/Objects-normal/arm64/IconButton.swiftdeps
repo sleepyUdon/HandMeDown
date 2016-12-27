@@ -9,8 +9,8 @@ provides-dynamic-lookup:
 - "prepare"
 depends-top-level:
 - "IconButton"
-- "Button"
 - "AssignmentPrecedence"
+- "Button"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "prepare"]

@@ -249,6 +249,8 @@ SWIFT_CLASS("_TtC10HandMeDown25GoodiesCollectionViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class FIRDatabaseReference;
+@class FIRDataSnapshot;
 @class UICollectionView;
 @class UICollectionViewLayout;
 @class RaisedButton;
@@ -257,9 +259,15 @@ SWIFT_CLASS("_TtC10HandMeDown21GoodiesViewController")
 @interface GoodiesViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified filterButton;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
+@property (nonatomic, copy) NSString * _Nonnull uid;
+@property (nonatomic, copy) NSString * _Nonnull username;
+@property (nonatomic, copy) NSArray<FIRDataSnapshot *> * _Null_unspecified items;
 - (void)viewDidLoad;
+- (void)configureDatabase;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)prepareLayout;
+- (void)getFacebookProfile;
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
@@ -395,12 +403,14 @@ SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified cameraView;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descriptionTextView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified titleTextfield;
+@property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull picker;
 @property (nonatomic, copy) NSString * _Nullable itemTitle;
 @property (nonatomic, copy) NSString * _Nullable itemDescription;
-@property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull picker;
 @property (nonatomic, strong) NSData * _Nullable pictureData;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull categories;
-@property (nonatomic, readonly, copy) NSArray<Item *> * _Nonnull items;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
+@property (nonatomic, copy) NSString * _Nonnull uid;
+@property (nonatomic, copy) NSString * _Nonnull username;
 /**
   MARK: ViewDidLoad
 */
@@ -413,6 +423,7 @@ SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
   MARK: Prepare Layout
 */
 - (void)prepareLayout;
+- (void)getFacebookProfile;
 /**
   MARK: TextField Delegate
 */

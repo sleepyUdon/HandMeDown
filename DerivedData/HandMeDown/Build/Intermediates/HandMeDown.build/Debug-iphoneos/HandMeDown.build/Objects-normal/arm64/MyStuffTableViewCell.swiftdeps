@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown20MyStuffTableViewCell", ""]
 provides-dynamic-lookup:
+- "descriptionLabel"
+- "pictureView"
+- "setSelected"
 - "awakeFromNib"
 - "configureWithItem"
-- "setSelected"
 - "titleLabel"
-- "pictureView"
-- "descriptionLabel"
 depends-top-level:
+- "Item"
 - "UITableViewCell"
+- "MyStuffTableViewCell"
 - !private "Data"
 - "Bool"
+- "AssignmentPrecedence"
 - !private "UIImage"
 - "UIImageView"
-- "MyStuffTableViewCell"
 - "UILabel"
-- "Item"
-- "AssignmentPrecedence"
 - "CastingPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]

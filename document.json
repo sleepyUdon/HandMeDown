@@ -1,20 +1,67 @@
 {
-  "users": {
-    "jg4WDz2rY5eCs4tvKl4iR8trLeM2":{
-        "name":"Viviane Chan", 
-        "items":["item1","item2"],
-        "friends":["jg4WDz2rY5eCs4tvKl4iR8trLeM3","jg4WDz2rY5eCs4tvKl4iR8trLeM4","jg4WDz2rY5eCs4tvKl4iR8trLeM5"]
-          },
-    "jg4WDz2rY5eCs4tvKl4iR8trLeM3": {
-         "name":"Alexa Chung", 
-        "items":["item3","item4"],
-        "friends":["jg4WDz2rY5eCs4tvKl4iR8trLeM2","jg4WDz2rY5eCs4tvKl4iR8trLeM4","jg4WDz2rY5eCs4tvKl4iR8trLeM5"]
-          },
-    "jg4WDz2rY5eCs4tvKl4iR8trLeM4": {
-         "name":"Tony Milo", 
-        "items":[],
-        "friends":["jg4WDz2rY5eCs4tvKl4iR8trLeM3"]
-          }
+  "items": 
+  {
+    "item-1": 
+    {
+      "title": "Pikachu",
+      "description": "cute toy",
+      "picture": "Pikachu.jpg",
+      "users": 
+      {
+        "user-id1" : true
+      }
+    },
+    "item-2": 
+    {
+        "title": "Pikachu",
+        "description": "cute toy",
+        "picture": "Pikachu.jpg",
+        "users": 
+      {
+        "user-id2" : true
+      }
+    },
+    "item-3": 
+    {
+       "title": "Pikachu",
+      "description": "cute toy",
+      "picture": "Pikachu.jpg",
+      "users": 
+      {
+        "user-id3" : true
+      }
     }
+  },
+  "users":
+  {
+    "user-id1": 
+    {
+      "inventory": 
+      {
+        "item-1": true,
+        "item-2": true
+      },
+      "like": 
+      {
+        "item-3": true,
+        "item-4": true
+      }
+    },
+    "user-id2": 
+    {
+      "inventory": 
+      {
+        "item-3": true,
+        "item-4": true
+      },
+      "like": 
+      {
+        "item-1": true,
+        "item-2": true
+      }
+    }
+  }
 }
+  
+    
 

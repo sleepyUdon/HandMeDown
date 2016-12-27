@@ -11,6 +11,7 @@ import Material
 import RealmSwift
 import FBSDKCoreKit
 import FirebaseAuth
+import FirebaseDatabase
 
 
 class GoodiesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -18,16 +19,43 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     // MARK: Properties
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var filterButton: RaisedButton!
-    var items: Results<Item>!
+    var ref: FIRDatabaseReference!
+    var uid = ""
+    var username = ""
+    fileprivate var _refHandle: FIRDatabaseHandle!
+    var items: [FIRDataSnapshot]! = []
+
+
     
     
     // MARK: ViewDidLoad
     override func viewDidLoad() {
-        let realm = try!Realm()
-        items = realm.objects(Item.self)
+        
         super.viewDidLoad()
         self.prepareLayout()
+        self.getFacebookProfile()
+  
     }
+    
+    //
+    deinit {
+        self.ref.child("items").removeObserver(withHandle: _refHandle)
+    }
+    
+    
+    func configureDatabase() {
+        ref = FIRDatabase.database().reference()
+        // Listen for new messages in the Firebase database
+        _refHandle = self.ref.child("items").observe(.childAdded, with: { [weak self] (snapshot) -> Void in
+            guard let strongSelf = self else { return }
+            strongSelf.items.append(snapshot)
+//            strongSelf.collectionView.insertRows(at: [IndexPath(row: strongSelf.messages.count-1, section: 0)], with: .automatic)
+        })
+    }
+    
+
+
+    //
     
     
     // MARK: ViewWillAppear
@@ -41,6 +69,20 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
         self.filterButton.cornerRadius = self.filterButton.frame.height/2
         self.filterButton.backgroundColor = Colors.purple.light1
         self.filterButton.titleLabel?.font = Fonts.button.BT2
+    }
+
+    
+    // MARK: get user Facebook id
+    func getFacebookProfile() {
+        if((FBSDKAccessToken.current()) != nil){
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name"]).start(completionHandler: { (connection, result, error) -> Void in
+                if (error == nil){
+                    let dictionary = result as? NSDictionary
+                    self.uid = dictionary?.object(forKey: "id") as! String
+                    self.username = dictionary?.object(forKey: "name") as! String
+                }
+            })
+        }
     }
 
     
@@ -63,15 +105,20 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let item = items[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GoodiesCollectionViewCell", for: indexPath) as! GoodiesCollectionViewCell
+        let itemSnapshot: FIRDataSnapshot! = self.items[indexPath.row]
+        //        let item = itemSnapshot.value as! Dictionary<String, String>
         
-        cell.configureWithItem(item: item)
+        cell.imageView.image = UIImage(named: "Viviane")
+        cell.userPictureView?.image = UIImage(named: "Viviane")
+        cell.titleLabel.text = "Pikachu"
+        cell.likeButton.setImage(UIImage(named:"empty-heart"), for: .normal)
         
         return cell
     }
-    
+
+
+
 
     // MARK: Actions
 
