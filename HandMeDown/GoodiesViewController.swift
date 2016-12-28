@@ -12,6 +12,7 @@ import RealmSwift
 import FBSDKCoreKit
 import FirebaseAuth
 import FirebaseDatabase
+import FirebaseStorage
 
 
 class GoodiesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -20,43 +21,59 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var filterButton: RaisedButton!
     var ref: FIRDatabaseReference!
+    var storageRef: FIRStorageReference!
     var uid = ""
     var username = ""
     fileprivate var _refHandle: FIRDatabaseHandle!
-    var items: [FIRDataSnapshot]! = []
+//    var items: [FIRDataSnapshot]! = []
+    var items = [Item]()
 
-
-    
     
     // MARK: ViewDidLoad
     override func viewDidLoad() {
-        
         super.viewDidLoad()
+        self.ref = FIRDatabase.database().reference()
+        let storage = FIRStorage.storage()
+        self.storageRef = storage.reference(forURL: "gs://handmedown-557a0.appspot.com")
+        self.items = []
         self.prepareLayout()
         self.getFacebookProfile()
-  
-    }
-    
-    //
-    deinit {
-        self.ref.child("items").removeObserver(withHandle: _refHandle)
     }
     
     
+    // MARK: ViewWillAppear
+    override func viewDidAppear(_ animated: Bool) {
+        self.configureDatabase()
+    }
+    
+    // MARK: configure Database
     func configureDatabase() {
-        ref = FIRDatabase.database().reference()
-        // Listen for new messages in the Firebase database
-        _refHandle = self.ref.child("items").observe(.childAdded, with: { [weak self] (snapshot) -> Void in
-            guard let strongSelf = self else { return }
-            strongSelf.items.append(snapshot)
-//            strongSelf.collectionView.insertRows(at: [IndexPath(row: strongSelf.messages.count-1, section: 0)], with: .automatic)
-        })
+        self.ref.child("items").observeSingleEvent(of: .value, with: { (snapshot) in
+            for child in snapshot.children.allObjects as![FIRDataSnapshot] {
+                // Get user value
+                let value = child.value as? NSDictionary
+                let title = value?["title"] as? String
+                let description = value?["description"] as? String
+                let users = value?["users"] as? NSDictionary
+                let uid = users?["uid"] as? String
+                
+                self.storageRef.child("items").child(uid!).child(title!).data(withMaxSize: 100 * 1024 * 1024) { data, error in
+                    if let error = error {
+                        print("error downloading image from Firebase")
+                        // Uh-oh, an error occurred!
+                    } else {
+                        let image = data
+                        let item = Item(title: title!, itemDescription: description!, image: image!, like: false, users: [])
+                        self.items.append(item)
+                    }
+                }
+          
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
     }
-    
 
-
-    //
-    
     
     // MARK: ViewWillAppear
     override func viewWillAppear(_ animated: Bool) {
@@ -99,24 +116,24 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GoodiesCollectionViewCell", for: indexPath) as! GoodiesCollectionViewCell
-        let itemSnapshot: FIRDataSnapshot! = self.items[indexPath.row]
-        //        let item = itemSnapshot.value as! Dictionary<String, String>
+        let item = self.items[indexPath.row]
+//        let itemSnapshot: FIRDataSnapshot! = self.items[indexPath.row]
+//        //        let item = itemSnapshot.value as! Dictionary<String, String>
         
-        cell.imageView.image = UIImage(named: "Viviane")
-        cell.userPictureView?.image = UIImage(named: "Viviane")
-        cell.titleLabel.text = "Pikachu"
+        cell.imageView.image = UIImage(data: item.image!)
+        cell.userPictureView?.image = UIImage(data: item.image!)
+        cell.titleLabel.text = item.title
         cell.likeButton.setImage(UIImage(named:"empty-heart"), for: .normal)
         
         return cell
-    }
-
+        }
 
 
 
@@ -143,7 +160,6 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
             let user = realm.objects(MyProfile.self).first
             realm.delete(user!)
         }
-
     }
     
 } // @end

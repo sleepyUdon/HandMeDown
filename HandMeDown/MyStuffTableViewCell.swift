@@ -28,7 +28,7 @@ class MyStuffTableViewCell: UITableViewCell {
     }
     
     func configureWithItem(item: Item) {
-        pictureView.image = UIImage(data:item.image as! Data)
+        pictureView.image = UIImage(data:item.image!)
         titleLabel.text = item.title
         descriptionLabel.text = item.description
     }

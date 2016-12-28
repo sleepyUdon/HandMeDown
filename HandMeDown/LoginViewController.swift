@@ -33,7 +33,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                 // move to user to home screen
                 let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let mainTabBarController: MainTabBarController = mainStoryboard.instantiateViewController(withIdentifier: "HomeTabBar") as! MainTabBarController
-                mainTabBarController.selectedIndex = 0
+                mainTabBarController.selectedIndex = 2
                 self.present(mainTabBarController, animated: true, completion: nil)
                 
             } else {
