@@ -12,12 +12,12 @@ import Foundation
 class Item: NSObject {
     var title = ""
     var itemDescription = ""
-    var image : NSData? = nil
+    var image : Data? = nil
     var like: Bool = false
     var users = [User]()
     
     
-    convenience init(title: String, itemDescription: String, image: NSData, like:Bool, users: [User]) {
+    convenience init(title: String, itemDescription: String, image: Data, like:Bool, users: [User]) {
         self.init()
         self.title = title
         self.itemDescription = itemDescription
