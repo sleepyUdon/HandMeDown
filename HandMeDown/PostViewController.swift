@@ -215,8 +215,9 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
         // users node
         let userRef = self.ref.child("users").child(self.uid)
-        userRef.child("inventory").child("title").setValue(self.itemTitle)
-        userRef.child("inventory").child("description").setValue("Very Cute")
+        let inventoryRef = userRef.childByAutoId()
+        inventoryRef.child("title").setValue(self.itemTitle)
+        inventoryRef.child("description").setValue("Very Cute")
         // add picture
         itemRef.observeSingleEvent(of: .value, with: { (snapshot) in
             let value = snapshot.value as? NSDictionary

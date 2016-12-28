@@ -42,14 +42,36 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     
     // MARK: ViewWillAppear
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.configureDatabase()
     }
+//    
+//    //// 
+//    1
+//    ref.observe(.value, with: { snapshot in
+//    // 2
+//    var newItems: [GroceryItem] = []
+//    
+//    // 3
+//    for item in snapshot.children {
+//    // 4
+//    let groceryItem = GroceryItem(snapshot: item as! FIRDataSnapshot)
+//    newItems.append(groceryItem)
+//    }
+//    
+//    // 5
+//    self.items = newItems
+//    self.tableView.reloadData()
+//    })
+//    
+//    //
+    
     
     // MARK: configure Database
     func configureDatabase() {
         self.ref.child("items").observeSingleEvent(of: .value, with: { (snapshot) in
-            for child in snapshot.children.allObjects as![FIRDataSnapshot] {
+            var newItems: [Item] = []
+            for child in snapshot.children.allObjects as! [FIRDataSnapshot] {
                 // Get user value
                 let value = child.value as? NSDictionary
                 let title = value?["title"] as? String
@@ -64,22 +86,17 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
                     } else {
                         let image = data
                         let item = Item(title: title!, itemDescription: description!, image: image!, like: false, users: [])
-                        self.items.append(item)
+                        newItems.append(item)
                     }
+                    self.items = newItems
+                    self.collectionView.reloadData()
                 }
-          
             }
-        }) { (error) in
+        }){ (error) in
             print(error.localizedDescription)
         }
     }
 
-    
-    // MARK: ViewWillAppear
-    override func viewWillAppear(_ animated: Bool) {
-        self.collectionView.reloadData()
-    }
-    
     
     // MARK: Prepare Layout
     func prepareLayout(){
@@ -117,16 +134,13 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items.count
+        return self.items.count
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GoodiesCollectionViewCell", for: indexPath) as! GoodiesCollectionViewCell
         let item = self.items[indexPath.row]
-//        let itemSnapshot: FIRDataSnapshot! = self.items[indexPath.row]
-//        //        let item = itemSnapshot.value as! Dictionary<String, String>
-        
         cell.imageView.image = UIImage(data: item.image!)
         cell.userPictureView?.image = UIImage(data: item.image!)
         cell.titleLabel.text = item.title
