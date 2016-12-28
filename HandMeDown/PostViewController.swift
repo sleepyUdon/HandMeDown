@@ -9,6 +9,7 @@
 import UIKit
 import Material
 import FirebaseDatabase
+import FirebaseStorage
 import FBSDKCoreKit
 
 
@@ -44,6 +45,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var pictureData: NSData?
     var categories = [String]()
     var ref: FIRDatabaseReference!
+    var storageRef: FIRStorageReference!
     var uid = ""
     var username = ""
     
@@ -52,6 +54,9 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         self.ref = FIRDatabase.database().reference()
+        let storage = FIRStorage.storage()
+        self.storageRef = storage.reference(forURL: "gs://handmedown-557a0.appspot.com")
+        
         picker.delegate = self
         self.titleTextfield.delegate = self
         self.getFacebookProfile()
@@ -182,6 +187,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         
         let date = NSDate()
+        let imageData = self.pictureData
         
         // items node
         let itemRef = self.ref.child("items").child("item - \(date)")
@@ -194,12 +200,33 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             itemRef.child("categories").child(category).setValue(true)
         }
         // add picture
+        let itemsImagesRef = self.storageRef.child("items").child("image.\(date)")
+        _ = itemsImagesRef.put(pictureData as! Data, metadata: nil) { (metadata, error) in
+            guard let metadata = metadata else {
+                // Uh-oh, an error occurred!
+                return
+            }
+            // Metadata contains file metadata such as size, content-type, and download URL.
+            _ = metadata.downloadURL
+        }
+
+
         
         // users node
         let userRef = self.ref.child("users").child(self.uid)
         userRef.child("inventory").child("title").setValue(self.itemTitle)
         userRef.child("inventory").child("description").setValue("Very Cute")
         // add picture
+        let usersImagesRef = self.storageRef.child("users").child("image.\(date)")
+        _ = usersImagesRef.put(pictureData as! Data, metadata: nil) { (metadata, error) in
+            guard let metadata = metadata else {
+                // Uh-oh, an error occurred!
+                return
+            }
+            // Metadata contains file metadata such as size, content-type, and download URL.
+            _ = metadata.downloadURL
+        }
+
 
     }
     
