@@ -8,13 +8,13 @@ provides-dynamic-lookup:
 - "stringSize"
 depends-top-level:
 - "UIFont"
-- !private "NSFontAttributeName"
-- !private "Dictionary"
-- !private "NSStringDrawingOptions"
+- "String"
 - !private "DBL_MAX"
 - "Double"
-- "String"
 - "CGSize"
+- !private "Dictionary"
+- !private "NSFontAttributeName"
+- !private "NSStringDrawingOptions"
 depends-member:
 - !private ["Ps9AnyObject", "CGSize"]
 - !private ["Ps9AnyObject", "DBL_MAX"]

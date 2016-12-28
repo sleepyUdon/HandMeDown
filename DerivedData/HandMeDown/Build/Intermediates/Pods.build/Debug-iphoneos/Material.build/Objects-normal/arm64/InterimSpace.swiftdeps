@@ -10,12 +10,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Int"
-- "InterimSpacePresetToValue"
-- "InterimSpace"
 - "InterimSpacePreset"
 - "=="
 - "CGFloat"
 - !private "~="
+- "InterimSpacePresetToValue"
+- "InterimSpace"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

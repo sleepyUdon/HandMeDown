@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown20MyStuffTableViewCell", ""]
 provides-dynamic-lookup:
-- "descriptionLabel"
-- "pictureView"
-- "setSelected"
-- "awakeFromNib"
-- "configureWithItem"
 - "titleLabel"
+- "configureWithItem"
+- "pictureView"
+- "awakeFromNib"
+- "setSelected"
+- "descriptionLabel"
 depends-top-level:
 - "Item"
-- "UITableViewCell"
-- "MyStuffTableViewCell"
-- !private "Data"
-- "Bool"
-- "AssignmentPrecedence"
-- !private "UIImage"
 - "UIImageView"
 - "UILabel"
+- "MyStuffTableViewCell"
+- !private "UIImage"
+- "AssignmentPrecedence"
+- !private "Data"
 - "CastingPrecedence"
+- "UITableViewCell"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "awakeFromNib"]
@@ -177,13 +177,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "titleLabel"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
-- !private ["C10RealmSwift6Object", "description"]
-- !private ["C10RealmSwift6Object", "image"]
-- !private ["C10RealmSwift6Object", "title"]
 - ["Sq", "deinit"]
-- !private ["CSo13RLMObjectBase", "description"]
-- !private ["CSo13RLMObjectBase", "image"]
-- !private ["CSo13RLMObjectBase", "title"]
 - ["SS", "deinit"]
 - !private ["PSo29UIAccessibilityIdentification", "UIImage"]
 - ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
@@ -386,9 +380,7 @@ depends-nominal:
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "C10RealmSwift6Object"
 - "Sq"
-- !private "CSo13RLMObjectBase"
 - "SS"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"

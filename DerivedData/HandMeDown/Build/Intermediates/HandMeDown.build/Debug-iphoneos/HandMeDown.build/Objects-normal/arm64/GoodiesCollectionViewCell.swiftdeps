@@ -6,34 +6,32 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown25GoodiesCollectionViewCell", ""]
 provides-dynamic-lookup:
-- "configureWithItem"
 - "titleLabel"
+- "imageView"
 - "userPictureView"
 - "likeButton"
-- "imageView"
+- "configureWithItem"
 depends-top-level:
-- "UIButton"
-- !private "UIImage"
-- "UILabel"
-- "UIImageView"
-- "Item"
 - "UICollectionViewCell"
+- "Item"
+- "GoodiesCollectionViewCell"
+- !private "UIImage"
+- "UIImageView"
+- "CastingPrecedence"
+- "UILabel"
 - !private "Data"
 - "AssignmentPrecedence"
-- "CastingPrecedence"
-- "GoodiesCollectionViewCell"
+- "UIButton"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "configureWithItem"]
 - !private ["Ps9AnyObject", "image"]
 - ["Ps9AnyObject", "imageView"]
 - !private ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "like"]
 - ["Ps9AnyObject", "likeButton"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "title"]
 - ["Ps9AnyObject", "titleLabel"]
-- !private ["Ps9AnyObject", "user"]
 - ["Ps9AnyObject", "userPictureView"]
 - ["Ps9AnyObject", ""]
 - !private ["PSo15CALayerDelegate", "UIImage"]
@@ -52,12 +50,10 @@ depends-member:
 - !private ["Ps7CVarArg", "image"]
 - ["Ps7CVarArg", "imageView"]
 - !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "like"]
 - ["Ps7CVarArg", "likeButton"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "title"]
 - ["Ps7CVarArg", "titleLabel"]
-- !private ["Ps7CVarArg", "user"]
 - ["Ps7CVarArg", "userPictureView"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
@@ -65,12 +61,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - ["Ps28CustomDebugStringConvertible", "imageView"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "like"]
 - ["Ps28CustomDebugStringConvertible", "likeButton"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - ["Ps28CustomDebugStringConvertible", "titleLabel"]
-- !private ["Ps28CustomDebugStringConvertible", "user"]
 - ["Ps28CustomDebugStringConvertible", "userPictureView"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
@@ -78,12 +72,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "image"]
 - ["Ps23CustomStringConvertible", "imageView"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "like"]
 - ["Ps23CustomStringConvertible", "likeButton"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "title"]
 - ["Ps23CustomStringConvertible", "titleLabel"]
-- !private ["Ps23CustomStringConvertible", "user"]
 - ["Ps23CustomStringConvertible", "userPictureView"]
 - ["Ps23CustomStringConvertible", ""]
 - ["V10Foundation4Data", "deinit"]
@@ -92,12 +84,10 @@ depends-member:
 - !private ["Ps9Equatable", "image"]
 - ["Ps9Equatable", "imageView"]
 - !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "like"]
 - ["Ps9Equatable", "likeButton"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "title"]
 - ["Ps9Equatable", "titleLabel"]
-- !private ["Ps9Equatable", "user"]
 - ["Ps9Equatable", "userPictureView"]
 - ["Ps9Equatable", ""]
 - !private ["C10HandMeDown25GoodiesCollectionViewCell", "Data"]
@@ -118,20 +108,16 @@ depends-member:
 - !private ["Ps8Hashable", "image"]
 - ["Ps8Hashable", "imageView"]
 - !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "like"]
 - ["Ps8Hashable", "likeButton"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "title"]
 - ["Ps8Hashable", "titleLabel"]
-- !private ["Ps8Hashable", "user"]
 - ["Ps8Hashable", "userPictureView"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
 - ["C10HandMeDown4Item", "deinit"]
 - !private ["C10HandMeDown4Item", "image"]
-- !private ["C10HandMeDown4Item", "like"]
 - !private ["C10HandMeDown4Item", "title"]
-- !private ["C10HandMeDown4Item", "user"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "UIImage"]
 - ["PSo8NSCoding", "configureWithItem"]
@@ -153,36 +139,24 @@ depends-member:
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imageView"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "like"]
 - ["CSo8NSObject", "likeButton"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "titleLabel"]
-- !private ["CSo8NSObject", "user"]
 - ["CSo8NSObject", "userPictureView"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - ["PSo16NSObjectProtocol", "configureWithItem"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imageView"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "like"]
 - ["PSo16NSObjectProtocol", "likeButton"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "title"]
 - ["PSo16NSObjectProtocol", "titleLabel"]
-- !private ["PSo16NSObjectProtocol", "user"]
 - ["PSo16NSObjectProtocol", "userPictureView"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
-- !private ["C10RealmSwift6Object", "image"]
-- !private ["C10RealmSwift6Object", "like"]
-- !private ["C10RealmSwift6Object", "title"]
-- !private ["C10RealmSwift6Object", "user"]
 - ["Sq", "deinit"]
-- !private ["CSo13RLMObjectBase", "image"]
-- !private ["CSo13RLMObjectBase", "like"]
-- !private ["CSo13RLMObjectBase", "title"]
-- !private ["CSo13RLMObjectBase", "user"]
 - !private ["PSo29UIAccessibilityIdentification", "UIImage"]
 - ["PSo29UIAccessibilityIdentification", "configureWithItem"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
@@ -213,7 +187,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "titleLabel"]
 - ["PSo21UIAppearanceContainer", "userPictureView"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo8UIButton", "imageView"]
 - !private ["CSo24UICollectionReusableView", "Data"]
 - ["CSo24UICollectionReusableView", "Item"]
 - ["CSo24UICollectionReusableView", "UIButton"]
@@ -241,7 +214,6 @@ depends-member:
 - ["CSo20UICollectionViewCell", "userPictureView"]
 - ["CSo20UICollectionViewCell", ""]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
-- !private ["CSo9UIControl", "imageView"]
 - !private ["PSo17UICoordinateSpace", "UIImage"]
 - ["PSo17UICoordinateSpace", "configureWithItem"]
 - !private ["PSo17UICoordinateSpace", "image"]
@@ -283,7 +255,6 @@ depends-member:
 - ["PSo11UIFocusItem", "userPictureView"]
 - ["PSo11UIFocusItem", ""]
 - !private ["CSo7UIImage", "init"]
-- ["CSo11UIImageView", "deinit"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo11UIResponder", "Data"]
@@ -350,12 +321,10 @@ depends-member:
 - !private ["Ps9_Hashable", "image"]
 - ["Ps9_Hashable", "imageView"]
 - !private ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "like"]
 - ["Ps9_Hashable", "likeButton"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "title"]
 - ["Ps9_Hashable", "titleLabel"]
-- !private ["Ps9_Hashable", "user"]
 - ["Ps9_Hashable", "userPictureView"]
 - ["Ps9_Hashable", ""]
 depends-nominal:
@@ -376,23 +345,19 @@ depends-nominal:
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- !private "C10RealmSwift6Object"
 - "Sq"
-- !private "CSo13RLMObjectBase"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- !private "CSo8UIButton"
 - "CSo24UICollectionReusableView"
 - "CSo20UICollectionViewCell"
 - !private "PSo30UIContentSizeCategoryAdjusting"
-- !private "CSo9UIControl"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - "PSo11UIFocusItem"
 - !private "CSo7UIImage"
-- "CSo11UIImageView"
+- !private "CSo11UIImageView"
 - !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"

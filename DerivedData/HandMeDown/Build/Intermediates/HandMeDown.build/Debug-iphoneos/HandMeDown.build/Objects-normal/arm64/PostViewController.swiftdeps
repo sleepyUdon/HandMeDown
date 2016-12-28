@@ -6,110 +6,108 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown18PostViewController", ""]
 provides-dynamic-lookup:
-- "HandleAddPictureButton"
-- "prepareLayout"
-- "ref"
-- "itemDescription"
-- "textFieldDidEndEditing"
-- "gearButton"
-- "gearButton"
-- "imagePickerController"
-- "uid"
-- "picker"
-- "boyButton"
-- "boyButton"
-- "tweenButton"
-- "tweenButton"
-- "openGallery"
-- "descriptionTextView"
-- "babyButton"
-- "babyButton"
-- "electronicsButton"
-- "electronicsButton"
-- "girlButton"
-- "girlButton"
-- "teenButton"
-- "teenButton"
-- "pictureButton"
-- "titleTextfield"
-- "imagePickerControllerDidCancel"
-- "viewDidLoad"
-- "toddlerButton"
-- "toddlerButton"
-- "toyButton"
-- "toyButton"
-- "cameraView"
-- "categories"
-- "openCamera"
-- "getFacebookProfile"
 - "viewWillAppear"
-- "pictureData"
-- "clothesButton"
-- "clothesButton"
-- "sportsButton"
-- "sportsButton"
 - "textFieldShouldReturn"
-- "username"
-- "itemTitle"
-- "pictureView"
+- "pictureData"
+- "descriptionTextView"
+- "furnitureButton"
+- "furnitureButton"
+- "toddlerButton"
+- "toddlerButton"
+- "toyButton"
+- "toyButton"
+- "categories"
+- "boyButton"
+- "boyButton"
+- "itemDescription"
+- "tweenButton"
+- "tweenButton"
+- "imagePickerController"
+- "cameraView"
+- "otherButton"
+- "otherButton"
 - "kidButton"
 - "kidButton"
+- "getFacebookProfile"
+- "bookButton"
+- "bookButton"
+- "uid"
+- "textFieldDidEndEditing"
+- "picker"
+- "girlButton"
+- "girlButton"
+- "electronicsButton"
+- "electronicsButton"
+- "HandleAddPictureButton"
+- "openGallery"
+- "teenButton"
+- "teenButton"
 - "HandlePostButton"
-- "otherButton"
-- "otherButton"
+- "itemTitle"
+- "prepareLayout"
+- "username"
 - "containerView"
-- "bookButton"
-- "bookButton"
-- "furnitureButton"
-- "furnitureButton"
+- "pictureView"
+- "gearButton"
+- "gearButton"
+- "viewDidLoad"
+- "clothesButton"
+- "clothesButton"
+- "sportsButton"
+- "sportsButton"
+- "titleTextfield"
+- "openCamera"
+- "imagePickerControllerDidCancel"
+- "babyButton"
+- "babyButton"
+- "ref"
+- "pictureButton"
 depends-top-level:
-- "String"
-- "StringLiteralType"
-- "PostViewController"
-- "UITextField"
-- !private "UIAlertController"
-- !private "Colors"
-- "CastingPrecedence"
-- !private "FIRDatabase"
-- !private "UIImagePickerControllerSourceType"
-- !private "Void"
+- "FIRDatabaseReference"
+- "UIView"
+- !private "UIImageJPEGRepresentation"
+- !private "UIImagePickerControllerOriginalImage"
+- !private "!="
+- !private "/"
+- "UIImagePickerControllerDelegate"
+- "NSData"
+- "UITextView"
+- !private "Dictionary"
+- "UINavigationControllerDelegate"
 - !private "FBSDKGraphRequest"
 - !private "UIAlertAction"
-- "UIImagePickerController"
-- "Button"
-- !private "BooleanLiteralType"
-- !private "Category"
-- !private "UIAlertActionStyle"
-- "RaisedButton"
-- "UITextViewDelegate"
-- "UITextFieldDelegate"
-- "FIRDatabaseReference"
-- "UIImageView"
-- !private "NSDate"
-- "Bool"
-- !private "UIAlertControllerStyle"
-- "UITextView"
-- !private "UIImagePickerControllerOriginalImage"
-- "UIView"
-- "NSData"
 - "AssignmentPrecedence"
-- "UIButton"
-- !private "FBSDKAccessToken"
-- !private "UIImage"
-- !private "=="
 - !private "Fonts"
+- "RaisedButton"
 - !private "NSDictionary"
-- "UIImagePickerControllerDelegate"
-- !private "!="
-- !private "UIImageJPEGRepresentation"
-- !private "/"
-- "UINavigationControllerDelegate"
+- "PostViewController"
+- !private "Void"
+- "UIImageView"
+- "CastingPrecedence"
+- !private "=="
+- !private "UIAlertActionStyle"
+- "Button"
+- !private "NSDate"
+- !private "UIAlertController"
+- !private "UIAlertControllerStyle"
+- !private "FBSDKAccessToken"
+- "StringLiteralType"
+- !private "UIImage"
+- "String"
+- !private "Colors"
+- "UITextField"
+- "UIImagePickerController"
 - "UIViewController"
-- !private "Dictionary"
+- "UIButton"
+- "UITextFieldDelegate"
+- "UITextViewDelegate"
+- !private "FIRDatabase"
+- !private "UIImagePickerControllerSourceType"
+- "Bool"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Vs11AnyHashable", "deinit"]
 - !private ["Ps9AnyObject", "B4"]
-- !private ["Ps9AnyObject", "Category"]
 - !private ["Ps9AnyObject", "Colors"]
 - !private ["Ps9AnyObject", "FBSDKAccessToken"]
 - !private ["Ps9AnyObject", "FBSDKGraphRequest"]
@@ -276,7 +274,6 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "titleLabel"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["VSC6CGRect", "height"]
-- !private ["Ps7CVarArg", "Category"]
 - !private ["Ps7CVarArg", "Colors"]
 - !private ["Ps7CVarArg", "FBSDKAccessToken"]
 - !private ["Ps7CVarArg", "FBSDKGraphRequest"]
@@ -404,8 +401,6 @@ depends-member:
 - ["Ps7CVarArg", "viewForZoomingInScrollView"]
 - ["Ps7CVarArg", "viewWillAppear"]
 - ["Ps7CVarArg", ""]
-- ["C10HandMeDown8Category", "deinit"]
-- !private ["C10HandMeDown8Category", "init"]
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps10Collection", "Index"]
 - !private ["Ps10Collection", "Iterator"]
@@ -418,7 +413,6 @@ depends-member:
 - !private ["Ps10Collection", "remove"]
 - !private ["C10HandMeDown6Colors", "blue"]
 - ["Ps10Comparable", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "Category"]
 - !private ["Ps28CustomDebugStringConvertible", "Colors"]
 - !private ["Ps28CustomDebugStringConvertible", "FBSDKAccessToken"]
 - !private ["Ps28CustomDebugStringConvertible", "FBSDKGraphRequest"]
@@ -547,7 +541,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["P10RealmSwift26CustomObjectiveCBridgeable", "Value"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "height"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
@@ -563,7 +556,6 @@ depends-member:
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "object"]
 - !private ["Ps17CustomReflectable", "remove"]
-- !private ["Ps23CustomStringConvertible", "Category"]
 - !private ["Ps23CustomStringConvertible", "Colors"]
 - !private ["Ps23CustomStringConvertible", "FBSDKAccessToken"]
 - !private ["Ps23CustomStringConvertible", "FBSDKGraphRequest"]
@@ -697,7 +689,6 @@ depends-member:
 - !private ["Vs10Dictionary", "Value"]
 - ["Vs10Dictionary", "deinit"]
 - ["Sd", "deinit"]
-- !private ["Ps9Equatable", "Category"]
 - !private ["Ps9Equatable", "Colors"]
 - !private ["Ps9Equatable", "FBSDKAccessToken"]
 - !private ["Ps9Equatable", "FBSDKGraphRequest"]
@@ -840,7 +831,6 @@ depends-member:
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "object"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps23ExpressibleByNilLiteral", "Value"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -858,7 +848,6 @@ depends-member:
 - !private ["CSo20FIRDatabaseReference", "setValue"]
 - ["Sf", "deinit"]
 - !private ["C10HandMeDown5Fonts", "body"]
-- !private ["Ps8Hashable", "Category"]
 - !private ["Ps8Hashable", "Colors"]
 - !private ["Ps8Hashable", "FBSDKAccessToken"]
 - !private ["Ps8Hashable", "FBSDKGraphRequest"]
@@ -1030,7 +1019,6 @@ depends-member:
 - ["Ps16MutableIndexable", "init"]
 - !private ["Ps16MutableIndexable", "remove"]
 - ["CSo7NSCoder", "deinit"]
-- !private ["PSo8NSCoding", "Category"]
 - !private ["PSo8NSCoding", "Colors"]
 - !private ["PSo8NSCoding", "FBSDKAccessToken"]
 - !private ["PSo8NSCoding", "FBSDKGraphRequest"]
@@ -1154,7 +1142,6 @@ depends-member:
 - !private ["CSo6NSDate", "init"]
 - ["CSo12NSDictionary", "deinit"]
 - !private ["CSo12NSDictionary", "object"]
-- !private ["PSo26NSExtensionRequestHandling", "Category"]
 - !private ["PSo26NSExtensionRequestHandling", "Colors"]
 - !private ["PSo26NSExtensionRequestHandling", "FBSDKAccessToken"]
 - !private ["PSo26NSExtensionRequestHandling", "FBSDKGraphRequest"]
@@ -1255,7 +1242,6 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "object"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "Button"]
-- !private ["CSo8NSObject", "Category"]
 - !private ["CSo8NSObject", "Colors"]
 - !private ["CSo8NSObject", "FBSDKAccessToken"]
 - !private ["CSo8NSObject", "FBSDKGraphRequest"]
@@ -1383,7 +1369,6 @@ depends-member:
 - ["CSo8NSObject", "viewForZooming"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["CSo8NSObject", "viewWillAppear"]
-- !private ["PSo16NSObjectProtocol", "Category"]
 - !private ["PSo16NSObjectProtocol", "Colors"]
 - !private ["PSo16NSObjectProtocol", "FBSDKAccessToken"]
 - !private ["PSo16NSObjectProtocol", "FBSDKGraphRequest"]
@@ -1509,13 +1494,10 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "light2"]
 - !private ["PSo14NSSecureCoding", "object"]
 - ["CSo8NSString", "init"]
-- !private ["C10RealmSwift6Object", "init"]
 - !private ["Ps9OptionSet", "normal"]
-- !private ["Sq", "Value"]
 - ["Sq", "deinit"]
 - ["C10HandMeDown18PostViewController", "Bool"]
 - ["C10HandMeDown18PostViewController", "Button"]
-- !private ["C10HandMeDown18PostViewController", "Category"]
 - !private ["C10HandMeDown18PostViewController", "Colors"]
 - !private ["C10HandMeDown18PostViewController", "FBSDKAccessToken"]
 - !private ["C10HandMeDown18PostViewController", "FBSDKGraphRequest"]
@@ -1622,7 +1604,6 @@ depends-member:
 - !private ["P8Material9Pulseable", "isSelected"]
 - !private ["P8Material9Pulseable", "setTitleColor"]
 - !private ["P8Material9Pulseable", "titleLabel"]
-- !private ["CSo13RLMObjectBase", "init"]
 - !private ["C8Material12RaisedButton", "backgroundColor"]
 - !private ["C8Material12RaisedButton", "cornerRadius"]
 - !private ["C8Material12RaisedButton", "frame"]
@@ -1723,7 +1704,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "setTitleColor"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "titleLabel"]
-- !private ["PSo21UIAppearanceContainer", "Category"]
 - !private ["PSo21UIAppearanceContainer", "Colors"]
 - !private ["PSo21UIAppearanceContainer", "FBSDKAccessToken"]
 - !private ["PSo21UIAppearanceContainer", "FBSDKGraphRequest"]
@@ -1843,7 +1823,6 @@ depends-member:
 - !private ["CSo7UIColor", "blue"]
 - ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "light2"]
-- !private ["PSo18UIContentContainer", "Category"]
 - !private ["PSo18UIContentContainer", "Colors"]
 - !private ["PSo18UIContentContainer", "FBSDKAccessToken"]
 - !private ["PSo18UIContentContainer", "FBSDKGraphRequest"]
@@ -1985,7 +1964,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "setTitleColor"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "titleLabel"]
-- !private ["PSo18UIFocusEnvironment", "Category"]
 - !private ["PSo18UIFocusEnvironment", "Colors"]
 - !private ["PSo18UIFocusEnvironment", "FBSDKAccessToken"]
 - !private ["PSo18UIFocusEnvironment", "FBSDKGraphRequest"]
@@ -2118,7 +2096,6 @@ depends-member:
 - ["CSo23UIImagePickerController", "init"]
 - !private ["CSo23UIImagePickerController", "isSourceTypeAvailable"]
 - !private ["CSo23UIImagePickerController", "sourceType"]
-- !private ["PSo31UIImagePickerControllerDelegate", "Category"]
 - !private ["PSo31UIImagePickerControllerDelegate", "Colors"]
 - !private ["PSo31UIImagePickerControllerDelegate", "FBSDKAccessToken"]
 - !private ["PSo31UIImagePickerControllerDelegate", "FBSDKGraphRequest"]
@@ -2217,7 +2194,6 @@ depends-member:
 - ["CSo22UINavigationController", "init"]
 - !private ["CSo22UINavigationController", "isSourceTypeAvailable"]
 - !private ["CSo22UINavigationController", "sourceType"]
-- !private ["PSo30UINavigationControllerDelegate", "Category"]
 - !private ["PSo30UINavigationControllerDelegate", "Colors"]
 - !private ["PSo30UINavigationControllerDelegate", "FBSDKAccessToken"]
 - !private ["PSo30UINavigationControllerDelegate", "FBSDKGraphRequest"]
@@ -2304,7 +2280,6 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "Button"]
-- !private ["CSo11UIResponder", "Category"]
 - !private ["CSo11UIResponder", "Colors"]
 - !private ["CSo11UIResponder", "FBSDKAccessToken"]
 - !private ["CSo11UIResponder", "FBSDKGraphRequest"]
@@ -2422,7 +2397,6 @@ depends-member:
 - ["CSo11UIResponder", "viewForZooming"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["CSo11UIResponder", "viewWillAppear"]
-- !private ["PSo30UIResponderStandardEditActions", "Category"]
 - !private ["PSo30UIResponderStandardEditActions", "Colors"]
 - !private ["PSo30UIResponderStandardEditActions", "FBSDKAccessToken"]
 - !private ["PSo30UIResponderStandardEditActions", "FBSDKGraphRequest"]
@@ -2532,7 +2506,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewForZoomingInScrollView"]
 - ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
 - ["PSo30UIResponderStandardEditActions", ""]
-- !private ["PSo20UIScrollViewDelegate", "Category"]
 - !private ["PSo20UIScrollViewDelegate", "Colors"]
 - !private ["PSo20UIScrollViewDelegate", "FBSDKAccessToken"]
 - !private ["PSo20UIScrollViewDelegate", "FBSDKGraphRequest"]
@@ -2617,7 +2590,6 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "viewForZooming"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo20UIScrollViewDelegate", ""]
-- !private ["PSo16UIStateRestoring", "Category"]
 - !private ["PSo16UIStateRestoring", "Colors"]
 - !private ["PSo16UIStateRestoring", "FBSDKAccessToken"]
 - !private ["PSo16UIStateRestoring", "FBSDKGraphRequest"]
@@ -2716,7 +2688,6 @@ depends-member:
 - !private ["CSo11UITextField", "delegate"]
 - !private ["CSo11UITextField", "resignFirstResponder"]
 - !private ["CSo11UITextField", "text"]
-- !private ["PSo19UITextFieldDelegate", "Category"]
 - !private ["PSo19UITextFieldDelegate", "Colors"]
 - !private ["PSo19UITextFieldDelegate", "FBSDKAccessToken"]
 - !private ["PSo19UITextFieldDelegate", "FBSDKGraphRequest"]
@@ -2807,7 +2778,6 @@ depends-member:
 - !private ["PSo17UITextInputTraits", "delegate"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
 - !private ["PSo17UITextInputTraits", "text"]
-- !private ["PSo18UITextViewDelegate", "Category"]
 - !private ["PSo18UITextViewDelegate", "Colors"]
 - !private ["PSo18UITextViewDelegate", "FBSDKAccessToken"]
 - !private ["PSo18UITextViewDelegate", "FBSDKGraphRequest"]
@@ -2892,7 +2862,6 @@ depends-member:
 - ["PSo18UITextViewDelegate", "viewForZooming"]
 - ["PSo18UITextViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo18UITextViewDelegate", ""]
-- !private ["PSo18UITraitEnvironment", "Category"]
 - !private ["PSo18UITraitEnvironment", "Colors"]
 - !private ["PSo18UITraitEnvironment", "FBSDKAccessToken"]
 - !private ["PSo18UITraitEnvironment", "FBSDKGraphRequest"]
@@ -3019,7 +2988,6 @@ depends-member:
 - !private ["CSo6UIView", "titleLabel"]
 - ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "Button"]
-- !private ["CSo16UIViewController", "Category"]
 - !private ["CSo16UIViewController", "Colors"]
 - !private ["CSo16UIViewController", "FBSDKAccessToken"]
 - !private ["CSo16UIViewController", "FBSDKGraphRequest"]
@@ -3169,7 +3137,6 @@ depends-member:
 - !private ["Ps26_ExpressibleByColorLiteral", "light2"]
 - !private ["Ps26_ExpressibleByImageLiteral", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps9_Hashable", "Category"]
 - !private ["Ps9_Hashable", "Colors"]
 - !private ["Ps9_Hashable", "FBSDKAccessToken"]
 - !private ["Ps9_Hashable", "FBSDKGraphRequest"]
@@ -3322,13 +3289,11 @@ depends-nominal:
 - "V12CoreGraphics7CGFloat"
 - !private "VSC6CGRect"
 - "Ps7CVarArg"
-- "C10HandMeDown8Category"
 - !private "Vs9Character"
 - "Ps10Collection"
 - !private "C10HandMeDown6Colors"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
-- !private "P10RealmSwift26CustomObjectiveCBridgeable"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
@@ -3341,7 +3306,6 @@ depends-nominal:
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps23ExpressibleByNilLiteral"
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -3381,12 +3345,10 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
-- !private "C10RealmSwift6Object"
 - !private "Ps9OptionSet"
 - "Sq"
 - "C10HandMeDown18PostViewController"
 - !private "P8Material9Pulseable"
-- !private "CSo13RLMObjectBase"
 - !private "C8Material12RaisedButton"
 - "Ps22RandomAccessCollection"
 - "Ps21RandomAccessIndexable"

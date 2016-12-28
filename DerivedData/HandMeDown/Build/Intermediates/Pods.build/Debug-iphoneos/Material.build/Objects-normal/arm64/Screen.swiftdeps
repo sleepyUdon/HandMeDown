@@ -7,10 +7,10 @@ provides-member:
 - ["V8Material6Screen", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UIScreen"
 - "Screen"
-- "CGFloat"
+- !private "UIScreen"
 - "CGRect"
+- "CGFloat"
 depends-member:
 - !private ["Ps9AnyObject", "bounds"]
 - !private ["Ps9AnyObject", "main"]

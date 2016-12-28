@@ -11,13 +11,13 @@ provides-dynamic-lookup:
 - "reload"
 - "presenterView"
 depends-top-level:
+- "EdgeInsets"
+- "Card"
+- "PresenterCard"
+- !private "BooleanLiteralType"
 - !private "EdgeInsetsPresetToValue"
 - "UIView"
-- "PresenterCard"
-- "EdgeInsets"
-- !private "BooleanLiteralType"
 - "EdgeInsetsPreset"
-- "Card"
 - "AssignmentPrecedence"
 - !private "CGFloat"
 depends-member:

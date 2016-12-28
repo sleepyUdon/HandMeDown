@@ -9,13 +9,13 @@ provides-member:
 - ["O8Material16EdgeInsetsPreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "EdgeInsetsPreset"
 - "UIEdgeInsets"
-- "Int"
 - "EdgeInsets"
+- "EdgeInsetsPresetToValue"
+- "Int"
+- "EdgeInsetsPreset"
 - "=="
 - !private "~="
-- "EdgeInsetsPresetToValue"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

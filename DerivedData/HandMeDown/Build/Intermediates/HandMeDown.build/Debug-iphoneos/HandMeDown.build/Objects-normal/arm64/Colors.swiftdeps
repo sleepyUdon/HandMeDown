@@ -17,11 +17,11 @@ provides-member:
 - ["CC10HandMeDown6Colors6purple", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Colors"
-- "UIColor"
-- "IntegerLiteralType"
-- "_ColorLiteralType"
 - "FloatLiteralType"
+- "IntegerLiteralType"
+- "UIColor"
+- "_ColorLiteralType"
+- "Colors"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

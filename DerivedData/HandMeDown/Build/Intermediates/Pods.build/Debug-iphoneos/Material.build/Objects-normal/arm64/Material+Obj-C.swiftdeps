@@ -7,11 +7,11 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "UnsafePointer"
-- "UInt8"
 - !private "objc_setAssociatedObject"
-- !private "objc_getAssociatedObject"
 - "AssociatedObject"
+- !private "objc_getAssociatedObject"
 - "AssociateObject"
+- "UInt8"
 - "CastingPrecedence"
 depends-member:
 - !private ["Ps9Equatable", "OBJC_ASSOCIATION_RETAIN"]

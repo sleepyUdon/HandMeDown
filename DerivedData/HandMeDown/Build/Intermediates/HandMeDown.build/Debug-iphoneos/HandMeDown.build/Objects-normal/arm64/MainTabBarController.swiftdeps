@@ -7,8 +7,8 @@ provides-member:
 - ["C10HandMeDown20MainTabBarController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UITabBarController"
 - "MainTabBarController"
+- "UITabBarController"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

@@ -30,27 +30,27 @@ provides-member:
 - ["CSo6UIView", "layout"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "debugPrint"
 - "String"
 - "NSLayoutConstraint"
-- !private "UnicodeScalarType"
 - "StringLiteralType"
 - !private "BooleanLiteralType"
-- "Layout"
 - !private "!="
-- !private "debugPrint"
 - "UInt8"
 - "CGSize"
 - "UIView"
-- !private "LayoutKey"
 - !private "AssociatedObject"
-- "NSLayoutFormatOptions"
+- !private "LayoutKey"
+- "Layout"
 - !private "AssociateObject"
 - "InterimSpace"
+- "NSLayoutFormatOptions"
 - !private "<"
 - !private "-"
 - "AssignmentPrecedence"
 - "CGFloat"
 - "CastingPrecedence"
+- !private "UnicodeScalarType"
 - !private "..<"
 depends-member:
 - !private ["Ps9AnyObject", "AssociateObject"]

@@ -37,6 +37,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var cameraView: UIImageView!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var titleTextfield: UITextField!
+    
     let picker = UIImagePickerController()
     var itemTitle: String?
     var itemDescription: String?
@@ -160,8 +161,9 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
     }
 
-    
-    /// MARK: TextField Delegate
+ 
+
+    // MARK: TextField Delegate
     public func textFieldDidEndEditing(_ textField: UITextField) {
         self.itemTitle = titleTextfield.text
     }
@@ -173,24 +175,32 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     
     
-    /// MARK: Actions
-    
-    // Handle Post Button
+    // MARK: Handle Post Button
     
     @IBAction func HandlePostButton(_ sender: UIButton) {
-        let date = NSDate()
-        self.ref.child("items").child("item - \(date)").setValue(["description": "Very Cute"])
-        self.ref.child("items").child("item - \(date)").setValue(["title": "\(self.itemTitle)"])
-//        self.ref.child("items").child("item - \(date)").setValue(["picture": self.pictureData])
-        self.ref.child("items").child("item - \(date)").child("users").setValue(["uid": "\(self.uid)"])
-        self.ref.child("items").child("item - \(date)").child("users").setValue(["username":self.username])
-        self.ref.child("items").child("item - \(date)").child("like").setValue(["like":false])
         
+        
+        
+        let date = NSDate()
+        
+        // items node
+        let itemRef = self.ref.child("items").child("item - \(date)")
+        itemRef.child("title").setValue(self.itemTitle)
+        itemRef.child("description").setValue("Very Cute")
+        itemRef.child("users").child("uid").setValue(self.uid)
+        itemRef.child("users").child("username").setValue(self.username)
+        itemRef.child("like").child("like").setValue(false)
         for category in self.categories {
-            let cat = Category(name: category)
-            self.ref.child("items").child("item - \(date)").child("categories").setValue([cat:true])
-
+            itemRef.child("categories").child(category).setValue(true)
         }
+        // add picture
+        
+        // users node
+        let userRef = self.ref.child("users").child(self.uid)
+        userRef.child("inventory").child("title").setValue(self.itemTitle)
+        userRef.child("inventory").child("description").setValue("Very Cute")
+        // add picture
+
     }
     
     
@@ -271,8 +281,8 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.boyButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.boyButton.isSelected = false
             self.boyButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
-            if let index = categories.index(of: "Boy") {
-                categories.remove(at: index)
+            if let index = self.categories.index(of: "Boy") {
+                self.categories.remove(at: index)
             }
         }
     }
@@ -285,10 +295,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.girlButton.backgroundColor = Colors.blue.light2
             self.girlButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.girlButton.isSelected = true
+            self.categories.append("Girl")
+
         } else {
             self.girlButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.girlButton.isSelected = false
             self.girlButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Girl") {
+                self.categories.remove(at: index)
+            }
         }
     }
     
@@ -300,10 +315,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.babyButton.backgroundColor = Colors.blue.light2
             self.babyButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.babyButton.isSelected = true
+            self.categories.append("Baby")
+
         } else {
             self.babyButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.babyButton.isSelected = false
             self.babyButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Baby") {
+                self.categories.remove(at: index)
+            }
         }
     }
     
@@ -315,10 +335,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.toddlerButton.backgroundColor = Colors.blue.light2
             self.toddlerButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.toddlerButton.isSelected = true
+            self.categories.append("Toddler")
+
         } else {
             self.toddlerButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.toddlerButton.isSelected = false
             self.toddlerButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Toddler") {
+                self.categories.remove(at: index)
+            }
         }
     }
     
@@ -329,10 +354,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.kidButton.backgroundColor = Colors.blue.light2
             self.kidButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.kidButton.isSelected = true
+            self.categories.append("Kid")
+
         } else {
             self.kidButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.kidButton.isSelected = false
             self.kidButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Kid") {
+                self.categories.remove(at: index)
+            }
         }
     }
     
@@ -343,10 +373,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.tweenButton.backgroundColor = Colors.blue.light2
             self.tweenButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.tweenButton.isSelected = true
+            self.categories.append("Tween")
+
         } else {
             self.tweenButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.tweenButton.isSelected = false
             self.tweenButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Tween") {
+                self.categories.remove(at: index)
+            }
         }
     }
     
@@ -357,10 +392,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.teenButton.backgroundColor = Colors.blue.light2
             self.teenButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.teenButton.isSelected = true
+            self.categories.append("Teen")
+
         } else {
             self.teenButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.teenButton.isSelected = false
             self.teenButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Teen") {
+                self.categories.remove(at: index)
+            }
         }
     }
     
@@ -371,10 +411,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.clothesButton.backgroundColor = Colors.blue.light2
             self.clothesButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.clothesButton.isSelected = true
+            self.categories.append("Clothes")
+
         } else {
             self.clothesButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.clothesButton.isSelected = false
             self.clothesButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Clothes") {
+                self.categories.remove(at: index)
+            }
         }
     }
     
@@ -385,10 +430,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.toyButton.backgroundColor = Colors.blue.light2
             self.toyButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.toyButton.isSelected = true
+            self.categories.append("Toy")
+
         } else {
             self.toyButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.toyButton.isSelected = false
             self.toyButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Toy") {
+                self.categories.remove(at: index)
+            }
         }
     }
     
@@ -400,10 +450,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.bookButton.backgroundColor = Colors.blue.light2
             self.bookButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.bookButton.isSelected = true
+            self.categories.append("Book")
+
         } else {
             self.bookButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.bookButton.isSelected = false
             self.bookButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Book") {
+                self.categories.remove(at: index)
+            }
         }
     }
     
@@ -415,10 +470,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.gearButton.backgroundColor = Colors.blue.light2
             self.gearButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.gearButton.isSelected = true
+            self.categories.append("Gear")
+
         } else {
             self.gearButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.gearButton.isSelected = false
             self.gearButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Gear") {
+                self.categories.remove(at: index)
+            }
         }
     }
     
@@ -430,10 +490,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.electronicsButton.backgroundColor = Colors.blue.light2
             self.electronicsButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.electronicsButton.isSelected = true
+            self.categories.append("Electronics")
+
         } else {
             self.electronicsButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.electronicsButton.isSelected = false
             self.electronicsButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Electronics") {
+                self.categories.remove(at: index)
+            }
         }
     }
     
@@ -445,10 +510,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.sportsButton.backgroundColor = Colors.blue.light2
             self.sportsButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.sportsButton.isSelected = true
+            self.categories.append("Sports")
+
         } else {
             self.sportsButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.sportsButton.isSelected = false
             self.sportsButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Sports") {
+                self.categories.remove(at: index)
+            }
         }
     }
     
@@ -461,10 +531,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.furnitureButton.backgroundColor = Colors.blue.light2
             self.furnitureButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.furnitureButton.isSelected = true
+            self.categories.append("Furniture")
+
         } else {
             self.furnitureButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.furnitureButton.isSelected = false
             self.furnitureButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Furniture") {
+                self.categories.remove(at: index)
+            }
         }
     }
     
@@ -476,10 +551,15 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.otherButton.backgroundColor = Colors.blue.light2
             self.otherButton.setTitleColor(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), for: .normal)
             self.otherButton.isSelected = true
+            self.categories.append("Other")
+
         } else {
             self.otherButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.otherButton.isSelected = false
             self.otherButton.setTitleColor(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), for: .normal)
+            if let index = self.categories.index(of: "Other") {
+                self.categories.remove(at: index)
+            }
         }
     }
     

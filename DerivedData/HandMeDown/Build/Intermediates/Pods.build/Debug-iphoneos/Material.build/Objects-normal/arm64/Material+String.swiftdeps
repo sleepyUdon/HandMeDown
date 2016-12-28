@@ -11,9 +11,9 @@ provides-member:
 - ["SS", "replacePunctuationCharacters"]
 provides-dynamic-lookup:
 depends-top-level:
+- "String"
 - "StringLiteralType"
 - !private "CharacterSet"
-- "String"
 - "UnicodeScalarType"
 depends-member:
 - !private ["Ps9AnyObject", "components"]

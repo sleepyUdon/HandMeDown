@@ -8,17 +8,17 @@ provides-member:
 - ["C8Material16EditorController", ""]
 - ["CSo16UIViewController", "editorController"]
 provides-dynamic-lookup:
-- "editor"
-- "editorController"
 - "prepare"
+- "editorController"
+- "editor"
 depends-top-level:
-- !private "!="
-- "UIViewController"
-- "EditorController"
-- "ToolbarController"
-- "Editor"
-- "AssignmentPrecedence"
 - "EditorDelegate"
+- "Editor"
+- "ToolbarController"
+- !private "!="
+- "EditorController"
+- "UIViewController"
+- "AssignmentPrecedence"
 - "CastingPrecedence"
 depends-member:
 - ["Ps9AnyObject", "Editor"]

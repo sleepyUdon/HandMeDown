@@ -13,8 +13,8 @@ provides-dynamic-lookup:
 - "contentsRect"
 - "layoutVisualLayer"
 - "cornerRadius"
-- "contentsScale"
 - "layoutSublayers"
+- "contentsScale"
 - "image"
 - "contentsCenter"
 depends-top-level:
@@ -23,12 +23,12 @@ depends-top-level:
 - "NSCoder"
 - "UIImage"
 - !private "BooleanLiteralType"
-- "Layer"
 - "CAShapeLayer"
 - "String"
 - "AssignmentPrecedence"
 - "CGFloat"
 - "CGRect"
+- "Layer"
 depends-member:
 - ["Ps9AnyObject", "CAShapeLayer"]
 - !private ["Ps9AnyObject", "GravityToValue"]

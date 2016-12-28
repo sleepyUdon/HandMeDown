@@ -6,18 +6,18 @@ provides-nominal:
 provides-member:
 - ["C10HandMeDown20FriendsTableViewCell", ""]
 provides-dynamic-lookup:
-- "pictureView"
 - "itemsNumberLabel"
+- "pictureView"
 - "friendNameLabel"
 - "configureWithUser"
 depends-top-level:
 - "UITableViewCell"
-- "UIImageView"
-- "FriendsTableViewCell"
-- !private "UIImage"
-- "UILabel"
-- "User"
 - "AssignmentPrecedence"
+- "User"
+- "UIImageView"
+- "UILabel"
+- !private "UIImage"
+- "FriendsTableViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "configureWithUser"]

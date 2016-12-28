@@ -8,24 +8,24 @@ provides-member:
 - ["O8Material7Gravity", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "kCAGravityBottomRight"
-- !private "kCAGravityTopRight"
-- "Int"
-- !private "kCAGravityBottom"
-- !private "kCAGravityBottomLeft"
 - !private "kCAGravityResize"
-- !private "kCAGravityCenter"
+- !private "kCAGravityBottomRight"
 - !private "kCAGravityLeft"
-- !private "kCAGravityTop"
-- !private "kCAGravityRight"
-- !private "kCAGravityResizeAspect"
-- "String"
-- !private "kCAGravityTopLeft"
+- "Int"
+- !private "kCAGravityCenter"
+- !private "kCAGravityTopRight"
+- !private "kCAGravityBottom"
 - "Gravity"
-- !private "kCAGravityResizeAspectFill"
+- "String"
+- !private "kCAGravityBottomLeft"
 - "GravityToValue"
+- !private "kCAGravityTop"
+- !private "kCAGravityResizeAspectFill"
+- !private "kCAGravityTopLeft"
 - "=="
 - !private "~="
+- !private "kCAGravityRight"
+- !private "kCAGravityResizeAspect"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
