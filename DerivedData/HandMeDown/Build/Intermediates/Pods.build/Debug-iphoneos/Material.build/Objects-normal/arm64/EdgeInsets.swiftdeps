@@ -10,9 +10,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "UIEdgeInsets"
-- "Int"
 - "EdgeInsets"
 - "EdgeInsetsPresetToValue"
+- "Int"
 - "EdgeInsetsPreset"
 - "=="
 - !private "~="

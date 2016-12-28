@@ -8,10 +8,10 @@ provides-member:
 - ["O8Material18CornerRadiusPreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CornerRadiusPresetToValue"
 - "CornerRadiusPreset"
-- "=="
+- "CornerRadiusPresetToValue"
 - "Int"
+- "=="
 - "CGFloat"
 - !private "~="
 depends-member:

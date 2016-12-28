@@ -7,25 +7,23 @@
 //
 
 import Foundation
-import RealmSwift
 
 
-class Item: Object {
-    dynamic var title = ""
-    dynamic var itemDescription = ""
-    dynamic var image : NSData? = nil
-    dynamic var like = ""
-    var categories = List<Category>()
-    dynamic var user = ""
+class Item: NSObject {
+    var title = ""
+    var itemDescription = ""
+    var image : NSData? = nil
+    var like: Bool = false
+    var users = [User]()
     
-    convenience public init(title:String, itemDescription: String, image: NSData, like: String, categories: List<Category>, user: String) {
+    
+    convenience init(title: String, itemDescription: String, image: NSData, like:Bool, users: [User]) {
         self.init()
         self.title = title
         self.itemDescription = itemDescription
         self.image = image
-        self.like = like
-        self.categories = categories
-        self.user = user
+        self.like = false
+        self.users = users
     }
 }
 

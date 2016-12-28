@@ -8,16 +8,16 @@ provides-member:
 provides-dynamic-lookup:
 - "itemsNumberLabel"
 - "pictureView"
-- "configureWithUser"
 - "friendNameLabel"
+- "configureWithUser"
 depends-top-level:
 - "UITableViewCell"
 - "AssignmentPrecedence"
 - "User"
 - "UIImageView"
 - "UILabel"
-- "FriendsTableViewCell"
 - !private "UIImage"
+- "FriendsTableViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - ["Ps9AnyObject", "configureWithUser"]

@@ -14,15 +14,12 @@ class MyStuffViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: Properties
-    
-    var items: Results<Item>!
+    var items = ["John","Bob","Adam"]
     
     /// MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        let realm = try!Realm()
-        items = realm.objects(Item.self)
         // Do any additional setup after loading the view.
     }
     
@@ -40,16 +37,16 @@ class MyStuffViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = items[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyStuffCell") as! MyStuffTableViewCell
-        cell.configureWithItem(item: item)
+//        cell.configureWithItem(item: item)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-            let realm = try!Realm()
-            try! realm.write {
-                realm.delete(items[indexPath.row])
+//            let realm = try!Realm()
+//            try! realm.write {
+//                realm.delete(items[indexPath.row])
             }
             tableView.reloadData()
         }
@@ -66,4 +63,4 @@ class MyStuffViewController: UIViewController, UITableViewDataSource {
     }
     */
 
-}
+

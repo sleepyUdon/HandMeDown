@@ -117,10 +117,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import Foundation;
-@import RealmSwift;
 @import CoreGraphics;
-@import FBSDKLoginKit;
 @import ObjectiveC;
+@import FBSDKLoginKit;
+@import RealmSwift;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -147,20 +147,6 @@ SWIFT_CLASS("_TtC10HandMeDown11AppDelegate")
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class RLMRealm;
-@class RLMObjectSchema;
-@class RLMSchema;
-
-SWIFT_CLASS("_TtC10HandMeDown8Category")
-@interface Category : RealmSwiftObject
-@property (nonatomic, copy) NSString * _Nonnull name;
-- (nonnull instancetype)initWithName:(NSString * _Nonnull)name;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithValue:(id _Nonnull)value OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithRealm:(RLMRealm * _Nonnull)realm schema:(RLMObjectSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIImage;
@@ -249,6 +235,8 @@ SWIFT_CLASS("_TtC10HandMeDown25GoodiesCollectionViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class FIRDatabaseReference;
+@class FIRDataSnapshot;
 @class UICollectionView;
 @class UICollectionViewLayout;
 @class RaisedButton;
@@ -257,9 +245,15 @@ SWIFT_CLASS("_TtC10HandMeDown21GoodiesViewController")
 @interface GoodiesViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
 @property (nonatomic, weak) IBOutlet RaisedButton * _Null_unspecified filterButton;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
+@property (nonatomic, copy) NSString * _Nonnull uid;
+@property (nonatomic, copy) NSString * _Nonnull username;
+@property (nonatomic, copy) NSArray<FIRDataSnapshot *> * _Null_unspecified items;
 - (void)viewDidLoad;
+- (void)configureDatabase;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)prepareLayout;
+- (void)getFacebookProfile;
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
@@ -272,16 +266,14 @@ SWIFT_CLASS("_TtC10HandMeDown21GoodiesViewController")
 @class NSData;
 
 SWIFT_CLASS("_TtC10HandMeDown4Item")
-@interface Item : RealmSwiftObject
+@interface Item : NSObject
 @property (nonatomic, copy) NSString * _Nonnull title;
 @property (nonatomic, copy) NSString * _Nonnull itemDescription;
 @property (nonatomic, strong) NSData * _Nullable image;
-@property (nonatomic, copy) NSString * _Nonnull like;
-@property (nonatomic, copy) NSString * _Nonnull user;
+@property (nonatomic) BOOL like;
+@property (nonatomic, copy) NSArray<User *> * _Nonnull users;
+- (nonnull instancetype)initWithTitle:(NSString * _Nonnull)title itemDescription:(NSString * _Nonnull)itemDescription image:(NSData * _Nonnull)image like:(BOOL)like users:(NSArray<User *> * _Nonnull)users;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithValue:(id _Nonnull)value OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithRealm:(RLMRealm * _Nonnull)realm schema:(RLMObjectSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithValue:(id _Nonnull)value schema:(RLMSchema * _Nonnull)schema OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class FBSDKLoginButton;
@@ -316,6 +308,9 @@ SWIFT_CLASS("_TtC10HandMeDown20MainTabBarController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class RLMRealm;
+@class RLMObjectSchema;
+@class RLMSchema;
 
 SWIFT_CLASS("_TtC10HandMeDown9MyProfile")
 @interface MyProfile : RealmSwiftObject
@@ -345,6 +340,7 @@ SWIFT_CLASS("_TtC10HandMeDown20MyStuffTableViewCell")
 SWIFT_CLASS("_TtC10HandMeDown21MyStuffViewController")
 @interface MyStuffViewController : UIViewController <UITableViewDataSource>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull items;
 /**
   MARK: ViewDidLoad
 */
@@ -395,12 +391,14 @@ SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified cameraView;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descriptionTextView;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified titleTextfield;
+@property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull picker;
 @property (nonatomic, copy) NSString * _Nullable itemTitle;
 @property (nonatomic, copy) NSString * _Nullable itemDescription;
-@property (nonatomic, readonly, strong) UIImagePickerController * _Nonnull picker;
 @property (nonatomic, strong) NSData * _Nullable pictureData;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull categories;
-@property (nonatomic, readonly, copy) NSArray<Item *> * _Nonnull items;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified ref;
+@property (nonatomic, copy) NSString * _Nonnull uid;
+@property (nonatomic, copy) NSString * _Nonnull username;
 /**
   MARK: ViewDidLoad
 */
@@ -413,9 +411,7 @@ SWIFT_CLASS("_TtC10HandMeDown18PostViewController")
   MARK: Prepare Layout
 */
 - (void)prepareLayout;
-/**
-  MARK: TextField Delegate
-*/
+- (void)getFacebookProfile;
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (IBAction)HandlePostButton:(UIButton * _Nonnull)sender;

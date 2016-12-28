@@ -17,7 +17,6 @@
 		7C4D26A61E0E00CB005CDCF7 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4D26A51E0E00CB005CDCF7 /* FriendsViewController.swift */; };
 		7C4D26AF1E0F1CB4005CDCF7 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4D26AE1E0F1CB4005CDCF7 /* FriendsTableViewCell.swift */; };
 		7C76C1A81E0F70B10043DA81 /* MyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C76C1A71E0F70B10043DA81 /* MyProfile.swift */; };
-		7C8B1ABE1DFF35000081EAA6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B1ABD1DFF35000081EAA6 /* Category.swift */; };
 		7C90CC371DE4F57600C542E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C90CC361DE4F57600C542E0 /* AppDelegate.swift */; };
 		7C90CC391DE4F57600C542E0 /* GoodiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C90CC381DE4F57600C542E0 /* GoodiesViewController.swift */; };
 		7C90CC3B1DE4F57600C542E0 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C90CC3A1DE4F57600C542E0 /* PostViewController.swift */; };
@@ -73,7 +72,6 @@
 		7C4D26A51E0E00CB005CDCF7 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		7C4D26AE1E0F1CB4005CDCF7 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
 		7C76C1A71E0F70B10043DA81 /* MyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfile.swift; sourceTree = "<group>"; };
-		7C8B1ABD1DFF35000081EAA6 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7C90CC331DE4F57600C542E0 /* HandMeDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandMeDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C90CC361DE4F57600C542E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C90CC381DE4F57600C542E0 /* GoodiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodiesViewController.swift; sourceTree = "<group>"; };
@@ -250,7 +248,6 @@
 			children = (
 				7C99451E1DF8F032001C621F /* Item.swift */,
 				7C76C1A71E0F70B10043DA81 /* MyProfile.swift */,
-				7C8B1ABD1DFF35000081EAA6 /* Category.swift */,
 				7C9945241DF8F143001C621F /* User.swift */,
 			);
 			name = Model;
@@ -618,7 +615,6 @@
 				7C34D8B51E02D005000A9280 /* MyStuffTableViewCell.swift in Sources */,
 				7C90CC3B1DE4F57600C542E0 /* PostViewController.swift in Sources */,
 				7C90CC371DE4F57600C542E0 /* AppDelegate.swift in Sources */,
-				7C8B1ABE1DFF35000081EAA6 /* Category.swift in Sources */,
 				7C4D26A61E0E00CB005CDCF7 /* FriendsViewController.swift in Sources */,
 				7C38D7AC1E0D6F0900B4EA71 /* MainTabBarController.swift in Sources */,
 				7C76C1A81E0F70B10043DA81 /* MyProfile.swift in Sources */,

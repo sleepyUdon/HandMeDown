@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 import FBSDKLoginKit
 
 @UIApplicationMain
@@ -24,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Firebase
         FIRApp.configure()
-        
+        FIRDatabase.database().persistenceEnabled = true
         
         // Facebook
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)

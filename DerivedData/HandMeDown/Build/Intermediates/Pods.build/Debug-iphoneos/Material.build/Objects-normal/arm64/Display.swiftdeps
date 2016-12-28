@@ -7,8 +7,8 @@ provides-member:
 - ["O8Material7Display", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
 - "Display"
+- "Int"
 - "=="
 - !private "~="
 depends-member:
