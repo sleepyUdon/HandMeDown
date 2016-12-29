@@ -35,7 +35,7 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
         self.ref = FIRDatabase.database().reference()
         let storage = FIRStorage.storage()
         self.storageRef = storage.reference(forURL: "gs://handmedown-557a0.appspot.com")
-        self.items = []
+        self.configureDatabase()
         self.prepareLayout()
         self.getFacebookProfile()
     }
@@ -43,33 +43,12 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     // MARK: ViewWillAppear
     override func viewWillAppear(_ animated: Bool) {
-        self.configureDatabase()
     }
-//    
-//    //// 
-//    1
-//    ref.observe(.value, with: { snapshot in
-//    // 2
-//    var newItems: [GroceryItem] = []
-//    
-//    // 3
-//    for item in snapshot.children {
-//    // 4
-//    let groceryItem = GroceryItem(snapshot: item as! FIRDataSnapshot)
-//    newItems.append(groceryItem)
-//    }
-//    
-//    // 5
-//    self.items = newItems
-//    self.tableView.reloadData()
-//    })
-//    
-//    //
-    
+
     
     // MARK: configure Database
     func configureDatabase() {
-        self.ref.child("items").observeSingleEvent(of: .value, with: { (snapshot) in
+        self.ref.child("items").observe(.value, with: { snapshot in
             var newItems: [Item] = []
             for child in snapshot.children.allObjects as! [FIRDataSnapshot] {
                 // Get user value
@@ -80,7 +59,7 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
                 let uid = users?["uid"] as? String
                 
                 self.storageRef.child("items").child(uid!).child(title!).data(withMaxSize: 100 * 1024 * 1024) { data, error in
-                    if let error = error {
+                    if (error != nil) {
                         print("error downloading image from Firebase")
                         // Uh-oh, an error occurred!
                     } else {

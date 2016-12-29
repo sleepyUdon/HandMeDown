@@ -45,6 +45,8 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var pictureData: NSData?
     var categories = [String]()
     var ref: FIRDatabaseReference!
+    var itemRef: FIRDatabaseReference!
+    var userRef: FIRDatabaseReference!
     var storageRef: FIRStorageReference!
     var uid = ""
     var username = ""
@@ -56,14 +58,16 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         self.ref = FIRDatabase.database().reference()
         let storage = FIRStorage.storage()
         self.storageRef = storage.reference(forURL: "gs://handmedown-557a0.appspot.com")
-        
         picker.delegate = self
         self.titleTextfield.delegate = self
         self.getFacebookProfile()
+        
+        self.itemRef = self.ref.child("items")
+        self.userRef = self.ref.child("users")
     }
     
-    
-    /// MARK: ViewWillAppear
+
+    // MARK: ViewWillAppear
     override func viewWillAppear(_ animated: Bool) {
         self.prepareLayout()
     }
@@ -184,63 +188,36 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     @IBAction func HandlePostButton(_ sender: UIButton) {
         
-        let date = NSDate()
-        
+        let ID = "\(NSDate())"
         // items node
-        let itemRef = self.ref.child("items").childByAutoId()
-        itemRef.child("title").setValue(self.itemTitle)
-        itemRef.child("description").setValue("Very Cute")
-        itemRef.child("users").child("uid").setValue(self.uid)
-        itemRef.child("users").child("username").setValue(self.username)
-        itemRef.child("like").child("like").setValue(false)
+        
+        let newItemRef = self.itemRef.child("\(ID)")
+        newItemRef.child("title").setValue(self.itemTitle)
+        newItemRef.child("description").setValue("Very Cute")
+        newItemRef.child("uid").setValue(self.uid)
+        newItemRef.child("username").setValue(self.username)
+        newItemRef.child("like").setValue(false)
         for category in self.categories {
-            itemRef.child("categories").child(category).setValue(true)
+            newItemRef.child("categories").child(category).setValue(true)
         }
-        // add picture
-        itemRef.observeSingleEvent(of: .value, with: { (snapshot) in
-            let value = snapshot.value as? NSDictionary
-            let users = value?["users"] as? NSDictionary
-            let uid = users?["uid"] as? String
-            
-            let itemsImagesRef = self.storageRef.child("items").child(uid!).child(self.itemTitle!)
-            _ = itemsImagesRef.put(self.pictureData as! Data, metadata: nil) { (metadata, error) in
-                guard let metadata = metadata else {
-                    // Uh-oh, an error occurred!
-                    return
-                }
-                // Metadata contains file metadata such as size, content-type, and download URL.
-                _ = metadata.downloadURL
-            }
-        })
-
+        
         // users node
-        let userRef = self.ref.child("users").child(self.uid)
-        let inventoryRef = userRef.childByAutoId()
+        let inventoryRef = self.userRef.child("\(ID)")
         inventoryRef.child("title").setValue(self.itemTitle)
         inventoryRef.child("description").setValue("Very Cute")
-        // add picture
-        itemRef.observeSingleEvent(of: .value, with: { (snapshot) in
-            let value = snapshot.value as? NSDictionary
-            let users = value?["users"] as? NSDictionary
-            let uid = users?["uid"] as? String
-            
-            
-            let usersImagesRef = self.storageRef.child("users").child(uid!).child(self.itemTitle!)
-            _ = usersImagesRef.put(self.pictureData as! Data, metadata: nil) { (metadata, error) in
-                guard let metadata = metadata else {
-                    // Uh-oh, an error occurred!
-                    return
-                }
-                // Metadata contains file metadata such as size, content-type, and download URL.
-                _ = metadata.downloadURL
-            }
-            
-        })
+        
+        //
+        let itemsImagesRef = self.storageRef.child("items").child(ID).child(self.itemTitle!)
+        _ = itemsImagesRef.put(self.pictureData as! Data)
+        
+        let usersImagesRef = self.storageRef.child("users").child(ID).child(self.itemTitle!)
+        _ = usersImagesRef.put(self.pictureData as! Data)
+        
     }
     
 
     
-        
+    
     
     
     /// MARK: Handle Add Picture Button
