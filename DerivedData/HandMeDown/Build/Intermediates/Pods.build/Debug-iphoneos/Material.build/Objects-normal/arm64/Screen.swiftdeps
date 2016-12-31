@@ -7,8 +7,8 @@ provides-member:
 - ["V8Material6Screen", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UIScreen"
 - "Screen"
+- !private "UIScreen"
 - "CGRect"
 - "CGFloat"
 depends-member:

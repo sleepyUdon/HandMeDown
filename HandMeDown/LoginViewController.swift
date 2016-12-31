@@ -18,42 +18,62 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var loginButton = FBSDKLoginButton()
 
-    
-    /// MARK: ViewDidLoad
+
+    // MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.prepareLoginButton()
         
-        // Settings
-        self.loginButton.isHidden = true
+        if (FBSDKAccessToken.current() != nil) {
+            // User is signed in.
+            // move to user to home screen
+            self.loadMainScreen()
+            
+        } else {
+            // No user is signed in.
+            // show the user the login button
+            self.loginButton.isHidden = false
+        }
         
-        // Listen to state of user
+        
+        // listen to change of user login state
         FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
-            if (user != nil) {
-                // User is signed in.
-                // move to user to home screen
-                let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let mainTabBarController: MainTabBarController = mainStoryboard.instantiateViewController(withIdentifier: "HomeTabBar") as! MainTabBarController
-                mainTabBarController.selectedIndex = 2
-                self.present(mainTabBarController, animated: true, completion: nil)
-                
+            if (FBSDKAccessToken.current() != nil) {
+                self.loadMainScreen()
             } else {
                 // No user is signed in.
                 // show the user the login button
-                self.loginButton.center = self.view.center
-                self.loginButton.readPermissions = ["public_profile", "email", "user_friends"]
-                self.loginButton.delegate = self
-                self.view.addSubview(self.loginButton)
                 self.loginButton.isHidden = false
             }
         }
     }
     
-       
-    /// MARK: LoginButtonDelegate
+    
+    
+    // MARK: Load Home Screen
+    func loadMainScreen() {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainTabBarController: MainTabBarController = mainStoryboard.instantiateViewController(withIdentifier: "HomeTabBar") as! MainTabBarController
+        mainTabBarController.selectedIndex = 2
+        self.present(mainTabBarController, animated: true, completion: nil)
+    }
 
+    
+    // MARK: Prepare login button
+    func prepareLoginButton() {
+        let loginButton = FBSDKLoginButton()
+        loginButton.center = self.view.center
+        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+        loginButton.delegate = self
+        self.view.addSubview(loginButton)
+        loginButton.isHidden = true
+        self.loginButton = loginButton
+    }
+    
+    
+    // MARK: LoginButtonDelegate
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         print("User Logged In")
-        
         self.loginButton.isHidden = true
         activityIndicator.startAnimating()
         if(error != nil) {
@@ -83,19 +103,21 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         print("User Logged Out")
     }
     
+    
     func loadProfile(){
         if let user = FIRAuth.auth()?.currentUser{
-            
             // download profile information
             let name = user.displayName
-            
             // download profile picture
             let realm = try!Realm()
             let me = realm.objects(MyProfile.self)
             if (me.count <= 0) {
-                let profilePicture = FBSDKGraphRequest(graphPath: "me/picture", parameters: ["height":300, "width":300, "redirect": false], httpMethod: "GET")
-                profilePicture?.start(completionHandler: {( connection, result, error) -> Void in
-                    if (error == nil) {
+                let graphRequest = FBSDKGraphRequest(graphPath: "me/picture", parameters: ["height":300, "width":300, "redirect": false],httpMethod: "GET")
+                let connection = FBSDKGraphRequestConnection()
+                connection.add(graphRequest, completionHandler: { (connection, result, error) in
+                    if error != nil {
+                        print("cannot get profile info from Facebook")
+                    } else {
                         let dictionary = result as? NSDictionary
                         let data = dictionary?.object(forKey: "data")
                         let urlPic = ((data as AnyObject).object(forKey: "url"))! as! String
@@ -106,9 +128,9 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                         }
                     }
                 })
+                connection.start()
             }
         }
     }
-    
-    
 } //@end
+

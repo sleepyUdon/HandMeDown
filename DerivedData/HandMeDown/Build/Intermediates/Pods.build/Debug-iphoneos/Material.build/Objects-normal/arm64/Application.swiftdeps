@@ -7,18 +7,18 @@ provides-member:
 - ["V8Material11Application", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UIWindow"
-- !private "&&"
-- !private "UIApplication"
-- !private "!"
-- "Bool"
-- "UIInterfaceOrientation"
-- "Application"
-- "UIUserInterfaceLayoutDirection"
 - "UIStatusBarStyle"
+- !private "UIApplication"
+- "UIInterfaceOrientation"
 - "AssignmentPrecedence"
 - !private "=="
+- !private "&&"
+- "Bool"
+- "UIWindow"
+- "UIUserInterfaceLayoutDirection"
+- "Application"
 - !private "Device"
+- !private "!"
 depends-member:
 - !private ["Ps9AnyObject", "isStatusBarHidden"]
 - !private ["Ps9AnyObject", "keyWindow"]

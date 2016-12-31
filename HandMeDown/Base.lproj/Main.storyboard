@@ -177,7 +177,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O0C-A4-2B8" id="YZV-r4-NxL">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="27Y-Zj-q5F">
@@ -1038,7 +1038,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ac4-F8-IPV" id="5Vo-s4-kMB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8aU-D7-2Ko">
@@ -1225,7 +1225,7 @@
                 <navigationController title="Goodies" automaticallyAdjustsScrollViewInsets="NO" id="fER-Mk-BRQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" image="home" id="acW-dT-cKf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="hng-Rf-4l2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hng-Rf-4l2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1244,7 +1244,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JII-cB-UNg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Stuff" image="home" id="cPa-gy-q4n"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Y0J-wg-CHo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y0J-wg-CHo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1263,7 +1263,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DvJ-1U-Sa2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Post" image="home" id="vWd-p7-Skx"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Kss-8H-h2P">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kss-8H-h2P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

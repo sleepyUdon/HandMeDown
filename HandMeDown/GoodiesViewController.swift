@@ -32,12 +32,12 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     // MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.ref = FIRDatabase.database().reference()
-        let storage = FIRStorage.storage()
-        self.storageRef = storage.reference(forURL: "gs://handmedown-557a0.appspot.com")
-        self.configureDatabase()
-        self.prepareLayout()
-        self.getFacebookProfile()
+//        self.ref = FIRDatabase.database().reference()
+//        let storage = FIRStorage.storage()
+//        self.storageRef = storage.reference(forURL: "gs://handmedown-557a0.appspot.com")
+//        self.configureDatabase()
+//        self.prepareLayout()
+//        self.getFacebookProfile()
     }
     
     
@@ -55,10 +55,9 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
                 let value = child.value as? NSDictionary
                 let title = value?["title"] as? String
                 let description = value?["description"] as? String
-                let users = value?["users"] as? NSDictionary
-                let uid = users?["uid"] as? String
+                let uid = value?["uid"] as? String
                 
-                self.storageRef.child("items").child(uid!).child(title!).data(withMaxSize: 100 * 1024 * 1024) { data, error in
+                self.storageRef.child("items").child(uid!).child("\(title!).jpg").data(withMaxSize: 100 * 1024 * 1024) { data, error in
                     if (error != nil) {
                         print("error downloading image from Firebase")
                         // Uh-oh, an error occurred!

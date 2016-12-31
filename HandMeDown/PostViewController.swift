@@ -48,8 +48,8 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     var itemRef: FIRDatabaseReference!
     var userRef: FIRDatabaseReference!
     var storageRef: FIRStorageReference!
-    var uid = ""
-    var username = ""
+    var uid: String?
+    var username: String?
     
     
     /// MARK: ViewDidLoad
@@ -163,8 +163,8 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name"]).start(completionHandler: { (connection, result, error) -> Void in
                 if (error == nil){
                     let dictionary = result as? NSDictionary
-                    self.uid = dictionary?.object(forKey: "id") as! String
-                    self.username = dictionary?.object(forKey: "name") as! String
+                    self.uid = dictionary?.object(forKey: "id") as! String?
+                    self.username = dictionary?.object(forKey: "name") as! String?
                 }
             })
         }
@@ -206,13 +206,25 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         inventoryRef.child("title").setValue(self.itemTitle)
         inventoryRef.child("description").setValue("Very Cute")
         
+        
         //
-        let itemsImagesRef = self.storageRef.child("items").child(ID).child(self.itemTitle!)
-        _ = itemsImagesRef.put(self.pictureData as! Data)
+        let itemsImagesRef = self.storageRef.child("items").child(self.uid!).child("\(self.itemTitle!).jpg")
+        let itemUploadTask = itemsImagesRef.put(self.pictureData as! Data, metadata: nil) { (metadata, error) in
+            if let error = error {
+                let nsError = error as NSError
+                print("Error uploading: \(nsError.localizedDescription)")
+                return
+            }
+        }
         
-        let usersImagesRef = self.storageRef.child("users").child(ID).child(self.itemTitle!)
-        _ = usersImagesRef.put(self.pictureData as! Data)
-        
+        let usersImagesRef = self.storageRef.child("users").child(self.uid!).child("\(self.itemTitle!).jpg")
+        let userUploadTask = usersImagesRef.put(self.pictureData as! Data, metadata: nil) { (metadata,error) in
+                if let error = error {
+                    let nsError = error as NSError
+                    print("Error uploading: \(nsError.localizedDescription)")
+                    return
+                }
+        }
     }
     
 
@@ -270,11 +282,13 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let pickedImage: UIImage = (info as NSDictionary).object(forKey: UIImagePickerControllerOriginalImage) as! UIImage
         cameraView.isHidden = true
-        let pictureData = UIImageJPEGRepresentation(pickedImage, 1.0)
+        let pictureData = UIImageJPEGRepresentation(pickedImage, 0.5)
         self.pictureData = pictureData as NSData?
         pictureView.image = UIImage(data: pictureData!)
         self.dismiss(animated: true, completion: nil)
     }
+    
+
     
     // Dismiss Image Picker
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

@@ -9,14 +9,14 @@ provides-member:
 - ["P8Material23DynamicFontTypeDelegate", ""]
 - ["C8Material15DynamicFontType", ""]
 provides-dynamic-lookup:
-- "handleContentSizeChange"
 - "delegate"
 - "dynamicFontType"
+- "handleContentSizeChange"
 depends-top-level:
-- "DynamicFontType"
 - "NSObject"
 - !private "NSNotification"
 - !private "NotificationCenter"
+- "DynamicFontType"
 - "DynamicFontTypeDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "NSNotification"]

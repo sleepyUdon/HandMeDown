@@ -7,8 +7,8 @@ provides-member:
 - ["O8Material12HeightPreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "HeightPreset"
 - "Int"
+- "HeightPreset"
 - "=="
 - !private "~="
 depends-member:
