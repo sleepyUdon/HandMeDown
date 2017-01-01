@@ -9,11 +9,11 @@ provides-member:
 - ["O8Material16EdgeInsetsPreset", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UIEdgeInsets"
-- "EdgeInsets"
+- "EdgeInsetsPreset"
 - "EdgeInsetsPresetToValue"
 - "Int"
-- "EdgeInsetsPreset"
+- "EdgeInsets"
+- "UIEdgeInsets"
 - "=="
 - !private "~="
 depends-member:

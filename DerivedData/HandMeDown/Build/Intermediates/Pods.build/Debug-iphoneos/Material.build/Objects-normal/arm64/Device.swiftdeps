@@ -11,23 +11,23 @@ provides-member:
 - ["V8Material6Device", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "!="
-- !private "uname"
-- !private "UInt8"
-- "DeviceModel"
-- !private "UnicodeScalar"
-- !private "StringLiteralType"
-- !private "UIDevice"
-- !private "Int8"
 - "String"
 - !private "Mirror"
-- !private "+"
-- "UIUserInterfaceIdiom"
-- "=="
-- !private "utsname"
-- !private "CastingPrecedence"
-- !private "~="
+- !private "StringLiteralType"
 - "Device"
+- !private "utsname"
+- "UIUserInterfaceIdiom"
+- !private "+"
+- !private "uname"
+- "DeviceModel"
+- !private "UIDevice"
+- !private "!="
+- !private "UnicodeScalar"
+- "=="
+- !private "Int8"
+- !private "CastingPrecedence"
+- !private "UInt8"
+- !private "~="
 depends-member:
 - !private ["Vs13AnyCollection", "Iterator"]
 - ["Vs13AnyCollection", "deinit"]

@@ -55,15 +55,21 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     /// MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        // create reference to Firebase database
         self.ref = FIRDatabase.database().reference()
+        // create reference to Firebase database to items node
+        self.itemRef = self.ref.child("items")
+        // create reference to Firebase database to users node
+        self.userRef = self.ref.child("users")
+        // create reference to Firebase storage
         let storage = FIRStorage.storage()
         self.storageRef = storage.reference(forURL: "gs://handmedown-557a0.appspot.com")
+        // set image picker and textfield delegates
         picker.delegate = self
         self.titleTextfield.delegate = self
         self.getFacebookProfile()
         
-        self.itemRef = self.ref.child("items")
-        self.userRef = self.ref.child("users")
+     
     }
     
 
@@ -188,42 +194,34 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     @IBAction func HandlePostButton(_ sender: UIButton) {
         
-        let ID = "\(NSDate())"
+        let someNSDate = NSDate()
+        let timeStamp = Int(someNSDate.timeIntervalSince1970)
+        let itemID = "item-\(self.uid!)-\(timeStamp)"
         // items node
         
-        let newItemRef = self.itemRef.child("\(ID)")
+        let newItemRef = self.itemRef.child("\(itemID)")
         newItemRef.child("title").setValue(self.itemTitle)
         newItemRef.child("description").setValue("Very Cute")
         newItemRef.child("uid").setValue(self.uid)
         newItemRef.child("username").setValue(self.username)
-        newItemRef.child("like").setValue(false)
         for category in self.categories {
             newItemRef.child("categories").child(category).setValue(true)
         }
         
         // users node
-        let inventoryRef = self.userRef.child("\(ID)")
+        let inventoryRef = self.userRef.child("user-\(self.uid!)").child("\(itemID)")
         inventoryRef.child("title").setValue(self.itemTitle)
         inventoryRef.child("description").setValue("Very Cute")
         
         
         //
-        let itemsImagesRef = self.storageRef.child("items").child(self.uid!).child("\(self.itemTitle!).jpg")
+        let itemsImagesRef = self.storageRef.child("items").child("\(itemID)").child("\(self.itemTitle!).jpg")
         let itemUploadTask = itemsImagesRef.put(self.pictureData as! Data, metadata: nil) { (metadata, error) in
             if let error = error {
                 let nsError = error as NSError
                 print("Error uploading: \(nsError.localizedDescription)")
                 return
             }
-        }
-        
-        let usersImagesRef = self.storageRef.child("users").child(self.uid!).child("\(self.itemTitle!).jpg")
-        let userUploadTask = usersImagesRef.put(self.pictureData as! Data, metadata: nil) { (metadata,error) in
-                if let error = error {
-                    let nsError = error as NSError
-                    print("Error uploading: \(nsError.localizedDescription)")
-                    return
-                }
         }
     }
     
