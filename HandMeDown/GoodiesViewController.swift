@@ -32,42 +32,52 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     // MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.ref = FIRDatabase.database().reference()
-//        let storage = FIRStorage.storage()
-//        self.storageRef = storage.reference(forURL: "gs://handmedown-557a0.appspot.com")
-//        self.configureDatabase()
-//        self.prepareLayout()
-//        self.getFacebookProfile()
+        self.ref = FIRDatabase.database().reference()
+        let storage = FIRStorage.storage()
+        self.storageRef = storage.reference(forURL: "gs://handmedown-557a0.appspot.com")
+        self.loadDataFromFirebase()
+        self.getFacebookProfile()
     }
     
     
     // MARK: ViewWillAppear
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {        self.prepareLayout()
+
     }
+    
+
 
     
     // MARK: configure Database
-    func configureDatabase() {
+    func loadDataFromFirebase() {
+        
+        var newItems: [Item] = []
         self.ref.child("items").observe(.value, with: { snapshot in
-            var newItems: [Item] = []
             for child in snapshot.children.allObjects as! [FIRDataSnapshot] {
                 // Get user value
                 let value = child.value as? NSDictionary
                 let title = value?["title"] as? String
                 let description = value?["description"] as? String
-                let uid = value?["uid"] as? String
                 
-                self.storageRef.child("items").child(uid!).child("\(title!).jpg").data(withMaxSize: 100 * 1024 * 1024) { data, error in
-                    if (error != nil) {
-                        print("error downloading image from Firebase")
-                        // Uh-oh, an error occurred!
-                    } else {
+                //FIRStorage.storage().referenceForURL(url).dataWithMaxSize(10 * 1024 * 1024, completion: { (data, error) in
+                //                dispatch_async(dispatch_get_main_queue()) {
+                //                    myPost.postPhoto = UIImage(data: data!)
+                //                    self.tableView.reloadData()
+                //                }
+                
+                // VIV get the file
+                let key = child.key
+                print(key)
+                
+                self.storageRef.child("items").child("\(key)").child("\(title!).jpg").data(withMaxSize: 100 * 1024 * 1024) { data, error in
+                    DispatchQueue.main.async {
                         let image = data
                         let item = Item(title: title!, itemDescription: description!, image: image!, like: false, users: [])
                         newItems.append(item)
+                        self.items = newItems
+                        self.collectionView.reloadData()
+                        
                     }
-                    self.items = newItems
-                    self.collectionView.reloadData()
                 }
             }
         }){ (error) in
