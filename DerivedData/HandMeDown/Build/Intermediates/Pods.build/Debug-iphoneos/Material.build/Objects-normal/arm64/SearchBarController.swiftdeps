@@ -8,25 +8,25 @@ provides-member:
 - ["C8Material19SearchBarController", ""]
 - ["CSo16UIViewController", "searchBarController"]
 provides-dynamic-lookup:
-- "display"
-- "searchBar"
 - "searchBarController"
 - "prepare"
 - "layoutSubviews"
+- "searchBar"
+- "display"
 depends-top-level:
-- "SearchBar"
-- "StatusBarController"
+- !private "Application"
 - "Display"
 - "SearchBarController"
-- !private "!="
-- !private "Application"
-- "TernaryPrecedence"
 - !private "+"
 - !private "||"
+- "TernaryPrecedence"
+- !private "!="
 - "UIViewController"
+- !private "-"
+- "SearchBar"
+- "StatusBarController"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- !private "-"
 depends-member:
 - !private ["Ps9AnyObject", "Application"]
 - ["Ps9AnyObject", "Display"]

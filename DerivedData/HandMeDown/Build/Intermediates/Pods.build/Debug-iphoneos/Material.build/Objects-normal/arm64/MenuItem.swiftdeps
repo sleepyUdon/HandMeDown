@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C8Material8MenuItem", ""]
 provides-dynamic-lookup:
-- "title"
 - "titleLabel"
-- "prepare"
-- "showTitleLabel"
-- "button"
 - "hideTitleLabel"
+- "prepare"
+- "button"
+- "title"
+- "showTitleLabel"
 depends-top-level:
-- !private "/"
-- "View"
-- "FabButton"
-- "MenuItem"
-- "String"
-- !private "BooleanLiteralType"
-- "UILabel"
-- !private "*"
-- !private "+="
+- !private "InterimSpacePresetToValue"
 - !private "-"
+- !private "BooleanLiteralType"
+- "View"
+- "MenuItem"
+- !private "/"
+- "String"
+- !private "*"
 - !private "UIView"
+- "UILabel"
+- !private "+="
+- "FabButton"
 - !private "RobotoFont"
 - "AssignmentPrecedence"
-- !private "InterimSpacePresetToValue"
 depends-member:
 - ["Ps9AnyObject", "FabButton"]
 - !private ["Ps9AnyObject", "InterimSpacePresetToValue"]

@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "AssociateObject"
 - "UnsafePointer"
-- "AssociatedObject"
 - !private "objc_setAssociatedObject"
 - "UInt8"
-- "CastingPrecedence"
 - !private "objc_getAssociatedObject"
+- "AssociatedObject"
+- "AssociateObject"
+- "CastingPrecedence"
 depends-member:
 - !private ["Ps9Equatable", "OBJC_ASSOCIATION_RETAIN"]
 - !private ["Ps8Hashable", "OBJC_ASSOCIATION_RETAIN"]

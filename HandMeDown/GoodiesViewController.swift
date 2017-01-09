@@ -25,8 +25,7 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     var uid = ""
     var username = ""
     fileprivate var _refHandle: FIRDatabaseHandle!
-//    var items: [FIRDataSnapshot]! = []
-    var items = [Item]()
+    var items: [FIRDataSnapshot]! = []
 
     
     // MARK: ViewDidLoad
@@ -41,8 +40,9 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     
     // MARK: ViewWillAppear
-    override func viewWillAppear(_ animated: Bool) {        self.prepareLayout()
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.prepareLayout()
+        self.loadDataFromFirebase()
     }
     
 
@@ -50,39 +50,13 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     // MARK: configure Database
     func loadDataFromFirebase() {
-        
-        var newItems: [Item] = []
+        self.items = []
         self.ref.child("items").observe(.value, with: { snapshot in
             for child in snapshot.children.allObjects as! [FIRDataSnapshot] {
-                // Get user value
-                let value = child.value as? NSDictionary
-                let title = value?["title"] as? String
-                let description = value?["description"] as? String
-                
-                //FIRStorage.storage().referenceForURL(url).dataWithMaxSize(10 * 1024 * 1024, completion: { (data, error) in
-                //                dispatch_async(dispatch_get_main_queue()) {
-                //                    myPost.postPhoto = UIImage(data: data!)
-                //                    self.tableView.reloadData()
-                //                }
-                
-                // VIV get the file
-                let key = child.key
-                print(key)
-                
-                self.storageRef.child("items").child("\(key)").child("\(title!).jpg").data(withMaxSize: 100 * 1024 * 1024) { data, error in
-                    DispatchQueue.main.async {
-                        let image = data
-                        let item = Item(title: title!, itemDescription: description!, image: image!, like: false, users: [])
-                        newItems.append(item)
-                        self.items = newItems
-                        self.collectionView.reloadData()
-                        
-                    }
-                }
+                self.items.append(child)
+                self.collectionView.reloadData()
             }
-        }){ (error) in
-            print(error.localizedDescription)
-        }
+        })
     }
 
     
@@ -128,14 +102,28 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GoodiesCollectionViewCell", for: indexPath) as! GoodiesCollectionViewCell
-        let item = self.items[indexPath.row]
-        cell.imageView.image = UIImage(data: item.image!)
-        cell.userPictureView?.image = UIImage(data: item.image!)
-        cell.titleLabel.text = item.title
+        
+        let itemSnapshot: FIRDataSnapshot! = self.items[indexPath.row]
+        let item = itemSnapshot.value as! Dictionary<String, String>
+        let title = item["title"] as String!
+        let key = itemSnapshot.key
+        if let imageURL = item["photoURL"] as String! {
+            self.storageRef.child("items").child("\(key)").child("\(title!).jpg").data(withMaxSize: INT64_MAX){ (data, error) in
+                if let error = error {
+                    print("Error downloading: \(error)")
+                    return
+                }
+                cell.imageView?.image = UIImage.init(data: data!)
+            }
+        }
+        cell.titleLabel.text = title
+        cell.userPictureView?.image = UIImage(named:"Viviane")
+        //        cell.userPictureView?.image = UIImage(data: item.image!)
+        //        cell.titleLabel.text = item.title
         cell.likeButton.setImage(UIImage(named:"empty-heart"), for: .normal)
         
         return cell
-        }
+    }
 
 
 

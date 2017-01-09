@@ -1,4 +1,0 @@
-dependencies: \
-  /Users/vivianechan/Documents/1.0\ Projects/2.0\ HandMeDown/HandMeDown/Pods/Realm/Realm/RLMConstants.m \
-  /Users/vivianechan/Documents/1.0\ Projects/2.0\ HandMeDown/HandMeDown/Pods/Target\ Support\ Files/Realm/Realm-prefix.pch \
-  /Users/vivianechan/Documents/1.0\ Projects/2.0\ HandMeDown/HandMeDown/Pods/Realm/include/RLMConstants.h
