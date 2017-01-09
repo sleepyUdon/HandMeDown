@@ -43,7 +43,7 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k9Z-MI-2gL">
                                                     <rect key="frame" x="0.0" y="0.0" width="165" height="180"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Viviane" translatesAutoresizingMaskIntoConstraints="NO" id="S2R-UG-GkL">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S2R-UG-GkL">
                                                     <rect key="frame" x="5" y="185" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="iRs-EI-NPV"/>
@@ -348,7 +348,7 @@
                                                                 <rect key="frame" x="0.0" y="186.5" width="355" height="35"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="DESCRIPTION (OPTIONAL)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="coX-mK-zVh">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="305" height="35"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="319.5" height="35"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="wr8-tX-JB5"/>
                                                                         </constraints>
@@ -357,7 +357,7 @@
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOZ-Ji-Rlo">
-                                                                        <rect key="frame" x="305" y="0.0" width="50" height="35"/>
+                                                                        <rect key="frame" x="319.5" y="0.0" width="35.5" height="35"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="50" id="8wu-Ht-Ure"/>
                                                                         </constraints>
@@ -1282,7 +1282,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ouj-CM-3iy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Friends" image="home" id="2iA-sR-GXi"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="U2O-oK-BAD">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U2O-oK-BAD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1301,7 +1301,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yUJ-NX-tSc" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Likes" image="home" id="xvg-Oa-SCb"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fYp-VX-bJp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fYp-VX-bJp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1316,7 +1316,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Viviane" width="400" height="400"/>
         <image name="camera" width="512" height="512"/>
         <image name="empty-heart" width="2400" height="2186"/>
         <image name="home" width="30" height="30"/>

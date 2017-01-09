@@ -195,6 +195,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     @IBAction func HandlePostButton(_ sender: UIButton) {
         
+        
         let someNSDate = NSDate()
         let timeStamp = Int(someNSDate.timeIntervalSince1970)
         let itemID = "item-\(self.uid!)-\(timeStamp)"
@@ -216,31 +217,41 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         
         //
-        let itemsImagesRef = self.storageRef.child("items").child("\(itemID)").child("\(self.itemTitle!).jpg")
-        _ = itemsImagesRef.put(self.pictureData as! Data, metadata: nil) { (metadata, error) in
-            if let error = error {
-                let nsError = error as NSError
-                print("Error uploading: \(nsError.localizedDescription)")
-                return
-            } else {
-                let url = metadata?.downloadURL()
-                newItemRef.child("photoURL").setValue("\(url!)")
+        
+        let itemWorkerQueue = DispatchQueue(label: "itemImage")
+        
+        itemWorkerQueue.async {
+            let itemsImagesRef = self.storageRef.child("items").child("\(itemID)").child("\(self.itemTitle!).jpg")
+            _ = itemsImagesRef.put(self.pictureData as! Data, metadata: nil) { (metadata, error) in
+                if let error = error {
+                    let nsError = error as NSError
+                    print("Error uploading: \(nsError.localizedDescription)")
+                    return
+                } else {
+                    let url = metadata?.downloadURL()
+                    newItemRef.child("photoURL").setValue("\(url!)")
+                }
             }
         }
         
-        let realm = try! Realm()
-        let me = realm.objects(MyProfile.self).first
-        let profilepicture = me?.image
-
-        _ = self.storageRef.child("items").child("\(itemID)").child("userPhoto.jpg")
-        _ = itemsImagesRef.put(profilepicture!, metadata: nil) { (metadata, error) in
-            if let error = error {
-                let nsError = error as NSError
-                print("Error uploading: \(nsError.localizedDescription)")
-                return
-            } else {
-                let url = metadata?.downloadURL()
-                newItemRef.child("userPhotoURL").setValue("\(url!)")
+        let userWorkerQueue = DispatchQueue(label: "userImage")
+        
+        userWorkerQueue.async {
+            
+            let realm = try! Realm()
+            let me = realm.objects(MyProfile.self).first
+            let profilepicture = me?.image
+            
+            let itemsImagesRef = self.storageRef.child("items").child("\(itemID)").child("userPhoto.jpg")
+            _ = itemsImagesRef.put(profilepicture!, metadata: nil) { (metadata, error) in
+                if let error = error {
+                    let nsError = error as NSError
+                    print("Error uploading: \(nsError.localizedDescription)")
+                    return
+                } else {
+                    let url = metadata?.downloadURL()
+                    newItemRef.child("userPhotoURL").setValue("\(url!)")
+                }
             }
         }
 
