@@ -11,6 +11,7 @@ import Material
 import FirebaseDatabase
 import FirebaseStorage
 import FBSDKCoreKit
+import RealmSwift
 
 
 
@@ -216,7 +217,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         //
         let itemsImagesRef = self.storageRef.child("items").child("\(itemID)").child("\(self.itemTitle!).jpg")
-        let itemUploadTask = itemsImagesRef.put(self.pictureData as! Data, metadata: nil) { (metadata, error) in
+        _ = itemsImagesRef.put(self.pictureData as! Data, metadata: nil) { (metadata, error) in
             if let error = error {
                 let nsError = error as NSError
                 print("Error uploading: \(nsError.localizedDescription)")
@@ -226,6 +227,23 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                 newItemRef.child("photoURL").setValue("\(url!)")
             }
         }
+        
+        let realm = try! Realm()
+        let me = realm.objects(MyProfile.self).first
+        let profilepicture = me?.image
+
+        _ = self.storageRef.child("items").child("\(itemID)").child("userPhoto.jpg")
+        _ = itemsImagesRef.put(profilepicture!, metadata: nil) { (metadata, error) in
+            if let error = error {
+                let nsError = error as NSError
+                print("Error uploading: \(nsError.localizedDescription)")
+                return
+            } else {
+                let url = metadata?.downloadURL()
+                newItemRef.child("userPhotoURL").setValue("\(url!)")
+            }
+        }
+
     }
     
 

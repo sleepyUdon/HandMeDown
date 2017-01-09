@@ -78,28 +78,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HandMeDown/PostViewController.swift"
-            timestampString = "504921926.75676"
+            timestampString = "505673423.033464"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "prepareLayout()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HandMeDown/GoodiesViewController.swift"
-            timestampString = "505671724.632297"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -128,11 +112,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HandMeDown/PostViewController.swift"
-            timestampString = "505670017.540238"
+            timestampString = "505673423.033464"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
             landmarkName = "HandlePostButton(_:)"
             landmarkType = "7">
             <Locations>
@@ -176,11 +160,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HandMeDown/GoodiesViewController.swift"
-            timestampString = "505671567.531349"
+            timestampString = "505672954.308188"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "loadDataFromFirebase()"
             landmarkType = "7">
          </BreakpointContent>
@@ -192,11 +176,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HandMeDown/GoodiesViewController.swift"
-            timestampString = "505671724.632297"
+            timestampString = "505672954.308188"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -208,11 +192,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HandMeDown/GoodiesViewController.swift"
-            timestampString = "505671724.632297"
+            timestampString = "505673423.033464"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
             <Locations>

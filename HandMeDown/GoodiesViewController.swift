@@ -34,7 +34,6 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
         self.ref = FIRDatabase.database().reference()
         let storage = FIRStorage.storage()
         self.storageRef = storage.reference(forURL: "gs://handmedown-557a0.appspot.com")
-        self.loadDataFromFirebase()
         self.getFacebookProfile()
     }
     
@@ -107,6 +106,8 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
         let item = itemSnapshot.value as! Dictionary<String, String>
         let title = item["title"] as String!
         let key = itemSnapshot.key
+
+        
         if let imageURL = item["photoURL"] as String! {
             self.storageRef.child("items").child("\(key)").child("\(title!).jpg").data(withMaxSize: INT64_MAX){ (data, error) in
                 if let error = error {
@@ -116,10 +117,18 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
                 cell.imageView?.image = UIImage.init(data: data!)
             }
         }
+        
+        if let imageURL = item["userPhotoURL"] as String! {
+            self.storageRef.child("items").child("\(key)").child("userPhoto.jpg").data(withMaxSize: INT64_MAX){ (data, error) in
+                if let error = error {
+                    print("Error downloading: \(error)")
+                    return
+                }
+                cell.userPictureView?.image = UIImage.init(data: data!)
+            }
+        }
+
         cell.titleLabel.text = title
-        cell.userPictureView?.image = UIImage(named:"Viviane")
-        //        cell.userPictureView?.image = UIImage(data: item.image!)
-        //        cell.titleLabel.text = item.title
         cell.likeButton.setImage(UIImage(named:"empty-heart"), for: .normal)
         
         return cell
