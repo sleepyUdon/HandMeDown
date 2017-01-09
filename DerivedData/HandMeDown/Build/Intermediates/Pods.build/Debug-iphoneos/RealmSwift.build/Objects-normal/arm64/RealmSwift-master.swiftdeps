@@ -1,0 +1,23 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "34a0adbdc4f5ea53b57c9f839a33599e"
+build_time: [537287914, 491690000]
+inputs:
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/Aliases.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/Error.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/LinkingObjects.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/List.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/Migration.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/Object.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/ObjectiveCSupport.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/ObjectSchema.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/Optional.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/Property.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/Realm.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/RealmCollection.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/RealmConfiguration.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/Results.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/Schema.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/SortDescriptor.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/SwiftVersion.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/Sync.swift": [9223372036854775807, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/RealmSwift/RealmSwift/Util.swift": [9223372036854775807, 0]

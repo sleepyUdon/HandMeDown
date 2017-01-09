@@ -221,6 +221,9 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                 let nsError = error as NSError
                 print("Error uploading: \(nsError.localizedDescription)")
                 return
+            } else {
+                let url = metadata?.downloadURL()
+                newItemRef.child("photoURL").setValue("\(url!)")
             }
         }
     }
