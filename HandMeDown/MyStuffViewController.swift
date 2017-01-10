@@ -30,10 +30,10 @@ class MyStuffViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        self.getFacebookProfile()
         self.ref = FIRDatabase.database().reference()
         let storage = FIRStorage.storage()
         self.storageRef = storage.reference(forURL: "gs://handmedown-557a0.appspot.com")
-        self.getFacebookProfile()
     }
     
     // MARK: ViewWillAppear
@@ -55,11 +55,14 @@ class MyStuffViewController: UIViewController, UITableViewDataSource {
     
     // MARK: configure Database
     func loadDataFromFirebase() {
-        self.items = []
         self.ref.child("users").child("user-\(self.uid)").observe(.value, with: { snapshot in
+            self.items = []
             for child in snapshot.children.allObjects as! [FIRDataSnapshot] {
                 self.items.append(child)
+                let mainQueue = DispatchQueue.main
+                mainQueue.async {
                 self.tableView.reloadData()
+                }
             }
         })
     }
@@ -68,7 +71,7 @@ class MyStuffViewController: UIViewController, UITableViewDataSource {
     // MARK: TableView DataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return self.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

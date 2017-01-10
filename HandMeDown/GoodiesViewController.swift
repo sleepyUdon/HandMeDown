@@ -53,7 +53,10 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
         self.ref.child("items").observe(.value, with: { snapshot in
             for child in snapshot.children.allObjects as! [FIRDataSnapshot] {
                 self.items.append(child)
-                self.collectionView.reloadData()
+                let mainQueue = DispatchQueue.main
+                mainQueue.async {
+                    self.collectionView.reloadData()
+                }
             }
         })
     }
