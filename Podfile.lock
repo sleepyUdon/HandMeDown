@@ -46,9 +46,6 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.0)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.0)
   - GTMSessionFetcher/Core (1.1.7)
-  - Material (2.4.3):
-    - Material/Core (= 2.4.3)
-  - Material/Core (2.4.3)
   - Realm (2.1.2):
     - Realm/Headers (= 2.1.2)
   - Realm/Headers (2.1.2)
@@ -60,7 +57,6 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Database
   - Firebase/Storage
-  - Material (~> 2.0)
   - RealmSwift
 
 SPEC CHECKSUMS:
@@ -75,10 +71,9 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
-  Material: 29f2b854ee92da272e3609af165b861391deea73
   Realm: efe855f4d977c8ce5a82d3116d9f1ff155a6550c
   RealmSwift: 17d6ee30b6f9df86364408c2197492e33bfea567
 
-PODFILE CHECKSUM: 9e25ea7223d37369f245ab1317ba890c9f4bc5cc
+PODFILE CHECKSUM: 2428bc9578d52315b7c8163fd3a2dea4eabaea62
 
 COCOAPODS: 1.1.1

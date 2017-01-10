@@ -98,9 +98,11 @@ class MyStuffViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-//            let realm = try!Realm()
-//            try! realm.write {
-//                realm.delete(items[indexPath.row])
+//            let itemSnapshot: FIRDataSnapshot! = self.items[indexPath.row]
+//            let item = itemSnapshot.value as! Dictionary<String, String>
+//            let uid = item["uid"] as String!
+//            let timestamp = item["timestamp"] as String!
+//            self.ref.child("items").child("item-\(uid)-\(timestamp)")
             }
             tableView.reloadData()
         }

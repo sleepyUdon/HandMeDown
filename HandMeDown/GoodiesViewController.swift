@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Material
 import RealmSwift
 import FBSDKCoreKit
 import FirebaseAuth
@@ -19,7 +18,7 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
 
     // MARK: Properties
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var filterButton: RaisedButton!
+    @IBOutlet weak var filterButton: UIButton!
     var ref: FIRDatabaseReference!
     var storageRef: FIRStorageReference!
     var uid = ""
@@ -64,7 +63,7 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     // MARK: Prepare Layout
     func prepareLayout(){
-        self.filterButton.cornerRadius = self.filterButton.frame.height/2
+        self.filterButton.layer.cornerRadius = self.filterButton.frame.height/2
         self.filterButton.backgroundColor = Colors.purple.light1
         self.filterButton.titleLabel?.font = Fonts.button.BT2
     }
