@@ -230,6 +230,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                 } else {
                     let url = metadata?.downloadURL()
                     newItemRef.child("photoURL").setValue("\(url!)")
+                    inventoryRef.child("photoURL").setValue("\(url!)")
                 }
             }
         }

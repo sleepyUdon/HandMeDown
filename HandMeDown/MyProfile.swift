@@ -12,10 +12,13 @@ import RealmSwift
 class MyProfile: Object {
     dynamic var name = ""
     dynamic var image : Data? = nil
+    dynamic var userID = ""
+
     
-    convenience public init(name:String, image: Data) {
+    convenience public init(name:String, image: Data, userID: String) {
         self.init()
         self.name = name
         self.image = image
+        self.userID = userID
     }
 }

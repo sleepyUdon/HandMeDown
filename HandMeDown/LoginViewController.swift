@@ -108,6 +108,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         if let user = FIRAuth.auth()?.currentUser{
             // download profile information
             let name = user.displayName
+            // download user ID
+            let userID = user.uid
             // download profile picture
             let realm = try!Realm()
             let me = realm.objects(MyProfile.self)
@@ -122,7 +124,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                         let data = dictionary?.object(forKey: "data")
                         let urlPic = ((data as AnyObject).object(forKey: "url"))! as! String
                         let imageData = NSData(contentsOf: NSURL(string: urlPic)! as URL)
-                        let myProfile = MyProfile(name: name!, image: imageData! as Data)
+                        let myProfile = MyProfile(name: name!, image: imageData! as Data, userID: userID)
                         try! realm.write {
                             realm.add(myProfile)
                         }
