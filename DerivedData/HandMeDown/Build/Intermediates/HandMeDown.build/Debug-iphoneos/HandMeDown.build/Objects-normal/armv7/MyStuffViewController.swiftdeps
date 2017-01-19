@@ -1,0 +1,1754 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MyStuffViewController"
+provides-nominal:
+- "C10HandMeDown21MyStuffViewController"
+provides-member:
+- ["C10HandMeDown21MyStuffViewController", ""]
+provides-dynamic-lookup:
+- "getFacebookProfile"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "storageRef"
+- "viewDidLoad"
+- "loadDataFromFirebase"
+- "viewWillAppear"
+- "ref"
+- "items"
+- "uid"
+depends-top-level:
+- "MyStuffViewController"
+- "FIRDatabaseHandle"
+- !private "!="
+- !private "print"
+- !private "MyStuffTableViewCell"
+- !private "FBSDKGraphRequest"
+- "UITableView"
+- !private "FIRDatabase"
+- "FIRStorageReference"
+- !private "UIImage"
+- "UITableViewDataSource"
+- "Int"
+- "IndexPath"
+- !private "FBSDKAccessToken"
+- "StringLiteralType"
+- !private "String"
+- "Bool"
+- !private "Dictionary"
+- !private "INT64_MAX"
+- "Array"
+- "UITableViewCellEditingStyle"
+- !private "FIRStorage"
+- "AssignmentPrecedence"
+- "UITableViewCell"
+- !private "=="
+- "CastingPrecedence"
+- "UIViewController"
+- !private "Void"
+- !private "DispatchQueue"
+- "FIRDatabaseReference"
+- "FIRDataSnapshot"
+- !private "NSDictionary"
+depends-member:
+- !private ["P10RealmSwift11AddableType", "IntegerLiteralType"]
+- !private ["P10RealmSwift11AddableType", "Stride"]
+- !private ["P10RealmSwift11AddableType", "_DisabledRangeIndex"]
+- !private ["Vs11AnyHashable", "deinit"]
+- !private ["Ps9AnyObject", "DispatchQueue"]
+- !private ["Ps9AnyObject", "FBSDKAccessToken"]
+- !private ["Ps9AnyObject", "FBSDKGraphRequest"]
+- !private ["Ps9AnyObject", "FIRDatabase"]
+- !private ["Ps9AnyObject", "FIRStorage"]
+- !private ["Ps9AnyObject", "INT64_MAX"]
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "UITableViewCellEditingStyle"]
+- ["Ps9AnyObject", "_refHandle"]
+- !private ["Ps9AnyObject", "allObjects"]
+- !private ["Ps9AnyObject", "async"]
+- !private ["Ps9AnyObject", "child"]
+- !private ["Ps9AnyObject", "children"]
+- !private ["Ps9AnyObject", "current"]
+- !private ["Ps9AnyObject", "data"]
+- !private ["Ps9AnyObject", "dataSource"]
+- !private ["Ps9AnyObject", "database"]
+- !private ["Ps9AnyObject", "dequeueReusableCell"]
+- !private ["Ps9AnyObject", "descriptionLabel"]
+- ["Ps9AnyObject", "getFacebookProfile"]
+- !private ["Ps9AnyObject", "image"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "items"]
+- !private ["Ps9AnyObject", "key"]
+- ["Ps9AnyObject", "loadDataFromFirebase"]
+- !private ["Ps9AnyObject", "main"]
+- ["Ps9AnyObject", "numberOfSections"]
+- ["Ps9AnyObject", "numberOfSectionsInTableView"]
+- !private ["Ps9AnyObject", "object"]
+- !private ["Ps9AnyObject", "observe"]
+- !private ["Ps9AnyObject", "pictureView"]
+- !private ["Ps9AnyObject", "print"]
+- ["Ps9AnyObject", "ref"]
+- !private ["Ps9AnyObject", "reference"]
+- !private ["Ps9AnyObject", "reloadData"]
+- ["Ps9AnyObject", "sectionIndexTitles"]
+- ["Ps9AnyObject", "sectionIndexTitlesForTableView"]
+- !private ["Ps9AnyObject", "start"]
+- !private ["Ps9AnyObject", "storage"]
+- ["Ps9AnyObject", "storageRef"]
+- ["Ps9AnyObject", "tableView"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "titleLabel"]
+- ["Ps9AnyObject", "uid"]
+- !private ["Ps9AnyObject", "value"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", "viewWillAppear"]
+- ["Ps9AnyObject", ""]
+- ["Sa", "Element"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "IndexDistance"]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- ["Sa", "deinit"]
+- !private ["Sa", "subscript"]
+- ["Ps23BidirectionalCollection", "Element"]
+- !private ["Ps23BidirectionalCollection", "Index"]
+- !private ["Ps23BidirectionalCollection", "IndexDistance"]
+- !private ["Ps23BidirectionalCollection", "Indices"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "SubSequence"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- !private ["Ps23BidirectionalCollection", "row"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
+- ["Ps22BidirectionalIndexable", "Element"]
+- !private ["Ps22BidirectionalIndexable", "Index"]
+- !private ["Ps22BidirectionalIndexable", "IndexDistance"]
+- !private ["Ps22BidirectionalIndexable", "Indices"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "SubSequence"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "append"]
+- !private ["Ps22BidirectionalIndexable", "count"]
+- !private ["Ps22BidirectionalIndexable", "row"]
+- !private ["Ps22BidirectionalIndexable", "subscript"]
+- !private ["Vs18BidirectionalSlice", "Index"]
+- !private ["Vs18BidirectionalSlice", "IndexDistance"]
+- !private ["Vs18BidirectionalSlice", "Indices"]
+- !private ["Vs18BidirectionalSlice", "Iterator"]
+- !private ["Vs18BidirectionalSlice", "SubSequence"]
+- !private ["Vs18BidirectionalSlice", "_Element"]
+- !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "dataSource"]
+- !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
+- !private ["PSo15CALayerDelegate", "descriptionLabel"]
+- !private ["PSo15CALayerDelegate", "image"]
+- !private ["PSo15CALayerDelegate", "pictureView"]
+- !private ["PSo15CALayerDelegate", "reloadData"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["PSo15CALayerDelegate", "titleLabel"]
+- !private ["Ps7CVarArg", "DispatchQueue"]
+- ["Ps7CVarArg", "Element"]
+- !private ["Ps7CVarArg", "FBSDKAccessToken"]
+- !private ["Ps7CVarArg", "FBSDKGraphRequest"]
+- !private ["Ps7CVarArg", "FIRDatabase"]
+- !private ["Ps7CVarArg", "FIRStorage"]
+- !private ["Ps7CVarArg", "INT64_MAX"]
+- !private ["Ps7CVarArg", "Index"]
+- !private ["Ps7CVarArg", "IndexDistance"]
+- !private ["Ps7CVarArg", "IntegerLiteralType"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "Key"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "SubSequence"]
+- !private ["Ps7CVarArg", "UIImage"]
+- !private ["Ps7CVarArg", "UITableViewCellEditingStyle"]
+- !private ["Ps7CVarArg", "Value"]
+- !private ["Ps7CVarArg", "_DisabledRangeIndex"]
+- !private ["Ps7CVarArg", "_Element"]
+- ["Ps7CVarArg", "_refHandle"]
+- !private ["Ps7CVarArg", "allObjects"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "async"]
+- !private ["Ps7CVarArg", "child"]
+- !private ["Ps7CVarArg", "children"]
+- !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "current"]
+- !private ["Ps7CVarArg", "data"]
+- !private ["Ps7CVarArg", "dataSource"]
+- !private ["Ps7CVarArg", "database"]
+- !private ["Ps7CVarArg", "dequeueReusableCell"]
+- !private ["Ps7CVarArg", "descriptionLabel"]
+- ["Ps7CVarArg", "getFacebookProfile"]
+- !private ["Ps7CVarArg", "image"]
+- ["Ps7CVarArg", "init"]
+- ["Ps7CVarArg", "items"]
+- !private ["Ps7CVarArg", "key"]
+- ["Ps7CVarArg", "loadDataFromFirebase"]
+- !private ["Ps7CVarArg", "main"]
+- ["Ps7CVarArg", "numberOfSections"]
+- ["Ps7CVarArg", "numberOfSectionsInTableView"]
+- !private ["Ps7CVarArg", "object"]
+- !private ["Ps7CVarArg", "observe"]
+- !private ["Ps7CVarArg", "pictureView"]
+- !private ["Ps7CVarArg", "print"]
+- ["Ps7CVarArg", "ref"]
+- !private ["Ps7CVarArg", "reference"]
+- !private ["Ps7CVarArg", "reloadData"]
+- ["Ps7CVarArg", "sectionIndexTitles"]
+- ["Ps7CVarArg", "sectionIndexTitlesForTableView"]
+- !private ["Ps7CVarArg", "start"]
+- !private ["Ps7CVarArg", "storage"]
+- ["Ps7CVarArg", "storageRef"]
+- !private ["Ps7CVarArg", "subscript"]
+- ["Ps7CVarArg", "tableView"]
+- !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "titleLabel"]
+- ["Ps7CVarArg", "uid"]
+- !private ["Ps7CVarArg", "value"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", "viewWillAppear"]
+- ["Ps7CVarArg", ""]
+- !private ["Vs9Character", "deinit"]
+- ["Ps10Collection", "Element"]
+- !private ["Ps10Collection", "Index"]
+- !private ["Ps10Collection", "IndexDistance"]
+- !private ["Ps10Collection", "Indices"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "Key"]
+- !private ["Ps10Collection", "SubSequence"]
+- !private ["Ps10Collection", "Value"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "count"]
+- !private ["Ps10Collection", "row"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "row"]
+- !private ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
+- ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "FBSDKAccessToken"]
+- !private ["Ps28CustomDebugStringConvertible", "FBSDKGraphRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRDatabase"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRStorage"]
+- !private ["Ps28CustomDebugStringConvertible", "INT64_MAX"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "UITableViewCellEditingStyle"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- ["Ps28CustomDebugStringConvertible", "_refHandle"]
+- !private ["Ps28CustomDebugStringConvertible", "allObjects"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "async"]
+- !private ["Ps28CustomDebugStringConvertible", "child"]
+- !private ["Ps28CustomDebugStringConvertible", "children"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "current"]
+- !private ["Ps28CustomDebugStringConvertible", "data"]
+- !private ["Ps28CustomDebugStringConvertible", "dataSource"]
+- !private ["Ps28CustomDebugStringConvertible", "database"]
+- !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
+- !private ["Ps28CustomDebugStringConvertible", "descriptionLabel"]
+- ["Ps28CustomDebugStringConvertible", "getFacebookProfile"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "items"]
+- !private ["Ps28CustomDebugStringConvertible", "key"]
+- ["Ps28CustomDebugStringConvertible", "loadDataFromFirebase"]
+- !private ["Ps28CustomDebugStringConvertible", "main"]
+- ["Ps28CustomDebugStringConvertible", "numberOfSections"]
+- ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "object"]
+- !private ["Ps28CustomDebugStringConvertible", "observe"]
+- !private ["Ps28CustomDebugStringConvertible", "pictureView"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- ["Ps28CustomDebugStringConvertible", "ref"]
+- !private ["Ps28CustomDebugStringConvertible", "reference"]
+- !private ["Ps28CustomDebugStringConvertible", "reloadData"]
+- !private ["Ps28CustomDebugStringConvertible", "row"]
+- ["Ps28CustomDebugStringConvertible", "sectionIndexTitles"]
+- ["Ps28CustomDebugStringConvertible", "sectionIndexTitlesForTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "start"]
+- !private ["Ps28CustomDebugStringConvertible", "storage"]
+- ["Ps28CustomDebugStringConvertible", "storageRef"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- ["Ps28CustomDebugStringConvertible", "tableView"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "titleLabel"]
+- ["Ps28CustomDebugStringConvertible", "uid"]
+- !private ["Ps28CustomDebugStringConvertible", "value"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- ["Ps17CustomReflectable", "Element"]
+- !private ["Ps17CustomReflectable", "Index"]
+- !private ["Ps17CustomReflectable", "IndexDistance"]
+- !private ["Ps17CustomReflectable", "IntegerLiteralType"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "Key"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "SubSequence"]
+- !private ["Ps17CustomReflectable", "Value"]
+- !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "count"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "object"]
+- !private ["Ps17CustomReflectable", "row"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "DispatchQueue"]
+- ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "FBSDKAccessToken"]
+- !private ["Ps23CustomStringConvertible", "FBSDKGraphRequest"]
+- !private ["Ps23CustomStringConvertible", "FIRDatabase"]
+- !private ["Ps23CustomStringConvertible", "FIRStorage"]
+- !private ["Ps23CustomStringConvertible", "INT64_MAX"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IndexDistance"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "UITableViewCellEditingStyle"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "_refHandle"]
+- !private ["Ps23CustomStringConvertible", "allObjects"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "async"]
+- !private ["Ps23CustomStringConvertible", "child"]
+- !private ["Ps23CustomStringConvertible", "children"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "current"]
+- !private ["Ps23CustomStringConvertible", "data"]
+- !private ["Ps23CustomStringConvertible", "dataSource"]
+- !private ["Ps23CustomStringConvertible", "database"]
+- !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
+- !private ["Ps23CustomStringConvertible", "descriptionLabel"]
+- ["Ps23CustomStringConvertible", "getFacebookProfile"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "items"]
+- !private ["Ps23CustomStringConvertible", "key"]
+- ["Ps23CustomStringConvertible", "loadDataFromFirebase"]
+- !private ["Ps23CustomStringConvertible", "main"]
+- ["Ps23CustomStringConvertible", "numberOfSections"]
+- ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps23CustomStringConvertible", "object"]
+- !private ["Ps23CustomStringConvertible", "observe"]
+- !private ["Ps23CustomStringConvertible", "pictureView"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- ["Ps23CustomStringConvertible", "ref"]
+- !private ["Ps23CustomStringConvertible", "reference"]
+- !private ["Ps23CustomStringConvertible", "reloadData"]
+- !private ["Ps23CustomStringConvertible", "row"]
+- ["Ps23CustomStringConvertible", "sectionIndexTitles"]
+- ["Ps23CustomStringConvertible", "sectionIndexTitlesForTableView"]
+- !private ["Ps23CustomStringConvertible", "start"]
+- !private ["Ps23CustomStringConvertible", "storage"]
+- ["Ps23CustomStringConvertible", "storageRef"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- ["Ps23CustomStringConvertible", "tableView"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "titleLabel"]
+- ["Ps23CustomStringConvertible", "uid"]
+- !private ["Ps23CustomStringConvertible", "value"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", "viewWillAppear"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["V10Foundation4Data", "deinit"]
+- !private ["Vs27DefaultBidirectionalIndices", "Index"]
+- !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
+- !private ["Vs27DefaultBidirectionalIndices", "SubSequence"]
+- !private ["Vs27DefaultBidirectionalIndices", "_Element"]
+- !private ["Vs26DefaultRandomAccessIndices", "Index"]
+- !private ["Vs26DefaultRandomAccessIndices", "IndexDistance"]
+- !private ["Vs26DefaultRandomAccessIndices", "Indices"]
+- !private ["Vs26DefaultRandomAccessIndices", "Iterator"]
+- !private ["Vs26DefaultRandomAccessIndices", "SubSequence"]
+- !private ["Vs26DefaultRandomAccessIndices", "_Element"]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "SubSequence"]
+- !private ["Vs10Dictionary", "Value"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["CSo14DispatchObject", "async"]
+- !private ["CSo14DispatchObject", "main"]
+- !private ["CSo13DispatchQueue", "async"]
+- !private ["CSo13DispatchQueue", "deinit"]
+- !private ["CSo13DispatchQueue", "main"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "DispatchQueue"]
+- !private ["Ps9Equatable", "FBSDKAccessToken"]
+- !private ["Ps9Equatable", "FBSDKGraphRequest"]
+- !private ["Ps9Equatable", "FIRDatabase"]
+- !private ["Ps9Equatable", "FIRStorage"]
+- !private ["Ps9Equatable", "INT64_MAX"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "UITableViewCellEditingStyle"]
+- !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_refHandle"]
+- !private ["Ps9Equatable", "allObjects"]
+- !private ["Ps9Equatable", "async"]
+- !private ["Ps9Equatable", "child"]
+- !private ["Ps9Equatable", "children"]
+- !private ["Ps9Equatable", "current"]
+- !private ["Ps9Equatable", "data"]
+- !private ["Ps9Equatable", "dataSource"]
+- !private ["Ps9Equatable", "database"]
+- !private ["Ps9Equatable", "delete"]
+- !private ["Ps9Equatable", "dequeueReusableCell"]
+- !private ["Ps9Equatable", "descriptionLabel"]
+- ["Ps9Equatable", "getFacebookProfile"]
+- !private ["Ps9Equatable", "image"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "items"]
+- !private ["Ps9Equatable", "key"]
+- ["Ps9Equatable", "loadDataFromFirebase"]
+- !private ["Ps9Equatable", "main"]
+- ["Ps9Equatable", "numberOfSections"]
+- ["Ps9Equatable", "numberOfSectionsInTableView"]
+- !private ["Ps9Equatable", "object"]
+- !private ["Ps9Equatable", "observe"]
+- !private ["Ps9Equatable", "pictureView"]
+- !private ["Ps9Equatable", "print"]
+- ["Ps9Equatable", "ref"]
+- !private ["Ps9Equatable", "reference"]
+- !private ["Ps9Equatable", "reloadData"]
+- !private ["Ps9Equatable", "row"]
+- ["Ps9Equatable", "sectionIndexTitles"]
+- ["Ps9Equatable", "sectionIndexTitlesForTableView"]
+- !private ["Ps9Equatable", "start"]
+- !private ["Ps9Equatable", "storage"]
+- ["Ps9Equatable", "storageRef"]
+- ["Ps9Equatable", "tableView"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "titleLabel"]
+- ["Ps9Equatable", "uid"]
+- !private ["Ps9Equatable", "value"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", "viewWillAppear"]
+- ["Ps9Equatable", ""]
+- !private ["Ps5Error", "deinit"]
+- ["Ps25ExpressibleByArrayLiteral", "Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Index"]
+- !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "SubSequence"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- !private ["Ps25ExpressibleByArrayLiteral", "row"]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "object"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["CSo16FBSDKAccessToken", "current"]
+- !private ["PSo12FBSDKCopying", "current"]
+- !private ["CSo17FBSDKGraphRequest", "init"]
+- !private ["CSo17FBSDKGraphRequest", "start"]
+- ["OSC16FIRDataEventType", "deinit"]
+- !private ["OSC16FIRDataEventType", "value"]
+- !private ["CSo15FIRDataSnapshot", "children"]
+- !private ["CSo15FIRDataSnapshot", "deinit"]
+- !private ["CSo15FIRDataSnapshot", "key"]
+- !private ["CSo15FIRDataSnapshot", "value"]
+- !private ["CSo11FIRDatabase", "database"]
+- ["CSo11FIRDatabase", "deinit"]
+- !private ["CSo11FIRDatabase", "reference"]
+- !private ["CSo16FIRDatabaseQuery", "child"]
+- !private ["CSo16FIRDatabaseQuery", "observe"]
+- !private ["CSo20FIRDatabaseReference", "child"]
+- ["CSo20FIRDatabaseReference", "deinit"]
+- !private ["CSo20FIRDatabaseReference", "observe"]
+- ["CSo10FIRStorage", "deinit"]
+- !private ["CSo10FIRStorage", "reference"]
+- !private ["CSo10FIRStorage", "storage"]
+- ["CSo22FIRStorageDownloadTask", "deinit"]
+- !private ["CSo19FIRStorageReference", "child"]
+- !private ["CSo19FIRStorageReference", "data"]
+- ["CSo19FIRStorageReference", "deinit"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "DispatchQueue"]
+- !private ["Ps8Hashable", "FBSDKAccessToken"]
+- !private ["Ps8Hashable", "FBSDKGraphRequest"]
+- !private ["Ps8Hashable", "FIRDatabase"]
+- !private ["Ps8Hashable", "FIRStorage"]
+- !private ["Ps8Hashable", "INT64_MAX"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "UITableViewCellEditingStyle"]
+- !private ["Ps8Hashable", "_DisabledRangeIndex"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_refHandle"]
+- !private ["Ps8Hashable", "allObjects"]
+- !private ["Ps8Hashable", "async"]
+- !private ["Ps8Hashable", "child"]
+- !private ["Ps8Hashable", "children"]
+- !private ["Ps8Hashable", "current"]
+- !private ["Ps8Hashable", "data"]
+- !private ["Ps8Hashable", "dataSource"]
+- !private ["Ps8Hashable", "database"]
+- !private ["Ps8Hashable", "delete"]
+- !private ["Ps8Hashable", "dequeueReusableCell"]
+- !private ["Ps8Hashable", "descriptionLabel"]
+- ["Ps8Hashable", "getFacebookProfile"]
+- !private ["Ps8Hashable", "image"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "items"]
+- !private ["Ps8Hashable", "key"]
+- ["Ps8Hashable", "loadDataFromFirebase"]
+- !private ["Ps8Hashable", "main"]
+- ["Ps8Hashable", "numberOfSections"]
+- ["Ps8Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps8Hashable", "object"]
+- !private ["Ps8Hashable", "observe"]
+- !private ["Ps8Hashable", "pictureView"]
+- !private ["Ps8Hashable", "print"]
+- ["Ps8Hashable", "ref"]
+- !private ["Ps8Hashable", "reference"]
+- !private ["Ps8Hashable", "reloadData"]
+- !private ["Ps8Hashable", "row"]
+- ["Ps8Hashable", "sectionIndexTitles"]
+- ["Ps8Hashable", "sectionIndexTitlesForTableView"]
+- !private ["Ps8Hashable", "start"]
+- !private ["Ps8Hashable", "storage"]
+- ["Ps8Hashable", "storageRef"]
+- ["Ps8Hashable", "tableView"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "titleLabel"]
+- ["Ps8Hashable", "uid"]
+- !private ["Ps8Hashable", "value"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", "viewWillAppear"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["V10Foundation9IndexPath", "deinit"]
+- !private ["V10Foundation9IndexPath", "row"]
+- ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "IndexDistance"]
+- !private ["Ps9Indexable", "Indices"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "count"]
+- !private ["Ps9Indexable", "row"]
+- !private ["Ps9Indexable", "subscript"]
+- ["Ps13IndexableBase", "Element"]
+- !private ["Ps13IndexableBase", "Index"]
+- !private ["Ps13IndexableBase", "IndexDistance"]
+- !private ["Ps13IndexableBase", "Indices"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "Key"]
+- !private ["Ps13IndexableBase", "SubSequence"]
+- !private ["Ps13IndexableBase", "Value"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "append"]
+- !private ["Ps13IndexableBase", "count"]
+- !private ["Ps13IndexableBase", "row"]
+- !private ["Ps13IndexableBase", "subscript"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
+- !private ["Si", "_DisabledRangeIndex"]
+- ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps7Integer", "IntegerLiteralType"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps7Integer", "_DisabledRangeIndex"]
+- !private ["Ps17IntegerArithmetic", "IntegerLiteralType"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- !private ["P10RealmSwift10MinMaxType", "IntegerLiteralType"]
+- !private ["P10RealmSwift10MinMaxType", "Stride"]
+- !private ["P10RealmSwift10MinMaxType", "_DisabledRangeIndex"]
+- !private ["Ps10MirrorPath", "IntegerLiteralType"]
+- !private ["Ps10MirrorPath", "Stride"]
+- !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
+- ["Ps10MirrorPath", "init"]
+- ["Ps17MutableCollection", "Element"]
+- !private ["Ps17MutableCollection", "Index"]
+- !private ["Ps17MutableCollection", "IndexDistance"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "SubSequence"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "count"]
+- !private ["Ps17MutableCollection", "row"]
+- !private ["Ps17MutableCollection", "subscript"]
+- ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "IndexDistance"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "count"]
+- !private ["Ps16MutableIndexable", "row"]
+- !private ["Ps16MutableIndexable", "subscript"]
+- ["C10HandMeDown20MyStuffTableViewCell", "deinit"]
+- !private ["C10HandMeDown20MyStuffTableViewCell", "descriptionLabel"]
+- !private ["C10HandMeDown20MyStuffTableViewCell", "pictureView"]
+- !private ["C10HandMeDown20MyStuffTableViewCell", "titleLabel"]
+- ["C10HandMeDown21MyStuffViewController", "Bool"]
+- !private ["C10HandMeDown21MyStuffViewController", "Dictionary"]
+- !private ["C10HandMeDown21MyStuffViewController", "DispatchQueue"]
+- !private ["C10HandMeDown21MyStuffViewController", "FBSDKAccessToken"]
+- !private ["C10HandMeDown21MyStuffViewController", "FBSDKGraphRequest"]
+- ["C10HandMeDown21MyStuffViewController", "FIRDataSnapshot"]
+- !private ["C10HandMeDown21MyStuffViewController", "FIRDatabase"]
+- ["C10HandMeDown21MyStuffViewController", "FIRDatabaseHandle"]
+- ["C10HandMeDown21MyStuffViewController", "FIRDatabaseReference"]
+- !private ["C10HandMeDown21MyStuffViewController", "FIRStorage"]
+- ["C10HandMeDown21MyStuffViewController", "FIRStorageReference"]
+- !private ["C10HandMeDown21MyStuffViewController", "INT64_MAX"]
+- ["C10HandMeDown21MyStuffViewController", "IndexPath"]
+- ["C10HandMeDown21MyStuffViewController", "Int"]
+- !private ["C10HandMeDown21MyStuffViewController", "MyStuffTableViewCell"]
+- !private ["C10HandMeDown21MyStuffViewController", "NSDictionary"]
+- !private ["C10HandMeDown21MyStuffViewController", "String"]
+- !private ["C10HandMeDown21MyStuffViewController", "UIImage"]
+- ["C10HandMeDown21MyStuffViewController", "UITableView"]
+- ["C10HandMeDown21MyStuffViewController", "UITableViewCell"]
+- ["C10HandMeDown21MyStuffViewController", "UITableViewCellEditingStyle"]
+- !private ["C10HandMeDown21MyStuffViewController", "Void"]
+- !private ["C10HandMeDown21MyStuffViewController", "_refHandle"]
+- ["C10HandMeDown21MyStuffViewController", "deinit"]
+- ["C10HandMeDown21MyStuffViewController", "getFacebookProfile"]
+- ["C10HandMeDown21MyStuffViewController", "init"]
+- ["C10HandMeDown21MyStuffViewController", "items"]
+- ["C10HandMeDown21MyStuffViewController", "loadDataFromFirebase"]
+- ["C10HandMeDown21MyStuffViewController", "numberOfSections"]
+- ["C10HandMeDown21MyStuffViewController", "numberOfSectionsInTableView"]
+- !private ["C10HandMeDown21MyStuffViewController", "print"]
+- ["C10HandMeDown21MyStuffViewController", "ref"]
+- ["C10HandMeDown21MyStuffViewController", "sectionIndexTitles"]
+- ["C10HandMeDown21MyStuffViewController", "sectionIndexTitlesForTableView"]
+- ["C10HandMeDown21MyStuffViewController", "storageRef"]
+- ["C10HandMeDown21MyStuffViewController", "tableView"]
+- ["C10HandMeDown21MyStuffViewController", "uid"]
+- ["C10HandMeDown21MyStuffViewController", "viewDidLoad"]
+- ["C10HandMeDown21MyStuffViewController", "viewWillAppear"]
+- ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "DispatchQueue"]
+- !private ["PSo8NSCoding", "FBSDKAccessToken"]
+- !private ["PSo8NSCoding", "FBSDKGraphRequest"]
+- !private ["PSo8NSCoding", "FIRDatabase"]
+- !private ["PSo8NSCoding", "FIRStorage"]
+- !private ["PSo8NSCoding", "INT64_MAX"]
+- !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "UITableViewCellEditingStyle"]
+- ["PSo8NSCoding", "_refHandle"]
+- !private ["PSo8NSCoding", "current"]
+- !private ["PSo8NSCoding", "dataSource"]
+- !private ["PSo8NSCoding", "dequeueReusableCell"]
+- !private ["PSo8NSCoding", "descriptionLabel"]
+- ["PSo8NSCoding", "getFacebookProfile"]
+- !private ["PSo8NSCoding", "image"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "items"]
+- ["PSo8NSCoding", "loadDataFromFirebase"]
+- ["PSo8NSCoding", "numberOfSections"]
+- ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- !private ["PSo8NSCoding", "object"]
+- !private ["PSo8NSCoding", "pictureView"]
+- !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "ref"]
+- !private ["PSo8NSCoding", "reloadData"]
+- ["PSo8NSCoding", "sectionIndexTitles"]
+- ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
+- ["PSo8NSCoding", "storageRef"]
+- ["PSo8NSCoding", "tableView"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "titleLabel"]
+- ["PSo8NSCoding", "uid"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", "viewWillAppear"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "current"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "object"]
+- !private ["CSo12NSDictionary", "deinit"]
+- !private ["CSo12NSDictionary", "object"]
+- !private ["CSo12NSEnumerator", "allObjects"]
+- !private ["CSo12NSEnumerator", "deinit"]
+- !private ["PSo26NSExtensionRequestHandling", "DispatchQueue"]
+- !private ["PSo26NSExtensionRequestHandling", "FBSDKAccessToken"]
+- !private ["PSo26NSExtensionRequestHandling", "FBSDKGraphRequest"]
+- !private ["PSo26NSExtensionRequestHandling", "FIRDatabase"]
+- !private ["PSo26NSExtensionRequestHandling", "FIRStorage"]
+- !private ["PSo26NSExtensionRequestHandling", "INT64_MAX"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImage"]
+- !private ["PSo26NSExtensionRequestHandling", "UITableViewCellEditingStyle"]
+- ["PSo26NSExtensionRequestHandling", "_refHandle"]
+- ["PSo26NSExtensionRequestHandling", "getFacebookProfile"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "items"]
+- ["PSo26NSExtensionRequestHandling", "loadDataFromFirebase"]
+- ["PSo26NSExtensionRequestHandling", "numberOfSections"]
+- ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "ref"]
+- ["PSo26NSExtensionRequestHandling", "sectionIndexTitles"]
+- ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
+- ["PSo26NSExtensionRequestHandling", "storageRef"]
+- ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "uid"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo17NSFastEnumeration", "allObjects"]
+- !private ["PSo17NSFastEnumeration", "object"]
+- ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "object"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "Dictionary"]
+- !private ["CSo8NSObject", "DispatchQueue"]
+- !private ["CSo8NSObject", "FBSDKAccessToken"]
+- !private ["CSo8NSObject", "FBSDKGraphRequest"]
+- ["CSo8NSObject", "FIRDataSnapshot"]
+- !private ["CSo8NSObject", "FIRDatabase"]
+- ["CSo8NSObject", "FIRDatabaseHandle"]
+- ["CSo8NSObject", "FIRDatabaseReference"]
+- !private ["CSo8NSObject", "FIRStorage"]
+- ["CSo8NSObject", "FIRStorageReference"]
+- !private ["CSo8NSObject", "INT64_MAX"]
+- ["CSo8NSObject", "IndexPath"]
+- ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "MyStuffTableViewCell"]
+- !private ["CSo8NSObject", "NSDictionary"]
+- !private ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UITableView"]
+- ["CSo8NSObject", "UITableViewCell"]
+- ["CSo8NSObject", "UITableViewCellEditingStyle"]
+- !private ["CSo8NSObject", "Void"]
+- ["CSo8NSObject", "_refHandle"]
+- !private ["CSo8NSObject", "allObjects"]
+- !private ["CSo8NSObject", "async"]
+- !private ["CSo8NSObject", "child"]
+- !private ["CSo8NSObject", "children"]
+- !private ["CSo8NSObject", "current"]
+- !private ["CSo8NSObject", "data"]
+- !private ["CSo8NSObject", "dataSource"]
+- !private ["CSo8NSObject", "database"]
+- !private ["CSo8NSObject", "dequeueReusableCell"]
+- !private ["CSo8NSObject", "descriptionLabel"]
+- ["CSo8NSObject", "getFacebookProfile"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "items"]
+- !private ["CSo8NSObject", "key"]
+- ["CSo8NSObject", "loadDataFromFirebase"]
+- !private ["CSo8NSObject", "main"]
+- ["CSo8NSObject", "numberOfSections"]
+- ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "object"]
+- !private ["CSo8NSObject", "observe"]
+- !private ["CSo8NSObject", "pictureView"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "ref"]
+- !private ["CSo8NSObject", "reference"]
+- !private ["CSo8NSObject", "reloadData"]
+- ["CSo8NSObject", "sectionIndexTitles"]
+- ["CSo8NSObject", "sectionIndexTitlesForTableView"]
+- !private ["CSo8NSObject", "start"]
+- !private ["CSo8NSObject", "storage"]
+- ["CSo8NSObject", "storageRef"]
+- ["CSo8NSObject", "tableView"]
+- !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "titleLabel"]
+- ["CSo8NSObject", "uid"]
+- !private ["CSo8NSObject", "value"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["CSo8NSObject", "viewWillAppear"]
+- !private ["PSo16NSObjectProtocol", "DispatchQueue"]
+- !private ["PSo16NSObjectProtocol", "FBSDKAccessToken"]
+- !private ["PSo16NSObjectProtocol", "FBSDKGraphRequest"]
+- !private ["PSo16NSObjectProtocol", "FIRDatabase"]
+- !private ["PSo16NSObjectProtocol", "FIRStorage"]
+- !private ["PSo16NSObjectProtocol", "INT64_MAX"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UITableViewCellEditingStyle"]
+- ["PSo16NSObjectProtocol", "_refHandle"]
+- !private ["PSo16NSObjectProtocol", "allObjects"]
+- !private ["PSo16NSObjectProtocol", "async"]
+- !private ["PSo16NSObjectProtocol", "child"]
+- !private ["PSo16NSObjectProtocol", "children"]
+- !private ["PSo16NSObjectProtocol", "current"]
+- !private ["PSo16NSObjectProtocol", "data"]
+- !private ["PSo16NSObjectProtocol", "dataSource"]
+- !private ["PSo16NSObjectProtocol", "database"]
+- !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
+- !private ["PSo16NSObjectProtocol", "descriptionLabel"]
+- ["PSo16NSObjectProtocol", "getFacebookProfile"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "items"]
+- !private ["PSo16NSObjectProtocol", "key"]
+- ["PSo16NSObjectProtocol", "loadDataFromFirebase"]
+- !private ["PSo16NSObjectProtocol", "main"]
+- ["PSo16NSObjectProtocol", "numberOfSections"]
+- ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "object"]
+- !private ["PSo16NSObjectProtocol", "observe"]
+- !private ["PSo16NSObjectProtocol", "pictureView"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "ref"]
+- !private ["PSo16NSObjectProtocol", "reference"]
+- !private ["PSo16NSObjectProtocol", "reloadData"]
+- ["PSo16NSObjectProtocol", "sectionIndexTitles"]
+- ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
+- !private ["PSo16NSObjectProtocol", "start"]
+- !private ["PSo16NSObjectProtocol", "storage"]
+- ["PSo16NSObjectProtocol", "storageRef"]
+- ["PSo16NSObjectProtocol", "tableView"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "titleLabel"]
+- ["PSo16NSObjectProtocol", "uid"]
+- !private ["PSo16NSObjectProtocol", "value"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "viewWillAppear"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "current"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "object"]
+- ["CSo8NSString", "init"]
+- !private ["CSo9OS_object", "async"]
+- !private ["CSo9OS_object", "main"]
+- ["Sq", "deinit"]
+- ["Ps22RandomAccessCollection", "Element"]
+- !private ["Ps22RandomAccessCollection", "Index"]
+- !private ["Ps22RandomAccessCollection", "IndexDistance"]
+- !private ["Ps22RandomAccessCollection", "Indices"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "SubSequence"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- !private ["Ps22RandomAccessCollection", "row"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- ["Ps21RandomAccessIndexable", "Element"]
+- !private ["Ps21RandomAccessIndexable", "Index"]
+- !private ["Ps21RandomAccessIndexable", "IndexDistance"]
+- !private ["Ps21RandomAccessIndexable", "Indices"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "SubSequence"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "append"]
+- !private ["Ps21RandomAccessIndexable", "count"]
+- !private ["Ps21RandomAccessIndexable", "row"]
+- !private ["Ps21RandomAccessIndexable", "subscript"]
+- !private ["Vs17RandomAccessSlice", "Index"]
+- !private ["Vs17RandomAccessSlice", "IndexDistance"]
+- !private ["Vs17RandomAccessSlice", "Indices"]
+- !private ["Vs17RandomAccessSlice", "Iterator"]
+- !private ["Vs17RandomAccessSlice", "SubSequence"]
+- !private ["Vs17RandomAccessSlice", "_Element"]
+- ["Ps26RangeReplaceableCollection", "Element"]
+- !private ["Ps26RangeReplaceableCollection", "Index"]
+- !private ["Ps26RangeReplaceableCollection", "IndexDistance"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "SubSequence"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
+- ["Ps25RangeReplaceableIndexable", "Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Index"]
+- !private ["Ps25RangeReplaceableIndexable", "IndexDistance"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "SubSequence"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "append"]
+- !private ["Ps25RangeReplaceableIndexable", "count"]
+- !private ["Ps25RangeReplaceableIndexable", "subscript"]
+- !private ["Ps16RawRepresentable", "RawValue"]
+- !private ["Ps16RawRepresentable", "delete"]
+- !private ["Ps16RawRepresentable", "value"]
+- !private ["P10RealmSwift17RealmOptionalType", "IntegerLiteralType"]
+- !private ["P10RealmSwift17RealmOptionalType", "Stride"]
+- !private ["P10RealmSwift17RealmOptionalType", "_DisabledRangeIndex"]
+- !private ["P10RealmSwift17RealmOptionalType", "_getBuiltinLogicValue"]
+- !private ["P10Foundation20ReferenceConvertible", "row"]
+- ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Index"]
+- !private ["Ps8Sequence", "IndexDistance"]
+- !private ["Ps8Sequence", "Indices"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "Key"]
+- !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "Value"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "allObjects"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "object"]
+- !private ["Ps8Sequence", "row"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Ps13SignedInteger", "IntegerLiteralType"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps12SignedNumber", "IntegerLiteralType"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "_DisabledRangeIndex"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "Iterator"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "_DisabledRangeIndex"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "dataSource"]
+- !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
+- !private ["PSo29UIAccessibilityIdentification", "descriptionLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "pictureView"]
+- !private ["PSo29UIAccessibilityIdentification", "reloadData"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "titleLabel"]
+- !private ["PSo12UIAppearance", "dataSource"]
+- !private ["PSo12UIAppearance", "dequeueReusableCell"]
+- !private ["PSo12UIAppearance", "descriptionLabel"]
+- !private ["PSo12UIAppearance", "image"]
+- !private ["PSo12UIAppearance", "pictureView"]
+- !private ["PSo12UIAppearance", "reloadData"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "titleLabel"]
+- !private ["PSo21UIAppearanceContainer", "DispatchQueue"]
+- !private ["PSo21UIAppearanceContainer", "FBSDKAccessToken"]
+- !private ["PSo21UIAppearanceContainer", "FBSDKGraphRequest"]
+- !private ["PSo21UIAppearanceContainer", "FIRDatabase"]
+- !private ["PSo21UIAppearanceContainer", "FIRStorage"]
+- !private ["PSo21UIAppearanceContainer", "INT64_MAX"]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "UITableViewCellEditingStyle"]
+- ["PSo21UIAppearanceContainer", "_refHandle"]
+- !private ["PSo21UIAppearanceContainer", "dataSource"]
+- !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
+- !private ["PSo21UIAppearanceContainer", "descriptionLabel"]
+- ["PSo21UIAppearanceContainer", "getFacebookProfile"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "items"]
+- ["PSo21UIAppearanceContainer", "loadDataFromFirebase"]
+- ["PSo21UIAppearanceContainer", "numberOfSections"]
+- ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- !private ["PSo21UIAppearanceContainer", "pictureView"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "ref"]
+- !private ["PSo21UIAppearanceContainer", "reloadData"]
+- ["PSo21UIAppearanceContainer", "sectionIndexTitles"]
+- ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
+- ["PSo21UIAppearanceContainer", "storageRef"]
+- ["PSo21UIAppearanceContainer", "tableView"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "titleLabel"]
+- ["PSo21UIAppearanceContainer", "uid"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", "viewWillAppear"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "DispatchQueue"]
+- !private ["PSo18UIContentContainer", "FBSDKAccessToken"]
+- !private ["PSo18UIContentContainer", "FBSDKGraphRequest"]
+- !private ["PSo18UIContentContainer", "FIRDatabase"]
+- !private ["PSo18UIContentContainer", "FIRStorage"]
+- !private ["PSo18UIContentContainer", "INT64_MAX"]
+- !private ["PSo18UIContentContainer", "UIImage"]
+- !private ["PSo18UIContentContainer", "UITableViewCellEditingStyle"]
+- ["PSo18UIContentContainer", "_refHandle"]
+- ["PSo18UIContentContainer", "getFacebookProfile"]
+- !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "items"]
+- ["PSo18UIContentContainer", "loadDataFromFirebase"]
+- ["PSo18UIContentContainer", "numberOfSections"]
+- ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "ref"]
+- ["PSo18UIContentContainer", "sectionIndexTitles"]
+- ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
+- ["PSo18UIContentContainer", "storageRef"]
+- ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "uid"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", "viewWillAppear"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["PSo17UICoordinateSpace", "dataSource"]
+- !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
+- !private ["PSo17UICoordinateSpace", "descriptionLabel"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- !private ["PSo17UICoordinateSpace", "pictureView"]
+- !private ["PSo17UICoordinateSpace", "reloadData"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "titleLabel"]
+- !private ["PSo13UIDynamicItem", "dataSource"]
+- !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
+- !private ["PSo13UIDynamicItem", "descriptionLabel"]
+- !private ["PSo13UIDynamicItem", "image"]
+- !private ["PSo13UIDynamicItem", "pictureView"]
+- !private ["PSo13UIDynamicItem", "reloadData"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "titleLabel"]
+- !private ["PSo18UIFocusEnvironment", "DispatchQueue"]
+- !private ["PSo18UIFocusEnvironment", "FBSDKAccessToken"]
+- !private ["PSo18UIFocusEnvironment", "FBSDKGraphRequest"]
+- !private ["PSo18UIFocusEnvironment", "FIRDatabase"]
+- !private ["PSo18UIFocusEnvironment", "FIRStorage"]
+- !private ["PSo18UIFocusEnvironment", "INT64_MAX"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "UITableViewCellEditingStyle"]
+- ["PSo18UIFocusEnvironment", "_refHandle"]
+- !private ["PSo18UIFocusEnvironment", "dataSource"]
+- !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UIFocusEnvironment", "descriptionLabel"]
+- ["PSo18UIFocusEnvironment", "getFacebookProfile"]
+- !private ["PSo18UIFocusEnvironment", "image"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "items"]
+- ["PSo18UIFocusEnvironment", "loadDataFromFirebase"]
+- ["PSo18UIFocusEnvironment", "numberOfSections"]
+- ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UIFocusEnvironment", "pictureView"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "ref"]
+- !private ["PSo18UIFocusEnvironment", "reloadData"]
+- ["PSo18UIFocusEnvironment", "sectionIndexTitles"]
+- ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
+- ["PSo18UIFocusEnvironment", "storageRef"]
+- ["PSo18UIFocusEnvironment", "tableView"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "titleLabel"]
+- ["PSo18UIFocusEnvironment", "uid"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "dataSource"]
+- !private ["PSo11UIFocusItem", "dequeueReusableCell"]
+- !private ["PSo11UIFocusItem", "descriptionLabel"]
+- !private ["PSo11UIFocusItem", "image"]
+- !private ["PSo11UIFocusItem", "pictureView"]
+- !private ["PSo11UIFocusItem", "reloadData"]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo11UIFocusItem", "titleLabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "descriptionLabel"]
+- !private ["PSo27UIGestureRecognizerDelegate", "pictureView"]
+- !private ["PSo27UIGestureRecognizerDelegate", "titleLabel"]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "Dictionary"]
+- !private ["CSo11UIResponder", "DispatchQueue"]
+- !private ["CSo11UIResponder", "FBSDKAccessToken"]
+- !private ["CSo11UIResponder", "FBSDKGraphRequest"]
+- ["CSo11UIResponder", "FIRDataSnapshot"]
+- !private ["CSo11UIResponder", "FIRDatabase"]
+- ["CSo11UIResponder", "FIRDatabaseHandle"]
+- ["CSo11UIResponder", "FIRDatabaseReference"]
+- !private ["CSo11UIResponder", "FIRStorage"]
+- ["CSo11UIResponder", "FIRStorageReference"]
+- !private ["CSo11UIResponder", "INT64_MAX"]
+- ["CSo11UIResponder", "IndexPath"]
+- ["CSo11UIResponder", "Int"]
+- !private ["CSo11UIResponder", "MyStuffTableViewCell"]
+- !private ["CSo11UIResponder", "NSDictionary"]
+- !private ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UITableView"]
+- ["CSo11UIResponder", "UITableViewCell"]
+- ["CSo11UIResponder", "UITableViewCellEditingStyle"]
+- !private ["CSo11UIResponder", "Void"]
+- ["CSo11UIResponder", "_refHandle"]
+- !private ["CSo11UIResponder", "dataSource"]
+- !private ["CSo11UIResponder", "dequeueReusableCell"]
+- !private ["CSo11UIResponder", "descriptionLabel"]
+- ["CSo11UIResponder", "getFacebookProfile"]
+- !private ["CSo11UIResponder", "image"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "items"]
+- ["CSo11UIResponder", "loadDataFromFirebase"]
+- ["CSo11UIResponder", "numberOfSections"]
+- ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- !private ["CSo11UIResponder", "pictureView"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "ref"]
+- !private ["CSo11UIResponder", "reloadData"]
+- ["CSo11UIResponder", "sectionIndexTitles"]
+- ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
+- ["CSo11UIResponder", "storageRef"]
+- ["CSo11UIResponder", "tableView"]
+- !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "titleLabel"]
+- ["CSo11UIResponder", "uid"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["CSo11UIResponder", "viewWillAppear"]
+- !private ["PSo30UIResponderStandardEditActions", "DispatchQueue"]
+- !private ["PSo30UIResponderStandardEditActions", "FBSDKAccessToken"]
+- !private ["PSo30UIResponderStandardEditActions", "FBSDKGraphRequest"]
+- !private ["PSo30UIResponderStandardEditActions", "FIRDatabase"]
+- !private ["PSo30UIResponderStandardEditActions", "FIRStorage"]
+- !private ["PSo30UIResponderStandardEditActions", "INT64_MAX"]
+- !private ["PSo30UIResponderStandardEditActions", "UIImage"]
+- !private ["PSo30UIResponderStandardEditActions", "UITableViewCellEditingStyle"]
+- ["PSo30UIResponderStandardEditActions", "_refHandle"]
+- !private ["PSo30UIResponderStandardEditActions", "dataSource"]
+- !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
+- !private ["PSo30UIResponderStandardEditActions", "descriptionLabel"]
+- ["PSo30UIResponderStandardEditActions", "getFacebookProfile"]
+- !private ["PSo30UIResponderStandardEditActions", "image"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "items"]
+- ["PSo30UIResponderStandardEditActions", "loadDataFromFirebase"]
+- ["PSo30UIResponderStandardEditActions", "numberOfSections"]
+- ["PSo30UIResponderStandardEditActions", "numberOfSectionsInTableView"]
+- !private ["PSo30UIResponderStandardEditActions", "pictureView"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- ["PSo30UIResponderStandardEditActions", "ref"]
+- !private ["PSo30UIResponderStandardEditActions", "reloadData"]
+- ["PSo30UIResponderStandardEditActions", "sectionIndexTitles"]
+- ["PSo30UIResponderStandardEditActions", "sectionIndexTitlesForTableView"]
+- ["PSo30UIResponderStandardEditActions", "storageRef"]
+- ["PSo30UIResponderStandardEditActions", "tableView"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "titleLabel"]
+- ["PSo30UIResponderStandardEditActions", "uid"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo12UIScrollView", "dataSource"]
+- !private ["CSo12UIScrollView", "dequeueReusableCell"]
+- !private ["CSo12UIScrollView", "reloadData"]
+- !private ["PSo16UIStateRestoring", "DispatchQueue"]
+- !private ["PSo16UIStateRestoring", "FBSDKAccessToken"]
+- !private ["PSo16UIStateRestoring", "FBSDKGraphRequest"]
+- !private ["PSo16UIStateRestoring", "FIRDatabase"]
+- !private ["PSo16UIStateRestoring", "FIRStorage"]
+- !private ["PSo16UIStateRestoring", "INT64_MAX"]
+- !private ["PSo16UIStateRestoring", "UIImage"]
+- !private ["PSo16UIStateRestoring", "UITableViewCellEditingStyle"]
+- ["PSo16UIStateRestoring", "_refHandle"]
+- ["PSo16UIStateRestoring", "getFacebookProfile"]
+- !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "items"]
+- ["PSo16UIStateRestoring", "loadDataFromFirebase"]
+- ["PSo16UIStateRestoring", "numberOfSections"]
+- ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "ref"]
+- ["PSo16UIStateRestoring", "sectionIndexTitles"]
+- ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
+- ["PSo16UIStateRestoring", "storageRef"]
+- ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "uid"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "viewWillAppear"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITableView", "dataSource"]
+- ["CSo11UITableView", "deinit"]
+- !private ["CSo11UITableView", "dequeueReusableCell"]
+- !private ["CSo11UITableView", "reloadData"]
+- !private ["CSo15UITableViewCell", "descriptionLabel"]
+- !private ["CSo15UITableViewCell", "pictureView"]
+- !private ["CSo15UITableViewCell", "titleLabel"]
+- !private ["OSC27UITableViewCellEditingStyle", "RawValue"]
+- ["OSC27UITableViewCellEditingStyle", "deinit"]
+- !private ["OSC27UITableViewCellEditingStyle", "delete"]
+- !private ["PSo21UITableViewDataSource", "DispatchQueue"]
+- !private ["PSo21UITableViewDataSource", "FBSDKAccessToken"]
+- !private ["PSo21UITableViewDataSource", "FBSDKGraphRequest"]
+- !private ["PSo21UITableViewDataSource", "FIRDatabase"]
+- !private ["PSo21UITableViewDataSource", "FIRStorage"]
+- !private ["PSo21UITableViewDataSource", "INT64_MAX"]
+- !private ["PSo21UITableViewDataSource", "UIImage"]
+- !private ["PSo21UITableViewDataSource", "UITableViewCellEditingStyle"]
+- !private ["PSo21UITableViewDataSource", "getFacebookProfile"]
+- !private ["PSo21UITableViewDataSource", "items"]
+- !private ["PSo21UITableViewDataSource", "loadDataFromFirebase"]
+- ["PSo21UITableViewDataSource", "numberOfSections"]
+- ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
+- !private ["PSo21UITableViewDataSource", "print"]
+- !private ["PSo21UITableViewDataSource", "ref"]
+- ["PSo21UITableViewDataSource", "sectionIndexTitles"]
+- ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
+- !private ["PSo21UITableViewDataSource", "storageRef"]
+- ["PSo21UITableViewDataSource", "tableView"]
+- !private ["PSo21UITableViewDataSource", "uid"]
+- ["PSo21UITableViewDataSource", ""]
+- !private ["PSo18UITraitEnvironment", "DispatchQueue"]
+- !private ["PSo18UITraitEnvironment", "FBSDKAccessToken"]
+- !private ["PSo18UITraitEnvironment", "FBSDKGraphRequest"]
+- !private ["PSo18UITraitEnvironment", "FIRDatabase"]
+- !private ["PSo18UITraitEnvironment", "FIRStorage"]
+- !private ["PSo18UITraitEnvironment", "INT64_MAX"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "UITableViewCellEditingStyle"]
+- ["PSo18UITraitEnvironment", "_refHandle"]
+- !private ["PSo18UITraitEnvironment", "dataSource"]
+- !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
+- !private ["PSo18UITraitEnvironment", "descriptionLabel"]
+- ["PSo18UITraitEnvironment", "getFacebookProfile"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "items"]
+- ["PSo18UITraitEnvironment", "loadDataFromFirebase"]
+- ["PSo18UITraitEnvironment", "numberOfSections"]
+- ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UITraitEnvironment", "pictureView"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "ref"]
+- !private ["PSo18UITraitEnvironment", "reloadData"]
+- ["PSo18UITraitEnvironment", "sectionIndexTitles"]
+- ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
+- ["PSo18UITraitEnvironment", "storageRef"]
+- ["PSo18UITraitEnvironment", "tableView"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "titleLabel"]
+- ["PSo18UITraitEnvironment", "uid"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", "viewWillAppear"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "dataSource"]
+- !private ["CSo6UIView", "dequeueReusableCell"]
+- !private ["CSo6UIView", "descriptionLabel"]
+- !private ["CSo6UIView", "image"]
+- !private ["CSo6UIView", "pictureView"]
+- !private ["CSo6UIView", "reloadData"]
+- !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "titleLabel"]
+- ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "Dictionary"]
+- !private ["CSo16UIViewController", "DispatchQueue"]
+- !private ["CSo16UIViewController", "FBSDKAccessToken"]
+- !private ["CSo16UIViewController", "FBSDKGraphRequest"]
+- ["CSo16UIViewController", "FIRDataSnapshot"]
+- !private ["CSo16UIViewController", "FIRDatabase"]
+- ["CSo16UIViewController", "FIRDatabaseHandle"]
+- ["CSo16UIViewController", "FIRDatabaseReference"]
+- !private ["CSo16UIViewController", "FIRStorage"]
+- ["CSo16UIViewController", "FIRStorageReference"]
+- !private ["CSo16UIViewController", "INT64_MAX"]
+- ["CSo16UIViewController", "IndexPath"]
+- ["CSo16UIViewController", "Int"]
+- !private ["CSo16UIViewController", "MyStuffTableViewCell"]
+- !private ["CSo16UIViewController", "NSDictionary"]
+- !private ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIImage"]
+- ["CSo16UIViewController", "UITableView"]
+- ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "UITableViewCellEditingStyle"]
+- !private ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "_refHandle"]
+- ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "getFacebookProfile"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "items"]
+- ["CSo16UIViewController", "loadDataFromFirebase"]
+- ["CSo16UIViewController", "numberOfSections"]
+- ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "ref"]
+- ["CSo16UIViewController", "sectionIndexTitles"]
+- ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
+- ["CSo16UIViewController", "storageRef"]
+- ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "uid"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", "viewWillAppear"]
+- ["CSo16UIViewController", ""]
+- ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- ["Ps14_ArrayProtocol", "Element"]
+- !private ["Ps14_ArrayProtocol", "Index"]
+- !private ["Ps14_ArrayProtocol", "IndexDistance"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "SubSequence"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dataSource"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "descriptionLabel"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "image"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "pictureView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleLabel"]
+- ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps26_ExpressibleByImageLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "DispatchQueue"]
+- !private ["Ps9_Hashable", "FBSDKAccessToken"]
+- !private ["Ps9_Hashable", "FBSDKGraphRequest"]
+- !private ["Ps9_Hashable", "FIRDatabase"]
+- !private ["Ps9_Hashable", "FIRStorage"]
+- !private ["Ps9_Hashable", "INT64_MAX"]
+- !private ["Ps9_Hashable", "IntegerLiteralType"]
+- !private ["Ps9_Hashable", "RawValue"]
+- !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "UIImage"]
+- !private ["Ps9_Hashable", "UITableViewCellEditingStyle"]
+- !private ["Ps9_Hashable", "_DisabledRangeIndex"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_refHandle"]
+- !private ["Ps9_Hashable", "allObjects"]
+- !private ["Ps9_Hashable", "async"]
+- !private ["Ps9_Hashable", "child"]
+- !private ["Ps9_Hashable", "children"]
+- !private ["Ps9_Hashable", "current"]
+- !private ["Ps9_Hashable", "data"]
+- !private ["Ps9_Hashable", "dataSource"]
+- !private ["Ps9_Hashable", "database"]
+- !private ["Ps9_Hashable", "delete"]
+- !private ["Ps9_Hashable", "dequeueReusableCell"]
+- !private ["Ps9_Hashable", "descriptionLabel"]
+- ["Ps9_Hashable", "getFacebookProfile"]
+- !private ["Ps9_Hashable", "image"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "items"]
+- !private ["Ps9_Hashable", "key"]
+- ["Ps9_Hashable", "loadDataFromFirebase"]
+- !private ["Ps9_Hashable", "main"]
+- ["Ps9_Hashable", "numberOfSections"]
+- ["Ps9_Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps9_Hashable", "object"]
+- !private ["Ps9_Hashable", "observe"]
+- !private ["Ps9_Hashable", "pictureView"]
+- !private ["Ps9_Hashable", "print"]
+- ["Ps9_Hashable", "ref"]
+- !private ["Ps9_Hashable", "reference"]
+- !private ["Ps9_Hashable", "reloadData"]
+- !private ["Ps9_Hashable", "row"]
+- ["Ps9_Hashable", "sectionIndexTitles"]
+- ["Ps9_Hashable", "sectionIndexTitlesForTableView"]
+- !private ["Ps9_Hashable", "start"]
+- !private ["Ps9_Hashable", "storage"]
+- ["Ps9_Hashable", "storageRef"]
+- ["Ps9_Hashable", "tableView"]
+- !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "titleLabel"]
+- ["Ps9_Hashable", "uid"]
+- !private ["Ps9_Hashable", "value"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", "viewWillAppear"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps8_Integer", "IntegerLiteralType"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps8_Integer", "_DisabledRangeIndex"]
+- !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
+- ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "row"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps14_SignedInteger", "IntegerLiteralType"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps11_Strideable", "IntegerLiteralType"]
+- !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "_DisabledRangeIndex"]
+depends-nominal:
+- !private "P10RealmSwift11AddableType"
+- !private "Vs11AnyHashable"
+- "Ps9AnyObject"
+- "Sa"
+- "Ps23BidirectionalCollection"
+- "Ps22BidirectionalIndexable"
+- !private "Vs18BidirectionalSlice"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Vs9Character"
+- "Ps10Collection"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "V10Foundation4Data"
+- !private "Vs27DefaultBidirectionalIndices"
+- !private "Vs26DefaultRandomAccessIndices"
+- "Vs10Dictionary"
+- !private "CSo14DispatchObject"
+- !private "CSo13DispatchQueue"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps5Error"
+- "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "CSo16FBSDKAccessToken"
+- !private "PSo12FBSDKCopying"
+- !private "CSo17FBSDKGraphRequest"
+- "OSC16FIRDataEventType"
+- !private "CSo15FIRDataSnapshot"
+- "CSo11FIRDatabase"
+- !private "CSo16FIRDatabaseQuery"
+- "CSo20FIRDatabaseReference"
+- "CSo10FIRStorage"
+- "CSo22FIRStorageDownloadTask"
+- "CSo19FIRStorageReference"
+- !private "Sf"
+- "Ps8Hashable"
+- "SQ"
+- "V10Foundation9IndexPath"
+- "Ps9Indexable"
+- "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps16IteratorProtocol"
+- "Ps25LosslessStringConvertible"
+- !private "P10RealmSwift10MinMaxType"
+- "Ps10MirrorPath"
+- "Ps17MutableCollection"
+- "Ps16MutableIndexable"
+- "C10HandMeDown20MyStuffTableViewCell"
+- "C10HandMeDown21MyStuffViewController"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- !private "CSo12NSDictionary"
+- !private "CSo12NSEnumerator"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo17NSFastEnumeration"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- !private "CSo9OS_object"
+- "Sq"
+- "Ps22RandomAccessCollection"
+- "Ps21RandomAccessIndexable"
+- !private "Vs17RandomAccessSlice"
+- "Ps26RangeReplaceableCollection"
+- "Ps25RangeReplaceableIndexable"
+- !private "Ps16RawRepresentable"
+- !private "P10RealmSwift17RealmOptionalType"
+- !private "P10Foundation20ReferenceConvertible"
+- "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Vs5Slice"
+- !private "Ps10Strideable"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "PSo27UIGestureRecognizerDelegate"
+- !private "CSo7UIImage"
+- !private "CSo11UIImageView"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "CSo12UIScrollView"
+- "PSo16UIStateRestoring"
+- "CSo11UITableView"
+- !private "CSo15UITableViewCell"
+- "OSC27UITableViewCellEditingStyle"
+- "PSo21UITableViewDataSource"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- "Ps14_ArrayProtocol"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps26_ExpressibleByImageLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm.swiftmodule"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncUtil_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSyncConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMOptionalBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMListBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUser.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncSession.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncPermissionChange.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncManager.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncCredentials.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMResults.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMSyncUtil.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration+Sync.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMRealm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMProperty.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMObject.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMMigration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMCollection.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/RLMArray.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Headers/Realm.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/Realm/Realm.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/DerivedData/HandMeDown/Build/Products/Debug-iphoneos/RealmSwift/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseCore/Frameworks/frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFURL.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFTask+Exceptions.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFTask.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Headers/Bolts.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/Bolts.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/FBSDKLoginKit.framework/Modules/module.modulemap"
+interface-hash: "247f2b2d7776f27ca73730f9cec193dc"

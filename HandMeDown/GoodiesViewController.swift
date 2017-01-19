@@ -24,7 +24,7 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     var uid = ""
     var username = ""
     fileprivate var _refHandle: FIRDatabaseHandle!
-    var items = [Item]()
+    var items: [FIRDataSnapshot]! = []
 
     
     // MARK: ViewDidLoad
@@ -46,33 +46,17 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
  // MARK: configure Database
     func loadDataFromFirebase() {
-        self.items = []
-        self.ref.child("items").queryOrdered(byChild: "timestamp").queryLimited(toLast: 10).observe(.value, with: { snapshot in
-            let snapshot = snapshot
-            if (snapshot.value != nil) {
-                do {
-                    for child in snapshot.children.allObjects as! [FIRDataSnapshot] {
-                        if let item = child.value as? Dictionary<String, String> {
-                            if let title = item["title"] {
-                                if let image = item["photoURL"] {
-                                    let newItem = Item(title: title, itemDescription: "placeholder description", image: image, like: false, users: [])
-                                    self.items.append(newItem)
-                                }
-                            }
-                        }
-                    }
-                    DispatchQueue.main.async(execute: {
-                        self.collectionView.reloadData()
-                    })
-                }
-                catch {
-                    print("cannot get data from Firebase")
+        self.ref.child("items").queryOrdered(byChild: "title").queryLimited(toLast: 10).observe(.value, with: { snapshot in
+            self.items = []
+            for child in snapshot.children.allObjects as! [FIRDataSnapshot] {
+                self.items.append(child)
+                let mainQueue = DispatchQueue.main
+                mainQueue.async {
+                    self.collectionView.reloadData()
                 }
             }
-            print(self.items)
         })
     }
-    
 
     
 
@@ -120,21 +104,25 @@ class GoodiesViewController: UIViewController, UICollectionViewDelegate, UIColle
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GoodiesCollectionViewCell", for: indexPath) as! GoodiesCollectionViewCell
         
-        if let item = self.items[indexPath.row] as? Item {
-//        cell.imageView?.image = UIImage.init(data: data!)
-//        cell.userPictureView?.image = UIImage.init(data: data!)
-            let url = URL(string: item.image)
-            DispatchQueue.global().async {
-                let imageData = try? Data(contentsOf: url!)
-                DispatchQueue.main.async {
-                    cell.imageView?.image = UIImage(data: imageData!)
+        let itemSnapshot: FIRDataSnapshot! = self.items[indexPath.row]
+        let item = itemSnapshot.value as! Dictionary<String, String>
+        let title = item["title"] as String!
+        let key = itemSnapshot.key
+        if let imageURL = item["photoURL"] as String! {
+            self.storageRef.child("items").child("\(key)").child("\(title!).jpg").data(withMaxSize: INT64_MAX){ (data, error) in
+                if let error = error {
+                    print("Error downloading: \(error)")
+                    return
                 }
+                cell.imageView?.image = UIImage.init(data: data!)
+                cell.titleLabel.text = title
+
             }
-        cell.titleLabel.text = item.title
-        cell.likeButton.setImage(UIImage(named:"empty-heart"), for: .normal)
         }
+        
         return cell
     }
+
 
 
 

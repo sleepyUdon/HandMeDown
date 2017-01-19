@@ -18,7 +18,7 @@ class GoodiesCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var likeButton: UIButton!
     
     
-    // convenience initializer
+//     convenience initializer
 //    func configureWithItem(item: Item) {
 //        imageView.image = UIImage(data:item.image!)
 ////        userPictureView?.image = UIImage(named: item.users)

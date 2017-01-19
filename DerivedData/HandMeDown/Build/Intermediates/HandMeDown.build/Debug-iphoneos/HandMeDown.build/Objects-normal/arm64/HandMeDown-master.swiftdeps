@@ -1,0 +1,20 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "b0db7a07952a4bf9ca4091faae0d768b"
+build_time: [538163939, 545788000]
+inputs:
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/LoginViewController.swift": [538085231, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/Fonts.swift": [534730329, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/Colors.swift": [534826124, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/FriendsTableViewCell.swift": [538105945, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/Item.swift": [538154176, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/MyStuffTableViewCell.swift": [538108626, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/PostViewController.swift": [538105945, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/AppDelegate.swift": [538154176, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/FriendsViewController.swift": [538105945, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/MainTabBarController.swift": [536432619, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/MyProfile.swift": [537326912, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/SettingsViewController.swift": [535858210, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/User.swift": [535944198, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/GoodiesViewController.swift": [538163937, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/GoodiesCollectionViewCell.swift": [538163849, 0]
+  "/Users/vivianechan/Documents/1.0 Projects/2.0 HandMeDown/HandMeDown/HandMeDown/MyStuffViewController.swift": [538163607, 0]
