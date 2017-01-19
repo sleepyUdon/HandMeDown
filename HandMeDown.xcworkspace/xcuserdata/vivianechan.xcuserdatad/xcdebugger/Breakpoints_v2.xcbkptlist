@@ -127,70 +127,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HandMeDown/GoodiesViewController.swift"
-            timestampString = "505773106.559766"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HandMeDown.GoodiesViewController.collectionView (__ObjC.UICollectionView, cellForItemAt : Foundation.IndexPath) -&gt; __ObjC.UICollectionViewCell"
-                  moduleName = "HandMeDown"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vivianechan/Documents/1.0%20Projects/2.0%20HandMeDown/HandMeDown/HandMeDown/GoodiesViewController.swift"
-                  timestampString = "505772162.105662"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "3488">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HandMeDown.GoodiesViewController.(collectionView (__ObjC.UICollectionView, cellForItemAt : Foundation.IndexPath) -&gt; __ObjC.UICollectionViewCell).(closure #2)"
-                  moduleName = "HandMeDown"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vivianechan/Documents/1.0%20Projects/2.0%20HandMeDown/HandMeDown/HandMeDown/GoodiesViewController.swift"
-                  timestampString = "505772162.106977"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "131"
-                  endingLineNumber = "131"
-                  offsetFromSymbolStart = "664">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HandMeDown/GoodiesViewController.swift"
-            timestampString = "505773106.559766"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "HandMeDown/PostViewController.swift"
             timestampString = "505773106.559766"
             startingColumnNumber = "9223372036854775807"
@@ -250,19 +186,61 @@
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HandMeDown/GoodiesViewController.swift"
-            timestampString = "505773106.559766"
+            timestampString = "506487214.071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "7">
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "GoodiesViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandMeDown.GoodiesViewController.loadDataFromFirebase () -&gt; ()"
+                  moduleName = "HandMeDown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianechan/Documents/1.0%20Projects/2.0%20HandMeDown/HandMeDown/HandMeDown/GoodiesViewController.swift"
+                  timestampString = "506487214.077433"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "644">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandMeDown.GoodiesViewController.(loadDataFromFirebase () -&gt; ()).(closure #1)"
+                  moduleName = "HandMeDown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianechan/Documents/1.0%20Projects/2.0%20HandMeDown/HandMeDown/HandMeDown/GoodiesViewController.swift"
+                  timestampString = "506487214.079104"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "2424">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -271,14 +249,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HandMeDown/MyStuffViewController.swift"
-            timestampString = "505771739.728104"
+            filePath = "HandMeDown/GoodiesViewController.swift"
+            timestampString = "506487214.071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "tableView(_:commit:forRowAt:)"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandMeDown.GoodiesViewController.(loadDataFromFirebase () -&gt; ()).(closure #1)"
+                  moduleName = "HandMeDown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianechan/Documents/1.0%20Projects/2.0%20HandMeDown/HandMeDown/HandMeDown/GoodiesViewController.swift"
+                  timestampString = "506487214.22214"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "2024">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandMeDown.GoodiesViewController.(loadDataFromFirebase () -&gt; ()).(closure #1).(closure #3)"
+                  moduleName = "HandMeDown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianechan/Documents/1.0%20Projects/2.0%20HandMeDown/HandMeDown/HandMeDown/GoodiesViewController.swift"
+                  timestampString = "506487214.223436"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -287,14 +297,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HandMeDown/MyStuffViewController.swift"
-            timestampString = "505771778.356913"
+            filePath = "HandMeDown/GoodiesViewController.swift"
+            timestampString = "506487214.071"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "tableView(_:commit:forRowAt:)"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandMeDown.GoodiesViewController.(loadDataFromFirebase () -&gt; ()).(closure #1)"
+                  moduleName = "HandMeDown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianechan/Documents/1.0%20Projects/2.0%20HandMeDown/HandMeDown/HandMeDown/GoodiesViewController.swift"
+                  timestampString = "506487214.265641"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "1668">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HandMeDown.GoodiesViewController.(loadDataFromFirebase () -&gt; ()).(closure #1).(closure #2)"
+                  moduleName = "HandMeDown"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianechan/Documents/1.0%20Projects/2.0%20HandMeDown/HandMeDown/HandMeDown/GoodiesViewController.swift"
+                  timestampString = "506487214.267176"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

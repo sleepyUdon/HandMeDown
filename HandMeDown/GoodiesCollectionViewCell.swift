@@ -19,11 +19,11 @@ class GoodiesCollectionViewCell: UICollectionViewCell {
     
     
     // convenience initializer
-    func configureWithItem(item: Item) {
-        imageView.image = UIImage(data:item.image!)
-//        userPictureView?.image = UIImage(named: item.users)
-        titleLabel.text = item.title
-//        likeButton.imageView?.image = UIImage(named: item.like)
-    }
+//    func configureWithItem(item: Item) {
+//        imageView.image = UIImage(data:item.image!)
+////        userPictureView?.image = UIImage(named: item.users)
+//        titleLabel.text = item.title
+////        likeButton.imageView?.image = UIImage(named: item.like)
+//    }
 }
 

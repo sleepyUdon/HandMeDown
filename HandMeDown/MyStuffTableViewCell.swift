@@ -27,11 +27,11 @@ class MyStuffTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureWithItem(item: Item) {
-        pictureView.image = UIImage(data:item.image!)
-        titleLabel.text = item.title
-        descriptionLabel.text = item.description
-    }
+//    func configureWithItem(item: Item) {
+//        pictureView.image = UIImage(data:item.image!)
+//        titleLabel.text = item.title
+//        descriptionLabel.text = item.description
+//    }
 
 
 }
