@@ -96,19 +96,22 @@ class MyStuffViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete {
-//            let itemSnapshot: FIRDataSnapshot! = self.items[indexPath.row]
-//            let item = itemSnapshot.value as! Dictionary<String, String>
-//            let uid = item["uid"] as String!
-//            let timestamp = item["timestamp"] as String!
-//            self.ref.child("items").child("item-\(uid)-\(timestamp)")
-            }
-            tableView.reloadData()
+            let item = items[indexPath.row]
+            item.ref.removeValue()
+            let key = item.key
+            let userRef = self.ref.child("items").child("\(key)")
+            print(userRef)
+            userRef.removeValue()
         }
-    }
+//        self.tableView.reloadData()
 
+    }
     
+}
+
     /*
     // MARK: - Navigation
 

@@ -18,12 +18,12 @@ class Item: NSObject {
     
     
     convenience init(title: String, itemDescription: String, image: String, like:Bool, users: [User]) {
-        self.init()
-        self.title = title
-        self.itemDescription = itemDescription
-        self.image = image
-        self.like = false
-        self.users = users
+    self.init()
+    self.title = title
+    self.itemDescription = itemDescription
+    self.image = image
+    self.like = false
+    self.users = users
     }
 }
 
